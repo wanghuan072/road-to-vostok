@@ -1,0 +1,179 @@
+/* 全局：寒带战术简报风 — 更高对比、偏蓝夜色 + 信号色点缀 */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap');
+
+:root {
+  --color-bg: #070a10;
+  --color-surface: #0c1018;
+  --color-panel: #121a24;
+  --color-border: #2a3548;
+  --color-border-strong: #3d4d66;
+  --color-grid-line: rgba(120, 170, 220, 0.07);
+  --color-text: #eef3f8;
+  --color-muted: #8a96ab;
+  --color-ice: #5bd4e8;
+  --color-ice-dim: #3a9aaa;
+  --color-signal: #ff9f4a;
+  --color-signal-soft: #ffb87a;
+  --color-hazard: #e85d4c;
+  --color-rust: var(--color-signal);
+  --color-rust-bright: var(--color-signal-soft);
+  --color-amber: #e8c547;
+  /* 兼容旧变量名 */
+  --color-frost: var(--color-ice);
+  --color-frost-dim: var(--color-ice-dim);
+  --color-primary: var(--color-ice);
+  --color-primary-soft: #7ee8f9;
+  --color-accent: var(--color-signal);
+  --font-display: 'Barlow Semi Condensed', 'Arial Narrow', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-journey: 'Unbounded', var(--font-display);
+  --fx-glow-frost: 0 0 48px color-mix(in srgb, var(--color-ice) 28%, transparent);
+  --fx-glow-rust: 0 0 40px color-mix(in srgb, var(--color-signal) 32%, transparent);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* 长文阅读：标题略放松字间距，避免「工具文档」感 */
+.page-article > .page-hero-section h1,
+.guide .guide-hero-section h1,
+.item-db-page .page-hero-section h1 {
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+}
+
+h2 {
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+}
+
+h3 {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+ul,
+ol {
+  margin: 0 0 1em;
+  padding-left: 1.25em;
+}
+
+li {
+  margin-bottom: 0.35em;
+}
+
+a {
+  color: var(--color-primary-soft);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--color-signal-soft);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ice);
+  outline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 1.75rem);
+}
+
+/* In-page nav targets: clear sticky header without using :target / hash URLs */
+[data-nav-anchor] {
+  scroll-margin-top: 5.75rem;
+}
+
+/* 内页主栏：在双栏布局中占满主列，不再留一大块空白 */
+.page-rail-main .section-intro,
+.page-rail-main .hero-lead,
+.page-rail-main .issues-intro,
+.guide-body-content,
+.page-body-content {
+  max-width: none;
+}
+
+@keyframes fx-shimmer-line {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes fx-compass-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fx-pulse-soft {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-signal) 45%, transparent);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 2px color-mix(in srgb, var(--color-signal) 25%, transparent);
+  }
+}

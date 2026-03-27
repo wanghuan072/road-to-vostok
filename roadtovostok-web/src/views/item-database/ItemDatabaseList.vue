@@ -1,0 +1,74 @@
+<template>
+  <article class="item-db-page">
+    <section class="page-hero-section">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <RouterLink to="/">Home</RouterLink>
+          <span aria-hidden="true"> / </span>
+          <span>Item database</span>
+        </nav>
+        <h1>Road To Vostok item database</h1>
+        <p class="lead">
+          Fan-maintained tables for <strong>Road To Vostok guns</strong> and
+          <strong>ammunition types</strong>, <strong>inverter</strong> / <strong>B cables</strong> and
+          other <strong>all tasks</strong> props, plus <strong>how to fish</strong> notes and field
+          <strong>gathering</strong>. Always verify values in your installed build.
+        </p>
+      </div>
+    </section>
+    <section class="page-body-section" aria-label="Item database categories">
+      <div class="container">
+        <ul class="item-db-hub-grid" role="list">
+          <li>
+            <RouterLink to="/item-database/core-tasks" class="item-db-hub-card">
+              <span class="kicker">Core tasks &amp; power</span>
+              <h2>Inverter, B cables &amp; quest props</h2>
+              <p>
+                Shelter power chain, cabling, and keys tied to <strong>all tasks</strong> progression.
+              </p>
+              <span class="go">Open table →</span>
+            </RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/item-database/weapons" class="item-db-hub-card">
+              <span class="kicker">Weapons &amp; attachments</span>
+              <h2>Guns &amp; platforms</h2>
+              <p>
+                SMGs, rifles, shotguns, pistols — what each gun feeds and short attachment notes.
+              </p>
+              <span class="go">Open table →</span>
+            </RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/item-database/ammunition" class="item-db-hub-card">
+              <span class="kicker">Ammunition</span>
+              <h2>Calibers &amp; stacks</h2>
+              <p>Per-round value, weight, max stack, and weapon compatibility from the wiki table.</p>
+              <span class="go">Open table →</span>
+            </RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/item-database/fishing" class="item-db-hub-card">
+              <span class="kicker">Fishing</span>
+              <h2>How to fish (Early Access)</h2>
+              <p>Rods, bait, and roadmap caveats for <strong>how fish</strong> searches.</p>
+              <span class="go">Open guide list →</span>
+            </RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/item-database/gathering" class="item-db-hub-card">
+              <span class="kicker">Gathering</span>
+              <h2>Field resources</h2>
+              <p>Wood, scrap, forage, and raw inputs that feed survival and crafting loops.</p>
+              <span class="go">Open table →</span>
+            </RouterLink>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </article>
+</template>
+
+<script setup></script>
+
+<style src="./item-db-shared.css"></style>

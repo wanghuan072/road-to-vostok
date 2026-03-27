@@ -1,0 +1,168 @@
+.item-db-page {
+  padding-bottom: 4rem;
+}
+
+.item-db-page .page-hero-section {
+  padding: 3rem 0 2rem;
+  background: radial-gradient(
+    ellipse 70% 60% at 70% 0%,
+    color-mix(in srgb, var(--color-primary) 18%, transparent),
+    transparent
+  );
+}
+
+.item-db-page .breadcrumb {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.item-db-page .breadcrumb a {
+  color: var(--color-primary-soft);
+  text-decoration: none;
+}
+
+.item-db-page .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.item-db-page .lead {
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.item-db-page .lead a {
+  color: var(--color-primary-soft);
+}
+
+.item-db-page .page-body-section {
+  padding: 1.5rem 0;
+}
+
+.item-db-page .table-wrap {
+  margin: 1.25rem 0;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-panel);
+}
+
+.item-db-page .data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.item-db-page .data-table th,
+.item-db-page .data-table td {
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.item-db-page .data-table th {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--color-primary-soft);
+  background: color-mix(in srgb, var(--color-surface) 80%, transparent);
+}
+
+.item-db-page .data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.item-db-page .cross-links {
+  margin-top: 1.5rem;
+  padding: 1rem 1.15rem;
+  border-left: 3px solid var(--color-frost);
+  background: color-mix(in srgb, var(--color-panel) 88%, transparent);
+  border-radius: 0 4px 4px 0;
+  font-size: 0.92rem;
+  color: var(--color-muted);
+}
+
+.item-db-page .cross-links a {
+  color: var(--color-primary-soft);
+}
+
+/* Hub grid — 同行卡片随最高项拉伸等高，不使用固定 height */
+.item-db-hub-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.1rem;
+  align-items: stretch;
+}
+
+.item-db-hub-grid > li {
+  display: flex;
+  min-width: 0;
+}
+
+.item-db-hub-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  padding: 1.15rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 28%, transparent);
+  background: color-mix(in srgb, var(--color-surface) 78%, transparent);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.item-db-hub-card:hover {
+  border-color: color-mix(in srgb, var(--color-primary) 55%, transparent);
+  background: color-mix(in srgb, var(--color-panel) 92%, transparent);
+}
+
+.item-db-hub-card .kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary-soft);
+  margin-bottom: 0.35rem;
+}
+
+.item-db-hub-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  color: var(--color-text);
+}
+
+.item-db-hub-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  flex: 1;
+}
+
+.item-db-hub-card .go {
+  margin-top: 0.85rem;
+  font-size: 0.85rem;
+  color: var(--color-primary-soft);
+}
+
+.item-db-page .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
