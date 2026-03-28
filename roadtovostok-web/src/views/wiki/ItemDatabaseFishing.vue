@@ -9,7 +9,7 @@
           <span aria-hidden="true"> / </span>
           <span>Fishing</span>
         </nav>
-        <h1>Fishing in Road To Vostok</h1>
+        <h1>Road To Vostok Fishing</h1>
         <p class="lead">
           How to fish in Road To Vostok depends on your build: fishing appears on the official
           long-term roadmap. Use this list as a reference and confirm against patch notes and your

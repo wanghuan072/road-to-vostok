@@ -7,7 +7,7 @@
           <span aria-hidden="true"> / </span>
           <span>Copyright</span>
         </nav>
-        <h1>Copyright</h1>
+        <h1>Road To Vostok — Copyright</h1>
         <p class="lead">
           How original site content and third-party game materials are credited on Road To Vostok Guide.
         </p>

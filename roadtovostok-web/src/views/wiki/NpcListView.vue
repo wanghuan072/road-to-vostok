@@ -9,7 +9,7 @@
           <span aria-hidden="true"> / </span>
           <span>NPCs</span>
         </nav>
-        <h1>NPCs &amp; hubs</h1>
+        <h1>Road To Vostok NPCs &amp; Hubs</h1>
         <p class="lead">
           <strong>Bandits</strong>, <strong>Generalist</strong>, and <strong>Doctor</strong> — community-sourced summaries
           for Road To Vostok. Cross-check tasks and stock in your build; map pins link here where marked.

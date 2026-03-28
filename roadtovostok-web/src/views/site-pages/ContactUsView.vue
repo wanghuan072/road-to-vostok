@@ -7,7 +7,7 @@
           <span aria-hidden="true"> / </span>
           <span>Contact Us</span>
         </nav>
-        <h1>Contact Us</h1>
+        <h1>Road To Vostok — Contact Us</h1>
         <p class="lead">
           Reach the Road To Vostok Guide site by email. We do not use a contact form on this page.
         </p>

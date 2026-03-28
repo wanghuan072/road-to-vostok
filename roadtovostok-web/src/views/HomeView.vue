@@ -15,7 +15,7 @@
           <div class="hero-copy">
             <p class="hero-eyebrow">Unofficial wiki · demo &amp; Steam · Early Access</p>
             <h1 class="hero-title">
-              Road To Vostok guide — how to play, Steam demo, guns &amp; roadmap
+              Road To Vostok Guide — how to play, Steam demo, guns &amp; roadmap
             </h1>
             <p class="hero-strip" aria-hidden="true">
               <span>Load shotgun &amp; guns</span>

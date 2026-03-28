@@ -7,7 +7,7 @@
           <span aria-hidden="true"> / </span>
           <span>Privacy Policy</span>
         </nav>
-        <h1>Privacy Policy</h1>
+        <h1>Road To Vostok — Privacy Policy</h1>
         <p class="lead">
           How Road To Vostok Guide (roadtovostok.org) handles information when you browse this fan wiki.
         </p>

@@ -78,11 +78,11 @@ export const routeDefs = [
     meta: {
       sitemap: { priority: 0.85, changefreq: 'monthly' },
       seo: {
-        title: '武器 · Road To Vostok — Knives, Guns, SMGs & Calibers',
+        title: 'Road To Vostok Weapons — Knives, Guns, SMGs & Calibers',
         description:
           'Road To Vostok weapon categories: knives, pistols, rifles, SMGs & PDWs, shotguns, bolt-action, semi-auto. Community wiki–style stats and loot hints — verify in your build.',
         keywords:
-          'Road To Vostok weapons, 武器, AKM, MP7, Mosin, SVD, ammo, survival FPS',
+          'Road To Vostok weapons, AKM, MP7, Mosin, SVD, ammo, survival FPS',
       },
     },
   },
@@ -352,17 +352,6 @@ export const routeDefs = [
   },
 ]
 
-const redirectRoutes = [
-  { path: '/item-database', redirect: '/wiki' },
-  { path: '/item-database/core-tasks', redirect: '/wiki/core-tasks' },
-  { path: '/item-database/weapons', redirect: '/wiki/weapons' },
-  { path: '/item-database/ammunition', redirect: '/wiki/ammunition' },
-  { path: '/item-database/fishing', redirect: '/wiki/fishing' },
-  { path: '/item-database/gathering', redirect: '/wiki/gathering' },
-  { path: '/maps-tasks', redirect: '/map' },
-  { path: '/tech-support', redirect: '/mods' },
-]
-
 const viewLoaders = {
   HomeView: () => import('../views/HomeView.vue'),
   GettingStartedView: () => import('../views/GettingStartedView.vue'),
@@ -402,7 +391,7 @@ const mappedRoutes = routeDefs.map((def) => {
   }
 })
 
-const routes = [...redirectRoutes, ...mappedRoutes]
+const routes = mappedRoutes
 
 const history =
   typeof window !== 'undefined' ? createWebHistory(base) : createMemoryHistory(base)

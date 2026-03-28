@@ -15,7 +15,7 @@
         <p class="page-hero-kicker">
           Loadout reference
         </p>
-        <h1>Ammunition</h1>
+        <h1>Road To Vostok Ammunition</h1>
         <p class="lead">
           Cartridge value (€), per-round weight, max stack, and weapon compatibility — same breakdown as standard wiki tables, kept on-site for loadout planning. Numbers can change by patch; treat as a checklist, not a guarantee.
         </p>

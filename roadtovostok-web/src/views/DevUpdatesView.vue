@@ -9,7 +9,7 @@
             <span>Road ahead</span>
           </nav>
           <p class="hero-kicker">Roadmap &amp; release timing</p>
-          <h1>Dev updates &amp; when the game ships</h1>
+          <h1>Road To Vostok — Dev updates &amp; when the game ships</h1>
           <p class="hero-lead">
             What is on the public roadmap, when Early Access is targeted, and where patch notes actually
             post. Summarized from the roadtovostok.com game page as of our last pass — confirm on Steam and

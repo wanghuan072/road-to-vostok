@@ -9,7 +9,7 @@
             <span>Start here</span>
           </nav>
           <h1>
-            How to play Road To Vostok — what to do first (PC &amp; Steam demo)
+            Road To Vostok — How to play &amp; what to do first (PC &amp; Steam demo)
           </h1>
           <p>
             This page matches searches like <strong>how to play Road To Vostok</strong> and

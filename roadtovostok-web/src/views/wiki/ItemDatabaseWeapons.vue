@@ -10,27 +10,27 @@
           <span aria-hidden="true"> / </span>
           <RouterLink to="/wiki">Wiki</RouterLink>
           <span aria-hidden="true"> / </span>
-          <span>武器</span>
+          <span>Weapons</span>
         </nav>
         <p class="page-hero-kicker">
           Wiki hub
         </p>
-        <h1>武器</h1>
+        <h1>Road To Vostok Weapons</h1>
         <p class="lead">
-          全部分类与武器条目一次列出；左侧目录锚点跳转。数值与掉落说明来自社区表格整理，请以当前版本游戏内为准。弹药对照见
-          <RouterLink to="/wiki/ammunition">Ammunition</RouterLink>。
+          All categories and weapons on one page; use the left index to jump. Stats and loot notes come from community tables — confirm against your current game build. For ammo pairing see
+          <RouterLink to="/wiki/ammunition">Ammunition</RouterLink>.
         </p>
       </div>
     </section>
 
     <section
       class="page-body-section weapons-body"
-      aria-label="武器目录与列表"
+      aria-label="Weapon categories and listings"
     >
       <div class="container weapons-shell">
         <nav
           class="weapons-toc"
-          aria-label="跳转到分类"
+          aria-label="Jump to category"
         >
           <a
             v-for="c in weaponCategories"

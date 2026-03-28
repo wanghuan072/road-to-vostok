@@ -9,7 +9,7 @@
           <span aria-hidden="true"> / </span>
           <span>Gathering</span>
         </nav>
-        <h1>Gathering &amp; raw materials</h1>
+        <h1>Road To Vostok Gathering &amp; Raw Materials</h1>
         <p class="lead">
           Environmental loot and harvest nodes that feed crafting and survival. For combat loot,
           see <RouterLink to="/wiki/weapons">weapons</RouterLink> and

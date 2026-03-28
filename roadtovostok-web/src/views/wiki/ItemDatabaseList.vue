@@ -7,7 +7,7 @@
           <span aria-hidden="true"> / </span>
           <span>Wiki</span>
         </nav>
-        <h1>Road To Vostok wiki</h1>
+        <h1>Road To Vostok Wiki</h1>
         <p class="lead">
           Fan-maintained tables for <strong>Road To Vostok guns</strong> and
           <strong>ammunition types</strong>, <strong>inverter</strong> / <strong>B cables</strong> and

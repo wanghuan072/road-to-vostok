@@ -7,7 +7,7 @@
           <span aria-hidden="true"> / </span>
           <span>Not found</span>
         </nav>
-        <h1>Page not found</h1>
+        <h1>Road To Vostok — Page not found</h1>
         <p class="lead">
           This URL is not part of Road To Vostok Guide. Use the navigation or return home.
         </p>

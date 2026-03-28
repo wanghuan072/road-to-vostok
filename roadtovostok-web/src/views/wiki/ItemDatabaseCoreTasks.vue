@@ -9,7 +9,7 @@
           <span aria-hidden="true"> / </span>
           <span>Core tasks</span>
         </nav>
-        <h1>Core task &amp; power items</h1>
+        <h1>Road To Vostok Core Tasks &amp; Power Items</h1>
         <p class="lead">
           Items players pair with shelter power, cabling, and quest chains (<strong>all tasks</strong>).
           Cross-check the

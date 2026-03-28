@@ -7,7 +7,7 @@
           <span aria-hidden="true"> / </span>
           <span>Terms of Service</span>
         </nav>
-        <h1>Terms of Service</h1>
+        <h1>Road To Vostok — Terms of Service</h1>
         <p class="lead">
           Rules for using Road To Vostok Guide (roadtovostok.org). By using the site, you agree to these terms.
         </p>
