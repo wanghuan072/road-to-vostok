@@ -22,14 +22,14 @@
           <p>
             <strong>Road To Vostok</strong> and related logos, artwork, and game content are the property
             of their respective rights holders. This site is not affiliated with those rights holders. All
-            game-related trademarks are used here nominatively to identify the game for fans and players.
+            game-related trademarks are used here nominatively to identify the game for readers and players.
           </p>
 
           <h2>Site content</h2>
           <p>
             Original text, layout, and compilation on roadtovostok.org (unless otherwise noted) are
             copyright © the operators of Road To Vostok Guide, except where content is clearly quoted or
-            attributed to community or official sources. Fan guides and tables may incorporate factual
+            attributed to community or official sources. Editorial guides and tables may incorporate factual
             gameplay information; that does not imply ownership of the underlying game assets or IP.
           </p>
 

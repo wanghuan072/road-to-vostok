@@ -9,7 +9,10 @@
         </nav>
         <h1>Road To Vostok Guides</h1>
         <p class="guides-list__sub">
-          Survival tips &amp; progression — short reads. Unofficial; confirm in your build.
+          Survival tips and progression — short reads. Pair with the
+          <RouterLink to="/map">map</RouterLink>,
+          <RouterLink to="/tasks">tasks</RouterLink>, and
+          <RouterLink to="/wiki">item database</RouterLink>. Confirm details in your installed build.
         </p>
       </div>
     </section>

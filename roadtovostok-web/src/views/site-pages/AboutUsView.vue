@@ -9,7 +9,7 @@
         </nav>
         <h1>About Road To Vostok Guide</h1>
         <p class="lead">
-          What this English-language wiki is for, and what it is not.
+          What this English-language guide is for, and what it is not.
         </p>
       </div>
     </section>

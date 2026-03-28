@@ -9,7 +9,7 @@
         </nav>
         <h1>Road To Vostok — Privacy Policy</h1>
         <p class="lead">
-          How Road To Vostok Guide (roadtovostok.org) handles information when you browse this fan wiki.
+          How Road To Vostok Guide (roadtovostok.org) handles information when you browse this site.
         </p>
       </div>
     </section>
@@ -20,7 +20,7 @@
 
           <h2>Who we are</h2>
           <p>
-            This website is an unofficial, fan-maintained guide for the game Road To Vostok. It is not
+            This website is an independent gaming reference for Road To Vostok. It is not
             operated by the game’s developer or publisher. For questions about this policy, contact
             <a href="mailto:wyong@roadtovostok.org">wyong@roadtovostok.org</a>.
           </p>

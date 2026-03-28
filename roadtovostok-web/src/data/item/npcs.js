@@ -20,7 +20,7 @@ export default [
     seo: {
       title: 'Bandits: enemy AI, gear & bug notes',
       description:
-        'Bandits in Road To Vostok: random loadouts, stalk & ambush AI, dual weapons, cover, vision limits, and common bugs. Unofficial enemy survival guide.',
+        'Bandits in Road To Vostok: random loadouts, stalk and ambush AI, dual weapons, cover, vision limits, and documented behavior notes. Combat reference; confirm in your build.',
       keywords:
         'Road To Vostok, Bandits, enemy AI, survival shooter, NPC combat, enemy spawns',
       ogType: 'article',

@@ -20,7 +20,7 @@
 
           <h2>About this site</h2>
           <p>
-            Road To Vostok Guide is an independent, fan-made reference. It is not endorsed by, affiliated
+            Road To Vostok Guide is an independent reference site. It is not endorsed by, affiliated
             with, or sponsored by the developers or publishers of Road To Vostok or any related
             trademark holders. Game names and marks belong to their respective owners.
           </p>

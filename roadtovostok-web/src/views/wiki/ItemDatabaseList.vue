@@ -7,12 +7,17 @@
           <span aria-hidden="true"> / </span>
           <span>Wiki</span>
         </nav>
-        <h1>Road To Vostok Wiki</h1>
+        <h1>Road To Vostok item database</h1>
         <p class="lead">
-          Fan-maintained tables for <strong>Road To Vostok guns</strong> and
+          Curated tables for <strong>Road To Vostok guns</strong> and
           <strong>ammunition types</strong>, <strong>inverter</strong> / <strong>B cables</strong> and
           other <strong>all tasks</strong> props, plus <strong>how to fish</strong> notes and field
-          <strong>gathering</strong>. Always verify values in your installed build.
+          <strong>gathering</strong>. Long-form strategy lives under
+          <RouterLink to="/guides">Guides</RouterLink> — e.g.
+          <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">real-world geography</RouterLink>
+          and
+          <RouterLink to="/guides/surviving-the-Minefield">Minefield tactics</RouterLink>.
+          Always verify values in your installed build.
         </p>
       </div>
     </section>
@@ -80,6 +85,8 @@
   </article>
 </template>
 
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 
 <style src="./item-db-shared.css"></style>

@@ -48,7 +48,7 @@ export default [
     },
     detailsHtml: `
 <p class="mod-prose-lead">
-  This fan site does <strong>not</strong> host downloads. Get <strong>ImmersiveXP.vmz</strong> from
+  This site does <strong>not</strong> host downloads. Get <strong>ImmersiveXP.vmz</strong> from
   <a href="https://modworkshop.net/mod/50811" target="_blank" rel="noopener noreferrer">ModWorkshop</a>
   and confirm it matches your demo or Early Access build.
 </p>

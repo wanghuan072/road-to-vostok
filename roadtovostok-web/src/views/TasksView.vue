@@ -12,7 +12,7 @@
           <p>
             Trader tasks, border crossings, and Vostok permadeath rules — aligned with the public
             roadtovostok.com game page. For the interactive map and POI index, open
-            <RouterLink to="/map">Map</RouterLink>. Unofficial; verify in your build.
+            <RouterLink to="/map">Map</RouterLink>. Verify details in your build.
           </p>
         </div>
       </div>
@@ -56,7 +56,8 @@
             </li>
             <li>
               When ready, commit to a <strong>Border Zone</strong> crossing that matches your kit (mines
-              vs boats vs obstacles — official crossing variety).
+              vs boats vs obstacles — official crossing variety). For mine-heavy routes, see the guide
+              <RouterLink to="/guides/surviving-the-Minefield">Surviving the Minefield</RouterLink>.
             </li>
             <li>
               Treat <strong>Vostok</strong> as optional endgame: permadeath rules apply only there per
@@ -64,10 +65,13 @@
             </li>
           </ol>
           <p class="guide-tools">
-            Related hubs:
-            <RouterLink to="/wiki/core-tasks">Core task items</RouterLink> (power, keys),
-            <RouterLink to="/guides/inverter-location">Inverter</RouterLink>,
-            <RouterLink to="/guides/roadmap">Roadmap guide</RouterLink>.
+            Related:
+            <RouterLink to="/wiki/core-tasks">Core task items</RouterLink>,
+            <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">Border geography</RouterLink>,
+            <RouterLink to="/guides/surviving-the-Minefield">Minefield tactics</RouterLink>,
+            <RouterLink to="/map">Map</RouterLink>,
+            <RouterLink to="/dev-updates">Road ahead</RouterLink> (builds),
+            <RouterLink to="/guides">All guides</RouterLink>.
           </p>
         </div>
       </div>
@@ -88,8 +92,9 @@
           <p>
             The site names <strong>Guards</strong> as foreign border forces who are armed, corrupt, and
             may rely on <strong>air support</strong> to stop crossings. Plan stamina, cover, and
-            medical supplies accordingly — see the
-            <RouterLink to="/guides/load-weapon">load weapons</RouterLink> guide for combat prep.
+            medical supplies accordingly — see
+            <RouterLink to="/getting-started">Start here</RouterLink> (weapons &amp; loading) and the
+            <RouterLink to="/wiki/weapons">weapons table</RouterLink> for combat prep.
           </p>
           <h3>After the border: Vostok rules</h3>
           <p>

@@ -3,7 +3,7 @@
  * Run: npm run sitemap
  *
  * Reads routeDefs from src/router/index.js (named export; Node 使用 MemoryHistory，不依赖浏览器).
- * Domain: VITE_SITE_ORIGIN env or default http://roadtovostok.org
+ * Domain: VITE_SITE_ORIGIN env or default https://roadtovostok.org (no trailing slash)
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -16,7 +16,7 @@ import npcList from '../src/data/item/npcs.js'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const projectRoot = path.resolve(__dirname, '..')
 
-const siteOrigin = (process.env.VITE_SITE_ORIGIN || 'http://roadtovostok.org').replace(/\/$/, '')
+const siteOrigin = (process.env.VITE_SITE_ORIGIN || 'https://roadtovostok.org').replace(/\/$/, '')
 
 function escapeLoc(url) {
   return url.replace(/&/g, '&amp;')

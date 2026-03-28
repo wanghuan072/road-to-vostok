@@ -26,7 +26,7 @@
           </p>
           <p>
             Please include a clear subject line and, when reporting a content issue, the page URL and a
-            short description of what should be fixed. We are a small fan project; replies may take
+            short description of what should be fixed. We are a small editorial team; replies may take
             several business days.
           </p>
 

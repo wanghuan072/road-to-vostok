@@ -15,14 +15,24 @@
           aria-hidden="true"
         />
         <p class="mods-page__eyebrow">
-          ModWorkshop · fan write-ups
+          ModWorkshop · editorial spotlights
         </p>
         <h1 class="mods-page__title">
           Road To Vostok Mods
         </h1>
-        <p class="mods-page__lede">
-          We do not host <strong>.vmz</strong> files — each article links out for downloads. Verify checksums and your demo / Early Access build before you install.
-        </p>
+        <div class="mods-page__intro">
+          <p>
+            Here we publish <strong>editorial mod spotlights</strong>: packs and tools we think are worth
+            reading about before you install—gameplay overhauls, QoL compilations, loader requirements
+            (e.g. Metro Mod Loader), and what each listing changes in a run. The list below is our
+            curated recommendations, not an exhaustive ModWorkshop index; we add entries as we review them.
+          </p>
+          <p>
+            We do <strong>not</strong> host <strong>.vmz</strong> files. Every card links to the author’s
+            source (ModWorkshop or as stated) for the real download. Match the file to your demo or Early
+            Access build and verify checksums before you load anything into the game.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -38,7 +48,7 @@
           <div class="mods-board__mast-text">
             <span class="mods-board__mast-label">Manifest</span>
             <p class="mods-board__mast-note">
-              {{ sorted.length }} {{ sorted.length === 1 ? 'listing' : 'listings' }} · unofficial
+              {{ sorted.length }} {{ sorted.length === 1 ? 'listing' : 'listings' }} · independent reference
             </p>
           </div>
           <div
@@ -245,15 +255,23 @@ function statViews(m) {
   max-width: 18ch;
 }
 
-.mods-page__lede {
+.mods-page__intro {
   margin: 0.85rem 0 0;
-  max-width: min(52ch, 100%);
+  max-width: min(58ch, 100%);
   font-size: 0.875rem;
   line-height: 1.58;
   color: color-mix(in srgb, var(--color-muted) 90%, var(--color-text));
 }
 
-.mods-page__lede strong {
+.mods-page__intro p {
+  margin: 0;
+}
+
+.mods-page__intro p + p {
+  margin-top: 0.75rem;
+}
+
+.mods-page__intro strong {
   color: color-mix(in srgb, var(--color-text) 82%, var(--color-amber));
   font-weight: 600;
 }

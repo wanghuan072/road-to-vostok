@@ -56,8 +56,8 @@
             <p class="section-kicker">Live changes</p>
             <h2>What did the developer update?</h2>
             <p class="section-intro">
-              Patch notes and surprise fixes almost always land in first-party channels first. This fan
-              page does not mirror every hotfix — use these when you want the real changelog.
+              Patch notes and surprise fixes almost always land in first-party channels first. This page
+              does not mirror every hotfix — use these when you want the real changelog.
             </p>
           </header>
           <ul class="follow-cards" role="list">
@@ -87,7 +87,9 @@
           </ul>
           <p class="cross-links">
             On this site:
-            <RouterLink to="/guides/roadmap">Roadmap guide</RouterLink>
+            <RouterLink to="/guides">Guides</RouterLink>
+            (<RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">geography</RouterLink>,
+            <RouterLink to="/guides/surviving-the-Minefield">Minefield</RouterLink>)
             ·
             <RouterLink to="/map">Map</RouterLink> and <RouterLink to="/tasks">Tasks</RouterLink>
             ·
@@ -127,7 +129,7 @@
 
         <section class="footnote-section page-body-section" aria-label="Disclaimer">
           <p class="footnote">
-            Unofficial summary only. If a date here disagrees with Steam or roadtovostok.com, trust the
+            Editorial summary only. If a date here disagrees with Steam or roadtovostok.com, trust the
             first-party source.
             </p>
           </section>

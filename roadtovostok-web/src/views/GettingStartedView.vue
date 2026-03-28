@@ -13,9 +13,10 @@
           </h1>
           <p>
             Core loop on PC, default-style controls (verify in your build), loading shotguns and
-            other firearms (<RouterLink to="/guides/load-weapon">Load weapon guide</RouterLink>),
-            survival and medical when you fracture or bleed
-            (<RouterLink to="/guides/medical">Medical guide</RouterLink>), and crafting context
+            other firearms (this page,
+            <RouterLink to="/getting-started#weapons-loading">weapon loading</RouterLink>),
+            survival and medical when you fracture or bleed (
+            <RouterLink to="/getting-started#medical">medical section below</RouterLink>), and crafting context
             (<RouterLink to="/wiki">Wiki</RouterLink>,
             <RouterLink to="/wiki/gathering">Gathering</RouterLink>). Facts follow the public Steam
             listing and community write-ups — always confirm in your installed demo or Early Access
@@ -91,7 +92,7 @@
             as the source of truth. The table below is a reference layout aggregated from a
             third-party PC controls write-up (Magic Game World, first published 2021, since revised)
             so you know what to look for — not a guarantee for your patch. Weapon UI details also
-            appear in the <RouterLink to="/guides/load-weapon">Load weapon guide</RouterLink>.
+            appear in the <RouterLink to="/getting-started#weapons-loading">weapon loading section</RouterLink> on this page.
           </p>
           <div class="table-wrap">
             <table class="data-table">
@@ -197,7 +198,7 @@
             a magazine, feed rounds into it in the inventory UI, re-seat the magazine, then use R to
             swap to a ready magazine during combat. Carrying a spare filled magazine is widely
             recommended so you can tap R under pressure. Details vary by weapon — see our
-            <RouterLink to="/guides/load-weapon">Load weapon guide</RouterLink> and the
+            <RouterLink to="/getting-started#weapons-loading">weapon loading section</RouterLink> and the
             <RouterLink to="/wiki/ammunition">Ammunition</RouterLink> table for cartridge planning.
           </p>
 
@@ -240,9 +241,11 @@
             states traders can provide medical care as a service. For item-level numbers (heal
             amount, use time, which affliction each item clears), common reference points come from the
             community-run Road To Vostok wiki on Fandom (Medical and Afflictions articles). Those
-            values can change with patches — verify against your in-game tooltips. On this site, see
-            the <RouterLink to="/guides/medical">Medical guide</RouterLink> and
-            <RouterLink to="/wiki/weapons">Weapons</RouterLink> when you are planning loadouts.
+            values can change with patches — verify against your in-game tooltips. For weapon planning
+            use <RouterLink to="/wiki/weapons">Weapons</RouterLink>; for mined borders and regional
+            context see
+            <RouterLink to="/guides/surviving-the-Minefield">Minefield tactics</RouterLink> and
+            <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</RouterLink>.
           </p>
 
           <h3>Fractures (“died from broken bone” situations)</h3>
@@ -320,8 +323,7 @@
             </table>
           </div>
           <p>
-            More detail and icons: <RouterLink to="/guides/medical">Medical guide</RouterLink>
-            (narrative walkthrough). Task-related loot is summarized under
+            Task-related loot is summarized under
             <RouterLink to="/wiki/core-tasks">Core task items</RouterLink>.
           </p>
           </div>
@@ -337,7 +339,7 @@
             <RouterLink to="/wiki">Wiki</RouterLink> lists loot that often feeds crafting loops:
             <RouterLink to="/wiki/gathering">Gathering</RouterLink>,
             <RouterLink to="/wiki/fishing">Fishing</RouterLink> when your build includes it, and
-            <RouterLink to="/guides/inverter-location">Inverter &amp; power</RouterLink> for shelter
+            <RouterLink to="/wiki/core-tasks">Core task items</RouterLink> for shelter
             cabling questions. Build announcements sit in
             <RouterLink to="/dev-updates">Road ahead</RouterLink>.
           </p>

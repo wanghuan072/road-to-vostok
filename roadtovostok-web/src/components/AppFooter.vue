@@ -16,8 +16,8 @@
             <p class="footer-title">Road To Vostok</p>
           </div>
           <p class="footer-tagline">
-            Unofficial field notes for loadouts, loot, maps, and routes across Area 05, the Border
-            Zone, and Vostok.
+            Reference notes for loadouts, loot, maps, and routes across Area 05, the Border Zone, and
+            Vostok.
           </p>
         </div>
         <nav class="footer-nav" aria-label="Footer">
@@ -34,7 +34,7 @@
           Not affiliated with the official Road To Vostok game or its developer. Game © respective
           rights holders. Guides reflect community knowledge and may change with updates and the
           public
-          <RouterLink to="/guides/roadmap">Road To Vostok roadmap</RouterLink>
+          <RouterLink to="/dev-updates">Road ahead &amp; roadmap digest</RouterLink>
           .
         </p>
         <p class="footer-copy">© {{ year }} Road To Vostok Guide — Survival FPS wiki &amp; task help.</p>

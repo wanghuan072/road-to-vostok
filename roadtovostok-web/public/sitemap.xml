@@ -1,151 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://roadtovostok.org/</loc>
+    <loc>https://roadtovostok.org/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/getting-started</loc>
+    <loc>https://roadtovostok.org/getting-started</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/wiki</loc>
+    <loc>https://roadtovostok.org/wiki</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/wiki/core-tasks</loc>
+    <loc>https://roadtovostok.org/wiki/core-tasks</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/wiki/weapons</loc>
+    <loc>https://roadtovostok.org/wiki/weapons</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/wiki/ammunition</loc>
+    <loc>https://roadtovostok.org/wiki/ammunition</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/wiki/fishing</loc>
+    <loc>https://roadtovostok.org/wiki/fishing</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/wiki/gathering</loc>
+    <loc>https://roadtovostok.org/wiki/gathering</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/wiki/npcs</loc>
+    <loc>https://roadtovostok.org/wiki/npcs</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/map</loc>
+    <loc>https://roadtovostok.org/map</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/tasks</loc>
+    <loc>https://roadtovostok.org/tasks</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/guides</loc>
+    <loc>https://roadtovostok.org/guides</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/dev-updates</loc>
+    <loc>https://roadtovostok.org/dev-updates</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/mods</loc>
+    <loc>https://roadtovostok.org/mods</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/privacy-policy</loc>
+    <loc>https://roadtovostok.org/privacy-policy</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.45</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/terms-of-service</loc>
+    <loc>https://roadtovostok.org/terms-of-service</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.45</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/copyright</loc>
+    <loc>https://roadtovostok.org/copyright</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.45</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/about</loc>
+    <loc>https://roadtovostok.org/about</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/contact</loc>
+    <loc>https://roadtovostok.org/contact</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/guides/an-analytical-deep-dive-into-its-real-world-geography</loc>
+    <loc>https://roadtovostok.org/guides/an-analytical-deep-dive-into-its-real-world-geography</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/guides/surviving-the-Minefield</loc>
+    <loc>https://roadtovostok.org/guides/surviving-the-Minefield</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/mods/oldmans-immersive-overhaul</loc>
+    <loc>https://roadtovostok.org/mods/oldmans-immersive-overhaul</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/wiki/npcs/bandits</loc>
+    <loc>https://roadtovostok.org/wiki/npcs/bandits</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/wiki/npcs/generalist</loc>
+    <loc>https://roadtovostok.org/wiki/npcs/generalist</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>http://roadtovostok.org/wiki/npcs/doctor</loc>
+    <loc>https://roadtovostok.org/wiki/npcs/doctor</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>

@@ -12,9 +12,12 @@
         <h1>Road To Vostok Core Tasks &amp; Power Items</h1>
         <p class="lead">
           Items players pair with shelter power, cabling, and quest chains (<strong>all tasks</strong>).
-          Cross-check the
-          <RouterLink to="/guides/inverter-location">inverter</RouterLink> guide and the
-          <RouterLink to="/map">Map</RouterLink> / <RouterLink to="/tasks">Tasks</RouterLink> pages.
+          Cross-check
+          <RouterLink to="/map">Map</RouterLink> and <RouterLink to="/tasks">Tasks</RouterLink> for
+          progression context; for long reads see
+          <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</RouterLink>
+          and
+          <RouterLink to="/guides/surviving-the-Minefield">Minefield tactics</RouterLink>.
         </p>
       </div>
     </section>
@@ -41,10 +44,12 @@
           </table>
         </div>
         <div class="cross-links">
-          Deeper walkthroughs:
-          <RouterLink to="/guides/inverter-location">Inverter location</RouterLink>
-          ·
+          Related:
           <RouterLink to="/tasks">Tasks</RouterLink>
+          ·
+          <RouterLink to="/guides/surviving-the-Minefield">Minefield guide</RouterLink>
+          ·
+          <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">Geography guide</RouterLink>
         </div>
       </div>
     </section>
@@ -52,6 +57,7 @@
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router'
 import rows from '../../data/item/coreTasks.js'
 </script>
 

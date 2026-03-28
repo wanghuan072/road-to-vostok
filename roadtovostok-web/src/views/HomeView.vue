@@ -13,7 +13,7 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-copy">
-            <p class="hero-eyebrow">Unofficial wiki · demo &amp; Steam · Early Access</p>
+            <p class="hero-eyebrow">Survival guide · demo &amp; Steam · Early Access</p>
             <h1 class="hero-title">
               Road To Vostok Guide — how to play, Steam demo, guns &amp; roadmap
             </h1>
@@ -350,10 +350,13 @@
             <h2>Road To Vostok roadmap &amp; devlog</h2>
             <p>
               Long-form developer updates on YouTube cover Early Access scope, shelters, and later beats like
-              fishing and seasons. On this site: the
-              <RouterLink to="/guides/roadmap">roadmap guide</RouterLink>,
-              <RouterLink to="/dev-updates">Road ahead</RouterLink> (builds &amp; patch-style notes), and when your
-              build adds it —
+              fishing and seasons. On this site:
+              <RouterLink to="/guides">Guides</RouterLink> include
+              <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</RouterLink>
+              and
+              <RouterLink to="/guides/surviving-the-Minefield">Minefield tactics</RouterLink>;
+              <RouterLink to="/dev-updates">Road ahead</RouterLink> covers builds and patch-style notes; when your
+              build adds it, see
               <RouterLink to="/wiki/fishing">Wiki · Fishing</RouterLink>.
             </p>
           </header>
@@ -393,7 +396,7 @@
       <div class="container">
         <div class="about-content reveal-on-scroll">
           <span class="section-kicker">About</span>
-          <h2>About this Road To Vostok wiki</h2>
+          <h2>About this Road To Vostok guide</h2>
           <p>
             Road To Vostok (Road To Vostok Ltd.) is a hardcore single-player survival FPS on the Finland–Russia
             border. You loot in Area 05, cross the Border Zone, and can enter Vostok under stricter permadeath
@@ -401,9 +404,9 @@
             how to play, loadout and medical questions, tasks, roadmap timing, and PC saves.
           </p>
           <p>
-            This English fan wiki covers those topics with practical guides on loadouts, the long-term roadmap,
-            crafting, and fishing as patches add them — always double-check what your installed build actually
-            shows.
+            This English-language guide covers those topics with practical articles on loadouts, the long-term
+            roadmap, crafting, and fishing as patches add them — always double-check what your installed build
+            actually shows.
           </p>
           <nav
             class="about-hub-links"
@@ -509,9 +512,12 @@ const quickHubs = [
 ]
 
 const quickRefs = [
-  { to: '/guides/load-weapon', label: 'Load weapon' },
-  { to: '/guides/medical', label: 'Medical' },
-  { to: '/guides/roadmap', label: 'Roadmap guide' },
+  {
+    to: '/guides/an-analytical-deep-dive-into-its-real-world-geography',
+    label: 'Geography guide',
+  },
+  { to: '/guides/surviving-the-Minefield', label: 'Minefield guide' },
+  { to: '/dev-updates', label: 'Road ahead' },
   { to: '/wiki/weapons', label: 'Weapons table' },
   { to: '/wiki/npcs', label: 'NPCs & traders' },
 ]
@@ -550,9 +556,9 @@ const gearCatalog = [
   },
   {
     kicker: 'Guide',
-    title: 'Medical survival',
-    blurb: 'Bleeding, fractures, splints, and meds.',
-    to: '/guides/medical',
+    title: 'Minefield tactics',
+    blurb: 'Mined border routes, AI pressure, and the Vostok gate.',
+    to: '/guides/surviving-the-Minefield',
   },
 ]
 
@@ -565,8 +571,8 @@ const questRelatedPages = [
 
 const faqHubLinks = [
   { to: '/getting-started', label: 'Start here' },
-  { to: '/guides/load-weapon', label: 'Load weapon' },
-  { to: '/guides/medical', label: 'Medical' },
+  { to: '/guides/surviving-the-Minefield', label: 'Minefield guide' },
+  { to: '/guides/an-analytical-deep-dive-into-its-real-world-geography', label: 'Geography guide' },
   { to: '/tasks', label: 'Tasks' },
 ]
 
@@ -627,7 +633,7 @@ const faq = [
   },
   {
     q: 'Is this an official Road To Vostok website?',
-    a: 'No. This is a fan wiki. Cross-check facts with your installed build and official channels.',
+    a: 'No. This is an independent reference site. Cross-check facts with your installed build and official channels.',
   },
 ]
 

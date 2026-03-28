@@ -12,7 +12,7 @@
           <p>
             Use the map for Area 05, the Border Zone, and Vostok, then read the regional overview and
             Area 05 notes below. For trader tasks, border crossings, and Vostok rules, open the
-            <RouterLink to="/tasks">Tasks</RouterLink> page. Unofficial; verify against your installed build.
+            <RouterLink to="/tasks">Tasks</RouterLink> page. Verify against your installed build.
           </p>
         </div>
       </div>
@@ -356,10 +356,12 @@
             </li>
           </ul>
           <p class="guide-tools">
-            On this wiki:
+            On this site:
             <RouterLink to="/wiki">Wiki</RouterLink> (gear tables),
-            <RouterLink to="/getting-started">Start here</RouterLink> (loop &amp; controls),
-            <RouterLink to="/guides/medical">Medical</RouterLink> (injuries).
+            <RouterLink to="/getting-started">Start here</RouterLink> (loop, controls, medical basics),
+            <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">Border geography guide</RouterLink>,
+            <RouterLink to="/guides/surviving-the-Minefield">Minefield guide</RouterLink>,
+            <RouterLink to="/tasks">Tasks &amp; Vostok rules</RouterLink>.
           </p>
         </div>
       </div>
@@ -372,6 +374,8 @@
           <RouterLink to="/tasks">Tasks &amp; border / Vostok guide</RouterLink>
           ·
           <RouterLink to="/wiki/core-tasks">Core task items (wiki)</RouterLink>
+          ·
+          <RouterLink to="/guides">Guides</RouterLink>
         </p>
       </div>
     </section>

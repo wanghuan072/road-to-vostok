@@ -18,11 +18,11 @@ export const routeDefs = [
     meta: {
       sitemap: { priority: 1.0, changefreq: 'weekly' },
       seo: {
-        title: 'Road To Vostok Guide — Maps, Tasks, Weapons & Survival Wiki',
+        title: 'Road To Vostok Guide — Maps, Tasks, Weapons & Survival Database',
         description:
-          'Fan-made Road To Vostok survival wiki: how to play, Steam demo and Early Access, map and tasks pages, loadouts, guides, mods notes, and official roadmap context.',
+          'Road To Vostok survival guide and database: gameplay basics, Steam demo and Early Access, interactive map, task progression, weapon and item tables, strategy articles, mods overview, and roadmap context. Verify details against your build.',
         keywords:
-          'Road To Vostok, guide, wiki, survival FPS, Steam demo, Early Access, map, tasks, weapons, Area 05, Border Zone, Vostok, roadmap',
+          'Road To Vostok, survival guide, game database, Steam, Early Access, map, tasks, weapons, Area 05, Border Zone, Vostok, roadmap',
       },
     },
   },
@@ -48,11 +48,11 @@ export const routeDefs = [
     meta: {
       sitemap: { priority: 0.9, changefreq: 'weekly' },
       seo: {
-        title: 'Road To Vostok Wiki — Gear, Tasks & Crafting Tables',
+        title: 'Road To Vostok Database — Gear, Tasks & Crafting Tables',
         description:
-          'Browse fan-maintained Road To Vostok wiki tables: weapons, ammo, core task props, inverter and cables, fishing, and gathering — always confirm values in-game.',
+          'Curated Road To Vostok item and resource tables: weapons, ammunition, core quest items, shelter power, fishing, and gathering. Cross-check every value with your installed version.',
         keywords:
-          'Road To Vostok wiki, items, weapons, ammunition, inverter, gathering, fishing, crafting',
+          'Road To Vostok database, item guide, weapons, ammunition, inverter, gathering, fishing, crafting',
       },
     },
   },
@@ -80,7 +80,7 @@ export const routeDefs = [
       seo: {
         title: 'Road To Vostok Weapons — Knives, Guns, SMGs & Calibers',
         description:
-          'Road To Vostok weapon categories: knives, pistols, rifles, SMGs & PDWs, shotguns, bolt-action, semi-auto. Community wiki–style stats and loot hints — verify in your build.',
+          'Road To Vostok weapon reference: knives through precision rifles and SMGs, with category notes, stat summaries, and loot context. Validate against your current patch.',
         keywords:
           'Road To Vostok weapons, AKM, MP7, Mosin, SVD, ammo, survival FPS',
       },
@@ -125,7 +125,7 @@ export const routeDefs = [
       seo: {
         title: 'Road To Vostok Gathering — Materials & Resource Table',
         description:
-          'Gathering and raw materials in Road To Vostok: resources, typical sources, and crafting relevance. Community-sourced; compare with your installed version.',
+          'Gathering and raw materials in Road To Vostok: resource types, typical sources, and crafting relevance. Compare entries with your installed version.',
         keywords:
           'Road To Vostok gathering, materials, crafting, loot, survival',
       },
@@ -140,9 +140,9 @@ export const routeDefs = [
       seo: {
         title: 'Road To Vostok NPCs — Traders & Area 05 Hubs',
         description:
-          'Fan wiki NPC and hub notes for Road To Vostok: Generalist and Doctor traders, Village hub context, and links from the interactive map.',
+          'Road To Vostok NPC reference: Generalist and Doctor traders, Village and Shipyard hubs, stock behavior, and cross-links from the interactive map.',
         keywords:
-          'Road To Vostok NPCs, traders, Generalist, Doctor, Village, Area 05, wiki',
+          'Road To Vostok NPCs, traders, Generalist, Doctor, Village, Area 05, game guide',
       },
     },
   },
@@ -153,9 +153,10 @@ export const routeDefs = [
     meta: {
       sitemap: false,
       seo: {
-        title: 'NPC — Road To Vostok Wiki',
-        description: 'Fan wiki NPC article for Road To Vostok.',
-        keywords: 'Road To Vostok, NPC, wiki',
+        title: 'NPC — Road To Vostok Reference',
+        description:
+          'Road To Vostok NPC reference: trader stock, tasks, locations, or combat behavior. Supplement official materials; confirm in your build.',
+        keywords: 'Road To Vostok, NPC, traders, game guide, reference',
       },
     },
   },
@@ -168,7 +169,7 @@ export const routeDefs = [
       seo: {
         title: 'Road To Vostok Map — Area 05, POIs & Regional Overview',
         description:
-          'Interactive fan map: Area 05, Border Zone, and Vostok pins, location index, and regional overview. Unofficial overlay — verify against your in-game map.',
+          'Interactive Road To Vostok map: Area 05, Border Zone, and Vostok points of interest, searchable index, and regional overview. Use alongside the in-game map and confirm coordinates in-client.',
         keywords:
           'Road To Vostok map, Area 05, Border Zone, Vostok, POI, location index',
       },
@@ -183,7 +184,7 @@ export const routeDefs = [
       seo: {
         title: 'Road To Vostok Tasks — Progression, Border & Vostok Rules',
         description:
-          'Trader tasks vs roadmap questline, practical progression order, Border Zone crossings, and Vostok permadeath rules — unofficial; confirm in your build.',
+          'Road To Vostok tasks and progression reference: trader objectives, Border Zone crossings, Vostok permadeath rules, and suggested route order. Confirm quest behavior in your build.',
         keywords:
           'Road To Vostok all tasks, Border Zone, Vostok, traders, quests, permadeath',
       },
@@ -198,7 +199,7 @@ export const routeDefs = [
       seo: {
         title: 'Road To Vostok Guides — Weapons, Medical, Power & Roadmap',
         description:
-          'Player guides for Road To Vostok: loading weapons, medical survival, inverter and shelter power, and Early Access roadmap context. Unofficial fan articles.',
+          'Road To Vostok strategy guides: weapon loading, medical survival, shelter power, and Early Access roadmap context. Editorial reference — validate mechanics in your installed version.',
         keywords:
           'Road To Vostok guides, load shotgun, medical, inverter, roadmap',
       },
@@ -212,8 +213,9 @@ export const routeDefs = [
       sitemap: false,
       seo: {
         title: 'Guide — Road To Vostok',
-        description: 'Player guide article for Road To Vostok.',
-        keywords: 'Road To Vostok, guide',
+        description:
+          'In-depth Road To Vostok guide: tactics, systems, or roadmap analysis. Validate gameplay details against your installed build.',
+        keywords: 'Road To Vostok, strategy guide, walkthrough, Early Access',
       },
     },
   },
@@ -226,7 +228,7 @@ export const routeDefs = [
       seo: {
         title: 'Road To Vostok Updates & Early Access Roadmap',
         description:
-          'Road To Vostok dev updates and roadmap summary: Early Access builds, release timing vs Steam, and planned features. Unofficial digest — trust official sites for dates.',
+          'Road To Vostok development updates and Early Access roadmap digest: build milestones, Steam release timing, and announced features. Editorial summary — confirm dates on Steam and the official site.',
         keywords:
           'Road To Vostok roadmap, Early Access, dev updates, release date, Steam, builds',
       },
@@ -239,11 +241,11 @@ export const routeDefs = [
     meta: {
       sitemap: { priority: 0.85, changefreq: 'weekly' },
       seo: {
-        title: 'Road To Vostok Mods — Community Packs & Early Access Notes',
+        title: 'Road To Vostok Mods — Editorial Spotlights & Recommended Packs',
         description:
-          'Unofficial modding notes for Road To Vostok: Early Access expectations, community packs, and safe experimentation. No hosted downloads — verify every file.',
+          'Curated Road To Vostok mod recommendations: editorial spotlights on gameplay packs and tools we review—features, Metro Mod Loader notes, and safe install guidance. Not a full ModWorkshop mirror; no hosted .vmz files—downloads only via linked author pages.',
         keywords:
-          'Road To Vostok mods, modding, Early Access, community, unofficial',
+          'Road To Vostok mods, modding, Early Access, ModWorkshop, Metro Mod Loader, game guide',
       },
     },
   },
@@ -255,8 +257,9 @@ export const routeDefs = [
       sitemap: false,
       seo: {
         title: 'Mod article — Road To Vostok',
-        description: 'Community modding article for Road To Vostok.',
-        keywords: 'Road To Vostok, mods',
+        description:
+          'Road To Vostok mod spotlight: feature overview, compatibility notes, loader requirements, and authoritative download links.',
+        keywords: 'Road To Vostok, mods, modding guide, Early Access',
       },
     },
   },
@@ -269,9 +272,9 @@ export const routeDefs = [
       seo: {
         title: 'Privacy Policy — Road To Vostok Guide',
         description:
-          'Privacy Policy for roadtovostok.org: what data may be collected when you browse this fan wiki, cookies, third parties, and how to contact the site operator.',
+          'Privacy Policy for roadtovostok.org: browsing data, cookies, third-party services, retention, and how to contact the site operator.',
         keywords:
-          'Road To Vostok Guide, privacy policy, roadtovostok.org, fan wiki, data protection',
+          'Road To Vostok Guide, privacy policy, roadtovostok.org, data protection, cookies',
       },
     },
   },
@@ -284,9 +287,9 @@ export const routeDefs = [
       seo: {
         title: 'Terms of Service — Road To Vostok Guide',
         description:
-          'Terms of Service for using Road To Vostok Guide: unofficial fan site disclaimer, use of content, no warranty, and contact email.',
+          'Terms of Service for Road To Vostok Guide: acceptable use, intellectual property notice, disclaimers, limitation of liability, and contact information.',
         keywords:
-          'Road To Vostok Guide, terms of service, disclaimer, fan site',
+          'Road To Vostok Guide, terms of service, disclaimer, legal, reference site',
       },
     },
   },
@@ -301,7 +304,7 @@ export const routeDefs = [
         description:
           'Copyright notice: game trademarks and IP belong to respective owners; original site content and how to request takedowns for Road To Vostok Guide.',
         keywords:
-          'Road To Vostok, copyright, trademark, fan wiki, DMCA',
+          'Road To Vostok, copyright, trademark, DMCA, intellectual property',
       },
     },
   },
@@ -314,9 +317,9 @@ export const routeDefs = [
       seo: {
         title: 'About Us — Road To Vostok Guide',
         description:
-          'About Road To Vostok Guide: an unofficial English wiki for maps, items, and survival help — not affiliated with the official game.',
+          'About Road To Vostok Guide: English-language reference for maps, items, tasks, and survival systems. Independent resource; not affiliated with the developer or publisher.',
         keywords:
-          'Road To Vostok Guide, about, fan wiki, unofficial',
+          'Road To Vostok Guide, about, game reference, survival guide, independent',
       },
     },
   },
