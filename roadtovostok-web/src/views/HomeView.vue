@@ -30,7 +30,7 @@
               Single-player survival; mod tools are on the official long-term plan. Use
               <RouterLink to="/getting-started">Start here</RouterLink> for the core loop,
               <RouterLink to="/map">Map</RouterLink> and <RouterLink to="/tasks">Tasks</RouterLink> for locations
-              and objectives, or jump straight to the hot searches below.
+              and objectives — the compass block below mirrors every main section plus common guides.
             </p>
             <div class="hero-actions">
               <RouterLink to="/getting-started" class="btn btn-primary">Field briefing</RouterLink>
@@ -58,171 +58,171 @@
       </div>
     </section>
 
-    <!-- Trending -->
-    <section class="trending-section">
+    <!-- Site compass: main nav + deep links (matches live routes) -->
+    <section class="home-compass-section">
       <div class="container">
-        <div class="trending-content reveal-on-scroll">
-          <header class="section-head">
-            <span class="section-kicker">Hot searches</span>
-            <h2>Trending searches for Road To Vostok</h2>
+        <div class="home-compass reveal-on-scroll">
+          <header class="section-head home-compass__head">
+            <span class="section-kicker">Site compass</span>
+            <h2>Every hub on this site — plus common guides</h2>
             <p>
-              High-intent queries (load shotgun, inverter, broken bone, roadmap, all tasks, Steam
-              saves) — one click to the matching guide or hub.
+              Same destinations as the top navigation, laid out for scanning. Below that: shortcut jumps to
+              high-traffic guides and wiki tables (all paths exist in the router).
             </p>
           </header>
-          <ul class="trending-grid" role="list">
-            <li>
-              <RouterLink to="/guides/load-weapon" class="trend-card">
-                <span class="trend-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M4 12h16M4 8h10M4 16h10" stroke-linecap="round" />
-                    <circle cx="17" cy="8" r="2" />
-                    <circle cx="17" cy="16" r="2" />
-                  </svg>
-                </span>
-                <span class="trend-label">How to load shotgun &amp; weapon</span>
-                <span class="trend-meta">Road To Vostok reload &amp; magazines</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/guides/inverter-location" class="trend-card">
-                <span class="trend-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <rect x="3" y="6" width="18" height="12" rx="2" />
-                    <path d="M9 10v4M12 8v8M15 10v4" stroke-linecap="round" />
-                  </svg>
-                </span>
-                <span class="trend-label">Road To Vostok inverter</span>
-                <span class="trend-meta">Location &amp; shelter power</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/guides/medical" class="trend-card">
-                <span class="trend-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path
-                      d="M8 4l4 4-6 6 4 4 6-6 4 4M6 20l2-2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span class="trend-label">Broken bone &amp; medical</span>
-                <span class="trend-meta">Died from fracture — heal up</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/guides/roadmap" class="trend-card">
-                <span class="trend-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M4 19V5M4 19h16M8 16V9M12 16v-5M16 16V7" stroke-linecap="round" />
-                  </svg>
-                </span>
-                <span class="trend-label">Road To Vostok roadmap</span>
-                <span class="trend-meta">Early Access &amp; release info</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/tasks" class="trend-card">
-                <span class="trend-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6" stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <span class="trend-label">Road To Vostok all tasks</span>
-                <span class="trend-meta">Demo quests &amp; maps</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink to="/mods" class="trend-card">
-                <span class="trend-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <span class="trend-label">Mods &amp; community</span>
-                <span class="trend-meta">EA modding notes (unofficial)</span>
-              </RouterLink>
-            </li>
-          </ul>
+
+          <div class="home-compass__board">
+            <p
+              class="home-compass__board-label"
+              id="home-compass-hubs-label"
+            >
+              Main sections
+            </p>
+            <ul
+              class="home-compass-hubs"
+              role="list"
+              aria-labelledby="home-compass-hubs-label"
+            >
+              <li
+                v-for="(hub, i) in quickHubs"
+                :key="hub.to"
+              >
+                <RouterLink
+                  :to="hub.to"
+                  class="home-compass-hub"
+                >
+                  <span
+                    class="home-compass-hub__idx"
+                    aria-hidden="true"
+                  >{{ hubIndex(i) }}</span>
+                  <span class="home-compass-hub__body">
+                    <span class="home-compass-hub__title">{{ hub.title }}</span>
+                    <span class="home-compass-hub__hint">{{ hub.hint }}</span>
+                    <span class="home-compass-hub__path">{{ hub.to }}</span>
+                  </span>
+                  <span
+                    class="home-compass-hub__go"
+                    aria-hidden="true"
+                  >→</span>
+                </RouterLink>
+              </li>
+            </ul>
+
+            <div
+              class="home-compass-refs"
+              aria-labelledby="home-compass-refs-label"
+            >
+              <p
+                id="home-compass-refs-label"
+                class="home-compass__board-label home-compass__board-label--refs"
+              >
+                Guides &amp; wiki picks
+              </p>
+              <ul
+                class="home-compass-refs__list"
+                role="list"
+              >
+                <li
+                  v-for="r in quickRefs"
+                  :key="r.to"
+                >
+                  <RouterLink
+                    :to="r.to"
+                    class="home-compass-ref"
+                  >
+                    <span class="home-compass-ref__text">{{ r.label }}</span>
+                    <span class="home-compass-ref__path">{{ r.to }}</span>
+                  </RouterLink>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <nav class="hub-strip-nav container" aria-label="Main guide hubs">
-      <ul class="hub-strip-list reveal-on-scroll" role="list">
-        <li>
-          <RouterLink class="hub-chip" to="/getting-started">Start here</RouterLink>
-        </li>
-        <li>
-          <RouterLink class="hub-chip" to="/wiki">Wiki</RouterLink>
-        </li>
-        <li>
-          <RouterLink class="hub-chip" to="/map">Map</RouterLink>
-        </li>
-        <li>
-          <RouterLink class="hub-chip" to="/tasks">Tasks</RouterLink>
-        </li>
-        <li>
-          <RouterLink class="hub-chip" to="/guides">Guides</RouterLink>
-        </li>
-        <li>
-          <RouterLink class="hub-chip" to="/dev-updates">Road ahead</RouterLink>
-        </li>
-        <li>
-          <RouterLink class="hub-chip" to="/mods">Mods</RouterLink>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Featured database -->
+    <!-- Wiki + guides: editorial intro + compact entry list; cards only for deep links -->
     <section class="featured-section">
       <div class="container">
         <div class="featured-split reveal-on-scroll">
           <div class="featured-split-intro">
             <header class="section-head">
-              <span class="section-kicker">Loot &amp; tables</span>
-              <h2>Gear hub shortcuts — tables &amp; deep guides</h2>
+              <span class="section-kicker">Wiki &amp; guides</span>
+              <h2>Loot tables and survival write-ups</h2>
               <p>
-                Same coverage as
-                <RouterLink to="/wiki">Wiki</RouterLink>, laid out as quick jumps: weapons
-                and ammo tables on the left column of links, medical and power guides, then the
-                <RouterLink to="/map">map</RouterLink> and <RouterLink to="/tasks">tasks</RouterLink> pages for
-                keys. No thumbnails — just scannable labels.
+                Spawn tables and trader lists drift between patches — we keep them here so you can compare notes with
+                what you see in-game, not to mirror the header menu. Longer explainers sit under
+                <RouterLink to="/guides">Guides</RouterLink>; the
+                <RouterLink to="/map">map</RouterLink> and <RouterLink to="/tasks">tasks</RouterLink> pages are for
+                places and objectives. On the right: a few pages people open most often.
               </p>
             </header>
-            <ul class="featured-cross" role="list">
-              <li>
-                <RouterLink to="/guides/load-weapon">Load weapon guide</RouterLink>
-                — magazines vs manual shells
-              </li>
-              <li>
-                <RouterLink to="/guides/medical">Medical guide</RouterLink>
-                — fractures and bleeding
-              </li>
-              <li>
-                <RouterLink to="/guides/inverter-location">Inverter &amp; power</RouterLink>
-                — shelter utilities
-              </li>
-              <li>
-                <RouterLink to="/guides/roadmap">Roadmap article</RouterLink>
-                — milestones in prose form
+            <p
+              id="gear-cross-label"
+              class="gear-cross-label"
+            >
+              Entry points
+            </p>
+            <ul
+              class="gear-cross-list"
+              role="list"
+              aria-labelledby="gear-cross-label"
+            >
+              <li
+                v-for="row in gearCrossLinks"
+                :key="row.to"
+              >
+                <RouterLink
+                  :to="row.to"
+                  class="gear-cross-link"
+                >{{ row.label }}</RouterLink>
+                <span class="gear-cross-hint">{{ row.hint }}</span>
               </li>
             </ul>
           </div>
-          <ul class="featured-catalog" role="list">
-            <li v-for="cat in featured" :key="cat.title" class="featured-catalog-item">
-              <RouterLink :to="cat.to" class="featured-catalog-link">
-                <span class="featured-catalog-accent" aria-hidden="true" />
-                <div class="featured-catalog-body">
-                  <span class="featured-catalog-kicker">{{ cat.kicker }}</span>
-                  <h3 class="featured-catalog-title">{{ cat.title }}</h3>
-                  <p class="featured-catalog-blurb">{{ cat.blurb }}</p>
-                </div>
-                <span class="featured-catalog-go" aria-hidden="true">→</span>
-              </RouterLink>
-            </li>
-          </ul>
+          <div class="featured-catalog-wrap">
+            <p
+              id="gear-catalog-label"
+              class="gear-catalog-label"
+            >
+              Popular picks
+            </p>
+            <ul
+              class="featured-catalog"
+              role="list"
+              aria-labelledby="gear-catalog-label"
+            >
+              <li
+                v-for="cat in gearCatalog"
+                :key="cat.to + cat.title"
+                class="featured-catalog-item"
+              >
+                <RouterLink
+                  :to="cat.to"
+                  class="featured-catalog-link"
+                >
+                  <span
+                    class="featured-catalog-accent"
+                    aria-hidden="true"
+                  />
+                  <div class="featured-catalog-body">
+                    <span class="featured-catalog-kicker">{{ cat.kicker }}</span>
+                    <h3 class="featured-catalog-title">
+                      {{ cat.title }}
+                    </h3>
+                    <p class="featured-catalog-blurb">
+                      {{ cat.blurb }}
+                    </p>
+                    <span class="featured-catalog-path">{{ cat.to }}</span>
+                  </div>
+                  <span
+                    class="featured-catalog-go"
+                    aria-hidden="true"
+                  >→</span>
+                </RouterLink>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -248,7 +248,9 @@
               The game is still a <strong>sandbox</strong>: you are not forced into Vostok or a single playstyle.
               “Pushing east” simply means following that intended difficulty curve—secure the west, then attempt
               harder crossings—not a hidden story mandate. For step-by-step locations use
-              <RouterLink to="/map">Map</RouterLink> and <RouterLink to="/tasks">Tasks</RouterLink>; for controls and the survival loop,
+              <RouterLink to="/map">Map</RouterLink>,
+              <RouterLink to="/tasks">Tasks</RouterLink>, and
+              <RouterLink to="/wiki/npcs">NPCs</RouterLink>; for controls and the survival loop,
               <RouterLink to="/getting-started">Start here</RouterLink>.
             </p>
           </header>
@@ -314,6 +316,27 @@
               </p>
             </div>
           </div>
+
+          <nav
+            class="quest-related"
+            aria-label="Site pages for regions and progression"
+          >
+            <span class="quest-related-label">Open on this site</span>
+            <ul
+              class="quest-related-list"
+              role="list"
+            >
+              <li
+                v-for="l in questRelatedPages"
+                :key="l.to"
+              >
+                <RouterLink
+                  :to="l.to"
+                  class="quest-related-link"
+                >{{ l.label }}</RouterLink>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
@@ -327,9 +350,11 @@
             <h2>Road To Vostok roadmap &amp; devlog</h2>
             <p>
               Long-form developer updates on YouTube cover Early Access scope, shelters, and later beats like
-              fishing and seasons. Pair the embed with our
-              <RouterLink to="/guides/roadmap">roadmap article</RouterLink> and
-              <RouterLink to="/dev-updates">Road ahead</RouterLink> for dates and build lists.
+              fishing and seasons. On this site: the
+              <RouterLink to="/guides/roadmap">roadmap guide</RouterLink>,
+              <RouterLink to="/dev-updates">Road ahead</RouterLink> (builds &amp; patch-style notes), and when your
+              build adds it —
+              <RouterLink to="/wiki/fishing">Wiki · Fishing</RouterLink>.
             </p>
           </header>
           <div class="devlog-layout">
@@ -354,7 +379,8 @@
                 <li>How later builds are expected to layer quests, seasons, and naval content.</li>
               </ul>
               <p>
-                For patch-style notes, visit <RouterLink to="/dev-updates">Road ahead</RouterLink>.
+                For patch-style notes, visit <RouterLink to="/dev-updates">Road ahead</RouterLink>. Mod expectations:
+                <RouterLink to="/mods">Mods hub</RouterLink> (no hosted files).
               </p>
             </div>
           </div>
@@ -379,6 +405,27 @@
             crafting, and fishing as patches add them — always double-check what your installed build actually
             shows.
           </p>
+          <nav
+            class="about-hub-links"
+            aria-label="Main site pages"
+          >
+            <RouterLink
+              to="/getting-started"
+              class="about-hub-link"
+            >Start here</RouterLink>
+            <RouterLink
+              to="/wiki"
+              class="about-hub-link"
+            >Wiki</RouterLink>
+            <RouterLink
+              to="/guides"
+              class="about-hub-link"
+            >Guides</RouterLink>
+            <RouterLink
+              to="/about"
+              class="about-hub-link"
+            >About us</RouterLink>
+          </nav>
         </div>
       </div>
     </section>
@@ -390,11 +437,35 @@
           <span class="section-kicker">FAQ</span>
           <h2>Frequently asked questions</h2>
           <dl class="faq-list">
-            <div v-for="row in faq" :key="row.q" class="faq-item">
+            <div
+              v-for="row in faq"
+              :key="row.q"
+              class="faq-item"
+            >
               <dt>{{ row.q }}</dt>
               <dd>{{ row.a }}</dd>
             </div>
           </dl>
+          <nav
+            class="faq-hub"
+            aria-label="Jump to detailed pages"
+          >
+            <span class="faq-hub-label">Related pages</span>
+            <ul
+              class="faq-hub-list"
+              role="list"
+            >
+              <li
+                v-for="l in faqHubLinks"
+                :key="l.to"
+              >
+                <RouterLink
+                  :to="l.to"
+                  class="faq-hub-link"
+                >{{ l.label }}</RouterLink>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
@@ -408,31 +479,95 @@ import { RouterLink } from 'vue-router'
 const homeRoot = ref(null)
 let revealObserver = null
 
-const featured = [
+/** Site compass: keep hub count ≈ refs count so the two columns stay even */
+const quickHubs = [
+  {
+    to: '/getting-started',
+    title: 'Start here',
+    hint: 'First session, controls, shelter loop',
+  },
+  {
+    to: '/wiki',
+    title: 'Wiki',
+    hint: 'Item tables — weapons, ammo, tasks',
+  },
+  {
+    to: '/guides',
+    title: 'Guides',
+    hint: 'Long-form player articles',
+  },
+  {
+    to: '/map',
+    title: 'Map',
+    hint: 'Area 05, Border, Vostok pins',
+  },
+  {
+    to: '/tasks',
+    title: 'Tasks',
+    hint: 'Objectives, traders, progression',
+  },
+]
+
+const quickRefs = [
+  { to: '/guides/load-weapon', label: 'Load weapon' },
+  { to: '/guides/medical', label: 'Medical' },
+  { to: '/guides/roadmap', label: 'Roadmap guide' },
+  { to: '/wiki/weapons', label: 'Weapons table' },
+  { to: '/wiki/npcs', label: 'NPCs & traders' },
+]
+
+function hubIndex(i) {
+  return String(i + 1).padStart(2, '0')
+}
+
+/** Left column: short link + hint (not duplicate card nav) */
+const gearCrossLinks = [
+  { to: '/wiki', label: 'Wiki hub', hint: 'Tables, NPCs, fishing, gathering' },
+  { to: '/guides', label: 'Guides', hint: 'Roadmap, medical, loadouts' },
+  { to: '/map', label: 'Map', hint: 'Pins and location index' },
+  { to: '/tasks', label: 'Tasks', hint: 'Objectives and zone rules' },
+]
+
+/** Right column: high-traffic tables & guides */
+const gearCatalog = [
   {
     kicker: 'Wiki',
-    title: 'Guns, ammo & tables',
-    blurb: 'Open the wiki hub for weapons, ammunition, core task props, fishing, and gathering tables.',
-    to: '/wiki',
+    title: 'Weapons',
+    blurb: 'Category tables and stats — verify against your build.',
+    to: '/wiki/weapons',
   },
   {
-    kicker: 'Medical',
-    title: 'Fractures, bleeding & meds',
-    blurb: 'Splints, bandages, and what to do if a broken bone ended your run.',
+    kicker: 'Wiki',
+    title: 'NPCs & traders',
+    blurb: 'Who sells what; pairs with map pins.',
+    to: '/wiki/npcs',
+  },
+  {
+    kicker: 'Wiki',
+    title: 'Core task items',
+    blurb: 'Inverter, cables, keys, and quest props.',
+    to: '/wiki/core-tasks',
+  },
+  {
+    kicker: 'Guide',
+    title: 'Medical survival',
+    blurb: 'Bleeding, fractures, splints, and meds.',
     to: '/guides/medical',
   },
-  {
-    kicker: 'Power',
-    title: 'Inverter & B cables',
-    blurb: 'Shelter power routing, utilities, and cable loot to watch for on maps.',
-    to: '/guides/inverter-location',
-  },
-  {
-    kicker: 'Tasks',
-    title: 'All tasks, traders & keys',
-    blurb: 'Quest flow, traders, and objectives before you push toward harder zones.',
-    to: '/tasks',
-  },
+]
+
+const questRelatedPages = [
+  { to: '/map', label: 'Map' },
+  { to: '/tasks', label: 'Tasks' },
+  { to: '/wiki/npcs', label: 'NPCs' },
+  { to: '/getting-started', label: 'Start here' },
+]
+
+const faqHubLinks = [
+  { to: '/getting-started', label: 'Start here' },
+  { to: '/guides/load-weapon', label: 'Load weapon' },
+  { to: '/guides/medical', label: 'Medical' },
+  { to: '/tasks', label: 'Tasks' },
 ]
 
 const devlogIframeTitle = 'Road To Vostok developer interview — Early Access and roadmap discussion'
@@ -946,7 +1081,7 @@ onUnmounted(() => {
   border-left: 3px solid var(--color-ice-dim);
 }
 
-.trending-section,
+.home-compass-section,
 .featured-section,
 .questline-section,
 .devlog-section,
@@ -955,7 +1090,7 @@ onUnmounted(() => {
   padding: clamp(2.75rem, 5vw, 3.75rem) 0;
 }
 
-.trending-section {
+.home-compass-section {
   background: color-mix(in srgb, var(--color-bg) 78%, transparent);
   border-bottom: 1px solid var(--color-border);
 }
@@ -965,154 +1100,204 @@ onUnmounted(() => {
   border-bottom: 1px solid var(--color-border);
 }
 
-/* —— Trending：固定 3×2 桌面栅格，卡片等高 —— */
-.trending-grid {
+/* —— Site compass：简报板式主区 + 次行深链 —— */
+.home-compass__head {
+  margin-bottom: 1.75rem;
+}
+
+.home-compass__board {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  padding: 1.35rem 1.25rem 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--color-border) 88%, var(--color-amber) 8%);
+  border-radius: 6px;
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--color-panel) 94%, var(--color-bg)) 0%,
+    color-mix(in srgb, var(--color-surface) 88%, var(--color-bg)) 100%
+  );
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--color-text) 5%, transparent),
+    0 20px 48px rgba(0, 0, 0, 0.22);
+}
+
+.home-compass__board-label {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-muted) 82%, var(--color-signal));
+}
+
+.home-compass__board-label--refs {
+  margin-bottom: 0.55rem;
+  color: color-mix(in srgb, var(--color-muted) 78%, var(--color-ice));
+}
+
+.home-compass-hubs {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  gap: 0.5rem 0.65rem;
 }
 
-@media (max-width: 1023px) {
-  .trending-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
+@media (min-width: 1100px) {
+  .home-compass-hubs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .home-compass-hubs > li:first-child {
+    grid-column: span 2;
   }
 }
 
-@media (max-width: 767px) {
-  .trending-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.trend-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.6rem;
-  min-height: 148px;
-  height: 100%;
-  padding: 1.1rem 1.15rem;
+.home-compass-hub {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.65rem 0.75rem;
+  align-items: start;
+  min-height: 4.35rem;
+  padding: 0.75rem 0.85rem 0.8rem;
   text-decoration: none;
-  color: var(--color-text);
-  background: var(--color-panel);
-  border: 1px solid var(--color-border);
-  border-radius: 2px;
-  cursor: pointer;
-  overflow: hidden;
+  color: inherit;
+  border: 1px solid color-mix(in srgb, var(--color-border) 90%, transparent);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--color-bg) 55%, var(--color-panel));
   transition:
-    border-color 0.25s ease,
-    background 0.25s ease,
-    box-shadow 0.25s ease,
-    transform 0.25s ease;
-  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--color-text) 6%, transparent);
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.22s ease;
+  outline-offset: 2px;
+  box-shadow: inset 2px 0 0 color-mix(in srgb, var(--color-amber) 45%, var(--color-border));
 }
 
-.trend-card::before {
-  content: '';
-  position: absolute;
-  inset: -40% -60%;
-  background: linear-gradient(
-    120deg,
-    transparent 35%,
-    color-mix(in srgb, var(--color-ice) 14%, transparent) 48%,
-    transparent 62%
-  );
-  transform: translateX(-100%) rotate(8deg);
-  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
-  pointer-events: none;
-}
-
-.trend-card:hover::before {
-  transform: translateX(80%) rotate(8deg);
-}
-
-.trend-card:hover {
-  border-color: var(--color-frost);
-  background: color-mix(in srgb, var(--color-panel) 88%, var(--color-frost));
+.home-compass-hub:hover,
+.home-compass-hub:focus-visible {
+  border-color: color-mix(in srgb, var(--color-ice) 32%, var(--color-border));
+  background: color-mix(in srgb, var(--color-panel) 72%, var(--color-bg));
   box-shadow:
-    inset 3px 0 0 var(--color-rust),
-    0 8px 28px rgba(0, 0, 0, 0.35);
-  transform: translateY(-4px);
+    inset 3px 0 0 var(--color-signal),
+    0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .trend-card:hover {
-    transform: none;
-  }
-
-  .trend-card::before {
-    display: none;
-  }
-}
-
-.trend-icon {
-  display: flex;
-  color: var(--color-frost);
-  transition: transform 0.3s ease, color 0.2s ease;
-}
-
-.trend-card:hover .trend-icon {
-  transform: scale(1.08) rotate(-4deg);
-  color: var(--color-primary-soft);
-}
-
-.trend-label {
+.home-compass-hub__idx {
   font-family: var(--font-display);
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 0.7rem;
+  font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.trend-meta {
-  font-size: 0.8rem;
-  color: var(--color-muted);
-  margin-top: auto;
-}
-
-.hub-strip-nav {
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in srgb, var(--color-muted) 88%, var(--color-amber));
   padding-top: 0.15rem;
 }
 
-.hub-strip-list {
-  list-style: none;
-  margin: 0;
-  padding: 0.25rem 0 1.35rem;
+.home-compass-hub__body {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.55rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
 }
 
-.hub-chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.42rem 0.9rem;
+.home-compass-hub__title {
   font-family: var(--font-display);
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-size: 0.82rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  text-decoration: none;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.home-compass-hub__hint {
+  font-size: 0.72rem;
+  line-height: 1.35;
   color: var(--color-muted);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--color-panel) 75%, transparent);
+}
+
+.home-compass-hub__path {
+  font-size: 0.62rem;
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in srgb, var(--color-muted) 92%, var(--color-ice));
+  letter-spacing: 0.02em;
+}
+
+.home-compass-hub__go {
+  font-size: 1rem;
+  line-height: 1;
+  color: color-mix(in srgb, var(--color-muted) 70%, var(--color-amber));
+  padding-top: 0.2rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.home-compass-hub:hover .home-compass-hub__go,
+.home-compass-hub:focus-visible .home-compass-hub__go {
+  transform: translateX(3px);
+  color: var(--color-primary-soft);
+}
+
+.home-compass-refs {
+  padding-top: 0.35rem;
+  border-top: 1px dashed color-mix(in srgb, var(--color-border) 65%, transparent);
+}
+
+.home-compass-refs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.45rem;
+}
+
+.home-compass-ref {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.08rem;
+  padding: 0.42rem 0.65rem 0.48rem;
+  text-decoration: none;
+  color: var(--color-text);
+  border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--color-bg) 40%, transparent);
   transition:
-    color 0.18s ease,
     border-color 0.18s ease,
     background 0.18s ease;
 }
 
-.hub-chip:hover {
-  color: var(--color-text);
-  border-color: color-mix(in srgb, var(--color-ice) 40%, var(--color-border));
-  background: color-mix(in srgb, var(--color-ice) 8%, var(--color-panel));
+.home-compass-ref:hover,
+.home-compass-ref:focus-visible {
+  border-color: color-mix(in srgb, var(--color-ice) 28%, var(--color-border));
+  background: color-mix(in srgb, var(--color-ice) 6%, var(--color-panel));
+}
+
+.home-compass-ref__text {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-compass-ref__path {
+  font-size: 0.58rem;
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-compass-hub__go {
+    transition: none;
+  }
+
+  .home-compass-hub:hover .home-compass-hub__go,
+  .home-compass-hub:focus-visible .home-compass-hub__go {
+    transform: none;
+  }
 }
 
 .featured-split {
@@ -1129,26 +1314,71 @@ onUnmounted(() => {
   }
 }
 
-.featured-cross {
+.gear-cross-label {
+  margin: 1.25rem 0 0.45rem;
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-muted) 88%, var(--color-ice));
+}
+
+.gear-cross-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.55rem;
-  font-size: 0.9rem;
-  line-height: 1.45;
+  gap: 0.5rem;
+}
+
+.gear-cross-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.86rem;
+  line-height: 1.4;
   color: var(--color-muted);
 }
 
-.featured-cross a {
-  color: var(--color-primary-soft);
-  font-weight: 600;
+.gear-cross-link {
+  font-family: var(--font-display);
+  font-weight: 650;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
   text-decoration: none;
+  color: var(--color-primary-soft);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-primary-soft) 35%, transparent);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.featured-cross a:hover {
-  text-decoration: underline;
+.gear-cross-link:hover,
+.gear-cross-link:focus-visible {
+  color: var(--color-signal-soft);
+  border-bottom-color: color-mix(in srgb, var(--color-signal) 55%, transparent);
+}
+
+.gear-cross-hint {
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--color-muted) 95%, var(--color-text));
+}
+
+.featured-catalog-wrap {
+  min-width: 0;
+}
+
+.gear-catalog-label {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-muted) 85%, var(--color-signal));
 }
 
 .featured-split-intro {
@@ -1250,6 +1480,14 @@ onUnmounted(() => {
   font-size: 0.84rem;
   line-height: 1.45;
   color: var(--color-muted);
+}
+
+.featured-catalog-path {
+  margin: 0.15rem 0 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.03em;
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in srgb, var(--color-muted) 92%, var(--color-ice));
 }
 
 .featured-catalog-go {
@@ -1492,6 +1730,59 @@ onUnmounted(() => {
   color: var(--color-muted);
 }
 
+.quest-related {
+  margin-top: 1.75rem;
+  padding: 1rem 1.1rem;
+  border: 1px dashed color-mix(in srgb, var(--color-border) 75%, var(--color-ice));
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--color-panel) 40%, transparent);
+}
+
+.quest-related-label {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-muted) 82%, var(--color-primary-soft));
+}
+
+.quest-related-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.5rem;
+}
+
+.quest-related-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.32rem 0.6rem;
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-text);
+  border: 1px solid color-mix(in srgb, var(--color-border) 88%, transparent);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--color-bg) 50%, var(--color-panel));
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.quest-related-link:hover,
+.quest-related-link:focus-visible {
+  border-color: color-mix(in srgb, var(--color-ice) 35%, var(--color-border));
+  color: var(--color-primary-soft);
+}
+
 @media (max-width: 767px) {
   .quest-line {
     min-width: 12px;
@@ -1622,6 +1913,34 @@ onUnmounted(() => {
   color: var(--color-text);
 }
 
+.about-hub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.65rem;
+  margin-top: 1.35rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-border) 80%, transparent);
+}
+
+.about-hub-link {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: color-mix(in srgb, var(--color-muted) 88%, var(--color-primary-soft));
+  padding: 0.28rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-primary-soft) 28%, transparent);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.about-hub-link:hover,
+.about-hub-link:focus-visible {
+  color: var(--color-primary-soft);
+  border-bottom-color: color-mix(in srgb, var(--color-signal) 50%, transparent);
+}
+
 .faq-section {
   background: color-mix(in srgb, var(--color-surface) 82%, transparent);
   border-top: 1px solid var(--color-border);
@@ -1655,5 +1974,55 @@ onUnmounted(() => {
   margin: 0;
   color: var(--color-muted);
   font-size: 0.95rem;
+}
+
+.faq-hub {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.faq-hub-label {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.faq-hub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.45rem;
+}
+
+.faq-hub-link {
+  display: inline-flex;
+  padding: 0.38rem 0.65rem;
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--color-panel) 70%, var(--color-bg));
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.faq-hub-link:hover,
+.faq-hub-link:focus-visible {
+  border-color: color-mix(in srgb, var(--color-ice) 40%, var(--color-border));
+  background: color-mix(in srgb, var(--color-ice) 8%, var(--color-panel));
 }
 </style>
