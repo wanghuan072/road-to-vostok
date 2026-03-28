@@ -1,8 +1,8 @@
 <template>
   <article class="site-page page-article">
-    <section class="page-hero-section">
+    <section class="page-hero-section page-hero-section--compact">
       <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
           <RouterLink to="/">Home</RouterLink>
           <span aria-hidden="true"> / </span>
           <span>Not found</span>
@@ -14,9 +14,11 @@
         <p>
           <RouterLink to="/">Back to home</RouterLink>
           ·
-          <RouterLink to="/item-database">Gear &amp; items</RouterLink>
+          <RouterLink to="/wiki">Wiki</RouterLink>
           ·
-          <RouterLink to="/maps-tasks">Maps &amp; quests</RouterLink>
+          <RouterLink to="/map">Map</RouterLink> · <RouterLink to="/tasks">Tasks</RouterLink>
+          ·
+          <RouterLink to="/guides">Guides</RouterLink>
         </p>
       </div>
     </section>

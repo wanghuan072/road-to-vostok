@@ -9,6 +9,9 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { routeDefs } from '../src/router/index.js'
+import guideArticles from '../src/data/guides/articles.js'
+import modArticles from '../src/data/mods/mods.js'
+import npcList from '../src/data/item/npcs.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const projectRoot = path.resolve(__dirname, '..')
@@ -37,6 +40,7 @@ function buildSitemapXml() {
   let body = ''
 
   for (const def of routeDefs) {
+    if (def.path.includes('/:')) continue
     const sm = def.meta?.sitemap
     if (sm === false) continue
     const priority = sm?.priority ?? 0.5
@@ -46,6 +50,21 @@ function buildSitemapXml() {
         ? `${siteOrigin}/`
         : `${siteOrigin}${def.path.startsWith('/') ? def.path : `/${def.path}`}`
     body += `\n${urlXml(loc, lastmod, priority, changefreq)}`
+  }
+
+  for (const a of guideArticles) {
+    const loc = `${siteOrigin}/guides/${a.addressBar}`
+    body += `\n${urlXml(loc, lastmod, 0.8, 'monthly')}`
+  }
+
+  for (const m of modArticles) {
+    const loc = `${siteOrigin}/mods/${m.addressBar}`
+    body += `\n${urlXml(loc, lastmod, 0.78, 'monthly')}`
+  }
+
+  for (const n of npcList) {
+    const loc = `${siteOrigin}/wiki/npcs/${n.addressBar}`
+    body += `\n${urlXml(loc, lastmod, 0.75, 'monthly')}`
   }
 
   return `<?xml version="1.0" encoding="UTF-8"?>

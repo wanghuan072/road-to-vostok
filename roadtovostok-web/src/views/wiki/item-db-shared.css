@@ -2,29 +2,7 @@
   padding-bottom: 4rem;
 }
 
-.item-db-page .page-hero-section {
-  padding: 3rem 0 2rem;
-  background: radial-gradient(
-    ellipse 70% 60% at 70% 0%,
-    color-mix(in srgb, var(--color-primary) 18%, transparent),
-    transparent
-  );
-}
-
-.item-db-page .breadcrumb {
-  font-size: 0.85rem;
-  color: var(--color-muted);
-  margin-bottom: 1rem;
-}
-
-.item-db-page .breadcrumb a {
-  color: var(--color-primary-soft);
-  text-decoration: none;
-}
-
-.item-db-page .breadcrumb a:hover {
-  text-decoration: underline;
-}
+/* Hero：见 src/assets/page-hero.css */
 
 .item-db-page .lead {
   color: var(--color-muted);
@@ -99,6 +77,17 @@
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1.1rem;
   align-items: stretch;
+}
+
+@media (max-width: 767px) {
+  .item-db-hub-grid {
+    grid-template-columns: 1fr;
+    gap: 0.95rem;
+  }
+
+  .item-db-page .page-body-section {
+    padding: 1.15rem 0;
+  }
 }
 
 .item-db-hub-grid > li {

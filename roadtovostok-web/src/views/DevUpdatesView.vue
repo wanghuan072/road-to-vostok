@@ -3,6 +3,11 @@
     <section class="page-hero-section">
       <div class="container">
         <div class="page-hero-content">
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <RouterLink to="/">Home</RouterLink>
+            <span aria-hidden="true">/</span>
+            <span>Road ahead</span>
+          </nav>
           <p class="hero-kicker">Roadmap &amp; release timing</p>
           <h1>Dev updates &amp; when the game ships</h1>
           <p class="hero-lead">
@@ -13,6 +18,8 @@
         </div>
       </div>
     </section>
+
+    <div class="wrapper">
 
     <div ref="railScrollRoot" class="container dev-updates-body">
       <PageRail
@@ -82,7 +89,7 @@
             On this site:
             <RouterLink to="/guides/roadmap">Roadmap guide</RouterLink>
             ·
-            <RouterLink to="/maps-tasks">Maps &amp; quests</RouterLink>
+            <RouterLink to="/map">Map</RouterLink> and <RouterLink to="/tasks">Tasks</RouterLink>
             ·
             <RouterLink to="/getting-started">Start here</RouterLink>
           </p>
@@ -122,9 +129,10 @@
           <p class="footnote">
             Unofficial summary only. If a date here disagrees with Steam or roadtovostok.com, trust the
             first-party source.
-          </p>
-        </section>
-      </PageRail>
+            </p>
+          </section>
+        </PageRail>
+      </div>
     </div>
   </article>
 </template>
@@ -252,17 +260,12 @@ const roadmapBuilds = [
 </script>
 
 <style scoped>
-.dev-updates-page.page-article {
-  padding-bottom: 4rem;
+.wrapper{
+  padding: 2rem 0 0 0;
 }
 
-.page-hero-section {
-  padding: 3rem 0 1.75rem;
-  background: radial-gradient(
-    ellipse 80% 70% at 50% -20%,
-    color-mix(in srgb, var(--color-ice) 16%, transparent),
-    transparent
-  );
+.dev-updates-page.page-article {
+  padding-bottom: 4rem;
 }
 
 .hero-kicker {
@@ -275,34 +278,21 @@ const roadmapBuilds = [
   color: var(--color-amber);
 }
 
-.page-hero-content h1 {
-  margin: 0 0 0.65rem;
-  font-size: clamp(1.6rem, 3.2vw, 2.35rem);
-  line-height: 1.12;
-}
-
-.hero-lead {
-  margin: 0;
-  font-size: 0.98rem;
-  line-height: 1.62;
-  color: var(--color-muted);
-}
-
 .snap-section {
   padding: 0 0 1.5rem;
 }
 
 .release-snapshot {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
+  gap: 1.15rem;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: stretch;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .release-snapshot {
-    grid-template-columns: 1.1fr 1fr;
-    gap: 1.15rem;
-    align-items: stretch;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 
@@ -392,14 +382,20 @@ const roadmapBuilds = [
   margin: 0 0 1.25rem;
   padding: 0;
   display: grid;
-  gap: 0.85rem;
-  grid-template-columns: 1fr;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-@media (min-width: 720px) {
+@media (max-width: 1023px) {
   .follow-cards {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .follow-cards {
+    grid-template-columns: 1fr;
   }
 }
 

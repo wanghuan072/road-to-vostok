@@ -3,6 +3,11 @@
     <section class="page-hero-section">
       <div class="container">
         <div class="page-hero-content">
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <RouterLink to="/">Home</RouterLink>
+            <span aria-hidden="true">/</span>
+            <span>Start here</span>
+          </nav>
           <h1>
             How to play Road To Vostok — what to do first (PC &amp; Steam demo)
           </h1>
@@ -334,7 +339,7 @@
             Many players search <strong>how to craft in Road To Vostok</strong> (including the common
             typo “crasft”). Recipes and workbenches expand across Early Access patches — use in-game
             UI and patch notes as the source of truth. Our
-            <RouterLink to="/item-database">Gear &amp; items hub</RouterLink> lists loot that often feeds
+            <RouterLink to="/wiki">Wiki</RouterLink> lists loot that often feeds
             crafting loops (materials, tools, cables).
           </p>
           </div>
@@ -363,15 +368,6 @@ const asideLinks = [
 <style scoped>
 .page-article {
   padding-bottom: 4rem;
-}
-
-.page-hero-section {
-  padding: 3rem 0 2rem;
-  background: radial-gradient(
-    ellipse 70% 60% at 70% 0%,
-    color-mix(in srgb, var(--color-primary) 22%, transparent),
-    transparent
-  );
 }
 
 .page-hero-content p {

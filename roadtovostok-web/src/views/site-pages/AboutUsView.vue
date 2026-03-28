@@ -2,7 +2,7 @@
   <article class="site-page page-article">
     <section class="page-hero-section">
       <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
           <RouterLink to="/">Home</RouterLink>
           <span aria-hidden="true"> / </span>
           <span>About Us</span>
@@ -41,8 +41,8 @@
           <h2>How to explore</h2>
           <p>
             Start with <RouterLink to="/getting-started">Start here</RouterLink> for controls and first
-            steps, <RouterLink to="/item-database">Gear &amp; items</RouterLink> for tables, and
-            <RouterLink to="/maps-tasks">Maps &amp; quests</RouterLink> for progression help. Updates and
+            steps, <RouterLink to="/wiki">Wiki</RouterLink> for tables, and
+            <RouterLink to="/map">Map</RouterLink> / <RouterLink to="/tasks">Tasks</RouterLink> for progression help. Updates and
             build names are summarized under <RouterLink to="/dev-updates">Road ahead</RouterLink>.
           </p>
 

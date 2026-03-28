@@ -1,5 +1,7 @@
 /* 全局：寒带战术简报风 — 更高对比、偏蓝夜色 + 信号色点缀 */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap');
+@import './page-hero.css';
+@import './content-prose.css';
 
 :root {
   --color-bg: #070a10;
@@ -29,6 +31,11 @@
   --font-journey: 'Unbounded', var(--font-display);
   --fx-glow-frost: 0 0 48px color-mix(in srgb, var(--color-ice) 28%, transparent);
   --fx-glow-rust: 0 0 40px color-mix(in srgb, var(--color-signal) 32%, transparent);
+  /**
+   * Sticky site header clearance (AppHeader ~3.75rem row + border + breathing room).
+   * Use for position:sticky sidebars/TOCs so they sit below the bar, not under it.
+   */
+  --app-header-sticky-offset: 5.75rem;
 }
 
 *,
@@ -73,7 +80,7 @@ h6 {
 
 /* 长文阅读：标题略放松字间距，避免「工具文档」感 */
 .page-article > .page-hero-section h1,
-.guide .guide-hero-section h1,
+.content-article .page-hero-section h1,
 .item-db-page .page-hero-section h1 {
   text-transform: none;
   letter-spacing: 0.02em;
@@ -135,7 +142,7 @@ img {
 
 /* In-page nav targets: clear sticky header without using :target / hash URLs */
 [data-nav-anchor] {
-  scroll-margin-top: 5.75rem;
+  scroll-margin-top: var(--app-header-sticky-offset);
 }
 
 /* 内页主栏：在双栏布局中占满主列，不再留一大块空白 */

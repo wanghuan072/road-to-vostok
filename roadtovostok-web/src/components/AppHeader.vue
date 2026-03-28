@@ -13,8 +13,7 @@
             fetchpriority="high"
           >
           <span class="brand-block">
-            <span class="brand-text">Survival Guide</span>
-            <span class="brand-sub">Player wiki · routes &amp; loadouts</span>
+            <span class="brand-text">Road To Vostok</span>
           </span>
         </RouterLink>
         <button
@@ -48,7 +47,7 @@
             :key="item.to"
             :to="item.to"
             class="nav-link"
-            :class="{ 'is-active': route.path === item.to }"
+            :class="{ 'is-active': isNavActive(item.to) }"
             @click="menuOpen = false"
           >
             {{ item.label }}
@@ -65,16 +64,26 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const menuOpen = ref(false)
+
+function isNavActive(to) {
+  const p = route.path
+  if (to === '/') return p === '/'
+  if (p === to) return true
+  if (to !== '/' && p.startsWith(`${to}/`)) return true
+  return false
+}
 /** Public dir; avoid literal /images/... in template (Vite may treat as module). */
 const brandLogoSrc = '/images/logo.webp'
 
 const nav = [
   { label: 'Home', to: '/' },
   { label: 'Start here', to: '/getting-started' },
-  { label: 'Gear & items', to: '/item-database' },
-  { label: 'Maps & quests', to: '/maps-tasks' },
+  { label: 'Wiki', to: '/wiki' },
+  { label: 'Map', to: '/map' },
+  { label: 'Tasks', to: '/tasks' },
+  { label: 'Guides', to: '/guides' },
   { label: 'Road ahead', to: '/dev-updates' },
-  { label: 'Saves & fixes', to: '/tech-support' },
+  { label: 'Mods', to: '/mods' },
 ]
 </script>
 
@@ -244,13 +253,13 @@ const nav = [
   border: 0;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 767px) {
   .brand-compass {
     display: none;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1023px) {
   .nav-toggle {
     display: inline-flex;
   }

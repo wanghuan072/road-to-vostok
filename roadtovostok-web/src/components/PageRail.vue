@@ -54,36 +54,31 @@ function onScroll(key) {
 <style scoped>
 .page-rail {
   display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(268px, 320px);
   gap: clamp(1.25rem, 2.8vw, 2.25rem);
   /* stretch：侧栏列必须与主列同高，否则 aside 盒子过短，sticky 无法相对整页“跟屏” */
   align-items: stretch;
 }
 
-@media (min-width: 1080px) {
-  .page-rail {
-    grid-template-columns: minmax(0, 1fr) minmax(268px, 320px);
-  }
-
-  .page-rail-aside {
-    display: flex;
-    flex-direction: column;
-    min-height: 0;
-  }
-
-  .aside-stack {
-    position: sticky;
-    top: 5.75rem;
-    align-self: flex-start;
-    width: 100%;
-    max-height: calc(100vh - 6.25rem);
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+.page-rail-aside {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
-@media (max-width: 1079px) {
+.aside-stack {
+  position: sticky;
+  top: var(--app-header-sticky-offset);
+  align-self: flex-start;
+  width: 100%;
+  max-height: calc(100vh - var(--app-header-sticky-offset) - 0.5rem);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 1023px) {
   .page-rail {
     display: flex;
     flex-direction: column;
@@ -94,8 +89,7 @@ function onScroll(key) {
   }
 
   .aside-stack {
-    display: flex;
-    flex-direction: column;
+    position: static;
     gap: 0.85rem;
     max-height: none;
     overflow: visible;

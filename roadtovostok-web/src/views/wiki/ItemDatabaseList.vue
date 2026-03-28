@@ -2,12 +2,12 @@
   <article class="item-db-page">
     <section class="page-hero-section">
       <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
           <RouterLink to="/">Home</RouterLink>
           <span aria-hidden="true"> / </span>
-          <span>Item database</span>
+          <span>Wiki</span>
         </nav>
-        <h1>Road To Vostok item database</h1>
+        <h1>Road To Vostok wiki</h1>
         <p class="lead">
           Fan-maintained tables for <strong>Road To Vostok guns</strong> and
           <strong>ammunition types</strong>, <strong>inverter</strong> / <strong>B cables</strong> and
@@ -16,11 +16,11 @@
         </p>
       </div>
     </section>
-    <section class="page-body-section" aria-label="Item database categories">
+    <section class="page-body-section" aria-label="Wiki categories">
       <div class="container">
         <ul class="item-db-hub-grid" role="list">
           <li>
-            <RouterLink to="/item-database/core-tasks" class="item-db-hub-card">
+            <RouterLink to="/wiki/core-tasks" class="item-db-hub-card">
               <span class="kicker">Core tasks &amp; power</span>
               <h2>Inverter, B cables &amp; quest props</h2>
               <p>
@@ -30,7 +30,7 @@
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/item-database/weapons" class="item-db-hub-card">
+            <RouterLink to="/wiki/weapons" class="item-db-hub-card">
               <span class="kicker">Weapons &amp; attachments</span>
               <h2>Guns &amp; platforms</h2>
               <p>
@@ -40,7 +40,7 @@
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/item-database/ammunition" class="item-db-hub-card">
+            <RouterLink to="/wiki/ammunition" class="item-db-hub-card">
               <span class="kicker">Ammunition</span>
               <h2>Calibers &amp; stacks</h2>
               <p>Per-round value, weight, max stack, and weapon compatibility from the wiki table.</p>
@@ -48,7 +48,7 @@
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/item-database/fishing" class="item-db-hub-card">
+            <RouterLink to="/wiki/fishing" class="item-db-hub-card">
               <span class="kicker">Fishing</span>
               <h2>How to fish (Early Access)</h2>
               <p>Rods, bait, and roadmap caveats for <strong>how fish</strong> searches.</p>
@@ -56,11 +56,22 @@
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/item-database/gathering" class="item-db-hub-card">
+            <RouterLink to="/wiki/gathering" class="item-db-hub-card">
               <span class="kicker">Gathering</span>
               <h2>Field resources</h2>
               <p>Wood, scrap, forage, and raw inputs that feed survival and crafting loops.</p>
               <span class="go">Open table →</span>
+            </RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/wiki/npcs" class="item-db-hub-card">
+              <span class="kicker">Characters</span>
+              <h2>NPCs &amp; hubs</h2>
+              <p>
+                Traders and settlement notes (e.g. Generalist, Doctor) with links from the
+                <strong>map</strong> pins.
+              </p>
+              <span class="go">Open NPC wiki →</span>
             </RouterLink>
           </li>
         </ul>

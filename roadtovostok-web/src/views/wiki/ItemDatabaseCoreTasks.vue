@@ -2,10 +2,10 @@
   <article class="item-db-page">
     <section class="page-hero-section">
       <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
           <RouterLink to="/">Home</RouterLink>
           <span aria-hidden="true"> / </span>
-          <RouterLink to="/item-database">Item database</RouterLink>
+          <RouterLink to="/wiki">Wiki</RouterLink>
           <span aria-hidden="true"> / </span>
           <span>Core tasks</span>
         </nav>
@@ -13,8 +13,8 @@
         <p class="lead">
           Items players pair with shelter power, cabling, and quest chains (<strong>all tasks</strong>).
           Cross-check the
-          <RouterLink to="/guides/inverter-location">inverter</RouterLink> guide and
-          <RouterLink to="/maps-tasks">maps &amp; tasks</RouterLink> hub.
+          <RouterLink to="/guides/inverter-location">inverter</RouterLink> guide and the
+          <RouterLink to="/map">Map</RouterLink> / <RouterLink to="/tasks">Tasks</RouterLink> pages.
         </p>
       </div>
     </section>
@@ -44,7 +44,7 @@
           Deeper walkthroughs:
           <RouterLink to="/guides/inverter-location">Inverter location</RouterLink>
           ·
-          <RouterLink to="/maps-tasks">Maps &amp; all tasks</RouterLink>
+          <RouterLink to="/tasks">Tasks</RouterLink>
         </div>
       </div>
     </section>

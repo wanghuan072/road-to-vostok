@@ -29,12 +29,12 @@
               tasks and roadmap timing, medical, PC saves, crafting, and fishing when your build includes it.
               Single-player survival; mod tools are on the official long-term plan. Use
               <RouterLink to="/getting-started">Start here</RouterLink> for the core loop,
-              <RouterLink to="/maps-tasks">Maps &amp; quests</RouterLink> for the map and objectives, or jump
-              straight to the hot searches below.
+              <RouterLink to="/map">Map</RouterLink> and <RouterLink to="/tasks">Tasks</RouterLink> for locations
+              and objectives, or jump straight to the hot searches below.
             </p>
             <div class="hero-actions">
               <RouterLink to="/getting-started" class="btn btn-primary">Field briefing</RouterLink>
-              <RouterLink to="/item-database" class="btn btn-secondary">Loot tables</RouterLink>
+              <RouterLink to="/wiki" class="btn btn-secondary">Wiki</RouterLink>
             </div>
           </div>
           <div class="hero-visual">
@@ -123,7 +123,7 @@
               </RouterLink>
             </li>
             <li>
-              <RouterLink to="/maps-tasks" class="trend-card">
+              <RouterLink to="/tasks" class="trend-card">
                 <span class="trend-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
                     <path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6" stroke-linejoin="round" />
@@ -134,14 +134,14 @@
               </RouterLink>
             </li>
             <li>
-              <RouterLink to="/tech-support" class="trend-card">
+              <RouterLink to="/mods" class="trend-card">
                 <span class="trend-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M8 9h8M8 13h5M6 3h12a2 2 0 012 2v14l-4-3H6a2 2 0 01-2-2V5a2 2 0 012-2z" stroke-linejoin="round" />
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </span>
-                <span class="trend-label">Backup save &amp; Steam PC</span>
-                <span class="trend-meta">How to backup saves</span>
+                <span class="trend-label">Mods &amp; community</span>
+                <span class="trend-meta">EA modding notes (unofficial)</span>
               </RouterLink>
             </li>
           </ul>
@@ -155,16 +155,22 @@
           <RouterLink class="hub-chip" to="/getting-started">Start here</RouterLink>
         </li>
         <li>
-          <RouterLink class="hub-chip" to="/item-database">Gear &amp; items</RouterLink>
+          <RouterLink class="hub-chip" to="/wiki">Wiki</RouterLink>
         </li>
         <li>
-          <RouterLink class="hub-chip" to="/maps-tasks">Maps &amp; quests</RouterLink>
+          <RouterLink class="hub-chip" to="/map">Map</RouterLink>
+        </li>
+        <li>
+          <RouterLink class="hub-chip" to="/tasks">Tasks</RouterLink>
+        </li>
+        <li>
+          <RouterLink class="hub-chip" to="/guides">Guides</RouterLink>
         </li>
         <li>
           <RouterLink class="hub-chip" to="/dev-updates">Road ahead</RouterLink>
         </li>
         <li>
-          <RouterLink class="hub-chip" to="/tech-support">Saves &amp; fixes</RouterLink>
+          <RouterLink class="hub-chip" to="/mods">Mods</RouterLink>
         </li>
       </ul>
     </nav>
@@ -179,8 +185,9 @@
               <h2>Gear hub shortcuts — tables &amp; deep guides</h2>
               <p>
                 Same coverage as
-                <RouterLink to="/item-database">Gear &amp; items</RouterLink>, laid out as quick jumps: weapons
-                and ammo tables on the left column of links, medical and power guides, then maps for tasks and
+                <RouterLink to="/wiki">Wiki</RouterLink>, laid out as quick jumps: weapons
+                and ammo tables on the left column of links, medical and power guides, then the
+                <RouterLink to="/map">map</RouterLink> and <RouterLink to="/tasks">tasks</RouterLink> pages for
                 keys. No thumbnails — just scannable labels.
               </p>
             </header>
@@ -241,7 +248,7 @@
               The game is still a <strong>sandbox</strong>: you are not forced into Vostok or a single playstyle.
               “Pushing east” simply means following that intended difficulty curve—secure the west, then attempt
               harder crossings—not a hidden story mandate. For step-by-step locations use
-              <RouterLink to="/maps-tasks">Maps &amp; quests</RouterLink>; for controls and the survival loop,
+              <RouterLink to="/map">Map</RouterLink> and <RouterLink to="/tasks">Tasks</RouterLink>; for controls and the survival loop,
               <RouterLink to="/getting-started">Start here</RouterLink>.
             </p>
           </header>
@@ -403,10 +410,10 @@ let revealObserver = null
 
 const featured = [
   {
-    kicker: 'Item hub',
-    title: 'Guns, ammo & full database',
-    blurb: 'Open the hub for weapons, ammunition, core task props, fishing, and gathering tables.',
-    to: '/item-database',
+    kicker: 'Wiki',
+    title: 'Guns, ammo & tables',
+    blurb: 'Open the wiki hub for weapons, ammunition, core task props, fishing, and gathering tables.',
+    to: '/wiki',
   },
   {
     kicker: 'Medical',
@@ -421,10 +428,10 @@ const featured = [
     to: '/guides/inverter-location',
   },
   {
-    kicker: 'Maps & tasks',
+    kicker: 'Tasks',
     title: 'All tasks, traders & keys',
     blurb: 'Quest flow, traders, and objectives before you push toward harder zones.',
-    to: '/maps-tasks',
+    to: '/tasks',
   },
 ]
 
@@ -461,7 +468,7 @@ const faq = [
   },
   {
     q: 'How do I complete Road To Vostok all tasks?',
-    a: 'Follow the quest chain on the homepage, then Maps & quests for per-map objectives and trader keys.',
+    a: 'Follow the quest chain on the homepage, then the Tasks page for objectives and trader keys and the Map for POIs.',
   },
   {
     q: 'Where is the Road To Vostok roadmap?',
@@ -473,11 +480,11 @@ const faq = [
   },
   {
     q: 'How to backup Road To Vostok saves on PC?',
-    a: 'Saves live under your Windows user folder for the game’s AppData path (varies by build). Saves & fixes lists safe copy habits before patches.',
+    a: 'Paths vary by build and OS. Snapshot your user data folder before experiments; the Mods hub explains layout at a high level — always verify on your machine.',
   },
   {
     q: 'How does crafting work in Road To Vostok?',
-    a: 'Crafting expands across Early Access builds. Check patch notes and in-game recipes; the Gear & items hub tracks loot that feeds crafting loops.',
+    a: 'Crafting expands across Early Access builds. Check patch notes and in-game recipes; the Wiki tracks loot that feeds crafting loops.',
   },
   {
     q: 'Is fishing in Road To Vostok?',
@@ -592,7 +599,7 @@ onUnmounted(() => {
   }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 1023px) {
   .hero-deco-compass {
     right: -20%;
     opacity: 0.09;
@@ -602,20 +609,24 @@ onUnmounted(() => {
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  gap: 3.5rem;
+  align-items: center;
 }
 
-@media (min-width: 960px) {
+.hero-visual {
+  justify-self: end;
+}
+
+@media (max-width: 1023px) {
   .hero-content {
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
-    gap: 3.5rem;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: start;
   }
 
   .hero-visual {
-    justify-self: end;
+    justify-self: stretch;
   }
 }
 
@@ -783,7 +794,7 @@ onUnmounted(() => {
   max-width: 320px;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 1023px) {
   .hero-visual {
     max-width: none;
   }
@@ -960,20 +971,20 @@ onUnmounted(() => {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.75rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
-@media (min-width: 560px) {
+@media (max-width: 1023px) {
   .trending-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 767px) {
   .trending-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1106,14 +1117,15 @@ onUnmounted(() => {
 
 .featured-split {
   display: grid;
-  gap: 1.75rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 2.25rem;
   align-items: stretch;
 }
 
-@media (min-width: 960px) {
+@media (max-width: 1023px) {
   .featured-split {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
-    gap: 2.25rem;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
   }
 }
 
@@ -1277,7 +1289,7 @@ onUnmounted(() => {
   margin-bottom: 1.75rem;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1023px) {
   .quest-zones {
     grid-template-columns: 1fr;
   }
@@ -1480,7 +1492,7 @@ onUnmounted(() => {
   color: var(--color-muted);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .quest-line {
     min-width: 12px;
   }
@@ -1494,15 +1506,15 @@ onUnmounted(() => {
 
 .devlog-layout {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 1.75rem;
   align-items: start;
 }
 
-@media (min-width: 960px) {
+@media (max-width: 1023px) {
   .devlog-layout {
-    grid-template-columns: 1.35fr 1fr;
-    gap: 1.75rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 

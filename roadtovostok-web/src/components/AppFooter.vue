@@ -13,7 +13,7 @@
               loading="lazy"
               decoding="async"
             >
-            <p class="footer-title">Road To Vostok Guide</p>
+            <p class="footer-title">Road To Vostok</p>
           </div>
           <p class="footer-tagline">
             Unofficial field notes for loadouts, loot, maps, and routes across Area 05, the Border
@@ -49,10 +49,12 @@ const brandLogoSrc = '/images/logo.webp'
 
 const quick = [
   { label: 'Start here', to: '/getting-started' },
-  { label: 'Gear & items', to: '/item-database' },
-  { label: 'Maps & quests', to: '/maps-tasks' },
+  { label: 'Wiki', to: '/wiki' },
+  { label: 'Map', to: '/map' },
+  { label: 'Tasks', to: '/tasks' },
+  { label: 'Guides', to: '/guides' },
   { label: 'Road ahead', to: '/dev-updates' },
-  { label: 'Saves & fixes', to: '/tech-support' },
+  { label: 'Mods', to: '/mods' },
 ]
 
 const legal = [

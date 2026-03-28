@@ -2,10 +2,10 @@
   <article class="item-db-page">
     <section class="page-hero-section">
       <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
           <RouterLink to="/">Home</RouterLink>
           <span aria-hidden="true"> / </span>
-          <RouterLink to="/item-database">Item database</RouterLink>
+          <RouterLink to="/wiki">Wiki</RouterLink>
           <span aria-hidden="true"> / </span>
           <span>Fishing</span>
         </nav>

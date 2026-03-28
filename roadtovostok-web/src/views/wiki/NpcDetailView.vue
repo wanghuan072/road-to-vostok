@@ -1,0 +1,782 @@
+<template>
+  <article
+    v-if="npc"
+    class="npc-detail-page"
+    :data-npc="npc.addressBar"
+  >
+    <header class="npc-hero">
+      <div
+        class="npc-hero__glow"
+        aria-hidden="true"
+      />
+      <div class="container npc-hero__wrap">
+        <nav
+          class="npc-breadcrumb"
+          aria-label="Breadcrumb"
+        >
+          <RouterLink to="/">Home</RouterLink>
+          <span aria-hidden="true">/</span>
+          <RouterLink to="/wiki">Wiki</RouterLink>
+          <span aria-hidden="true">/</span>
+          <RouterLink to="/wiki/npcs">NPCs</RouterLink>
+          <span aria-hidden="true">/</span>
+          <span class="npc-breadcrumb__current">{{ npc.title }}</span>
+        </nav>
+
+        <div class="npc-hero__grid">
+          <div class="npc-hero__copy">
+            <p class="npc-hero__role">
+              {{ npc.role }}
+            </p>
+            <h1 class="npc-hero__title">
+              {{ npc.title }}
+            </h1>
+            <p class="npc-hero__summary">
+              {{ npc.summary }}
+            </p>
+            <div class="npc-hero__actions">
+              <RouterLink
+                :to="
+                  npc.mapLocationId
+                    ? { path: '/map', query: { loc: npc.mapLocationId } }
+                    : '/map'
+                "
+                class="npc-btn npc-btn--solid"
+              >
+                {{ npc.mapLocationId ? 'Show on map' : 'Open map' }}
+              </RouterLink>
+            </div>
+          </div>
+
+          <div
+            v-if="npc.imageUrl"
+            class="npc-hero__visual"
+          >
+            <div class="npc-hero__frame">
+              <div class="npc-hero__frame-inner">
+                <img
+                  :src="npc.imageUrl"
+                  :alt="npc.imageAlt || ''"
+                  width="480"
+                  height="480"
+                  loading="eager"
+                  decoding="async"
+                  class="npc-hero__img"
+                >
+              </div>
+              <p class="npc-hero__caption">
+                Illustration for this NPC guide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="npc-main">
+      <div class="container npc-main__grid">
+        <main class="npc-main__article">
+          <div class="npc-sheet">
+            <div
+              class="npc-sheet__body npc-detail-rich"
+              v-html="npc.detailsHtml"
+              @click="onContentLinkClick"
+            />
+          </div>
+        </main>
+
+        <aside
+          class="npc-main__rail"
+          aria-label="About this article"
+        >
+          <div class="npc-rail-card npc-rail-card--source">
+            <p class="npc-rail-card__label">
+              Source
+            </p>
+            <p class="npc-rail-card__text">
+              Community-sourced notes for Road To Vostok. Gameplay may differ by patch or mode — verify in-game.
+            </p>
+          </div>
+
+          <div class="npc-rail-card">
+            <p class="npc-rail-card__label">
+              More NPCs
+            </p>
+            <ul class="npc-rail-list">
+              <li
+                v-for="r in relatedNpcs"
+                :key="r.to"
+              >
+                <RouterLink
+                  :to="r.to"
+                  class="npc-rail-list__link"
+                >{{ r.title }}</RouterLink>
+                <span class="npc-rail-list__meta">{{ r.role }}</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+</template>
+
+<script setup>
+import { computed, watch } from 'vue'
+import { RouterLink, useRoute, useRouter } from 'vue-router'
+import npcList from '../../data/item/npcs.js'
+import { getByAddressBar } from '../../utils/contentLookup.js'
+import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'
+import { applyDynamicSeo } from '../../seo/composables.js'
+
+const { onContentLinkClick } = useHtmlContentLinkNavigation()
+
+const route = useRoute()
+const router = useRouter()
+
+const npc = computed(() => getByAddressBar(npcList, route.params.addressBar))
+
+const relatedNpcs = computed(() => {
+  const cur = npc.value?.addressBar
+  return npcList
+    .filter((n) => n.addressBar !== cur)
+    .map((n) => ({
+      title: n.title,
+      role: n.role,
+      to: `/wiki/npcs/${n.addressBar}`,
+    }))
+})
+
+watch(
+  () => route.params.addressBar,
+  (segment) => {
+    const s = String(segment || '')
+    if (s && !getByAddressBar(npcList, s)) {
+      router.replace('/wiki/npcs')
+    }
+  },
+  { immediate: true },
+)
+
+watch(
+  npc,
+  (n) => {
+    if (!n) return
+    applyDynamicSeo({
+      path: route.path,
+      seo: {
+        ...n.seo,
+        image: n.imageUrl,
+      },
+      ogImageAlt: n.imageAlt,
+    })
+  },
+  { immediate: true, flush: 'post' },
+)
+</script>
+
+<style scoped>
+.npc-detail-page {
+  --npc-accent: color-mix(in srgb, var(--color-frost) 82%, var(--color-primary-soft));
+  --npc-accent-dim: color-mix(in srgb, var(--npc-accent) 35%, transparent);
+  padding-bottom: 3.5rem;
+}
+
+.npc-detail-page[data-npc='bandits'] {
+  --npc-accent: color-mix(in srgb, var(--color-rust-bright) 75%, #c44);
+  --npc-accent-dim: color-mix(in srgb, var(--color-rust) 28%, transparent);
+}
+
+.npc-detail-page[data-npc='doctor'] {
+  --npc-accent: color-mix(in srgb, var(--color-frost) 55%, #5a9e9e);
+  --npc-accent-dim: color-mix(in srgb, var(--npc-accent) 32%, transparent);
+}
+
+/* —— Hero —— */
+.npc-hero {
+  position: relative;
+  padding: clamp(1.25rem, 3vw, 2rem) 0 clamp(2rem, 4vw, 3rem);
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+  overflow: hidden;
+}
+
+.npc-hero__glow {
+  position: absolute;
+  inset: -40% -20% auto -20%;
+  height: 85%;
+  background:
+    radial-gradient(ellipse 70% 60% at 18% 40%, var(--npc-accent-dim), transparent 55%),
+    radial-gradient(ellipse 50% 45% at 85% 20%, color-mix(in srgb, var(--color-rust) 12%, transparent), transparent 50%),
+    linear-gradient(180deg, color-mix(in srgb, var(--color-panel) 55%, transparent), transparent);
+  pointer-events: none;
+}
+
+.npc-hero__wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.npc-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+
+.npc-breadcrumb a {
+  color: var(--color-primary-soft);
+  text-decoration: none;
+}
+
+.npc-breadcrumb a:hover {
+  color: var(--color-signal-soft);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.npc-breadcrumb__current {
+  color: color-mix(in srgb, var(--color-text) 45%, var(--color-muted));
+  max-width: min(36ch, 100%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.npc-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+  gap: clamp(1.5rem, 4vw, 2.75rem);
+  align-items: center;
+}
+
+@media (max-width: 1023px) {
+  .npc-hero__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.npc-hero__role {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-journey);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--npc-accent);
+}
+
+.npc-hero__title {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 4.2vw, 2.65rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.08;
+  color: var(--color-text);
+  text-shadow: 0 1px 24px color-mix(in srgb, var(--npc-accent) 15%, transparent);
+}
+
+.npc-hero__summary {
+  margin: 0 0 1.35rem;
+  max-width: 54ch;
+  font-size: 0.98rem;
+  line-height: 1.62;
+  color: var(--color-muted);
+}
+
+.npc-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.65rem;
+}
+
+.npc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem 1rem;
+  border-radius: 10px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.npc-btn--solid {
+  border: 1px solid color-mix(in srgb, var(--npc-accent) 45%, var(--color-border));
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--npc-accent) 22%, var(--color-panel)),
+    color-mix(in srgb, var(--color-panel) 88%, #000)
+  );
+  color: var(--color-text);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
+}
+
+.npc-btn--solid:hover {
+  border-color: color-mix(in srgb, var(--npc-accent) 65%, transparent);
+  color: var(--color-signal-soft);
+}
+
+.npc-hero__visual {
+  justify-self: end;
+  width: 100%;
+  max-width: 380px;
+}
+
+@media (max-width: 1023px) {
+  .npc-hero__visual {
+    justify-self: start;
+    max-width: 320px;
+  }
+}
+
+.npc-hero__frame {
+  position: relative;
+}
+
+.npc-hero__frame-inner {
+  border-radius: 16px;
+  padding: 3px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--npc-accent) 55%, transparent),
+    color-mix(in srgb, var(--color-border) 70%, transparent) 50%,
+    color-mix(in srgb, var(--npc-accent) 25%, transparent)
+  );
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 color-mix(in srgb, #fff 6%, transparent);
+}
+
+.npc-hero__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 13px;
+  background: var(--color-panel);
+}
+
+.npc-hero__caption {
+  margin: 0.55rem 0 0;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--color-muted);
+  letter-spacing: 0.04em;
+}
+
+/* —— Main grid —— */
+.npc-main__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: start;
+}
+
+@media (max-width: 1023px) {
+  .npc-main__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .npc-main__rail {
+    order: -1;
+  }
+}
+
+.npc-sheet {
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--color-border) 88%, var(--npc-accent));
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--color-panel) 92%, #000) 0%,
+    color-mix(in srgb, var(--color-surface) 96%, transparent) 100%
+  );
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.npc-sheet__body {
+  padding: clamp(1.25rem, 2.5vw, 2rem) clamp(1.15rem, 2.5vw, 1.85rem) clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.npc-main__rail {
+  position: sticky;
+  top: var(--app-header-sticky-offset);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 1023px) {
+  .npc-main__rail {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .npc-rail-card {
+    flex: 1 1 240px;
+  }
+}
+
+.npc-rail-card {
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
+  background: color-mix(in srgb, var(--color-panel) 45%, var(--color-surface));
+}
+
+.npc-rail-card--source {
+  border-color: color-mix(in srgb, var(--npc-accent) 28%, var(--color-border));
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--npc-accent) 8%, var(--color-panel)),
+    color-mix(in srgb, var(--color-panel) 70%, transparent)
+  );
+}
+
+.npc-rail-card__label {
+  margin: 0 0 0.45rem;
+  font-family: var(--font-journey);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--npc-accent);
+}
+
+.npc-rail-card__text {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+.npc-rail-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.npc-rail-list__link {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.npc-rail-list__link:hover {
+  color: var(--npc-accent);
+}
+
+.npc-rail-list__meta {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: var(--color-muted);
+}
+
+/* —— Rich article (v-html) —— */
+.npc-detail-rich :deep(.npc-lead) {
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border-left: 3px solid var(--npc-accent);
+  background: color-mix(in srgb, var(--npc-accent) 6%, var(--color-panel));
+  font-size: 0.98rem;
+  line-height: 1.58;
+  color: color-mix(in srgb, var(--color-text) 70%, var(--color-muted));
+}
+
+.npc-detail-rich :deep(.npc-see-also) {
+  margin: 0 0 1.35rem;
+  font-size: 0.88rem;
+  color: var(--color-muted);
+}
+
+.npc-detail-rich :deep(.npc-muted) {
+  font-size: 0.84rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.npc-detail-rich :deep(h2) {
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--npc-accent) 22%, var(--color-border));
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-text);
+}
+
+.npc-detail-rich :deep(h2:first-of-type) {
+  margin-top: 0.25rem;
+}
+
+.npc-detail-rich :deep(h3) {
+  margin: 1.35rem 0 0.5rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--npc-accent);
+}
+
+.npc-detail-rich {
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.npc-detail-rich :deep(p) {
+  margin: 0 0 0.85rem;
+  color: var(--color-muted);
+}
+
+.npc-detail-rich :deep(ul),
+.npc-detail-rich :deep(ol) {
+  margin: 0 0 0.9rem;
+  padding-left: 1.2rem;
+  color: var(--color-muted);
+}
+
+.npc-detail-rich :deep(li) {
+  margin-bottom: 0.4rem;
+}
+
+.npc-detail-rich :deep(.npc-steps) {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.1rem;
+}
+
+.npc-detail-rich :deep(.npc-steps li) {
+  margin-bottom: 0.45rem;
+}
+
+.npc-detail-rich :deep(.npc-dl) {
+  margin: 0.5rem 0 1rem;
+}
+
+.npc-detail-rich :deep(.npc-dl dt) {
+  margin-top: 0.65rem;
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.88rem;
+}
+
+.npc-detail-rich :deep(.npc-dl dd) {
+  margin: 0.2rem 0 0;
+  padding-left: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.npc-detail-rich :deep(.npc-dl dt:first-child) {
+  margin-top: 0;
+}
+
+.npc-detail-rich :deep(.npc-bug-list li) {
+  margin-bottom: 0.55rem;
+}
+
+.npc-detail-rich :deep(a) {
+  color: var(--color-primary-soft);
+}
+
+.npc-detail-rich :deep(a:hover) {
+  color: var(--color-signal-soft);
+}
+
+.npc-detail-rich :deep(.npc-table-wrap) {
+  margin: 0.5rem 0 1rem;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--color-border) 90%, transparent);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background: color-mix(in srgb, var(--color-bg) 40%, transparent);
+}
+
+.npc-detail-rich :deep(.npc-wiki-table) {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.npc-detail-rich :deep(.npc-wiki-table th),
+.npc-detail-rich :deep(.npc-wiki-table td) {
+  padding: 0.5rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 75%, transparent);
+}
+
+.npc-detail-rich :deep(.npc-wiki-table th) {
+  font-family: var(--font-journey);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  background: color-mix(in srgb, var(--color-panel) 80%, transparent);
+}
+
+.npc-detail-rich :deep(.npc-wiki-table tbody tr:hover td) {
+  background: color-mix(in srgb, var(--npc-accent) 5%, transparent);
+}
+
+.npc-detail-rich :deep(.npc-wiki-table td:first-child) {
+  font-weight: 600;
+  color: color-mix(in srgb, var(--color-text) 75%, var(--color-muted));
+  white-space: nowrap;
+}
+
+/* —— Tablet —— */
+@media (max-width: 1023px) {
+  .npc-hero {
+    padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .npc-main__grid {
+    gap: 1.15rem;
+  }
+}
+
+/* —— Phone —— */
+@media (max-width: 767px) {
+  .npc-detail-page {
+    padding-bottom: calc(2.5rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .npc-hero {
+    padding: 1rem 0 clamp(1.25rem, 4vw, 1.75rem);
+    margin-bottom: 1.15rem;
+  }
+
+  .npc-breadcrumb {
+    font-size: 0.72rem;
+    margin-bottom: 1rem;
+  }
+
+  .npc-hero__glow {
+    inset: -30% -30% auto -30%;
+    height: 70%;
+  }
+
+  .npc-hero__title {
+    font-size: clamp(1.4rem, 6.5vw, 1.95rem);
+  }
+
+  .npc-hero__summary {
+    font-size: 0.9rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .npc-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .npc-btn {
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .npc-hero__visual {
+    max-width: 100%;
+    margin-top: 0.25rem;
+  }
+
+  .npc-hero__frame-inner {
+    border-radius: 14px;
+  }
+
+  .npc-hero__img {
+    border-radius: 11px;
+  }
+
+  .npc-sheet {
+    border-radius: 14px;
+  }
+
+  .npc-sheet__body {
+    padding: 1rem 0.8rem 1.35rem;
+  }
+
+  .npc-main__rail {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .npc-rail-card {
+    flex: 1 1 auto !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .npc-detail-rich {
+    font-size: 0.88rem;
+    line-height: 1.62;
+  }
+
+  .npc-detail-rich :deep(.npc-lead) {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .npc-detail-rich :deep(h2) {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .npc-detail-rich :deep(h3) {
+    font-size: 0.82rem;
+  }
+
+  .npc-detail-rich :deep(.npc-wiki-table) {
+    min-width: 0;
+    font-size: 0.74rem;
+    line-height: 1.4;
+  }
+
+  .npc-detail-rich :deep(.npc-wiki-table th),
+  .npc-detail-rich :deep(.npc-wiki-table td) {
+    padding: 0.4rem 0.45rem;
+  }
+
+  .npc-detail-rich :deep(.npc-wiki-table th) {
+    font-size: 0.52rem;
+    letter-spacing: 0.1em;
+  }
+
+  .npc-detail-rich :deep(.npc-wiki-table td:first-child) {
+    white-space: normal;
+    min-width: 5.5rem;
+  }
+
+  .npc-detail-rich :deep(.npc-table-wrap) {
+    margin-left: -0.15rem;
+    margin-right: -0.15rem;
+    border-radius: 8px;
+  }
+}
+</style>

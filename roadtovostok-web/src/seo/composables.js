@@ -160,6 +160,16 @@ export function applyRouteSeo(route) {
   )
 }
 
+/**
+ * Override document head for pages whose SEO comes from data (e.g. /guides/:addressBar).
+ * Runs after default route meta when used with watch(..., { flush: 'post' }).
+ */
+export function applyDynamicSeo({ path, seo = {}, ogImageAlt }) {
+  const merged = { ...seo }
+  if (ogImageAlt) merged.ogImageAlt = ogImageAlt
+  applyRouteSeo({ path, meta: { seo: merged } })
+}
+
 /** Call from App.vue: watches route and updates head on SPA navigations. */
 export function useRouteSeo() {
   const route = useRoute()

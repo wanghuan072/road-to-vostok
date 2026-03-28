@@ -65,7 +65,7 @@ useRouteSeo()
   mask-image: radial-gradient(ellipse 85% 75% at 50% 42%, black 20%, transparent 72%);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1023px) {
   .shell-bg-photo {
     background-attachment: scroll;
   }

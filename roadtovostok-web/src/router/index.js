@@ -20,9 +20,9 @@ export const routeDefs = [
       seo: {
         title: 'Road To Vostok Guide — Maps, Tasks, Weapons & Survival Wiki',
         description:
-          'Fan-made Road To Vostok survival wiki: how to play, Steam demo and Early Access, maps and all tasks, loadouts, inverter, medical, saves, and official roadmap context.',
+          'Fan-made Road To Vostok survival wiki: how to play, Steam demo and Early Access, map and tasks pages, loadouts, guides, mods notes, and official roadmap context.',
         keywords:
-          'Road To Vostok, guide, wiki, survival FPS, Steam demo, Early Access, maps, all tasks, weapons, Area 05, Border Zone, Vostok, roadmap',
+          'Road To Vostok, guide, wiki, survival FPS, Steam demo, Early Access, map, tasks, weapons, Area 05, Border Zone, Vostok, roadmap',
       },
     },
   },
@@ -42,23 +42,23 @@ export const routeDefs = [
     },
   },
   {
-    path: '/item-database',
-    name: 'item-database',
+    path: '/wiki',
+    name: 'wiki',
     view: 'ItemDatabaseList',
     meta: {
       sitemap: { priority: 0.9, changefreq: 'weekly' },
       seo: {
-        title: 'Road To Vostok Item Database — Gear, Tasks & Crafting Tables',
+        title: 'Road To Vostok Wiki — Gear, Tasks & Crafting Tables',
         description:
-          'Browse fan-maintained Road To Vostok item tables: weapons, ammo, core task props, inverter and cables, fishing, and gathering — always confirm values in-game.',
+          'Browse fan-maintained Road To Vostok wiki tables: weapons, ammo, core task props, inverter and cables, fishing, and gathering — always confirm values in-game.',
         keywords:
-          'Road To Vostok items, database, weapons, ammunition, inverter, gathering, fishing, crafting',
+          'Road To Vostok wiki, items, weapons, ammunition, inverter, gathering, fishing, crafting',
       },
     },
   },
   {
-    path: '/item-database/core-tasks',
-    name: 'item-database-core-tasks',
+    path: '/wiki/core-tasks',
+    name: 'wiki-core-tasks',
     view: 'ItemDatabaseCoreTasks',
     meta: {
       sitemap: { priority: 0.85, changefreq: 'monthly' },
@@ -72,23 +72,23 @@ export const routeDefs = [
     },
   },
   {
-    path: '/item-database/weapons',
-    name: 'item-database-weapons',
+    path: '/wiki/weapons',
+    name: 'wiki-weapons',
     view: 'ItemDatabaseWeapons',
     meta: {
       sitemap: { priority: 0.85, changefreq: 'monthly' },
       seo: {
-        title: 'Road To Vostok Weapons List — Guns, SMGs & Attachments',
+        title: '武器 · Road To Vostok — Knives, Guns, SMGs & Calibers',
         description:
-          'Road To Vostok weapons overview: rifles, SMGs, shotguns, pistols, primary ammo types, and attachment notes. Values may vary by patch — verify in your build.',
+          'Road To Vostok weapon categories: knives, pistols, rifles, SMGs & PDWs, shotguns, bolt-action, semi-auto. Community wiki–style stats and loot hints — verify in your build.',
         keywords:
-          'Road To Vostok weapons, guns, AKM, MP7, ammo, attachments, survival FPS',
+          'Road To Vostok weapons, 武器, AKM, MP7, Mosin, SVD, ammo, survival FPS',
       },
     },
   },
   {
-    path: '/item-database/ammunition',
-    name: 'item-database-ammunition',
+    path: '/wiki/ammunition',
+    name: 'wiki-ammunition',
     view: 'ItemDatabaseAmmunition',
     meta: {
       sitemap: { priority: 0.85, changefreq: 'monthly' },
@@ -102,8 +102,8 @@ export const routeDefs = [
     },
   },
   {
-    path: '/item-database/fishing',
-    name: 'item-database-fishing',
+    path: '/wiki/fishing',
+    name: 'wiki-fishing',
     view: 'ItemDatabaseFishing',
     meta: {
       sitemap: { priority: 0.8, changefreq: 'monthly' },
@@ -117,8 +117,8 @@ export const routeDefs = [
     },
   },
   {
-    path: '/item-database/gathering',
-    name: 'item-database-gathering',
+    path: '/wiki/gathering',
+    name: 'wiki-gathering',
     view: 'ItemDatabaseGathering',
     meta: {
       sitemap: { priority: 0.8, changefreq: 'monthly' },
@@ -132,17 +132,88 @@ export const routeDefs = [
     },
   },
   {
-    path: '/maps-tasks',
-    name: 'maps-tasks',
-    view: 'MapsTasksView',
+    path: '/wiki/npcs',
+    name: 'wiki-npcs',
+    view: 'NpcListView',
+    meta: {
+      sitemap: { priority: 0.82, changefreq: 'monthly' },
+      seo: {
+        title: 'Road To Vostok NPCs — Traders & Area 05 Hubs',
+        description:
+          'Fan wiki NPC and hub notes for Road To Vostok: Generalist and Doctor traders, Village hub context, and links from the interactive map.',
+        keywords:
+          'Road To Vostok NPCs, traders, Generalist, Doctor, Village, Area 05, wiki',
+      },
+    },
+  },
+  {
+    path: '/wiki/npcs/:addressBar',
+    name: 'wiki-npc-detail',
+    view: 'NpcDetailView',
+    meta: {
+      sitemap: false,
+      seo: {
+        title: 'NPC — Road To Vostok Wiki',
+        description: 'Fan wiki NPC article for Road To Vostok.',
+        keywords: 'Road To Vostok, NPC, wiki',
+      },
+    },
+  },
+  {
+    path: '/map',
+    name: 'map',
+    view: 'MapView',
     meta: {
       sitemap: { priority: 0.95, changefreq: 'weekly' },
       seo: {
-        title: 'Road To Vostok Map & Tasks — Area 05, Border Zone, Vostok',
+        title: 'Road To Vostok Map — Area 05, POIs & Regional Overview',
         description:
-          'Interactive fan map and written guide: Area 05, Border Zone crossings, Vostok permadeath rules, traders, keys, and the “all tasks” milestone — unofficial; verify in-game.',
+          'Interactive fan map: Area 05, Border Zone, and Vostok pins, location index, and regional overview. Unofficial overlay — verify against your in-game map.',
         keywords:
-          'Road To Vostok map, all tasks, Area 05, Border Zone, Vostok, traders, quests, POI',
+          'Road To Vostok map, Area 05, Border Zone, Vostok, POI, location index',
+      },
+    },
+  },
+  {
+    path: '/tasks',
+    name: 'tasks',
+    view: 'TasksView',
+    meta: {
+      sitemap: { priority: 0.92, changefreq: 'weekly' },
+      seo: {
+        title: 'Road To Vostok Tasks — Progression, Border & Vostok Rules',
+        description:
+          'Trader tasks vs roadmap questline, practical progression order, Border Zone crossings, and Vostok permadeath rules — unofficial; confirm in your build.',
+        keywords:
+          'Road To Vostok all tasks, Border Zone, Vostok, traders, quests, permadeath',
+      },
+    },
+  },
+  {
+    path: '/guides',
+    name: 'guides',
+    view: 'GuidesListView',
+    meta: {
+      sitemap: { priority: 0.88, changefreq: 'weekly' },
+      seo: {
+        title: 'Road To Vostok Guides — Weapons, Medical, Power & Roadmap',
+        description:
+          'Player guides for Road To Vostok: loading weapons, medical survival, inverter and shelter power, and Early Access roadmap context. Unofficial fan articles.',
+        keywords:
+          'Road To Vostok guides, load shotgun, medical, inverter, roadmap',
+      },
+    },
+  },
+  {
+    path: '/guides/:addressBar',
+    name: 'guide-article',
+    view: 'GuideArticleView',
+    meta: {
+      sitemap: false,
+      seo: {
+        title: 'Guide — Road To Vostok',
+        description: 'Player guide article for Road To Vostok.',
+        keywords: 'Road To Vostok, guide',
       },
     },
   },
@@ -162,77 +233,30 @@ export const routeDefs = [
     },
   },
   {
-    path: '/tech-support',
-    name: 'tech-support',
-    view: 'TechSupportView',
-    meta: {
-      sitemap: { priority: 0.85, changefreq: 'monthly' },
-      seo: {
-        title: 'Road To Vostok PC Support — Steam Saves, Backup & Fixes',
-        description:
-          'Road To Vostok on PC: Steam demo install, save backup paths (Godot user data), cloud sync tips, common errors, and when to verify files or contact support.',
-        keywords:
-          'Road To Vostok Steam, save backup, PC fix, Godot, tech support, demo',
-      },
-    },
-  },
-  {
-    path: '/guides/load-weapon',
-    name: 'guide-load-weapon',
-    view: 'LoadWeaponGuide',
-    meta: {
-      sitemap: { priority: 0.8, changefreq: 'monthly' },
-      seo: {
-        title: 'How to Load Weapons in Road To Vostok — Shotgun & Magazines',
-        description:
-          'Load shotgun shells and magazines in Road To Vostok: manual vs magazine flow, common mistakes, and build-specific quirks. Check your key bindings and patch notes.',
-        keywords:
-          'Road To Vostok load shotgun, reload, magazine, weapons, how to',
-      },
-    },
-  },
-  {
-    path: '/guides/inverter-location',
-    name: 'guide-inverter',
-    view: 'InverterLocationGuide',
-    meta: {
-      sitemap: { priority: 0.8, changefreq: 'monthly' },
-      seo: {
-        title: 'Road To Vostok Inverter — Location, Shelter Power & Tasks',
-        description:
-          'Inverter and shelter power in Road To Vostok: where players typically find it, cabling and tasks context, and reminders to confirm coordinates in your build.',
-        keywords:
-          'Road To Vostok inverter, location, shelter, power, B cable, tasks',
-      },
-    },
-  },
-  {
-    path: '/guides/medical',
-    name: 'guide-medical',
-    view: 'MedicalGuide',
-    meta: {
-      sitemap: { priority: 0.8, changefreq: 'monthly' },
-      seo: {
-        title: 'Road To Vostok Medical Guide — Injury, Meds & Recovery',
-        description:
-          'Medical survival in Road To Vostok: fractures, bleeding, meds, and recovery tips from community play. Not medical advice — gameplay only; verify in your version.',
-        keywords:
-          'Road To Vostok medical, broken bone, healing, meds, survival',
-      },
-    },
-  },
-  {
-    path: '/guides/roadmap',
-    name: 'guide-roadmap',
-    view: 'RoadmapGuide',
+    path: '/mods',
+    name: 'mods',
+    view: 'ModsListView',
     meta: {
       sitemap: { priority: 0.85, changefreq: 'weekly' },
       seo: {
-        title: 'Road To Vostok Roadmap — Builds, EA Scope & Future Features',
+        title: 'Road To Vostok Mods — Community Packs & Early Access Notes',
         description:
-          'Readable summary of the Road To Vostok public roadmap: Build 1–8 themes, Early Access scope, and systems like fishing and seasons. Cross-check roadtovostok.com and Steam.',
+          'Unofficial modding notes for Road To Vostok: Early Access expectations, community packs, and safe experimentation. No hosted downloads — verify every file.',
         keywords:
-          'Road To Vostok roadmap, Early Access, builds, future updates, official',
+          'Road To Vostok mods, modding, Early Access, community, unofficial',
+      },
+    },
+  },
+  {
+    path: '/mods/:addressBar',
+    name: 'mod-article',
+    view: 'ModArticleView',
+    meta: {
+      sitemap: false,
+      seo: {
+        title: 'Mod article — Road To Vostok',
+        description: 'Community modding article for Road To Vostok.',
+        keywords: 'Road To Vostok, mods',
       },
     },
   },
@@ -320,7 +344,7 @@ export const routeDefs = [
       seo: {
         title: 'Page not found',
         description:
-          'This page does not exist on Road To Vostok Guide. Browse the home page, item database, or maps and quests.',
+          'This page does not exist on Road To Vostok Guide. Browse the home page, wiki, map, tasks, or guides.',
         keywords: 'Road To Vostok Guide, 404',
         robots: 'noindex, nofollow',
       },
@@ -328,22 +352,35 @@ export const routeDefs = [
   },
 ]
 
+const redirectRoutes = [
+  { path: '/item-database', redirect: '/wiki' },
+  { path: '/item-database/core-tasks', redirect: '/wiki/core-tasks' },
+  { path: '/item-database/weapons', redirect: '/wiki/weapons' },
+  { path: '/item-database/ammunition', redirect: '/wiki/ammunition' },
+  { path: '/item-database/fishing', redirect: '/wiki/fishing' },
+  { path: '/item-database/gathering', redirect: '/wiki/gathering' },
+  { path: '/maps-tasks', redirect: '/map' },
+  { path: '/tech-support', redirect: '/mods' },
+]
+
 const viewLoaders = {
   HomeView: () => import('../views/HomeView.vue'),
   GettingStartedView: () => import('../views/GettingStartedView.vue'),
-  ItemDatabaseList: () => import('../views/item-database/ItemDatabaseList.vue'),
-  ItemDatabaseCoreTasks: () => import('../views/item-database/ItemDatabaseCoreTasks.vue'),
-  ItemDatabaseWeapons: () => import('../views/item-database/ItemDatabaseWeapons.vue'),
-  ItemDatabaseAmmunition: () => import('../views/item-database/ItemDatabaseAmmunition.vue'),
-  ItemDatabaseFishing: () => import('../views/item-database/ItemDatabaseFishing.vue'),
-  ItemDatabaseGathering: () => import('../views/item-database/ItemDatabaseGathering.vue'),
-  MapsTasksView: () => import('../views/MapsTasksView.vue'),
+  ItemDatabaseList: () => import('../views/wiki/ItemDatabaseList.vue'),
+  ItemDatabaseCoreTasks: () => import('../views/wiki/ItemDatabaseCoreTasks.vue'),
+  ItemDatabaseWeapons: () => import('../views/wiki/ItemDatabaseWeapons.vue'),
+  ItemDatabaseAmmunition: () => import('../views/wiki/ItemDatabaseAmmunition.vue'),
+  ItemDatabaseFishing: () => import('../views/wiki/ItemDatabaseFishing.vue'),
+  ItemDatabaseGathering: () => import('../views/wiki/ItemDatabaseGathering.vue'),
+  NpcListView: () => import('../views/wiki/NpcListView.vue'),
+  NpcDetailView: () => import('../views/wiki/NpcDetailView.vue'),
+  MapView: () => import('../views/MapView.vue'),
+  TasksView: () => import('../views/TasksView.vue'),
+  GuidesListView: () => import('../views/guides/GuidesListView.vue'),
+  GuideArticleView: () => import('../views/guides/GuideArticleView.vue'),
   DevUpdatesView: () => import('../views/DevUpdatesView.vue'),
-  TechSupportView: () => import('../views/TechSupportView.vue'),
-  LoadWeaponGuide: () => import('../views/guides/LoadWeaponGuide.vue'),
-  InverterLocationGuide: () => import('../views/guides/InverterLocationGuide.vue'),
-  MedicalGuide: () => import('../views/guides/MedicalGuide.vue'),
-  RoadmapGuide: () => import('../views/guides/RoadmapGuide.vue'),
+  ModsListView: () => import('../views/mods/ModsListView.vue'),
+  ModArticleView: () => import('../views/mods/ModArticleView.vue'),
   PrivacyPolicyView: () => import('../views/site-pages/PrivacyPolicyView.vue'),
   TermsOfServiceView: () => import('../views/site-pages/TermsOfServiceView.vue'),
   CopyrightView: () => import('../views/site-pages/CopyrightView.vue'),
@@ -352,7 +389,7 @@ const viewLoaders = {
   NotFoundView: () => import('../views/site-pages/NotFoundView.vue'),
 }
 
-const routes = routeDefs.map((def) => {
+const mappedRoutes = routeDefs.map((def) => {
   const load = viewLoaders[def.view]
   if (!load) {
     throw new Error(`[router] Unknown view key: ${def.view}`)
@@ -364,6 +401,8 @@ const routes = routeDefs.map((def) => {
     meta: def.meta,
   }
 })
+
+const routes = [...redirectRoutes, ...mappedRoutes]
 
 const history =
   typeof window !== 'undefined' ? createWebHistory(base) : createMemoryHistory(base)
