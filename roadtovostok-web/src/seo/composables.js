@@ -58,7 +58,6 @@ function injectJsonLd(data) {
 
 function buildJsonLd({ title, description, path, pageOgType }) {
   const url = canonicalHref(path)
-  const image = defaultOgImage
   const websiteId = `${siteOrigin}/#website`
   const orgId = `${siteOrigin}/#organization`
 

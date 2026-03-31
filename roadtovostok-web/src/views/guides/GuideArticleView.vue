@@ -76,6 +76,7 @@ import { RouterLink, useRoute, useRouter } from 'vue-router'
 import guideArticles from '../../data/guides/articles.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'
+import { useInjectedHeadFragment } from '../../composables/useInjectedHeadFragment.js'
 import { applyDynamicSeo } from '../../seo/composables.js'
 
 const { onContentLinkClick } = useHtmlContentLinkNavigation()
@@ -84,6 +85,9 @@ const route = useRoute()
 const router = useRouter()
 
 const article = computed(() => getByAddressBar(guideArticles, route.params.addressBar))
+
+/** Optional HTML fragment for document.head (JSON-LD, extra meta/link/style). */
+useInjectedHeadFragment(() => article.value?.head)
 
 const summaryText = computed(() => article.value?.seo?.description || '')
 
@@ -152,6 +156,8 @@ watch(
   border-radius: 10px;
   border: 1px solid color-mix(in srgb, var(--color-border) 90%, transparent);
   background: color-mix(in srgb, var(--color-panel) 35%, transparent);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .article-split__aside {
