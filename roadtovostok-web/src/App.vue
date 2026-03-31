@@ -68,6 +68,7 @@ useRouteSeo()
 @media (max-width: 1023px) {
   .shell-bg-photo {
     background-attachment: scroll;
+    
   }
 }
 
