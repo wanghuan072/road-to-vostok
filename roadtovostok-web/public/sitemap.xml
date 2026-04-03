@@ -139,6 +139,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/guides/weapons-list</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/mods/oldmans-immersive-overhaul</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
