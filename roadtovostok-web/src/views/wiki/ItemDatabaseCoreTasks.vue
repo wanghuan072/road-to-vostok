@@ -3,9 +3,9 @@
     <section class="page-hero-section">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true"> / </span>
-          <RouterLink to="/wiki">Wiki</RouterLink>
+          <a href="/wiki">Wiki</a>
           <span aria-hidden="true"> / </span>
           <span>Core tasks</span>
         </nav>
@@ -13,11 +13,11 @@
         <p class="lead">
           Items players pair with shelter power, cabling, and quest chains (<strong>all tasks</strong>).
           Cross-check
-          <RouterLink to="/map">Map</RouterLink> and <RouterLink to="/tasks">Tasks</RouterLink> for
+          <a href="/map">Map</a> and <a href="/tasks">Tasks</a> for
           progression context; for long reads see
-          <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</RouterLink>
+          <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</a>
           and
-          <RouterLink to="/guides/surviving-the-Minefield">Minefield tactics</RouterLink>.
+          <a href="/guides/surviving-the-Minefield">Minefield tactics</a>.
         </p>
       </div>
     </section>
@@ -45,11 +45,11 @@
         </div>
         <div class="cross-links">
           Related:
-          <RouterLink to="/tasks">Tasks</RouterLink>
+          <a href="/tasks">Tasks</a>
           ·
-          <RouterLink to="/guides/surviving-the-Minefield">Minefield guide</RouterLink>
+          <a href="/guides/surviving-the-Minefield">Minefield guide</a>
           ·
-          <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">Geography guide</RouterLink>
+          <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">Geography guide</a>
         </div>
       </div>
     </section>
@@ -57,7 +57,6 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
 import rows from '../../data/item/coreTasks.js'
 </script>
 

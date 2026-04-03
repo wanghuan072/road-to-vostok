@@ -4,7 +4,7 @@
       <div class="container">
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <RouterLink to="/">Home</RouterLink>
+            <a href="/">Home</a>
             <span aria-hidden="true">/</span>
             <span>Start here</span>
           </nav>
@@ -14,11 +14,11 @@
           <p>
             Core loop on PC, default-style controls (verify in your build), loading shotguns and
             other firearms (this page,
-            <RouterLink to="/getting-started#weapons-loading">weapon loading</RouterLink>),
+            <a href="/getting-started#weapons-loading">weapon loading</a>),
             survival and medical when you fracture or bleed (
-            <RouterLink to="/getting-started#medical">medical section below</RouterLink>), and crafting context
-            (<RouterLink to="/wiki">Wiki</RouterLink>,
-            <RouterLink to="/wiki/gathering">Gathering</RouterLink>). Facts follow the public Steam
+            <a href="/getting-started#medical">medical section below</a>), and crafting context
+            (<a href="/wiki">Wiki</a>,
+            <a href="/wiki/gathering">Gathering</a>). Facts follow the public Steam
             listing and community write-ups — always confirm in your installed demo or Early Access
             build.
           </p>
@@ -42,9 +42,9 @@
             between Finland and Russia: you survive, loot, plan, and prepare to reach Vostok, where
             mistakes can end a run (including permadeath rules for that zone as described there).
             On this site, pair the overview with
-            <RouterLink to="/tasks">Tasks</RouterLink>,
-            <RouterLink to="/map">Map</RouterLink>, and
-            <RouterLink to="/wiki/npcs">NPCs</RouterLink> when you want locations and trader context.
+            <a href="/tasks">Tasks</a>,
+            <a href="/map">Map</a>, and
+            <a href="/wiki/npcs">NPCs</a> when you want locations and trader context.
           </p>
           <ul>
             <li>
@@ -67,11 +67,11 @@
             <li>
               Traders: barter economy (no cash); themed gear, tasks and services including medical
               care and weapon maintenance (same store page). See also
-              <RouterLink to="/wiki/npcs">NPCs &amp; traders</RouterLink>.
+              <a href="/wiki/npcs">NPCs &amp; traders</a>.
             </li>
             <li>
               Loot and UI: physics-based loot, tetris-style inventories, combining and stacking
-              items. Item tables live under <RouterLink to="/wiki">Wiki</RouterLink>.
+              items. Item tables live under <a href="/wiki">Wiki</a>.
             </li>
           </ul>
           <p class="callout">
@@ -79,7 +79,7 @@
             Public demos have included a tutorial map that introduces mechanics such as medical care,
             trading, shelter, and looting before the main sandbox — prioritize that before reading
             guides alone. Afterward, use
-            <RouterLink to="/guides">Guides</RouterLink> for written walkthroughs.
+            <a href="/guides">Guides</a> for written walkthroughs.
           </p>
           </div>
         </section>
@@ -92,7 +92,7 @@
             as the source of truth. The table below is a reference layout aggregated from a
             third-party PC controls write-up (Magic Game World, first published 2021, since revised)
             so you know what to look for — not a guarantee for your patch. Weapon UI details also
-            appear in the <RouterLink to="/getting-started#weapons-loading">weapon loading section</RouterLink> on this page.
+            appear in the <a href="/getting-started#weapons-loading">weapon loading section</a> on this page.
           </p>
           <div class="table-wrap">
             <table class="data-table">
@@ -198,8 +198,8 @@
             a magazine, feed rounds into it in the inventory UI, re-seat the magazine, then use R to
             swap to a ready magazine during combat. Carrying a spare filled magazine is widely
             recommended so you can tap R under pressure. Details vary by weapon — see our
-            <RouterLink to="/getting-started#weapons-loading">weapon loading section</RouterLink> and the
-            <RouterLink to="/wiki/ammunition">Ammunition</RouterLink> table for cartridge planning.
+            <a href="/getting-started#weapons-loading">weapon loading section</a> and the
+            <a href="/wiki/ammunition">Ammunition</a> table for cartridge planning.
           </p>
 
           <h3>Shotguns, bolt-actions, and other non-magazine guns</h3>
@@ -242,10 +242,10 @@
             amount, use time, which affliction each item clears), common reference points come from the
             community-run Road To Vostok wiki on Fandom (Medical and Afflictions articles). Those
             values can change with patches — verify against your in-game tooltips. For weapon planning
-            use <RouterLink to="/wiki/weapons">Weapons</RouterLink>; for mined borders and regional
+            use <a href="/wiki/weapons">Weapons</a>; for mined borders and regional
             context see
-            <RouterLink to="/guides/surviving-the-Minefield">Minefield tactics</RouterLink> and
-            <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</RouterLink>.
+            <a href="/guides/surviving-the-Minefield">Minefield tactics</a> and
+            <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</a>.
           </p>
 
           <h3>Fractures (“died from broken bone” situations)</h3>
@@ -324,7 +324,7 @@
           </div>
           <p>
             Task-related loot is summarized under
-            <RouterLink to="/wiki/core-tasks">Core task items</RouterLink>.
+            <a href="/wiki/core-tasks">Core task items</a>.
           </p>
           </div>
         </section>
@@ -336,12 +336,12 @@
             Many players search how to craft in Road To Vostok (including the common typo
             “crasft”). Recipes and workbenches expand across Early Access patches — use in-game UI
             and patch notes as the source of truth. Our
-            <RouterLink to="/wiki">Wiki</RouterLink> lists loot that often feeds crafting loops:
-            <RouterLink to="/wiki/gathering">Gathering</RouterLink>,
-            <RouterLink to="/wiki/fishing">Fishing</RouterLink> when your build includes it, and
-            <RouterLink to="/wiki/core-tasks">Core task items</RouterLink> for shelter
+            <a href="/wiki">Wiki</a> lists loot that often feeds crafting loops:
+            <a href="/wiki/gathering">Gathering</a>,
+            <a href="/wiki/fishing">Fishing</a> when your build includes it, and
+            <a href="/wiki/core-tasks">Core task items</a> for shelter
             cabling questions. Build announcements sit in
-            <RouterLink to="/dev-updates">Road ahead</RouterLink>.
+            <a href="/dev-updates">Road ahead</a>.
           </p>
           </div>
         </section>
@@ -352,7 +352,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
 import PageRail from '../components/PageRail.vue'
 
 const railScrollRoot = ref(null)

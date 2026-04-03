@@ -6,7 +6,7 @@
           class="page-hero-breadcrumb"
           aria-label="Breadcrumb"
         >
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true">/</span>
           <span>Mods</span>
         </nav>
@@ -67,8 +67,8 @@
             :key="m.id"
             class="mods-feed__item"
           >
-            <RouterLink
-              :to="`/mods/${m.addressBar}`"
+            <a
+              :href="`/mods/${m.addressBar}`"
               class="mods-row"
               :class="{ 'mods-row--lead': index === 0 }"
             >
@@ -168,7 +168,7 @@
                   aria-hidden="true"
                 >→</span>
               </span>
-            </RouterLink>
+            </a>
           </li>
         </ul>
 
@@ -185,7 +185,6 @@
 
 <script setup>
 import { computed } from 'vue'
-import { RouterLink } from 'vue-router'
 import modArticles from '../../data/mods/mods.js'
 
 const sorted = computed(() =>

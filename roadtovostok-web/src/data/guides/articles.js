@@ -112,9 +112,9 @@ export default [
 
   {
     id: 3,
-    title: "Road to Vostok Apartments: Complete Survival & Loot Guid",
+    title: "Road to Vostok Apartments: Complete Survival & Loot Guide",
     description: "Master the Vostok Apartments in Road to Vostok. Learn how to navigate the layout, secure shelters, manage cold mechanics with fires, loot high-tier gear, and trade with The Generalist.",
-    tags: ["road to vostok apartments ","road to vostok apartments map","road to vostok apartments shelter","road to vostok apartments loot","road to vostok apartments fire","road to vostok apartments trader"],
+    tags: ["road to vostok apartments ", "road to vostok apartments map", "road to vostok apartments shelter", "road to vostok apartments loot", "road to vostok apartments fire", "road to vostok apartments trader"],
     publishDate: "2026-03-30",
     imageUrl: "/images/guides/guides03.webp",
     imageAlt: "road to vostok apartments",
@@ -125,6 +125,13 @@ export default [
     },
     addressBar: "apartments-complete-survival-loot-guid",
     detailsHtml: `
+    <iframe name="rtvApartmentsGuideYt" src="https://www.youtube.com/embed/ttvN5s0cdBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3><strong>Don't want to watch the whole video? Jump to key moments:</strong></h3>
+  <ol>
+   <li><a href="https://www.youtube.com/embed/ttvN5s0cdBI?start=336&amp;autoplay=1&amp;playsinline=1" target="rtvApartmentsGuideYt">[05:36]</a> - &#55356;&#57314; <strong>Entering the Complex:</strong> Scouting and breaching the first apartment building with NVGs.</li>
+   <li><a href="https://www.youtube.com/embed/ttvN5s0cdBI?start=766&amp;autoplay=1&amp;playsinline=1" target="rtvApartmentsGuideYt">[12:46]</a> - &#55357;&#56613; <strong>Managing Cold:</strong> Lighting the fire barrel to prevent freezing.</li>
+   <li><a href="https://www.youtube.com/embed/ttvN5s0cdBI?start=782&amp;autoplay=1&amp;playsinline=1" target="rtvApartmentsGuideYt">[13:02]</a> - &#55358;&#56605; <strong>Trader Interaction:</strong> Meeting &quot;The Generalist&quot; to trade weapons for medical supplies.</li>
+  </ol>
     <p><strong>Surviving the Apartments in Road to Vostok requires methodical CQB clearing, strict management of the cold mechanic using fire barrels, and leveraging the local trader, &quot;The Generalist.&quot; High-tier loot like VSS and AK-12 rifles are strictly obtained by eliminating hostiles and securing hidden military crates within the complex.</strong></p>
   <h2><strong>Navigating the Area Layout &amp; Tactical Approach</strong></h2>
   <p>Reaching this zone requires pushing past the Border Zone minefields and trench networks. Once inside, the layout is highly vertical and dense. Moving at night provides a massive tactical advantage against roaming NPC patrols, but requires Night Vision Goggles (NVGs). The environment forces close-quarters battle (CQB). When the NVGs run out of battery or when clearing pitch-black stairwells, transitioning to a weapon-mounted white light is mandatory to identify targets, though it exposes your position to outside threats. Room-by-room clearing is critical, as enemies like rooftop snipers maintain hard lockdown over the courtyards.</p>
@@ -170,43 +177,43 @@ export default [
         "description": "A comprehensive road to vostok fishing guide covering the best fishing spots, how to equip and cast your fishing rod, and the exact locations to catch the valuable quest item Pike.",
         "uploadDate": "2024-01-01T00:00:00Z",
         "duration": "PT17M3S",
-        "contentUrl": "https://www.youtube.com/watch?v=placeholder_id",
-        "embedUrl": "https://www.youtube.com/embed/placeholder_id",
+        "contentUrl": "https://www.youtube.com/watch?v=QVdZjWBqMH4",
+        "embedUrl": "https://www.youtube.com/embed/QVdZjWBqMH4",
         "hasPart": [
           {
             "@type": "Clip",
             "name": "Explanation of underwater fish blocks mechanic",
             "startOffset": 235,
             "endOffset": 483,
-            "url": "https://www.youtube.com/watch?v=placeholder_id&t=235s"
+            "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=235s"
           },
           {
             "@type": "Clip",
             "name": "Drainage Pipe fishing spot gameplay",
             "startOffset": 483,
             "endOffset": 750,
-            "url": "https://www.youtube.com/watch?v=placeholder_id&t=483s"
+            "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=483s"
           },
           {
             "@type": "Clip",
             "name": "Pier location with the biggest fish block",
             "startOffset": 750,
             "endOffset": 989,
-            "url": "https://www.youtube.com/watch?v=placeholder_id&t=750s"
+            "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=750s"
           },
           {
             "@type": "Clip",
             "name": "Fish market value breakdown",
             "startOffset": 989,
             "endOffset": 1023,
-            "url": "https://www.youtube.com/watch?v=placeholder_id&t=989s"
+            "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=989s"
           }
         ]
       }
       </script>`,
     title: "Road to Vostok Fishing Guide: Best Spots, Rod Mechanics & Pike Drops",
     description: "Master the survival economy with our ultimate Road to Vostok fishing guide. Learn about underwater blocks, the best fishing spots, rod mechanics, and how to catch Pike.",
-    tags: ["Road to Vostok Fishing","road to vostok fishing guide","road to vostok fishing spots","road to vostok fishing rod","road to vostok fishing pike"],
+    tags: ["Road to Vostok Fishing", "road to vostok fishing guide", "road to vostok fishing spots", "road to vostok fishing rod", "road to vostok fishing pike"],
     publishDate: "2026-03-30",
     imageUrl: "/images/guides/guides04.webp",
     imageAlt: "Road to vostok fishing",
@@ -216,7 +223,23 @@ export default [
       keywords: "Road to Vostok Fishing"
     },
     addressBar: "how-to-fish",
-    detailsHtml: `<p>In Road to Vostok, fishing isn't just randomly throwing your line into the water; it requires accurately locating hidden underwater "fish blocks." By casting your line at specific landmarks like the drainage pipe and the wooden pier, players can avoid empty catches and efficiently farm high-value catches like Pike for quests. It is the safest and most reliable way to make money during a hardcore permadeath run.
+    detailsHtml: `
+<iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/QVdZjWBqMH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>Don't want to watch the whole video? Jump straight to the key moments (opens at that time in the player above):
+</p>
+<ol>
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=235&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[03:55]</a> - 🐟 Explanation of the hidden underwater fishing blocks mechanic
+</li>
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=483&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[08:03]</a> - 🪈 Drainage Pipe fishing spot gameplay
+</li>
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=750&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[12:30]</a> - ⚓ Pier location revealing the biggest fish block
+</li>
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=989&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[16:29]</a> - 💰 Fish market values breakdown (Pike, Perch, etc.)
+</li>
+</ol>
+    
+    <p>In Road to Vostok, fishing isn't just randomly throwing your line into the water; it requires accurately locating hidden underwater "fish blocks." By casting your line at specific landmarks like the drainage pipe and the wooden pier, players can avoid empty catches and efficiently farm high-value catches like Pike for quests. It is the safest and most reliable way to make money during a hardcore permadeath run.
   </p>
   <p><img src="/images/guides/guides04-01.webp" alt="road to vostok fishing guide" width="50%">
   </p>
@@ -301,5 +324,197 @@ export default [
   <li>A: Aside from selling for a premium price of $250 at the trader, the Pike is a mandatory delivery item for an important in-game Quest/Task. Always prioritize keeping it in your stash.
   </li>
   </ol>`,
+  },
+
+  {
+    id: 5,
+    head: `<script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "VideoObject",
+        "name": "Road to Vostok Weapons Complete Range Showcase & Stats",
+        "description": "Comprehensive gameplay showcase of all weapons in Road to Vostok. Discover the complete weapons list, analyze best weapons based on raw damage and penetration level stats, and observe the condition mechanic for repairing weapons in this hardcore survival game.",
+        "uploadDate": "2024-01-01T12:00:00Z",
+        "duration": "PT5M52S",
+        "contentUrl": "https://www.youtube.com/watch?v=R5721mXs4lY",
+        "embedUrl": "https://www.youtube.com/embed/R5721mXs4lY",
+        "thumbnailUrl": "https://img.youtube.com/vi/R5721mXs4lY/maxresdefault.jpg",
+        "hasPart": [
+          {
+            "@type": "Clip",
+            "name": "Basic Pistols & UI Mechanics",
+            "startOffset": 1,
+            "endOffset": 128,
+            "url": "https://www.youtube.com/watch?v=R5721mXs4lY&t=1s"
+          },
+          {
+            "@type": "Clip",
+            "name": "High Penetration Bolt-Action Rifles",
+            "startOffset": 128,
+            "endOffset": 306,
+            "url": "https://www.youtube.com/watch?v=R5721mXs4lY&t=128s"
+          },
+          {
+            "@type": "Clip",
+            "name": "Top Tier Damage & Legendary Weapons",
+            "startOffset": 306,
+            "endOffset": 352,
+            "url": "https://www.youtube.com/watch?v=R5721mXs4lY&t=306s"
+          }
+        ]
+      }
+      </script>`,
+    title: "Road to Vostok Weapons List: All Guns & Best Weapons Guide",
+    iframeUrl: "https://www.youtube.com/embed/R5721mXs4lY",
+    description: "Comprehensive Road to Vostok weapons list . Discover the best weapons, learn about the condition and repair mechanics, and explore all legendary firearms.",
+    tags: ["Road to Vostok Weapons","road to vostok weapons list","road to vostok repair weapons","road to vostok best weapons","road to vostok all weapons"],
+    publishDate: "2026-03-30",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageAlt: "road to vostok weapons",
+    seo: {
+      title: "Road to Vostok Weapons Guide: All Guns, Stats & Best Loadouts",
+      description: "Master the arsenal in Road to Vostok. Check out the complete weapons list, stats, rarities, and the best firearms for high penetration and damage.",
+      keywords: "Road to Vostok Weapons"
+    },
+    addressBar: "weapons-list",
+    detailsHtml: `<p>In the hardcore survival game Road to Vostok, the weapons system is built entirely around extreme realism and highly detailed stat sheets. The current firing range demonstration showcases up to 20 different firearms covering various tactical roles. Each weapon features independent, rigorous data, including specific ammo caliber, base damage, penetration level, and weapon condition. For survivors, understanding these UI stats and matching penetration levels to enemy armor is a mandatory survival skill before stepping into the wasteland.
+  </p>
+  <iframe name="rtvWeaponsGuideYt" src="https://www.youtube.com/embed/R5721mXs4lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <p>Don't want to watch the full video? Jump straight to the key moments:
+  </p>
+  <ol>
+  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=0&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[00:00]</a> - 🔫 Makarov base stats breakdown and Condition status showcase
+  </li>
+  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=196&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[03:16]</a> - 🔥 Legendary submachine gun KP-31 gameplay demonstration
+  </li>
+  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=337&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[05:37]</a> - 💥 Tier 0 powerhouse M78 full-auto firing and high penetration display
+  </li>
+  </ol>
+  <h2>Comprehensive Breakdown: Road to Vostok Weapons List and Rarity Tiers
+  </h2>
+  <p>In the hardcore survival environment of Vostok, knowing your gear is the first step to staying alive as a fresh spawn. According to the gameplay demo panels, the weapon system features extremely rigorous numerical stats (including Weight, Caliber, Value, and Damage). Most importantly, the game introduces an explicit gear rarity mechanic. The loot pool scales from standard Common items (like the Makarov) to Uncommon (AKM), Rare (MP7, SVD), and all the way up to the highly coveted Legendary tier.
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199602/cms-uploads/cms-1775199602075-445545533.webp" alt="road to vostok weapons Condition" width="50%">
+  </p>
+  <h2>Weapon Maintenance Mechanics: Understanding Condition and How to Repair Weapons
+  </h2>
+  <p>Many beginners are searching for ways to fix their guns. During the shooting demonstrations, if you closely observe the right-side weapon UI panel, you will notice every single firearm features a core green metric—Condition: 100%. While the video focuses purely on gunplay and does not transition to a workbench repair screen, this durability parameter confirms the existence of a strict weapon degradation system. Once this percentage drops, players will likely face hardcore penalties such as jamming or severe accuracy reduction.
+  </p>
+  <h2>Power Analysis: What Are the Road to Vostok Best Weapons?
+  </h2>
+  <p>Let's skip the fluff and look directly at the objective stats. For any firearm to be considered the absolute "best," it must deliver exceptionally high single-shot damage or terrifying armor penetration. The video explicitly highlights two weapons sitting at the peak of the meta:
+  </p>
+  <ol>
+  <li>KP-31: Marked with Legendary rarity. While its penetration is only Level 1, its role as a high-fire-rate submachine gun with a massive drum mag offers unmatched suppressive power in close-quarters combat.
+  </li>
+  <li>M78: Also possessing a Legendary tag, this rifle's base damage spikes to 50, and it features the highest armor piercing stat shown in the demo: Penetration: Level 4. When facing heavily armored enemies, the M78, alongside the Level 4 SVD and Mosin, will be the undisputed optimal choice.
+  </li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199629/cms-uploads/cms-1775199629391-201412167.webp" alt="road to vostok weapons Mosin" width="50%">
+  </p>
+  <h2>The Ultimate Arsenal: A Look at Road to Vostok All Weapons
+  </h2>
+  <p>To help veterans plan their tactical loadouts in advance, we have compiled the key firearms featured in the video, categorized strictly by their displayed "Penetration Level" and "Rarity":
+  </p>
+  <table>
+  <tbody>
+  <tr>
+  <td data-row="row-01v85e">Weapon Name
+  </td>
+  <td data-row="row-01v85e">Rarity
+  </td>
+  <td data-row="row-01v85e">Damage
+  </td>
+  <td data-row="row-01v85e">Penetration Level
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-t7dalz">Makarov
+  </td>
+  <td data-row="row-t7dalz">Common
+  </td>
+  <td data-row="row-t7dalz">25
+  </td>
+  <td data-row="row-t7dalz">Level 1
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-25km8n">RM-870
+  </td>
+  <td data-row="row-25km8n">Uncommon
+  </td>
+  <td data-row="row-25km8n">40
+  </td>
+  <td data-row="row-25km8n">Level 2
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-oa6ybo">AK-12
+  </td>
+  <td data-row="row-oa6ybo">Uncommon
+  </td>
+  <td data-row="row-oa6ybo">30
+  </td>
+  <td data-row="row-oa6ybo">Level 3
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-qw11rw">MP5SD
+  </td>
+  <td data-row="row-qw11rw">Rare
+  </td>
+  <td data-row="row-qw11rw">25
+  </td>
+  <td data-row="row-qw11rw">Level 1
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-4praxi">SVD
+  </td>
+  <td data-row="row-4praxi">Rare
+  </td>
+  <td data-row="row-4praxi">50
+  </td>
+  <td data-row="row-4praxi">Level 4
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-j2o2ow">KP-31
+  </td>
+  <td data-row="row-j2o2ow">Legendary
+  </td>
+  <td data-row="row-j2o2ow">25
+  </td>
+  <td data-row="row-j2o2ow">Level 1
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-yav5jw">M78
+  </td>
+  <td data-row="row-yav5jw">Legendary
+  </td>
+  <td data-row="row-yav5jw">50
+  </td>
+  <td data-row="row-yav5jw">Level 4
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199649/cms-uploads/cms-1775199649008-580842117.webp" alt="road to vostok weapons MK18" width="50%">
+  </p>
+  <h3>Frequently Asked Questions (FAQ)
+  </h3>
+  <p>Q1: Is there an official tier list for the game?
+  </p>
+  <p>A: The game features a built-in, objective rarity system. Based on the gameplay demo, items are officially categorized into Common, Uncommon, Rare, and Legendary tiers. You can treat this as the definitive tier list, highlighting the M78 and KP-31 as confirmed legendary drops.
+  </p>
+  <p>Q2: Will the durability of my gear affect my gameplay?
+  </p>
+  <p>A: Every weapon UI shown in the video clearly marks a "Condition: 100%" stat. In standard hardcore survival mechanics, this status value means firearms will degrade with use, meaning players must scavenge for parts or utilize repair kits to maintain optimal combat effectiveness.
+  </p>
+  <p>Q3: What should I use against heavily armored targets?
+  </p>
+  <p>A: Relying on the stat panels provided in the demo, the SVD, Mosin, and M78 all boast a massive Penetration stat of Level 4. Furthermore, the M78 and SVD deal a devastating 50 base damage, making them the absolute best weapons for neutralizing heavy armor.
+  </p>`,
   }
 ]

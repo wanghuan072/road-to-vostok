@@ -3,9 +3,9 @@
     <header class="page-hero-section page-hero-section--compact page-hero-section--detail">
       <div class="container article-detail-hero">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true">/</span>
-          <RouterLink to="/guides">Guides</RouterLink>
+          <a href="/guides">Guides</a>
           <span aria-hidden="true">/</span>
           <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
         </nav>
@@ -58,10 +58,10 @@
               <p class="aside-more__label">More guides</p>
               <ul class="aside-more__list">
                 <li v-for="l in asideItems" :key="l.to">
-                  <RouterLink :to="l.to">{{ l.label }}</RouterLink>
+                  <a :href="l.to">{{ l.label }}</a>
                 </li>
               </ul>
-              <RouterLink to="/guides" class="aside-more__all">All guides</RouterLink>
+              <a href="/guides" class="aside-more__all">All guides</a>
             </div>
           </div>
         </aside>
@@ -72,7 +72,7 @@
 
 <script setup>
 import { computed, watch } from 'vue'
-import { RouterLink, useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import guideArticles from '../../data/guides/articles.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'

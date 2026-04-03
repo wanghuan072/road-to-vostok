@@ -3,16 +3,16 @@
     <section class="page-hero-section page-hero-section--compact">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true">/</span>
           <span>Road To Vostok Guides</span>
         </nav>
         <h1>Road To Vostok Guides</h1>
         <p class="guides-list__sub">
           Survival tips and progression — short reads. Pair with the
-          <RouterLink to="/map">map</RouterLink>,
-          <RouterLink to="/tasks">tasks</RouterLink>, and
-          <RouterLink to="/wiki">item database</RouterLink>. Confirm details in your installed build.
+          <a href="/map">map</a>,
+          <a href="/tasks">tasks</a>, and
+          <a href="/wiki">item database</a>. Confirm details in your installed build.
         </p>
       </div>
     </section>
@@ -21,7 +21,7 @@
       <div class="container">
         <ul class="guides-grid" role="list">
           <li v-for="a in sorted" :key="a.id">
-            <RouterLink :to="`/guides/${a.addressBar}`" class="guides-card">
+            <a :href="`/guides/${a.addressBar}`" class="guides-card">
               <div class="guides-card__media">
                 <img
                   :src="a.imageUrl"
@@ -42,7 +42,7 @@
                 <h2 class="guides-card__title">{{ a.title }}</h2>
                 <p class="guides-card__excerpt">{{ excerpt(a) }}</p>
               </div>
-            </RouterLink>
+            </a>
           </li>
         </ul>
       </div>
@@ -52,7 +52,6 @@
 
 <script setup>
 import { computed } from 'vue'
-import { RouterLink } from 'vue-router'
 import guideArticles from '../../data/guides/articles.js'
 
 const sorted = computed(() =>

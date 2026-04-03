@@ -3,7 +3,7 @@
     <section class="page-hero-section">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true"> / </span>
           <span>Privacy Policy</span>
         </nav>
@@ -75,9 +75,9 @@
           </p>
 
           <p>
-            <RouterLink to="/terms-of-service">Terms of Service</RouterLink>
+            <a href="/terms-of-service">Terms of Service</a>
             ·
-            <RouterLink to="/contact">Contact</RouterLink>
+            <a href="/contact">Contact</a>
           </p>
         </div>
       </div>
@@ -86,7 +86,6 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
 </script>
 
 <style src="./site-pages.css"></style>

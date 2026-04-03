@@ -116,7 +116,7 @@
   margin-bottom: 0.85rem;
 }
 
-/* Generic video wrapper (e.g. .video-container from CMS HTML) */
+/* Optional wrapper from CMS — not required for YouTube; see iframe[src*="youtube"] below */
 .content-prose .video-container {
   position: relative;
   width: 100%;
@@ -137,16 +137,36 @@
   border: 0;
 }
 
-/* Standalone iframes in prose (no wrapper) */
+/* iframes in prose */
 .content-prose iframe {
   display: block;
   width: 100%;
   max-width: 100%;
-  min-height: 12rem;
   margin: 0 0 1rem;
   border-radius: 10px;
+}
+
+/* Non-YouTube embeds (maps, etc.) */
+.content-prose iframe:not([src*="youtube.com/embed"]):not([src*="youtube-nocookie.com/embed"]) {
+  min-height: 12rem;
   border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
   background: var(--color-bg);
+}
+
+/*
+ * YouTube: bare iframe only — no wrapper div/class in HTML.
+ * aspect-ratio + width:100% + height:auto gives fluid 16:9 in modern browsers.
+ */
+.content-prose iframe[src*="youtube.com/embed"],
+.content-prose iframe[src*="youtube-nocookie.com/embed"] {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: 0;
+  border: 0;
+  background: #000;
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.2),
+    0 0 0 1px color-mix(in srgb, var(--color-ice) 18%, var(--color-border));
 }
 
 .content-prose .video-container iframe,

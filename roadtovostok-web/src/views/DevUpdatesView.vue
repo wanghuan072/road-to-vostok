@@ -4,7 +4,7 @@
       <div class="container">
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <RouterLink to="/">Home</RouterLink>
+            <a href="/">Home</a>
             <span aria-hidden="true">/</span>
             <span>Road ahead</span>
           </nav>
@@ -87,13 +87,13 @@
           </ul>
           <p class="cross-links">
             On this site:
-            <RouterLink to="/guides">Guides</RouterLink>
-            (<RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">geography</RouterLink>,
-            <RouterLink to="/guides/surviving-the-Minefield">Minefield</RouterLink>)
+            <a href="/guides">Guides</a>
+            (<a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">geography</a>,
+            <a href="/guides/surviving-the-Minefield">Minefield</a>)
             ·
-            <RouterLink to="/map">Map</RouterLink> and <RouterLink to="/tasks">Tasks</RouterLink>
+            <a href="/map">Map</a> and <a href="/tasks">Tasks</a>
             ·
-            <RouterLink to="/getting-started">Start here</RouterLink>
+            <a href="/getting-started">Start here</a>
           </p>
         </section>
 
@@ -141,7 +141,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
 import PageRail from '../components/PageRail.vue'
 
 const railScrollRoot = ref(null)

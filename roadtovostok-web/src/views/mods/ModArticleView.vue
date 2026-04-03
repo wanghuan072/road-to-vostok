@@ -3,9 +3,9 @@
     <header class="page-hero-section page-hero-section--compact page-hero-section--mods page-hero-section--detail">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true">/</span>
-          <RouterLink to="/mods">Mods</RouterLink>
+          <a href="/mods">Mods</a>
           <span aria-hidden="true">/</span>
           <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
         </nav>
@@ -100,10 +100,10 @@
               <p class="mod-detail__aside-more-label">More on this site</p>
               <ul class="mod-detail__aside-more-list">
                 <li v-for="l in asideItems" :key="l.to">
-                  <RouterLink :to="l.to">{{ l.label }}</RouterLink>
+                  <a :href="l.to">{{ l.label }}</a>
                 </li>
               </ul>
-              <RouterLink to="/mods" class="mod-detail__aside-more-all">All mods</RouterLink>
+              <a href="/mods" class="mod-detail__aside-more-all">All mods</a>
             </div>
           </div>
         </aside>
@@ -114,7 +114,7 @@
 
 <script setup>
 import { computed, watch } from 'vue'
-import { RouterLink, useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import modArticles from '../../data/mods/mods.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'

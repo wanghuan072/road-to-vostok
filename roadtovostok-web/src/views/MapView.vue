@@ -4,7 +4,7 @@
       <div class="container">
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <RouterLink to="/">Home</RouterLink>
+            <a href="/">Home</a>
             <span aria-hidden="true">/</span>
             <span>Map</span>
           </nav>
@@ -12,7 +12,7 @@
           <p>
             Use the map for Area 05, the Border Zone, and Vostok, then read the regional overview and
             Area 05 notes below. For trader tasks, border crossings, and Vostok rules, open the
-            <RouterLink to="/tasks">Tasks</RouterLink> page. Verify against your installed build.
+            <a href="/tasks">Tasks</a> page. Verify against your installed build.
           </p>
         </div>
       </div>
@@ -113,15 +113,15 @@
                       <p class="map-poi-detail__body">
                         {{ selectedPoi.content }}
                       </p>
-                      <RouterLink
+                      <a
                         v-if="selectedPoi.link"
-                        :to="selectedPoi.link"
+                        :href="selectedPoi.link"
                         class="map-poi-detail__more"
                         @click="closeDetailDrawer"
                       >
                         More
                         <span aria-hidden="true">→</span>
-                      </RouterLink>
+                      </a>
                     </div>
                     <div
                       v-if="locationEntries(selectedPoi).length"
@@ -160,15 +160,15 @@
                               decoding="async"
                             >
                           </figure>
-                          <RouterLink
+                          <a
                             v-if="ent.link"
-                            :to="ent.link"
+                            :href="ent.link"
                             class="map-poi-entry__link"
                             @click="closeDetailDrawer"
                           >
                             Open
                             <span aria-hidden="true">→</span>
-                          </RouterLink>
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -245,15 +245,15 @@
                           :key="si"
                           class="poi-list-sub-item"
                         >
-                          <RouterLink
+                          <a
                             v-if="ent.link"
-                            :to="ent.link"
+                            :href="ent.link"
                             class="poi-list-sub-link"
                             @click.stop
                           >
                             <span class="poi-list-sub-kind">{{ entryKindLabel(ent.kind) }}</span>
                             {{ ent.title }}
-                          </RouterLink>
+                          </a>
                           <span
                             v-else
                             class="poi-list-sub-nolink"
@@ -357,11 +357,11 @@
           </ul>
           <p class="guide-tools">
             On this site:
-            <RouterLink to="/wiki">Wiki</RouterLink> (gear tables),
-            <RouterLink to="/getting-started">Start here</RouterLink> (loop, controls, medical basics),
-            <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">Border geography guide</RouterLink>,
-            <RouterLink to="/guides/surviving-the-Minefield">Minefield guide</RouterLink>,
-            <RouterLink to="/tasks">Tasks &amp; Vostok rules</RouterLink>.
+            <a href="/wiki">Wiki</a> (gear tables),
+            <a href="/getting-started">Start here</a> (loop, controls, medical basics),
+            <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">Border geography guide</a>,
+            <a href="/guides/surviving-the-Minefield">Minefield guide</a>,
+            <a href="/tasks">Tasks &amp; Vostok rules</a>.
           </p>
         </div>
       </div>
@@ -371,11 +371,11 @@
       <div class="container">
         <p class="guide-tools map-next-link">
           Next:
-          <RouterLink to="/tasks">Tasks &amp; border / Vostok guide</RouterLink>
+          <a href="/tasks">Tasks &amp; border / Vostok guide</a>
           ·
-          <RouterLink to="/wiki/core-tasks">Core task items (wiki)</RouterLink>
+          <a href="/wiki/core-tasks">Core task items (wiki)</a>
           ·
-          <RouterLink to="/guides">Guides</RouterLink>
+          <a href="/guides">Guides</a>
         </p>
       </div>
     </section>
@@ -383,7 +383,7 @@
 </template>
 
 <script setup>
-import { RouterLink, useRoute } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { ref, computed, watch, nextTick, onMounted, onUnmounted } from 'vue'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'

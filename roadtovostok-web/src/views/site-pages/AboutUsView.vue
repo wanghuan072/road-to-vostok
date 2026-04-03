@@ -3,7 +3,7 @@
     <section class="page-hero-section">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true"> / </span>
           <span>About Us</span>
         </nav>
@@ -40,10 +40,10 @@
 
           <h2>How to explore</h2>
           <p>
-            Start with <RouterLink to="/getting-started">Start here</RouterLink> for controls and first
-            steps, <RouterLink to="/wiki">Wiki</RouterLink> for tables, and
-            <RouterLink to="/map">Map</RouterLink> / <RouterLink to="/tasks">Tasks</RouterLink> for progression help. Updates and
-            build names are summarized under <RouterLink to="/dev-updates">Road ahead</RouterLink>.
+            Start with <a href="/getting-started">Start here</a> for controls and first
+            steps, <a href="/wiki">Wiki</a> for tables, and
+            <a href="/map">Map</a> / <a href="/tasks">Tasks</a> for progression help. Updates and
+            build names are summarized under <a href="/dev-updates">Road ahead</a>.
           </p>
 
           <h2>Contact</h2>
@@ -53,9 +53,9 @@
           </p>
 
           <p>
-            <RouterLink to="/contact">Contact page</RouterLink>
+            <a href="/contact">Contact page</a>
             ·
-            <RouterLink to="/privacy-policy">Privacy Policy</RouterLink>
+            <a href="/privacy-policy">Privacy Policy</a>
           </p>
         </div>
       </div>
@@ -64,7 +64,6 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
 </script>
 
 <style src="./site-pages.css"></style>

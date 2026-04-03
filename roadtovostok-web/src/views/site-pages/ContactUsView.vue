@@ -3,7 +3,7 @@
     <section class="page-hero-section">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true"> / </span>
           <span>Contact Us</span>
         </nav>
@@ -40,13 +40,13 @@
           <h2>Privacy</h2>
           <p>
             If your message contains personal data, see our
-            <RouterLink to="/privacy-policy">Privacy Policy</RouterLink> for how we handle correspondence.
+            <a href="/privacy-policy">Privacy Policy</a> for how we handle correspondence.
           </p>
 
           <p>
-            <RouterLink to="/about">About Us</RouterLink>
+            <a href="/about">About Us</a>
             ·
-            <RouterLink to="/terms-of-service">Terms of Service</RouterLink>
+            <a href="/terms-of-service">Terms of Service</a>
           </p>
         </div>
       </div>
@@ -55,7 +55,6 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
 </script>
 
 <style src="./site-pages.css"></style>

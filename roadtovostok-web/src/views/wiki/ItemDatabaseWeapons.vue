@@ -1,334 +1,175 @@
 <template>
-  <article class="item-db-page weapons-page">
-    <section class="page-hero-section">
-      <div class="container">
+  <article class="weapons-page">
+    <header class="weapons-hero">
+      <div
+        class="weapons-hero__glow"
+        aria-hidden="true"
+      />
+      <div class="container weapons-hero__inner">
         <nav
-          class="page-hero-breadcrumb"
+          class="weapons-hero__crumb page-hero-breadcrumb"
           aria-label="Breadcrumb"
         >
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true"> / </span>
-          <RouterLink to="/wiki">Wiki</RouterLink>
+          <a href="/wiki">Wiki</a>
           <span aria-hidden="true"> / </span>
           <span>Weapons</span>
         </nav>
-        <p class="page-hero-kicker">
-          Wiki hub
+        <p class="weapons-hero__kicker">
+          Armory catalog
         </p>
-        <h1>Road To Vostok Weapons</h1>
-        <p class="lead">
-          All categories and weapons on one page; use the left index to jump. Stats and loot notes come from community tables — confirm against your current game build. For ammo pairing see
-          <RouterLink to="/wiki/ammunition">Ammunition</RouterLink>.
+        <h1 class="weapons-hero__title">
+          Road To Vostok Weapons
+        </h1>
+        <p class="weapons-hero__lead">
+          One scrollable catalog: melee, sidearms, long guns, and support weapons. Numeric fields follow the
+          <strong>Road To Vostok Wiki (Fandom)</strong> hub pages below; portraits are the same wiki thumbnails, mirrored under
+          <code>/images/wiki/weapons/</code>. Cross-check every value in your installed build — Early Access shifts stats, names, and loot.
         </p>
-      </div>
-    </section>
+        <p class="weapons-hero__ammo">
+          Pair rounds with the
+          <a href="/wiki/ammunition">Ammunition</a> table (also sourced from Fandom).
+        </p>
 
-    <section
-      class="page-body-section weapons-body"
-      aria-label="Weapon categories and listings"
-    >
-      <div class="container weapons-shell">
-        <nav
-          class="weapons-toc"
-          aria-label="Jump to category"
+        <div
+          class="weapons-sources"
+          aria-label="Fandom data sources"
         >
-          <a
-            v-for="c in weaponCategories"
-            :key="c.id"
-            :href="'#weapons-cat-' + c.id"
-            class="weapons-toc__link"
+          <span class="weapons-sources__label">Wiki sources</span>
+          <ul
+            class="weapons-sources__list"
+            role="list"
           >
-            <span class="weapons-toc__label">{{ c.label }}</span>
-            <span class="weapons-toc__count">{{ countInCategory(c.id) }}</span>
-          </a>
+            <li
+              v-for="c in weaponCategories"
+              :key="c.id"
+            >
+              <a
+                :href="c.wikiUrl"
+                class="weapons-sources__link"
+                rel="noopener noreferrer"
+                target="_blank"
+              >{{ c.label }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <dl
+          class="weapons-hero__stats"
+          aria-label="Dataset summary"
+        >
+          <div class="weapons-hero__stat">
+            <dt>Entries</dt>
+            <dd>{{ weapons.length }}</dd>
+          </div>
+          <div class="weapons-hero__stat">
+            <dt>Categories</dt>
+            <dd>{{ weaponCategories.length }}</dd>
+          </div>
+          <div class="weapons-hero__stat">
+            <dt>With portrait</dt>
+            <dd>{{ withImageCount }}</dd>
+          </div>
+        </dl>
+      </div>
+    </header>
+
+    <div class="weapons-body">
+      <div class="container weapons-layout">
+        <nav
+          class="armory-toc"
+          aria-label="Jump to weapon class"
+        >
+          <p
+            id="armory-toc-label"
+            class="armory-toc__title"
+          >
+            Classes
+          </p>
+          <ul
+            class="armory-toc__list"
+            role="list"
+            aria-labelledby="armory-toc-label"
+          >
+            <li
+              v-for="c in weaponCategories"
+              :key="c.id"
+            >
+              <a
+                :href="'#weapons-cat-' + c.id"
+                class="armory-toc__link"
+              >
+                <span class="armory-toc__name">{{ c.label }}</span>
+                <span class="armory-toc__n">{{ countInCategory(c.id) }}</span>
+              </a>
+            </li>
+          </ul>
         </nav>
 
-        <div class="weapons-main">
+        <div class="armory-main">
           <section
             v-for="c in weaponCategories"
             :key="c.id"
             :id="'weapons-cat-' + c.id"
-            class="weapons-section"
-            :data-variant="c.listVariant"
+            class="armory-section"
           >
-            <h2 class="weapons-section__title">
-              {{ c.label }}
-            </h2>
+            <div class="armory-section__head">
+              <h2 class="armory-section__title">
+                {{ c.label }}
+              </h2>
+              <a
+                :href="c.wikiUrl"
+                class="armory-section__wiki"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View on Fandom
+                <span
+                  class="armory-section__wiki-arrow"
+                  aria-hidden="true"
+                >↗</span>
+              </a>
+            </div>
 
-            <!-- Knives: vertical cards -->
-            <div
-              v-if="c.listVariant === 'melee'"
-              class="weapons-section__stack"
-            >
+            <div class="armory-list-panel">
               <article
                 v-for="w in weaponsInCategory(c.id)"
                 :id="'weapon-' + w.id"
                 :key="w.id"
-                class="weapon-card weapon-card--row"
+                class="armory-list-row"
               >
-                <WeaponMedia
-                  :weapon="w"
-                  :summary="summaryLine(w)"
-                />
-                <div class="weapon-card__body">
-                  <h3 class="weapon-card__name">
-                    {{ w.name }}
-                  </h3>
-                  <p
-                    v-if="!w.imageUrl && summaryLine(w)"
-                    class="weapon-card__kpi"
+                <div
+                  class="armory-list-row__media"
+                  :class="{ 'armory-list-row__media--empty': !w.imageUrl }"
+                >
+                  <img
+                    v-if="w.imageUrl"
+                    :src="w.imageUrl"
+                    :alt="w.imageAlt || w.name"
+                    class="armory-list-row__img"
+                    width="200"
+                    height="150"
+                    loading="lazy"
+                    decoding="async"
                   >
-                    {{ summaryLine(w) }}
-                  </p>
-                  <WeaponSpecs :weapon="w" />
-                  <WeaponExtra :weapon="w" />
+                  <span
+                    v-else
+                    class="armory-list-row__media-fallback"
+                  >{{ w.name }}</span>
                 </div>
-              </article>
-            </div>
-
-            <!-- Pistols: grid -->
-            <div
-              v-else-if="c.listVariant === 'pistol'"
-              class="weapons-section__grid"
-            >
-              <article
-                v-for="w in weaponsInCategory(c.id)"
-                :id="'weapon-' + w.id"
-                :key="w.id"
-                class="weapon-card weapon-card--tile"
-              >
-                <WeaponMedia
-                  :weapon="w"
-                  :summary="summaryLine(w)"
-                />
-                <div class="weapon-card__body">
-                  <h3 class="weapon-card__name">
-                    {{ w.name }}
-                  </h3>
-                  <p
-                    v-if="!w.imageUrl && summaryLine(w)"
-                    class="weapon-card__kpi"
-                  >
-                    {{ summaryLine(w) }}
-                  </p>
-                  <WeaponSpecs :weapon="w" />
-                  <WeaponExtra :weapon="w" />
-                </div>
-              </article>
-            </div>
-
-            <!-- Rifles: table + notes -->
-            <div
-              v-else-if="c.listVariant === 'rifleTable'"
-              class="weapons-table-shell"
-            >
-              <div class="weapons-table-wrap">
-                <table class="weapons-data-table">
-                  <thead>
-                    <tr>
-                      <th
-                        scope="col"
-                        class="weapons-data-table__th-thumb"
-                      >
-                        Item
-                      </th>
-                      <th scope="col">
-                        kg
-                      </th>
-                      <th scope="col">
-                        Dmg
-                      </th>
-                      <th scope="col">
-                        Caliber
-                      </th>
-                      <th scope="col">
-                        Mag
-                      </th>
-                      <th scope="col">
-                        RPM
-                      </th>
-                      <th scope="col">
-                        Tier
-                      </th>
-                      <th scope="col">
-                        Loot / notes
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr
-                      v-for="w in weaponsInCategory(c.id)"
-                      :id="'weapon-' + w.id"
-                      :key="w.id"
+                <div class="armory-list-row__body">
+                  <div class="armory-list-row__headline">
+                    <h3 class="armory-list-row__name">
+                      {{ w.name }}
+                    </h3>
+                    <p
+                      v-if="summaryLine(w)"
+                      class="armory-list-row__quick"
                     >
-                      <td class="weapons-data-table__lead">
-                        <div class="weapons-lead">
-                          <WeaponThumbTable
-                            :weapon="w"
-                            :summary="summaryLine(w)"
-                          />
-                          <div class="weapons-lead__col">
-                            <span class="weapons-lead__name">{{ w.name }}</span>
-                            <span
-                              v-if="summaryLine(w)"
-                              class="weapons-lead__stats"
-                            >{{ summaryLine(w) }}</span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>{{ fmt(w.weightKg) }}</td>
-                      <td>{{ fmt(w.damage) }}</td>
-                      <td>{{ fmt(w.caliber) }}</td>
-                      <td>{{ fmt(w.magazine) }}</td>
-                      <td>{{ fmt(w.rpm) }}</td>
-                      <td>{{ fmt(w.rarity) }}</td>
-                      <td class="weapons-data-table__notes">
-                        {{ combineNotes(w) }}
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <!-- SMGs: table -->
-            <div
-              v-else-if="c.listVariant === 'smgTable'"
-              class="weapons-table-shell"
-            >
-              <div class="weapons-table-wrap">
-                <table class="weapons-data-table">
-                  <thead>
-                    <tr>
-                      <th
-                        scope="col"
-                        class="weapons-data-table__th-thumb"
-                      >
-                        Item
-                      </th>
-                      <th scope="col">
-                        kg
-                      </th>
-                      <th scope="col">
-                        Dmg
-                      </th>
-                      <th scope="col">
-                        Caliber
-                      </th>
-                      <th scope="col">
-                        Mag
-                      </th>
-                      <th scope="col">
-                        RPM
-                      </th>
-                      <th scope="col">
-                        Value €
-                      </th>
-                      <th scope="col">
-                        Cost €
-                      </th>
-                      <th scope="col">
-                        Tier
-                      </th>
-                      <th scope="col">
-                        Notes
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr
-                      v-for="w in weaponsInCategory(c.id)"
-                      :id="'weapon-' + w.id"
-                      :key="w.id"
-                    >
-                      <td class="weapons-data-table__lead">
-                        <div class="weapons-lead">
-                          <WeaponThumbTable
-                            :weapon="w"
-                            :summary="summaryLine(w)"
-                          />
-                          <div class="weapons-lead__col">
-                            <span class="weapons-lead__name">{{ w.name }}</span>
-                            <span
-                              v-if="summaryLine(w)"
-                              class="weapons-lead__stats"
-                            >{{ summaryLine(w) }}</span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>{{ fmt(w.weightKg) }}</td>
-                      <td>{{ fmt(w.damage) }}</td>
-                      <td>{{ fmt(w.caliber) }}</td>
-                      <td>{{ fmt(w.magazine) }}</td>
-                      <td>{{ fmt(w.rpm) }}</td>
-                      <td>{{ fmt(w.valueEur) }}</td>
-                      <td>{{ fmt(w.costEur) }}</td>
-                      <td>{{ fmt(w.rarity) }}</td>
-                      <td class="weapons-data-table__notes">
-                        {{ combineNotes(w) }}
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <!-- Shotgun -->
-            <div
-              v-else-if="c.listVariant === 'featured'"
-              class="weapons-section__stack"
-            >
-              <article
-                v-for="w in weaponsInCategory(c.id)"
-                :id="'weapon-' + w.id"
-                :key="w.id"
-                class="weapon-card weapon-card--featured"
-              >
-                <WeaponMedia
-                  :weapon="w"
-                  :summary="summaryLine(w)"
-                />
-                <div class="weapon-card__body">
-                  <h3 class="weapon-card__name">
-                    {{ w.name }}
-                  </h3>
-                  <p
-                    v-if="summaryLine(w)"
-                    class="weapon-card__tagline"
-                  >
-                    {{ summaryLine(w) }}
-                  </p>
-                  <WeaponSpecs :weapon="w" />
-                  <WeaponExtra :weapon="w" />
-                </div>
-              </article>
-            </div>
-
-            <!-- Bolt / Semi -->
-            <div
-              v-else-if="c.listVariant === 'bolt' || c.listVariant === 'semi'"
-              class="weapons-section__stack"
-            >
-              <article
-                v-for="w in weaponsInCategory(c.id)"
-                :id="'weapon-' + w.id"
-                :key="w.id"
-                class="weapon-card weapon-card--row"
-              >
-                <WeaponMedia
-                  :weapon="w"
-                  :summary="summaryLine(w)"
-                />
-                <div class="weapon-card__body">
-                  <h3 class="weapon-card__name">
-                    {{ w.name }}
-                  </h3>
-                  <p
-                    v-if="!w.imageUrl && summaryLine(w)"
-                    class="weapon-card__kpi"
-                  >
-                    {{ summaryLine(w) }}
-                  </p>
+                      {{ summaryLine(w) }}
+                    </p>
+                  </div>
                   <WeaponSpecs :weapon="w" />
                   <WeaponExtra :weapon="w" />
                 </div>
@@ -337,15 +178,17 @@
           </section>
         </div>
       </div>
-    </section>
+    </div>
   </article>
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
+import { computed } from 'vue'
 import weaponsData, { weaponCategories } from '../../data/item/weapons.js'
 
 const weapons = weaponsData
+
+const withImageCount = computed(() => weapons.filter((w) => Boolean(w.imageUrl)).length)
 
 function countInCategory(catId) {
   return weapons.filter((w) => w.categoryId === catId).length
@@ -355,19 +198,6 @@ function weaponsInCategory(catId) {
   return weapons.filter((w) => w.categoryId === catId)
 }
 
-function combineNotes(w) {
-  const parts = [w.lootNote, w.note].filter(Boolean)
-  return parts.length ? parts.join(' — ') : '—'
-}
-
-/** Table / compact cells: show em dash when wiki field missing */
-function fmt(v) {
-  if (v === 0) return '0'
-  if (v == null || v === '') return '—'
-  return v
-}
-
-/** One-line KPIs so empty image slots / cards are never “name only”. */
 function summaryLine(w) {
   if (!w) return ''
   const parts = []
@@ -385,75 +215,6 @@ function summaryLine(w) {
 </script>
 
 <script>
-/** Shared weapon media + specs (no extra SFC file — keeps one page) */
-const WeaponMedia = {
-  props: {
-    weapon: { type: Object, required: true },
-    summary: { type: String, default: '' },
-  },
-  template: `
-    <div
-      class="weapon-card__media"
-      :class="{ 'weapon-card__media--empty': !weapon.imageUrl }"
-    >
-      <img
-        v-if="weapon.imageUrl"
-        :src="weapon.imageUrl"
-        :alt="weapon.imageAlt || weapon.name"
-        class="weapon-card__img"
-        width="120"
-        height="120"
-        loading="lazy"
-        decoding="async"
-      >
-      <div
-        v-else
-        class="weapon-card__media-fallback"
-      >
-        <span class="weapon-card__fallback-name">{{ weapon.name }}</span>
-        <span
-          v-if="summary"
-          class="weapon-card__fallback-kpi"
-        >{{ summary }}</span>
-      </div>
-    </div>
-  `,
-}
-
-const WeaponThumbTable = {
-  props: {
-    weapon: { type: Object, required: true },
-    summary: { type: String, default: '' },
-  },
-  template: `
-    <div
-      class="weapons-thumb"
-      :class="{ 'weapons-thumb--empty': !weapon.imageUrl }"
-    >
-      <img
-        v-if="weapon.imageUrl"
-        :src="weapon.imageUrl"
-        :alt="weapon.imageAlt || weapon.name"
-        class="weapons-thumb__img"
-        width="48"
-        height="48"
-        loading="lazy"
-        decoding="async"
-      >
-      <div
-        v-else
-        class="weapons-thumb__fallback-wrap"
-      >
-        <span class="weapons-thumb__fname">{{ weapon.name }}</span>
-        <span
-          v-if="summary"
-          class="weapons-thumb__fkpi"
-        >{{ summary }}</span>
-      </div>
-    </div>
-  `,
-}
-
 const WeaponSpecs = {
   props: { weapon: { type: Object, required: true } },
   methods: {
@@ -468,16 +229,16 @@ const WeaponSpecs = {
     },
   },
   template: `
-    <dl class="weapon-card__specs">
-      <dt>Weight</dt><dd>{{ n(weapon.weightKg, ' kg') }}</dd>
-      <dt>Damage</dt><dd>{{ n(weapon.damage) }}</dd>
-      <dt>Caliber</dt><dd>{{ weapon.caliber || '—' }}</dd>
-      <dt>Magazine</dt><dd>{{ weapon.magazine != null ? weapon.magazine + ' rnds' : '—' }}</dd>
-      <dt>Fire rate</dt><dd>{{ weapon.rpm != null ? weapon.rpm + ' RPM' : '—' }}</dd>
-      <dt>Value</dt><dd>{{ eur(weapon.valueEur) }}</dd>
-      <dt>Trader cost</dt><dd>{{ eur(weapon.costEur) }}</dd>
-      <dt>Rarity</dt><dd>{{ weapon.rarity || '—' }}</dd>
-      <dt>Penetration</dt><dd>{{ weapon.penetration || '—' }}</dd>
+    <dl class="armory-spec-strip" aria-label="Weapon stats">
+      <div class="armory-spec-strip__pair"><dt>Wt</dt><dd>{{ n(weapon.weightKg, ' kg') }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>Dmg</dt><dd>{{ n(weapon.damage) }}</dd></div>
+      <div class="armory-spec-strip__pair armory-spec-strip__pair--wide"><dt>Caliber</dt><dd>{{ weapon.caliber || '—' }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>Mag</dt><dd>{{ weapon.magazine != null ? weapon.magazine + ' rnds' : '—' }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>RPM</dt><dd>{{ weapon.rpm != null ? weapon.rpm : '—' }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>Value</dt><dd>{{ eur(weapon.valueEur) }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>Trader</dt><dd>{{ eur(weapon.costEur) }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>Rarity</dt><dd>{{ weapon.rarity || '—' }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>Pen</dt><dd>{{ weapon.penetration || '—' }}</dd></div>
     </dl>
   `,
 }
@@ -485,86 +246,267 @@ const WeaponSpecs = {
 const WeaponExtra = {
   props: { weapon: { type: Object, required: true } },
   template: `
-    <p v-if="weapon.lootNote" class="weapon-card__loot"><strong>Loot</strong> — {{ weapon.lootNote }}</p>
-    <p v-if="weapon.note" class="weapon-card__note">{{ weapon.note }}</p>
+    <p v-if="weapon.lootNote" class="armory-list-row__loot"><strong>Loot</strong> — {{ weapon.lootNote }}</p>
+    <p v-if="weapon.note" class="armory-list-row__note">{{ weapon.note }}</p>
   `,
 }
 
 export default {
-  components: { WeaponMedia, WeaponSpecs, WeaponExtra, WeaponThumbTable },
+  components: { WeaponSpecs, WeaponExtra },
 }
 </script>
 
 <style src="./item-db-shared.css"></style>
 
 <style scoped>
-.weapons-page .page-hero-kicker {
-  margin: 0 0 0.5rem;
-}
-
-.weapons-body {
-  padding-top: 0.25rem;
+.weapons-page {
   padding-bottom: 3.5rem;
 }
 
-.weapons-shell {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  align-items: stretch;
+/* —— Hero（恢复原样） —— */
+.weapons-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.5rem, 4vw, 2.75rem) 0 clamp(2rem, 5vw, 3.25rem);
+  margin-bottom: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 82%, var(--color-ice));
 }
 
-@media (min-width: 960px) {
-  .weapons-shell {
+.weapons-hero__glow {
+  position: absolute;
+  inset: -30% -20% auto -25%;
+  height: 120%;
+  background:
+    radial-gradient(ellipse 55% 50% at 12% 35%, color-mix(in srgb, var(--color-ice) 14%, transparent), transparent 58%),
+    radial-gradient(ellipse 40% 42% at 88% 18%, color-mix(in srgb, var(--color-signal) 10%, transparent), transparent 52%),
+    linear-gradient(185deg, color-mix(in srgb, var(--color-panel) 55%, transparent) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.weapons-hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.weapons-hero__crumb {
+  margin-bottom: 1rem;
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+
+.weapons-hero__crumb a {
+  color: var(--color-primary-soft);
+  text-decoration: none;
+}
+
+.weapons-hero__crumb a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.weapons-hero__kicker {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-muted) 65%, var(--color-signal));
+}
+
+.weapons-hero__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-journey);
+  font-size: clamp(1.85rem, 4.2vw, 2.65rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+  color: var(--color-text);
+  text-shadow: 0 0 48px color-mix(in srgb, var(--color-ice) 12%, transparent);
+}
+
+.weapons-hero__lead {
+  margin: 0 0 0.85rem;
+  max-width: min(68ch, 100%);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-muted);
+}
+
+.weapons-hero__lead strong {
+  color: color-mix(in srgb, var(--color-text) 55%, var(--color-muted));
+}
+
+.weapons-hero__ammo {
+  margin: 0 0 1.35rem;
+  font-size: 0.88rem;
+  color: var(--color-muted);
+}
+
+.weapons-hero__ammo a {
+  color: var(--color-primary-soft);
+}
+
+.weapons-sources {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-bottom: 1.5rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 1px dashed color-mix(in srgb, var(--color-border) 78%, var(--color-ice));
+  background: color-mix(in srgb, var(--color-panel) 42%, transparent);
+}
+
+.weapons-sources__label {
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-primary-soft);
+}
+
+.weapons-sources__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.weapons-sources__link {
+  display: inline-flex;
+  padding: 0.28rem 0.55rem;
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-text);
+  border: 1px solid color-mix(in srgb, var(--color-border) 88%, transparent);
+  background: color-mix(in srgb, var(--color-bg) 35%, var(--color-surface));
+  transition:
+    border-color 0.18s ease,
+    color 0.18s ease,
+    background 0.18s ease;
+}
+
+.weapons-sources__link:hover {
+  border-color: color-mix(in srgb, var(--color-ice) 35%, var(--color-border));
+  color: var(--color-primary-soft);
+  background: color-mix(in srgb, var(--color-ice) 6%, var(--color-panel));
+}
+
+.weapons-hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.75rem;
+  margin: 0;
+}
+
+.weapons-hero__stat {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.weapons-hero__stat dt {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.weapons-hero__stat dd {
+  margin: 0;
+  font-family: var(--font-journey);
+  font-size: 1.35rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text);
+}
+
+/* —— Body + TOC（恢复原样） —— */
+.weapons-body {
+  padding-top: clamp(1.25rem, 3vw, 2rem);
+}
+
+.weapons-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .weapons-layout {
     flex-direction: row;
     align-items: flex-start;
-    gap: 1.75rem;
+    gap: 2rem;
   }
 }
 
-/* —— Sticky TOC (left) —— */
-.weapons-toc {
+.armory-toc {
+  flex-shrink: 0;
+}
+
+@media (min-width: 1024px) {
+  .armory-toc {
+    position: sticky;
+    top: var(--app-header-sticky-offset);
+    width: 11.5rem;
+    max-height: calc(100vh - var(--app-header-sticky-offset) - 1rem);
+    overflow-y: auto;
+    padding: 0.75rem 0.85rem;
+    border-radius: 12px;
+    border: 1px solid color-mix(in srgb, var(--color-border) 85%, var(--color-ice));
+    background: color-mix(in srgb, var(--color-panel) 90%, var(--color-bg));
+    box-shadow: inset 0 1px 0 color-mix(in srgb, var(--color-text) 4%, transparent);
+  }
+}
+
+.armory-toc__title {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.armory-toc__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.4rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 88%, transparent);
+  gap: 0.35rem;
 }
 
-@media (min-width: 960px) {
-  .weapons-toc {
+@media (min-width: 1024px) {
+  .armory-toc__list {
     flex-direction: column;
     flex-wrap: nowrap;
-    flex: 0 0 12.5rem;
-    max-width: 12.5rem;
-    position: sticky;
-    top: var(--app-header-sticky-offset);
-    align-self: flex-start;
-    max-height: calc(100vh - var(--app-header-sticky-offset) - 1rem);
-    overflow-y: auto;
-    padding: 0.65rem 0.75rem;
-    margin: 0;
-    border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
-    border-radius: 10px;
-    background: color-mix(in srgb, var(--color-panel) 94%, var(--color-bg));
-    border-bottom: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
+    gap: 0.2rem;
   }
 }
 
-.weapons-toc__link {
+.armory-toc__link {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  padding: 0.45rem 0.6rem;
+  padding: 0.42rem 0.55rem;
   border-radius: 6px;
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: color-mix(in srgb, var(--color-text) 90%, var(--color-muted));
   text-decoration: none;
+  color: color-mix(in srgb, var(--color-text) 88%, var(--color-muted));
   border: 1px solid transparent;
   transition:
     background 0.15s ease,
@@ -572,390 +514,276 @@ export default {
     color 0.15s ease;
 }
 
-@media (min-width: 960px) {
-  .weapons-toc__link {
-    display: flex;
+@media (min-width: 1024px) {
+  .armory-toc__link {
     width: 100%;
   }
 }
 
-.weapons-toc__link:hover {
-  background: color-mix(in srgb, var(--color-ice) 8%, var(--color-panel));
+.armory-toc__link:hover {
+  background: color-mix(in srgb, var(--color-ice) 7%, var(--color-panel));
   border-color: color-mix(in srgb, var(--color-ice) 22%, transparent);
   color: var(--color-text);
 }
 
-.weapons-toc__count {
-  font-size: 0.68rem;
+.armory-toc__name {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+}
+
+.armory-toc__n {
+  font-size: 0.65rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: var(--color-muted);
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
-/* —— Main column —— */
-.weapons-main {
+.armory-main {
   flex: 1;
   min-width: 0;
 }
 
-.weapons-section {
-  scroll-margin-top: var(--app-header-sticky-offset);
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 75%, transparent);
+.armory-section {
+  scroll-margin-top: calc(var(--app-header-sticky-offset) + 0.5rem);
+  margin-bottom: clamp(2.25rem, 4vw, 3rem);
+  padding-bottom: clamp(1.75rem, 3vw, 2.5rem);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 72%, transparent);
 }
 
-.weapons-section:last-child {
+.armory-section:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
 }
 
-.weapons-section__title {
-  margin: 0 0 1rem;
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-primary-soft);
-}
-
-.weapons-section__stack {
+.armory-section__head {
   display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.65rem 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 2px solid color-mix(in srgb, var(--color-ice) 35%, var(--color-border));
 }
 
-.weapons-section__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
-  gap: 0.85rem;
-}
-
-.weapons-table-shell {
-  border-radius: 10px;
-  border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
-  background: color-mix(in srgb, var(--color-panel) 92%, var(--color-bg));
-  padding: 0.5rem;
-}
-
-.weapons-table-wrap {
-  overflow-x: auto;
-}
-
-.weapons-data-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.78rem;
-}
-
-.weapons-data-table th,
-.weapons-data-table td {
-  padding: 0.5rem 0.55rem;
-  text-align: left;
-  vertical-align: top;
-  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 75%, transparent);
-}
-
-.weapons-data-table th {
+.armory-section__title {
+  margin: 0;
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 0.62rem;
+  font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-primary-soft);
-  background: color-mix(in srgb, var(--color-surface) 72%, transparent);
 }
 
-.weapons-data-table__name {
-  font-weight: 700;
-  color: var(--color-text);
-  white-space: nowrap;
-}
-
-.weapons-data-table__th-thumb {
-  width: 5.5rem;
-}
-
-.weapons-data-table__lead {
-  min-width: 6.5rem;
-}
-
-.weapons-lead {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
-
-.weapons-lead__col {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  min-width: 0;
-  max-width: 10rem;
-}
-
-.weapons-lead__name {
-  font-weight: 700;
-  font-size: 0.8rem;
-  line-height: 1.25;
-  color: var(--color-text);
-}
-
-.weapons-lead__stats {
-  font-size: 0.65rem;
-  line-height: 1.35;
-  color: var(--color-muted);
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  word-break: break-word;
-}
-
-.weapons-thumb {
-  width: 3.25rem;
-  height: 3.25rem;
-  flex-shrink: 0;
-  border-radius: 6px;
-  overflow: hidden;
-  display: flex;
+.armory-section__wiki {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  background: color-mix(in srgb, var(--color-bg) 45%, var(--color-surface));
-  border: 1px solid color-mix(in srgb, var(--color-border) 72%, transparent);
-}
-
-.weapons-thumb--empty {
-  width: 4.25rem;
-  min-height: 3.25rem;
-  height: auto;
-  align-self: flex-start;
-  padding: 0.2rem;
-  background-image:
-    linear-gradient(
-      135deg,
-      transparent 45%,
-      color-mix(in srgb, var(--color-border) 28%, transparent) 45%,
-      color-mix(in srgb, var(--color-border) 28%, transparent) 55%,
-      transparent 55%
-    ),
-    linear-gradient(var(--color-grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--color-grid-line) 1px, transparent 1px);
-  background-size: 100% 100%, 12px 12px, 12px 12px;
-}
-
-.weapons-thumb__img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-.weapons-thumb__fallback-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.15rem;
-  width: 100%;
-  min-height: 2.75rem;
-  padding: 0.1rem;
-}
-
-.weapons-thumb__fname {
+  gap: 0.25rem;
   font-family: var(--font-display);
-  font-size: 0.56rem;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: color-mix(in srgb, var(--color-text) 82%, var(--color-muted));
-  word-break: break-word;
-  hyphens: auto;
-}
-
-.weapons-thumb__fkpi {
-  font-size: 0.5rem;
-  line-height: 1.2;
-  text-align: center;
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
   color: var(--color-muted);
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  word-break: break-word;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-muted) 35%, transparent);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.weapons-data-table__notes {
-  font-size: 0.72rem;
-  line-height: 1.45;
-  color: var(--color-muted);
-  max-width: 22rem;
+.armory-section__wiki:hover {
+  color: var(--color-signal-soft);
+  border-bottom-color: color-mix(in srgb, var(--color-signal) 45%, transparent);
 }
 
-/* —— Cards —— */
-.weapon-card {
-  display: flex;
-  gap: 0.85rem;
-  padding: 0.85rem 1rem;
+.armory-section__wiki-arrow {
+  font-size: 0.85em;
+  opacity: 0.85;
+}
+
+/* —— 列表：每类一块面板 + 横向行（仅改此处） —— */
+.armory-list-panel {
   border-radius: 10px;
-  border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
-  background: color-mix(in srgb, var(--color-panel) 92%, var(--color-bg));
+  border: 1px solid color-mix(in srgb, var(--color-border) 80%, var(--color-ice));
+  background: color-mix(in srgb, var(--color-panel) 55%, var(--color-bg));
+  overflow: hidden;
 }
 
-.weapon-card--tile {
-  flex-direction: column;
-  min-height: 100%;
+.armory-list-row {
+  display: grid;
+  gap: 0.85rem 1.1rem;
+  padding: 0.95rem 1rem;
+  align-items: start;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 55%, transparent);
 }
 
-.weapon-card--featured {
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  border-color: color-mix(in srgb, var(--color-signal) 22%, var(--color-border));
+.armory-list-row:last-child {
+  border-bottom: none;
 }
 
-@media (max-width: 560px) {
-  .weapon-card--row,
-  .weapon-card--featured {
-    flex-direction: column;
+@media (min-width: 640px) {
+  .armory-list-row {
+    grid-template-columns: 7.5rem minmax(0, 1fr);
+    padding: 1rem 1.1rem;
+    gap: 1rem 1.35rem;
   }
 }
 
-:deep(.weapon-card__media) {
-  flex: 0 0 auto;
-  width: 6.5rem;
-  height: 6.5rem;
-  border-radius: 8px;
-  overflow: hidden;
-  background: color-mix(in srgb, var(--color-bg) 45%, var(--color-surface));
-  border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+@media (min-width: 960px) {
+  .armory-list-row {
+    grid-template-columns: 8.75rem minmax(0, 1fr);
+    padding: 1.1rem 1.25rem;
+  }
 }
 
-:deep(.weapon-card__media--empty) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.35rem;
-  background-image:
-    linear-gradient(
-      135deg,
-      transparent 45%,
-      color-mix(in srgb, var(--color-border) 30%, transparent) 45%,
-      color-mix(in srgb, var(--color-border) 30%, transparent) 55%,
-      transparent 55%
-    ),
-    linear-gradient(var(--color-grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--color-grid-line) 1px, transparent 1px);
-  background-size: 100% 100%, 16px 16px, 16px 16px;
-}
-
-:deep(.weapon-card__media-fallback) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
+.armory-list-row__media {
   width: 100%;
-  height: 100%;
-  text-align: center;
-  padding: 0.25rem;
+  max-width: 9rem;
+  margin: 0 auto;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: radial-gradient(
+    ellipse 90% 85% at 50% 100%,
+    color-mix(in srgb, var(--color-bg) 70%, transparent),
+    color-mix(in srgb, var(--color-surface) 88%, var(--color-bg))
+  );
+  border: 1px solid color-mix(in srgb, var(--color-border) 65%, transparent);
 }
 
-:deep(.weapon-card__fallback-name) {
-  font-family: var(--font-display);
-  font-size: clamp(0.65rem, 2.1vw, 0.82rem);
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: color-mix(in srgb, var(--color-text) 78%, var(--color-muted));
-  word-break: break-word;
-  hyphens: auto;
+@media (min-width: 640px) {
+  .armory-list-row__media {
+    margin: 0;
+    max-width: none;
+  }
 }
 
-:deep(.weapon-card__fallback-kpi) {
-  font-size: 0.68rem;
-  line-height: 1.35;
-  color: var(--color-muted);
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  word-break: break-word;
+.armory-list-row__media--empty {
+  background:
+    linear-gradient(var(--color-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid-line) 1px, transparent 1px),
+    color-mix(in srgb, var(--color-panel) 40%, var(--color-bg));
+  background-size: 12px 12px, 12px 12px, auto;
 }
 
-:deep(.weapon-card__kpi) {
-  margin: 0 0 0.5rem;
-  font-size: 0.78rem;
-  line-height: 1.4;
-  color: var(--color-muted);
-}
-
-:deep(.weapon-card__img) {
+.armory-list-row__img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: center;
+  padding: 0.35rem 0.45rem;
   display: block;
 }
 
-:deep(.weapon-card__body) {
-  flex: 1;
-  min-width: 0;
+.armory-list-row__media-fallback {
+  padding: 0.5rem;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.35;
+  color: var(--color-muted);
 }
 
-:deep(.weapon-card__name) {
-  margin: 0 0 0.5rem;
-  font-size: 1.05rem;
+.armory-list-row__body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.armory-list-row__headline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.armory-list-row__name {
+  margin: 0;
+  font-size: 1.06rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  text-transform: none;
   color: var(--color-text);
+  line-height: 1.2;
 }
 
-:deep(.weapon-card__tagline) {
-  margin: 0 0 0.65rem;
-  font-size: 0.8rem;
-  color: var(--color-muted);
-}
-
-:deep(.weapon-card__specs) {
-  display: grid;
-  grid-template-columns: minmax(0, 6rem) 1fr;
-  gap: 0.3rem 0.75rem;
-  margin: 0 0 0.65rem;
-  font-size: 0.8rem;
-}
-
-:deep(.weapon-card__specs dt) {
+.armory-list-row__quick {
   margin: 0;
+  font-size: 0.74rem;
+  line-height: 1.45;
   color: var(--color-muted);
-  font-weight: 600;
 }
 
-:deep(.weapon-card__specs dd) {
+:deep(.armory-spec-strip) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.35rem 0.45rem;
+  margin: 0;
+  padding: 0;
+}
+
+:deep(.armory-spec-strip__pair) {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.28rem 0.55rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--color-bg) 65%, var(--color-surface));
+  border: 1px solid color-mix(in srgb, var(--color-border) 72%, transparent);
+  font-size: 0.74rem;
+  line-height: 1.25;
+}
+
+:deep(.armory-spec-strip__pair--wide) {
+  flex: 1 1 100%;
+  min-width: min(100%, 12rem);
+}
+
+:deep(.armory-spec-strip__pair dt) {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+:deep(.armory-spec-strip__pair dd) {
   margin: 0;
   color: var(--color-text);
   font-variant-numeric: tabular-nums;
+  word-break: break-word;
 }
 
-:deep(.weapon-card__loot) {
-  margin: 0 0 0.45rem;
-  font-size: 0.78rem;
+.armory-list-row__loot {
+  margin: 0;
+  padding: 0.45rem 0 0;
+  border-top: 1px dashed color-mix(in srgb, var(--color-border) 50%, transparent);
+  font-size: 0.76rem;
   line-height: 1.5;
   color: color-mix(in srgb, var(--color-muted) 88%, var(--color-ice));
 }
 
-:deep(.weapon-card__loot strong) {
+.armory-list-row__loot strong {
   color: var(--color-primary-soft);
+  font-weight: 700;
 }
 
-:deep(.weapon-card__note) {
+.armory-list-row__note {
   margin: 0;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   line-height: 1.55;
   color: var(--color-muted);
+  max-width: 70ch;
 }
 </style>

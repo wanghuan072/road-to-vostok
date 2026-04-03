@@ -5,12 +5,21 @@
  * SEO (`seo`): page `title` + global suffix ` | Road To Vostok Guide` (seo/config.js) should stay near ~60 chars total.
  * `description` ≈145–160 chars, unique per NPC, main terms early. `keywords`: 5–8 comma-separated phrases (no stuffing).
  * `ogType: 'article'` for Open Graph on wiki-style NPC pages.
+ *
+ * Sidebar Location block: optional `location: { title, imageUrl, imageAlt, content }` (not read from map data).
  */
 
 export default [
   {
     addressBar: 'bandits',
     mapLocationId: 'village',
+    location: {
+      title: 'Village · Area 05',
+      imageUrl: '/images/map/village.webp',
+      imageAlt: 'Village hub — Area 05 map context',
+      content:
+        'Bandits patrol and ambush across Area 05; the Village line is a typical early hub where hostile spawns overlap trader and scavenging routes. Density varies by map — use the map pin and confirm in your build.',
+    },
     title: 'Bandits',
     role: 'Hostile faction',
     imageUrl: '/images/wiki/npc/bandits.webp',
@@ -66,6 +75,13 @@ export default [
   {
     addressBar: 'generalist',
     mapLocationId: 'village',
+    location: {
+      title: 'Village',
+      imageUrl: '/images/wiki/npc/generalist-01.webp',
+      imageAlt: 'Area hub / trader context (Fandom)',
+      content:
+        'Starting hub in Area 05: Generalist trader, scavenging, food and meds. Hostile bandits can spawn across Area 05 maps — stay alert on approach routes.',
+    },
     title: 'Generalist',
     role: 'Friendly trader · Village area',
     imageUrl: '/images/wiki/npc/generalist.webp',
@@ -167,6 +183,13 @@ export default [
   {
     addressBar: 'doctor',
     mapLocationId: 'shipyard',
+    location: {
+      title: 'Shipyard',
+      imageUrl: '/images/wiki/npc/doctor-02.webp',
+      imageAlt: 'Doctor trader context (Fandom)',
+      content:
+        'Larger Area 05 map: Doctor trader in Hamikot Logistics basement, heavier loot routes, and higher risk than the Village line (community maps).',
+    },
     title: 'Doctor',
     role: 'Friendly trader · Shipyard (medical)',
     imageUrl: '/images/wiki/npc/doctor.webp',
@@ -245,6 +268,7 @@ export default [
 
 <h2>Location</h2>
 <p>You can find Doctor on the <strong>Shipyard</strong> map, in the basement of <strong>Hamikot Logistics</strong> — the <strong>first building on the left</strong> as soon as you enter the map, coming from the village.</p>
+<div style="display: flex; justify-content: space-between;">
 <ol class="npc-steps">
   <li>Go forward until the <strong>first gate in the grill</strong>.</li>
   <li>Enter and go <strong>left</strong>.</li>
@@ -252,6 +276,9 @@ export default [
   <li>Go <strong>down the stairs</strong> at the opposite corner of the building.</li>
   <li>The Doctor’s room is the <strong>last one in the basement</strong>.</li>
 </ol>
+  <img src="/images/wiki/npc/doctor-01.webp" alt="Doctor location" style="width: 100%; max-width: 300px;">
+</div>
+
 `,
   },
 ]

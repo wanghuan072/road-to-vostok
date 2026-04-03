@@ -169,7 +169,7 @@ export const routeDefs = [
       seo: {
         title: 'Road To Vostok Map — Area 05, POIs & Regional Overview',
         description:
-          'Interactive Road To Vostok map: Area 05, Border Zone, and Vostok points of interest, searchable index, and regional overview. Use alongside the in-game map and confirm coordinates in-client.',
+          'Road To Vostok Interactive map: Area 05, Border Zone, and Vostok points of interest, searchable index, and regional overview. Use alongside the in-game map and confirm coordinates in-client.',
         keywords:
           'Road To Vostok map, Area 05, Border Zone, Vostok, POI, location index',
       },

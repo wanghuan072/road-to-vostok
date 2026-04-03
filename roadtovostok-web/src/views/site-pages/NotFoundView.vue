@@ -3,7 +3,7 @@
     <section class="page-hero-section page-hero-section--compact">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true"> / </span>
           <span>Not found</span>
         </nav>
@@ -12,13 +12,13 @@
           This URL is not part of Road To Vostok Guide. Use the navigation or return home.
         </p>
         <p>
-          <RouterLink to="/">Back to home</RouterLink>
+          <a href="/">Back to home</a>
           ·
-          <RouterLink to="/wiki">Wiki</RouterLink>
+          <a href="/wiki">Wiki</a>
           ·
-          <RouterLink to="/map">Map</RouterLink> · <RouterLink to="/tasks">Tasks</RouterLink>
+          <a href="/map">Map</a> · <a href="/tasks">Tasks</a>
           ·
-          <RouterLink to="/guides">Guides</RouterLink>
+          <a href="/guides">Guides</a>
         </p>
       </div>
     </section>
@@ -26,7 +26,6 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
 </script>
 
 <style src="./site-pages.css"></style>

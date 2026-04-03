@@ -21,20 +21,20 @@
           </p>
         </div>
         <nav class="footer-nav" aria-label="Footer">
-          <RouterLink v-for="item in quick" :key="item.to" :to="item.to" class="footer-link">
+          <a v-for="item in quick" :key="item.to" :href="item.to" class="footer-link">
             {{ item.label }}
-          </RouterLink>
+          </a>
         </nav>
         <nav class="footer-legal" aria-label="Site and legal">
-          <RouterLink v-for="item in legal" :key="item.to" :to="item.to" class="footer-legal-link">
+          <a v-for="item in legal" :key="item.to" :href="item.to" class="footer-legal-link">
             {{ item.label }}
-          </RouterLink>
+          </a>
         </nav>
         <p class="footer-meta">
           Not affiliated with the official Road To Vostok game or its developer. Game © respective
           rights holders. Guides reflect community knowledge and may change with updates and the
           public
-          <RouterLink to="/dev-updates">Road ahead &amp; roadmap digest</RouterLink>
+          <a href="/dev-updates">Road ahead &amp; roadmap digest</a>
           .
         </p>
         <p class="footer-copy">© {{ year }} Road To Vostok Guide — Survival FPS wiki &amp; task help.</p>

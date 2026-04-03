@@ -3,9 +3,9 @@
     <section class="page-hero-section">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true"> / </span>
-          <RouterLink to="/wiki">Wiki</RouterLink>
+          <a href="/wiki">Wiki</a>
           <span aria-hidden="true"> / </span>
           <span>Fishing</span>
         </nav>
@@ -37,9 +37,9 @@
         </div>
         <div class="cross-links">
           Patch timing:
-          <RouterLink to="/dev-updates">Road ahead</RouterLink>
+          <a href="/dev-updates">Road ahead</a>
           ·
-          <RouterLink to="/getting-started">Start here</RouterLink>
+          <a href="/getting-started">Start here</a>
         </div>
       </div>
     </section>

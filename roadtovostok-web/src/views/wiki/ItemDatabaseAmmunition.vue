@@ -6,9 +6,9 @@
           class="page-hero-breadcrumb"
           aria-label="Breadcrumb"
         >
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true"> / </span>
-          <RouterLink to="/wiki">Wiki</RouterLink>
+          <a href="/wiki">Wiki</a>
           <span aria-hidden="true"> / </span>
           <span>Ammunition</span>
         </nav>
@@ -17,7 +17,13 @@
         </p>
         <h1>Road To Vostok Ammunition</h1>
         <p class="lead">
-          Cartridge value (€), per-round weight, max stack, and weapon compatibility — same breakdown as standard wiki tables, kept on-site for loadout planning. Numbers can change by patch; treat as a checklist, not a guarantee.
+          Cartridge value (€), per-round weight, max stack, and weapon compatibility are aligned with the
+          <a
+            href="https://roadtovostok.fandom.com/wiki/Ammunition"
+            rel="noopener noreferrer"
+            target="_blank"
+          >Road To Vostok Wiki (Fandom) · Ammunition</a>
+          table; icons are the same wiki assets, hosted under <code>/images/wiki/Ammunition/</code>. Verify everything in your installed build — patches can change stats and weapon names.
         </p>
         <dl
           class="ammo-hero-stats"
@@ -173,7 +179,7 @@
         <footer class="ammo-foot">
           <p>
             Cross-check firearms and attachments on
-            <RouterLink to="/wiki/weapons">Weapons &amp; attachments</RouterLink>.
+            <a href="/wiki/weapons">Weapons &amp; attachments</a>.
           </p>
           <p class="ammo-foot__assets">
             Images: add files under <code>public/images/wiki/ammo/</code> and set
@@ -188,7 +194,6 @@
 
 <script setup>
 import { computed, ref } from 'vue'
-import { RouterLink } from 'vue-router'
 import rowsSource, { ammunitionFilters } from '../../data/item/ammunition.js'
 
 const rows = rowsSource

@@ -3,18 +3,18 @@
     <section class="page-hero-section">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true"> / </span>
-          <RouterLink to="/wiki">Wiki</RouterLink>
+          <a href="/wiki">Wiki</a>
           <span aria-hidden="true"> / </span>
           <span>Gathering</span>
         </nav>
         <h1>Road To Vostok Gathering &amp; Raw Materials</h1>
         <p class="lead">
           Environmental loot and harvest nodes that feed crafting and survival. For combat loot,
-          see <RouterLink to="/wiki/weapons">weapons</RouterLink> and
-          <RouterLink to="/wiki/ammunition">ammunition</RouterLink>; crafting context on
-          <RouterLink to="/getting-started">Start here</RouterLink>.
+          see <a href="/wiki/weapons">weapons</a> and
+          <a href="/wiki/ammunition">ammunition</a>; crafting context on
+          <a href="/getting-started">Start here</a>.
         </p>
       </div>
     </section>
@@ -40,9 +40,9 @@
         </div>
         <div class="cross-links">
           Crafting context:
-          <RouterLink to="/getting-started">How to craft in Road To Vostok</RouterLink>
+          <a href="/getting-started">How to craft in Road To Vostok</a>
           ·
-          <RouterLink to="/wiki/ammunition">Ammunition</RouterLink>
+          <a href="/wiki/ammunition">Ammunition</a>
         </div>
       </div>
     </section>

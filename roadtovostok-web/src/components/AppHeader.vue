@@ -2,7 +2,7 @@
   <header class="app-header" role="banner">
     <div class="container">
       <div class="app-header-content">
-        <RouterLink to="/" class="brand" aria-label="Road To Vostok Guide Home">
+        <a href="/" class="brand" aria-label="Road To Vostok Guide Home">
           <img
             class="brand-logo"
             :src="brandLogoSrc"
@@ -15,7 +15,7 @@
           <span class="brand-block">
             <span class="brand-text">Road To Vostok</span>
           </span>
-        </RouterLink>
+        </a>
         <button
           type="button"
           class="nav-toggle"
@@ -42,16 +42,16 @@
           </svg>
         </button>
         <nav id="site-nav" class="site-nav" :class="{ 'is-open': menuOpen }" aria-label="Main">
-          <RouterLink
+          <a
             v-for="item in nav"
             :key="item.to"
-            :to="item.to"
+            :href="item.to"
             class="nav-link"
             :class="{ 'is-active': isNavActive(item.to) }"
             @click="menuOpen = false"
           >
             {{ item.label }}
-          </RouterLink>
+          </a>
         </nav>
       </div>
     </div>

@@ -14,11 +14,11 @@
           class="npc-breadcrumb"
           aria-label="Breadcrumb"
         >
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true">/</span>
-          <RouterLink to="/wiki">Wiki</RouterLink>
+          <a href="/wiki">Wiki</a>
           <span aria-hidden="true">/</span>
-          <RouterLink to="/wiki/npcs">NPCs</RouterLink>
+          <a href="/wiki/npcs">NPCs</a>
           <span aria-hidden="true">/</span>
           <span class="npc-breadcrumb__current">{{ npc.title }}</span>
         </nav>
@@ -35,16 +35,16 @@
               {{ npc.summary }}
             </p>
             <div class="npc-hero__actions">
-              <RouterLink
-                :to="
+              <a
+                :href="
                   npc.mapLocationId
-                    ? { path: '/map', query: { loc: npc.mapLocationId } }
+                    ? `/map?loc=${encodeURIComponent(npc.mapLocationId)}`
                     : '/map'
                 "
                 class="npc-btn npc-btn--solid"
               >
                 {{ npc.mapLocationId ? 'Show on map' : 'Open map' }}
-              </RouterLink>
+              </a>
             </div>
           </div>
 
@@ -89,13 +89,46 @@
           class="npc-main__rail"
           aria-label="About this article"
         >
-          <div class="npc-rail-card npc-rail-card--source">
+          <div
+            v-if="hasLocationRail"
+            class="npc-rail-card npc-rail-card--location"
+          >
             <p class="npc-rail-card__label">
-              Source
+              Location
             </p>
-            <p class="npc-rail-card__text">
-              Community-sourced notes for Road To Vostok. Gameplay may differ by patch or mode — verify in-game.
+            <p
+              v-if="npc.location?.title"
+              class="npc-rail-card__place"
+            >
+              {{ npc.location.title }}
             </p>
+            <figure
+              v-if="npc.location?.imageUrl"
+              class="npc-rail-card__figure"
+            >
+              <img
+                :src="npc.location.imageUrl"
+                :alt="npc.location.imageAlt || ''"
+                width="520"
+                height="292"
+                loading="lazy"
+                decoding="async"
+                class="npc-rail-card__map-img"
+              >
+            </figure>
+            <p
+              v-if="npc.location?.content"
+              class="npc-rail-card__text"
+            >
+              {{ npc.location.content }}
+            </p>
+            <a
+              v-if="npc.mapLocationId"
+              :href="`/map?loc=${encodeURIComponent(npc.mapLocationId)}`"
+              class="npc-rail-card__map-link"
+            >
+              Show on map
+            </a>
           </div>
 
           <div class="npc-rail-card">
@@ -107,10 +140,10 @@
                 v-for="r in relatedNpcs"
                 :key="r.to"
               >
-                <RouterLink
-                  :to="r.to"
+                <a
+                  :href="r.to"
                   class="npc-rail-list__link"
-                >{{ r.title }}</RouterLink>
+                >{{ r.title }}</a>
                 <span class="npc-rail-list__meta">{{ r.role }}</span>
               </li>
             </ul>
@@ -123,7 +156,7 @@
 
 <script setup>
 import { computed, watch } from 'vue'
-import { RouterLink, useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import npcList from '../../data/item/npcs.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'
@@ -135,6 +168,13 @@ const route = useRoute()
 const router = useRouter()
 
 const npc = computed(() => getByAddressBar(npcList, route.params.addressBar))
+
+/** Sidebar location block: `npc.location` from npcs.js `{ title, imageUrl, imageAlt, content }`. */
+const hasLocationRail = computed(() => {
+  const loc = npc.value?.location
+  if (!loc || typeof loc !== 'object') return false
+  return Boolean(loc.title || loc.imageUrl || loc.content)
+})
 
 const relatedNpcs = computed(() => {
   const cur = npc.value?.addressBar
@@ -435,13 +475,61 @@ watch(
   background: color-mix(in srgb, var(--color-panel) 45%, var(--color-surface));
 }
 
-.npc-rail-card--source {
+.npc-rail-card--location {
   border-color: color-mix(in srgb, var(--npc-accent) 28%, var(--color-border));
   background: linear-gradient(
     160deg,
     color-mix(in srgb, var(--npc-accent) 8%, var(--color-panel)),
     color-mix(in srgb, var(--color-panel) 70%, transparent)
   );
+}
+
+.npc-rail-card__place {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  line-height: 1.25;
+}
+
+.npc-rail-card__figure {
+  margin: 0 0 0.65rem;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--color-border) 82%, var(--npc-accent));
+  background: var(--color-bg);
+}
+
+.npc-rail-card__map-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.npc-rail-card__map-link {
+  display: inline-flex;
+  margin-top: 0.65rem;
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-primary-soft);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-primary-soft) 35%, transparent);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.npc-rail-card__map-link:hover {
+  color: var(--color-signal-soft);
+  border-bottom-color: color-mix(in srgb, var(--color-signal) 45%, transparent);
 }
 
 .npc-rail-card__label {

@@ -28,13 +28,14 @@
               Notes for the Steam demo and Early Access: weapons and loading, inverter power, checklist-style
               tasks and roadmap timing, medical, PC saves, crafting, and fishing when your build includes it.
               Single-player survival; mod tools are on the official long-term plan. Use
-              <RouterLink to="/getting-started">Start here</RouterLink> for the core loop,
-              <RouterLink to="/map">Map</RouterLink> and <RouterLink to="/tasks">Tasks</RouterLink> for locations
+              <a href="/getting-started">Start here</a> for the core loop,
+              <a href="/map">Map</a> and <a href="/tasks">Tasks</a> for locations
               and objectives — the compass block below mirrors every main section plus common guides.
             </p>
             <div class="hero-actions">
-              <RouterLink to="/getting-started" class="btn btn-primary">Field briefing</RouterLink>
-              <RouterLink to="/wiki" class="btn btn-secondary">Wiki</RouterLink>
+              <a href="/getting-started" class="btn btn-primary">Start here</a>
+              <a href="/guides" class="btn btn-hero-guides">Advanced guides</a>
+              <a href="/map" class="btn btn-hero-map">Interactive map</a>
             </div>
           </div>
           <div class="hero-visual">
@@ -87,8 +88,8 @@
                 v-for="(hub, i) in quickHubs"
                 :key="hub.to"
               >
-                <RouterLink
-                  :to="hub.to"
+                <a
+                  :href="hub.to"
                   class="home-compass-hub"
                 >
                   <span
@@ -104,7 +105,7 @@
                     class="home-compass-hub__go"
                     aria-hidden="true"
                   >→</span>
-                </RouterLink>
+                </a>
               </li>
             </ul>
 
@@ -126,13 +127,13 @@
                   v-for="r in quickRefs"
                   :key="r.to"
                 >
-                  <RouterLink
-                    :to="r.to"
+                  <a
+                    :href="r.to"
                     class="home-compass-ref"
                   >
                     <span class="home-compass-ref__text">{{ r.label }}</span>
                     <span class="home-compass-ref__path">{{ r.to }}</span>
-                  </RouterLink>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -152,8 +153,8 @@
               <p>
                 Spawn tables and trader lists drift between patches — we keep them here so you can compare notes with
                 what you see in-game, not to mirror the header menu. Longer explainers sit under
-                <RouterLink to="/guides">Guides</RouterLink>; the
-                <RouterLink to="/map">map</RouterLink> and <RouterLink to="/tasks">tasks</RouterLink> pages are for
+                <a href="/guides">Guides</a>; the
+                <a href="/map">map</a> and <a href="/tasks">tasks</a> pages are for
                 places and objectives. On the right: a few pages people open most often.
               </p>
             </header>
@@ -172,10 +173,10 @@
                 v-for="row in gearCrossLinks"
                 :key="row.to"
               >
-                <RouterLink
-                  :to="row.to"
+                <a
+                  :href="row.to"
                   class="gear-cross-link"
-                >{{ row.label }}</RouterLink>
+                >{{ row.label }}</a>
                 <span class="gear-cross-hint">{{ row.hint }}</span>
               </li>
             </ul>
@@ -197,8 +198,8 @@
                 :key="cat.to + cat.title"
                 class="featured-catalog-item"
               >
-                <RouterLink
-                  :to="cat.to"
+                <a
+                  :href="cat.to"
                   class="featured-catalog-link"
                 >
                   <span
@@ -219,7 +220,7 @@
                     class="featured-catalog-go"
                     aria-hidden="true"
                   >→</span>
-                </RouterLink>
+                </a>
               </li>
             </ul>
           </div>
@@ -248,10 +249,10 @@
               The game is still a <strong>sandbox</strong>: you are not forced into Vostok or a single playstyle.
               “Pushing east” simply means following that intended difficulty curve—secure the west, then attempt
               harder crossings—not a hidden story mandate. For step-by-step locations use
-              <RouterLink to="/map">Map</RouterLink>,
-              <RouterLink to="/tasks">Tasks</RouterLink>, and
-              <RouterLink to="/wiki/npcs">NPCs</RouterLink>; for controls and the survival loop,
-              <RouterLink to="/getting-started">Start here</RouterLink>.
+              <a href="/map">Map</a>,
+              <a href="/tasks">Tasks</a>, and
+              <a href="/wiki/npcs">NPCs</a>; for controls and the survival loop,
+              <a href="/getting-started">Start here</a>.
             </p>
           </header>
 
@@ -330,10 +331,10 @@
                 v-for="l in questRelatedPages"
                 :key="l.to"
               >
-                <RouterLink
-                  :to="l.to"
+                <a
+                  :href="l.to"
                   class="quest-related-link"
-                >{{ l.label }}</RouterLink>
+                >{{ l.label }}</a>
               </li>
             </ul>
           </nav>
@@ -351,13 +352,13 @@
             <p>
               Long-form developer updates on YouTube cover Early Access scope, shelters, and later beats like
               fishing and seasons. On this site:
-              <RouterLink to="/guides">Guides</RouterLink> include
-              <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</RouterLink>
+              <a href="/guides">Guides</a> include
+              <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</a>
               and
-              <RouterLink to="/guides/surviving-the-Minefield">Minefield tactics</RouterLink>;
-              <RouterLink to="/dev-updates">Road ahead</RouterLink> covers builds and patch-style notes; when your
+              <a href="/guides/surviving-the-Minefield">Minefield tactics</a>;
+              <a href="/dev-updates">Road ahead</a> covers builds and patch-style notes; when your
               build adds it, see
-              <RouterLink to="/wiki/fishing">Wiki · Fishing</RouterLink>.
+              <a href="/wiki/fishing">Wiki · Fishing</a>.
             </p>
           </header>
           <div class="devlog-layout">
@@ -382,8 +383,8 @@
                 <li>How later builds are expected to layer quests, seasons, and naval content.</li>
               </ul>
               <p>
-                For patch-style notes, visit <RouterLink to="/dev-updates">Road ahead</RouterLink>. Mod expectations:
-                <RouterLink to="/mods">Mods hub</RouterLink> (no hosted files).
+                For patch-style notes, visit <a href="/dev-updates">Road ahead</a>. Mod expectations:
+                <a href="/mods">Mods hub</a> (no hosted files).
               </p>
             </div>
           </div>
@@ -412,22 +413,22 @@
             class="about-hub-links"
             aria-label="Main site pages"
           >
-            <RouterLink
-              to="/getting-started"
+            <a
+              href="/getting-started"
               class="about-hub-link"
-            >Start here</RouterLink>
-            <RouterLink
-              to="/wiki"
+            >Start here</a>
+            <a
+              href="/wiki"
               class="about-hub-link"
-            >Wiki</RouterLink>
-            <RouterLink
-              to="/guides"
+            >Wiki</a>
+            <a
+              href="/guides"
               class="about-hub-link"
-            >Guides</RouterLink>
-            <RouterLink
-              to="/about"
+            >Guides</a>
+            <a
+              href="/about"
               class="about-hub-link"
-            >About us</RouterLink>
+            >About us</a>
           </nav>
         </div>
       </div>
@@ -462,10 +463,10 @@
                 v-for="l in faqHubLinks"
                 :key="l.to"
               >
-                <RouterLink
-                  :to="l.to"
+                <a
+                  :href="l.to"
                   class="faq-hub-link"
-                >{{ l.label }}</RouterLink>
+                >{{ l.label }}</a>
               </li>
             </ul>
           </nav>
@@ -477,8 +478,6 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import { RouterLink } from 'vue-router'
-
 const homeRoot = ref(null)
 let revealObserver = null
 
@@ -928,6 +927,62 @@ onUnmounted(() => {
   border-color: var(--color-frost);
   color: var(--color-primary-soft);
   box-shadow: var(--fx-glow-frost);
+}
+
+/* Map CTA: ice / cyan vs rust primary — reads as “open atlas” */
+.btn-hero-map {
+  color: #04080c;
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--color-primary-soft) 92%, white) 0%,
+    var(--color-ice) 48%,
+    color-mix(in srgb, var(--color-ice) 55%, var(--color-ice-dim)) 100%
+  );
+  border-color: color-mix(in srgb, var(--color-primary-soft) 45%, var(--color-border-strong));
+  box-shadow:
+    var(--fx-glow-frost),
+    inset 0 1px 0 color-mix(in srgb, white 22%, transparent);
+}
+
+.btn-hero-map:hover {
+  color: #020508;
+  background: linear-gradient(
+    165deg,
+    var(--color-primary-soft) 0%,
+    color-mix(in srgb, var(--color-primary-soft) 35%, var(--color-ice)) 100%
+  );
+  border-color: var(--color-primary-soft);
+  box-shadow:
+    0 0 52px color-mix(in srgb, var(--color-ice) 38%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 35%, transparent);
+}
+
+/* Hero: long-form guides — amber / gold tier */
+.btn-hero-guides {
+  color: #141008;
+  background: linear-gradient(
+    152deg,
+    color-mix(in srgb, var(--color-amber) 78%, #fff4cc) 0%,
+    var(--color-amber) 52%,
+    color-mix(in srgb, var(--color-amber) 45%, #8a6a1e) 100%
+  );
+  border-color: color-mix(in srgb, var(--color-amber) 55%, #5c4510);
+  box-shadow:
+    0 0 44px color-mix(in srgb, var(--color-amber) 26%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 28%, transparent);
+}
+
+.btn-hero-guides:hover {
+  color: #0f0c06;
+  background: linear-gradient(
+    152deg,
+    color-mix(in srgb, var(--color-amber) 92%, white) 0%,
+    color-mix(in srgb, var(--color-amber) 88%, #f0d060) 100%
+  );
+  border-color: color-mix(in srgb, var(--color-amber) 70%, #a88420);
+  box-shadow:
+    0 0 56px color-mix(in srgb, var(--color-amber) 34%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 40%, transparent);
 }
 
 .hero-visual {

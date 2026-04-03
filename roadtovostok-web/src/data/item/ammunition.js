@@ -1,9 +1,11 @@
 /**
- * Ammunition reference — values aligned with community wiki tables (verify in-game).
- * `filterTags` drives toolbar filters; `weapons` is split from the wiki compatibility column.
+ * Ammunition reference — numeric columns and compatibility aligned with
+ * https://roadtovostok.fandom.com/wiki/Ammunition (verify in-game; patches may differ).
  *
- * Images: put files under `public/images/wiki/ammo/` and set `imageUrl` (e.g. `/images/wiki/ammo/46x30.webp`).
- * Filename suggestion: match `id`. Leave `imageUrl` empty until the asset exists — the UI keeps a fixed slot.
+ * Images: PNGs from the same wiki (File:Ammunition_*.png), stored under
+ * `public/images/wiki/Ammunition/{id}.png` → served as `/images/wiki/Ammunition/{id}.png`.
+ *
+ * `filterTags` drives toolbar filters; `weapons` mirrors the wiki “Compatibility” column.
  */
 export default [
   {
@@ -11,7 +13,7 @@ export default [
     caliber: '4.6×30mm',
     category: 'smg',
     filterTags: ['smg'],
-    imageUrl: '',
+    imageUrl: '/images/wiki/Ammunition/46x30.png',
     imageAlt: '4.6×30mm ammunition in Road To Vostok',
     valueEur: 6,
     weightKg: 0.02,
@@ -24,7 +26,7 @@ export default [
     caliber: '7.62×39mm',
     category: 'rifle',
     filterTags: ['rifle'],
-    imageUrl: '',
+    imageUrl: '/images/wiki/Ammunition/762x39.png',
     imageAlt: '7.62×39mm ammunition in Road To Vostok',
     valueEur: 8,
     weightKg: 0.02,
@@ -37,7 +39,7 @@ export default [
     caliber: '7.62×54mmR',
     category: 'dmr',
     filterTags: ['dmr'],
-    imageUrl: '',
+    imageUrl: '/images/wiki/Ammunition/762x54r.png',
     imageAlt: '7.62×54mmR ammunition in Road To Vostok',
     valueEur: 11,
     weightKg: 0.03,
@@ -50,7 +52,7 @@ export default [
     caliber: '.308 Winchester',
     category: 'dmr',
     filterTags: ['dmr'],
-    imageUrl: '',
+    imageUrl: '/images/wiki/Ammunition/308.png',
     imageAlt: '.308 Winchester ammunition in Road To Vostok',
     valueEur: 8,
     weightKg: 0.02,
@@ -63,20 +65,20 @@ export default [
     caliber: '12 gauge',
     category: 'shotgun',
     filterTags: ['shotgun'],
-    imageUrl: '',
+    imageUrl: '/images/wiki/Ammunition/12ga.png',
     imageAlt: '12 gauge shells in Road To Vostok',
     valueEur: 18,
     weightKg: 0.03,
     maxStack: 100,
-    weapons: ['RM-870'],
-    note: 'Shells are heavier and more expensive per round; smallest max stack of listed types.',
+    weapons: ['RM-970'],
+    note: 'Shells are heavier and more expensive per round; smallest max stack of listed types. Fandom wiki lists RM-970 for 12 gauge.',
   },
   {
     id: '9x19',
     caliber: '9×19mm Parabellum',
     category: 'mixed',
     filterTags: ['pistol', 'smg'],
-    imageUrl: '',
+    imageUrl: '/images/wiki/Ammunition/9x19.png',
     imageAlt: '9×19mm Parabellum ammunition in Road To Vostok',
     valueEur: 2,
     weightKg: 0.01,
@@ -89,7 +91,7 @@ export default [
     caliber: '.45 ACP',
     category: 'pistol',
     filterTags: ['pistol'],
-    imageUrl: '',
+    imageUrl: '/images/wiki/Ammunition/45acp.png',
     imageAlt: '.45 ACP ammunition in Road To Vostok',
     valueEur: 3,
     weightKg: 0.01,
@@ -102,7 +104,7 @@ export default [
     caliber: '5.45×39mm',
     category: 'rifle',
     filterTags: ['rifle'],
-    imageUrl: '',
+    imageUrl: '/images/wiki/Ammunition/545x39.png',
     imageAlt: '5.45×39mm ammunition in Road To Vostok',
     valueEur: 6,
     weightKg: 0.01,

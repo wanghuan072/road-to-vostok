@@ -3,9 +3,9 @@
     <section class="page-hero-section">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <RouterLink to="/">Home</RouterLink>
+          <a href="/">Home</a>
           <span aria-hidden="true"> / </span>
-          <RouterLink to="/wiki">Wiki</RouterLink>
+          <a href="/wiki">Wiki</a>
           <span aria-hidden="true"> / </span>
           <span>NPCs</span>
         </nav>
@@ -20,12 +20,12 @@
       <div class="container">
         <ul class="item-db-hub-grid" role="list">
           <li v-for="n in npcList" :key="n.addressBar">
-            <RouterLink :to="`/wiki/npcs/${n.addressBar}`" class="item-db-hub-card">
+            <a :href="`/wiki/npcs/${n.addressBar}`" class="item-db-hub-card">
               <span class="kicker">{{ n.role }}</span>
               <h2>{{ n.title }}</h2>
               <p>{{ n.summary }}</p>
               <span class="go">Open article →</span>
-            </RouterLink>
+            </a>
           </li>
         </ul>
       </div>
@@ -34,7 +34,6 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
 import npcList from '../../data/item/npcs.js'
 </script>
 

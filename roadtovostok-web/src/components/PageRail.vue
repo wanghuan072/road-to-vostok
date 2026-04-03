@@ -9,13 +9,13 @@
           <p v-if="title" class="aside-card-kicker">{{ title }}</p>
           <nav v-if="links.length" class="aside-nav">
             <template v-for="(item, i) in links" :key="i">
-              <RouterLink
+              <a
                 v-if="item.to"
-                :to="item.to"
+                :href="item.to"
                 class="aside-nav-link"
               >
                 {{ item.label }}
-              </RouterLink>
+              </a>
               <button
                 v-else-if="item.scrollKey"
                 type="button"
@@ -34,7 +34,6 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
 import { scrollToNavAnchor } from '../composables/scrollToNavAnchor.js'
 
 const props = defineProps({

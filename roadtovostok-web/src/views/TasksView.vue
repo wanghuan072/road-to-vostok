@@ -4,7 +4,7 @@
       <div class="container">
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <RouterLink to="/">Home</RouterLink>
+            <a href="/">Home</a>
             <span aria-hidden="true">/</span>
             <span>Tasks</span>
           </nav>
@@ -12,7 +12,7 @@
           <p>
             Trader tasks, border crossings, and Vostok permadeath rules — aligned with the public
             roadtovostok.com game page. For the interactive map and POI index, open
-            <RouterLink to="/map">Map</RouterLink>. Verify details in your build.
+            <a href="/map">Map</a>. Verify details in your build.
           </p>
         </div>
       </div>
@@ -57,7 +57,7 @@
             <li>
               When ready, commit to a <strong>Border Zone</strong> crossing that matches your kit (mines
               vs boats vs obstacles — official crossing variety). For mine-heavy routes, see the guide
-              <RouterLink to="/guides/surviving-the-Minefield">Surviving the Minefield</RouterLink>.
+              <a href="/guides/surviving-the-Minefield">Surviving the Minefield</a>.
             </li>
             <li>
               Treat <strong>Vostok</strong> as optional endgame: permadeath rules apply only there per
@@ -66,12 +66,12 @@
           </ol>
           <p class="guide-tools">
             Related:
-            <RouterLink to="/wiki/core-tasks">Core task items</RouterLink>,
-            <RouterLink to="/guides/an-analytical-deep-dive-into-its-real-world-geography">Border geography</RouterLink>,
-            <RouterLink to="/guides/surviving-the-Minefield">Minefield tactics</RouterLink>,
-            <RouterLink to="/map">Map</RouterLink>,
-            <RouterLink to="/dev-updates">Road ahead</RouterLink> (builds),
-            <RouterLink to="/guides">All guides</RouterLink>.
+            <a href="/wiki/core-tasks">Core task items</a>,
+            <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">Border geography</a>,
+            <a href="/guides/surviving-the-Minefield">Minefield tactics</a>,
+            <a href="/map">Map</a>,
+            <a href="/dev-updates">Road ahead</a> (builds),
+            <a href="/guides">All guides</a>.
           </p>
         </div>
       </div>
@@ -93,8 +93,8 @@
             The site names <strong>Guards</strong> as foreign border forces who are armed, corrupt, and
             may rely on <strong>air support</strong> to stop crossings. Plan stamina, cover, and
             medical supplies accordingly — see
-            <RouterLink to="/getting-started">Start here</RouterLink> (weapons &amp; loading) and the
-            <RouterLink to="/wiki/weapons">weapons table</RouterLink> for combat prep.
+            <a href="/getting-started">Start here</a> (weapons &amp; loading) and the
+            <a href="/wiki/weapons">weapons table</a> for combat prep.
           </p>
           <h3>After the border: Vostok rules</h3>
           <p>
@@ -133,7 +133,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
 import PageRail from '../components/PageRail.vue'
 
 const railScrollRoot = ref(null)
