@@ -14,9 +14,9 @@
           other <strong>all tasks</strong> props, plus <strong>how to fish</strong> notes and field
           <strong>gathering</strong>. Long-form strategy lives under
           <a href="/guides">Guides</a> — e.g.
-          <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">real-world geography</a>
-          and
-          <a href="/guides/surviving-the-Minefield">Minefield tactics</a>.
+          <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">real-world geography</a>,
+          <a href="/guides/surviving-the-Minefield">Minefield tactics</a>, or
+          <a href="/guides/how-to-fish">fishing spots &amp; pike</a>.
           Always verify values in your installed build.
         </p>
       </div>

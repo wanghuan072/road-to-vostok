@@ -46,7 +46,7 @@ export default [
   <h2><strong>The Russian Abyss: Urban Decay in Vostok</strong></h2>
   <p>Crossing the border shifts the survival paradigm entirely. While the Finnish side relies on forest concealment, the Russian side plunges the player into dense, claustrophobic urban decay. Tenebris Infinite theorizes on several real-world Russian locations that perfectly fit Vostok's hardcore mechanical shift:</p>
   <ol>
-   <li><strong>Seleznyovo (Celestavo):</strong> Dominated by imposing, brutalist apartment blocks, this area introduces extreme verticality. These structures act as high-risk loot centers, forcing players into intense Close Quarters Combat (CQC) within narrow stairwells and confined apartments.</li>
+   <li><strong>Seleznyovo (Celestavo):</strong> Dominated by imposing, brutalist apartment blocks, this area introduces extreme verticality. These structures act as high-risk loot centers, forcing players into intense Close Quarters Combat (CQC) within narrow stairwells and confined apartments. For in-game vertical CQB and trader loops in a similar setting, see the <a href="/guides/apartments-complete-survival-loot-guid">Apartments survival guide</a>.</li>
    <li><strong>Vyborg:</strong> A striking coastal city featuring a historical Swedish castle. Integrating a medieval fortress into a modern, post-apocalyptic urban map creates an incredible focal point for exploration. Furthermore, Vyborg’s extensive water features could bridge land-based firefights with tense, aquatic navigation.</li>
   </ol>
   <p>&quot;The transition from the relative safety of guerrilla warfare in the forests of Area 5 to the urban-based CQC of Vostok creates a brilliant mechanical and atmospheric dichotomy.&quot;</p>
@@ -75,9 +75,8 @@ export default [
     addressBar: "surviving-the-Minefield",
     detailsHtml: `
     <p> <strong>Subject Focus:</strong> Advanced tactical analysis of the &quot;Minefield&quot; border map and explosive clearance mechanics.</p>
-  <p>In the unforgiving ecosystem of hardcore survival shooters, the transition from challenging gameplay to absolute, punishing finality requires a physical threshold. In <em>Road to Vostok</em>, that threshold is the <strong>Minefield</strong>. As meticulously documented in StarVox's gameplay breakdown, this map is the ultimate gatekeeper to Vostok—the permadeath zone where a single death wipes your save data and erases everything hoarded in your Attic safehouse.</p>
+  <p>In the unforgiving ecosystem of hardcore survival shooters, the transition from challenging gameplay to absolute, punishing finality requires a physical threshold. In <em>Road to Vostok</em>, that threshold is the <strong>Minefield</strong>. As meticulously documented in StarVox's gameplay breakdown, this map is the ultimate gatekeeper to Vostok—the permadeath zone where a single death wipes your save data and erases everything hoarded in your Attic safehouse. Border layouts and pins are easier to read alongside the <a href="/map">interactive map</a> (Border Zone).</p>
   <p>Navigating this space is an exercise in psychological endurance and spatial awareness. The Minefield strips away the traditional run-and-gun mechanics of the genre, replacing them with a rigorous, methodical puzzle of ballistics and sensory deprivation. This guide provides an in-depth tactical analysis of how to survive this lethal gauntlet, with a special emphasis on active explosive clearance.</p>
-  <p><strong>Related on this site:</strong> <a href="/map">Map</a> (Border Zone pins), <a href="/tasks">Tasks &amp; Vostok permadeath</a>, <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">Real-world border geography</a>, <a href="/wiki/weapons">Weapons</a> for ammunition planning, and <a href="/getting-started">Start here</a> for medical and control basics.</p>
   <h2><strong>1. Explosive Ordnance Identification and Active Clearance</strong></h2>
   <p>The primary hazard of the map is, unsurprisingly, the mines. However, the developer has opted for a design philosophy that rewards acute observation and deliberate action rather than punishing blind luck.</p>
   <h3><strong>Visual Signature</strong></h3>
@@ -104,7 +103,7 @@ export default [
   <h2><strong>4. Medical Attrition and Gear Degradation</strong></h2>
   <p>Surviving the Minefield is an exercise in resource attrition. The damage sustained here is rarely minor.</p>
   <p>Taking accurate fire from the tree line quickly depletes helmet armor to zero percent, leaving the player exposed to instantaneous, fatal headshots. Furthermore, the combination of gunshot wounds and the splash damage from your own ballistic mine clearances can lead to heavy trauma. Players must commit their rarest medkits and tourniquets to stop rapid bleeding, or they will bleed out long before reaching the transition point to the Radar array.</p>
-  <p>Tactical Takeaway: Ammunition management is critical. You must budget enough rounds to not only fight off the AI but also to shoot and detonate the mines blocking your path. Never enter the Minefield without surplus ammunition, heavy medkits, spare splints, and a backup helmet.</p>
+  <p>Tactical Takeaway: Ammunition management is critical. You must budget enough rounds to not only fight off the AI but also to shoot and detonate the mines blocking your path. Never enter the Minefield without surplus ammunition, heavy medkits, spare splints, and a backup helmet. Caliber-by-caliber planning is easier with the <a href="/wiki/ammunition">ammo wiki table</a>.</p>
   <h2><strong>Conclusion: The Ultimate Threshold</strong></h2>
   <p>The Minefield in <em>Road to Vostok</em> is a brilliantly cruel piece of level design. It demands a hybrid approach of rapid, chaotic firefights and agonizingly slow, methodical pathfinding via ballistic detonation. By combining asymmetrical AI advantages with audio masking and devastating proximity explosives, the solo developer has crafted a gauntlet that perfectly prepares players for the ultimate stakes of the Vostok permadeath zone. It is a true test of observation, patience, and marksmanship.</p>
     `,
@@ -134,36 +133,36 @@ export default [
   </ol>
     <p><strong>Surviving the Apartments in Road to Vostok requires methodical CQB clearing, strict management of the cold mechanic using fire barrels, and leveraging the local trader, &quot;The Generalist.&quot; High-tier loot like VSS and AK-12 rifles are strictly obtained by eliminating hostiles and securing hidden military crates within the complex.</strong></p>
   <h2><strong>Navigating the Area Layout &amp; Tactical Approach</strong></h2>
-  <p>Reaching this zone requires pushing past the Border Zone minefields and trench networks. Once inside, the layout is highly vertical and dense. Moving at night provides a massive tactical advantage against roaming NPC patrols, but requires Night Vision Goggles (NVGs). The environment forces close-quarters battle (CQB). When the NVGs run out of battery or when clearing pitch-black stairwells, transitioning to a weapon-mounted white light is mandatory to identify targets, though it exposes your position to outside threats. Room-by-room clearing is critical, as enemies like rooftop snipers maintain hard lockdown over the courtyards.</p>
+  <p>Reaching this zone requires pushing past the Border Zone <a href="/guides/surviving-the-Minefield">minefield routes</a> and trench networks. Once inside, the layout is highly vertical and dense. Moving at night provides a massive tactical advantage against roaming NPC patrols, but requires Night Vision Goggles (NVGs). The environment forces close-quarters battle (CQB). When the NVGs run out of battery or when clearing pitch-black stairwells, transitioning to a weapon-mounted white light is mandatory to identify targets, though it exposes your position to outside threats. Room-by-room clearing is critical, as enemies like rooftop snipers maintain hard lockdown over the courtyards — cross-check approaches on the <a href="/map">interactive map</a> (Vostok pins).</p>
   <p><img src="/images/guides/guides03-01.webp" alt="road to vostok apartments map" width="50%" style="width: 50%;" /></p>
   <h2><strong>Securing Safe Havens and Resting Spots</strong></h2>
   <p>Constant exposure to the elements and firefights will drain your character. Safe havens are scattered around the periphery, notably small cabins and tent setups. Inside the primary safe cabin, you will find a sleeping bag. Resting is a core mechanic—sleeping for several hours recovers fatigue and resets your status, giving you the stamina needed for subsequent raids into the main multi-story structures. This shelter also features a weapon display board, allowing you to manage your inventory and stage loadouts without cluttering your immediate backpack space.</p>
   <h2><strong>High-Tier Gear, Crates, and Enemy Drops</strong></h2>
-  <p>The economy in this zone relies heavily on scavenging and combat. Standard rooms contain civilian loot (fridges, cabinets), but the real prize lies in Military Crates hidden on the upper floors and bathrooms. Taking down heavily armed hostiles (bandits/soldiers) is the most reliable way to acquire endgame weapons. Drops observed include the AK-12, MP7, VSS, and RK-95. Meds like IFAKs and painkillers are extremely scarce and usually found in dedicated medical wall cabinets or on dead bodies.</p>
+  <p>The economy in this zone relies heavily on scavenging and combat. Standard rooms contain civilian loot (fridges, cabinets), but the real prize lies in Military Crates hidden on the upper floors and bathrooms. Taking down heavily armed hostiles (bandits/soldiers) is the most reliable way to acquire endgame weapons. Drops observed include the AK-12, MP7, VSS, and RK-95 — stat rows for these platforms live on the <a href="/wiki/weapons">wiki weapons table</a>. Meds like IFAKs and painkillers are extremely scarce and usually found in dedicated medical wall cabinets or on dead bodies.</p>
   <p><img src="/images/guides/guides03-02.webp" alt="road to vostok apartments Enemy Drops" width="50%" style="width: 50%;" /></p>
   <h3><strong>Loot Distribution Table</strong></h3>
   <p>Loot Category Common Items Found Primary Locations</p>
-  <p><strong>Weapons</strong></p>
+  <p><strong><a href="/wiki/weapons">Weapons</a></strong></p>
   <p>AK-12, MP7, VSS, RK-95, Glock</p>
   <p>Enemy corpses, Weapon racks, Rooftop sniper drops</p>
-  <p><strong>Medical Supplies</strong></p>
+  <p><strong><a href="/getting-started#medical">Medical Supplies</a></strong></p>
   <p>IFAK, Painkillers, Bandages, Medkits</p>
-  <p>Wall medical cabinets, Enemy drops, Trader stock</p>
-  <p><strong>Survival Gear</strong></p>
+  <p>Wall medical cabinets, Enemy drops, <a href="/wiki/npcs">Trader stock</a></p>
+  <p><strong><a href="/wiki/gathering">Survival Gear</a></strong></p>
   <p>Rations, Sleeping bags, Winter Jackets</p>
   <p>Civilian furniture (Cabinets, Fridges), Cabins</p>
   <h2><strong>Managing Cold Mechanics with Barrels</strong></h2>
   <p>The relentless cold is a silent killer. As your body temperature drops, your combat effectiveness drastically reduces. To survive, you must locate burn barrels scattered around the safe zones and exterior courtyards. Igniting a fire is not optional; it is a vital survival mechanic to restore body heat before you push back into the unheated, concrete apartment blocks.</p>
   <p><img src="/images/guides/guides03-03.webp" alt="road to vostok apartments fire" width="50%" style="width: 50%;" /></p>
   <h2><strong>Interacting with &quot;The Generalist&quot;</strong></h2>
-  <p>Inside one of the secured, reinforced rooms, you will find a key NPC trader known as &quot;The Generalist&quot; (easily identifiable by his blue cap and glasses). He operates a supply shop. The primary gameplay loop here involves trading the excess, heavily-damaged firearms you scavenge from dead bandits in exchange for high-value medical supplies and ammunition. Proper inventory management—hauling enemy weapons back to his desk—is essential to keep your health topped off.</p>
+  <p>Inside one of the secured, reinforced rooms, you will find a key NPC trader known as <a href="/wiki/npcs/generalist">&quot;The Generalist&quot;</a> (easily identifiable by his blue cap and glasses). He operates a supply shop. The primary gameplay loop here involves trading the excess, heavily-damaged firearms you scavenge from dead bandits in exchange for high-value medical supplies and ammunition. Proper inventory management—hauling enemy weapons back to his desk—is essential to keep your health topped off.</p>
   <h2><strong>Frequently Asked Questions</strong></h2>
   <h3><strong>Can you sleep anywhere in the Apartments?</strong></h3>
   <p>No. You must find dedicated resting spots, such as the sleeping bag located inside the specific safe cabin, to safely pass the time and recover fatigue.</p>
   <h3><strong>How do I get the VSS or AK-12 in this zone?</strong></h3>
   <p>These high-tier weapons are primarily obtained by engaging and looting the heavily armed NPC soldiers and snipers guarding the complex, particularly those locking down the rooftops.</p>
   <h3><strong>What does &quot;The Generalist&quot; trade?</strong></h3>
-  <p>The Generalist acts as a quartermaster. You can sell him excess or damaged weapons salvaged from enemies in exchange for vital survival supplies, most notably medical items like IFAKs and ammunition.</p>
+  <p>The Generalist acts as a quartermaster. You can sell him excess or damaged weapons salvaged from enemies in exchange for vital survival supplies, most notably medical items like IFAKs and <a href="/wiki/ammunition">ammunition</a> (calibers on the wiki table).</p>
     `,
   },
 
@@ -239,7 +238,7 @@ export default [
 </li>
 </ol>
     
-    <p>In Road to Vostok, fishing isn't just randomly throwing your line into the water; it requires accurately locating hidden underwater "fish blocks." By casting your line at specific landmarks like the drainage pipe and the wooden pier, players can avoid empty catches and efficiently farm high-value catches like Pike for quests. It is the safest and most reliable way to make money during a hardcore permadeath run.
+    <p>In Road to Vostok, fishing isn't just randomly throwing your line into the water; it requires accurately locating hidden underwater "fish blocks." By casting your line at specific landmarks like the drainage pipe and the wooden pier, players can avoid empty catches and efficiently farm high-value catches like Pike for quests. It is the safest and most reliable way to make money during a hardcore permadeath run. Rod and fish rows for your build are summarized on the <a href="/wiki/fishing">Wiki · Fishing</a> table.
   </p>
   <p><img src="/images/guides/guides04-01.webp" alt="road to vostok fishing guide" width="50%">
   </p>
@@ -249,7 +248,7 @@ export default [
   </p>
   <h2>Best Locations to Cast Your Line
   </h2>
-  <p>Finding the right spots is crucial for a massive haul. After testing the waters during a permadeath run, here are some top-tier spots mapped out for you:
+  <p>Finding the right spots is crucial for a massive haul. After testing the waters during a permadeath run, here are some top-tier spots mapped out for you — compare shore landmarks to water pins on the <a href="/map">map</a> when routing.
   </p>
   <ol>
   <li>Tree Line Water Edge: Aim above the tree canopy and cast; there is a very high probability of hitting a static block here.
@@ -263,7 +262,7 @@ export default [
   </p>
   <h2>Equipping and Using the Rod
   </h2>
-  <p>Unequip your MP5 or shotgun and place the Fishing Rod into your primary weapon slot. The casting logic is hardcore: you control the casting power and angle with your mouse. The higher you aim your crosshair, the further the line goes. Once cast, the fishing line will slowly drift back toward your position. When the line passes through an underwater block, a fish will automatically bite if there are any left. There are no complicated QTE fighting mechanics—just find the correct block and wait patiently for the line to reel in.
+  <p>Unequip your MP5 or shotgun and place the Fishing Rod into your primary weapon slot. Platform stats for those guns stay on the <a href="/wiki/weapons">weapons wiki</a>. The casting logic is hardcore: you control the casting power and angle with your mouse. The higher you aim your crosshair, the further the line goes. Once cast, the fishing line will slowly drift back toward your position. When the line passes through an underwater block, a fish will automatically bite if there are any left. There are no complicated QTE fighting mechanics—just find the correct block and wait patiently for the line to reel in.
   </p>
   <h2>How to Catch the Valuable Pike
   </h2>
@@ -377,7 +376,7 @@ export default [
       keywords: "Road to Vostok Weapons"
     },
     addressBar: "weapons-list",
-    detailsHtml: `<p>In the hardcore survival game Road to Vostok, the weapons system is built entirely around extreme realism and highly detailed stat sheets. The current firing range demonstration showcases up to 20 different firearms covering various tactical roles. Each weapon features independent, rigorous data, including specific ammo caliber, base damage, penetration level, and weapon condition. For survivors, understanding these UI stats and matching penetration levels to enemy armor is a mandatory survival skill before stepping into the wasteland.
+    detailsHtml: `<p>In the hardcore survival game Road to Vostok, the weapons system is built entirely around extreme realism and highly detailed stat sheets. The current firing range demonstration showcases up to 20 different firearms covering various tactical roles. Each weapon features independent, rigorous data, including specific ammo caliber, base damage, penetration level, and weapon condition. For survivors, understanding these UI stats and matching penetration levels to enemy armor is a mandatory survival skill before stepping into the wasteland. Patch-aligned catalog rows (value, trader cost, rarity) are maintained on the <a href="/wiki/weapons">Wiki · Weapons</a> page.
   </p>
   <iframe name="rtvWeaponsGuideYt" src="https://www.youtube.com/embed/R5721mXs4lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <p>Don't want to watch the full video? Jump straight to the key moments:

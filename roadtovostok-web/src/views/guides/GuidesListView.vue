@@ -12,7 +12,7 @@
           Survival tips and progression — short reads. Pair with the
           <a href="/map">map</a>,
           <a href="/tasks">tasks</a>, and
-          <a href="/wiki">item database</a>. Confirm details in your installed build.
+          <a href="/wiki">item database</a> when you need locations or tables. Confirm details in your installed build.
         </p>
       </div>
     </section>

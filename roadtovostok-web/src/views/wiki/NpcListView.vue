@@ -13,6 +13,7 @@
         <p class="lead">
           <strong>Bandits</strong>, <strong>Generalist</strong>, and <strong>Doctor</strong> — community-sourced summaries
           for Road To Vostok. Cross-check tasks and stock in your build; map pins link here where marked.
+          Zone walkthroughs (e.g. Apartments, Minefield) live under <a href="/guides">Guides</a>.
         </p>
       </div>
     </section>
