@@ -178,6 +178,7 @@ export default [
         "duration": "PT17M3S",
         "contentUrl": "https://www.youtube.com/watch?v=QVdZjWBqMH4",
         "embedUrl": "https://www.youtube.com/embed/QVdZjWBqMH4",
+        "thumbnailUrl": "https://img.youtube.com/vi/QVdZjWBqMH4/maxresdefault.jpg",
         "hasPart": [
           {
             "@type": "Clip",
