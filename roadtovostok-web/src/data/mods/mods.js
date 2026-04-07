@@ -1,10 +1,78 @@
 /**
- * Mod spotlight — https://modworkshop.net/mod/50811
+ * Mod spotlights — ModWorkshop listings (e.g. 50811, 49777).
  *
  * Main column: `detailsHtml` only.
- * Right rail (data): image, external URL, stats, dates, tags, `comments[]`, plus `seo` for summary/TDK.
+ * Right rail (data): image, external URL (ModWorkshop CTA), stats, dates, tags, `comments[]`, plus `seo` for TDK.
+ * Main column must not include external links—send downloads to the sidebar button.
  */
 export default [
+  {
+    id: 49777,
+    addressBar: 'item-spawner',
+    title: 'Item Spawner',
+    author: 'Ryhon',
+    version: '1.2.0',
+    publishDate: '2026-03-04',
+    externalUrl: 'https://modworkshop.net/mod/49777',
+    loaderName: 'Metro Mod Loader',
+    stats: {
+      downloads: '2,492',
+      views: '4,837',
+    },
+    imageUrl: '/images/mods/item-spawner-thumbnail.webp',
+    imageAlt: 'Item Spawner mod thumbnail for Road to Vostok',
+    tags: ['Quality of Life', 'Self-updating', 'Next Fest Demo (Godot 4.6)'],
+    comments: [
+      {
+        author: 'Inventory flow',
+        body: 'Insert toggles the panel without leaving the loot loop—handy when you are testing gear on a fresh character.',
+      },
+      {
+        author: 'Persistence',
+        body: 'The spawn UI staying attached to the next inventory open matches how I raid: one less hotkey to remember mid-run.',
+      },
+      {
+        author: 'Load order',
+        body: 'If you stack big gameplay packs, skim the incompatible notes on Workshop before enabling this alongside everything else.',
+      },
+    ],
+    seo: {
+      title:
+        'Road to Vostok Item Spawner Mod (Ryhon): QoL spawn menu & install | Road To Vostok Guide',
+      description:
+        'Road to Vostok mod: Item Spawner by Ryhon—Insert toggles an inventory item spawn menu (ItemSpawner.vmz). Metro Mod Loader, install steps, and compatibility with overhaul packs.',
+      keywords:
+        'Road to Vostok mod, Road to Vostok Item Spawner, Item Spawner Ryhon, Road to Vostok QoL mod, Metro Mod Loader, inventory spawn mod, ItemSpawner vmz, Road to Vostok Next Fest mod',
+    },
+    detailsHtml: `
+<p class="mod-prose-lead">
+  This site does <strong>not</strong> host mod files. Use <strong>Open on ModWorkshop</strong> in the sidebar to download <strong>ItemSpawner.vmz</strong> and confirm it matches your Next Fest demo or Early Access build.
+</p>
+
+<p><strong>What it does</strong></p>
+<ul>
+  <li>While your <strong>inventory</strong> is open, press <strong>Insert</strong> to open the spawn menu.</li>
+  <li>The spawn window <strong>stays available</strong> the next time you open inventory until you press <strong>Insert</strong> again to hide it.</li>
+  <li>Small package size on the author listing; labelled self-updating—re-test after major game patches.</li>
+</ul>
+
+<p><img src="/images/mods/item-spawner-full.webp" alt="Item Spawner mod screenshot for Road to Vostok" width="640" loading="lazy" decoding="async" style="max-width: 100%; height: auto;" /></p>
+
+<h2>Installation (typical)</h2>
+<ol>
+  <li>Install <strong>Metro Mod Loader</strong> per the game’s current modding instructions.</li>
+  <li>Place <code>ItemSpawner.vmz</code> in the game’s <code>mods</code> folder (check the author’s install notes on the listing if steps change).</li>
+  <li>Some setups use Mod Organizer 2; see the listing instructions if you use that workflow.</li>
+</ol>
+
+<h2>Compatibility note</h2>
+<p>
+  Large compilations may list this mod as incompatible in some load orders (for example
+  <a href="/mods/oldmans-immersive-overhaul">Oldman’s Immersive Overhaul</a> notes crash reports for certain stacks—some players stay on v1.1.0).
+  Read the author’s compatibility section before stacking packs.
+</p>
+`,
+  },
   {
     id: 50811,
     addressBar: 'oldmans-immersive-overhaul',
@@ -40,22 +108,21 @@ export default [
       },
     ],
     seo: {
-      title: "Oldman's Immersive Overhaul — Road to Vostok Mod (ModWorkshop)",
+      title:
+        "Road to Vostok Immersive Overhaul Mod (Oldman): AI, NVG, MCM & weapons | Road To Vostok Guide",
       description:
-        'Large gameplay pack on ModWorkshop: weapon condition & jams, staged reloads, AI overhaul, immersive NVG, QoL—toggled in MCM. Needs Metro Mod Loader; we do not host files.',
+        "Road to Vostok mod: Oldman's Immersive Overhaul (ImmersiveXP)—weapon jams, staged reloads, AI hearing/vision, immersive NVG, MCM toggles. Metro Mod Loader, vmz install, load order.",
       keywords:
-        'Road to Vostok mod, ImmersiveXP, Oldman, ModWorkshop, Metro Mod Loader, MCM',
+        'Road to Vostok mod, Road to Vostok Immersive Overhaul, ImmersiveXP, Oldman Road to Vostok, Metro Mod Loader, MCM mod, Road to Vostok gameplay overhaul, weapon jam mod, Road to Vostok AI mod',
     },
     detailsHtml: `
 <p class="mod-prose-lead">
-  This site does <strong>not</strong> host downloads. Get <strong>ImmersiveXP.vmz</strong> from
-  <a href="https://modworkshop.net/mod/50811" target="_blank" rel="noopener noreferrer">ModWorkshop</a>
-  and confirm it matches your demo or Early Access build.
+  This site does <strong>not</strong> host mod files. Use <strong>Open on ModWorkshop</strong> in the sidebar to download <strong>ImmersiveXP.vmz</strong> and verify it matches your demo or Early Access build.
 </p>
 
 <p><strong>Before you install</strong></p>
 <ul>
-  <li>Mixing with other mods can break runs; read the incompatible-mod section on ModWorkshop before stacking packs.</li>
+  <li>Mixing with other mods can break runs; read the author’s incompatible-mod list on the listing before stacking packs.</li>
   <li>Most of the author’s standalone packs are merged here—remove duplicates from your load order.</li>
 </ul>
 
@@ -97,7 +164,7 @@ export default [
 
 <h2>Installation</h2>
 <ol>
-  <li>Install <strong>Metro Mod Loader</strong> (the listing previously mentioned another loader—follow current Workshop text).</li>
+  <li>Install <strong>Metro Mod Loader</strong> (follow the loader name and steps on the author’s current listing).</li>
   <li>Place <code>ImmersiveXP.vmz</code> in the game install <code>mods</code> folder.</li>
   <li>Use <strong>Mod Configuration Menu (MCM)</strong> to enable or disable feature groups.</li>
 </ol>
@@ -115,10 +182,10 @@ export default [
 </div>
 
 <h2>Changelog highlight (2.2.2)</h2>
-<p>Fixed Always Permadeath challenge; higher player visibility near fires; reverted Apartments waypoint changes that caused missing doors—see ModWorkshop for the full log.</p>
+<p>Fixed Always Permadeath challenge; higher player visibility near fires; reverted Apartments waypoint changes that caused missing doors—the author’s listing carries the full changelog.</p>
 
 <h2>Known incompatible mods (excerpt)</h2>
-<p>The live list may differ; trust ModWorkshop.</p>
+<p>The live list on the author’s page may differ; treat that source as authoritative.</p>
 <ul>
   <li><strong>Armour &amp; Helmet Repair</strong> — crash on reload; 2.1.5+ rename workaround for load order.</li>
   <li><strong>(Bigger) Font Size</strong> — breaks staged reloads; load after ImmersiveXP.</li>
