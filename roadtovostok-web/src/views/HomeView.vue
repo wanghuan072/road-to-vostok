@@ -207,6 +207,24 @@
       </div>
     </section>
 
+    <div class="container">
+      <!-- adx-PC 横幅广告-2（与 Hero 内 ban1 同结构） -->
+      <aside
+        v-if="!isMobile"
+        style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+      >
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-9435047454967498"
+          data-ad-slot="roadtovostok_Adx_ban1"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+          data-tag-src="gamtg"
+        ></ins>
+      </aside>
+    </div>
+
     <!-- Wiki + guides: editorial intro + compact entry list; cards only for deep links -->
     <section class="featured-section">
       <div class="container">
@@ -369,6 +387,24 @@
         </div>
       </div>
     </section>
+
+    <div class="container">
+      <!-- adx-PC 横幅广告-3（与 Hero 内 ban1 同结构） -->
+      <aside
+        v-if="!isMobile"
+        style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+      >
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-9435047454967498"
+          data-ad-slot="roadtovostok_Adx_ban1"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+          data-tag-src="gamtg"
+        ></ins>
+      </aside>
+    </div>
 
     <!-- Devlog -->
     <section class="devlog-section">
