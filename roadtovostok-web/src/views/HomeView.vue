@@ -123,7 +123,7 @@
     </section>
 
     <!-- adx-PC 左侧 skyscraper -->
-    <aside
+    <!-- <aside
       v-if="!isMobile"
       style="position: fixed; left: 0; top: 50%; transform: translateY(-50%); z-index: 9999"
     >
@@ -134,10 +134,10 @@
         data-ad-slot="roadtovostok_Adx_R_R_ban2"
         data-tag-src="gamtg"
       ></ins>
-    </aside>
+    </aside> -->
 
     <!-- adx-PC 右侧 skyscraper：若与左侧要不同订单/素材，请在后台使用另一个 ad slot，勿与左侧共用同一单元 -->
-    <aside
+    <!-- <aside
       v-if="!isMobile"
       style="position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 9999"
     >
@@ -148,7 +148,7 @@
         data-ad-slot="roadtovostok_Adx_R_R_ban2"
         data-tag-src="gamtg"
       ></ins>
-    </aside>
+    </aside> -->
 
     <!-- Site compass: main nav + deep links (matches live routes) -->
     <section class="home-compass-section">
