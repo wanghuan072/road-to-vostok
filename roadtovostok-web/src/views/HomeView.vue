@@ -3,11 +3,40 @@
     <!-- Hero -->
     <section class="hero-section">
       <div class="hero-deco hero-deco-compass" aria-hidden="true">
-        <svg class="compass-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="100" cy="100" r="88" stroke="currentColor" stroke-width="0.75" opacity="0.35" />
-          <circle cx="100" cy="100" r="72" stroke="currentColor" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 6" />
-          <path d="M100 28v144M28 100h144" stroke="currentColor" stroke-width="0.5" opacity="0.25" />
-          <path d="M100 44l18 52 52 18-52 18-18 52-18-52-52-18 52-18 18-52z" fill="currentColor" opacity="0.12" />
+        <svg
+          class="compass-svg"
+          viewBox="0 0 200 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="100"
+            cy="100"
+            r="88"
+            stroke="currentColor"
+            stroke-width="0.75"
+            opacity="0.35"
+          />
+          <circle
+            cx="100"
+            cy="100"
+            r="72"
+            stroke="currentColor"
+            stroke-width="0.5"
+            opacity="0.2"
+            stroke-dasharray="4 6"
+          />
+          <path
+            d="M100 28v144M28 100h144"
+            stroke="currentColor"
+            stroke-width="0.5"
+            opacity="0.25"
+          />
+          <path
+            d="M100 44l18 52 52 18-52 18-18 52-18-52-52-18 52-18 18-52z"
+            fill="currentColor"
+            opacity="0.12"
+          />
         </svg>
       </div>
       <div class="container">
@@ -25,12 +54,13 @@
               <span>Inverter · medical · saves</span>
             </p>
             <p class="hero-lead">
-              Notes for the Steam demo and Early Access: weapons and loading, inverter power, checklist-style
-              tasks and roadmap timing, medical, PC saves, crafting, and fishing when your build includes it.
-              Single-player survival; mod tools are on the official long-term plan. Use
+              Notes for the Steam demo and Early Access: weapons and loading, inverter power,
+              checklist-style tasks and roadmap timing, medical, PC saves, crafting, and fishing
+              when your build includes it. Single-player survival; mod tools are on the official
+              long-term plan. Use
               <a href="/getting-started">Start here</a> for the core loop,
-              <a href="/map">Map</a> and <a href="/tasks">Tasks</a> for locations
-              and objectives — the compass block below mirrors every main section plus common guides.
+              <a href="/map">Map</a> and <a href="/tasks">Tasks</a> for locations and objectives —
+              the compass block below mirrors every main section plus common guides.
             </p>
             <div class="hero-actions">
               <a href="/getting-started" class="btn btn-primary">Start here</a>
@@ -51,13 +81,74 @@
                 height="640"
                 class="hero-img"
                 decoding="async"
-              >
-              <figcaption class="hero-caption">Site backdrop — same art as full-page mood</figcaption>
+              />
+              <figcaption class="hero-caption">
+                Site backdrop — same art as full-page mood
+              </figcaption>
             </figure>
           </div>
         </div>
+
+        <!-- adx-PC 横幅广告-1 -->
+        <aside
+          v-if="!isMobile"
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
+
+        <!-- adx-移动 横幅广告-1 -->
+        <aside
+          v-if="isMobile"
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: inline-block; width: 336px; height: 280px"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_RS_ban3"
+            data-tag-src="gamtg"
+          >
+          </ins>
+        </aside>
       </div>
     </section>
+
+    <!-- adx-PC 左侧 skyscraper -->
+    <aside
+      v-if="!isMobile"
+      style="position: fixed; left: 0; top: 50%; transform: translateY(-50%); z-index: 9999"
+    >
+      <ins
+        class="adsbygoogle"
+        style="display: inline-block; width: 300px; height: 600px"
+        data-ad-client="ca-pub-9435047454967498"
+        data-ad-slot="roadtovostok_Adx_R_R_ban2"
+        data-tag-src="gamtg"
+      ></ins>
+    </aside>
+
+    <!-- adx-PC 右侧 skyscraper：若与左侧要不同订单/素材，请在后台使用另一个 ad slot，勿与左侧共用同一单元 -->
+    <aside
+      v-if="!isMobile"
+      style="position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 9999"
+    >
+      <ins
+        class="adsbygoogle"
+        style="display: inline-block; width: 300px; height: 600px"
+        data-ad-client="ca-pub-9435047454967498"
+        data-ad-slot="roadtovostok_Adx_R_R_ban2"
+        data-tag-src="gamtg"
+      ></ins>
+    </aside>
 
     <!-- Site compass: main nav + deep links (matches live routes) -->
     <section class="home-compass-section">
@@ -67,70 +158,37 @@
             <span class="section-kicker">Site compass</span>
             <h2>Every hub on this site — plus common guides</h2>
             <p>
-              Same destinations as the top navigation, laid out for scanning. Below that: shortcut jumps to
-              high-traffic guides and wiki tables (all paths exist in the router).
+              Same destinations as the top navigation, laid out for scanning. Below that: shortcut
+              jumps to high-traffic guides and wiki tables (all paths exist in the router).
             </p>
           </header>
 
           <div class="home-compass__board">
-            <p
-              class="home-compass__board-label"
-              id="home-compass-hubs-label"
-            >
-              Main sections
-            </p>
-            <ul
-              class="home-compass-hubs"
-              role="list"
-              aria-labelledby="home-compass-hubs-label"
-            >
-              <li
-                v-for="(hub, i) in quickHubs"
-                :key="hub.to"
-              >
-                <a
-                  :href="hub.to"
-                  class="home-compass-hub"
-                >
-                  <span
-                    class="home-compass-hub__idx"
-                    aria-hidden="true"
-                  >{{ hubIndex(i) }}</span>
+            <p class="home-compass__board-label" id="home-compass-hubs-label">Main sections</p>
+            <ul class="home-compass-hubs" role="list" aria-labelledby="home-compass-hubs-label">
+              <li v-for="(hub, i) in quickHubs" :key="hub.to">
+                <a :href="hub.to" class="home-compass-hub">
+                  <span class="home-compass-hub__idx" aria-hidden="true">{{ hubIndex(i) }}</span>
                   <span class="home-compass-hub__body">
                     <span class="home-compass-hub__title">{{ hub.title }}</span>
                     <span class="home-compass-hub__hint">{{ hub.hint }}</span>
                     <span class="home-compass-hub__path">{{ hub.to }}</span>
                   </span>
-                  <span
-                    class="home-compass-hub__go"
-                    aria-hidden="true"
-                  >→</span>
+                  <span class="home-compass-hub__go" aria-hidden="true">→</span>
                 </a>
               </li>
             </ul>
 
-            <div
-              class="home-compass-refs"
-              aria-labelledby="home-compass-refs-label"
-            >
+            <div class="home-compass-refs" aria-labelledby="home-compass-refs-label">
               <p
                 id="home-compass-refs-label"
                 class="home-compass__board-label home-compass__board-label--refs"
               >
                 Guides &amp; wiki picks
               </p>
-              <ul
-                class="home-compass-refs__list"
-                role="list"
-              >
-                <li
-                  v-for="r in quickRefs"
-                  :key="r.to"
-                >
-                  <a
-                    :href="r.to"
-                    class="home-compass-ref"
-                  >
+              <ul class="home-compass-refs__list" role="list">
+                <li v-for="r in quickRefs" :key="r.to">
+                  <a :href="r.to" class="home-compass-ref">
                     <span class="home-compass-ref__text">{{ r.label }}</span>
                     <span class="home-compass-ref__path">{{ r.to }}</span>
                   </a>
@@ -139,6 +197,13 @@
             </div>
           </div>
         </div>
+
+        <!-- GAM 广告位 1 -->
+        <div
+          ref="gptBannerRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
       </div>
     </section>
 
@@ -151,61 +216,32 @@
               <span class="section-kicker">Wiki &amp; guides</span>
               <h2>Loot tables and survival write-ups</h2>
               <p>
-                Spawn tables and trader lists drift between patches — we keep them here so you can compare notes with
-                what you see in-game, not to mirror the header menu. Longer explainers sit under
-                <a href="/guides">Guides</a>; the
-                <a href="/map">map</a> and <a href="/tasks">tasks</a> pages are for
-                places and objectives. On the right: a few pages people open most often.
+                Spawn tables and trader lists drift between patches — we keep them here so you can
+                compare notes with what you see in-game, not to mirror the header menu. Longer
+                explainers sit under
+                <a href="/guides">Guides</a>; the <a href="/map">map</a> and
+                <a href="/tasks">tasks</a> pages are for places and objectives. On the right: a few
+                pages people open most often.
               </p>
             </header>
-            <p
-              id="gear-cross-label"
-              class="gear-cross-label"
-            >
-              Entry points
-            </p>
-            <ul
-              class="gear-cross-list"
-              role="list"
-              aria-labelledby="gear-cross-label"
-            >
-              <li
-                v-for="row in gearCrossLinks"
-                :key="row.to"
-              >
-                <a
-                  :href="row.to"
-                  class="gear-cross-link"
-                >{{ row.label }}</a>
+            <p id="gear-cross-label" class="gear-cross-label">Entry points</p>
+            <ul class="gear-cross-list" role="list" aria-labelledby="gear-cross-label">
+              <li v-for="row in gearCrossLinks" :key="row.to">
+                <a :href="row.to" class="gear-cross-link">{{ row.label }}</a>
                 <span class="gear-cross-hint">{{ row.hint }}</span>
               </li>
             </ul>
           </div>
           <div class="featured-catalog-wrap">
-            <p
-              id="gear-catalog-label"
-              class="gear-catalog-label"
-            >
-              Popular picks
-            </p>
-            <ul
-              class="featured-catalog"
-              role="list"
-              aria-labelledby="gear-catalog-label"
-            >
+            <p id="gear-catalog-label" class="gear-catalog-label">Popular picks</p>
+            <ul class="featured-catalog" role="list" aria-labelledby="gear-catalog-label">
               <li
                 v-for="cat in gearCatalog"
                 :key="cat.to + cat.title"
                 class="featured-catalog-item"
               >
-                <a
-                  :href="cat.to"
-                  class="featured-catalog-link"
-                >
-                  <span
-                    class="featured-catalog-accent"
-                    aria-hidden="true"
-                  />
+                <a :href="cat.to" class="featured-catalog-link">
+                  <span class="featured-catalog-accent" aria-hidden="true" />
                   <div class="featured-catalog-body">
                     <span class="featured-catalog-kicker">{{ cat.kicker }}</span>
                     <h3 class="featured-catalog-title">
@@ -216,10 +252,7 @@
                     </p>
                     <span class="featured-catalog-path">{{ cat.to }}</span>
                   </div>
-                  <span
-                    class="featured-catalog-go"
-                    aria-hidden="true"
-                  >→</span>
+                  <span class="featured-catalog-go" aria-hidden="true">→</span>
                 </a>
               </li>
             </ul>
@@ -237,20 +270,21 @@
             <h2>West to east: Area 05, the border, Vostok</h2>
             <p>
               On the
-              <a href="https://www.roadtovostok.com/game" rel="noopener noreferrer" target="_blank">official game page</a>,
-              the world is laid out as three regions. You start in
-              <strong>Area 05</strong>, an evacuated part of southeastern Finland: shelters, traders, tasks, and
-              early loot, while <strong>Bandits</strong> patrol the zone. When you are geared enough, the road
-              continues <strong>east</strong> into the <strong>Border Zone</strong>—guarded crossings between
-              Finland and Russia—then, if you cross, into <strong>Vostok</strong> in Russia (high risk;
-              permadeath—dying there costs your whole run stash, unlike the western zones).
+              <a href="https://www.roadtovostok.com/game" rel="noopener noreferrer" target="_blank"
+                >official game page</a
+              >, the world is laid out as three regions. You start in <strong>Area 05</strong>, an
+              evacuated part of southeastern Finland: shelters, traders, tasks, and early loot,
+              while <strong>Bandits</strong> patrol the zone. When you are geared enough, the road
+              continues <strong>east</strong> into the <strong>Border Zone</strong>—guarded
+              crossings between Finland and Russia—then, if you cross, into
+              <strong>Vostok</strong> in Russia (high risk; permadeath—dying there costs your whole
+              run stash, unlike the western zones).
             </p>
             <p>
-              The game is still a <strong>sandbox</strong>: you are not forced into Vostok or a single playstyle.
-              “Pushing east” simply means following that intended difficulty curve—secure the west, then attempt
-              harder crossings—not a hidden story mandate. For step-by-step locations use
-              <a href="/map">Map</a>,
-              <a href="/tasks">Tasks</a>, and
+              The game is still a <strong>sandbox</strong>: you are not forced into Vostok or a
+              single playstyle. “Pushing east” simply means following that intended difficulty
+              curve—secure the west, then attempt harder crossings—not a hidden story mandate. For
+              step-by-step locations use <a href="/map">Map</a>, <a href="/tasks">Tasks</a>, and
               <a href="/wiki/npcs">NPCs</a>; for controls and the survival loop,
               <a href="/getting-started">Start here</a>.
             </p>
@@ -260,12 +294,16 @@
             <div class="quest-zone">
               <span class="quest-zone-kicker">Finland · West</span>
               <strong class="quest-zone-title">Area 05</strong>
-              <p>Hub shelters, traders, tasks, starter gear. Hostile bandits in the evacuation zone.</p>
+              <p>
+                Hub shelters, traders, tasks, starter gear. Hostile bandits in the evacuation zone.
+              </p>
             </div>
             <div class="quest-zone">
               <span class="quest-zone-kicker">Crossing · Mid</span>
               <strong class="quest-zone-title">Border Zone</strong>
-              <p>Guarded border maps: mines, obstacles, boats, and corrupt Guards with air support.</p>
+              <p>
+                Guarded border maps: mines, obstacles, boats, and corrupt Guards with air support.
+              </p>
             </div>
             <div class="quest-zone">
               <span class="quest-zone-kicker">Russia · East</span>
@@ -277,9 +315,10 @@
           <div class="quest-demo-block">
             <h3 class="quest-demo-heading">Public demo: how the journal lines up</h3>
             <p class="quest-demo-lead">
-              The playable demo is only a slice of that world, but it usually nudges you through the same
-              <em>idea</em>: learn your shelter, clear Area 05–style work, follow traders and keys, then the UI
-              may show a completion line often labeled <strong>“All Tasks.”</strong>
+              The playable demo is only a slice of that world, but it usually nudges you through the
+              same
+              <em>idea</em>: learn your shelter, clear Area 05–style work, follow traders and keys,
+              then the UI may show a completion line often labeled <strong>“All Tasks.”</strong>
             </p>
           </div>
 
@@ -312,29 +351,18 @@
                 </div>
               </div>
               <p class="quest-caption">
-                “All Tasks” means the <strong>main task list for that demo build is finished</strong>. It is not a
-                promise that Early Access or later builds will have nothing left to do.
+                “All Tasks” means the
+                <strong>main task list for that demo build is finished</strong>. It is not a promise
+                that Early Access or later builds will have nothing left to do.
               </p>
             </div>
           </div>
 
-          <nav
-            class="quest-related"
-            aria-label="Site pages for regions and progression"
-          >
+          <nav class="quest-related" aria-label="Site pages for regions and progression">
             <span class="quest-related-label">Open on this site</span>
-            <ul
-              class="quest-related-list"
-              role="list"
-            >
-              <li
-                v-for="l in questRelatedPages"
-                :key="l.to"
-              >
-                <a
-                  :href="l.to"
-                  class="quest-related-link"
-                >{{ l.label }}</a>
+            <ul class="quest-related-list" role="list">
+              <li v-for="l in questRelatedPages" :key="l.to">
+                <a :href="l.to" class="quest-related-link">{{ l.label }}</a>
               </li>
             </ul>
           </nav>
@@ -350,15 +378,16 @@
             <span class="section-kicker">Signals</span>
             <h2>Road To Vostok roadmap &amp; devlog</h2>
             <p>
-              Long-form developer updates on YouTube cover Early Access scope, shelters, and later beats like
-              fishing and seasons. On this site:
+              Long-form developer updates on YouTube cover Early Access scope, shelters, and later
+              beats like fishing and seasons. On this site:
               <a href="/guides">Guides</a> include
-              <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</a>
+              <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography"
+                >border geography</a
+              >
               and
               <a href="/guides/surviving-the-Minefield">Minefield tactics</a>;
               <a href="/dev-updates">Road ahead</a> covers builds and patch-style notes; when your
-              build adds it, see
-              <a href="/wiki/fishing">Wiki · Fishing</a>.
+              build adds it, see <a href="/wiki/fishing">Wiki · Fishing</a>.
             </p>
           </header>
           <div class="devlog-layout">
@@ -383,8 +412,8 @@
                 <li>How later builds are expected to layer quests, seasons, and naval content.</li>
               </ul>
               <p>
-                For patch-style notes, visit <a href="/dev-updates">Road ahead</a>. Mod expectations:
-                <a href="/mods">Mods hub</a> (no hosted files).
+                For patch-style notes, visit <a href="/dev-updates">Road ahead</a>. Mod
+                expectations: <a href="/mods">Mods hub</a> (no hosted files).
               </p>
             </div>
           </div>
@@ -399,36 +428,22 @@
           <span class="section-kicker">About</span>
           <h2>About this Road To Vostok guide</h2>
           <p>
-            Road To Vostok (Road To Vostok Ltd.) is a hardcore single-player survival FPS on the Finland–Russia
-            border. You loot in Area 05, cross the Border Zone, and can enter Vostok under stricter permadeath
-            rules than the rest of a run. The free Steam demo and the Early Access release drive most searches:
-            how to play, loadout and medical questions, tasks, roadmap timing, and PC saves.
+            Road To Vostok (Road To Vostok Ltd.) is a hardcore single-player survival FPS on the
+            Finland–Russia border. You loot in Area 05, cross the Border Zone, and can enter Vostok
+            under stricter permadeath rules than the rest of a run. The free Steam demo and the
+            Early Access release drive most searches: how to play, loadout and medical questions,
+            tasks, roadmap timing, and PC saves.
           </p>
           <p>
-            This English-language guide covers those topics with practical articles on loadouts, the long-term
-            roadmap, crafting, and fishing as patches add them — always double-check what your installed build
-            actually shows.
+            This English-language guide covers those topics with practical articles on loadouts, the
+            long-term roadmap, crafting, and fishing as patches add them — always double-check what
+            your installed build actually shows.
           </p>
-          <nav
-            class="about-hub-links"
-            aria-label="Main site pages"
-          >
-            <a
-              href="/getting-started"
-              class="about-hub-link"
-            >Start here</a>
-            <a
-              href="/wiki"
-              class="about-hub-link"
-            >Wiki</a>
-            <a
-              href="/guides"
-              class="about-hub-link"
-            >Guides</a>
-            <a
-              href="/about"
-              class="about-hub-link"
-            >About us</a>
+          <nav class="about-hub-links" aria-label="Main site pages">
+            <a href="/getting-started" class="about-hub-link">Start here</a>
+            <a href="/wiki" class="about-hub-link">Wiki</a>
+            <a href="/guides" class="about-hub-link">Guides</a>
+            <a href="/about" class="about-hub-link">About us</a>
           </nav>
         </div>
       </div>
@@ -441,32 +456,16 @@
           <span class="section-kicker">FAQ</span>
           <h2>Frequently asked questions</h2>
           <dl class="faq-list">
-            <div
-              v-for="row in faq"
-              :key="row.q"
-              class="faq-item"
-            >
+            <div v-for="row in faq" :key="row.q" class="faq-item">
               <dt>{{ row.q }}</dt>
               <dd>{{ row.a }}</dd>
             </div>
           </dl>
-          <nav
-            class="faq-hub"
-            aria-label="Jump to detailed pages"
-          >
+          <nav class="faq-hub" aria-label="Jump to detailed pages">
             <span class="faq-hub-label">Related pages</span>
-            <ul
-              class="faq-hub-list"
-              role="list"
-            >
-              <li
-                v-for="l in faqHubLinks"
-                :key="l.to"
-              >
-                <a
-                  :href="l.to"
-                  class="faq-hub-link"
-                >{{ l.label }}</a>
+            <ul class="faq-hub-list" role="list">
+              <li v-for="l in faqHubLinks" :key="l.to">
+                <a :href="l.to" class="faq-hub-link">{{ l.label }}</a>
               </li>
             </ul>
           </nav>
@@ -478,8 +477,12 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useDeviceDetection } from '../utils/useDeviceDetection'
+
 const homeRoot = ref(null)
 let revealObserver = null
+
+const { isMobile } = useDeviceDetection()
 
 /** Site compass: keep hub count ≈ refs count so the two columns stay even */
 const quickHubs = [
@@ -636,7 +639,49 @@ const faq = [
   },
 ]
 
+
+
+// ---------- GAM 位 1（仅 GPT / googletag，与下方 ADX 完全分开）----------
+const gptBannerRoot = ref(null)
+
+function mountGptBan1Display() {
+  const root = gptBannerRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+// ---------- ADX / adsbygoogle（每个 <ins.adsbygoogle> 必须各 push 一次，与 GAM 完全分开）----------
+function pushAllHomeAdxSlots() {
+  const root = homeRoot.value
+  if (!root) return
+  const units = root.querySelectorAll('ins.adsbygoogle')
+  units.forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('AdSense push failed:', e)
+    }
+  })
+}
+
 onMounted(() => {
+  window.setTimeout(() => {
+    try {
+      mountGptBan1Display()
+    } catch (e) {
+      console.error('GAM 初始化失败:', e)
+    }
+    try {
+      pushAllHomeAdxSlots()
+    } catch (e) {
+      console.error('ADX 初始化失败:', e)
+    }
+  }, 2000)
+
   const root = homeRoot.value
   if (!root) return
   const nodes = root.querySelectorAll('.reveal-on-scroll')
@@ -653,7 +698,7 @@ onMounted(() => {
         }
       })
     },
-    { threshold: 0.08, rootMargin: '0px 0px -8% 0px' },
+    { threshold: 0.08, rootMargin: '0px 0px -8% 0px' }
   )
   nodes.forEach((el) => revealObserver.observe(el))
 })
@@ -675,10 +720,8 @@ onUnmounted(() => {
   opacity: 0;
   transform: translateY(28px) scale(0.99);
   filter: blur(6px);
-  transition:
-    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.65s ease;
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1), filter 0.65s ease;
 }
 
 .reveal-on-scroll.is-revealed {
@@ -702,16 +745,23 @@ onUnmounted(() => {
   overflow: hidden;
   padding: clamp(2.75rem, 6vw, 5rem) 0 clamp(3rem, 5vw, 4.25rem);
   background-color: transparent;
-  background-image:
-    repeating-linear-gradient(
+  background-image: repeating-linear-gradient(
       -12deg,
       transparent,
       transparent 38px,
       color-mix(in srgb, var(--color-ice) 5%, transparent) 38px,
       color-mix(in srgb, var(--color-ice) 5%, transparent) 39px
     ),
-    radial-gradient(ellipse 90% 60% at 100% 0%, color-mix(in srgb, var(--color-signal) 10%, transparent), transparent 55%),
-    linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 88%, transparent) 0%, transparent 72%);
+    radial-gradient(
+      ellipse 90% 60% at 100% 0%,
+      color-mix(in srgb, var(--color-signal) 10%, transparent),
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color-surface) 88%, transparent) 0%,
+      transparent 72%
+    );
   border-bottom: 1px solid color-mix(in srgb, var(--color-border) 80%, transparent);
 }
 
@@ -879,11 +929,7 @@ onUnmounted(() => {
   border-radius: 2px;
   cursor: pointer;
   border: 1px solid transparent;
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    color 0.2s ease,
-    box-shadow 0.25s ease;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.25s ease;
 }
 
 .btn::after {
@@ -939,9 +985,7 @@ onUnmounted(() => {
     color-mix(in srgb, var(--color-ice) 55%, var(--color-ice-dim)) 100%
   );
   border-color: color-mix(in srgb, var(--color-primary-soft) 45%, var(--color-border-strong));
-  box-shadow:
-    var(--fx-glow-frost),
-    inset 0 1px 0 color-mix(in srgb, white 22%, transparent);
+  box-shadow: var(--fx-glow-frost), inset 0 1px 0 color-mix(in srgb, white 22%, transparent);
 }
 
 .btn-hero-map:hover {
@@ -952,8 +996,7 @@ onUnmounted(() => {
     color-mix(in srgb, var(--color-primary-soft) 35%, var(--color-ice)) 100%
   );
   border-color: var(--color-primary-soft);
-  box-shadow:
-    0 0 52px color-mix(in srgb, var(--color-ice) 38%, transparent),
+  box-shadow: 0 0 52px color-mix(in srgb, var(--color-ice) 38%, transparent),
     inset 0 1px 0 color-mix(in srgb, white 35%, transparent);
 }
 
@@ -967,8 +1010,7 @@ onUnmounted(() => {
     color-mix(in srgb, var(--color-amber) 45%, #8a6a1e) 100%
   );
   border-color: color-mix(in srgb, var(--color-amber) 55%, #5c4510);
-  box-shadow:
-    0 0 44px color-mix(in srgb, var(--color-amber) 26%, transparent),
+  box-shadow: 0 0 44px color-mix(in srgb, var(--color-amber) 26%, transparent),
     inset 0 1px 0 color-mix(in srgb, white 28%, transparent);
 }
 
@@ -980,8 +1022,7 @@ onUnmounted(() => {
     color-mix(in srgb, var(--color-amber) 88%, #f0d060) 100%
   );
   border-color: color-mix(in srgb, var(--color-amber) 70%, #a88420);
-  box-shadow:
-    0 0 56px color-mix(in srgb, var(--color-amber) 34%, transparent),
+  box-shadow: 0 0 56px color-mix(in srgb, var(--color-amber) 34%, transparent),
     inset 0 1px 0 color-mix(in srgb, white 40%, transparent);
 }
 
@@ -1002,19 +1043,13 @@ onUnmounted(() => {
   padding: 0;
   border: 1px solid var(--color-border-strong);
   background: var(--color-panel);
-  box-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.35),
-    0 16px 40px rgba(0, 0, 0, 0.5),
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35), 0 16px 40px rgba(0, 0, 0, 0.5),
     0 0 0 1px color-mix(in srgb, var(--color-frost) 15%, transparent);
-  transition:
-    box-shadow 0.35s ease,
-    transform 0.35s ease;
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
 }
 
 .hero-frame:hover {
-  box-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.35),
-    0 20px 48px rgba(0, 0, 0, 0.55),
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35), 0 20px 48px rgba(0, 0, 0, 0.55),
     0 0 32px color-mix(in srgb, var(--color-frost) 18%, transparent);
   transform: translateY(-3px);
 }
@@ -1178,8 +1213,7 @@ onUnmounted(() => {
     color-mix(in srgb, var(--color-panel) 94%, var(--color-bg)) 0%,
     color-mix(in srgb, var(--color-surface) 88%, var(--color-bg)) 100%
   );
-  box-shadow:
-    inset 0 1px 0 color-mix(in srgb, var(--color-text) 5%, transparent),
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--color-text) 5%, transparent),
     0 20px 48px rgba(0, 0, 0, 0.22);
 }
 
@@ -1229,10 +1263,7 @@ onUnmounted(() => {
   border: 1px solid color-mix(in srgb, var(--color-border) 90%, transparent);
   border-radius: 4px;
   background: color-mix(in srgb, var(--color-bg) 55%, var(--color-panel));
-  transition:
-    border-color 0.2s ease,
-    background 0.2s ease,
-    box-shadow 0.22s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.22s ease;
   outline-offset: 2px;
   box-shadow: inset 2px 0 0 color-mix(in srgb, var(--color-amber) 45%, var(--color-border));
 }
@@ -1241,9 +1272,7 @@ onUnmounted(() => {
 .home-compass-hub:focus-visible {
   border-color: color-mix(in srgb, var(--color-ice) 32%, var(--color-border));
   background: color-mix(in srgb, var(--color-panel) 72%, var(--color-bg));
-  box-shadow:
-    inset 3px 0 0 var(--color-signal),
-    0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 3px 0 0 var(--color-signal), 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .home-compass-hub__idx {
@@ -1325,9 +1354,7 @@ onUnmounted(() => {
   border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
   border-radius: 3px;
   background: color-mix(in srgb, var(--color-bg) 40%, transparent);
-  transition:
-    border-color 0.18s ease,
-    background 0.18s ease;
+  transition: border-color 0.18s ease, background 0.18s ease;
 }
 
 .home-compass-ref:hover,
@@ -1478,17 +1505,12 @@ onUnmounted(() => {
   color: inherit;
   overflow: hidden;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.22s ease,
-    background 0.22s ease;
+  transition: border-color 0.2s ease, box-shadow 0.22s ease, background 0.22s ease;
 }
 
 .featured-catalog-link:hover {
   border-color: color-mix(in srgb, var(--color-ice) 45%, var(--color-border));
-  box-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.14),
-    0 10px 28px rgba(0, 0, 0, 0.22);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.14), 0 10px 28px rgba(0, 0, 0, 0.22);
 }
 
 .featured-catalog-link:focus-visible {
@@ -1833,9 +1855,7 @@ onUnmounted(() => {
   border: 1px solid color-mix(in srgb, var(--color-border) 88%, transparent);
   border-radius: 3px;
   background: color-mix(in srgb, var(--color-bg) 50%, var(--color-panel));
-  transition:
-    border-color 0.15s ease,
-    color 0.15s ease;
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
 
 .quest-related-link:hover,
@@ -1877,8 +1897,7 @@ onUnmounted(() => {
   border-radius: 2px;
   aspect-ratio: 16 / 9;
   background: #000;
-  box-shadow:
-    0 0 0 1px color-mix(in srgb, var(--color-rust) 22%, transparent),
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-rust) 22%, transparent),
     0 20px 50px rgba(0, 0, 0, 0.55);
 }
 
@@ -2076,9 +2095,7 @@ onUnmounted(() => {
   border: 1px solid var(--color-border);
   border-radius: 3px;
   background: color-mix(in srgb, var(--color-panel) 70%, var(--color-bg));
-  transition:
-    border-color 0.15s ease,
-    background 0.15s ease;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
 
 .faq-hub-link:hover,
