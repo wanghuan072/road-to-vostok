@@ -1,5 +1,5 @@
 <template>
-  <article class="dev-updates-page page-article">
+  <article ref="devUpdatesAdsRoot" class="dev-updates-page page-article">
     <section class="page-hero-section">
       <div class="container">
         <div class="page-hero-content">
@@ -16,6 +16,21 @@
             the live site before you plan around a date.
           </p>
         </div>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </section>
 
@@ -50,6 +65,15 @@
             </div>
           </div>
         </section>
+
+        <div class="container">
+          <!-- GAM 广告位 1（与 HomeView 同结构） -->
+          <div
+            ref="devUpdatesGptRoot"
+            id="div-gpt-ad-1775617033282-0"
+            style="min-width: 320px; min-height: 50px"
+          ></div>
+        </div>
 
         <section data-nav-anchor="live-changes" class="follow-section page-body-section">
           <header class="section-head">
@@ -97,6 +121,23 @@
           </p>
         </section>
 
+        <div class="container">
+          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
+        </div>
+
         <section data-nav-anchor="public-roadmap" class="roadmap-section page-body-section">
           <header class="section-head">
             <p class="section-kicker">Planned builds</p>
@@ -127,6 +168,23 @@
           </ol>
         </section>
 
+        <div class="container">
+          <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
+        </div>
+
         <section class="footnote-section page-body-section" aria-label="Disclaimer">
           <p class="footnote">
             Editorial summary only. If a date here disagrees with Steam or roadtovostok.com, trust the
@@ -140,10 +198,49 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import PageRail from '../components/PageRail.vue'
 
 const railScrollRoot = ref(null)
+const devUpdatesAdsRoot = ref(null)
+const devUpdatesGptRoot = ref(null)
+
+function mountDevUpdatesGptDisplay() {
+  const root = devUpdatesGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushDevUpdatesAdx() {
+  const root = devUpdatesAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('DevUpdates ADX push failed:', e)
+    }
+  })
+}
+
+onMounted(() => {
+  try {
+    mountDevUpdatesGptDisplay()
+  } catch (e) {
+    console.error('DevUpdates GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushDevUpdatesAdx()
+    } catch (e) {
+      console.error('DevUpdates ADX failed:', e)
+    }
+  })
+})
 
 const asideLinks = [
   { label: 'Release dates', scrollKey: 'release-snapshot' },

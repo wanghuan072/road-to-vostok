@@ -1,5 +1,5 @@
 <template>
-  <article class="tasks-page page-article">
+  <article ref="tasksAdsRoot" class="tasks-page page-article">
     <section class="page-hero-section">
       <div class="container">
         <div class="page-hero-content">
@@ -15,6 +15,21 @@
             <a href="/map">Map</a>. Verify details in your build.
           </p>
         </div>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </section>
 
@@ -64,6 +79,22 @@
               the official description — you are not forced into that playstyle for every run.
             </li>
           </ol>
+
+          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
+
           <p class="guide-tools">
             Related:
             <a href="/wiki/core-tasks">Core task items</a>,
@@ -76,6 +107,15 @@
         </div>
       </div>
         </section>
+
+        <div class="container">
+          <!-- GAM 广告位 1（与 HomeView 同结构） -->
+          <div
+            ref="tasksGptRoot"
+            id="div-gpt-ad-1775617033282-0"
+            style="min-width: 320px; min-height: 50px"
+          ></div>
+        </div>
 
         <section data-nav-anchor="vostok-border-guide" class="guide-section page-body-section">
       <div class="container">
@@ -125,6 +165,23 @@
           </p>
         </div>
       </div>
+
+      <div class="container">
+        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
+      </div>
         </section>
       </PageRail>
     </div>
@@ -132,10 +189,49 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import PageRail from '../components/PageRail.vue'
 
 const railScrollRoot = ref(null)
+const tasksAdsRoot = ref(null)
+const tasksGptRoot = ref(null)
+
+function mountTasksGptDisplay() {
+  const root = tasksGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushTasksAdx() {
+  const root = tasksAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('Tasks ADX push failed:', e)
+    }
+  })
+}
+
+onMounted(() => {
+  try {
+    mountTasksGptDisplay()
+  } catch (e) {
+    console.error('Tasks GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushTasksAdx()
+    } catch (e) {
+      console.error('Tasks ADX failed:', e)
+    }
+  })
+})
 
 const asideLinks = [
   { label: 'All tasks', scrollKey: 'all-tasks-guide' },

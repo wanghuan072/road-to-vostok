@@ -1,5 +1,5 @@
 <template>
-  <article class="map-page page-article">
+  <article ref="mapPageAdsRoot" class="map-page page-article">
     <section class="page-hero-section">
       <div class="container">
         <div class="page-hero-content">
@@ -15,8 +15,32 @@
             <a href="/tasks">Tasks</a> page. Verify against your installed build.
           </p>
         </div>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </section>
+
+    <div class="container">
+      <!-- GAM 广告位 1（与 HomeView 同结构） -->
+      <div
+        ref="mapPageGptRoot"
+        id="div-gpt-ad-1775617033282-0"
+        style="min-width: 320px; min-height: 50px"
+      ></div>
+    </div>
 
     <section class="map-section">
       <div class="container">
@@ -280,6 +304,23 @@
       </div>
     </section>
 
+    <div class="container">
+      <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+      <aside
+        style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+      >
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-9435047454967498"
+          data-ad-slot="roadtovostok_Adx_ban1"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+          data-tag-src="gamtg"
+        ></ins>
+      </aside>
+    </div>
+
     <section class="page-body-section">
       <div class="container">
         <div class="page-body-content">
@@ -317,6 +358,23 @@
         </div>
       </div>
     </section>
+
+    <div class="container">
+      <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+      <aside
+        style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+      >
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-9435047454967498"
+          data-ad-slot="roadtovostok_Adx_ban1"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+          data-tag-src="gamtg"
+        ></ins>
+      </aside>
+    </div>
 
     <section data-nav-anchor="area-05-detail" class="guide-section page-body-section">
       <div class="container">
@@ -396,6 +454,9 @@ const REGION_ORDER = ['area05', 'border', 'vostok']
 /** Official-style overview graphic (Squarespace-hosted asset). */
 const MAP_IMAGE_URL =
   'https://images.squarespace-cdn.com/content/v1/6991f0a1cda81c3c1cc9bb25/7ae6c5f1-6cb4-454e-9cc7-f37c1a237cd3/Road_to_Vostok_Map.jpg'
+
+const mapPageAdsRoot = ref(null)
+const mapPageGptRoot = ref(null)
 
 const mapContainer = ref(null)
 const mapError = ref('')
@@ -528,6 +589,28 @@ function normalizedToLatLng(xNorm, yNorm, w, h) {
   return L.latLng(h - yFromTop, xPx)
 }
 
+function mountMapPageGptDisplay() {
+  const root = mapPageGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushMapPageAdx() {
+  const root = mapPageAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('MapPage ADX push failed:', e)
+    }
+  })
+}
+
 function teardownMap() {
   resizeObserver?.disconnect()
   resizeObserver = null
@@ -628,6 +711,18 @@ function setupMap() {
 
 onMounted(() => {
   setupMap()
+  try {
+    mountMapPageGptDisplay()
+  } catch (e) {
+    console.error('MapPage GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushMapPageAdx()
+    } catch (e) {
+      console.error('MapPage ADX failed:', e)
+    }
+  })
 })
 
 onUnmounted(() => {

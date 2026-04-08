@@ -1,5 +1,5 @@
 <template>
-  <article class="item-db-page">
+  <article ref="gatheringAdsRoot" class="item-db-page">
     <section class="page-hero-section">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
@@ -16,10 +16,50 @@
           <a href="/wiki/ammunition">ammunition</a>; crafting context on
           <a href="/getting-started">Start here</a>.
         </p>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </section>
+
+    <div class="container">
+      <!-- GAM 广告位 1（与 HomeView 同结构） -->
+      <div
+        ref="gatheringGptRoot"
+        id="div-gpt-ad-1775617033282-0"
+        style="min-width: 320px; min-height: 50px"
+      ></div>
+    </div>
+
     <section class="page-body-section" aria-label="Gathering data table">
       <div class="container">
+        <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
+
         <div class="table-wrap">
           <table class="data-table">
             <thead>
@@ -44,13 +84,69 @@
           ·
           <a href="/wiki/ammunition">Ammunition</a>
         </div>
+
+        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </section>
   </article>
 </template>
 
 <script setup>
+import { ref, onMounted, nextTick } from 'vue'
 import rows from '../../data/item/gathering.js'
+
+const gatheringAdsRoot = ref(null)
+const gatheringGptRoot = ref(null)
+
+function mountGatheringGptDisplay() {
+  const root = gatheringGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushGatheringAdx() {
+  const root = gatheringAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('Gathering ADX push failed:', e)
+    }
+  })
+}
+
+onMounted(() => {
+  try {
+    mountGatheringGptDisplay()
+  } catch (e) {
+    console.error('Gathering GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushGatheringAdx()
+    } catch (e) {
+      console.error('Gathering ADX failed:', e)
+    }
+  })
+})
 </script>
 
 <style src="./item-db-shared.css"></style>

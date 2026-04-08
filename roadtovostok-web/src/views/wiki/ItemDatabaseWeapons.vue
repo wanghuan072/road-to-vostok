@@ -1,5 +1,5 @@
 <template>
-  <article class="weapons-page">
+  <article ref="weaponsAdsRoot" class="weapons-page">
     <header class="weapons-hero">
       <div
         class="weapons-hero__glow"
@@ -72,8 +72,32 @@
             <dd>{{ withImageCount }}</dd>
           </div>
         </dl>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </header>
+
+    <div class="container">
+      <!-- GAM 广告位 1（与 HomeView 同结构） -->
+      <div
+        ref="weaponsGptRoot"
+        id="div-gpt-ad-1775617033282-0"
+        style="min-width: 320px; min-height: 50px"
+      ></div>
+    </div>
 
     <div class="weapons-body">
       <div class="container weapons-layout">
@@ -108,6 +132,21 @@
         </nav>
 
         <div class="armory-main">
+          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
+
           <section
             v-for="c in weaponCategories"
             :key="c.id"
@@ -176,6 +215,21 @@
               </article>
             </div>
           </section>
+
+          <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
         </div>
       </div>
     </div>
@@ -183,8 +237,48 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, onMounted, nextTick } from 'vue'
 import weaponsData, { weaponCategories } from '../../data/item/weapons.js'
+
+const weaponsAdsRoot = ref(null)
+const weaponsGptRoot = ref(null)
+
+function mountWeaponsGptDisplay() {
+  const root = weaponsGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushWeaponsAdx() {
+  const root = weaponsAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('Weapons ADX push failed:', e)
+    }
+  })
+}
+
+onMounted(() => {
+  try {
+    mountWeaponsGptDisplay()
+  } catch (e) {
+    console.error('Weapons GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushWeaponsAdx()
+    } catch (e) {
+      console.error('Weapons ADX failed:', e)
+    }
+  })
+})
 
 const weapons = weaponsData
 

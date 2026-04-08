@@ -1,5 +1,5 @@
 <template>
-  <article class="site-page page-article">
+  <article ref="pageRoot" class="site-page page-article">
     <section class="page-hero-section">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">

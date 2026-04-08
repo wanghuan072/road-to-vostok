@@ -1,6 +1,8 @@
 <template>
   <article
     v-if="npc"
+    :key="npc.addressBar"
+    ref="npcDetailAdsRoot"
     class="npc-detail-page"
     :data-npc="npc.addressBar"
   >
@@ -70,8 +72,32 @@
             </div>
           </div>
         </div>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </header>
+
+    <div class="container">
+      <!-- GAM 广告位 1（与 HomeView 同结构） -->
+      <div
+        ref="npcDetailGptRoot"
+        id="div-gpt-ad-1775617033282-0"
+        style="min-width: 320px; min-height: 50px"
+      ></div>
+    </div>
 
     <div class="npc-main">
       <div class="container npc-main__grid">
@@ -83,6 +109,21 @@
               @click="onContentLinkClick"
             />
           </div>
+
+          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
         </main>
 
         <aside
@@ -150,12 +191,29 @@
           </div>
         </aside>
       </div>
+
+      <div class="container">
+        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
+      </div>
     </div>
   </article>
 </template>
 
 <script setup>
-import { computed, watch } from 'vue'
+import { computed, watch, ref, onMounted, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import npcList from '../../data/item/npcs.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
@@ -163,6 +221,46 @@ import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks
 import { applyDynamicSeo } from '../../seo/composables.js'
 
 const { onContentLinkClick } = useHtmlContentLinkNavigation()
+
+const npcDetailAdsRoot = ref(null)
+const npcDetailGptRoot = ref(null)
+
+function mountNpcDetailGptDisplay() {
+  const root = npcDetailGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushNpcDetailAdx() {
+  const root = npcDetailAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('NpcDetail ADX push failed:', e)
+    }
+  })
+}
+
+onMounted(() => {
+  try {
+    mountNpcDetailGptDisplay()
+  } catch (e) {
+    console.error('NpcDetail GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushNpcDetailAdx()
+    } catch (e) {
+      console.error('NpcDetail ADX failed:', e)
+    }
+  })
+})
 
 const route = useRoute()
 const router = useRouter()

@@ -1,5 +1,5 @@
 <template>
-  <article class="page-article">
+  <article ref="gettingStartedAdsRoot" class="page-article">
     <section class="page-hero-section">
       <div class="container">
         <div class="page-hero-content">
@@ -23,6 +23,21 @@
             build.
           </p>
         </div>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </section>
 
@@ -83,6 +98,15 @@
           </p>
           </div>
         </section>
+
+        <div class="container">
+          <!-- GAM 广告位 1（与 HomeView 同结构） -->
+          <div
+            ref="gettingStartedGptRoot"
+            id="div-gpt-ad-1775617033282-0"
+            style="min-width: 320px; min-height: 50px"
+          ></div>
+        </div>
 
         <section data-nav-anchor="controls" class="page-body-section">
           <div class="page-body-content">
@@ -185,6 +209,23 @@
           </div>
         </section>
 
+        <div class="container">
+          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
+        </div>
+
         <section data-nav-anchor="weapons-loading" class="page-body-section">
           <div class="page-body-content">
           <h2>
@@ -232,6 +273,23 @@
           </p>
           </div>
         </section>
+
+        <div class="container">
+          <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
+        </div>
 
         <section data-nav-anchor="medical" class="page-body-section">
           <div class="page-body-content">
@@ -329,6 +387,23 @@
           </div>
         </section>
 
+        <div class="container">
+          <!-- adx-PC 横幅广告-4（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
+        </div>
+
         <section data-nav-anchor="crafting" class="page-body-section">
           <div class="page-body-content">
           <h2>How to craft in Road To Vostok</h2>
@@ -351,10 +426,49 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import PageRail from '../components/PageRail.vue'
 
 const railScrollRoot = ref(null)
+const gettingStartedAdsRoot = ref(null)
+const gettingStartedGptRoot = ref(null)
+
+function mountGettingStartedGptDisplay() {
+  const root = gettingStartedGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushGettingStartedAdx() {
+  const root = gettingStartedAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('GettingStarted ADX push failed:', e)
+    }
+  })
+}
+
+onMounted(() => {
+  try {
+    mountGettingStartedGptDisplay()
+  } catch (e) {
+    console.error('GettingStarted GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushGettingStartedAdx()
+    } catch (e) {
+      console.error('GettingStarted ADX failed:', e)
+    }
+  })
+})
 
 const asideLinks = [
   { label: 'Core loop', scrollKey: 'core-loop' },

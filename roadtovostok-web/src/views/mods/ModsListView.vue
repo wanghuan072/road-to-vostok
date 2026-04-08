@@ -1,5 +1,5 @@
 <template>
-  <article class="mods-page page-article">
+  <article ref="modsListAdsRoot" class="mods-page page-article">
     <section class="page-hero-section page-hero-section--compact page-hero-section--mods">
       <div class="container mods-page__hero">
         <nav
@@ -33,14 +33,53 @@
             Access build and verify checksums before you load anything into the game.
           </p>
         </div>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </section>
+
+    <div class="container">
+      <!-- GAM 广告位 1（与 HomeView 同结构） -->
+      <div
+        ref="modsListGptRoot"
+        id="div-gpt-ad-1775617033282-0"
+        style="min-width: 320px; min-height: 50px"
+      ></div>
+    </div>
 
     <section
       class="mods-board"
       aria-label="Mod articles"
     >
       <div class="container mods-board__inner">
+        <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+        <aside
+          v-if="sorted.length"
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
         <header
           v-if="sorted.length"
           class="mods-board__mast"
@@ -172,6 +211,22 @@
           </li>
         </ul>
 
+        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+        <aside
+          v-if="sorted.length"
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
+
         <p
           v-else
           class="mods-board__empty"
@@ -184,8 +239,48 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, onMounted, nextTick } from 'vue'
 import modArticles from '../../data/mods/mods.js'
+
+const modsListAdsRoot = ref(null)
+const modsListGptRoot = ref(null)
+
+function mountModsListGptDisplay() {
+  const root = modsListGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushModsListAdx() {
+  const root = modsListAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('ModsList ADX push failed:', e)
+    }
+  })
+}
+
+onMounted(() => {
+  try {
+    mountModsListGptDisplay()
+  } catch (e) {
+    console.error('ModsList GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushModsListAdx()
+    } catch (e) {
+      console.error('ModsList ADX failed:', e)
+    }
+  })
+})
 
 const sorted = computed(() =>
   [...modArticles].sort((a, b) => b.publishDate.localeCompare(a.publishDate)),

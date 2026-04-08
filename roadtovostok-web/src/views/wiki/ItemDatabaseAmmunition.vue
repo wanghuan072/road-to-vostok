@@ -1,5 +1,5 @@
 <template>
-  <article class="item-db-page ammo-page">
+  <article ref="ammoAdsRoot" class="item-db-page ammo-page">
     <section class="page-hero-section">
       <div class="container">
         <nav
@@ -42,8 +42,32 @@
             <dd>{{ stats.minStack }}&nbsp;rnds</dd>
           </div>
         </dl>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </section>
+
+    <div class="container">
+      <!-- GAM 广告位 1（与 HomeView 同结构） -->
+      <div
+        ref="ammoGptRoot"
+        id="div-gpt-ad-1775617033282-0"
+        style="min-width: 320px; min-height: 50px"
+      ></div>
+    </div>
 
     <section
       class="page-body-section ammo-body"
@@ -79,6 +103,21 @@
             >
           </label>
         </div>
+
+        <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
 
         <p
           v-if="filteredRows.length === 0"
@@ -176,6 +215,21 @@
           </article>
         </div>
 
+        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
+
         <footer class="ammo-foot">
           <p>
             Cross-check firearms and attachments on
@@ -193,7 +247,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted, nextTick } from 'vue'
 import rowsSource, { ammunitionFilters } from '../../data/item/ammunition.js'
 
 const rows = rowsSource
@@ -235,6 +289,46 @@ const filteredRows = computed(() => {
       .join(' ')
       .toLowerCase()
     return hay.includes(q)
+  })
+})
+
+const ammoAdsRoot = ref(null)
+const ammoGptRoot = ref(null)
+
+function mountAmmoGptDisplay() {
+  const root = ammoGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushAmmoAdx() {
+  const root = ammoAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('Ammo ADX push failed:', e)
+    }
+  })
+}
+
+onMounted(() => {
+  try {
+    mountAmmoGptDisplay()
+  } catch (e) {
+    console.error('Ammo GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushAmmoAdx()
+    } catch (e) {
+      console.error('Ammo ADX failed:', e)
+    }
   })
 })
 </script>

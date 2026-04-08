@@ -223,6 +223,21 @@
           data-tag-src="gamtg"
         ></ins>
       </aside>
+
+      <!-- adx-移动 横幅广告-2 -->
+      <aside
+          v-if="isMobile"
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: inline-block; width: 336px; height: 280px"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_RS_ban3"
+            data-tag-src="gamtg"
+          >
+          </ins>
+        </aside>
     </div>
 
     <!-- Wiki + guides: editorial intro + compact entry list; cards only for deep links -->
@@ -404,6 +419,21 @@
           data-tag-src="gamtg"
         ></ins>
       </aside>
+
+      <!-- adx-移动 横幅广告-1 -->
+      <aside
+          v-if="isMobile"
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: inline-block; width: 336px; height: 280px"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_RS_ban3"
+            data-tag-src="gamtg"
+          >
+          </ins>
+        </aside>
     </div>
 
     <!-- Devlog -->

@@ -1,5 +1,10 @@
 <template>
-  <article v-if="article" class="content-article page-article">
+  <article
+    v-if="article"
+    :key="article.addressBar"
+    ref="guideArticleAdsRoot"
+    class="content-article page-article"
+  >
     <header class="page-hero-section page-hero-section--compact page-hero-section--detail">
       <div class="container article-detail-hero">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
@@ -10,8 +15,32 @@
           <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
         </nav>
         <h1 class="article-detail-hero__title">{{ article.title }}</h1>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </header>
+
+    <div class="container">
+      <!-- GAM 广告位 1（与 HomeView 同结构） -->
+      <div
+        ref="guideArticleGptRoot"
+        id="div-gpt-ad-1775617033282-0"
+        style="min-width: 320px; min-height: 50px"
+      ></div>
+    </div>
 
     <div class="article-split-wrap">
       <div class="container article-split">
@@ -21,6 +50,21 @@
             v-html="article.detailsHtml"
             @click="onContentLinkClick"
           />
+
+          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
         </main>
 
         <aside class="article-split__aside" aria-label="About this guide">
@@ -66,12 +110,29 @@
           </div>
         </aside>
       </div>
+
+      <div class="container">
+        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
+      </div>
     </div>
   </article>
 </template>
 
 <script setup>
-import { computed, watch } from 'vue'
+import { computed, watch, ref, onMounted, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import guideArticles from '../../data/guides/articles.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
@@ -80,6 +141,46 @@ import { useInjectedHeadFragment } from '../../composables/useInjectedHeadFragme
 import { applyDynamicSeo } from '../../seo/composables.js'
 
 const { onContentLinkClick } = useHtmlContentLinkNavigation()
+
+const guideArticleAdsRoot = ref(null)
+const guideArticleGptRoot = ref(null)
+
+function mountGuideArticleGptDisplay() {
+  const root = guideArticleGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushGuideArticleAdx() {
+  const root = guideArticleAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('GuideArticle ADX push failed:', e)
+    }
+  })
+}
+
+onMounted(() => {
+  try {
+    mountGuideArticleGptDisplay()
+  } catch (e) {
+    console.error('GuideArticle GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushGuideArticleAdx()
+    } catch (e) {
+      console.error('GuideArticle ADX failed:', e)
+    }
+  })
+})
 
 const route = useRoute()
 const router = useRouter()

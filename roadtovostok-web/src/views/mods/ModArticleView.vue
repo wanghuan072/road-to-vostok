@@ -1,5 +1,10 @@
 <template>
-  <article v-if="article" class="content-article content-article--mods mod-detail page-article">
+  <article
+    v-if="article"
+    :key="article.addressBar"
+    ref="modArticleAdsRoot"
+    class="content-article content-article--mods mod-detail page-article"
+  >
     <header class="page-hero-section page-hero-section--compact page-hero-section--mods page-hero-section--detail">
       <div class="container">
         <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
@@ -15,8 +20,32 @@
           <span v-if="article.loaderName" class="mod-detail__pill mod-detail__pill--muted">{{ article.loaderName }}</span>
         </div>
         <h1 class="article-detail-hero__title mod-detail__hero-title">{{ article.title }}</h1>
+
+        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </header>
+
+    <div class="container">
+      <!-- GAM 广告位 1（与 HomeView 同结构） -->
+      <div
+        ref="modArticleGptRoot"
+        id="div-gpt-ad-1775617033282-0"
+        style="min-width: 320px; min-height: 50px"
+      ></div>
+    </div>
 
     <div class="mod-detail__body-wrap">
       <div class="container mod-detail__layout">
@@ -26,6 +55,21 @@
             v-html="article.detailsHtml"
             @click="onContentLinkClick"
           />
+
+          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
         </main>
 
         <aside class="mod-detail__aside" aria-label="Mod facts">
@@ -108,12 +152,29 @@
           </div>
         </aside>
       </div>
+
+      <div class="container">
+        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+        <aside
+          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
+      </div>
     </div>
   </article>
 </template>
 
 <script setup>
-import { computed, watch } from 'vue'
+import { computed, watch, ref, onMounted, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import modArticles from '../../data/mods/mods.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
@@ -121,6 +182,46 @@ import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks
 import { applyDynamicSeo } from '../../seo/composables.js'
 
 const { onContentLinkClick } = useHtmlContentLinkNavigation()
+
+const modArticleAdsRoot = ref(null)
+const modArticleGptRoot = ref(null)
+
+function mountModArticleGptDisplay() {
+  const root = modArticleGptRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
+}
+
+function pushModArticleAdx() {
+  const root = modArticleAdsRoot.value
+  if (!root) return
+  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
+    try {
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.error('ModArticle ADX push failed:', e)
+    }
+  })
+}
+
+onMounted(() => {
+  try {
+    mountModArticleGptDisplay()
+  } catch (e) {
+    console.error('ModArticle GAM failed:', e)
+  }
+  void nextTick(() => {
+    try {
+      pushModArticleAdx()
+    } catch (e) {
+      console.error('ModArticle ADX failed:', e)
+    }
+  })
+})
 
 const route = useRoute()
 const router = useRouter()
