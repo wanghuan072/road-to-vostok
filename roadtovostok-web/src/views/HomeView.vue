@@ -512,7 +512,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import { useDeviceDetection } from '../utils/useDeviceDetection'
 
 const homeRoot = ref(null)
@@ -708,11 +708,14 @@ onMounted(() => {
   } catch (e) {
     console.error('GAM 初始化失败:', e)
   }
-  try {
-    pushAllHomeAdxSlots()
-  } catch (e) {
-    console.error('ADX 初始化失败:', e)
-  }
+  // ADX：等 DOM 稳定 + 给 head 里 async 的 adsbygoogle_direct.js 留出加载时间，再对每个 <ins> push
+  void nextTick(() => {
+    try {
+      pushAllHomeAdxSlots()
+    } catch (e) {
+      console.error('ADX 初始化失败:', e)
+    }
+  })
 
   const root = homeRoot.value
   if (!root) return
