@@ -198,11 +198,11 @@
           </div>
         </div>
 
-        <!-- /23346398271/anchor — 与 GAM 后台 body 片段一致：div + display 进 cmd 队列 -->
+        <!-- GAM 广告位 1 -->
         <div
           ref="gptBannerRoot"
           id="div-gpt-ad-1775617033282-0"
-          style="min-width: 320px; min-height: 50px;"
+          style="min-width: 320px; min-height: 50px"
         ></div>
       </div>
     </section>
@@ -639,20 +639,17 @@ const faq = [
   },
 ]
 
-
-
 // ---------- GAM 位 1（仅 GPT / googletag，与下方 ADX 完全分开）----------
 const gptBannerRoot = ref(null)
 
-/** 等同官方 body 内联脚本：googletag.cmd.push → display(div-gpt-ad-…) */
 function mountGptBan1Display() {
-  const el = gptBannerRoot.value
-  if (!el || el.dataset.gptDisplayQueued === '1') return
-  el.dataset.gptDisplayQueued = '1'
-  window.googletag = window.googletag || {cmd: []}
-  window.googletag.cmd.push(function () {
-    window.googletag.display('div-gpt-ad-1775617033282-0')
-  })
+  const root = gptBannerRoot.value
+  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
+  const s = document.createElement('script')
+  s.setAttribute('data-gam-slot', 'ban1')
+  s.textContent =
+    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
+  root.appendChild(s)
 }
 
 // ---------- ADX / adsbygoogle（每个 <ins.adsbygoogle> 必须各 push 一次，与 GAM 完全分开）----------
@@ -670,18 +667,16 @@ function pushAllHomeAdxSlots() {
 }
 
 onMounted(() => {
-  window.setTimeout(() => {
-    try {
-      mountGptBan1Display()
-    } catch (e) {
-      console.error('GAM 初始化失败:', e)
-    }
-    try {
-      pushAllHomeAdxSlots()
-    } catch (e) {
-      console.error('ADX 初始化失败:', e)
-    }
-  }, 2000)
+  try {
+    mountGptBan1Display()
+  } catch (e) {
+    console.error('GAM 初始化失败:', e)
+  }
+  try {
+    pushAllHomeAdxSlots()
+  } catch (e) {
+    console.error('ADX 初始化失败:', e)
+  }
 
   const root = homeRoot.value
   if (!root) return
