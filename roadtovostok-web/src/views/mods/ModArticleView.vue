@@ -13,15 +13,15 @@
           style="min-width: 320px; min-height: 50px"
         ></div>
         <div class="page-hero-content">
-          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+          <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true">/</span>
-            <a href="/mods">Mods</a>
+            <a :href="getLocalizedPath('/mods')">{{ $t('modArticlePage.breadcrumbMods') }}</a>
             <span aria-hidden="true">/</span>
             <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
           </nav>
           <div class="mod-detail__hero-pills">
-            <span v-if="article.author" class="mod-detail__pill">By {{ article.author }}</span>
+            <span v-if="article.author" class="mod-detail__pill">{{ $t('modArticlePage.byAuthor', { author: article.author }) }}</span>
             <span v-if="article.version" class="mod-detail__pill mod-detail__pill--version">v{{ article.version }}</span>
             <span v-if="article.loaderName" class="mod-detail__pill mod-detail__pill--muted">{{ article.loaderName }}</span>
           </div>
@@ -68,7 +68,7 @@
           </aside>
         </main>
 
-        <aside class="mod-detail__aside" aria-label="Mod facts">
+        <aside class="mod-detail__aside" :aria-label="$t('modArticlePage.asideAria')">
           <div class="mod-detail__aside-stack">
             <figure class="mod-detail__cover">
               <img
@@ -88,43 +88,43 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Open on ModWorkshop
+                {{ $t('modArticlePage.ctaModWorkshop') }}
                 <span aria-hidden="true">↗</span>
               </a>
             </div>
 
             <div v-if="article.seo?.description" class="mod-detail__aside-block">
-              <p class="mod-detail__aside-label">Summary</p>
+              <p class="mod-detail__aside-label">{{ $t('modArticlePage.asideSummaryLabel') }}</p>
               <p class="mod-detail__aside-summary">{{ article.seo.description }}</p>
             </div>
 
             <dl v-if="hasStats" class="mod-detail__stats">
               <div v-if="statDownloads" class="mod-detail__stat">
-                <dt>Downloads</dt>
+                <dt>{{ $t('modArticlePage.metaDownloads') }}</dt>
                 <dd>{{ statDownloads }}</dd>
               </div>
               <div v-if="statViews" class="mod-detail__stat">
-                <dt>Views</dt>
+                <dt>{{ $t('modArticlePage.metaViews') }}</dt>
                 <dd>{{ statViews }}</dd>
               </div>
             </dl>
 
             <div v-if="article.publishDate" class="mod-detail__aside-block">
-              <p class="mod-detail__aside-label">Listing date</p>
+              <p class="mod-detail__aside-label">{{ $t('modArticlePage.listingDateLabel') }}</p>
               <time class="mod-detail__aside-value" :datetime="article.publishDate">{{ article.publishDate }}</time>
             </div>
 
             <div v-if="article.tags?.length" class="mod-detail__aside-block">
-              <p class="mod-detail__aside-label">Tags</p>
+              <p class="mod-detail__aside-label">{{ $t('modArticlePage.tagsLabel') }}</p>
               <ul class="mod-detail__taglist">
                 <li v-for="t in article.tags" :key="t">{{ t }}</li>
               </ul>
             </div>
 
-            <div v-if="article.comments?.length" class="mod-detail__aside-comments" aria-label="Community notes">
-              <p class="mod-detail__aside-label">Community notes</p>
+            <div v-if="article.comments?.length" class="mod-detail__aside-comments" :aria-label="$t('modArticlePage.communityNotesAria')">
+              <p class="mod-detail__aside-label">{{ $t('modArticlePage.communityNotesLabel') }}</p>
               <p class="mod-detail__comments-disclosure">
-                Short summaries for context—not verbatim Workshop posts.
+                {{ $t('modArticlePage.commentsDisclosure') }}
               </p>
               <ul class="mod-detail__comment-cards" role="list">
                 <li v-for="(c, ci) in article.comments" :key="ci" class="mod-detail__comment-card">
@@ -137,13 +137,13 @@
             </div>
 
             <div v-if="asideItems.length" class="mod-detail__aside-more">
-              <p class="mod-detail__aside-more-label">More on this site</p>
+              <p class="mod-detail__aside-more-label">{{ $t('modArticlePage.moreOnSiteLabel') }}</p>
               <ul class="mod-detail__aside-more-list">
                 <li v-for="l in asideItems" :key="l.to">
                   <a :href="l.to">{{ l.label }}</a>
                 </li>
               </ul>
-              <a href="/mods" class="mod-detail__aside-more-all">All mods</a>
+              <a :href="getLocalizedPath('/mods')" class="mod-detail__aside-more-all">{{ $t('modArticlePage.allModsLink') }}</a>
             </div>
 
             <div
@@ -170,7 +170,9 @@
 <script setup>
 import { computed, watch, ref, onMounted, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import modArticles from '../../data/mods/mods.js'
+import { useI18n } from 'vue-i18n'
+import { getModArticles } from '../../data/localeData.js'
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'
 import { applyDynamicSeo } from '../../seo/composables.js'
@@ -219,8 +221,11 @@ onMounted(() => {
 
 const route = useRoute()
 const router = useRouter()
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const modArticles = computed(() => getModArticles(locale.value))
 
-const article = computed(() => getByAddressBar(modArticles, route.params.addressBar))
+const article = computed(() => getByAddressBar(modArticles.value, route.params.addressBar))
 
 function statStr(v) {
   const s = v == null ? '' : String(v).trim()
@@ -234,18 +239,18 @@ const hasStats = computed(() => Boolean(statDownloads.value || statViews.value))
 
 const asideItems = computed(() => {
   const cur = article.value?.addressBar
-  return modArticles
+  return modArticles.value
     .filter((a) => a.addressBar !== cur)
     .slice(0, 8)
-    .map((a) => ({ label: a.title, to: `/mods/${a.addressBar}` }))
+    .map((a) => ({ label: a.title, to: getLocalizedPath(`/mods/${a.addressBar}`) }))
 })
 
 watch(
   () => route.params.addressBar,
   (segment) => {
     const s = String(segment || '')
-    if (s && !getByAddressBar(modArticles, s)) {
-      router.replace('/mods')
+    if (s && !getByAddressBar(modArticles.value, s)) {
+      router.replace(getLocalizedPath('/mods'))
     }
   },
   { immediate: true },

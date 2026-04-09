@@ -8,17 +8,13 @@
           style="min-width: 320px; min-height: 50px"
         ></div>
         <div class="page-hero-content">
-          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+          <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true">/</span>
-            <span>Map</span>
+            <span>{{ $t('mapPage.breadcrumb') }}</span>
           </nav>
-          <h1>Road To Vostok Map</h1>
-          <p>
-            Use the map for Area 05, the Border Zone, and Vostok, then read the regional overview and
-            Area 05 notes below. For trader tasks, border crossings, and Vostok rules, open the
-            <a href="/tasks">Tasks</a> page. Verify against your installed build.
-          </p>
+          <h1>{{ $t('mapPage.title') }}</h1>
+          <p v-html="$t('mapPage.introHtml')"></p>
         </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
@@ -40,27 +36,22 @@
       <div class="container">
         <header class="map-section-head">
           <div class="map-section-head-main">
-            <p class="map-section-kicker">World overview</p>
-            <h2>Road To Vostok Interactive Map</h2>
-            <p class="map-hint">
-              Pins are <strong>locations only</strong> (Village, Shipyard, …). Each place can list <strong>NPCs, loot, tasks</strong>
-              in the left panel and in the index below — those are not separate markers. After you select a pin or location row,
-              the <strong>details drawer</strong> slides in from the left; close with <strong>×</strong> or reopen with
-              <strong>Details</strong>. Sub-items with a wiki link jump to that page. Pins are <strong>approximate</strong>.
-            </p>
+            <p class="map-section-kicker">{{ $t('mapPage.sectionKicker') }}</p>
+            <h2>{{ $t('mapPage.sectionTitle') }}</h2>
+            <p class="map-hint" v-html="$t('mapPage.hintHtml')"></p>
           </div>
-          <ul class="map-legend" aria-label="Pin colors by region">
+          <ul class="map-legend" :aria-label="$t('mapPage.legendAria')">
             <li>
               <span class="map-legend-swatch map-legend-swatch--area05" aria-hidden="true" />
-              Area 05
+              {{ $t('mapPage.legendArea05') }}
             </li>
             <li>
               <span class="map-legend-swatch map-legend-swatch--border" aria-hidden="true" />
-              Border Zone
+              {{ $t('mapPage.legendBorder') }}
             </li>
             <li>
               <span class="map-legend-swatch map-legend-swatch--vostok" aria-hidden="true" />
-              Vostok
+              {{ $t('mapPage.legendVostok') }}
             </li>
           </ul>
         </header>
@@ -79,14 +70,14 @@
                   class="map-drawer-tab"
                   @click="detailDrawerOpen = true"
                 >
-                  <span class="map-drawer-tab__label">Details</span>
+                  <span class="map-drawer-tab__label">{{ $t('mapPage.detailsTab') }}</span>
                   <span class="map-drawer-tab__chevron" aria-hidden="true">›</span>
                 </button>
                 <div
                   ref="mapContainer"
                   class="rtv-map-host"
                   role="application"
-                  aria-label="Road To Vostok world map. Scroll or pinch to zoom; drag to pan."
+                  :aria-label="$t('mapPage.mapAppAria')"
                   tabindex="0"
                 />
                 <aside
@@ -94,12 +85,12 @@
                   class="map-poi-detail"
                   :class="{ 'map-poi-detail--open': detailDrawerOpen }"
                   :aria-hidden="detailDrawerOpen ? 'false' : 'true'"
-                  aria-label="Selected map location"
+                  :aria-label="$t('mapPage.drawerAria')"
                 >
                   <button
                     type="button"
                     class="map-poi-detail__close"
-                    aria-label="Close location panel"
+                    :aria-label="$t('mapPage.closeDrawerAria')"
                     @click="closeDetailDrawer"
                   >
                     <span aria-hidden="true">×</span>
@@ -137,7 +128,7 @@
                         class="map-poi-detail__more"
                         @click="closeDetailDrawer"
                       >
-                        More
+                        {{ $t('mapPage.drawerMoreLink') }}
                         <span aria-hidden="true">→</span>
                       </a>
                     </div>
@@ -146,7 +137,7 @@
                       class="map-poi-detail__entries"
                     >
                       <p class="map-poi-detail__entries-label">
-                        At this location
+                        {{ $t('mapPage.entriesAtLocation') }}
                       </p>
                       <ul
                         class="map-poi-entry-list"
@@ -184,7 +175,7 @@
                             class="map-poi-entry__link"
                             @click="closeDetailDrawer"
                           >
-                            Open
+                            {{ $t('mapPage.drawerOpenLink') }}
                             <span aria-hidden="true">→</span>
                           </a>
                         </li>
@@ -196,10 +187,10 @@
                     class="map-poi-detail__empty"
                   >
                     <p class="map-poi-detail__empty-title">
-                      No pin selected
+                      {{ $t('mapPage.emptyPinTitle') }}
                     </p>
                     <p class="map-poi-detail__empty-text">
-                      Click a marker on the map or choose a row in the location index below.
+                      {{ $t('mapPage.emptyPinHint') }}
                     </p>
                   </div>
                 </aside>
@@ -208,15 +199,12 @@
             <aside
               v-if="mapReady"
               class="poi-rail"
-              aria-label="Location index below map, linked to pins"
+              :aria-label="$t('mapPage.indexRailAria')"
             >
               <div class="poi-rail-head">
-                <span class="poi-rail-kicker">Below map</span>
-                <h3 class="poi-rail-title">Location index</h3>
-                <p class="poi-rail-lead">
-                  Grouped by region: each row is a <strong>location</strong>. Tap the row to fly the map and open the drawer;
-                  nested lines link to wiki or tasks when available.
-                </p>
+                <span class="poi-rail-kicker">{{ $t('mapPage.railKickerBelowMap') }}</span>
+                <h3 class="poi-rail-title">{{ $t('mapPage.railTitleLocationIndex') }}</h3>
+                <p class="poi-rail-lead" v-html="$t('mapPage.railLeadHtml')"></p>
               </div>
               <div class="poi-rail-scroll">
                 <div
@@ -330,87 +318,34 @@
 
     <section class="page-body-section">
       <div class="container">
-        <div class="page-body-content">
-          <h2>Regional overview</h2>
-          <p class="guide-lead">
-            The official site describes a linear world progression: you start in <strong>Area 05</strong>
-            (Finland), push east through the <strong>Border Zone</strong>, and may eventually enter
-            <strong>Vostok</strong> in Russia — with different death consequences in each tier.
-          </p>
-          <div class="regions">
-            <article>
-              <h3>Area 05</h3>
-              <p>
-                An evacuated zone in southeastern Finland: shelters, traders, tasks, and starting loot
-                for early survival. Hostile <strong>Bandits</strong> patrol the area.
-              </p>
-            </article>
-            <article>
-              <h3>Border Zone</h3>
-              <p>
-                A guarded frontier between Finland and Russia. Crossings differ: mines, obstacles, or
-                waterways with boats. <strong>Guards</strong> are armed, corrupt, and may call air
-                support.
-              </p>
-            </article>
-            <article>
-              <h3>Vostok</h3>
-              <p>
-                High-risk, high-reward Russian territory with the most valuable loot. Every Vostok map is a
-                <strong>permadeath</strong> map. The <strong>Military</strong> faction fields heavy
-                weapons and armored vehicles.
-              </p>
-            </article>
-          </div>
-        </div>
+        <div
+          class="page-body-content"
+          v-html="$t('mapPage.regionalSectionHtml')"
+        />
       </div>
     </section>
 
     <section data-nav-anchor="area-05-detail" class="guide-section page-body-section">
       <div class="container">
-        <div class="guide-prose">
-          <h2>Area 05 map guide &amp; where loot comes from</h2>
-          <p>
-            According to the official <strong>Game</strong> page, Area 05 is your starting region: an
-            evacuated zone in the <strong>southeastern part of Finland</strong> where you will find
-            <strong>shelters</strong>, <strong>traders</strong>, <strong>tasks</strong>, and
-            <strong>starting loot</strong> for initial survival. Your routine there is interrupted by
-            hostile <strong>Bandits</strong> exploiting the lack of authority.
-          </p>
-          <h3>Loot and “spawn points” in practice</h3>
-          <p>
-            The same page lists <strong>physics-based loot</strong> as a core feature: items exist as
-            physical objects in the world rather than abstract menu pickups. The developers do
-            <strong>not</strong> publish a public table of fixed item coordinates on roadtovostok.com,
-            and many systems are described as <strong>dynamic</strong> (events, weather, replayable
-            runs). So this page does <strong>not</strong> list guaranteed refresh coordinates — those
-            change with patches and procedural layout.
-          </p>
-          <ul>
-            <li>
-              <strong>Scavenge logically:</strong> search the kinds of places the setting implies
-              (settlements, roadsides, abandoned structures) and learn your current build’s loot
-              density in-game.
-            </li>
-            <li>
-              <strong>Use traders &amp; tasks:</strong> the official feature list includes trading and
-              tasks as part of the core loop alongside shelters — barter and job rewards are intended
-              progression paths, not only ground spawns.
-            </li>
-            <li>
-              <strong>Stay alive to keep loot:</strong> if you die in Area 05, the official Vostok
-              section states you only lose what you are <strong>carrying</strong> — not your whole
-              progression context (that harsher rule applies to death inside Vostok).
-            </li>
-          </ul>
-          <p class="guide-tools">
-            On this site:
-            <a href="/wiki">Wiki</a> (gear tables),
-            <a href="/getting-started">Start here</a> (loop, controls, medical basics),
-            <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">Border geography guide</a>,
-            <a href="/guides/surviving-the-Minefield">Minefield guide</a>,
-            <a href="/tasks">Tasks &amp; Vostok rules</a>.
-          </p>
+        <div class="area05-guide-split">
+          <div
+            class="guide-prose"
+            v-html="$t('mapPage.area05DetailProseHtml')"
+          />
+          <figure
+            class="area05-guide-map"
+            :aria-label="$t('mapPage.area05ImageAria')"
+          >
+            <img
+              src="/images/map-01.webp"
+              :alt="$t('mapPage.area05MapImgAlt')"
+              width="640"
+              height="800"
+              loading="lazy"
+              decoding="async"
+              class="area05-guide-map__img"
+            >
+          </figure>
         </div>
         <aside
           style="width: 100%; margin: 1.25rem auto 0; padding: 1rem; text-align: center"
@@ -430,14 +365,7 @@
 
     <section class="page-body-section">
       <div class="container">
-        <p class="guide-tools map-next-link">
-          Next:
-          <a href="/tasks">Tasks &amp; border / Vostok guide</a>
-          ·
-          <a href="/wiki/core-tasks">Core task items (wiki)</a>
-          ·
-          <a href="/guides">Guides</a>
-        </p>
+        <p class="guide-tools map-next-link" v-html="$t('mapPage.bottomCrossLinksHtml')"></p>
       </div>
     </section>
   </article>
@@ -446,11 +374,17 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import { ref, computed, watch, nextTick, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import mapPoints from '../data/map/mapPoints.js'
+import { getMapPoints } from '../data/localeData.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const route = useRoute()
+const { t, locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+
+const mapPoints = computed(() => getMapPoints(locale.value))
 
 const REGION_ORDER = ['area05', 'border', 'vostok']
 
@@ -479,15 +413,15 @@ let markersLayer = null
 const markerById = new Map()
 
 function regionTitle(region) {
-  if (region === 'area05') return 'Area 05'
-  if (region === 'border') return 'Border Zone'
-  if (region === 'vostok') return 'Vostok'
+  if (region === 'area05') return t('mapPage.legendArea05')
+  if (region === 'border') return t('mapPage.legendBorder')
+  if (region === 'vostok') return t('mapPage.legendVostok')
   return region
 }
 
 const poiGroups = computed(() => {
   const buckets = { area05: [], border: [], vostok: [] }
-  for (const p of mapPoints) {
+  for (const p of mapPoints.value) {
     if (buckets[p.type]) buckets[p.type].push(p)
   }
   return REGION_ORDER.map((key) => ({
@@ -497,7 +431,7 @@ const poiGroups = computed(() => {
   }))
 })
 
-const selectedPoi = computed(() => mapPoints.find((p) => p.id === selectedPoiId.value) ?? null)
+const selectedPoi = computed(() => mapPoints.value.find((p) => p.id === selectedPoiId.value) ?? null)
 
 function locationEntries(p) {
   if (!p) return []
@@ -514,15 +448,16 @@ function locationHeroImage(p) {
 
 function entryKindLabel(kind) {
   const k = String(kind || '').toLowerCase()
-  const labels = {
-    npc: 'NPC',
-    loot: 'Loot',
-    task: 'Task',
-    weapon: 'Weapon',
-    faction: 'Faction',
-    note: 'Note',
+  const keys = {
+    npc: 'mapPage.kindNpc',
+    loot: 'mapPage.kindLoot',
+    task: 'mapPage.kindTask',
+    weapon: 'mapPage.kindWeapon',
+    faction: 'mapPage.kindFaction',
+    note: 'mapPage.kindNote',
   }
-  return labels[k] || (kind ? String(kind) : 'Item')
+  if (keys[k]) return t(keys[k])
+  return kind ? String(kind) : t('mapPage.kindFallback')
 }
 
 function syncMarkerSelectionClass() {
@@ -553,7 +488,7 @@ watch(selectedPoiId, () => {
 function syncRouteLocQuery() {
   const raw = route.query.loc
   if (raw == null || raw === '' || !mapReady.value) return
-  const match = mapPoints.find((x) => String(x.id) === String(raw))
+  const match = mapPoints.value.find((x) => String(x.id) === String(raw))
   if (!match) return
   focusPoi(match.id)
 }
@@ -642,7 +577,7 @@ function setupMap() {
     const h = probe.naturalHeight
     const w = probe.naturalWidth
     if (!h || !w) {
-      mapError.value = 'Could not read map image dimensions.'
+      mapError.value = t('mapPage.errorDimensions')
       return
     }
 
@@ -667,7 +602,7 @@ function setupMap() {
 
     markerById.clear()
     markersLayer = L.layerGroup()
-    for (const p of mapPoints) {
+    for (const p of mapPoints.value) {
       const latlng = normalizedToLatLng(p.x, p.y, w, h)
       const icon = L.divIcon({
         className: `rtv-map-marker rtv-map-marker--${p.type}`,
@@ -706,7 +641,7 @@ function setupMap() {
   }
 
   probe.onerror = () => {
-    mapError.value = 'Map image failed to load. Check your connection and try again.'
+    mapError.value = t('mapPage.errorImageLoad')
   }
 
   probe.src = MAP_IMAGE_URL
@@ -726,6 +661,12 @@ onMounted(() => {
       console.error('MapPage ADX failed:', e)
     }
   })
+})
+
+watch(locale, () => {
+  if (!mapContainer.value) return
+  teardownMap()
+  void nextTick(() => setupMap())
 })
 
 onUnmounted(() => {
@@ -1622,6 +1563,45 @@ onUnmounted(() => {
 
 .guide-prose {
   max-width: 72ch;
+}
+
+/* Area 05 long-form block: prose left, reference art right */
+.area05-guide-split {
+  display: grid;
+  grid-template-columns: minmax(0, min(72ch, 100%)) minmax(220px, 1fr);
+  gap: clamp(1.5rem, 4vw, 2.75rem);
+  align-items: start;
+}
+
+.area05-guide-split .guide-prose {
+  max-width: none;
+}
+
+.area05-guide-map {
+  margin: 0;
+  min-width: 0;
+}
+
+.area05-guide-map__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-ice) 8%, transparent),
+    0 20px 48px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 900px) {
+  .area05-guide-split {
+    grid-template-columns: 1fr;
+  }
+
+  .area05-guide-map__img {
+    max-width: none;
+    margin-left: 0;
+  }
 }
 
 .guide-prose h2 {

@@ -20,13 +20,13 @@
         <div class="page-hero-content">
           <nav
             class="npc-breadcrumb"
-            aria-label="Breadcrumb"
+            :aria-label="$t('site.breadcrumbAriaLabel')"
           >
-            <a href="/">Home</a>
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true">/</span>
-            <a href="/wiki">Wiki</a>
+            <a :href="getLocalizedPath('/wiki')">{{ $t('site.navWiki') }}</a>
             <span aria-hidden="true">/</span>
-            <a href="/wiki/npcs">NPCs</a>
+            <a :href="getLocalizedPath('/wiki/npcs')">{{ $t('npcListPage.breadcrumb') }}</a>
             <span aria-hidden="true">/</span>
             <span class="npc-breadcrumb__current">{{ npc.title }}</span>
           </nav>
@@ -46,12 +46,12 @@
                 <a
                   :href="
                     npc.mapLocationId
-                      ? `/map?loc=${encodeURIComponent(npc.mapLocationId)}`
-                      : '/map'
+                      ? getLocalizedPath(`/map?loc=${encodeURIComponent(npc.mapLocationId)}`)
+                      : getLocalizedPath('/map')
                   "
                   class="npc-btn npc-btn--solid"
                 >
-                  {{ npc.mapLocationId ? 'Show on map' : 'Open map' }}
+                  {{ npc.mapLocationId ? $t('npcDetailPage.showOnMap') : $t('npcDetailPage.openMap') }}
                 </a>
               </div>
             </div>
@@ -73,7 +73,7 @@
                   >
                 </div>
                 <p class="npc-hero__caption">
-                  Illustration for this NPC guide.
+                  {{ $t('npcDetailPage.imageCaption') }}
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@
 
         <aside
           class="npc-main__rail"
-          aria-label="About this article"
+          :aria-label="$t('npcDetailPage.articleAsideAria')"
         >
           <div
             v-if="hasLocationRail"
@@ -162,16 +162,16 @@
             </p>
             <a
               v-if="npc.mapLocationId"
-              :href="`/map?loc=${encodeURIComponent(npc.mapLocationId)}`"
+              :href="getLocalizedPath(`/map?loc=${encodeURIComponent(npc.mapLocationId)}`)"
               class="npc-rail-card__map-link"
             >
-              Show on map
+              {{ $t('npcDetailPage.showOnMap') }}
             </a>
           </div>
 
           <div class="npc-rail-card">
             <p class="npc-rail-card__label">
-              More NPCs
+              {{ $t('npcDetailPage.moreNpcs') }}
             </p>
             <ul class="npc-rail-list">
               <li
@@ -210,12 +210,15 @@
 <script setup>
 import { computed, watch, ref, onMounted, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import npcList from '../../data/item/npcs.js'
+import { useI18n } from 'vue-i18n'
+import { getNpcList } from '../../data/localeData.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { applyDynamicSeo } from '../../seo/composables.js'
 
 const { onContentLinkClick } = useHtmlContentLinkNavigation()
+const { getLocalizedPath } = useLocalizedPath()
 
 const npcDetailAdsRoot = ref(null)
 const npcDetailGptRoot = ref(null)
@@ -259,10 +262,12 @@ onMounted(() => {
 
 const route = useRoute()
 const router = useRouter()
+const { locale } = useI18n()
+const npcList = computed(() => getNpcList(locale.value))
 
-const npc = computed(() => getByAddressBar(npcList, route.params.addressBar))
+const npc = computed(() => getByAddressBar(npcList.value, route.params.addressBar))
 
-/** Sidebar location block: `npc.location` from npcs.js `{ title, imageUrl, imageAlt, content }`. */
+/** Sidebar location block: `npc.location` from npcs/en.js `{ title, imageUrl, imageAlt, content }`. */
 const hasLocationRail = computed(() => {
   const loc = npc.value?.location
   if (!loc || typeof loc !== 'object') return false
@@ -271,12 +276,12 @@ const hasLocationRail = computed(() => {
 
 const relatedNpcs = computed(() => {
   const cur = npc.value?.addressBar
-  return npcList
+  return npcList.value
     .filter((n) => n.addressBar !== cur)
     .map((n) => ({
       title: n.title,
       role: n.role,
-      to: `/wiki/npcs/${n.addressBar}`,
+      to: getLocalizedPath(`/wiki/npcs/${n.addressBar}`),
     }))
 })
 
@@ -284,8 +289,8 @@ watch(
   () => route.params.addressBar,
   (segment) => {
     const s = String(segment || '')
-    if (s && !getByAddressBar(npcList, s)) {
-      router.replace('/wiki/npcs')
+    if (s && !getByAddressBar(npcList.value, s)) {
+      router.replace(getLocalizedPath('/wiki/npcs'))
     }
   },
   { immediate: true },

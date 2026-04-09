@@ -10,34 +10,25 @@
         <div class="page-hero-content">
           <nav
             class="page-hero-breadcrumb"
-            aria-label="Breadcrumb"
+            :aria-label="$t('site.breadcrumbAriaLabel')"
           >
-            <a href="/">Home</a>
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true">/</span>
-            <span>Mods</span>
+            <span>{{ $t('modsListPage.breadcrumb') }}</span>
           </nav>
           <div
             class="mods-page__hero-mark"
             aria-hidden="true"
           />
           <p class="mods-page__eyebrow">
-            ModWorkshop · editorial spotlights
+            {{ $t('modsListPage.eyebrow') }}
           </p>
           <h1 class="mods-page__title">
-            Road To Vostok Mods
+            {{ $t('modsListPage.title') }}
           </h1>
           <div class="mods-page__intro">
-            <p>
-              Here we publish <strong>editorial mod spotlights</strong>: packs and tools we think are worth
-              reading about before you install—gameplay overhauls, QoL compilations, loader requirements
-              (e.g. Metro Mod Loader), and what each listing changes in a run. The list below is our
-              curated recommendations, not an exhaustive ModWorkshop index; we add entries as we review them.
-            </p>
-            <p>
-              We do <strong>not</strong> host <strong>.vmz</strong> files. Every card links to the author’s
-              source (ModWorkshop or as stated) for the real download. Match the file to your demo or Early
-              Access build and verify checksums before you load anything into the game.
-            </p>
+            <p v-html="$t('modsListPage.introP1Html')"></p>
+            <p v-html="$t('modsListPage.introP2Html')"></p>
           </div>
         </div>
         <aside
@@ -58,7 +49,7 @@
 
     <section
       class="mods-board"
-      aria-label="Mod articles"
+      :aria-label="$t('modsListPage.boardAria')"
     >
       <div class="container mods-board__inner">
         <header
@@ -66,9 +57,11 @@
           class="mods-board__mast"
         >
           <div class="mods-board__mast-text">
-            <span class="mods-board__mast-label">Manifest</span>
+            <span class="mods-board__mast-label">{{ $t('modsListPage.mastLabel') }}</span>
             <p class="mods-board__mast-note">
-              {{ sorted.length }} {{ sorted.length === 1 ? 'listing' : 'listings' }} · independent reference
+              {{ sorted.length }}
+              {{ sorted.length === 1 ? $t('modsListPage.mastListingOne') : $t('modsListPage.mastListingMany') }}
+              {{ $t('modsListPage.mastNoteSuffix') }}
             </p>
           </div>
           <div
@@ -88,7 +81,7 @@
             class="mods-feed__item"
           >
             <a
-              :href="`/mods/${m.addressBar}`"
+              :href="getLocalizedPath(`/mods/${m.addressBar}`)"
               class="mods-row"
               :class="{ 'mods-row--lead': index === 0 }"
             >
@@ -115,7 +108,7 @@
                   v-if="index === 0"
                   class="mods-row__flag"
                 >
-                  Latest
+                  {{ $t('modsListPage.rowLatest') }}
                 </p>
                 <h2 class="mods-row__title">
                   {{ m.title }}
@@ -136,53 +129,53 @@
               </div>
               <dl
                 class="mods-row__meta"
-                :aria-label="`Details for ${m.title}`"
+                :aria-label="$t('modsListPage.metaDetailsAria', { title: m.title })"
               >
                 <div
                   v-if="m.loaderName"
                   class="mods-row__meta-block"
                 >
-                  <dt>Loader</dt>
+                  <dt>{{ $t('modsListPage.metaLoader') }}</dt>
                   <dd>{{ m.loaderName }}</dd>
                 </div>
                 <div
                   v-if="m.publishDate"
                   class="mods-row__meta-block"
                 >
-                  <dt>Updated</dt>
+                  <dt>{{ $t('modsListPage.metaUpdated') }}</dt>
                   <dd><time :datetime="m.publishDate">{{ m.publishDate }}</time></dd>
                 </div>
                 <div
                   v-if="m.author"
                   class="mods-row__meta-block"
                 >
-                  <dt>Author</dt>
+                  <dt>{{ $t('modsListPage.metaAuthor') }}</dt>
                   <dd>{{ m.author }}</dd>
                 </div>
                 <div
                   v-if="m.version"
                   class="mods-row__meta-block"
                 >
-                  <dt>Ver</dt>
+                  <dt>{{ $t('modsListPage.metaVer') }}</dt>
                   <dd>v{{ m.version }}</dd>
                 </div>
                 <div
                   v-if="statDownloads(m)"
                   class="mods-row__meta-block"
                 >
-                  <dt>DL</dt>
+                  <dt>{{ $t('modsListPage.metaDl') }}</dt>
                   <dd>{{ statDownloads(m) }}</dd>
                 </div>
                 <div
                   v-if="statViews(m)"
                   class="mods-row__meta-block"
                 >
-                  <dt>Views</dt>
+                  <dt>{{ $t('modsListPage.metaViews') }}</dt>
                   <dd>{{ statViews(m) }}</dd>
                 </div>
               </dl>
               <span class="mods-row__action">
-                <span class="mods-row__action-label">Open</span>
+                <span class="mods-row__action-label">{{ $t('modsListPage.rowOpen') }}</span>
                 <span
                   class="mods-row__action-glyph"
                   aria-hidden="true"
@@ -211,7 +204,7 @@
           v-else
           class="mods-board__empty"
         >
-          No mod articles yet.
+          {{ $t('modsListPage.emptyState') }}
         </p>
       </div>
     </section>
@@ -220,7 +213,13 @@
 
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
-import modArticles from '../../data/mods/mods.js'
+import { useI18n } from 'vue-i18n'
+import { getModArticles } from '../../data/localeData.js'
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const modArticles = computed(() => getModArticles(locale.value))
 
 const modsListAdsRoot = ref(null)
 const modsListGptRoot = ref(null)
@@ -263,7 +262,7 @@ onMounted(() => {
 })
 
 const sorted = computed(() =>
-  [...modArticles].sort((a, b) => b.publishDate.localeCompare(a.publishDate)),
+  [...modArticles.value].sort((a, b) => b.publishDate.localeCompare(a.publishDate)),
 )
 
 function rowIndex(i) {

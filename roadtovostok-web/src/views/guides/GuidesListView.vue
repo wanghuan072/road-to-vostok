@@ -8,18 +8,13 @@
           style="min-width: 320px; min-height: 50px"
         ></div>
         <div class="page-hero-content">
-          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+          <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true">/</span>
-            <span>Road To Vostok Guides</span>
+            <span>{{ $t('guidesListPage.breadcrumb') }}</span>
           </nav>
-          <h1>Road To Vostok Guides</h1>
-          <p class="guides-list__sub">
-            Survival tips and progression — short reads. Pair with the
-            <a href="/map">map</a>,
-            <a href="/tasks">tasks</a>, and
-            <a href="/wiki">item database</a> when you need locations or tables. Confirm details in your installed build.
-          </p>
+          <h1>{{ $t('guidesListPage.title') }}</h1>
+          <p class="guides-list__sub" v-html="$t('guidesListPage.subHtml')"></p>
         </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
@@ -37,11 +32,11 @@
       </div>
     </section>
 
-    <section class="guides-list__body" aria-label="Articles">
+    <section class="guides-list__body" :aria-label="$t('guidesListPage.articlesAria')">
       <div class="container">
         <ul class="guides-grid" role="list">
           <li v-for="a in sorted" :key="a.id">
-            <a :href="`/guides/${a.addressBar}`" class="guides-card">
+            <a :href="getLocalizedPath(`/guides/${a.addressBar}`)" class="guides-card">
               <div class="guides-card__media">
                 <img
                   :src="a.imageUrl"
@@ -86,7 +81,13 @@
 
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
-import guideArticles from '../../data/guides/articles.js'
+import { useI18n } from 'vue-i18n'
+import { getGuideArticles } from '../../data/localeData.js'
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const guideArticles = computed(() => getGuideArticles(locale.value))
 
 const guidesListAdsRoot = ref(null)
 const guidesListGptRoot = ref(null)
@@ -129,7 +130,7 @@ onMounted(() => {
 })
 
 const sorted = computed(() =>
-  [...guideArticles].sort((a, b) => b.publishDate.localeCompare(a.publishDate)),
+  [...guideArticles.value].sort((a, b) => b.publishDate.localeCompare(a.publishDate)),
 )
 
 function excerpt(item) {

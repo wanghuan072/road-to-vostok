@@ -2,23 +2,24 @@
   <article class="site-page page-article">
     <section class="page-hero-section page-hero-section--compact">
       <div class="container">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a>
+        <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+          <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
           <span aria-hidden="true"> / </span>
-          <span>Not found</span>
+          <span>{{ $t('notFoundPage.breadcrumb') }}</span>
         </nav>
-        <h1>Road To Vostok — Page not found</h1>
+        <h1>{{ $t('notFoundPage.title') }}</h1>
         <p class="lead">
-          This URL is not part of Road To Vostok Guide. Use the navigation or return home.
+          {{ $t('notFoundPage.lead') }}
         </p>
         <p>
-          <a href="/">Back to home</a>
+          <a :href="getLocalizedPath('/')">{{ $t('notFoundPage.backHome') }}</a>
           ·
-          <a href="/wiki">Wiki</a>
+          <a :href="getLocalizedPath('/wiki')">{{ $t('notFoundPage.linkWiki') }}</a>
           ·
-          <a href="/map">Map</a> · <a href="/tasks">Tasks</a>
+          <a :href="getLocalizedPath('/map')">{{ $t('notFoundPage.linkMap') }}</a> ·
+          <a :href="getLocalizedPath('/tasks')">{{ $t('notFoundPage.linkTasks') }}</a>
           ·
-          <a href="/guides">Guides</a>
+          <a :href="getLocalizedPath('/guides')">{{ $t('notFoundPage.linkGuides') }}</a>
         </p>
       </div>
     </section>
@@ -26,6 +27,9 @@
 </template>
 
 <script setup>
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+
+const { getLocalizedPath } = useLocalizedPath()
 </script>
 
 <style src="./site-pages.css"></style>

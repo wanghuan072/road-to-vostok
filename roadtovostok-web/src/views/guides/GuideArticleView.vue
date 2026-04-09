@@ -13,10 +13,10 @@
           style="min-width: 320px; min-height: 50px"
         ></div>
         <div class="page-hero-content">
-          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+          <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true">/</span>
-            <a href="/guides">Guides</a>
+            <a :href="getLocalizedPath('/guides')">{{ $t('guideArticlePage.breadcrumbGuides') }}</a>
             <span aria-hidden="true">/</span>
             <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
           </nav>
@@ -63,7 +63,7 @@
           </aside>
         </main>
 
-        <aside class="article-split__aside" aria-label="About this guide">
+        <aside class="article-split__aside" :aria-label="$t('guideArticlePage.asideAria')">
           <div class="aside-stack">
             <figure class="aside-cover">
               <img
@@ -77,17 +77,17 @@
             </figure>
 
             <div class="aside-block">
-              <p class="aside-block__label">Summary</p>
+              <p class="aside-block__label">{{ $t('guideArticlePage.asideSummary') }}</p>
               <p class="aside-block__summary">{{ summaryText }}</p>
             </div>
 
             <div class="aside-meta">
               <div>
-                <p class="aside-meta__label">Updated</p>
+                <p class="aside-meta__label">{{ $t('guideArticlePage.asideUpdated') }}</p>
                 <time class="aside-meta__value" :datetime="article.publishDate">{{ article.publishDate }}</time>
               </div>
               <div v-if="article.tags?.length" class="aside-meta__tags">
-                <p class="aside-meta__label">Tags</p>
+                <p class="aside-meta__label">{{ $t('guideArticlePage.asideTags') }}</p>
                 <ul class="aside-taglist">
                   <li v-for="t in article.tags" :key="t">{{ t }}</li>
                 </ul>
@@ -95,13 +95,13 @@
             </div>
 
             <div class="aside-more">
-              <p class="aside-more__label">More guides</p>
+              <p class="aside-more__label">{{ $t('guideArticlePage.asideMoreGuides') }}</p>
               <ul class="aside-more__list">
                 <li v-for="l in asideItems" :key="l.to">
                   <a :href="l.to">{{ l.label }}</a>
                 </li>
               </ul>
-              <a href="/guides" class="aside-more__all">All guides</a>
+              <a :href="getLocalizedPath('/guides')" class="aside-more__all">{{ $t('guideArticlePage.asideAllGuides') }}</a>
             </div>
 
             <div
@@ -128,7 +128,13 @@
 <script setup>
 import { computed, watch, ref, onMounted, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import guideArticles from '../../data/guides/articles.js'
+import { useI18n } from 'vue-i18n'
+import { getGuideArticles } from '../../data/localeData.js'
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const guideArticles = computed(() => getGuideArticles(locale.value))
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'
 import { useInjectedHeadFragment } from '../../composables/useInjectedHeadFragment.js'
@@ -179,7 +185,7 @@ onMounted(() => {
 const route = useRoute()
 const router = useRouter()
 
-const article = computed(() => getByAddressBar(guideArticles, route.params.addressBar))
+const article = computed(() => getByAddressBar(guideArticles.value, route.params.addressBar))
 
 /** Optional HTML fragment for document.head (JSON-LD, extra meta/link/style). */
 useInjectedHeadFragment(() => article.value?.head)
@@ -188,18 +194,18 @@ const summaryText = computed(() => article.value?.seo?.description || '')
 
 const asideItems = computed(() => {
   const cur = article.value?.addressBar
-  return guideArticles
+  return guideArticles.value
     .filter((a) => a.addressBar !== cur)
     .slice(0, 6)
-    .map((a) => ({ label: a.title, to: `/guides/${a.addressBar}` }))
+    .map((a) => ({ label: a.title, to: getLocalizedPath(`/guides/${a.addressBar}`) }))
 })
 
 watch(
   () => route.params.addressBar,
   (segment) => {
     const s = String(segment || '')
-    if (s && !getByAddressBar(guideArticles, s)) {
-      router.replace('/guides')
+    if (s && !getByAddressBar(guideArticles.value, s)) {
+      router.replace(getLocalizedPath('/guides'))
     }
   },
   { immediate: true },

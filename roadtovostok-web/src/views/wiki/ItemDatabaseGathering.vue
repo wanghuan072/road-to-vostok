@@ -8,20 +8,15 @@
           style="min-width: 320px; min-height: 50px"
         ></div>
         <div class="page-hero-content">
-          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+          <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true"> / </span>
-            <a href="/wiki">Wiki</a>
+            <a :href="getLocalizedPath('/wiki')">{{ $t('site.navWiki') }}</a>
             <span aria-hidden="true"> / </span>
-            <span>Gathering</span>
+            <span>{{ $t('wikiGatheringPage.breadcrumb') }}</span>
           </nav>
-          <h1>Road To Vostok Gathering &amp; Raw Materials</h1>
-          <p class="lead">
-            Environmental loot and harvest nodes that feed crafting and survival. For combat loot,
-            see <a href="/wiki/weapons">weapons</a> and
-            <a href="/wiki/ammunition">ammunition</a>; crafting context on
-            <a href="/getting-started">Start here</a>.
-          </p>
+          <h1 v-html="$t('wikiGatheringPage.title')"></h1>
+          <p class="lead" v-html="$t('wikiGatheringPage.leadHtml')"></p>
         </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
@@ -39,15 +34,15 @@
       </div>
     </section>
 
-    <section class="page-body-section" aria-label="Gathering data table">
+    <section class="page-body-section" :aria-label="$t('wikiGatheringPage.tableAria')">
       <div class="container">
         <div class="table-wrap">
           <table class="data-table">
             <thead>
               <tr>
-                <th scope="col">Resource</th>
-                <th scope="col">Typical source</th>
-                <th scope="col">Used for</th>
+                <th scope="col">{{ $t('wikiGatheringPage.colResource') }}</th>
+                <th scope="col">{{ $t('wikiGatheringPage.colSource') }}</th>
+                <th scope="col">{{ $t('wikiGatheringPage.colUsedFor') }}</th>
               </tr>
             </thead>
             <tbody>
@@ -72,20 +67,21 @@
             data-tag-src="gamtg"
           ></ins>
         </aside>
-        <div class="cross-links">
-          Crafting context:
-          <a href="/getting-started">How to craft in Road To Vostok</a>
-          ·
-          <a href="/wiki/ammunition">Ammunition</a>
-        </div>
+        <div class="cross-links" v-html="$t('wikiGatheringPage.crossLinksHtml')"></div>
       </div>
     </section>
   </article>
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue'
-import rows from '../../data/item/gathering.js'
+import { computed, ref, onMounted, nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { getGatheringRows } from '../../data/localeData.js'
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const rows = computed(() => getGatheringRows(locale.value))
 
 const gatheringAdsRoot = ref(null)
 const gatheringGptRoot = ref(null)

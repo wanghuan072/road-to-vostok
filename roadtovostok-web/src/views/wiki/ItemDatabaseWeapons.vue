@@ -14,35 +14,28 @@
         <div class="page-hero-content">
           <nav
             class="weapons-hero__crumb page-hero-breadcrumb"
-            aria-label="Breadcrumb"
+            :aria-label="$t('site.breadcrumbAriaLabel')"
           >
-            <a href="/">Home</a>
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true"> / </span>
-            <a href="/wiki">Wiki</a>
+            <a :href="getLocalizedPath('/wiki')">{{ $t('site.navWiki') }}</a>
             <span aria-hidden="true"> / </span>
-            <span>Weapons</span>
+            <span>{{ $t('wikiWeaponsPage.breadcrumb') }}</span>
           </nav>
           <p class="weapons-hero__kicker">
-            Armory catalog
+            {{ $t('wikiWeaponsPage.kicker') }}
           </p>
           <h1 class="weapons-hero__title">
-            Road To Vostok Weapons
+            {{ $t('wikiWeaponsPage.title') }}
           </h1>
-          <p class="weapons-hero__lead">
-            One scrollable catalog: melee, sidearms, long guns, and support weapons. Numeric fields follow the
-            <strong>Road To Vostok Wiki (Fandom)</strong> hub pages below; portraits are the same wiki thumbnails, mirrored under
-            <code>/images/wiki/weapons/</code>. Cross-check every value in your installed build — Early Access shifts stats, names, and loot.
-          </p>
-          <p class="weapons-hero__ammo">
-            Pair rounds with the
-            <a href="/wiki/ammunition">Ammunition</a> table (also sourced from Fandom).
-          </p>
+          <p class="weapons-hero__lead" v-html="$t('wikiWeaponsPage.leadHtml')"></p>
+          <p class="weapons-hero__ammo" v-html="$t('wikiWeaponsPage.ammoPairHtml')"></p>
 
           <div
             class="weapons-sources"
-            aria-label="Fandom data sources"
+            :aria-label="$t('wikiWeaponsPage.sourcesAria')"
           >
-            <span class="weapons-sources__label">Wiki sources</span>
+            <span class="weapons-sources__label">{{ $t('wikiWeaponsPage.sourcesLabel') }}</span>
             <ul
               class="weapons-sources__list"
               role="list"
@@ -56,25 +49,25 @@
                   class="weapons-sources__link"
                   rel="noopener noreferrer"
                   target="_blank"
-                >{{ c.label }}</a>
+                >{{ $t(`wikiWeaponsPage.categories.${c.id}`) }}</a>
               </li>
             </ul>
           </div>
 
           <dl
             class="weapons-hero__stats"
-            aria-label="Dataset summary"
+            :aria-label="$t('wikiWeaponsPage.datasetAria')"
           >
             <div class="weapons-hero__stat">
-              <dt>Entries</dt>
+              <dt>{{ $t('wikiWeaponsPage.statEntries') }}</dt>
               <dd>{{ weapons.length }}</dd>
             </div>
             <div class="weapons-hero__stat">
-              <dt>Categories</dt>
+              <dt>{{ $t('wikiWeaponsPage.statCategories') }}</dt>
               <dd>{{ weaponCategories.length }}</dd>
             </div>
             <div class="weapons-hero__stat">
-              <dt>With portrait</dt>
+              <dt>{{ $t('wikiWeaponsPage.statWithPortrait') }}</dt>
               <dd>{{ withImageCount }}</dd>
             </div>
           </dl>
@@ -99,13 +92,13 @@
       <div class="container weapons-layout">
         <nav
           class="armory-toc"
-          aria-label="Jump to weapon class"
+          :aria-label="$t('wikiWeaponsPage.jumpToClassAria')"
         >
           <p
             id="armory-toc-label"
             class="armory-toc__title"
           >
-            Classes
+            {{ $t('wikiWeaponsPage.tocTitle') }}
           </p>
           <ul
             class="armory-toc__list"
@@ -120,7 +113,7 @@
                 :href="'#weapons-cat-' + c.id"
                 class="armory-toc__link"
               >
-                <span class="armory-toc__name">{{ c.label }}</span>
+                <span class="armory-toc__name">{{ $t(`wikiWeaponsPage.categories.${c.id}`) }}</span>
                 <span class="armory-toc__n">{{ countInCategory(c.id) }}</span>
               </a>
             </li>
@@ -139,7 +132,7 @@
             >
             <div class="armory-section__head">
               <h2 class="armory-section__title">
-                {{ c.label }}
+                {{ $t(`wikiWeaponsPage.categories.${c.id}`) }}
               </h2>
               <a
                 :href="c.wikiUrl"
@@ -147,7 +140,7 @@
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                View on Fandom
+                {{ $t('wikiWeaponsPage.viewOnFandom') }}
                 <span
                   class="armory-section__wiki-arrow"
                   aria-hidden="true"
@@ -236,7 +229,12 @@
 
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
-import weaponsData, { weaponCategories } from '../../data/item/weapons.js'
+import { useI18n } from 'vue-i18n'
+import { weaponCategories, getWeaponsData } from '../../data/localeData.js'
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+
+const { t, locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 
 const weaponsAdsRoot = ref(null)
 const weaponsGptRoot = ref(null)
@@ -278,9 +276,9 @@ onMounted(() => {
   })
 })
 
-const weapons = weaponsData
+const weapons = computed(() => getWeaponsData(locale.value))
 
-const withImageCount = computed(() => weapons.filter((w) => Boolean(w.imageUrl)).length)
+const withImageCount = computed(() => weapons.value.filter((w) => Boolean(w.imageUrl)).length)
 
 /** Insert one in-content ad after roughly the first half of category sections (no ad above the TOC/list). */
 const weaponsMidAdIndex = computed(() => {
@@ -290,23 +288,23 @@ const weaponsMidAdIndex = computed(() => {
 })
 
 function countInCategory(catId) {
-  return weapons.filter((w) => w.categoryId === catId).length
+  return weapons.value.filter((w) => w.categoryId === catId).length
 }
 
 function weaponsInCategory(catId) {
-  return weapons.filter((w) => w.categoryId === catId)
+  return weapons.value.filter((w) => w.categoryId === catId)
 }
 
 function summaryLine(w) {
   if (!w) return ''
   const parts = []
-  if (w.weightKg != null) parts.push(`${w.weightKg} kg`)
-  if (w.damage != null) parts.push(`DMG ${w.damage}`)
+  if (w.weightKg != null) parts.push(`${w.weightKg}${t('wikiWeaponsPage.summaryKgSuffix')}`)
+  if (w.damage != null) parts.push(`${t('wikiWeaponsPage.summaryDmgPrefix')}${w.damage}`)
   if (w.caliber) parts.push(String(w.caliber))
-  if (w.magazine != null) parts.push(`${w.magazine} rnds`)
-  if (w.rpm != null) parts.push(`${w.rpm} RPM`)
-  if (w.valueEur != null) parts.push(`${w.valueEur} €`)
-  if (w.costEur != null) parts.push(`cost ${w.costEur} €`)
+  if (w.magazine != null) parts.push(`${w.magazine}${t('wikiWeaponsPage.summaryMagRoundsSuffix')}`)
+  if (w.rpm != null) parts.push(`${w.rpm}${t('wikiWeaponsPage.summaryRpmSuffix')}`)
+  if (w.valueEur != null) parts.push(`${w.valueEur}${t('wikiWeaponsPage.summaryEuroSuffix')}`)
+  if (w.costEur != null) parts.push(t('wikiWeaponsPage.summaryCost', { n: w.costEur }))
   if (w.rarity) parts.push(w.rarity)
   if (w.penetration) parts.push(w.penetration)
   return parts.join(' · ')
@@ -328,16 +326,16 @@ const WeaponSpecs = {
     },
   },
   template: `
-    <dl class="armory-spec-strip" aria-label="Weapon stats">
-      <div class="armory-spec-strip__pair"><dt>Wt</dt><dd>{{ n(weapon.weightKg, ' kg') }}</dd></div>
-      <div class="armory-spec-strip__pair"><dt>Dmg</dt><dd>{{ n(weapon.damage) }}</dd></div>
-      <div class="armory-spec-strip__pair armory-spec-strip__pair--wide"><dt>Caliber</dt><dd>{{ weapon.caliber || '—' }}</dd></div>
-      <div class="armory-spec-strip__pair"><dt>Mag</dt><dd>{{ weapon.magazine != null ? weapon.magazine + ' rnds' : '—' }}</dd></div>
-      <div class="armory-spec-strip__pair"><dt>RPM</dt><dd>{{ weapon.rpm != null ? weapon.rpm : '—' }}</dd></div>
-      <div class="armory-spec-strip__pair"><dt>Value</dt><dd>{{ eur(weapon.valueEur) }}</dd></div>
-      <div class="armory-spec-strip__pair"><dt>Trader</dt><dd>{{ eur(weapon.costEur) }}</dd></div>
-      <div class="armory-spec-strip__pair"><dt>Rarity</dt><dd>{{ weapon.rarity || '—' }}</dd></div>
-      <div class="armory-spec-strip__pair"><dt>Pen</dt><dd>{{ weapon.penetration || '—' }}</dd></div>
+    <dl class="armory-spec-strip" :aria-label="$t('wikiWeaponsPage.statsStripAria')">
+      <div class="armory-spec-strip__pair"><dt>{{ $t('wikiWeaponsPage.specWt') }}</dt><dd>{{ n(weapon.weightKg, $t('wikiWeaponsPage.summaryKgSuffix')) }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>{{ $t('wikiWeaponsPage.specDmg') }}</dt><dd>{{ n(weapon.damage) }}</dd></div>
+      <div class="armory-spec-strip__pair armory-spec-strip__pair--wide"><dt>{{ $t('wikiWeaponsPage.specCaliber') }}</dt><dd>{{ weapon.caliber || '—' }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>{{ $t('wikiWeaponsPage.specMag') }}</dt><dd>{{ weapon.magazine != null ? weapon.magazine + $t('wikiWeaponsPage.magRoundsSuffix') : '—' }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>{{ $t('wikiWeaponsPage.specRpm') }}</dt><dd>{{ weapon.rpm != null ? weapon.rpm : '—' }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>{{ $t('wikiWeaponsPage.specValue') }}</dt><dd>{{ eur(weapon.valueEur) }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>{{ $t('wikiWeaponsPage.specTrader') }}</dt><dd>{{ eur(weapon.costEur) }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>{{ $t('wikiWeaponsPage.specRarity') }}</dt><dd>{{ weapon.rarity || '—' }}</dd></div>
+      <div class="armory-spec-strip__pair"><dt>{{ $t('wikiWeaponsPage.specPen') }}</dt><dd>{{ weapon.penetration || '—' }}</dd></div>
     </dl>
   `,
 }
@@ -345,7 +343,7 @@ const WeaponSpecs = {
 const WeaponExtra = {
   props: { weapon: { type: Object, required: true } },
   template: `
-    <p v-if="weapon.lootNote" class="armory-list-row__loot"><strong>Loot</strong> — {{ weapon.lootNote }}</p>
+    <p v-if="weapon.lootNote" class="armory-list-row__loot"><strong>{{ $t('wikiWeaponsPage.lootLabel') }}</strong> — {{ weapon.lootNote }}</p>
     <p v-if="weapon.note" class="armory-list-row__note">{{ weapon.note }}</p>
   `,
 }

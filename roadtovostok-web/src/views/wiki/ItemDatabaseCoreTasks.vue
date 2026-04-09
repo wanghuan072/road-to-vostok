@@ -8,23 +8,15 @@
           style="min-width: 320px; min-height: 50px"
         ></div>
         <div class="page-hero-content">
-          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+          <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true"> / </span>
-            <a href="/wiki">Wiki</a>
+            <a :href="getLocalizedPath('/wiki')">{{ $t('site.navWiki') }}</a>
             <span aria-hidden="true"> / </span>
-            <span>Core tasks</span>
+            <span>{{ $t('wikiCoreTasksPage.breadcrumb') }}</span>
           </nav>
-          <h1>Road To Vostok Core Tasks &amp; Power Items</h1>
-          <p class="lead">
-            Items players pair with shelter power, cabling, and quest chains (<strong>all tasks</strong>).
-            Cross-check
-            <a href="/map">Map</a> and <a href="/tasks">Tasks</a> for
-            progression context; for long reads see
-            <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</a>
-            and
-            <a href="/guides/surviving-the-Minefield">Minefield tactics</a>.
-          </p>
+          <h1 v-html="$t('wikiCoreTasksPage.title')"></h1>
+          <p class="lead" v-html="$t('wikiCoreTasksPage.leadHtml')"></p>
         </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
@@ -42,16 +34,16 @@
       </div>
     </section>
 
-    <section class="page-body-section" aria-label="Core tasks data table">
+    <section class="page-body-section" :aria-label="$t('wikiCoreTasksPage.tableAria')">
       <div class="container">
         <div class="table-wrap">
           <table class="data-table">
             <thead>
               <tr>
-                <th scope="col">Item</th>
-                <th scope="col">Role</th>
-                <th scope="col">Related progression</th>
-                <th scope="col">Notes</th>
+                <th scope="col">{{ $t('wikiCoreTasksPage.colItem') }}</th>
+                <th scope="col">{{ $t('wikiCoreTasksPage.colRole') }}</th>
+                <th scope="col">{{ $t('wikiCoreTasksPage.colRelated') }}</th>
+                <th scope="col">{{ $t('wikiCoreTasksPage.colNotes') }}</th>
               </tr>
             </thead>
             <tbody>
@@ -77,22 +69,21 @@
             data-tag-src="gamtg"
           ></ins>
         </aside>
-        <div class="cross-links">
-          Related:
-          <a href="/tasks">Tasks</a>
-          ·
-          <a href="/guides/surviving-the-Minefield">Minefield guide</a>
-          ·
-          <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">Geography guide</a>
-        </div>
+        <div class="cross-links" v-html="$t('wikiCoreTasksPage.crossLinksHtml')"></div>
       </div>
     </section>
   </article>
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue'
-import rows from '../../data/item/coreTasks.js'
+import { computed, ref, onMounted, nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { getCoreTaskRows } from '../../data/localeData.js'
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const rows = computed(() => getCoreTaskRows(locale.value))
 
 const coreTasksAdsRoot = ref(null)
 const coreTasksGptRoot = ref(null)

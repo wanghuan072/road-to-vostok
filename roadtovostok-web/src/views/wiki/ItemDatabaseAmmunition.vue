@@ -10,42 +10,40 @@
         <div class="page-hero-content">
           <nav
             class="page-hero-breadcrumb"
-            aria-label="Breadcrumb"
+            :aria-label="$t('site.breadcrumbAriaLabel')"
           >
-            <a href="/">Home</a>
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true"> / </span>
-            <a href="/wiki">Wiki</a>
+            <a :href="getLocalizedPath('/wiki')">{{ $t('site.navWiki') }}</a>
             <span aria-hidden="true"> / </span>
-            <span>Ammunition</span>
+            <span>{{ $t('wikiAmmunitionPage.breadcrumb') }}</span>
           </nav>
           <p class="page-hero-kicker">
-            Loadout reference
+            {{ $t('wikiAmmunitionPage.kicker') }}
           </p>
-          <h1>Road To Vostok Ammunition</h1>
+          <h1>{{ $t('wikiAmmunitionPage.title') }}</h1>
           <p class="lead">
-            Cartridge value (€), per-round weight, max stack, and weapon compatibility are aligned with the
-            <a
+            {{ $t('wikiAmmunitionPage.leadBeforeLink') }}<a
               href="https://roadtovostok.fandom.com/wiki/Ammunition"
               rel="noopener noreferrer"
               target="_blank"
-            >Road To Vostok Wiki (Fandom) · Ammunition</a>
-            table; icons are the same wiki assets, hosted under <code>/images/wiki/Ammunition/</code>. Verify everything in your installed build — patches can change stats and weapon names.
+            >Road To Vostok Wiki (Fandom) · Ammunition</a><span v-html="$t('wikiAmmunitionPage.leadAfterLinkHtml')"></span>
           </p>
           <dl
             class="ammo-hero-stats"
-            aria-label="Dataset summary"
+            :aria-label="$t('wikiAmmunitionPage.datasetAria')"
           >
             <div class="ammo-hero-stats__item">
-              <dt>Calibers</dt>
+              <dt>{{ $t('wikiAmmunitionPage.statCalibers') }}</dt>
               <dd>{{ stats.count }}</dd>
             </div>
             <div class="ammo-hero-stats__item">
-              <dt>Lightest round</dt>
-              <dd>{{ stats.minWeightKg }}&nbsp;kg</dd>
+              <dt>{{ $t('wikiAmmunitionPage.statLightest') }}</dt>
+              <dd>{{ stats.minWeightKg }}&nbsp;{{ $t('wikiAmmunitionPage.heroStatUnitKg') }}</dd>
             </div>
             <div class="ammo-hero-stats__item">
-              <dt>Tightest stack cap</dt>
-              <dd>{{ stats.minStack }}&nbsp;rnds</dd>
+              <dt>{{ $t('wikiAmmunitionPage.statTightestStack') }}</dt>
+              <dd>{{ stats.minStack }}&nbsp;{{ $t('wikiAmmunitionPage.heroStatUnitRnds') }}</dd>
             </div>
           </dl>
         </div>
@@ -67,14 +65,14 @@
 
     <section
       class="page-body-section ammo-body"
-      aria-label="Ammunition reference"
+      :aria-label="$t('wikiAmmunitionPage.bodyAria')"
     >
       <div class="container">
         <div class="ammo-toolbar">
           <div
             class="ammo-filters"
             role="group"
-            aria-label="Filter by platform"
+            :aria-label="$t('wikiAmmunitionPage.filterPlatformAria')"
           >
             <button
               v-for="f in ammunitionFilters"
@@ -84,16 +82,16 @@
               :class="{ 'ammo-filter--active': activeFilter === f.id }"
               @click="activeFilter = f.id"
             >
-              {{ f.label }}
+              {{ $t(`wikiAmmunitionPage.filters.${f.id}`) }}
             </button>
           </div>
           <label class="ammo-search">
-            <span class="ammo-search__label">Search</span>
+            <span class="ammo-search__label">{{ $t('wikiAmmunitionPage.searchLabel') }}</span>
             <input
               v-model.trim="searchQuery"
               type="search"
               class="ammo-search__input"
-              placeholder="Caliber, weapon, note…"
+              :placeholder="$t('wikiAmmunitionPage.searchPlaceholder')"
               autocomplete="off"
               spellcheck="false"
             >
@@ -104,9 +102,8 @@
           v-if="filteredRows.length === 0"
           class="ammo-empty"
           role="status"
-        >
-          No rounds match this filter and search. Clear the search or choose <strong>All</strong>.
-        </p>
+          v-html="$t('wikiAmmunitionPage.emptyResultsHtml')"
+        ></p>
 
         <div
           v-else
@@ -140,7 +137,7 @@
                   class="ammo-card__media-id"
                   aria-hidden="true"
                 >{{ row.id }}</span>
-                <span class="ammo-card__media-label">Image slot</span>
+                <span class="ammo-card__media-label">{{ $t('wikiAmmunitionPage.imageSlotLabel') }}</span>
               </div>
             </div>
 
@@ -158,30 +155,30 @@
 
               <dl class="ammo-card__stats">
                 <div class="ammo-card__stat">
-                  <dt>Value</dt>
+                  <dt>{{ $t('wikiAmmunitionPage.statValue') }}</dt>
                   <dd>
                     <span class="ammo-card__num">{{ row.valueEur }}</span>
-                    <span class="ammo-card__unit">€ / rnd</span>
+                    <span class="ammo-card__unit">{{ $t('wikiAmmunitionPage.unitEurPerRnd') }}</span>
                   </dd>
                 </div>
                 <div class="ammo-card__stat">
-                  <dt>Weight</dt>
+                  <dt>{{ $t('wikiAmmunitionPage.statWeight') }}</dt>
                   <dd>
                     <span class="ammo-card__num">{{ row.weightKg }}</span>
-                    <span class="ammo-card__unit">kg / rnd</span>
+                    <span class="ammo-card__unit">{{ $t('wikiAmmunitionPage.unitKgPerRnd') }}</span>
                   </dd>
                 </div>
                 <div class="ammo-card__stat">
-                  <dt>Stack</dt>
+                  <dt>{{ $t('wikiAmmunitionPage.statStack') }}</dt>
                   <dd>
                     <span class="ammo-card__num">{{ row.maxStack }}</span>
-                    <span class="ammo-card__unit">max</span>
+                    <span class="ammo-card__unit">{{ $t('wikiAmmunitionPage.unitMax') }}</span>
                   </dd>
                 </div>
               </dl>
 
               <div class="ammo-card__weapons">
-                <span class="ammo-card__weapons-label">Feeds</span>
+                <span class="ammo-card__weapons-label">{{ $t('wikiAmmunitionPage.feedsLabel') }}</span>
                 <ul class="ammo-card__weapon-list">
                   <li
                     v-for="w in row.weapons"
@@ -230,15 +227,8 @@
         </aside>
 
         <footer class="ammo-foot">
-          <p>
-            Cross-check firearms and attachments on
-            <a href="/wiki/weapons">Weapons &amp; attachments</a>.
-          </p>
-          <p class="ammo-foot__assets">
-            Images: add files under <code>public/images/wiki/ammo/</code> and set
-            <code>imageUrl</code> in <code>src/data/item/ammunition.js</code>
-            (path from site root, e.g. <code>/images/wiki/ammo/46x30.webp</code> — filename can match <code>id</code>).
-          </p>
+          <p v-html="$t('wikiAmmunitionPage.footCrossCheckHtml')"></p>
+          <p class="ammo-foot__assets" v-html="$t('wikiAmmunitionPage.footAssetsHtml')"></p>
         </footer>
       </div>
     </section>
@@ -247,33 +237,31 @@
 
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
-import rowsSource, { ammunitionFilters } from '../../data/item/ammunition.js'
+import { useI18n } from 'vue-i18n'
+import { ammunitionFilters, getAmmunitionRows } from '../../data/localeData.js'
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 
-const rows = rowsSource
+const { t, locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const rows = computed(() => getAmmunitionRows(locale.value))
 const activeFilter = ref('all')
 const searchQuery = ref('')
 
 function categoryLabel(cat) {
-  const map = {
-    smg: 'Submachine gun',
-    rifle: 'Assault / carbine',
-    dmr: 'Marksman / full-power',
-    shotgun: 'Shotgun',
-    pistol: 'Pistol',
-    mixed: 'Pistol & SMG platforms',
-  }
-  return map[cat] || cat
+  const key = `wikiAmmunitionPage.categories.${cat}`
+  const s = t(key)
+  return s !== key ? s : cat
 }
 
 const stats = computed(() => ({
-  count: rows.length,
-  minWeightKg: Math.min(...rows.map((r) => r.weightKg)),
-  minStack: Math.min(...rows.map((r) => r.maxStack)),
+  count: rows.value.length,
+  minWeightKg: Math.min(...rows.value.map((r) => r.weightKg)),
+  minStack: Math.min(...rows.value.map((r) => r.maxStack)),
 }))
 
 const filteredRows = computed(() => {
   const q = searchQuery.value.toLowerCase()
-  return rows.filter((row) => {
+  return rows.value.filter((row) => {
     if (activeFilter.value !== 'all' && !row.filterTags.includes(activeFilter.value)) {
       return false
     }

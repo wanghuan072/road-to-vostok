@@ -1,17 +1,15 @@
 /**
- * Manual sitemap generator (same idea as Escape the Backrooms scripts/generate-sitemap.js).
- * Run: npm run sitemap
- *
- * Reads routeDefs from src/router/index.js (named export; Node 使用 MemoryHistory，不依赖浏览器).
- * Domain: VITE_SITE_ORIGIN env or default https://roadtovostok.org (no trailing slash)
+ * 与 Heartopia 类似：静态路径 + 指南 / mod / NPC；每种语言一条 URL。
  */
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { routeDefs } from '../src/router/index.js'
-import guideArticles from '../src/data/guides/articles.js'
-import modArticles from '../src/data/mods/mods.js'
-import npcList from '../src/data/item/npcs.js'
+import guideArticles from '../src/data/guides/articles/en.js'
+import modArticles from '../src/data/mods/mods/en.js'
+import npcList from '../src/data/item/npcs/en.js'
+import { supportedLocales } from '../src/i18n/index.js'
+import { applyLocalePrefix } from '../src/composables/useLocalizedPath.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const projectRoot = path.resolve(__dirname, '..')
@@ -45,26 +43,36 @@ function buildSitemapXml() {
     if (sm === false) continue
     const priority = sm?.priority ?? 0.5
     const changefreq = sm?.changefreq ?? 'monthly'
-    const loc =
-      def.path === '/'
-        ? `${siteOrigin}/`
-        : `${siteOrigin}${def.path.startsWith('/') ? def.path : `/${def.path}`}`
-    body += `\n${urlXml(loc, lastmod, priority, changefreq)}`
+    for (const loc of supportedLocales) {
+      const p = applyLocalePrefix(def.path, loc)
+      const urlPath = p === '/' ? '/' : p
+      const full = `${siteOrigin}${urlPath}`
+      body += `\n${urlXml(full, lastmod, priority, changefreq)}`
+    }
   }
 
   for (const a of guideArticles) {
-    const loc = `${siteOrigin}/guides/${a.addressBar}`
-    body += `\n${urlXml(loc, lastmod, 0.8, 'monthly')}`
+    const slug = `/guides/${a.addressBar}`
+    for (const loc of supportedLocales) {
+      const full = `${siteOrigin}${applyLocalePrefix(slug, loc)}`
+      body += `\n${urlXml(full, lastmod, 0.8, 'monthly')}`
+    }
   }
 
   for (const m of modArticles) {
-    const loc = `${siteOrigin}/mods/${m.addressBar}`
-    body += `\n${urlXml(loc, lastmod, 0.78, 'monthly')}`
+    const slug = `/mods/${m.addressBar}`
+    for (const loc of supportedLocales) {
+      const full = `${siteOrigin}${applyLocalePrefix(slug, loc)}`
+      body += `\n${urlXml(full, lastmod, 0.78, 'monthly')}`
+    }
   }
 
   for (const n of npcList) {
-    const loc = `${siteOrigin}/wiki/npcs/${n.addressBar}`
-    body += `\n${urlXml(loc, lastmod, 0.75, 'monthly')}`
+    const slug = `/wiki/npcs/${n.addressBar}`
+    for (const loc of supportedLocales) {
+      const full = `${siteOrigin}${applyLocalePrefix(slug, loc)}`
+      body += `\n${urlXml(full, lastmod, 0.75, 'monthly')}`
+    }
   }
 
   return `<?xml version="1.0" encoding="UTF-8"?>

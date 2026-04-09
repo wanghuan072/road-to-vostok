@@ -2,51 +2,37 @@
   <article ref="pageRoot" class="site-page page-article">
     <section class="page-hero-section">
       <div class="container">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a>
+        <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+          <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
           <span aria-hidden="true"> / </span>
-          <span>Contact Us</span>
+          <span>{{ $t('contactPage.breadcrumb') }}</span>
         </nav>
-        <h1>Road To Vostok — Contact Us</h1>
+        <h1>{{ $t('contactPage.title') }}</h1>
         <p class="lead">
-          Reach the Road To Vostok Guide site by email. We do not use a contact form on this page.
+          {{ $t('contactPage.lead') }}
         </p>
       </div>
     </section>
-    <section class="site-page-body" aria-label="Contact information">
+    <section class="site-page-body" :aria-label="$t('contactPage.bodyAriaLabel')">
       <div class="container">
         <div class="site-page-prose">
-          <h2>Email</h2>
-          <p>
-            For corrections to guides, broken links, copyright concerns, or general questions about this
-            website, write to:
-          </p>
+          <h2>{{ $t('contactPage.emailHeading') }}</h2>
+          <p v-html="$t('contactPage.emailIntroHtml')"></p>
           <p>
             <a class="contact-email" href="mailto:wyong@roadtovostok.org">wyong@roadtovostok.org</a>
           </p>
-          <p>
-            Please include a clear subject line and, when reporting a content issue, the page URL and a
-            short description of what should be fixed. We are a small editorial team; replies may take
-            several business days.
-          </p>
+          <p v-html="$t('contactPage.emailFollowHtml')"></p>
 
-          <h2>Game support</h2>
-          <p>
-            For bugs, purchases, or account issues with <strong>Road To Vostok</strong> itself, contact the
-            game’s official support channels (for example via Steam or the developer’s site). We cannot
-            reset saves, refund purchases, or change game builds.
-          </p>
+          <h2>{{ $t('contactPage.gameSupportHeading') }}</h2>
+          <p v-html="$t('contactPage.gameSupportHtml')"></p>
 
-          <h2>Privacy</h2>
-          <p>
-            If your message contains personal data, see our
-            <a href="/privacy-policy">Privacy Policy</a> for how we handle correspondence.
-          </p>
+          <h2>{{ $t('contactPage.privacyHeading') }}</h2>
+          <p v-html="$t('contactPage.privacyHtml')"></p>
 
           <p>
-            <a href="/about">About Us</a>
+            <a :href="getLocalizedPath('/about')">{{ $t('contactPage.footerAbout') }}</a>
             ·
-            <a href="/terms-of-service">Terms of Service</a>
+            <a :href="getLocalizedPath('/terms-of-service')">{{ $t('contactPage.footerTerms') }}</a>
           </p>
         </div>
       </div>
@@ -55,6 +41,9 @@
 </template>
 
 <script setup>
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+
+const { getLocalizedPath } = useLocalizedPath()
 </script>
 
 <style src="./site-pages.css"></style>

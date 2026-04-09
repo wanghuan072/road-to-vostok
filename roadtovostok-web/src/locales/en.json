@@ -1,0 +1,977 @@
+{
+  "tdk": {
+    "homePage": {
+      "title": "Road To Vostok Guide — Maps, Tasks, Weapons & Survival Database",
+      "description": "Road To Vostok survival guide and database: gameplay basics, Steam demo and Early Access, interactive map, task progression, weapon and item tables, strategy articles, mods overview, and roadmap context. Verify details against your build.",
+      "keywords": "Road To Vostok, survival guide, game database, Steam, Early Access, map, tasks, weapons, Area 05, Border Zone, Vostok, roadmap"
+    },
+    "wiki": {
+      "title": "Road To Vostok Wiki — Items, weapons, NPCs & databases",
+      "description": "Road To Vostok wiki-style item and database reference: weapons, ammunition, NPCs, tasks, fishing, and gathering. Cross-check with your game build.",
+      "keywords": "Road To Vostok, wiki, database, items, weapons, NPCs, tasks"
+    },
+    "aboutPage": {
+      "title": "About Us — Road To Vostok Guide",
+      "description": "About Road To Vostok Guide: English-language reference for maps, items, tasks, and survival systems. Independent resource; not affiliated with the developer or publisher.",
+      "keywords": "Road To Vostok Guide, about, game reference, survival guide, independent"
+    },
+    "contactPage": {
+      "title": "Contact — Road To Vostok Guide",
+      "description": "Contact Road To Vostok Guide by email for site feedback, corrections, or legal notices. No contact form on this page.",
+      "keywords": "Road To Vostok Guide, contact, email, roadtovostok.org"
+    },
+    "privacyPolicyPage": {
+      "title": "Privacy Policy — Road To Vostok Guide",
+      "description": "Privacy Policy for roadtovostok.org: browsing data, cookies, third-party services, retention, and how to contact the site operator.",
+      "keywords": "Road To Vostok Guide, privacy policy, roadtovostok.org, data protection, cookies"
+    },
+    "termsOfServicePage": {
+      "title": "Terms of Service — Road To Vostok Guide",
+      "description": "Terms of Service for Road To Vostok Guide: acceptable use, intellectual property notice, disclaimers, limitation of liability, and contact information.",
+      "keywords": "Road To Vostok Guide, terms of service, disclaimer, legal, reference site"
+    },
+    "copyrightPage": {
+      "title": "Copyright — Road To Vostok Guide",
+      "description": "Copyright notice: game trademarks and IP belong to respective owners; original site content and how to request takedowns for Road To Vostok Guide.",
+      "keywords": "Road To Vostok, copyright, trademark, DMCA, intellectual property"
+    },
+    "notFoundPage": {
+      "title": "Page not found",
+      "description": "This page does not exist on Road To Vostok Guide. Browse the home page, wiki, map, tasks, or guides.",
+      "keywords": "Road To Vostok Guide, 404"
+    },
+    "gettingStartedPage": {
+      "title": "How to Play Road To Vostok — Controls, First Steps & Tips",
+      "description": "Start here: Road To Vostok controls, first-session goals, shelter loop, loading shotguns, medical basics, and what to verify in your PC or Steam build.",
+      "keywords": "Road To Vostok how to play, controls, tutorial, first steps, load shotgun, shelter, Steam, PC"
+    },
+    "wikiHubPage": {
+      "title": "Road To Vostok Database — Gear, Tasks & Crafting Tables",
+      "description": "Curated Road To Vostok item and resource tables: weapons, ammunition, core quest items, shelter power, fishing, and gathering. Cross-check every value with your installed version.",
+      "keywords": "Road To Vostok database, item guide, weapons, ammunition, inverter, gathering, fishing, crafting"
+    },
+    "wikiCoreTasksPage": {
+      "title": "Road To Vostok Core Tasks — Inverter, B Cables & Quest Items",
+      "description": "Table of core task and power items in Road To Vostok: inverter, B cables, keys, and quest-related props. Cross-check with your installed demo or Early Access build.",
+      "keywords": "Road To Vostok inverter, B cable, core tasks, quest items, shelter power, all tasks"
+    },
+    "wikiWeaponsPage": {
+      "title": "Road To Vostok Weapons — Knives, Guns, SMGs & Calibers",
+      "description": "Road To Vostok weapon reference: knives through precision rifles and SMGs, with category notes, stat summaries, and loot context. Validate against your current patch.",
+      "keywords": "Road To Vostok weapons, AKM, MP7, Mosin, SVD, ammo, survival FPS"
+    },
+    "wikiAmmunitionPage": {
+      "title": "Road To Vostok Ammunition — Calibers & Ammo Types",
+      "description": "Ammunition and caliber reference for Road To Vostok: cartridge names, typical weapons, and notes for loadout planning. Confirm against your current game version.",
+      "keywords": "Road To Vostok ammunition, calibers, 7.62, 5.45, shotgun shells, ammo types"
+    },
+    "wikiFishingPage": {
+      "title": "Road To Vostok Fishing Guide — Checklist & Patch Notes",
+      "description": "Fishing in Road To Vostok: what to check in patch notes and demos, roadmap timing, and a practical checklist. Fishing systems evolve — verify in your build.",
+      "keywords": "Road To Vostok fishing, how to fish, roadmap, survival, Steam"
+    },
+    "wikiGatheringPage": {
+      "title": "Road To Vostok Gathering — Materials & Resource Table",
+      "description": "Gathering and raw materials in Road To Vostok: resource types, typical sources, and crafting relevance. Compare entries with your installed version.",
+      "keywords": "Road To Vostok gathering, materials, crafting, loot, survival"
+    },
+    "npcListPage": {
+      "title": "Road To Vostok NPCs — Traders & Area 05 Hubs",
+      "description": "Road To Vostok NPC reference: Generalist and Doctor traders, Village and Shipyard hubs, stock behavior, and cross-links from the interactive map.",
+      "keywords": "Road To Vostok NPCs, traders, Generalist, Doctor, Village, Area 05, game guide"
+    },
+    "npcDetailPage": {
+      "title": "NPC — Road To Vostok Reference",
+      "description": "Road To Vostok NPC reference: trader stock, tasks, locations, or combat behavior. Supplement official materials; confirm in your build.",
+      "keywords": "Road To Vostok, NPC, traders, game guide, reference"
+    },
+    "mapPage": {
+      "title": "Road To Vostok Map — Area 05, POIs & Regional Overview",
+      "description": "Road To Vostok Interactive map: Area 05, Border Zone, and Vostok points of interest, searchable index, and regional overview. Use alongside the in-game map and confirm coordinates in-client.",
+      "keywords": "Road To Vostok map, Area 05, Border Zone, Vostok, POI, location index"
+    },
+    "tasksPage": {
+      "title": "Road To Vostok Tasks — Progression, Border & Vostok Rules",
+      "description": "Road To Vostok tasks and progression reference: trader objectives, Border Zone crossings, Vostok permadeath rules, and suggested route order. Confirm quest behavior in your build.",
+      "keywords": "Road To Vostok all tasks, Border Zone, Vostok, traders, quests, permadeath"
+    },
+    "guidesListPage": {
+      "title": "Road To Vostok Guides — Weapons, Medical, Power & Roadmap",
+      "description": "Road To Vostok strategy guides: weapon loading, medical survival, shelter power, and Early Access roadmap context. Editorial reference — validate mechanics in your installed version.",
+      "keywords": "Road To Vostok guides, load shotgun, medical, inverter, roadmap"
+    },
+    "guideArticlePage": {
+      "title": "Guide — Road To Vostok",
+      "description": "In-depth Road To Vostok guide: tactics, systems, or roadmap analysis. Validate gameplay details against your installed build.",
+      "keywords": "Road To Vostok, strategy guide, walkthrough, Early Access"
+    },
+    "devUpdatesPage": {
+      "title": "Road To Vostok Updates & Early Access Roadmap",
+      "description": "Road To Vostok Early Access (Build 1 — Road) launched April 7, 2026. Public roadmap digest through Build 8, Steam news links, and where patch notes post. Editorial summary — confirm every date on Steam and roadtovostok.com.",
+      "keywords": "Road To Vostok roadmap, Early Access, dev updates, Steam news, builds, patch notes"
+    },
+    "posterPage": {
+      "title": "Road to Vostok Poster & Official Screenshots",
+      "description": "Road to vostok poster and screenshot hub: all twelve official stills from roadtovostok.com/screenshots (mirrored locally for readers). Wallpaper-friendly survival FPS art, lightbox view, links to Steam and the developer gallery. Road to Vostok® is a trademark of Road to Vostok Ltd.; this guide site is independent.",
+      "keywords": "road to vostok poster, Road To Vostok screenshots, official screenshots, wallpaper, Steam survival FPS, roadtovostok.com screenshots",
+      "ogImageAlt": "Road To Vostok official in-game screenshot — poster-style survival FPS still"
+    },
+    "modsListPage": {
+      "title": "Road To Vostok Mods — Editorial Spotlights & Recommended Packs",
+      "description": "Curated Road To Vostok mod recommendations: editorial spotlights on gameplay packs and tools we review—features, Metro Mod Loader notes, and safe install guidance. Not a full ModWorkshop mirror; no hosted .vmz files—downloads only via linked author pages.",
+      "keywords": "Road To Vostok mods, modding, Early Access, ModWorkshop, Metro Mod Loader, game guide"
+    },
+    "modArticlePage": {
+      "title": "Mod article — Road To Vostok",
+      "description": "Road To Vostok mod spotlight: feature overview, compatibility notes, loader requirements, and authoritative download links.",
+      "keywords": "Road To Vostok, mods, modding guide, Early Access"
+    }
+  },
+  "wiki": {},
+  "homePage": {
+    "hero": {
+      "eyebrow": "Survival guide · demo & Steam · Early Access",
+      "title": "Road To Vostok Guide — how to play, Steam demo, guns & roadmap",
+      "stripShotguns": "Load shotgun & guns",
+      "stripTasks": "All tasks & roadmap",
+      "stripMedical": "Inverter · medical · saves",
+      "leadBeforeLinks": "Notes for the Steam demo and Early Access: weapons and loading, inverter power, checklist-style tasks and roadmap timing, medical, PC saves, crafting, and fishing when your build includes it. Single-player survival; mod tools are on the official long-term plan. Use",
+      "linkStartHere": "Start here",
+      "leadAfterStart": "for the core loop,",
+      "linkMap": "Map",
+      "leadMid": "and",
+      "linkTasks": "Tasks",
+      "leadEnd": "for locations and objectives — the compass block below mirrors every main section.",
+      "caption": "Site backdrop — same art as full-page mood",
+      "btnAdvancedGuides": "Advanced guides",
+      "btnInteractiveMap": "Interactive map"
+    },
+    "compass": {
+      "kicker": "Site compass",
+      "title": "Every hub on this site",
+      "intro": "Same destinations as the top navigation, laid out for scanning — all paths exist in the router.",
+      "boardLabel": "Main sections",
+      "hubs": {
+        "gettingStarted": {
+          "title": "Start here",
+          "hint": "First session, controls, shelter loop"
+        },
+        "wiki": {
+          "title": "Wiki",
+          "hint": "Item tables — weapons, ammo, tasks"
+        },
+        "guides": {
+          "title": "Guides",
+          "hint": "Long-form player articles"
+        },
+        "map": {
+          "title": "Map",
+          "hint": "Area 05, Border, Vostok pins"
+        },
+        "tasks": {
+          "title": "Tasks",
+          "hint": "Objectives, traders, progression"
+        }
+      }
+    },
+    "featured": {
+      "kicker": "Wiki & guides",
+      "title": "Loot tables and survival write-ups",
+      "introBeforeGuides": "Spawn tables and trader lists drift between patches — we keep them here so you can compare notes with what you see in-game, not to mirror the header menu. Longer explainers sit under",
+      "linkGuides": "Guides",
+      "introBeforeMap": "; the ",
+      "linkMap": "map",
+      "leadMid": "and",
+      "linkTasks": "tasks",
+      "introEnd": "pages are for places and objectives. On the right: a few pages people open most often.",
+      "entryPointsLabel": "Entry points",
+      "crossWikiLabel": "Wiki hub",
+      "crossWikiHint": "Tables, NPCs, fishing, gathering",
+      "crossGuidesLabel": "Guides",
+      "crossGuidesHint": "Roadmap, medical, loadouts",
+      "crossMapLabel": "Map",
+      "crossMapHint": "Pins and location index",
+      "crossTasksLabel": "Tasks",
+      "crossTasksHint": "Objectives and zone rules",
+      "popularPicksLabel": "Popular picks",
+      "catalog": {
+        "weapons": {
+          "kicker": "Wiki",
+          "title": "Weapons",
+          "blurb": "Category tables and stats — verify against your build."
+        },
+        "npcs": {
+          "kicker": "Wiki",
+          "title": "NPCs & traders",
+          "blurb": "Who sells what; pairs with map pins."
+        },
+        "coreTasks": {
+          "kicker": "Wiki",
+          "title": "Core task items",
+          "blurb": "Inverter, cables, keys, and quest props."
+        },
+        "minefield": {
+          "kicker": "Guide",
+          "title": "Minefield tactics",
+          "blurb": "Mined border routes, AI pressure, and the Vostok gate."
+        }
+      }
+    },
+    "quest": {
+      "progression": {
+        "kicker": "Progression",
+        "title": "West to east: Area 05, the border, Vostok"
+      },
+      "official": {
+        "leadBefore": "On the",
+        "linkLabel": "official game page",
+        "afterLinkHtml": ", the world is laid out as three regions. You start in <strong>Area 05</strong>, an evacuated part of southeastern Finland: shelters, traders, tasks, and early loot, while <strong>Bandits</strong> patrol the zone. When you are geared enough, the road continues <strong>east</strong> into the <strong>Border Zone</strong>—guarded crossings between Finland and Russia—then, if you cross, into <strong>Vostok</strong> in Russia (high risk; permadeath—dying there costs your whole run stash, unlike the western zones)."
+      },
+      "sandbox": {
+        "beforeLinksHtml": "The game is still a <strong>sandbox</strong>: you are not forced into Vostok or a single playstyle. “Pushing east” simply means following that intended difficulty curve—secure the west, then attempt harder crossings—not a hidden story mandate. For step-by-step locations use "
+      },
+      "inline": {
+        "linkMap": "Map",
+        "commaAfterMap": ", ",
+        "linkTasks": "Tasks",
+        "midAndNpcs": " and ",
+        "linkNpcs": "NPCs",
+        "beforeStartHere": "; for controls and the survival loop,",
+        "linkStartHere": "Start here",
+        "periodEnd": "."
+      },
+      "zones": {
+        "area05": {
+          "kicker": "Finland · West",
+          "title": "Area 05",
+          "text": "Hub shelters, traders, tasks, starter gear. Hostile bandits in the evacuation zone."
+        },
+        "border": {
+          "kicker": "Crossing · Mid",
+          "title": "Border Zone",
+          "text": "Guarded border maps: mines, obstacles, boats, and corrupt Guards with air support."
+        },
+        "vostok": {
+          "kicker": "Russia · East",
+          "title": "Vostok",
+          "text": "Best loot, Military faction, armored threats. Every Vostok map is permadeath."
+        }
+      },
+      "demo": {
+        "heading": "Public demo: how the journal lines up",
+        "lead": "The playable demo is only a slice of that world, but it usually nudges you through the same idea: learn your shelter, clear Area 05–style work, follow traders and keys, then the UI may show a completion line often labeled “All Tasks.”"
+      },
+      "flow": {
+        "ariaLabel": "Typical demo order: shelter, Area 05, traders and keys, then All Tasks journal state",
+        "shelter": "Shelter & stash",
+        "area05": "Area 05 tasks",
+        "traders": "Traders & keys",
+        "allTasks": "All Tasks",
+        "journalBadge": "Journal",
+        "captionHtml": "“All Tasks” means the <strong>main task list for that demo build is finished</strong>. It is not a promise that Early Access or later builds will have nothing left to do."
+      },
+      "related": {
+        "label": "Open on this site",
+        "map": "Map",
+        "tasks": "Tasks",
+        "npcs": "NPCs",
+        "startHere": "Start here"
+      },
+      "zonesAriaLabel": "Three regions from west to east",
+      "relatedNavAria": "Site pages for regions and progression"
+    },
+    "devlog": {
+      "kicker": "Signals",
+      "title": "Road To Vostok roadmap & devlog",
+      "introBefore": "Long-form developer updates on YouTube cover Early Access scope, shelters, and later beats like fishing and seasons. On this site: ",
+      "linkGuides": "Guides",
+      "afterGuides": " include ",
+      "linkGeography": "border geography",
+      "betweenGeoMine": " and ",
+      "linkMinefield": "Minefield tactics",
+      "afterMinefield": "; ",
+      "linkRoadAhead": "Road ahead",
+      "afterRoadAhead": " covers builds and patch-style notes; when your build adds it, see ",
+      "linkFishing": "Wiki · Fishing",
+      "afterFishing": ".",
+      "iframeTitle": "Road To Vostok developer interview — Early Access and roadmap discussion",
+      "summaryHeading": "Episode summary",
+      "summaryBullet1": "Early Access goals: expanded maps, dynamic events, multi-shelter loops.",
+      "summaryBullet2": "Trader keys and shelter unlock cadence tied to exploration risk.",
+      "summaryBullet3": "Community wishlists, demo learnings, and transparent roadmap communication.",
+      "summaryBullet4": "How later builds are expected to layer quests, seasons, and naval content.",
+      "footerBeforeRoad": "For patch-style notes, visit ",
+      "footerLinkRoadAhead": "Road ahead",
+      "footerMid": ". Mod expectations: ",
+      "footerLinkMods": "Mods hub",
+      "footerEnd": "(no hosted files)."
+    },
+    "about": {
+      "kicker": "About",
+      "title": "About this Road To Vostok guide",
+      "text1": "Road To Vostok (Road To Vostok Ltd.) is a hardcore single-player survival FPS on the Finland–Russia border. You loot in Area 05, cross the Border Zone, and can enter Vostok under stricter permadeath rules than the rest of a run. The free Steam demo and the Early Access release drive most searches: how to play, loadout and medical questions, tasks, roadmap timing, and PC saves.",
+      "text2": "This English-language guide covers those topics with practical articles on loadouts, the long-term roadmap, crafting, and fishing as patches add them — always double-check what your installed build actually shows.",
+      "linkStartHere": "Start here",
+      "linkWiki": "Wiki",
+      "linkGuides": "Guides",
+      "linkAboutUs": "About us",
+      "hubNavAria": "Main site pages"
+    },
+    "faq": {
+      "kicker": "FAQ",
+      "title": "Frequently asked questions",
+      "hubNavAria": "Jump to detailed pages",
+      "relatedLabel": "Related pages",
+      "hubStartHere": "Start here",
+      "hubMinefield": "Minefield guide",
+      "hubGeography": "Geography guide",
+      "hubTasks": "Tasks",
+      "items": {
+        "releaseEa": {
+          "q": "What is the Road To Vostok release date and Early Access plan?",
+          "a": "Steam lists a planned Early Access window (check the store page for the current date). The in-game and site roadmap guides summarize build phases after that launch."
+        },
+        "multiplayer": {
+          "q": "Is Road To Vostok online or multiplayer?",
+          "a": "No. The Steam store describes it as a single-player survival game. There is no live co-op or MMO mode in that description."
+        },
+        "demoSteam": {
+          "q": "How do I get the Road To Vostok demo on Steam?",
+          "a": "Use the Steam store entry for Road To Vostok and install the separate demo app (Steam shows a demo download when available)."
+        },
+        "whatFirst": {
+          "q": "How to play Road To Vostok — what should I do first?",
+          "a": "Run any tutorial map the demo offers, unlock your shelter save point, then learn looting, traders, and how to load weapons before pushing toward harder maps."
+        },
+        "loadWeapons": {
+          "q": "Road To Vostok: how to load shotgun and how to load weapons?",
+          "a": "Magazine guns need loaded mags in your inventory; shotguns and bolt actions use manual per-round steps shown in the tutorial. See our Load weapon guide for a written checklist."
+        },
+        "inverter": {
+          "q": "Where is the Road To Vostok inverter or power gear?",
+          "a": "Use the inverter location guide: search industrial and utility POIs, pair with trader hints, and verify spawns in your patch."
+        },
+        "fracture": {
+          "q": "I died from a broken bone in Road To Vostok — what now?",
+          "a": "Treat fractures fast with splints or advanced kits before movement penalties and passive damage stack. The medical guide walks through afflictions and healing items."
+        },
+        "allTasks": {
+          "q": "How do I complete Road To Vostok all tasks?",
+          "a": "Follow the quest chain on the homepage, then the Tasks page for objectives and trader keys and the Map for POIs."
+        },
+        "roadmap": {
+          "q": "Where is the Road To Vostok roadmap?",
+          "a": "Open the roadmap guide and the Road ahead hub for build names, Early Access scope, and future systems like fishing and seasons as announced."
+        },
+        "mods": {
+          "q": "Are there Road To Vostok mods?",
+          "a": "The Steam Early Access FAQ states modding tools are planned toward full release. Demo builds may not expose full mod support yet."
+        },
+        "backup": {
+          "q": "How to backup Road To Vostok saves on PC?",
+          "a": "Paths vary by build and OS. Snapshot your user data folder before experiments; the Mods hub explains layout at a high level — always verify on your machine."
+        },
+        "crafting": {
+          "q": "How does crafting work in Road To Vostok?",
+          "a": "Crafting expands across Early Access builds. Check patch notes and in-game recipes; the Wiki tracks loot that feeds crafting loops."
+        },
+        "fishing": {
+          "q": "Is fishing in Road To Vostok?",
+          "a": "Fishing and naval content appear on the official multi-year roadmap for later builds — not always in every demo slice."
+        },
+        "officialSite": {
+          "q": "Is this an official Road To Vostok website?",
+          "a": "No. This is an independent reference site. Cross-check facts with your installed build and official channels."
+        }
+      }
+    }
+  },
+  "site": {
+    "breadcrumbHome": "Home",
+    "breadcrumbAriaLabel": "Breadcrumb",
+    "lastUpdatedLabel": "Last updated:",
+    "lastUpdatedDate": "March 27, 2026",
+    "navHome": "Home",
+    "navStartHere": "Start here",
+    "navPoster": "Poster",
+    "navRoadAhead": "Road ahead",
+    "navWiki": "Wiki",
+    "navMap": "Map",
+    "navTasks": "Tasks",
+    "navGuides": "Guides",
+    "navMods": "Mods",
+    "navNpcs": "NPCs",
+    "navWeapons": "Weapons",
+    "navAmmunition": "Ammunition",
+    "navFishing": "Fishing",
+    "navGathering": "Gathering",
+    "navCoreTasks": "Core tasks",
+    "brandName": "Road To Vostok",
+    "headerBrandHomeAria": "Road To Vostok Guide Home",
+    "headerNavMainAria": "Main",
+    "headerToggleMenu": "Toggle menu",
+    "footerNavAria": "Footer",
+    "footerLegalAria": "Site and legal",
+    "footerTagline": "Reference notes for loadouts, loot, maps, and routes across Area 05, the Border Zone, and Vostok.",
+    "footerDisclaimerHtml": "Not affiliated with the official Road To Vostok game or its developer. Game © respective rights holders. Guides reflect community knowledge and may change with updates and the public <a href=\"/dev-updates\">Road ahead &amp; roadmap digest</a>.",
+    "footerCopy": "© {year} Road To Vostok Guide — Survival FPS wiki &amp; task help.",
+    "footerAbout": "About",
+    "footerContact": "Contact",
+    "footerPrivacy": "Privacy",
+    "footerTerms": "Terms",
+    "footerCopyright": "Copyright",
+    "localeSwitchAria": "Interface language",
+    "localeCodeEn": "EN",
+    "localeCodeZh": "中文",
+    "localeNameEn": "English",
+    "localeNameZh": "Chinese"
+  },
+  "guidesListPage": {
+    "breadcrumb": "Road To Vostok Guides",
+    "title": "Road To Vostok Guides",
+    "subHtml": "Survival tips and progression — short reads. Pair with the <a href=\"/map\">map</a>, <a href=\"/tasks\">tasks</a>, and <a href=\"/wiki\">item database</a> when you need locations or tables. Confirm details in your installed build.",
+    "articlesAria": "Articles"
+  },
+  "wikiHubPage": {
+    "breadcrumb": "Wiki",
+    "title": "Road To Vostok item database",
+    "leadHtml": "Curated tables for <strong>Road To Vostok guns</strong> and <strong>ammunition types</strong>, <strong>inverter</strong> / <strong>B cables</strong> and other <strong>all tasks</strong> props, plus <strong>how to fish</strong> notes and field <strong>gathering</strong>. Long-form strategy lives under <a href=\"/guides\">Guides</a> — e.g. <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">real-world geography</a>, <a href=\"/guides/surviving-the-Minefield\">Minefield tactics</a>, or <a href=\"/guides/how-to-fish\">fishing spots &amp; pike</a>. Always verify values in your installed build.",
+    "categoriesAria": "Wiki categories",
+    "cardCoreKicker": "Core tasks &amp; power",
+    "cardCoreTitle": "Inverter, B cables &amp; quest props",
+    "cardCoreBlurb": "Shelter power chain, cabling, and keys tied to <strong>all tasks</strong> progression.",
+    "cardWeaponsKicker": "Weapons &amp; attachments",
+    "cardWeaponsTitle": "Guns &amp; platforms",
+    "cardWeaponsBlurb": "SMGs, rifles, shotguns, pistols — what each gun feeds and short attachment notes.",
+    "cardAmmoKicker": "Ammunition",
+    "cardAmmoTitle": "Calibers &amp; stacks",
+    "cardAmmoBlurb": "Per-round value, weight, max stack, and weapon compatibility from the wiki table.",
+    "cardFishKicker": "Fishing",
+    "cardFishTitle": "How to fish (Early Access)",
+    "cardFishBlurb": "Rods, bait, and roadmap caveats for <strong>how fish</strong> searches.",
+    "cardGatherKicker": "Gathering",
+    "cardGatherTitle": "Field resources",
+    "cardGatherBlurb": "Wood, scrap, forage, and raw inputs that feed survival and crafting loops.",
+    "cardNpcKicker": "Characters",
+    "cardNpcTitle": "NPCs &amp; hubs",
+    "cardNpcBlurb": "Traders, hostile notes, and the shelter <strong>cat companion</strong> — map pins link here where marked.",
+    "goOpenTable": "Open table →",
+    "goOpenGuideList": "Open guide list →",
+    "goOpenNpcWiki": "Open NPC wiki →"
+  },
+  "wikiCoreTasksPage": {
+    "breadcrumb": "Core tasks",
+    "title": "Road To Vostok Core Tasks &amp; Power Items",
+    "leadHtml": "Items players pair with shelter power, cabling, and quest chains (<strong>all tasks</strong>). Cross-check <a href=\"/map\">Map</a> and <a href=\"/tasks\">Tasks</a> for progression context; for long reads see <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">border geography</a> and <a href=\"/guides/surviving-the-Minefield\">Minefield tactics</a>.",
+    "tableAria": "Core tasks data table",
+    "colItem": "Item",
+    "colRole": "Role",
+    "colRelated": "Related progression",
+    "colNotes": "Notes",
+    "crossLinksHtml": "Related: <a href=\"/tasks\">Tasks</a> · <a href=\"/guides/surviving-the-Minefield\">Minefield guide</a> · <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">Geography guide</a>"
+  },
+  "wikiWeaponsPage": {
+    "breadcrumb": "Weapons",
+    "kicker": "Armory catalog",
+    "title": "Road To Vostok Weapons",
+    "leadHtml": "One scrollable catalog: melee, sidearms, long guns, and support weapons. Numeric fields follow the <strong>Road To Vostok Wiki (Fandom)</strong> hub pages below; portraits are the same wiki thumbnails, mirrored under <code>/images/wiki/weapons/</code>. Cross-check every value in your installed build — Early Access shifts stats, names, and loot.",
+    "ammoPairHtml": "Pair rounds with the <a href=\"/wiki/ammunition\">Ammunition</a> table (also sourced from Fandom).",
+    "sourcesAria": "Fandom data sources",
+    "sourcesLabel": "Wiki sources",
+    "datasetAria": "Dataset summary",
+    "statEntries": "Entries",
+    "statCategories": "Categories",
+    "statWithPortrait": "With portrait",
+    "jumpToClassAria": "Jump to weapon class",
+    "statsStripAria": "Weapon stats",
+    "tocTitle": "Classes",
+    "viewOnFandom": "View on Fandom",
+    "specWt": "Wt",
+    "specDmg": "Dmg",
+    "specCaliber": "Caliber",
+    "specMag": "Mag",
+    "specRpm": "RPM",
+    "specValue": "Value",
+    "specTrader": "Trader",
+    "specRarity": "Rarity",
+    "specPen": "Pen",
+    "magRoundsSuffix": " rnds",
+    "lootLabel": "Loot",
+    "summaryKgSuffix": " kg",
+    "summaryDmgPrefix": "DMG ",
+    "summaryMagRoundsSuffix": " rnds",
+    "summaryRpmSuffix": " RPM",
+    "summaryEuroSuffix": " €",
+    "summaryCost": "cost {n} €",
+    "categories": {
+      "knives": "Knives",
+      "pistols": "Pistols",
+      "rifles": "Rifles",
+      "smg": "SMGs & PDWs",
+      "shotguns": "Shotguns",
+      "bolt": "Bolt-Action",
+      "semi": "Semi-Automatic"
+    }
+  },
+  "wikiAmmunitionPage": {
+    "breadcrumb": "Ammunition",
+    "kicker": "Loadout reference",
+    "title": "Road To Vostok Ammunition",
+    "leadBeforeLink": "Cartridge value (€), per-round weight, max stack, and weapon compatibility are aligned with the ",
+    "leadAfterLinkHtml": " table; icons are the same wiki assets, hosted under <code>/images/wiki/Ammunition/</code>. Verify everything in your installed build — patches can change stats and weapon names.",
+    "datasetAria": "Dataset summary",
+    "statCalibers": "Calibers",
+    "statLightest": "Lightest round",
+    "statTightestStack": "Tightest stack cap",
+    "heroStatUnitKg": "kg",
+    "heroStatUnitRnds": "rnds",
+    "bodyAria": "Ammunition reference",
+    "filterPlatformAria": "Filter by platform",
+    "searchPlaceholder": "Caliber, weapon, note…",
+    "searchLabel": "Search",
+    "emptyResultsHtml": "No rounds match this filter and search. Clear the search or choose <strong>All</strong>.",
+    "imageSlotLabel": "Image slot",
+    "statValue": "Value",
+    "statWeight": "Weight",
+    "statStack": "Stack",
+    "unitEurPerRnd": "€ / rnd",
+    "unitKgPerRnd": "kg / rnd",
+    "unitMax": "max",
+    "feedsLabel": "Feeds",
+    "filters": {
+      "all": "All",
+      "rifle": "Rifle",
+      "dmr": "DMR / full-power",
+      "smg": "SMG",
+      "pistol": "Pistol",
+      "shotgun": "Shotgun"
+    },
+    "categories": {
+      "smg": "Submachine gun",
+      "rifle": "Assault / carbine",
+      "dmr": "Marksman / full-power",
+      "shotgun": "Shotgun",
+      "pistol": "Pistol",
+      "mixed": "Pistol & SMG platforms"
+    },
+    "footCrossCheckHtml": "Cross-check firearms and attachments on <a href=\"/wiki/weapons\">Weapons &amp; attachments</a>.",
+    "footAssetsHtml": "Images: add files under <code>public/images/wiki/ammo/</code> and set <code>imageUrl</code> in <code>src/data/item/ammunition/en.js</code> (path from site root, e.g. <code>/images/wiki/ammo/46x30.webp</code> — filename can match <code>id</code>)."
+  },
+  "wikiFishingPage": {
+    "breadcrumb": "Fishing",
+    "title": "Road To Vostok Fishing",
+    "lead": "How to fish in Road To Vostok depends on your build: fishing appears on the official long-term roadmap. Use this list as a reference and confirm against patch notes and your installed build.",
+    "checklistAria": "Fishing checklist",
+    "colTopic": "Topic",
+    "colWhatToCheck": "What to check",
+    "crossLinksHtml": "Patch timing: <a href=\"/dev-updates\">Road ahead</a> · <a href=\"/getting-started\">Start here</a>"
+  },
+  "wikiGatheringPage": {
+    "breadcrumb": "Gathering",
+    "title": "Road To Vostok Gathering &amp; Raw Materials",
+    "leadHtml": "Environmental loot and harvest nodes that feed crafting and survival. For combat loot, see <a href=\"/wiki/weapons\">weapons</a> and <a href=\"/wiki/ammunition\">ammunition</a>; crafting context on <a href=\"/getting-started\">Start here</a>.",
+    "tableAria": "Gathering data table",
+    "colResource": "Resource",
+    "colSource": "Typical source",
+    "colUsedFor": "Used for",
+    "crossLinksHtml": "Crafting context: <a href=\"/getting-started\">How to craft in Road To Vostok</a> · <a href=\"/wiki/ammunition\">Ammunition</a>"
+  },
+  "npcListPage": {
+    "breadcrumb": "NPCs",
+    "title": "Road To Vostok NPCs &amp; Hubs",
+    "leadHtml": "<strong>Bandits</strong>, <strong>Generalist</strong>, <strong>Doctor</strong>, and the shelter <strong>Cat (companion)</strong> — community- and press-sourced summaries for Road To Vostok. Cross-check tasks, stock, and companion features in your build; map pins link here where marked. Zone walkthroughs (e.g. Apartments, Minefield) live under <a href=\"/guides\">Guides</a>.",
+    "listAria": "NPC articles",
+    "cardGo": "Open article →"
+  },
+  "npcDetailPage": {
+    "showOnMap": "Show on map",
+    "openMap": "Open map",
+    "moreNpcs": "More NPCs",
+    "imageCaption": "Illustration for this NPC guide.",
+    "articleAsideAria": "About this article"
+  },
+  "mapPage": {
+    "breadcrumb": "Map",
+    "title": "Road To Vostok Map",
+    "introHtml": "Use the map for Area 05, the Border Zone, and Vostok, then read the regional overview and Area 05 notes below. For trader tasks, border crossings, and Vostok rules, open the <a href=\"/tasks\">Tasks</a> page. Verify against your installed build.",
+    "sectionKicker": "World overview",
+    "sectionTitle": "Road To Vostok Interactive Map",
+    "hintHtml": "Pins are <strong>locations only</strong> (Village, Shipyard, …). Each place can list <strong>NPCs, loot, tasks</strong> in the left panel and in the index below — those are not separate markers. After you select a pin or location row, the <strong>details drawer</strong> slides in from the left; close with <strong>×</strong> or reopen with <strong>Details</strong>. Sub-items with a wiki link jump to that page. Pins are <strong>approximate</strong>.",
+    "legendAria": "Pin colors by region",
+    "legendArea05": "Area 05",
+    "legendBorder": "Border Zone",
+    "legendVostok": "Vostok",
+    "detailsTab": "Details",
+    "mapAppAria": "Road To Vostok world map. Scroll or pinch to zoom; drag to pan.",
+    "drawerAria": "Selected map location",
+    "closeDrawerAria": "Close location panel",
+    "indexRailAria": "Location index below map, linked to pins",
+    "railKickerBelowMap": "Below map",
+    "railTitleLocationIndex": "Location index",
+    "railLeadHtml": "Grouped by region: each row is a <strong>location</strong>. Tap the row to fly the map and open the drawer; nested lines link to wiki or tasks when available.",
+    "area05ImageAria": "Area 05 reference illustration",
+    "bottomCrossLinksHtml": "Next: <a href=\"/tasks\">Tasks &amp; border / Vostok guide</a> · <a href=\"/wiki/core-tasks\">Core task items (wiki)</a> · <a href=\"/guides\">Guides</a>",
+    "kindNpc": "NPC",
+    "kindLoot": "Loot",
+    "kindTask": "Task",
+    "kindWeapon": "Weapon",
+    "kindFaction": "Faction",
+    "kindNote": "Note",
+    "kindFallback": "Item",
+    "drawerMoreLink": "More",
+    "drawerOpenLink": "Open",
+    "entriesAtLocation": "At this location",
+    "emptyPinTitle": "No pin selected",
+    "emptyPinHint": "Click a marker on the map or choose a row in the location index below.",
+    "errorDimensions": "Could not read map image dimensions.",
+    "errorImageLoad": "Map image failed to load. Check your connection and try again.",
+    "regionalSectionHtml": "<h2>Regional overview</h2><p class=\"guide-lead\">The official site describes a linear world progression: you start in <strong>Area 05</strong> (Finland), push east through the <strong>Border Zone</strong>, and may eventually enter <strong>Vostok</strong> in Russia — with different death consequences in each tier.</p><div class=\"regions\"><article><h3>Area 05</h3><p>An evacuated zone in southeastern Finland: shelters, traders, tasks, and starting loot for early survival. Hostile <strong>Bandits</strong> patrol the area.</p></article><article><h3>Border Zone</h3><p>A guarded frontier between Finland and Russia. Crossings differ: mines, obstacles, or waterways with boats. <strong>Guards</strong> are armed, corrupt, and may call air support.</p></article><article><h3>Vostok</h3><p>High-risk, high-reward Russian territory with the most valuable loot. Every Vostok map is a <strong>permadeath</strong> map. The <strong>Military</strong> faction fields heavy weapons and armored vehicles.</p></article></div>",
+    "area05DetailProseHtml": "<h2>Area 05 map guide &amp; where loot comes from</h2><p>According to the official <strong>Game</strong> page, Area 05 is your starting region: an evacuated zone in the <strong>southeastern part of Finland</strong> where you will find <strong>shelters</strong>, <strong>traders</strong>, <strong>tasks</strong>, and <strong>starting loot</strong> for initial survival. Your routine there is interrupted by hostile <strong>Bandits</strong> exploiting the lack of authority.</p><h3>Loot and “spawn points” in practice</h3><p>The same page lists <strong>physics-based loot</strong> as a core feature: items exist as physical objects in the world rather than abstract menu pickups. The developers do <strong>not</strong> publish a public table of fixed item coordinates on roadtovostok.com, and many systems are described as <strong>dynamic</strong> (events, weather, replayable runs). So this page does <strong>not</strong> list guaranteed refresh coordinates — those change with patches and procedural layout.</p><ul><li><strong>Scavenge logically:</strong> search the kinds of places the setting implies (settlements, roadsides, abandoned structures) and learn your current build’s loot density in-game.</li><li><strong>Use traders &amp; tasks:</strong> the official feature list includes trading and tasks as part of the core loop alongside shelters — barter and job rewards are intended progression paths, not only ground spawns.</li><li><strong>Stay alive to keep loot:</strong> if you die in Area 05, the official Vostok section states you only lose what you are <strong>carrying</strong> — not your whole progression context (that harsher rule applies to death inside Vostok).</li></ul><p class=\"guide-tools\">On this site: <a href=\"/wiki\">Wiki</a> (gear tables), <a href=\"/getting-started\">Start here</a> (loop, controls, medical basics), <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">Border geography guide</a>, <a href=\"/guides/surviving-the-Minefield\">Minefield guide</a>, <a href=\"/tasks\">Tasks &amp; Vostok rules</a>.</p>",
+    "area05MapImgAlt": "Area 05 — atmospheric map reference art alongside the guide"
+  },
+  "tasksPage": {
+    "breadcrumb": "Tasks",
+    "title": "Road To Vostok Tasks &amp; progression",
+    "introHtml": "Trader tasks, border crossings, and Vostok permadeath rules — aligned with the public roadtovostok.com game page. For the interactive map and POI index, open <a href=\"/map\">Map</a>. Verify details in your build.",
+    "railAside": "Tasks briefing",
+    "railTitle": "On this page",
+    "asideAllTasks": "All tasks",
+    "asideBorderVostok": "Border &amp; Vostok",
+    "bodyAllTasksHtml": "<h2>All tasks &amp; progression (what exists today vs roadmap)</h2><p>The public game page advertises <strong>trading &amp; tasks</strong> as a headline feature: you work with traders, complete jobs they offer, and use rewards to prepare for harder maps. That is the honest scope of “tasks” the developer markets for the survival loop leading eastward.</p><p>The <strong>Roadmap</strong> on the same site schedules deeper narrative systems later: <strong>Build 3 — Signal</strong> (target <strong>Q4 / 2026</strong>) adds a <strong>quest system</strong> and lore elements, and <strong>Build 8 — Silent Night</strong> (date TBA) lists a <strong>full questline</strong>. So searches for <strong>Road To Vostok all tasks</strong> should distinguish: <em>trader tasks and sandbox objectives in current / Early Access builds</em> versus a <em>single finished story questline</em> that the roadmap still places in a future build.</p><h3>Practical order players follow</h3><ol class=\"guide-steps\"><li>Secure a <strong>shelter</strong> save loop in Area 05 and learn trader locations (official text ties shelters, traders, and tasks together in the starting region).</li><li>Complete tasks that fund meds, ammo, and travel gear; stash surplus at the shelter before risky trips.</li><li>When ready, commit to a <strong>Border Zone</strong> crossing that matches your kit (mines vs boats vs obstacles — official crossing variety). For mine-heavy routes, see the guide <a href=\"/guides/surviving-the-Minefield\">Surviving the Minefield</a>.</li><li>Treat <strong>Vostok</strong> as optional endgame: permadeath rules apply only there per the official description — you are not forced into that playstyle for every run.</li></ol><p class=\"guide-tools\">Related: <a href=\"/wiki/core-tasks\">Core task items</a>, <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">Border geography</a>, <a href=\"/guides/surviving-the-Minefield\">Minefield tactics</a>, <a href=\"/map\">Map</a>, <a href=\"/dev-updates\">Road ahead</a> (builds), <a href=\"/guides\">All guides</a>.</p>",
+    "bodyBorderVostokHtml": "<h2>Border Zone &amp; Vostok crossing guide</h2><p>Once you have enough equipment, the official copy says your route continues <strong>east</strong> into the <strong>Border Zone</strong> — a guarded border between Finland and Russia. Each Border Zone map is said to have a <strong>crossing point</strong> with <strong>different challenges</strong>: some use <strong>mines</strong> or physical obstacles, others require <strong>waterways and boats</strong>.</p><h3>Guards and combat pressure</h3><p>The site names <strong>Guards</strong> as foreign border forces who are armed, corrupt, and may rely on <strong>air support</strong> to stop crossings. Plan stamina, cover, and medical supplies accordingly — see <a href=\"/getting-started\">Start here</a> (weapons &amp; loading) and the <a href=\"/wiki/weapons\">weapons table</a> for combat prep.</p><h3>After the border: Vostok rules</h3><p>If you cross successfully, you enter <strong>Vostok</strong> (Russia). Official text stresses:</p><ul><li><strong>High risk, high reward</strong> — the most valuable loot in the game.</li><li><strong>Permadeath on Vostok maps:</strong> dying in Area 05 or the Border Zone costs only what you carry; dying in Vostok costs <strong>everything</strong> (per the Game page).</li><li><strong>Military control:</strong> heavy weapons and armored vehicles; their stated goal is to push you back.</li></ul><p>The same page notes the game does <strong>not</strong> force you into the permadeath zone — you can stay in the sandbox elsewhere. Dynamic systems and randomized events are cited as replay drivers, with <strong>no single winning condition</strong>.</p><p class=\"guide-disclaimer\">Early Access launch is listed on the official roadmap as <strong>April 7, 2026</strong>; map count and faction behavior will evolve — re-read patch notes after updates.</p>"
+  },
+  "devUpdatesPage": {
+    "breadcrumb": "Road ahead",
+    "ariaReleaseSnapshot": "Release snapshot",
+    "ariaDisclaimer": "Disclaimer",
+    "heroKicker": "Roadmap · Early Access era",
+    "title": "Road To Vostok — Dev updates &amp; public roadmap",
+    "heroLeadHtml": "<strong>Steam Early Access</strong> (Build 1 — Road) went live on <strong>April 7, 2026</strong>. What follows is still the developer’s public build plan from <strong>roadtovostok.com/game</strong> — same names and target windows we use on this guide. Patch reality always wins: read <strong>Steam news</strong> for the live changelog, and treat this page as an editorial briefing, not a mirror of every hotfix.",
+    "railAside": "Roadmap briefing",
+    "railTitle": "On this page",
+    "asideRelease": "Release dates",
+    "asidePatch": "Patch sources",
+    "asideGuideSite": "This guide site",
+    "asideAllBuilds": "All builds",
+    "snapshotEaKicker": "Early Access · Build 1 — Road",
+    "snapshotEaDate": "April 7, 2026 — live",
+    "snapshotEaNoteHtml": "Official roadmap lists this date as the <strong>Early Access</strong> storefront release for <strong>Build 1 — Road</strong> on Steam (AppID <strong>1963610</strong>). EA is an evolving branch — not a final “1.0.” Prefer Steam announcements over any third-party summary when a build slips or a feature ships quietly.",
+    "snapshotFullKicker": "Full / 1.0 release",
+    "snapshotFullTba": "Not announced",
+    "snapshotFullNoteHtml": "The public roadmap runs through <strong>Build 8 — Silent Night</strong> (full questline, world options, new faction) with a <strong>TBA</strong> date. There is no separate official “full version ships on …” line yet — expect scope to evolve during Early Access.",
+    "liveChangesKicker": "Live changes",
+    "liveChangesTitle": "What did the developer update?",
+    "liveChangesIntroHtml": "Patch notes and surprise fixes almost always land in first-party channels first. This page does not mirror every hotfix — use these when you want the real changelog. The free <strong>demo</strong> remains on Steam as a separate AppID (<strong>2141300</strong>), linked from the main store page, if you want to compare behaviour without owning EA.",
+    "followSteamTitle": "Steam news",
+    "followSteamLead": "Store hub: ",
+    "followSteamMidHtml": " (AppID <strong>1963610</strong>). Event feed: ",
+    "followSteamTail": " — usual home for patch posts and announcements.",
+    "followSiteTitle": "Official site",
+    "followSiteRestHtml": " — game overview and the public <strong>Roadmap</strong> block (Build 1–8) we summarize below. Cross-check dates here if Steam wording shifts after an update.",
+    "followVideoTitle": "Dev video",
+    "followVideoLead": "Long-form progress and system deep-dives:",
+    "followVideoTail": " — great for intent and direction; not always 1:1 with the build number in your local client.",
+    "liveChangesCrossLinksHtml": "On this site: <a href=\"/guides\">Guides</a> (<a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">geography</a>, <a href=\"/guides/surviving-the-Minefield\">Minefield</a>) · <a href=\"/map\">Map</a> and <a href=\"/tasks\">Tasks</a> · <a href=\"/getting-started\">Start here</a>",
+    "guideSiteSectionKicker": "This guide site",
+    "guideSiteSectionTitle": "Built before EA, updated for the launch window",
+    "guideSiteSectionIntroHtml": "<strong>Road To Vostok Guide</strong> (this site) was prepared ahead of the April 2026 Early Access date. Wiki tables, map pins, and task notes are <strong>editorial references</strong> — they can lag a patch. After every Steam update, spot-check loot, traders, and mechanics in your own install; our disclaimers on database pages apply here too.",
+    "plannedBuildsKicker": "Planned builds",
+    "plannedBuildsTitle": "Public roadmap (all builds)",
+    "plannedBuildsIntroBeforeHtml": "Summarized from the official <strong>Roadmap</strong> on ",
+    "plannedBuildsIntroAfterHtml": ". <strong>Build 1</strong> shipped into Early Access on <strong>April 7, 2026</strong>; later build windows remain <strong>targets</strong>, not guarantees — watch Steam when a milestone slips or splits.",
+    "footnoteHtml": "Editorial summary only. If a date here disagrees with Steam or roadtovostok.com, trust the first-party source. Page revised April 2026 for the Early Access launch window; roadmap rows still match the official game page as of that pass.",
+    "buildTimelineTitle": "Build {id} — {name}",
+    "roadmapBuilds": [
+      {
+        "id": "1",
+        "name": "Road",
+        "window": "Apr. 7, 2026 · Early Access live",
+        "status": "live",
+        "lines": [
+          "Early Access launch",
+          "Gameplay loop",
+          "Expanded maps",
+          "Dynamic elements",
+          "Multi-shelter support"
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Nomads",
+        "window": "Q3 / 2026",
+        "status": "window",
+        "lines": [
+          "Friendly faction",
+          "AI vs. AI combat",
+          "AI variants",
+          "Driver (Trader)",
+          "New map & shelter"
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Signal",
+        "window": "Q4 / 2026",
+        "status": "window",
+        "lines": [
+          "Quest system",
+          "Lore elements",
+          "Civil defence shelters",
+          "Grandma (Trader)",
+          "New map & shelter"
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Gunslinger",
+        "window": "TBA",
+        "status": "tba",
+        "lines": [
+          "Weapon overhaul",
+          "Bullet penetration",
+          "Modding kits",
+          "Trader services",
+          "New map & shelter"
+        ]
+      },
+      {
+        "id": "5",
+        "name": "North",
+        "window": "TBA",
+        "status": "tba",
+        "lines": [
+          "Dynamic season",
+          "Train system",
+          "Hunting & wildlife",
+          "Shaman (Trader)",
+          "New map & shelter"
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Abyss",
+        "window": "TBA",
+        "status": "tba",
+        "lines": [
+          "Sea system",
+          "Patrol boats",
+          "Scuba gear",
+          "Fisherman (Trader)",
+          "New map & shelter"
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Enigma",
+        "window": "TBA",
+        "status": "tba",
+        "lines": [
+          "Dialogue system",
+          "SIGINT tools",
+          "Transmissions",
+          "Scientist (Trader)",
+          "New map & shelter"
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Silent Night",
+        "window": "TBA",
+        "status": "tba",
+        "lines": [
+          "Full questline",
+          "World options",
+          "Destruction system",
+          "FINSOF faction",
+          "New map & shelter"
+        ]
+      }
+    ]
+  },
+  "gettingStartedPage": {
+    "breadcrumb": "Start here",
+    "title": "Road To Vostok — How to play &amp; what to do first (PC &amp; Steam demo)",
+    "introHtml": "Core loop on PC, default-style controls (verify in your build), loading shotguns and other firearms (this page, <a href=\"/getting-started#weapons-loading\">weapon loading</a>), survival and medical when you fracture or bleed (<a href=\"/getting-started#medical\">medical section below</a>), and crafting context (<a href=\"/wiki\">Wiki</a>, <a href=\"/wiki/gathering\">Gathering</a>). Facts follow the public Steam listing and community write-ups — always confirm in your installed demo or Early Access build.",
+    "railAside": "Field briefing",
+    "railTitle": "Jump to",
+    "asideCore": "Core loop",
+    "asideControls": "Controls",
+    "asideWeapons": "Load weapons",
+    "asideMedical": "Medical",
+    "asideCrafting": "Crafting",
+    "sectionCoreHtml": "<h2>How to play — core loop</h2><p>On the official Steam store listing for the game, the developer describes Road To Vostok as a hardcore single-player survival game in a post-apocalyptic border region between Finland and Russia: you survive, loot, plan, and prepare to reach Vostok, where mistakes can end a run (including permadeath rules for that zone as described there). On this site, pair the overview with <a href=\"/tasks\">Tasks</a>, <a href=\"/map\">Map</a>, and <a href=\"/wiki/npcs\">NPCs</a> when you want locations and trader context.</p><ul><li>Area 05: shelters, traders, tasks, and starter loot — often the first sandbox before pushing east.</li><li>Border Zone: guarded crossings with varied hazards (mines, obstacles, boats on some routes, hostile guards with air support — per store description).</li><li>Vostok: high risk and high reward; store text states that dying in Vostok costs your full progression context for that run, unlike losses limited to what you carry elsewhere.</li><li>Shelters: described as safe zones and the way to save; loot can be stored and furniture customized in decoration mode.</li><li>Traders: barter economy (no cash); themed gear, tasks and services including medical care and weapon maintenance (same store page). See also <a href=\"/wiki/npcs\">NPCs &amp; traders</a>.</li><li>Loot and UI: physics-based loot, tetris-style inventories, combining and stacking items. Item tables live under <a href=\"/wiki\">Wiki</a>.</li></ul><p class=\"callout\">A separate Road To Vostok Demo is linked from Steam (AppID 2141300 on the same page). Public demos have included a tutorial map that introduces mechanics such as medical care, trading, shelter, and looting before the main sandbox — prioritize that before reading guides alone. Afterward, use <a href=\"/guides\">Guides</a> for written walkthroughs.</p>",
+    "sectionControlsHtml": "<h2>Basic controls &amp; how to move (PC)</h2><p>Default bindings change between builds. Use Settings → Controls in your installed copy as the source of truth. The table below is a reference layout aggregated from a third-party PC controls write-up (Magic Game World, first published 2021, since revised) so you know what to look for — not a guarantee for your patch. Weapon UI details also appear in the <a href=\"/getting-started#weapons-loading\">weapon loading section</a> on this page.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption class=\"sr-only\">Default-style PC controls for Road To Vostok (reference)</caption><thead><tr><th scope=\"col\">Category</th><th scope=\"col\">Action</th><th scope=\"col\">Typical binding</th></tr></thead><tbody><tr><td rowspan=\"7\">Movement</td><td>Move</td><td>W A S D</td></tr><tr><td>Run / sprint</td><td>Shift / Ctrl (per guide)</td></tr><tr><td>Jump</td><td>Space</td></tr><tr><td>Crouch</td><td>C</td></tr><tr><td>Lean</td><td>Q / E</td></tr><tr><td>Ladder</td><td>Middle mouse (per guide)</td></tr><tr><td>Interact</td><td>Middle mouse (per guide)</td></tr><tr><td rowspan=\"6\">Weapons</td><td>Fire / aim</td><td>LMB / RMB</td></tr><tr><td>Primary / secondary</td><td>1 / 2</td></tr><tr><td>Reload</td><td>R</td></tr><tr><td>Inspect weapon</td><td>X (per guide)</td></tr><tr><td>Fire mode</td><td>F</td></tr><tr><td>Low / high ready (scroll)</td><td>Mouse wheel</td></tr><tr><td rowspan=\"3\">Inventory</td><td>Grab item</td><td>G</td></tr><tr><td>Move / drop / rotate item</td><td>LMB / Shift+LMB / R (context)</td></tr><tr><td>Main UI</td><td>Tab</td></tr></tbody></table></div><p>The same guide lists extra weapon-UI shortcuts (attachments, hiding UI elements, optic adjustments while aiming). If a key does nothing, your build may have remapped it — check the in-game binding screen.</p>",
+    "sectionWeaponsHtml": "<h2>Road To Vostok: how to load shotgun, weapons &amp; magazines</h2><h3>Magazine-fed weapons</h3><p>Steam community discussions often explain that R is not a magic “fill gun” key: you need magazines loaded with cartridges in your kit. A common player-described flow is: remove a magazine, feed rounds into it in the inventory UI, re-seat the magazine, then use R to swap to a ready magazine during combat. Carrying a spare filled magazine is widely recommended so you can tap R under pressure. Details vary by weapon — see our <a href=\"/getting-started#weapons-loading\">weapon loading section</a> and the <a href=\"/wiki/ammunition\">Ammunition</a> table for cartridge planning.</p><h3>Shotguns, bolt-actions, and other non-magazine guns</h3><p>These weapons use manual, per-round loading. In Steam discussion threads about shotgun loading (late 2024), several players state that the in-game tutorial explicitly demonstrates the sequence for shotgun and sniper-style weapons (one reply: pick tutorial weapons and ammo, then follow on-screen steps).</p><p>Because keybindings differ by layout and patch, treat the following only as examples of what players reported in that thread — not universal facts:</p><ul><li>Hold Alt and use right mouse button to load (one commenter).</li><li>Hold Ctrl or right Alt and click left mouse repeatedly to feed shells (another commenter).</li><li>One player wrote that in their tutorial it was: press P, then load each round with LMB, and after firing use R to cycle the manual reload step — this may match a specific demo build only.</li></ul><p class=\"callout callout-warn\">If you spawn with an empty chamber, you can be killed before you finish loading. Do the tutorial segment for these weapons first, then confirm the same keys under Settings → Controls in your build.</p>",
+    "sectionMedicalHtml": "<h2>Survival &amp; medical — bleeding, fractures, healing</h2><p>Steam’s feature list positions medical supplies alongside food, tools, and weapons, and states traders can provide medical care as a service. For item-level numbers (heal amount, use time, which affliction each item clears), common reference points come from the community-run Road To Vostok wiki on Fandom (Medical and Afflictions articles). Those values can change with patches — verify against your in-game tooltips. For weapon planning use <a href=\"/wiki/weapons\">Weapons</a>; for mined borders and regional context see <a href=\"/guides/surviving-the-Minefield\">Minefield tactics</a> and <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">border geography</a>.</p><h3>Fractures (“died from broken bone” situations)</h3><p>Per the Fandom Afflictions page, a fracture causes ongoing health drain (listed as −1 health unit every 5 seconds in that article), plus heavy movement penalties (e.g. movement, swim, and jump reductions described there). Treat it as urgent: stabilize before you bleed stamina trying to sprint out.</p><p>The same wiki lists cures for fractures as Splint, Medkit, IFAK, and AFAK. The Medical table lists Splint as 4 seconds to apply, 0 direct health restored — it addresses the fracture condition rather than topping your HP bar by itself.</p><h3>Bleeding and restoring health</h3><p>Fandom’s affliction summary ties bleeding to faster health loss than a fracture and lists cures such as bandage, tourniquet, medkit, IFAK, and AFAK. The Medical item table (same wiki) lists example values such as Bandage — 4 s use, +20 health (and notes it addresses bleeding/burn in that row), Medkit / IFAK — 4 s, +50 health, with broader cure lists per item.</p><p>Long-term survival also depends on energy and hydration: the Afflictions page states that at 0 energy or 0 hydration you take passive health damage over time until you eat or drink appropriately — separate from gunshot fractures but just as lethal if ignored.</p><div class=\"table-wrap\"><table class=\"data-table data-table-compact\"><caption>Selected medical items (community wiki, April 2025 snapshot — verify in-game)</caption><thead><tr><th scope=\"col\">Item</th><th scope=\"col\">Use time</th><th scope=\"col\">Health (wiki)</th><th scope=\"col\">Notes (wiki)</th></tr></thead><tbody><tr><td>Bandage</td><td>4 s</td><td>+20</td><td>Bleeding / burn (per wiki table)</td></tr><tr><td>Tourniquet</td><td>4 s</td><td>0</td><td>Bleeding focus</td></tr><tr><td>Splint</td><td>4 s</td><td>0</td><td>Fracture</td></tr><tr><td>Medkit</td><td>4 s</td><td>+50</td><td>Multiple severe afflictions per wiki</td></tr><tr><td>IFAK</td><td>4 s</td><td>+50</td><td>Advanced field kit per wiki</td></tr></tbody></table></div><p>Task-related loot is summarized under <a href=\"/wiki/core-tasks\">Core task items</a>.</p>",
+    "sectionCraftingHtml": "<h2>How to craft in Road To Vostok</h2><p>Many players search how to craft in Road To Vostok (including the common typo “crasft”). Recipes and workbenches expand across Early Access patches — use in-game UI and patch notes as the source of truth. Our <a href=\"/wiki\">Wiki</a> lists loot that often feeds crafting loops: <a href=\"/wiki/gathering\">Gathering</a>, <a href=\"/wiki/fishing\">Fishing</a> when your build includes it, and <a href=\"/wiki/core-tasks\">Core task items</a> for shelter cabling questions. Build announcements sit in <a href=\"/dev-updates\">Road ahead</a>.</p>"
+  },
+  "guideArticlePage": {
+    "breadcrumbGuides": "Guides",
+    "asideAria": "About this guide",
+    "asideSummary": "Summary",
+    "asideUpdated": "Updated",
+    "asideTags": "Tags",
+    "asideMoreGuides": "More guides",
+    "asideAllGuides": "All guides"
+  },
+  "modArticlePage": {
+    "breadcrumbMods": "Mods",
+    "byAuthor": "By {author}",
+    "asideAria": "Mod facts",
+    "asideSummaryLabel": "Summary",
+    "metaDownloads": "Downloads",
+    "metaViews": "Views",
+    "listingDateLabel": "Listing date",
+    "tagsLabel": "Tags",
+    "communityNotesAria": "Community notes",
+    "communityNotesLabel": "Community notes",
+    "moreOnSiteLabel": "More on this site",
+    "allModsLink": "All mods",
+    "ctaModWorkshop": "Open on ModWorkshop",
+    "commentsDisclosure": "Short summaries for context—not verbatim Workshop posts."
+  },
+  "modsListPage": {
+    "breadcrumb": "Mods",
+    "eyebrow": "ModWorkshop · editorial spotlights",
+    "title": "Road To Vostok Mods",
+    "introP1Html": "Here we publish <strong>editorial mod spotlights</strong>: packs and tools we think are worth reading about before you install—gameplay overhauls, QoL compilations, loader requirements (e.g. Metro Mod Loader), and what each listing changes in a run. The list below is our curated recommendations, not an exhaustive ModWorkshop index; we add entries as we review them.",
+    "introP2Html": "We do <strong>not</strong> host <strong>.vmz</strong> files. Every card links to the author’s source (ModWorkshop or as stated) for the real download. Match the file to your demo or Early Access build and verify checksums before you load anything into the game.",
+    "boardAria": "Mod articles",
+    "mastLabel": "Manifest",
+    "mastListingOne": "listing",
+    "mastListingMany": "listings",
+    "mastNoteSuffix": "· independent reference",
+    "metaDetailsAria": "Details for {title}",
+    "metaLoader": "Loader",
+    "metaUpdated": "Updated",
+    "metaAuthor": "Author",
+    "metaVer": "Ver",
+    "metaDl": "DL",
+    "metaViews": "Views",
+    "rowLatest": "Latest",
+    "rowOpen": "Open",
+    "emptyState": "No mod articles yet."
+  },
+  "posterPage": {
+    "breadcrumb": "Road to Vostok poster",
+    "kicker": "Road To Vostok Guide",
+    "title": "Road to Vostok poster &amp; screenshot gallery",
+    "leadHtml": "This page is part of <strong>Road To Vostok Guide</strong> — our English survival reference for the game: <a href=\"/map\">interactive map</a>, <a href=\"/wiki\">item &amp; weapon database</a>, <a href=\"/tasks\">tasks &amp; progression</a>, <a href=\"/guides\">strategy guides</a>, and <a href=\"/dev-updates\">roadmap context</a>. Here we host a <strong>road to vostok poster</strong>-style gallery of in-game stills so you can browse atmosphere shots without leaving the guide. Click any image for a larger view.",
+    "btnStart": "Start here",
+    "btnWiki": "Wiki",
+    "btnMap": "Map",
+    "btnTasks": "Tasks",
+    "featureAriaOpen": "Open large view: {alt}",
+    "featureCapHtml": "Featured <strong>road to vostok poster</strong> still — screenshot 1 of 12. Click to enlarge.",
+    "galleryAria": "All screenshots",
+    "galleryTitle": "Gallery — 12 stills",
+    "galleryIntroHtml": "Twelve frames in one place for quick browsing. Pair with the <a href=\"/wiki\">wiki</a> for loadouts, the <a href=\"/map\">map</a> for POIs, and <a href=\"/guides\">guides</a> when you want written walkthroughs — all on this site.",
+    "tileAria": "View screenshot {index}: {alt}",
+    "footnoteAria": "Attribution",
+    "footnoteHtml": "Images © Road to Vostok Ltd. Source: roadtovostok.com/screenshots. Copied for guide context only; for press or commercial use follow the developer’s site and press kit terms.",
+    "lightboxTitle": "Screenshot {current} of {total}",
+    "lightboxClose": "Close",
+    "lightboxPrev": "Previous screenshot",
+    "lightboxNext": "Next screenshot",
+    "featureSectionAria": "Featured still"
+  },
+  "aboutPage": {
+    "breadcrumb": "About Us",
+    "title": "About Road To Vostok Guide",
+    "lead": "What this English-language guide is for, and what it is not.",
+    "bodyAriaLabel": "About this website",
+    "purposeHeading": "Our purpose",
+    "purposeText": "Road To Vostok Guide is a player-focused help site: maps and tasks, item tables, how-to guides for weapons and medical systems, save paths on PC, and summaries of public roadmap news. We aim for clear, searchable pages that complement the official game site and Steam store — not replace them.",
+    "independenceHeading": "Independence",
+    "independenceBeforeLinksHtml": "We are <strong>not</strong> the official Road To Vostok team. We do not speak for the developer or publisher. Builds, loot, and mechanics change; always double-check critical details in your installed game and on ",
+    "independenceBetweenLinks": " and ",
+    "exploreHeading": "How to explore",
+    "exploreHtml": "Start with <a href=\"/getting-started\">Start here</a> for controls and first steps, <a href=\"/wiki\">Wiki</a> for tables, and <a href=\"/map\">Map</a> / <a href=\"/tasks\">Tasks</a> for progression help. Updates and build names are summarized under <a href=\"/dev-updates\">Road ahead</a>.",
+    "contactHeading": "Contact",
+    "contactHtml": "Site feedback or legal notices:",
+    "footerContact": "Contact page",
+    "footerPrivacy": "Privacy Policy"
+  },
+  "contactPage": {
+    "breadcrumb": "Contact Us",
+    "title": "Road To Vostok — Contact Us",
+    "lead": "Reach the Road To Vostok Guide site by email. We do not use a contact form on this page.",
+    "bodyAriaLabel": "Contact information",
+    "emailHeading": "Email",
+    "emailIntroHtml": "For corrections to guides, broken links, copyright concerns, or general questions about this website, write to:",
+    "emailFollowHtml": "Please include a clear subject line and, when reporting a content issue, the page URL and a short description of what should be fixed. We are a small editorial team; replies may take several business days.",
+    "gameSupportHeading": "Game support",
+    "gameSupportHtml": "For bugs, purchases, or account issues with <strong>Road To Vostok</strong> itself, contact the game’s official support channels (for example via Steam or the developer’s site). We cannot reset saves, refund purchases, or change game builds.",
+    "privacyHeading": "Privacy",
+    "privacyHtml": "If your message contains personal data, see our <a href=\"/privacy-policy\">Privacy Policy</a> for how we handle correspondence.",
+    "footerAbout": "About Us",
+    "footerTerms": "Terms of Service"
+  },
+  "notFoundPage": {
+    "breadcrumb": "Not found",
+    "title": "Road To Vostok — Page not found",
+    "lead": "This URL is not part of Road To Vostok Guide. Use the navigation or return home.",
+    "backHome": "Back to home",
+    "linkWiki": "Wiki",
+    "linkMap": "Map",
+    "linkTasks": "Tasks",
+    "linkGuides": "Guides"
+  },
+  "copyrightPage": {
+    "breadcrumb": "Copyright",
+    "title": "Road To Vostok — Copyright",
+    "lead": "How original site content and third-party game materials are credited on Road To Vostok Guide.",
+    "bodyAriaLabel": "Copyright notice",
+    "gameHeading": "Game and trademarks",
+    "gameHtml": "<strong>Road To Vostok</strong> and related logos, artwork, and game content are the property of their respective rights holders. This site is not affiliated with those rights holders. All game-related trademarks are used here nominatively to identify the game for readers and players.",
+    "siteHeading": "Site content",
+    "siteHtml": "Original text, layout, and compilation on roadtovostok.org (unless otherwise noted) are copyright © the operators of Road To Vostok Guide, except where content is clearly quoted or attributed to community or official sources. Editorial guides and tables may incorporate factual gameplay information; that does not imply ownership of the underlying game assets or IP.",
+    "takedownHeading": "Fair use and takedown",
+    "takedownHtml": "If you are a rights holder and believe material on this site infringes your copyright, contact us with a clear description of the work and URL. We will review good-faith requests promptly. Email:",
+    "footerTerms": "Terms of Service",
+    "footerPrivacy": "Privacy Policy"
+  },
+  "privacyPolicyPage": {
+    "breadcrumb": "Privacy Policy",
+    "title": "Road To Vostok — Privacy Policy",
+    "lead": "How Road To Vostok Guide (roadtovostok.org) handles information when you browse this site.",
+    "bodyAriaLabel": "Privacy policy content",
+    "whoHeading": "Who we are",
+    "whoLead": "This website is an independent gaming reference for Road To Vostok. It is not operated by the game’s developer or publisher. For questions about this policy, contact",
+    "collectHeading": "Information we may collect",
+    "collectP1Html": "Like most websites, our hosting or infrastructure may automatically process technical data when you visit, such as your IP address, browser type, approximate region, timestamps, and pages requested. We do not use this information to identify you personally unless required for security or legal compliance.",
+    "collectP2Html": "If you email us, we receive your email address and the contents of your message so we can respond. We do not sell your email or use it for marketing unless you explicitly agree.",
+    "cookiesHeading": "Cookies and local storage",
+    "cookiesHtml": "The site may use cookies or similar technologies that are strictly necessary for basic operation (for example, session or preference storage in your browser). We do not run third-party advertising cookies on these pages as part of this policy’s scope. If we add analytics or embedded media that set their own cookies, we will update this policy and, where required, your consent flow.",
+    "thirdPartyHeading": "Third-party services",
+    "thirdPartyHtml": "Pages may link to external sites (for example, the official game site, Steam, or YouTube). Those services have their own privacy practices; we are not responsible for their policies or data use.",
+    "childrenHeading": "Children",
+    "childrenHtml": "This site is a general-audience game guide. We do not knowingly collect personal information from children. If you believe a child has sent us personal data, contact us at the address above and we will delete it where appropriate.",
+    "rightsHeading": "Your rights",
+    "rightsHtml": "Depending on where you live, you may have rights to access, correct, or delete personal data we hold about you (for example, email correspondence). Contact us using the email above and we will respond within a reasonable time.",
+    "changesHeading": "Changes",
+    "changesHtml": "We may update this Privacy Policy when the site or legal requirements change. The “Last updated” date at the top will be revised when we do. Continued use of the site after changes means you accept the updated policy.",
+    "footerTerms": "Terms of Service",
+    "footerContact": "Contact"
+  },
+  "termsOfServicePage": {
+    "breadcrumb": "Terms of Service",
+    "title": "Road To Vostok — Terms of Service",
+    "lead": "Rules for using Road To Vostok Guide (roadtovostok.org). By using the site, you agree to these terms.",
+    "bodyAriaLabel": "Terms of service content",
+    "aboutHeading": "About this site",
+    "aboutHtml": "Road To Vostok Guide is an independent reference site. It is not endorsed by, affiliated with, or sponsored by the developers or publishers of Road To Vostok or any related trademark holders. Game names and marks belong to their respective owners.",
+    "useHeading": "Use of content",
+    "useHtml": "Guides, tables, and text are provided for personal, non-commercial reference to help players. You may link to our pages. Do not scrape or redistribute large portions of the site in a way that competes with or replaces the live site without permission. Game data and numbers may be inaccurate or outdated; always verify against your installed build and official sources.",
+    "warrantyHeading": "No warranty",
+    "warrantyHtml": "The site is provided “as is.” We make no guarantee of accuracy, availability, or fitness for a particular purpose. We are not liable for any loss or damage arising from your use of the site or reliance on its content.",
+    "conductHeading": "Conduct",
+    "conductHtml": "Do not use the site to harass others, distribute malware, attempt unauthorized access to our systems, or break applicable laws. We may restrict access if we reasonably believe these terms are violated.",
+    "changesHeading": "Changes",
+    "changesHtml": "We may change these Terms of Service at any time. We will update the “Last updated” date when we do. Your continued use of the site after changes constitutes acceptance of the new terms.",
+    "contactHeading": "Contact",
+    "contactHtml": "Questions about these terms:",
+    "footerPrivacy": "Privacy Policy",
+    "footerCopyright": "Copyright"
+  }
+}

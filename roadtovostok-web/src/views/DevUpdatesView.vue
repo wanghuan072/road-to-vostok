@@ -8,18 +8,14 @@
           style="min-width: 320px; min-height: 50px"
         ></div>
         <div class="page-hero-content">
-          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+          <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true">/</span>
-            <span>Road ahead</span>
+            <span>{{ $t('devUpdatesPage.breadcrumb') }}</span>
           </nav>
-          <p class="hero-kicker">Roadmap &amp; release timing</p>
-          <h1>Road To Vostok — Dev updates &amp; when the game ships</h1>
-          <p class="hero-lead">
-            What is on the public roadmap, when Early Access is targeted, and where patch notes actually
-            post. Summarized from the roadtovostok.com game page as of our last pass — confirm on Steam and
-            the live site before you plan around a date.
-          </p>
+          <p class="hero-kicker">{{ $t('devUpdatesPage.heroKicker') }}</p>
+          <h1 v-html="$t('devUpdatesPage.title')"></h1>
+          <p class="hero-lead" v-html="$t('devUpdatesPage.heroLeadHtml')"></p>
         </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
@@ -41,8 +37,8 @@
 
     <div ref="railScrollRoot" class="container dev-updates-body">
       <PageRail
-        aside-label="Roadmap briefing"
-        title="On this page"
+        :aside-label="$t('devUpdatesPage.railAside')"
+        :title="$t('devUpdatesPage.railTitle')"
         :scroll-root="railScrollRoot"
         :links="asideLinks"
       >
@@ -61,73 +57,66 @@
             ></ins>
           </aside>
         </template>
-        <section data-nav-anchor="release-snapshot" class="snap-section" aria-label="Release snapshot">
+        <section data-nav-anchor="release-snapshot" class="snap-section" :aria-label="$t('devUpdatesPage.ariaReleaseSnapshot')">
           <div class="release-snapshot">
             <div class="release-snapshot-main">
-              <p class="release-snapshot-kicker">Early Access</p>
-              <p class="release-snapshot-date">April 7, 2026</p>
-              <p class="release-snapshot-note">
-                Listed on the official site as the <strong>Early Access</strong> / <strong>Build 1 — Road</strong>
-                target. That is a playable EA launch on Steam — not the same as a final “1.0” or boxed
-                “full release.”
-              </p>
+              <p class="release-snapshot-kicker">{{ $t('devUpdatesPage.snapshotEaKicker') }}</p>
+              <p class="release-snapshot-date">{{ $t('devUpdatesPage.snapshotEaDate') }}</p>
+              <p class="release-snapshot-note" v-html="$t('devUpdatesPage.snapshotEaNoteHtml')"></p>
             </div>
             <div class="release-snapshot-aside">
-              <p class="release-snapshot-kicker">Full / 1.0 release</p>
-              <p class="release-snapshot-tba">Not announced</p>
-              <p class="release-snapshot-note">
-                The public roadmap runs through <strong>Build 8 — Silent Night</strong> (full questline,
-                world options, new faction) with a <strong>TBA</strong> date. There is no separate official
-                “full version ships on …” line yet — expect scope to evolve during Early Access.
-              </p>
+              <p class="release-snapshot-kicker">{{ $t('devUpdatesPage.snapshotFullKicker') }}</p>
+              <p class="release-snapshot-tba">{{ $t('devUpdatesPage.snapshotFullTba') }}</p>
+              <p class="release-snapshot-note" v-html="$t('devUpdatesPage.snapshotFullNoteHtml')"></p>
             </div>
           </div>
         </section>
 
         <section data-nav-anchor="live-changes" class="follow-section page-body-section">
           <header class="section-head">
-            <p class="section-kicker">Live changes</p>
-            <h2>What did the developer update?</h2>
-            <p class="section-intro">
-              Patch notes and surprise fixes almost always land in first-party channels first. This page
-              does not mirror every hotfix — use these when you want the real changelog.
-            </p>
+            <p class="section-kicker">{{ $t('devUpdatesPage.liveChangesKicker') }}</p>
+            <h2>{{ $t('devUpdatesPage.liveChangesTitle') }}</h2>
+            <p class="section-intro" v-html="$t('devUpdatesPage.liveChangesIntroHtml')"></p>
           </header>
           <ul class="follow-cards" role="list">
             <li class="follow-card">
-              <h3>Steam news</h3>
+              <h3>{{ $t('devUpdatesPage.followSteamTitle') }}</h3>
               <p>
-                The Steam store page for <strong>Road to Vostok</strong> (AppID <strong>1963610</strong>)
-                is where patch posts and announcements usually appear for players who own or wishlist the
-                game.
+                {{ $t('devUpdatesPage.followSteamLead') }}
+                <a
+                  href="https://store.steampowered.com/app/1963610/Road_to_Vostok/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >Road to Vostok</a><span v-html="$t('devUpdatesPage.followSteamMidHtml')"></span><a
+                  href="https://store.steampowered.com/news/app/1963610"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >Steam news for this app</a>{{ $t('devUpdatesPage.followSteamTail') }}
               </p>
             </li>
             <li class="follow-card">
-              <h3>Official site</h3>
+              <h3>{{ $t('devUpdatesPage.followSiteTitle') }}</h3>
               <p>
-                <strong>roadtovostok.com</strong> carries the same high-level roadmap and game overview;
-                cross-check dates there if Steam wording shifts after an update.
+                <a
+                  href="https://www.roadtovostok.com/game"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                ><strong>roadtovostok.com/game</strong></a><span v-html="$t('devUpdatesPage.followSiteRestHtml')"></span>
               </p>
             </li>
             <li class="follow-card">
-              <h3>Dev video</h3>
+              <h3>{{ $t('devUpdatesPage.followVideoTitle') }}</h3>
               <p>
-                Long-form progress and system deep-dives are often shown on the developer’s
-                <strong>YouTube</strong> channel — useful for intent and direction, not always 1:1 with a
-                build number in the client.
+                {{ $t('devUpdatesPage.followVideoLead') }}
+                <a
+                  href="https://www.youtube.com/@roadtovostok"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                ><strong>YouTube @roadtovostok</strong></a>{{ $t('devUpdatesPage.followVideoTail') }}
               </p>
             </li>
           </ul>
-          <p class="cross-links">
-            On this site:
-            <a href="/guides">Guides</a>
-            (<a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">geography</a>,
-            <a href="/guides/surviving-the-Minefield">Minefield</a>)
-            ·
-            <a href="/map">Map</a> and <a href="/tasks">Tasks</a>
-            ·
-            <a href="/getting-started">Start here</a>
-          </p>
+          <p class="cross-links" v-html="$t('devUpdatesPage.liveChangesCrossLinksHtml')"></p>
         </section>
 
         <div class="container">
@@ -146,13 +135,24 @@
           </aside>
         </div>
 
+        <section data-nav-anchor="guide-site" class="page-body-section">
+          <header class="section-head">
+            <p class="section-kicker">{{ $t('devUpdatesPage.guideSiteSectionKicker') }}</p>
+            <h2>{{ $t('devUpdatesPage.guideSiteSectionTitle') }}</h2>
+            <p class="section-intro" v-html="$t('devUpdatesPage.guideSiteSectionIntroHtml')"></p>
+          </header>
+        </section>
+
         <section data-nav-anchor="public-roadmap" class="roadmap-section page-body-section">
           <header class="section-head">
-            <p class="section-kicker">Planned builds</p>
-            <h2>Public roadmap (all builds)</h2>
+            <p class="section-kicker">{{ $t('devUpdatesPage.plannedBuildsKicker') }}</p>
+            <h2>{{ $t('devUpdatesPage.plannedBuildsTitle') }}</h2>
             <p class="section-intro">
-              Summarized from the official <strong>Roadmap</strong> block on roadtovostok.com. Release
-              windows after Build 1 are targets, not guarantees — watch Steam when a build slips or splits.
+              <span v-html="$t('devUpdatesPage.plannedBuildsIntroBeforeHtml')"></span><a
+                href="https://www.roadtovostok.com/game"
+                rel="noopener noreferrer"
+                target="_blank"
+              >roadtovostok.com/game</a><span v-html="$t('devUpdatesPage.plannedBuildsIntroAfterHtml')"></span>
             </p>
           </header>
           <ol class="build-timeline" role="list">
@@ -165,7 +165,9 @@
               <div class="build-timeline-marker" aria-hidden="true" />
               <div class="build-timeline-body">
                 <div class="build-timeline-top">
-                  <h3 class="build-timeline-title">Build {{ b.id }} — {{ b.name }}</h3>
+                  <h3 class="build-timeline-title">
+                    {{ $t('devUpdatesPage.buildTimelineTitle', { id: b.id, name: b.name }) }}
+                  </h3>
                   <span class="build-timeline-date" :data-status="b.status">{{ b.window }}</span>
                 </div>
                 <ul class="build-timeline-bullets">
@@ -192,12 +194,9 @@
           </aside>
         </div>
 
-        <section class="footnote-section page-body-section" aria-label="Disclaimer">
-          <p class="footnote">
-            Editorial summary only. If a date here disagrees with Steam or roadtovostok.com, trust the
-            first-party source.
-            </p>
-          </section>
+        <section class="footnote-section page-body-section" :aria-label="$t('devUpdatesPage.ariaDisclaimer')">
+          <p class="footnote" v-html="$t('devUpdatesPage.footnoteHtml')"></p>
+        </section>
         </PageRail>
       </div>
     </div>
@@ -205,8 +204,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue'
+import { ref, onMounted, nextTick, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import PageRail from '../components/PageRail.vue'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
+
+const { getLocalizedPath } = useLocalizedPath()
 
 const railScrollRoot = ref(null)
 const devUpdatesAdsRoot = ref(null)
@@ -249,119 +252,19 @@ onMounted(() => {
   })
 })
 
-const asideLinks = [
-  { label: 'Release dates', scrollKey: 'release-snapshot' },
-  { label: 'Patch sources', scrollKey: 'live-changes' },
-  { label: 'All builds', scrollKey: 'public-roadmap' },
-]
+const { t, tm } = useI18n()
+const asideLinks = computed(() => [
+  { label: t('devUpdatesPage.asideRelease'), scrollKey: 'release-snapshot' },
+  { label: t('devUpdatesPage.asidePatch'), scrollKey: 'live-changes' },
+  { label: t('devUpdatesPage.asideGuideSite'), scrollKey: 'guide-site' },
+  { label: t('devUpdatesPage.asideAllBuilds'), scrollKey: 'public-roadmap' },
+])
 
-/** Mirrors official roadtovostok.com /game roadmap section (build names, windows, bullet themes). */
-const roadmapBuilds = [
-  {
-    id: '1',
-    name: 'Road',
-    window: 'Apr. 7, 2026',
-    status: 'dated',
-    lines: [
-      'Early Access launch',
-      'Gameplay loop',
-      'Expanded maps',
-      'Dynamic elements',
-      'Multi-shelter support',
-    ],
-  },
-  {
-    id: '2',
-    name: 'Nomads',
-    window: 'Q3 / 2026',
-    status: 'window',
-    lines: [
-      'Friendly faction',
-      'AI vs. AI combat',
-      'AI variants',
-      'Driver (Trader)',
-      'New map & shelter',
-    ],
-  },
-  {
-    id: '3',
-    name: 'Signal',
-    window: 'Q4 / 2026',
-    status: 'window',
-    lines: [
-      'Quest system',
-      'Lore elements',
-      'Civil defence shelters',
-      'Grandma (Trader)',
-      'New map & shelter',
-    ],
-  },
-  {
-    id: '4',
-    name: 'Gunslinger',
-    window: 'TBA',
-    status: 'tba',
-    lines: [
-      'Weapon overhaul',
-      'Bullet penetration',
-      'Modding kits',
-      'Trader services',
-      'New map & shelter',
-    ],
-  },
-  {
-    id: '5',
-    name: 'North',
-    window: 'TBA',
-    status: 'tba',
-    lines: [
-      'Dynamic season',
-      'Train system',
-      'Hunting & wildlife',
-      'Shaman (Trader)',
-      'New map & shelter',
-    ],
-  },
-  {
-    id: '6',
-    name: 'Abyss',
-    window: 'TBA',
-    status: 'tba',
-    lines: [
-      'Sea system',
-      'Patrol boats',
-      'Scuba gear',
-      'Fisherman (Trader)',
-      'New map & shelter',
-    ],
-  },
-  {
-    id: '7',
-    name: 'Enigma',
-    window: 'TBA',
-    status: 'tba',
-    lines: [
-      'Dialogue system',
-      'SIGINT tools',
-      'Transmissions',
-      'Scientist (Trader)',
-      'New map & shelter',
-    ],
-  },
-  {
-    id: '8',
-    name: 'Silent Night',
-    window: 'TBA',
-    status: 'tba',
-    lines: [
-      'Full questline',
-      'World options',
-      'Destruction system',
-      'FINSOF faction',
-      'New map & shelter',
-    ],
-  },
-]
+/** Roadmap rows from locale (mirrors official roadtovostok.com/game). */
+const roadmapBuilds = computed(() => {
+  const raw = tm('devUpdatesPage.roadmapBuilds')
+  return Array.isArray(raw) ? raw : []
+})
 </script>
 
 <style scoped>
@@ -526,6 +429,15 @@ const roadmapBuilds = [
   color: var(--color-muted);
 }
 
+.follow-card a {
+  color: var(--color-primary-soft);
+  text-decoration: none;
+}
+
+.follow-card a:hover {
+  text-decoration: underline;
+}
+
 .cross-links {
   margin: 0;
   font-size: 0.88rem;
@@ -589,7 +501,8 @@ const roadmapBuilds = [
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-bg) 92%, transparent);
 }
 
-.build-timeline-item[data-status='dated'] .build-timeline-marker {
+.build-timeline-item[data-status='dated'] .build-timeline-marker,
+.build-timeline-item[data-status='live'] .build-timeline-marker {
   border-color: var(--color-ice);
   background: color-mix(in srgb, var(--color-ice) 35%, var(--color-panel));
 }
@@ -636,7 +549,8 @@ const roadmapBuilds = [
   border: 1px solid var(--color-border);
 }
 
-.build-timeline-date[data-status='dated'] {
+.build-timeline-date[data-status='dated'],
+.build-timeline-date[data-status='live'] {
   color: var(--color-primary-soft);
   border-color: color-mix(in srgb, var(--color-ice) 42%, var(--color-border));
 }

@@ -1,0 +1,976 @@
+{
+  "tdk": {
+    "homePage": {
+      "title": "Road To Vostok 指南 — 地图、任务、武器与生存资料库",
+      "description": "Road To Vostok 生存指南与资料站：玩法基础、Steam 试玩与抢先体验、互动地图、任务推进、武器与物品表、攻略文章、模组概览与路线图背景。请结合你的游戏版本核对细节。",
+      "keywords": "Road To Vostok, 生存指南, 游戏资料, Steam, 抢先体验, 地图, 任务, 武器, 05 区, 边境地带, 符拉迪沃斯托克, 路线图"
+    },
+    "wiki": {
+      "title": "Road To Vostok 维基 — 物品、武器、NPC 与数据库",
+      "description": "Road To Vostok 维基式物品与数据库参考：武器、弹药、NPC、任务、钓鱼与采集。请与当前游戏版本对照。",
+      "keywords": "Road To Vostok, 维基, 数据库, 物品, 武器, NPC, 任务"
+    },
+    "aboutPage": {
+      "title": "关于我们 — Road To Vostok 指南",
+      "description": "关于 Road To Vostok 指南：面向中文读者的地图、物品、任务与生存系统参考。独立站点，与开发商或发行方无关联。",
+      "keywords": "Road To Vostok 指南, 关于, 游戏参考, 生存指南, 独立"
+    },
+    "contactPage": {
+      "title": "联系我们 — Road To Vostok 指南",
+      "description": "通过邮件联系 Road To Vostok 指南：站点反馈、勘误或法律通知。本页不提供表单。",
+      "keywords": "Road To Vostok 指南, 联系, 邮件, roadtovostok.org"
+    },
+    "privacyPolicyPage": {
+      "title": "隐私政策 — Road To Vostok 指南",
+      "description": "roadtovostok.org 隐私政策：浏览数据、Cookie、第三方服务、保留期限及如何联系站长。",
+      "keywords": "Road To Vostok 指南, 隐私政策, roadtovostok.org, 数据保护, Cookie"
+    },
+    "termsOfServicePage": {
+      "title": "服务条款 — Road To Vostok 指南",
+      "description": "Road To Vostok 指南服务条款：可接受使用、知识产权声明、免责声明、责任限制与联系方式。",
+      "keywords": "Road To Vostok 指南, 服务条款, 免责声明, 法律, 参考站"
+    },
+    "copyrightPage": {
+      "title": "版权 — Road To Vostok 指南",
+      "description": "版权声明：游戏商标与知识产权归权利人所有；本站原创内容说明及侵权下架请求方式。",
+      "keywords": "Road To Vostok, 版权, 商标, DMCA, 知识产权"
+    },
+    "notFoundPage": {
+      "title": "页面未找到",
+      "description": "Road To Vostok 指南上不存在此页面。可返回首页、维基、地图、任务或攻略。",
+      "keywords": "Road To Vostok 指南, 404"
+    },
+    "gettingStartedPage": {
+      "title": "Road To Vostok 怎么玩 — 操作、开局与技巧",
+      "description": "从这里开始：Road To Vostok 操作、首局目标、避难所循环、霰弹枪装填、医疗基础，以及在 PC 或 Steam 版本中需自行核对的内容。",
+      "keywords": "Road To Vostok 怎么玩, 操作, 教程, 开局, 装填霰弹枪, 避难所, Steam, PC"
+    },
+    "wikiHubPage": {
+      "title": "Road To Vostok 数据库 — 装备、任务与制作表",
+      "description": "Road To Vostok 物品与资源表：武器、弹药、核心任务道具、避难所电力、钓鱼与采集。请与已安装版本逐项核对。",
+      "keywords": "Road To Vostok 数据库, 物品指南, 武器, 弹药, 逆变器, 采集, 钓鱼, 制作"
+    },
+    "wikiCoreTasksPage": {
+      "title": "Road To Vostok 核心任务 — 逆变器、B 线与任务物品",
+      "description": "Road To Vostok 核心任务与电力物品表：逆变器、B 线、钥匙及任务相关道具。请与试玩或抢先体验版本对照。",
+      "keywords": "Road To Vostok 逆变器, B 线, 核心任务, 任务物品, 避难所电力, 全任务"
+    },
+    "wikiWeaponsPage": {
+      "title": "Road To Vostok 武器 — 刀具、枪械、冲锋枪与口径",
+      "description": "Road To Vostok 武器参考：从匕首到精确射手枪与冲锋枪，含分类说明、数据摘要与战利品语境。请按当前补丁核对。",
+      "keywords": "Road To Vostok 武器, AKM, MP7, 莫辛, SVD, 弹药, 生存 FPS"
+    },
+    "wikiAmmunitionPage": {
+      "title": "Road To Vostok 弹药 — 口径与弹种",
+      "description": "Road To Vostok 弹药与口径参考：弹种名称、常见武器与配装备注。请与当前游戏版本确认。",
+      "keywords": "Road To Vostok 弹药, 口径, 7.62, 5.45, 霰弹, 弹种"
+    },
+    "wikiFishingPage": {
+      "title": "Road To Vostok 钓鱼 — 清单与补丁说明",
+      "description": "Road To Vostok 钓鱼：如何在补丁说明与试玩中核对、路线图时间节点与实用清单。钓鱼系统会演变，请以客户端为准。",
+      "keywords": "Road To Vostok 钓鱼, 怎么钓鱼, 路线图, 生存, Steam"
+    },
+    "wikiGatheringPage": {
+      "title": "Road To Vostok 采集 — 材料与资源表",
+      "description": "Road To Vostok 环境与采集资源：类型、常见来源与制作关联。请与已安装版本对照。",
+      "keywords": "Road To Vostok 采集, 材料, 制作, 战利品, 生存"
+    },
+    "npcListPage": {
+      "title": "Road To Vostok NPC — 商人及 05 区据点",
+      "description": "Road To Vostok NPC 参考：通贩、医生商人、村庄与船坞等据点、库存行为及与互动地图的交叉链接。",
+      "keywords": "Road To Vostok NPC, 商人, 通贩, 医生, 村庄, 05 区, 游戏指南"
+    },
+    "npcDetailPage": {
+      "title": "NPC — Road To Vostok 参考",
+      "description": "Road To Vostok NPC 参考：商人库存、任务、位置或战斗行为。补充官方材料，请在游戏中确认。",
+      "keywords": "Road To Vostok, NPC, 商人, 游戏指南, 参考"
+    },
+    "mapPage": {
+      "title": "Road To Vostok 地图 — 05 区、兴趣点与区域概览",
+      "description": "Road To Vostok 互动地图：05 区、边境地带与符拉迪沃斯托克兴趣点、可检索索引与区域说明。请结合游戏内地图与客户端坐标核对。",
+      "keywords": "Road To Vostok 地图, 05 区, 边境地带, 符拉迪沃斯托克, POI, 地点索引"
+    },
+    "tasksPage": {
+      "title": "Road To Vostok 任务 — 推进、边境与符拉迪沃斯托克规则",
+      "description": "Road To Vostok 任务与推进参考：商人目标、边境穿越、符拉迪沃斯托克永久死亡规则与建议路线顺序。请在游戏中确认任务行为。",
+      "keywords": "Road To Vostok 全任务, 边境地带, 符拉迪沃斯托克, 商人, 任务, 永久死亡"
+    },
+    "guidesListPage": {
+      "title": "Road To Vostok 攻略 — 武器、医疗、电力与路线图",
+      "description": "Road To Vostok 策略攻略：武器装填、医疗生存、避难所电力与抢先体验路线图背景。编辑参考，请在已安装版本中验证机制。",
+      "keywords": "Road To Vostok 攻略, 装填霰弹枪, 医疗, 逆变器, 路线图"
+    },
+    "guideArticlePage": {
+      "title": "攻略 — Road To Vostok",
+      "description": "Road To Vostok 深度攻略：战术、系统或路线图分析。请在已安装版本中验证玩法细节。",
+      "keywords": "Road To Vostok, 策略攻略, 流程, 抢先体验"
+    },
+    "devUpdatesPage": {
+      "title": "Road To Vostok 更新与抢先体验路线图",
+      "description": "Road To Vostok 抢先体验（Build 1 — Road）于 2026 年 4 月 7 日上线。公开路线图摘要至 Build 8、Steam 新闻链接与补丁说明出处。编辑摘要 — 日期请以 Steam 与 roadtovostok.com 为准。",
+      "keywords": "Road To Vostok 路线图, 抢先体验, 开发更新, Steam 新闻, 版本, 补丁说明"
+    },
+    "posterPage": {
+      "title": "Road to Vostok 海报与官方截图",
+      "description": "Road to Vostok 海报与截图中心：roadtovostok.com/screenshots 十二张官方静图（本站镜像供阅读）。适合壁纸的生存 FPS 画面、灯箱浏览、Steam 与开发商图库链接。Road to Vostok® 为 Road to Vostok Ltd. 商标；本指南站独立运营。",
+      "keywords": "road to vostok 海报, Road To Vostok 截图, 官方截图, 壁纸, Steam 生存 FPS, roadtovostok.com 截图",
+      "ogImageAlt": "Road To Vostok 官方游戏截图 — 海报风格生存 FPS 画面"
+    },
+    "modsListPage": {
+      "title": "Road To Vostok 模组 — 编辑推荐与整合包",
+      "description": "Road To Vostok 模组精选：我们审阅过的玩法包与工具 — 功能说明、Metro Mod Loader 等加载器提示与安全安装建议。非 ModWorkshop 全量镜像；不提供托管 .vmz，下载仅通过作者页面链接。",
+      "keywords": "Road To Vostok 模组, Mod, 抢先体验, ModWorkshop, Metro Mod Loader, 游戏指南"
+    },
+    "modArticlePage": {
+      "title": "模组文章 — Road To Vostok",
+      "description": "Road To Vostok 模组聚焦：功能概述、兼容说明、加载器要求与权威下载链接。",
+      "keywords": "Road To Vostok, 模组, Mod 指南, 抢先体验"
+    }
+  },
+  "homePage": {
+    "hero": {
+      "eyebrow": "生存指南 · 试玩与 Steam · 抢先体验",
+      "title": "Road To Vostok 指南 — 怎么玩、Steam 试玩、枪械与路线图",
+      "stripShotguns": "霰弹枪与枪械装填",
+      "stripTasks": "全任务与路线图",
+      "stripMedical": "逆变器 · 医疗 · 存档",
+      "leadBeforeLinks": "面向 Steam 试玩与抢先体验：武器与装填、逆变器供电、清单式任务与路线图节奏、医疗、PC 存档、制作，以及你当前版本若已包含则还有钓鱼。单人生存；模组工具在官方长期规划中。请使用",
+      "linkStartHere": "新手指南",
+      "leadAfterStart": "了解核心循环，",
+      "linkMap": "地图",
+      "leadMid": "与",
+      "linkTasks": "任务",
+      "leadEnd": "查看地点与目标 — 下方指南针区块与顶部导航一一对应。",
+      "caption": "站点背景图 — 与整站氛围同款美术",
+      "btnAdvancedGuides": "进阶攻略",
+      "btnInteractiveMap": "互动地图"
+    },
+    "compass": {
+      "kicker": "站点指南针",
+      "title": "本站所有入口",
+      "intro": "与顶部导航相同的目的地，便于扫读 — 所有路径均在路由中可用。",
+      "boardLabel": "主要版块",
+      "hubs": {
+        "gettingStarted": {
+          "title": "新手指南",
+          "hint": "首局、操作、避难所循环"
+        },
+        "wiki": {
+          "title": "维基",
+          "hint": "物品表 — 武器、弹药、任务"
+        },
+        "guides": {
+          "title": "攻略",
+          "hint": "长篇玩家向文章"
+        },
+        "map": {
+          "title": "地图",
+          "hint": "05 区、边境、符拉迪沃斯托克标记"
+        },
+        "tasks": {
+          "title": "任务",
+          "hint": "目标、商人、推进"
+        }
+      }
+    },
+    "featured": {
+      "kicker": "维基与攻略",
+      "title": "掉落表与生存长文",
+      "introBeforeGuides": "刷新表与商人列表会随补丁漂移 — 我们放在这里是方便你对照游戏里实际看到的情况，而不是复制顶栏菜单。更长说明在",
+      "linkGuides": "攻略",
+      "introBeforeMap": "；",
+      "linkMap": "地图",
+      "leadMid": "与",
+      "linkTasks": "任务",
+      "introEnd": "页负责地点与目标。右侧：几个最常打开的页面。",
+      "entryPointsLabel": "入口",
+      "crossWikiLabel": "维基枢纽",
+      "crossWikiHint": "数据表、NPC、钓鱼、采集",
+      "crossGuidesLabel": "攻略",
+      "crossGuidesHint": "路线图、医疗、配装",
+      "crossMapLabel": "地图",
+      "crossMapHint": "标记与地点索引",
+      "crossTasksLabel": "任务",
+      "crossTasksHint": "目标与区域规则",
+      "popularPicksLabel": "热门精选",
+      "catalog": {
+        "weapons": {
+          "kicker": "维基",
+          "title": "武器",
+          "blurb": "分类表与数据 — 请按你的版本核对。"
+        },
+        "npcs": {
+          "kicker": "维基",
+          "title": "NPC 与商人",
+          "blurb": "谁在卖什么；可与地图标记对照。"
+        },
+        "coreTasks": {
+          "kicker": "维基",
+          "title": "核心任务物品",
+          "blurb": "逆变器、线缆、钥匙与任务道具。"
+        },
+        "minefield": {
+          "kicker": "攻略",
+          "title": "雷区战术",
+          "blurb": "布雷边境路线、AI 压力与符拉迪沃斯托克关卡。"
+        }
+      }
+    },
+    "quest": {
+      "progression": {
+        "kicker": "推进",
+        "title": "自西向东：05 区、边境、符拉迪沃斯托克"
+      },
+      "official": {
+        "leadBefore": "在",
+        "linkLabel": "官方游戏页",
+        "afterLinkHtml": "上，世界被划分为三个区域。你从<strong>05 区</strong>开始 — 芬兰东南部一片撤离区：避难所、商人、任务与前期战利品，<strong>强盗</strong>在区内巡逻。装备足够后，路线向<strong>东</strong>进入<strong>边境地带</strong> — 芬兰与俄罗斯之间的设防过境 — 若成功穿越，可进入俄罗斯的<strong>符拉迪沃斯托克</strong>（高风险；永久死亡 — 在那里阵亡会损失整局储藏，与西部区域不同）。"
+      },
+      "sandbox": {
+        "beforeLinksHtml": "游戏仍是<strong>沙盒</strong>：你不会被强制进入符拉迪沃斯托克或单一玩法。「向东推进」只是跟随官方难度曲线 — 先稳住西部，再挑战更难过境 — 并非隐藏剧情命令。逐步地点请用 "
+      },
+      "inline": {
+        "linkMap": "地图",
+        "commaAfterMap": "、",
+        "linkTasks": "任务",
+        "midAndNpcs": " 与 ",
+        "linkNpcs": "NPC",
+        "beforeStartHere": "；操作与生存循环见",
+        "linkStartHere": "新手指南",
+        "periodEnd": "。"
+      },
+      "zones": {
+        "area05": {
+          "kicker": "芬兰 · 西",
+          "title": "05 区",
+          "text": "枢纽避难所、商人、任务、起步装备。撤离区内的敌对强盗。"
+        },
+        "border": {
+          "kicker": "过境 · 中",
+          "title": "边境地带",
+          "text": "设防边境地图：地雷、障碍、船只，以及可能呼叫空中支援的腐败卫兵。"
+        },
+        "vostok": {
+          "kicker": "俄罗斯 · 东",
+          "title": "符拉迪沃斯托克",
+          "text": "最佳战利品、军方派系、装甲威胁。每张符拉迪沃斯托克地图均为永久死亡。"
+        }
+      },
+      "demo": {
+        "heading": "公开试玩：日志如何对齐",
+        "lead": "可玩试玩只是那片世界的一隅，但通常会引导同一思路：熟悉避难所、完成 05 区风格工作、跟随商人与钥匙，然后界面可能出现一条常标为「全任务」的完成线。"
+      },
+      "flow": {
+        "ariaLabel": "典型试玩顺序：避难所、05 区、商人与钥匙，再到「全任务」日志状态",
+        "shelter": "避难所与储藏",
+        "area05": "05 区任务",
+        "traders": "商人与钥匙",
+        "allTasks": "全任务",
+        "journalBadge": "日志",
+        "captionHtml": "「全任务」表示<strong>该试玩版本的主线任务列表已完成</strong>。并不保证抢先体验或后续版本没有新内容可玩。"
+      },
+      "related": {
+        "label": "在本站打开",
+        "map": "地图",
+        "tasks": "任务",
+        "npcs": "NPC",
+        "startHere": "新手指南"
+      },
+      "zonesAriaLabel": "自西向东三个区域",
+      "relatedNavAria": "区域与推进相关页面"
+    },
+    "devlog": {
+      "kicker": "动态",
+      "title": "Road To Vostok 路线图与开发日志",
+      "introBefore": "YouTube 上的长篇开发更新涵盖抢先体验范围、避难所以及钓鱼、季节等后续节点。本站：",
+      "linkGuides": "攻略",
+      "afterGuides": " 含 ",
+      "linkGeography": "边境地理",
+      "betweenGeoMine": " 与 ",
+      "linkMinefield": "雷区战术",
+      "afterMinefield": "；",
+      "linkRoadAhead": "版本前瞻",
+      "afterRoadAhead": " 汇总版本与补丁式说明；若你的版本已加入钓鱼，见 ",
+      "linkFishing": "维基 · 钓鱼",
+      "afterFishing": "。",
+      "iframeTitle": "Road To Vostok 开发者访谈 — 抢先体验与路线图讨论",
+      "summaryHeading": "节目摘要",
+      "summaryBullet1": "抢先体验目标：更大地图、动态事件、多避难所循环。",
+      "summaryBullet2": "商人钥匙与避难所解锁节奏与探索风险挂钩。",
+      "summaryBullet3": "社区愿望单、试玩经验与透明的路线图沟通。",
+      "summaryBullet4": "后续版本如何叠加任务线、季节与海上内容。",
+      "footerBeforeRoad": "补丁式说明请访问 ",
+      "footerLinkRoadAhead": "版本前瞻",
+      "footerMid": "。模组预期：",
+      "footerLinkMods": "模组枢纽",
+      "footerEnd": "（不提供文件托管）。"
+    },
+    "about": {
+      "kicker": "关于",
+      "title": "关于本 Road To Vostok 指南",
+      "text1": "Road To Vostok（Road To Vostok Ltd.）是一款芬兰—俄罗斯边境上的硬核单人生存 FPS。你在 05 区搜刮、穿越边境地带，并可在比整局其余部分更严格的永久死亡规则下进入符拉迪沃斯托克。免费 Steam 试玩与抢先体验带动了大多数搜索：怎么玩、配装与医疗、任务、路线图节奏与 PC 存档。",
+      "text2": "本站以实用文章覆盖上述主题 — 配装、长期路线图、制作，以及补丁加入后的钓鱼 — 请始终以你安装版本中的实际内容为准。",
+      "linkStartHere": "新手指南",
+      "linkWiki": "维基",
+      "linkGuides": "攻略",
+      "linkAboutUs": "关于我们",
+      "hubNavAria": "主要站点页面"
+    },
+    "faq": {
+      "kicker": "常见问题",
+      "title": "常见问题",
+      "hubNavAria": "跳转至详细页面",
+      "relatedLabel": "相关页面",
+      "hubStartHere": "新手指南",
+      "hubMinefield": "雷区攻略",
+      "hubGeography": "地理攻略",
+      "hubTasks": "任务",
+      "items": {
+        "releaseEa": {
+          "q": "Road To Vostok 发售日与抢先体验计划是什么？",
+          "a": "Steam 会列出计划的抢先体验窗口（以商店页当前日期为准）。游戏内与本站的路线图类文章会概括上线后的各阶段构建。"
+        },
+        "multiplayer": {
+          "q": "Road To Vostok 是网游或多人游戏吗？",
+          "a": "不是。Steam 商店将其描述为单人生存游戏，该描述中不包含在线合作或 MMO 模式。"
+        },
+        "demoSteam": {
+          "q": "如何在 Steam 获取 Road To Vostok 试玩？",
+          "a": "在 Road To Vostok 的 Steam 商店条目下安装独立试玩应用（可用时 Steam 会显示试玩下载）。"
+        },
+        "whatFirst": {
+          "q": "Road To Vostok 怎么玩 — 开局先做什么？",
+          "a": "运行试玩提供的教程图、解锁避难所存档点，再学习搜刮、商人与武器装填，然后再向更难地图推进。"
+        },
+        "loadWeapons": {
+          "q": "Road To Vostok：如何装填霰弹枪与其它武器？",
+          "a": "弹匣枪需要背包里有装好弹的弹匣；霰弹枪与栓动枪按教程中的逐发装填操作。详见我们的武器装填攻略清单。"
+        },
+        "inverter": {
+          "q": "Road To Vostok 逆变器或电力装备在哪？",
+          "a": "参考逆变器位置攻略：搜工业与设施类兴趣点，结合商人提示，并在你的补丁中核对刷新。"
+        },
+        "fracture": {
+          "q": "我在 Road To Vostok 里因骨折死了 — 怎么办？",
+          "a": "尽快用夹板或高级包处理骨折，以免移动惩罚与持续伤害叠加。医疗攻略会逐项说明症状与治疗物品。"
+        },
+        "allTasks": {
+          "q": "如何完成 Road To Vostok 全任务？",
+          "a": "跟随首页任务链，再用任务页查看目标与商人钥匙，地图页查看兴趣点。"
+        },
+        "roadmap": {
+          "q": "Road To Vostok 路线图在哪？",
+          "a": "打开路线图类攻略与版本前瞻页，了解版本名、抢先体验范围以及官方已公布的钓鱼、季节等未来系统。"
+        },
+        "mods": {
+          "q": "Road To Vostok 有模组吗？",
+          "a": "Steam 抢先体验 FAQ 称模组工具计划在正式版前后推出；试玩版本未必开放完整模组支持。"
+        },
+        "backup": {
+          "q": "如何在 PC 上备份 Road To Vostok 存档？",
+          "a": "路径因版本与系统而异。实验前请备份用户数据文件夹；模组页有高层目录说明 — 务必在本机核实。"
+        },
+        "crafting": {
+          "q": "Road To Vostok 制作系统怎么玩？",
+          "a": "制作会随抢先体验版本扩展。请查补丁说明与游戏内配方；维基记录可流入制作循环的战利品。"
+        },
+        "fishing": {
+          "q": "Road To Vostok 里有钓鱼吗？",
+          "a": "钓鱼与海上内容出现在官方多年路线图的后继版本中 — 并非每个试玩切片都包含。"
+        },
+        "officialSite": {
+          "q": "这是 Road To Vostok 官方网站吗？",
+          "a": "不是。这是独立参考站。请与已安装游戏及官方渠道交叉核对事实。"
+        }
+      }
+    }
+  },
+  "site": {
+    "breadcrumbHome": "首页",
+    "breadcrumbAriaLabel": "面包屑导航",
+    "lastUpdatedLabel": "最后更新：",
+    "lastUpdatedDate": "2026 年 3 月 27 日",
+    "navHome": "首页",
+    "navStartHere": "新手指南",
+    "navPoster": "海报",
+    "navRoadAhead": "版本前瞻",
+    "navWiki": "维基",
+    "navMap": "地图",
+    "navTasks": "任务",
+    "navGuides": "攻略",
+    "navMods": "模组",
+    "navNpcs": "NPC",
+    "navWeapons": "武器",
+    "navAmmunition": "弹药",
+    "navFishing": "钓鱼",
+    "navGathering": "采集",
+    "navCoreTasks": "核心任务",
+    "brandName": "Road To Vostok",
+    "headerBrandHomeAria": "Road To Vostok 指南首页",
+    "headerNavMainAria": "主导航",
+    "headerToggleMenu": "展开或收起菜单",
+    "footerNavAria": "页脚",
+    "footerLegalAria": "站点与法律",
+    "footerTagline": "关于 05 区、边境地带与符拉迪沃斯托克的配装、战利品、地图与路线参考笔记。",
+    "footerDisclaimerHtml": "与 Road To Vostok 官方或开发商无关联。游戏 © 各自权利人。攻略基于社区认知，可能随更新与公开 <a href=\"/dev-updates\">版本前瞻与路线图摘要</a> 变化。",
+    "footerCopy": "© {year} Road To Vostok 指南 — 生存 FPS 维基与任务帮助。",
+    "footerAbout": "关于",
+    "footerContact": "联系",
+    "footerPrivacy": "隐私",
+    "footerTerms": "条款",
+    "footerCopyright": "版权",
+    "localeSwitchAria": "界面语言",
+    "localeCodeEn": "EN",
+    "localeCodeZh": "中文",
+    "localeNameEn": "English",
+    "localeNameZh": "中文"
+  },
+  "notFoundPage": {
+    "breadcrumb": "未找到",
+    "title": "Road To Vostok — 页面未找到",
+    "lead": "此网址不属于 Road To Vostok 指南。请使用导航或返回首页。",
+    "backHome": "返回首页",
+    "linkWiki": "维基",
+    "linkMap": "地图",
+    "linkTasks": "任务",
+    "linkGuides": "攻略"
+  },
+  "guidesListPage": {
+    "breadcrumb": "Road To Vostok 攻略",
+    "title": "Road To Vostok 攻略",
+    "subHtml": "生存技巧与推进 — 短文。需要地点或表格时可搭配 <a href=\"/map\">地图</a>、<a href=\"/tasks\">任务</a> 与 <a href=\"/wiki\">物品数据库</a>。请务必在已安装版本中核对细节。",
+    "articlesAria": "文章"
+  },
+  "aboutPage": {
+    "breadcrumb": "关于我们",
+    "title": "关于 Road To Vostok 指南",
+    "lead": "本站用途说明，以及本站不是什么。",
+    "bodyAriaLabel": "关于本站",
+    "purposeHeading": "本站目的",
+    "purposeText": "Road To Vostok 指南是面向玩家的帮助站：地图与任务、物品表、武器与医疗等玩法说明、PC 存档路径，以及公开路线图新闻摘要。我们力求页面清晰、可检索，作为官方游戏站与 Steam 商店的补充 — 而非替代。",
+    "independenceHeading": "独立性",
+    "independenceBeforeLinksHtml": "我们<strong>并非</strong> Road To Vostok 官方团队，不代表开发商或发行方。版本、战利品与机制会变化；务必在已安装游戏及 ",
+    "independenceBetweenLinks": " 与 ",
+    "exploreHeading": "如何浏览",
+    "exploreHtml": "从 <a href=\"/getting-started\">新手指南</a> 了解操作与开局步骤，用 <a href=\"/wiki\">维基</a> 查表，用 <a href=\"/map\">地图</a> / <a href=\"/tasks\">任务</a> 辅助推进。更新与版本名摘要见 <a href=\"/dev-updates\">版本前瞻</a>。",
+    "contactHeading": "联系",
+    "contactHtml": "站点反馈或法律通知：",
+    "footerContact": "联系页面",
+    "footerPrivacy": "隐私政策"
+  },
+  "contactPage": {
+    "breadcrumb": "联系我们",
+    "title": "Road To Vostok — 联系我们",
+    "lead": "通过邮件联系 Road To Vostok 指南。本页不使用联系表单。",
+    "bodyAriaLabel": "联系信息",
+    "emailHeading": "电子邮件",
+    "emailIntroHtml": "如需勘误攻略、失效链接、版权问题或关于本站的咨询，请写信至：",
+    "emailFollowHtml": "请在主题行写清楚；报告内容问题时请附上页面 URL 与简短说明需要如何修改。我们编辑部人力有限，回复可能需要若干个工作日。",
+    "gameSupportHeading": "游戏客服",
+    "gameSupportHtml": "若涉及 <strong>Road To Vostok</strong> 本体的 Bug、购买或账号问题，请通过游戏官方支持渠道（例如 Steam 或开发商站点）联系。我们无法重置存档、退款或改动游戏版本。",
+    "privacyHeading": "隐私",
+    "privacyHtml": "若来信包含个人数据，请参阅我们的 <a href=\"/privacy-policy\">隐私政策</a>，了解我们如何处理往来邮件。",
+    "footerAbout": "关于我们",
+    "footerTerms": "服务条款"
+  },
+  "wikiHubPage": {
+    "breadcrumb": "维基",
+    "title": "Road To Vostok 物品数据库",
+    "leadHtml": "精选表格：<strong>Road To Vostok 枪械</strong>与<strong>弹药类型</strong>，<strong>逆变器</strong> / <strong>B 线</strong>等<strong>全任务</strong>道具，以及<strong>如何钓鱼</strong>备忘与野外<strong>采集</strong>。长篇策略见 <a href=\"/guides\">攻略</a> — 例如 <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">现实地理分析</a>、<a href=\"/guides/surviving-the-Minefield\">雷区战术</a> 或 <a href=\"/guides/how-to-fish\">钓点与狗鱼</a>。请务必在已安装版本中核对数值。",
+    "categoriesAria": "维基分类",
+    "cardCoreKicker": "核心任务与电力",
+    "cardCoreTitle": "逆变器、B 线与任务道具",
+    "cardCoreBlurb": "避难所供电链路、布线及与<strong>全任务</strong>推进相关的钥匙。",
+    "cardWeaponsKicker": "武器与配件",
+    "cardWeaponsTitle": "枪械与平台",
+    "cardWeaponsBlurb": "冲锋枪、步枪、霰弹枪、手枪 — 各枪适用弹药与简要配件说明。",
+    "cardAmmoKicker": "弹药",
+    "cardAmmoTitle": "口径与堆叠",
+    "cardAmmoBlurb": "单发价值、重量、最大堆叠及与武器的兼容关系（维基表）。",
+    "cardFishKicker": "钓鱼",
+    "cardFishTitle": "如何钓鱼（抢先体验）",
+    "cardFishBlurb": "鱼竿、鱼饵及针对「怎么钓鱼」类搜索的路线图说明。",
+    "cardGatherKicker": "采集",
+    "cardGatherTitle": "野外资源",
+    "cardGatherBlurb": "木材、废料、觅食与流入生存、制作循环的原材料。",
+    "cardNpcKicker": "角色",
+    "cardNpcTitle": "NPC 与据点",
+    "cardNpcBlurb": "商人、敌对说明及避难所<strong>猫咪伙伴</strong> — 地图有标注处可跳转至此。",
+    "goOpenTable": "打开数据表 →",
+    "goOpenGuideList": "打开攻略列表 →",
+    "goOpenNpcWiki": "打开 NPC 维基 →"
+  },
+  "wikiCoreTasksPage": {
+    "breadcrumb": "核心任务",
+    "title": "Road To Vostok 核心任务与电力物品",
+    "leadHtml": "与避难所供电、布线及任务链（<strong>全任务</strong>）配套使用的物品。推进语境请对照 <a href=\"/map\">地图</a> 与 <a href=\"/tasks\">任务</a>；长文见 <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">边境地理</a> 与 <a href=\"/guides/surviving-the-Minefield\">雷区战术</a>。",
+    "tableAria": "核心任务数据表",
+    "colItem": "物品",
+    "colRole": "用途",
+    "colRelated": "相关推进",
+    "colNotes": "备注",
+    "crossLinksHtml": "相关：<a href=\"/tasks\">任务</a> · <a href=\"/guides/surviving-the-Minefield\">雷区攻略</a> · <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">地理攻略</a>"
+  },
+  "wikiWeaponsPage": {
+    "breadcrumb": "武器",
+    "kicker": "军械目录",
+    "title": "Road To Vostok 武器",
+    "leadHtml": "可纵向浏览的目录：近战、副武器、长枪与支援武器。数值字段与下方 <strong>Road To Vostok Wiki（Fandom）</strong> 汇总页一致；立绘为同款维基缩略图，镜像于 <code>/images/wiki/weapons/</code>。请在已安装版本中逐项核对 — 抢先体验会调整数值、名称与战利品。",
+    "ammoPairHtml": "弹药搭配请见 <a href=\"/wiki/ammunition\">弹药</a> 表（同源 Fandom）。",
+    "sourcesAria": "Fandom 数据来源",
+    "sourcesLabel": "维基来源",
+    "datasetAria": "数据集摘要",
+    "statEntries": "条目",
+    "statCategories": "分类",
+    "statWithPortrait": "含立绘",
+    "jumpToClassAria": "跳转到武器类别",
+    "statsStripAria": "武器属性",
+    "tocTitle": "类别",
+    "viewOnFandom": "在 Fandom 查看",
+    "specWt": "重",
+    "specDmg": "伤",
+    "specCaliber": "口径",
+    "specMag": "弹匣",
+    "specRpm": "RPM",
+    "specValue": "价值",
+    "specTrader": "商人",
+    "specRarity": "稀有",
+    "specPen": "穿深",
+    "magRoundsSuffix": " 发",
+    "lootLabel": "战利品",
+    "summaryKgSuffix": " kg",
+    "summaryDmgPrefix": "伤害 ",
+    "summaryMagRoundsSuffix": " 发",
+    "summaryRpmSuffix": " RPM",
+    "summaryEuroSuffix": " €",
+    "summaryCost": "商人价 {n} €",
+    "categories": {
+      "knives": "刀具",
+      "pistols": "手枪",
+      "rifles": "步枪",
+      "smg": "冲锋枪与 PDW",
+      "shotguns": "霰弹枪",
+      "bolt": "栓动",
+      "semi": "半自动"
+    }
+  },
+  "wikiAmmunitionPage": {
+    "breadcrumb": "弹药",
+    "kicker": "配装参考",
+    "title": "Road To Vostok 弹药",
+    "leadBeforeLink": "弹种价值（€）、单发重量、最大堆叠与武器对应关系与 ",
+    "leadAfterLinkHtml": " 表对齐；图标为同款维基资源，托管于 <code>/images/wiki/Ammunition/</code>。请在已安装版本中核实 — 补丁可能改动数值与武器名称。",
+    "datasetAria": "数据集摘要",
+    "statCalibers": "口径数",
+    "statLightest": "最轻弹种",
+    "statTightestStack": "最小堆叠上限",
+    "heroStatUnitKg": "kg",
+    "heroStatUnitRnds": "发",
+    "bodyAria": "弹药参考",
+    "filterPlatformAria": "按平台筛选",
+    "searchPlaceholder": "口径、武器、备注…",
+    "searchLabel": "搜索",
+    "emptyResultsHtml": "当前筛选与搜索下没有匹配的弹种。请清空搜索或选择<strong>全部</strong>。",
+    "imageSlotLabel": "图片位",
+    "statValue": "价值",
+    "statWeight": "重量",
+    "statStack": "堆叠",
+    "unitEurPerRnd": "€ / 发",
+    "unitKgPerRnd": "kg / 发",
+    "unitMax": "上限",
+    "feedsLabel": "适用",
+    "filters": {
+      "all": "全部",
+      "rifle": "步枪",
+      "dmr": "精确射手 / 全威力",
+      "smg": "冲锋枪",
+      "pistol": "手枪",
+      "shotgun": "霰弹枪"
+    },
+    "categories": {
+      "smg": "冲锋枪",
+      "rifle": "突击 / 卡宾",
+      "dmr": "精确射手 / 全威力",
+      "shotgun": "霰弹枪",
+      "pistol": "手枪",
+      "mixed": "手枪与冲锋枪平台"
+    },
+    "footCrossCheckHtml": "枪械与配件请对照 <a href=\"/wiki/weapons\">武器与配件</a>。",
+    "footAssetsHtml": "图片：将文件放到 <code>public/images/wiki/ammo/</code>，并在 <code>src/data/item/ammunition/en.js</code> 中设置 <code>imageUrl</code>（站点根路径，例如 <code>/images/wiki/ammo/46x30.webp</code> — 文件名可与 <code>id</code> 一致）。"
+  },
+  "wikiFishingPage": {
+    "breadcrumb": "钓鱼",
+    "title": "Road To Vostok 钓鱼",
+    "lead": "能否钓鱼取决于你的版本：钓鱼在官方长期路线图中。本表作参考，请结合补丁说明与已安装客户端确认。",
+    "checklistAria": "钓鱼核对清单",
+    "colTopic": "主题",
+    "colWhatToCheck": "要核对什么",
+    "crossLinksHtml": "补丁节奏：<a href=\"/dev-updates\">版本前瞻</a> · <a href=\"/getting-started\">新手指南</a>"
+  },
+  "wikiGatheringPage": {
+    "breadcrumb": "采集",
+    "title": "Road To Vostok 采集与原材料",
+    "leadHtml": "环境与采集节点，流入制作与生存。战斗战利品见 <a href=\"/wiki/weapons\">武器</a> 与 <a href=\"/wiki/ammunition\">弹药</a>；制作语境见 <a href=\"/getting-started\">新手指南</a>。",
+    "tableAria": "采集数据表",
+    "colResource": "资源",
+    "colSource": "常见来源",
+    "colUsedFor": "用途",
+    "crossLinksHtml": "制作语境：<a href=\"/getting-started\">Road To Vostok 如何制作</a> · <a href=\"/wiki/ammunition\">弹药</a>"
+  },
+  "npcListPage": {
+    "breadcrumb": "NPC",
+    "title": "Road To Vostok NPC 与据点",
+    "leadHtml": "<strong>强盗</strong>、<strong>通贩</strong>、<strong>医生</strong>及避难所<strong>猫（伙伴）</strong> — 来自社区与媒体的 Road To Vostok 摘要。任务、库存与伙伴功能请在游戏中核对；地图有标注处可链至此处。区域流程（如公寓、雷区）见 <a href=\"/guides\">攻略</a>。",
+    "listAria": "NPC 文章",
+    "cardGo": "打开文章 →"
+  },
+  "npcDetailPage": {
+    "showOnMap": "在地图上显示",
+    "openMap": "打开地图",
+    "moreNpcs": "更多 NPC",
+    "imageCaption": "本 NPC 指南配图。",
+    "articleAsideAria": "关于本文"
+  },
+  "mapPage": {
+    "breadcrumb": "地图",
+    "title": "Road To Vostok 地图",
+    "introHtml": "使用地图查看 05 区、边境地带与符拉迪沃斯托克，并阅读下方区域概览与 05 区说明。商人任务、边境过境与符拉迪沃斯托克规则见 <a href=\"/tasks\">任务</a> 页。请与已安装版本核对。",
+    "sectionKicker": "世界概览",
+    "sectionTitle": "Road To Vostok 互动地图",
+    "hintHtml": "图钉仅代表<strong>地点</strong>（村庄、船坞等）。各地点可在左侧面板与下方索引中列出 <strong>NPC、战利品、任务</strong> — 这些不是单独标记。选中图钉或地点行后，左侧会滑出<strong>详情抽屉</strong>；用 <strong>×</strong> 关闭或用<strong>详情</strong>再次打开。带子项维基链接的可跳转对应页面。图钉位置为<strong>近似</strong>。",
+    "legendAria": "按区域区分的图钉颜色",
+    "legendArea05": "05 区",
+    "legendBorder": "边境地带",
+    "legendVostok": "符拉迪沃斯托克",
+    "detailsTab": "详情",
+    "mapAppAria": "Road To Vostok 世界地图。滚动或双指缩放；拖拽平移。",
+    "drawerAria": "已选地图地点",
+    "closeDrawerAria": "关闭地点面板",
+    "indexRailAria": "地图下方的地点索引，与图钉联动",
+    "railKickerBelowMap": "地图下方",
+    "railTitleLocationIndex": "地点索引",
+    "railLeadHtml": "按区域分组：每一行是一个<strong>地点</strong>。点击行可飞到该处并打开抽屉；嵌套行在可用时链接维基或任务。",
+    "area05ImageAria": "05 区参考配图",
+    "bottomCrossLinksHtml": "接下来：<a href=\"/tasks\">任务与边境 / 符拉迪沃斯托克说明</a> · <a href=\"/wiki/core-tasks\">核心任务物品（维基）</a> · <a href=\"/guides\">攻略</a>",
+    "kindNpc": "NPC",
+    "kindLoot": "战利品",
+    "kindTask": "任务",
+    "kindWeapon": "武器",
+    "kindFaction": "派系",
+    "kindNote": "备注",
+    "kindFallback": "条目",
+    "drawerMoreLink": "更多",
+    "drawerOpenLink": "打开",
+    "entriesAtLocation": "此地点",
+    "emptyPinTitle": "未选择图钉",
+    "emptyPinHint": "点击地图上的标记，或从下方地点索引中选择一行。",
+    "errorDimensions": "无法读取地图图片尺寸。",
+    "errorImageLoad": "地图图片加载失败。请检查网络后重试。",
+    "regionalSectionHtml": "<h2>区域概览</h2><p class=\"guide-lead\">官方网站将世界描述为线性推进：你从<strong>05 区</strong>（芬兰）起步，向东穿过<strong>边境地带</strong>，最终可进入俄罗斯的<strong>符拉迪沃斯托克</strong> — 各层级死亡后果不同。</p><div class=\"regions\"><article><h3>05 区</h3><p>芬兰东南部一片撤离区：避难所、商人、任务与前期生存战利品。敌对<strong>强盗</strong>在区内巡逻。</p></article><article><h3>边境地带</h3><p>芬兰与俄罗斯之间的设防边境。过境方式各异：地雷、障碍，或需船只的水路。武装腐败的<strong>卫兵</strong>可能呼叫空中支援。</p></article><article><h3>符拉迪沃斯托克</h3><p>高风险的俄罗斯领土，战利品价值最高。每张符拉迪沃斯托克地图均为<strong>永久死亡</strong>图。<strong>军方</strong>派系拥有重武器与装甲车辆。</p></article></div>",
+    "area05DetailProseHtml": "<h2>05 区地图说明与战利品从哪来</h2><p>据官方<strong>游戏</strong>页，05 区是开局区域：芬兰<strong>东南部</strong>一片撤离区，可找到<strong>避难所</strong>、<strong>商人</strong>、<strong>任务</strong>与<strong>起步战利品</strong>。日常节奏会被利用权力真空的敌对<strong>强盗</strong>打断。</p><h3>战利品与「刷新点」实务</h3><p>同一页将<strong>物理化战利品</strong>列为核心：物品以世界中的实体存在，而非抽象菜单拾取。开发商<strong>未</strong>在 roadtovostok.com 公布固定坐标表，许多系统被描述为<strong>动态</strong>（事件、天气、可重复跑图）。因此本站<strong>不</strong>列出保证刷新坐标 — 其会随补丁与程序布局变化。</p><ul><li><strong>按设定逻辑搜刮：</strong>搜索设定暗示的地点类型（聚落、路边、废弃建筑），并在游戏内感受当前版本的战利品密度。</li><li><strong>利用商人与任务：</strong>官方功能列表将交易与任务与避难所一并列为核心循环 — 以物易物与任务奖励是预期推进手段，不仅地面刷新。</li><li><strong>活着才能留住物资：</strong>据官方符拉迪沃斯托克说明，在 05 区阵亡通常只损失<strong>随身携带</strong>物 — 不会清空整局储藏（更严规则适用于符拉迪沃斯托克内死亡）。</li></ul><p class=\"guide-tools\">本站：<a href=\"/wiki\">维基</a>（装备表）、<a href=\"/getting-started\">新手指南</a>（循环、操作、医疗基础）、<a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">边境地理攻略</a>、<a href=\"/guides/surviving-the-Minefield\">雷区攻略</a>、<a href=\"/tasks\">任务与符拉迪沃斯托克规则</a>。</p>",
+    "area05MapImgAlt": "05 区 — 与指南并列的氛围地图参考图"
+  },
+  "tasksPage": {
+    "breadcrumb": "任务",
+    "title": "Road To Vostok 任务与推进",
+    "introHtml": "商人任务、边境过境与符拉迪沃斯托克永久死亡规则 — 与 roadtovostok.com 公开游戏页对齐。互动地图与兴趣点索引见 <a href=\"/map\">地图</a>。请在游戏中核对细节。",
+    "railAside": "任务简报",
+    "railTitle": "本页目录",
+    "asideAllTasks": "全任务",
+    "asideBorderVostok": "边境与符拉迪沃斯托克",
+    "bodyAllTasksHtml": "<h2>全任务与推进（当下内容 vs 路线图）</h2><p>公开游戏页将<strong>交易与任务</strong>作为头条玩法：与商人合作、完成其委托、用奖励为更难地图做准备 — 这就是开发商为「向东生存循环」所宣传的任务范围。</p><p>同站<strong>路线图</strong>将更深叙事系统排在后期：<strong>Build 3 — Signal</strong>（目标<strong>2026 年第四季度</strong>）加入<strong>任务系统</strong>与传说元素；<strong>Build 8 — Silent Night</strong>（日期待定）列出<strong>完整任务线</strong>。因此搜索「Road To Vostok 全任务」时要区分：<em>当前 / 抢先体验中的商人任务与沙盒目标</em> 与路线图仍放在未来版本中的 <em>单一完结剧情线</em>。</p><h3>玩家常用顺序</h3><ol class=\"guide-steps\"><li>在 05 区稳住<strong>避难所</strong>存档循环，摸清商人位置（官方文案将避难所、商人、任务绑在开局区域）。</li><li>完成能换来医疗、弹药与出行装备的任务；高风险出行前把余货存避难所。</li><li>准备就绪后，选择与你配装匹配的<strong>边境地带</strong>过境（地雷、障碍或船只等官方所述多样性）。雷区重者见攻略 <a href=\"/guides/surviving-the-Minefield\">雷区求生</a>。</li><li>将<strong>符拉迪沃斯托克</strong>视为可选终局：按官方描述，永久死亡规则仅适用于该区域 — 并非每局都必须进入。</li></ol><p class=\"guide-tools\">相关：<a href=\"/wiki/core-tasks\">核心任务物品</a>、<a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">边境地理</a>、<a href=\"/guides/surviving-the-Minefield\">雷区战术</a>、<a href=\"/map\">地图</a>、<a href=\"/dev-updates\">版本前瞻</a>（各 Build）、<a href=\"/guides\">全部攻略</a>。</p>",
+    "bodyBorderVostokHtml": "<h2>边境地带与符拉迪沃斯托克过境</h2><p>装备足够后，官方文案称路线继续向<strong>东</strong>进入<strong>边境地带</strong> — 芬兰与俄罗斯之间的设防边境。每张边境图据说有<strong>过境点</strong>与<strong>不同挑战</strong>：有的侧重<strong>地雷</strong>或物理障碍，有的需要<strong>水道与船只</strong>。</p><h3>卫兵与战斗压力</h3><p>网站将<strong>卫兵</strong>描述为外国边防武装：腐败、火力强，可能呼叫<strong>空中支援</strong>。请规划体力、掩体与医疗 — 见 <a href=\"/getting-started\">新手指南</a>（武器与装填）及 <a href=\"/wiki/weapons\">武器表</a>。</p><h3>过境之后：符拉迪沃斯托克规则</h3><p>成功过境后进入俄罗斯<strong>符拉迪沃斯托克</strong>。官方强调：</p><ul><li><strong>高风险高回报</strong> — 游戏中最有价值的战利品。</li><li><strong>符拉迪沃斯托克地图永久死亡：</strong>在 05 区或边境阵亡通常只损失携带物；在符拉迪沃斯托克阵亡会损失<strong>一切</strong>（据游戏页）。</li><li><strong>军方控制：</strong>重武器与装甲载具；目标是把你挡回去。</li></ul><p>同一页亦说明游戏<strong>不会</strong>强迫你进入永久死亡区 — 仍可在沙盒其他区域游玩。动态系统与随机事件被作为重复可玩性来源，且<strong>没有唯一胜利条件</strong>。</p><p class=\"guide-disclaimer\">官方路线图将抢先体验上线日记为<strong>2026 年 4 月 7 日</strong>；地图数量与派系行为会演变 — 更新后请重读补丁说明。</p>"
+  },
+  "devUpdatesPage": {
+    "breadcrumb": "版本前瞻",
+    "ariaReleaseSnapshot": "发售快照",
+    "ariaDisclaimer": "免责声明",
+    "heroKicker": "路线图 · 抢先体验阶段",
+    "title": "Road To Vostok — 开发更新与公开路线图",
+    "heroLeadHtml": "<strong>Steam 抢先体验</strong>（Build 1 — Road）于 <strong>2026 年 4 月 7 日</strong>上线。下文仍整理自开发商在 <strong>roadtovostok.com/game</strong> 公开的版本计划 — 与本站指南使用的 Build 名称、目标窗口一致。补丁以实机为准：请阅读 <strong>Steam 新闻</strong>获取实时更新日志；本页为编辑摘要，并非每次热修的全量镜像。",
+    "railAside": "路线图简报",
+    "railTitle": "本页目录",
+    "asideRelease": "发售日期",
+    "asidePatch": "补丁来源",
+    "asideGuideSite": "本指南站",
+    "asideAllBuilds": "全部 Build",
+    "snapshotEaKicker": "抢先体验 · Build 1 — Road",
+    "snapshotEaDate": "2026 年 4 月 7 日 — 已上线",
+    "snapshotEaNoteHtml": "官方路线图将该日记为 Steam 上 <strong>Build 1 — Road</strong> 的<strong>抢先体验</strong>商店上架日（AppID <strong>1963610</strong>）。EA 是持续演进分支，不是最终「1.0」。若版本延期或功能静默上线，请以 Steam 公告优先于任何第三方摘要。",
+    "snapshotFullKicker": "正式版 / 1.0",
+    "snapshotFullTba": "尚未公布",
+    "snapshotFullNoteHtml": "公开路线图延伸至 <strong>Build 8 — Silent Night</strong>（完整任务线、世界选项、新派系），日期为 <strong>TBA</strong>。尚无单独的「正式版将于某日上线」官方表述 — 抢先体验期间范围仍可能变化。",
+    "liveChangesKicker": "实机变更",
+    "liveChangesTitle": "开发商更新了什么？",
+    "liveChangesIntroHtml": "补丁说明与突发修复几乎总是先出现在一手渠道。本页不镜像每一次热修 — 需要真实更新日志请使用下列入口。免费<strong>试玩</strong>在 Steam 上为独立 AppID（<strong>2141300</strong>），可从主商店页链接，便于在不购买 EA 的情况下对比行为。",
+    "followSteamTitle": "Steam 新闻",
+    "followSteamLead": "商店枢纽：",
+    "followSteamMidHtml": "（AppID <strong>1963610</strong>）。事件推送：",
+    "followSteamTail": " — 通常为补丁帖与公告的常用位置。",
+    "followSiteTitle": "官方网站",
+    "followSiteRestHtml": " — 游戏概览与公开<strong>路线图</strong>区块（Build 1–8），下文即据此摘要。若 Steam 措辞在更新后变化，请回到此处核对日期。",
+    "followVideoTitle": "开发视频",
+    "followVideoLead": "长篇进度与系统深谈：",
+    "followVideoTail": " — 利于理解方向与意图；未必与你本地客户端 Build 号一一对应。",
+    "liveChangesCrossLinksHtml": "本站：<a href=\"/guides\">攻略</a>（<a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">地理</a>、<a href=\"/guides/surviving-the-Minefield\">雷区</a>）· <a href=\"/map\">地图</a> 与 <a href=\"/tasks\">任务</a> · <a href=\"/getting-started\">新手指南</a>",
+    "guideSiteSectionKicker": "本指南站",
+    "guideSiteSectionTitle": "EA 前搭建，面向发售窗口更新",
+    "guideSiteSectionIntroHtml": "<strong>Road To Vostok 指南</strong>（本站）在 2026 年 4 月抢先体验日前已筹备。维基表、地图钉与任务备注均为<strong>编辑参考</strong> — 可能滞后于补丁。每次 Steam 更新后请在实机中抽查战利品、商人与机制；数据库页免责声明同样适用于本页。",
+    "plannedBuildsKicker": "计划中的 Build",
+    "plannedBuildsTitle": "公开路线图（全部 Build）",
+    "plannedBuildsIntroBeforeHtml": "摘要自 ",
+    "plannedBuildsIntroAfterHtml": " 上的公开<strong>路线图</strong>。<strong>Build 1</strong> 已于 <strong>2026 年 4 月 7 日</strong>进入抢先体验；后续窗口均为<strong>目标</strong>而非保证 — 请关注 Steam 以了解里程碑延期或拆分。",
+    "footnoteHtml": "仅为编辑摘要。若本文日期与 Steam 或 roadtovostok.com 冲突，请以一手来源为准。本页于 2026 年 4 月抢先体验窗口修订；路线图条目仍与当时官方游戏页一致。",
+    "buildTimelineTitle": "Build {id} — {name}",
+    "roadmapBuilds": [
+      {
+        "id": "1",
+        "name": "Road",
+        "window": "2026 年 4 月 7 日 · 抢先体验已上线",
+        "status": "live",
+        "lines": [
+          "抢先体验上线",
+          "玩法循环",
+          "扩展地图",
+          "动态元素",
+          "多避难所支持"
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Nomads",
+        "window": "2026 年第三季度（目标）",
+        "status": "window",
+        "lines": [
+          "友好派系",
+          "AI 对 AI 战斗",
+          "AI 变种",
+          "Driver（商人）",
+          "新地图与避难所"
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Signal",
+        "window": "2026 年第四季度（目标）",
+        "status": "window",
+        "lines": [
+          "任务系统",
+          "传说元素",
+          "民防避难所",
+          "Grandma（商人）",
+          "新地图与避难所"
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Gunslinger",
+        "window": "日期待定",
+        "status": "tba",
+        "lines": [
+          "武器大修",
+          "子弹穿透",
+          "改装套件",
+          "商人服务",
+          "新地图与避难所"
+        ]
+      },
+      {
+        "id": "5",
+        "name": "North",
+        "window": "日期待定",
+        "status": "tba",
+        "lines": [
+          "动态季节",
+          "火车系统",
+          "狩猎与野生动物",
+          "Shaman（商人）",
+          "新地图与避难所"
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Abyss",
+        "window": "日期待定",
+        "status": "tba",
+        "lines": [
+          "海洋系统",
+          "巡逻艇",
+          "潜水装备",
+          "Fisherman（商人）",
+          "新地图与避难所"
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Enigma",
+        "window": "日期待定",
+        "status": "tba",
+        "lines": [
+          "对话系统",
+          "信号情报工具",
+          "无线电通讯",
+          "Scientist（商人）",
+          "新地图与避难所"
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Silent Night",
+        "window": "日期待定",
+        "status": "tba",
+        "lines": [
+          "完整任务线",
+          "世界选项",
+          "破坏系统",
+          "FINSOF 派系",
+          "新地图与避难所"
+        ]
+      }
+    ]
+  },
+  "gettingStartedPage": {
+    "breadcrumb": "新手指南",
+    "title": "Road To Vostok — 怎么玩与开局先做什么（PC 与 Steam 试玩）",
+    "introHtml": "PC 核心循环、默认风格操作（请在游戏中核实）、霰弹枪与其它枪械装填（本页 <a href=\"/getting-started#weapons-loading\">武器装填</a>）、骨折或流血时的生存与医疗（<a href=\"/getting-started#medical\">下文医疗</a>），以及制作语境（<a href=\"/wiki\">维基</a>、<a href=\"/wiki/gathering\">采集</a>）。事实依据公开 Steam 页面与社区文章 — 务必在已安装试玩或抢先体验中确认。",
+    "railAside": "战地简报",
+    "railTitle": "跳转",
+    "asideCore": "核心循环",
+    "asideControls": "操作",
+    "asideWeapons": "装填武器",
+    "asideMedical": "医疗",
+    "asideCrafting": "制作",
+    "sectionCoreHtml": "<h2>怎么玩 — 核心循环</h2><p>在官方 Steam 商店页，开发商将 Road To Vostok 描述为芬兰与俄罗斯之间末日边境上的硬核单人生存：搜刮、规划、为抵达符拉迪沃斯托克做准备，失误可能终结一局（该区域按描述适用永久死亡等更严规则）。在本站可搭配 <a href=\"/tasks\">任务</a>、<a href=\"/map\">地图</a>、<a href=\"/wiki/npcs\">NPC</a> 查看地点与商人语境。</p><ul><li>05 区：避难所、商人、任务与起步战利品 — 常是向东推进前的第一片沙盒。</li><li>边境地带：设防过境，危险多样（地雷、障碍、部分路线需船只、腐败卫兵可能呼叫空中支援 — 据商店描述）。</li><li>符拉迪沃斯托克：高风险高回报；商店文案称在此阵亡会损失该局的完整推进语境，与其它区域仅损失携带物不同。</li><li>避难所：安全区与存档方式；可储藏战利品，装饰模式可布置家具。</li><li>商人：以物易物（无现金）；主题装备、任务与服务含医疗与武器维护（同页）。另见 <a href=\"/wiki/npcs\">NPC 与商人</a>。</li><li>战利品与 UI：物理化战利品、俄罗斯方块式背包、物品合并与堆叠。物品表见 <a href=\"/wiki\">维基</a>。</li></ul><p class=\"callout\">Steam 另链独立 Road To Vostok 试玩（同页 AppID 2141300）。公开试玩常含教程图，先介绍医疗、交易、避难所与搜刮再进主沙盒 — 建议先玩教程再单靠攻略阅读。之后可用 <a href=\"/guides\">攻略</a> 读文字流程。</p>",
+    "sectionControlsHtml": "<h2>基础操作与移动（PC）</h2><p>默认键位会随版本变化。请以游戏内「设置 → 操作」为准。下表汇总第三方 PC 操作文章（Magic Game World，2021 年首次发布，后曾修订）作为检索参考 — 不保证与你当前补丁一致。武器 UI 细节亦见本页 <a href=\"/getting-started#weapons-loading\">武器装填</a>。</p><div class=\"table-wrap\"><table class=\"data-table\"><caption class=\"sr-only\">Road To Vostok PC 操作参考（默认风格）</caption><thead><tr><th scope=\"col\">类别</th><th scope=\"col\">动作</th><th scope=\"col\">常见键位</th></tr></thead><tbody><tr><td rowspan=\"7\">移动</td><td>移动</td><td>W A S D</td></tr><tr><td>奔跑 / 冲刺</td><td>Shift / Ctrl（依指南）</td></tr><tr><td>跳跃</td><td>空格</td></tr><tr><td>蹲伏</td><td>C</td></tr><tr><td>侧身</td><td>Q / E</td></tr><tr><td>梯子</td><td>鼠标中键（依指南）</td></tr><tr><td>交互</td><td>鼠标中键（依指南）</td></tr><tr><td rowspan=\"6\">武器</td><td>开火 / 瞄准</td><td>左键 / 右键</td></tr><tr><td>主武器 / 副武器</td><td>1 / 2</td></tr><tr><td>装填</td><td>R</td></tr><tr><td>检视武器</td><td>X（依指南）</td></tr><tr><td>射击模式</td><td>F</td></tr><tr><td>低/高戒备（滚轮）</td><td>鼠标滚轮</td></tr><tr><td rowspan=\"3\">背包</td><td>抓取物品</td><td>G</td></tr><tr><td>移动 / 丢弃 / 旋转物品</td><td>左键 / Shift+左键 / R（视情境）</td></tr><tr><td>主界面</td><td>Tab</td></tr></tbody></table></div><p>同一指南还列额外武器 UI 快捷（配件、隐藏 UI、瞄准时调节瞄具）。若某键无效，可能已被重映射 — 请在游戏内绑定界面确认。</p>",
+    "sectionWeaponsHtml": "<h2>Road To Vostok：霰弹枪、武器与弹匣怎么装</h2><h3>弹匣供弹武器</h3><p>Steam 社区常见说明：R 不是「一键满弹」：你需要背包里有装好子弹的弹匣。玩家常述流程：卸下弹匣、在背包 UI 里逐发压弹、装回弹匣，再在交火中用 R 换上就绪弹匣。建议常备一枚满弹匣以便压力下点 R。具体因枪而异 — 见本页 <a href=\"/getting-started#weapons-loading\">武器装填</a> 与 <a href=\"/wiki/ammunition\">弹药</a> 表规划口径。</p><h3>霰弹枪、栓动及其它非弹匣枪</h3><p>这类武器多为手动逐发装填。2024 年末关于霰弹枪装填的讨论中，多名玩家称教程会逐步演示霰弹与狙击式武器的装填（例如：在教程中选对应武器与弹药，跟随屏幕提示）。</p><p>因键位布局与补丁不同，下列仅为该帖玩家自述示例 — 非普适事实：</p><ul><li>按住 Alt 并用右键装填（某回复）。</li><li>按住 Ctrl 或右 Alt 并反复左键压入霰弹（另一回复）。</li><li>有玩家称在其教程中为：按 P，再用左键逐发装填，射击后用 R 进入手动装填步骤 — 可能仅适用于特定试玩版本。</li></ul><p class=\"callout callout-warn\">若出生空膛，可能在装填完成前就被击杀。请先在教程段完成这些武器练习，再在「设置 → 操作」中确认与你版本一致的键位。</p>",
+    "sectionMedicalHtml": "<h2>生存与医疗 — 流血、骨折与治疗</h2><p>Steam 功能列表将医疗用品与食物、工具、武器并列，并写明商人可提供医疗服务。治疗量、使用时间、可解除的负面状态等数值，常见参考来自 Fandom 社区维基的 Medical 与 Afflictions 条目 — 可能随补丁变化，请以游戏内说明为准。武器规划见 <a href=\"/wiki/weapons\">武器</a>；雷区与区域语境见 <a href=\"/guides/surviving-the-Minefield\">雷区战术</a> 与 <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">边境地理</a>。</p><h3>骨折（「死于断骨」类情况）</h3><p>据 Fandom Afflictions 页，骨折会持续掉血（该文列为每 5 秒 −1），并伴随严重移动惩罚（移动、游泳、跳跃等）。请优先处理：在试图冲刺逃生前先稳定伤势。</p><p>同一维基列骨折可用 Splint、Medkit、IFAK、AFAK 等处理。医疗表中 Splint 为 4 秒使用、0 直接回血 — 针对骨折状态而非单纯抬血条。</p><h3>流血与回血</h3><p>Fandom 摘要称流血比骨折失血更快，可用绷带、止血带、医疗包、IFAK、AFAK 等。医疗物品表（同维基）示例：Bandage — 4 秒、+20 生命（并注明可处理流血/烧伤等），Medkit / IFAK — 4 秒、+50，各物品可解除的状态列表更广。</p><p>长期生存还依赖体力与水分：Afflictions 页称体力或水分为 0 时会持续被动掉血，直到进食或饮水 — 与枪伤骨折不同，但同样致命。</p><div class=\"table-wrap\"><table class=\"data-table data-table-compact\"><caption>节选医疗物品（社区维基，2025 年 4 月快照 — 请在游戏内核实）</caption><thead><tr><th scope=\"col\">物品</th><th scope=\"col\">使用时间</th><th scope=\"col\">生命（维基）</th><th scope=\"col\">备注（维基）</th></tr></thead><tbody><tr><td>Bandage</td><td>4 秒</td><td>+20</td><td>流血 / 烧伤（依表）</td></tr><tr><td>Tourniquet</td><td>4 秒</td><td>0</td><td>侧重流血</td></tr><tr><td>Splint</td><td>4 秒</td><td>0</td><td>骨折</td></tr><tr><td>Medkit</td><td>4 秒</td><td>+50</td><td>多种重症（依维基）</td></tr><tr><td>IFAK</td><td>4 秒</td><td>+50</td><td>高级野战包（依维基）</td></tr></tbody></table></div><p>任务相关战利品摘要见 <a href=\"/wiki/core-tasks\">核心任务物品</a>。</p>",
+    "sectionCraftingHtml": "<h2>Road To Vostok 如何制作</h2><p>许多玩家搜索如何制作（含常见错拼 “crasft”）。配方与工作台会随抢先体验补丁扩展 — 请以游戏内 UI 与补丁说明为准。本站 <a href=\"/wiki\">维基</a> 列出常流入制作循环的战利品：<a href=\"/wiki/gathering\">采集</a>、若版本已含则 <a href=\"/wiki/fishing\">钓鱼</a>，以及避难所布线相关问题见 <a href=\"/wiki/core-tasks\">核心任务物品</a>。版本公告见 <a href=\"/dev-updates\">版本前瞻</a>。</p>"
+  },
+  "guideArticlePage": {
+    "breadcrumbGuides": "攻略",
+    "asideAria": "关于本篇攻略",
+    "asideSummary": "摘要",
+    "asideUpdated": "更新",
+    "asideTags": "标签",
+    "asideMoreGuides": "更多攻略",
+    "asideAllGuides": "全部攻略"
+  },
+  "modArticlePage": {
+    "breadcrumbMods": "模组",
+    "byAuthor": "作者：{author}",
+    "asideAria": "模组信息",
+    "asideSummaryLabel": "摘要",
+    "metaDownloads": "下载",
+    "metaViews": "浏览",
+    "listingDateLabel": "收录日期",
+    "tagsLabel": "标签",
+    "communityNotesAria": "社区备注",
+    "communityNotesLabel": "社区备注",
+    "moreOnSiteLabel": "本站更多",
+    "allModsLink": "全部模组",
+    "ctaModWorkshop": "在 ModWorkshop 打开",
+    "commentsDisclosure": "为便于理解的短摘要 — 非 Workshop 原文逐字转载。"
+  },
+  "modsListPage": {
+    "breadcrumb": "模组",
+    "eyebrow": "ModWorkshop · 编辑推荐",
+    "title": "Road To Vostok 模组",
+    "introP1Html": "本站发布<strong>编辑向模组聚焦</strong>：我们认为安装前值得一读的整合包与工具 — 玩法大修、QoL 合集、加载器要求（如 Metro Mod Loader）以及各条目会改变一局中的哪些内容。下列为精选推荐，并非 ModWorkshop 全量索引；我们审阅后会陆续增补。",
+    "introP2Html": "我们<strong>不</strong>托管 <strong>.vmz</strong> 文件。每张卡片链向作者源站（ModWorkshop 或文内说明）以下载实包。请匹配你的试玩或抢先体验版本，加载前自行校验校验和。",
+    "boardAria": "模组文章",
+    "mastLabel": "清单",
+    "mastListingOne": "条收录",
+    "mastListingMany": "条收录",
+    "mastNoteSuffix": "· 独立参考站",
+    "metaDetailsAria": "「{title}」详情",
+    "metaLoader": "加载器",
+    "metaUpdated": "更新",
+    "metaAuthor": "作者",
+    "metaVer": "版本",
+    "metaDl": "下载",
+    "metaViews": "浏览",
+    "rowLatest": "最新",
+    "rowOpen": "打开",
+    "emptyState": "暂无模组文章。"
+  },
+  "posterPage": {
+    "breadcrumb": "Road to Vostok 海报",
+    "kicker": "Road To Vostok 指南",
+    "title": "Road to Vostok 海报与截图画廊",
+    "leadHtml": "本页属于 <strong>Road To Vostok 指南</strong> — 面向玩家的生存参考：<a href=\"/map\">互动地图</a>、<a href=\"/wiki\">物品与武器数据库</a>、<a href=\"/tasks\">任务与推进</a>、<a href=\"/guides\">策略攻略</a> 与 <a href=\"/dev-updates\">路线图语境</a>。此处以<strong>海报风格</strong>陈列游戏内静帧，方便不离站浏览氛围图。点击任意图片可放大查看。",
+    "btnStart": "新手指南",
+    "btnWiki": "维基",
+    "btnMap": "地图",
+    "btnTasks": "任务",
+    "featureAriaOpen": "放大查看：{alt}",
+    "featureCapHtml": "精选 <strong>road to vostok 海报</strong> 风静帧 — 12 张截图之 1。点击放大。",
+    "galleryAria": "全部截图",
+    "galleryTitle": "画廊 — 12 张静帧",
+    "galleryIntroHtml": "十二张图集中展示，便于快速翻阅。配装可查 <a href=\"/wiki\">维基</a>，地点可查 <a href=\"/map\">地图</a>，文字流程见 <a href=\"/guides\">攻略</a> — 均在本站。",
+    "tileAria": "查看第 {index} 张截图：{alt}",
+    "footnoteAria": "署名",
+    "footnoteHtml": "图片 © Road to Vostok Ltd. 来源：roadtovostok.com/screenshots。仅为指南阅读镜像；新闻或商业用途请遵循开发商站点与媒体包条款。",
+    "lightboxTitle": "第 {current} / {total} 张截图",
+    "lightboxClose": "关闭",
+    "lightboxPrev": "上一张",
+    "lightboxNext": "下一张",
+    "featureSectionAria": "精选静帧"
+  },
+  "copyrightPage": {
+    "breadcrumb": "版权",
+    "title": "Road To Vostok — 版权",
+    "lead": "本站原创内容及第三方游戏素材在 Road To Vostok 指南上的署名方式。",
+    "bodyAriaLabel": "版权声明",
+    "gameHeading": "游戏与商标",
+    "gameHtml": "<strong>Road To Vostok</strong> 及相关标识、美术与游戏内容为各自权利人财产。本站与上述权利人无关联。所有游戏相关商标在此仅为指称游戏而使用。",
+    "siteHeading": "本站内容",
+    "siteHtml": "roadtovostok.org 上的原创文字、版式与汇编（另有说明除外）版权归 Road To Vostok 指南运营方所有；已明确引用或标注为社区/官方来源的除外。编辑向攻略与表格可包含事实性玩法信息，不代表对底层游戏资产或知识产权的主张。",
+    "takedownHeading": "合理使用与下架",
+    "takedownHtml": "若您为权利人并认为本站材料侵犯您的版权，请来信说明作品与 URL。我们将在善意请求下尽快审核。邮箱：",
+    "footerTerms": "服务条款",
+    "footerPrivacy": "隐私政策"
+  },
+  "privacyPolicyPage": {
+    "breadcrumb": "隐私政策",
+    "title": "Road To Vostok — 隐私政策",
+    "lead": "Road To Vostok 指南（roadtovostok.org）在您浏览本站时如何处理信息。",
+    "bodyAriaLabel": "隐私政策正文",
+    "whoHeading": "我们是谁",
+    "whoLead": "本站是 Road To Vostok 的独立游戏参考站，并非由游戏开发商或发行商运营。有关本政策的问题，请联系",
+    "collectHeading": "我们可能收集的信息",
+    "collectP1Html": "与大多数网站一样，托管或基础设施可能在您访问时自动处理技术数据，例如 IP 地址、浏览器类型、大致地区、时间戳与请求的页面。除安全或法律合规所需外，我们不会用这些信息识别个人身份。",
+    "collectP2Html": "若您发邮件给我们，我们会收到您的邮箱地址与邮件内容以便回复。除非您明确同意，我们不会出售您的邮箱或用于营销。",
+    "cookiesHeading": "Cookie 与本地存储",
+    "cookiesHtml": "本站可能使用对基本运行所必需的 Cookie 或类似技术（例如浏览器中的会话或偏好存储）。在本政策范围内，这些页面不运行第三方广告 Cookie。若我们增加会自行设置 Cookie 的分析或嵌入媒体，将更新本政策并在需要时调整同意流程。",
+    "thirdPartyHeading": "第三方服务",
+    "thirdPartyHtml": "页面可能链接至外部网站（例如官方网站、Steam 或 YouTube）。这些服务有各自的隐私实践；我们不对其政策或数据使用负责。",
+    "childrenHeading": "儿童",
+    "childrenHtml": "本站为面向大众的游戏指南。我们不会在知情情况下收集儿童个人信息。若您认为儿童向我们发送了个人数据，请按上文地址联系我们，我们将在适当情况下删除。",
+    "rightsHeading": "您的权利",
+    "rightsHtml": "视您所在地区而定，您可能有权访问、更正或删除我们持有的与您相关的个人数据（例如邮件往来）。请使用上文邮箱联系我们，我们将在合理时间内回复。",
+    "changesHeading": "变更",
+    "changesHtml": "当本站或法律要求变化时，我们可能更新本隐私政策。届时将修订页顶的「最后更新」日期。变更后继续使用本站即表示您接受更新后的政策。",
+    "footerTerms": "服务条款",
+    "footerContact": "联系"
+  },
+  "termsOfServicePage": {
+    "breadcrumb": "服务条款",
+    "title": "Road To Vostok — 服务条款",
+    "lead": "使用 Road To Vostok 指南（roadtovostok.org）的规则。使用本站即表示您同意这些条款。",
+    "bodyAriaLabel": "服务条款正文",
+    "aboutHeading": "关于本站",
+    "aboutHtml": "Road To Vostok 指南是独立参考站。未经 Road To Vostok 或其相关商标持有人背书、关联或赞助。游戏名称与标识归各自权利人所有。",
+    "useHeading": "内容使用",
+    "useHtml": "攻略、表格与文字仅供个人、非商业参考以帮助玩家。您可以链接到我们的页面。未经许可，请勿以替代或竞争本站的方式抓取或大量再分发本站内容。游戏数据与数值可能不准确或过时；请始终在已安装版本与官方来源中核实。",
+    "warrantyHeading": "免责声明",
+    "warrantyHtml": "本站按「现状」提供。我们不保证准确性、可用性或特定用途适用性。因使用本站或依赖其内容而产生的任何损失或损害，我们不承担责任。",
+    "conductHeading": "行为准则",
+    "conductHtml": "请勿利用本站骚扰他人、传播恶意软件、试图未经授权访问我们的系统或违反适用法律。若我们合理认为违反本条款，可能限制访问。",
+    "changesHeading": "变更",
+    "changesHtml": "我们可能随时修改本服务条款。届时将更新「最后更新」日期。变更后继续使用本站即表示接受新条款。",
+    "contactHeading": "联系",
+    "contactHtml": "有关本条款的疑问：",
+    "footerPrivacy": "隐私政策",
+    "footerCopyright": "版权"
+  }
+}

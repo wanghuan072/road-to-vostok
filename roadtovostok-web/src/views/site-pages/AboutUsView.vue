@@ -2,60 +2,51 @@
   <article class="site-page page-article">
     <section class="page-hero-section">
       <div class="container">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a>
+        <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+          <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
           <span aria-hidden="true"> / </span>
-          <span>About Us</span>
+          <span>{{ $t('aboutPage.breadcrumb') }}</span>
         </nav>
-        <h1>About Road To Vostok Guide</h1>
+        <h1>{{ $t('aboutPage.title') }}</h1>
         <p class="lead">
-          What this English-language guide is for, and what it is not.
+          {{ $t('aboutPage.lead') }}
         </p>
       </div>
     </section>
-    <section class="site-page-body" aria-label="About this website">
+    <section class="site-page-body" :aria-label="$t('aboutPage.bodyAriaLabel')">
       <div class="container">
         <div class="site-page-prose">
-          <h2>Our purpose</h2>
+          <h2>{{ $t('aboutPage.purposeHeading') }}</h2>
           <p>
-            Road To Vostok Guide is a player-focused help site: maps and tasks, item tables, how-to guides
-            for weapons and medical systems, save paths on PC, and summaries of public roadmap news. We
-            aim for clear, searchable pages that complement the official game site and Steam store — not
-            replace them.
+            {{ $t('aboutPage.purposeText') }}
           </p>
 
-          <h2>Independence</h2>
+          <h2>{{ $t('aboutPage.independenceHeading') }}</h2>
           <p>
-            We are <strong>not</strong> the official Road To Vostok team. We do not speak for the
-            developer or publisher. Builds, loot, and mechanics change; always double-check critical
-            details in your installed game and on
-            <a href="https://www.roadtovostok.com/" rel="noopener noreferrer" target="_blank">roadtovostok.com</a>
-            and
-            <a
+            <span v-html="$t('aboutPage.independenceBeforeLinksHtml')"></span><a
+              href="https://www.roadtovostok.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >roadtovostok.com</a>{{ $t('aboutPage.independenceBetweenLinks') }}<a
               href="https://store.steampowered.com/app/1963610/Road_to_Vostok/"
               rel="noopener noreferrer"
               target="_blank"
             >Steam</a>.
           </p>
 
-          <h2>How to explore</h2>
-          <p>
-            Start with <a href="/getting-started">Start here</a> for controls and first
-            steps, <a href="/wiki">Wiki</a> for tables, and
-            <a href="/map">Map</a> / <a href="/tasks">Tasks</a> for progression help. Updates and
-            build names are summarized under <a href="/dev-updates">Road ahead</a>.
-          </p>
+          <h2>{{ $t('aboutPage.exploreHeading') }}</h2>
+          <p v-html="$t('aboutPage.exploreHtml')"></p>
 
-          <h2>Contact</h2>
+          <h2>{{ $t('aboutPage.contactHeading') }}</h2>
           <p>
-            Site feedback or legal notices:
+            {{ $t('aboutPage.contactHtml') }}
             <a class="contact-email" href="mailto:wyong@roadtovostok.org">wyong@roadtovostok.org</a>
           </p>
 
           <p>
-            <a href="/contact">Contact page</a>
+            <a :href="getLocalizedPath('/contact')">{{ $t('aboutPage.footerContact') }}</a>
             ·
-            <a href="/privacy-policy">Privacy Policy</a>
+            <a :href="getLocalizedPath('/privacy-policy')">{{ $t('aboutPage.footerPrivacy') }}</a>
           </p>
         </div>
       </div>
@@ -64,6 +55,9 @@
 </template>
 
 <script setup>
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+
+const { getLocalizedPath } = useLocalizedPath()
 </script>
 
 <style src="./site-pages.css"></style>

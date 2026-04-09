@@ -13,57 +13,56 @@
               loading="lazy"
               decoding="async"
             >
-            <p class="footer-title">Road To Vostok</p>
+            <p class="footer-title">{{ $t('site.brandName') }}</p>
           </div>
           <p class="footer-tagline">
-            Reference notes for loadouts, loot, maps, and routes across Area 05, the Border Zone, and
-            Vostok.
+            {{ $t('site.footerTagline') }}
           </p>
         </div>
-        <nav class="footer-nav" aria-label="Footer">
-          <a v-for="item in quick" :key="item.to" :href="item.to" class="footer-link">
+        <nav class="footer-nav" :aria-label="$t('site.footerNavAria')">
+          <a v-for="item in quick" :key="item.to" :href="getLocalizedPath(item.to)" class="footer-link">
             {{ item.label }}
           </a>
         </nav>
-        <nav class="footer-legal" aria-label="Site and legal">
-          <a v-for="item in legal" :key="item.to" :href="item.to" class="footer-legal-link">
+        <nav class="footer-legal" :aria-label="$t('site.footerLegalAria')">
+          <a v-for="item in legal" :key="item.to" :href="getLocalizedPath(item.to)" class="footer-legal-link">
             {{ item.label }}
           </a>
         </nav>
-        <p class="footer-meta">
-          Not affiliated with the official Road To Vostok game or its developer. Game © respective
-          rights holders. Guides reflect community knowledge and may change with updates and the
-          public
-          <a href="/dev-updates">Road ahead &amp; roadmap digest</a>
-          .
-        </p>
-        <p class="footer-copy">© {{ year }} Road To Vostok Guide — Survival FPS wiki &amp; task help.</p>
+        <p class="footer-meta" v-html="$t('site.footerDisclaimerHtml')"></p>
+        <p class="footer-copy">{{ $t('site.footerCopy', { year }) }}</p>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
+
 const year = new Date().getFullYear()
 const brandLogoSrc = '/images/logo.webp'
+const { t } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
 
-const quick = [
-  { label: 'Start here', to: '/getting-started' },
-  { label: 'Wiki', to: '/wiki' },
-  { label: 'Map', to: '/map' },
-  { label: 'Tasks', to: '/tasks' },
-  { label: 'Guides', to: '/guides' },
-  { label: 'Road ahead', to: '/dev-updates' },
-  { label: 'Mods', to: '/mods' },
-]
+const quick = computed(() => [
+  { label: t('site.navStartHere'), to: '/getting-started' },
+  { label: t('site.navWiki'), to: '/wiki' },
+  { label: t('site.navMap'), to: '/map' },
+  { label: t('site.navTasks'), to: '/tasks' },
+  { label: t('site.navGuides'), to: '/guides' },
+  { label: t('site.navRoadAhead'), to: '/dev-updates' },
+  { label: t('site.navMods'), to: '/mods' },
+])
 
-const legal = [
-  { label: 'About', to: '/about' },
-  { label: 'Contact', to: '/contact' },
-  { label: 'Privacy', to: '/privacy-policy' },
-  { label: 'Terms', to: '/terms-of-service' },
-  { label: 'Copyright', to: '/copyright' },
-]
+const legal = computed(() => [
+  { label: t('site.footerAbout'), to: '/about' },
+  { label: t('site.footerContact'), to: '/contact' },
+  { label: t('site.footerPrivacy'), to: '/privacy-policy' },
+  { label: t('site.footerTerms'), to: '/terms-of-service' },
+  { label: t('site.footerCopyright'), to: '/copyright' },
+])
 </script>
 
 <style scoped>

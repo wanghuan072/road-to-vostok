@@ -18,11 +18,22 @@
 </template>
 
 <script setup>
+import { watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import { useRouteSeo } from './seo/composables.js'
 
 useRouteSeo()
+
+const { locale } = useI18n()
+watch(
+  locale,
+  (v) => {
+    document.documentElement.lang = v === 'zh' ? 'zh-CN' : 'en'
+  },
+  { immediate: true },
+)
 </script>
 
 <style scoped>

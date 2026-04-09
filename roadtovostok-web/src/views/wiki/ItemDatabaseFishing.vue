@@ -8,18 +8,16 @@
           style="min-width: 320px; min-height: 50px"
         ></div>
         <div class="page-hero-content">
-          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+          <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true"> / </span>
-            <a href="/wiki">Wiki</a>
+            <a :href="getLocalizedPath('/wiki')">{{ $t('site.navWiki') }}</a>
             <span aria-hidden="true"> / </span>
-            <span>Fishing</span>
+            <span>{{ $t('wikiFishingPage.breadcrumb') }}</span>
           </nav>
-          <h1>Road To Vostok Fishing</h1>
+          <h1>{{ $t('wikiFishingPage.title') }}</h1>
           <p class="lead">
-            How to fish in Road To Vostok depends on your build: fishing appears on the official
-            long-term roadmap. Use this list as a reference and confirm against patch notes and your
-            installed build.
+            {{ $t('wikiFishingPage.lead') }}
           </p>
         </div>
         <aside
@@ -38,14 +36,14 @@
       </div>
     </section>
 
-    <section class="page-body-section" aria-label="Fishing checklist">
+    <section class="page-body-section" :aria-label="$t('wikiFishingPage.checklistAria')">
       <div class="container">
         <div class="table-wrap">
           <table class="data-table">
             <thead>
               <tr>
-                <th scope="col">Topic</th>
-                <th scope="col">What to check</th>
+                <th scope="col">{{ $t('wikiFishingPage.colTopic') }}</th>
+                <th scope="col">{{ $t('wikiFishingPage.colWhatToCheck') }}</th>
               </tr>
             </thead>
             <tbody>
@@ -69,20 +67,21 @@
             data-tag-src="gamtg"
           ></ins>
         </aside>
-        <div class="cross-links">
-          Patch timing:
-          <a href="/dev-updates">Road ahead</a>
-          ·
-          <a href="/getting-started">Start here</a>
-        </div>
+        <div class="cross-links" v-html="$t('wikiFishingPage.crossLinksHtml')"></div>
       </div>
     </section>
   </article>
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue'
-import rows from '../../data/item/fishing.js'
+import { computed, ref, onMounted, nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { getFishingRows } from '../../data/localeData.js'
+import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+
+const { locale } = useI18n()
+const { getLocalizedPath } = useLocalizedPath()
+const rows = computed(() => getFishingRows(locale.value))
 
 const fishingAdsRoot = ref(null)
 const fishingGptRoot = ref(null)

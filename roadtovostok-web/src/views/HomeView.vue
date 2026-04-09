@@ -42,30 +42,30 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-copy">
-            <p class="hero-eyebrow">Survival guide · demo &amp; Steam · Early Access</p>
+            <p class="hero-eyebrow">{{ $t('homePage.hero.eyebrow') }}</p>
             <h1 class="hero-title">
-              Road To Vostok Guide — how to play, Steam demo, guns &amp; roadmap
+              {{ $t('homePage.hero.title') }}
             </h1>
             <p class="hero-strip" aria-hidden="true">
-              <span>Load shotgun &amp; guns</span>
+              <span>{{ $t('homePage.hero.stripShotguns') }}</span>
               <span class="hero-strip-div" />
-              <span>All tasks &amp; roadmap</span>
+              <span>{{ $t('homePage.hero.stripTasks') }}</span>
               <span class="hero-strip-div" />
-              <span>Inverter · medical · saves</span>
+              <span>{{ $t('homePage.hero.stripMedical') }}</span>
             </p>
             <p class="hero-lead">
-              Notes for the Steam demo and Early Access: weapons and loading, inverter power,
-              checklist-style tasks and roadmap timing, medical, PC saves, crafting, and fishing
-              when your build includes it. Single-player survival; mod tools are on the official
-              long-term plan. Use
-              <a href="/getting-started">Start here</a> for the core loop,
-              <a href="/map">Map</a> and <a href="/tasks">Tasks</a> for locations and objectives —
-              the compass block below mirrors every main section plus common guides.
+              {{ $t('homePage.hero.leadBeforeLinks') }}
+              <a :href="getLocalizedPath('/getting-started')">{{ $t('homePage.hero.linkStartHere') }}</a>
+              {{ $t('homePage.hero.leadAfterStart') }}
+              <a :href="getLocalizedPath('/map')">{{ $t('homePage.hero.linkMap') }}</a>
+              {{ $t('homePage.hero.leadMid') }}
+              <a :href="getLocalizedPath('/tasks')">{{ $t('homePage.hero.linkTasks') }}</a>
+              {{ $t('homePage.hero.leadEnd') }}
             </p>
             <div class="hero-actions">
-              <a href="/getting-started" class="btn btn-primary">Start here</a>
-              <a href="/guides" class="btn btn-hero-guides">Advanced guides</a>
-              <a href="/map" class="btn btn-hero-map">Interactive map</a>
+              <a :href="getLocalizedPath('/getting-started')" class="btn btn-primary">{{ $t('homePage.hero.linkStartHere') }}</a>
+              <a :href="getLocalizedPath('/guides')" class="btn btn-hero-guides">{{ $t('homePage.hero.btnAdvancedGuides') }}</a>
+              <a :href="getLocalizedPath('/map')" class="btn btn-hero-map">{{ $t('homePage.hero.btnInteractiveMap') }}</a>
             </div>
           </div>
           <div class="hero-visual">
@@ -83,7 +83,7 @@
                 decoding="async"
               />
               <figcaption class="hero-caption">
-                Site backdrop — same art as full-page mood
+                {{ $t('homePage.hero.caption') }}
               </figcaption>
             </figure>
           </div>
@@ -155,46 +155,72 @@
       <div class="container">
         <div class="home-compass reveal-on-scroll">
           <header class="section-head home-compass__head">
-            <span class="section-kicker">Site compass</span>
-            <h2>Every hub on this site — plus common guides</h2>
+            <span class="section-kicker">{{ $t('homePage.compass.kicker') }}</span>
+            <h2>{{ $t('homePage.compass.title') }}</h2>
             <p>
-              Same destinations as the top navigation, laid out for scanning. Below that: shortcut
-              jumps to high-traffic guides and wiki tables (all paths exist in the router).
+              {{ $t('homePage.compass.intro') }}
             </p>
           </header>
 
           <div class="home-compass__board">
-            <p class="home-compass__board-label" id="home-compass-hubs-label">Main sections</p>
+            <p class="home-compass__board-label" id="home-compass-hubs-label">{{ $t('homePage.compass.boardLabel') }}</p>
             <ul class="home-compass-hubs" role="list" aria-labelledby="home-compass-hubs-label">
-              <li v-for="(hub, i) in quickHubs" :key="hub.to">
-                <a :href="hub.to" class="home-compass-hub">
-                  <span class="home-compass-hub__idx" aria-hidden="true">{{ hubIndex(i) }}</span>
+              <li>
+                <a :href="getLocalizedPath('/getting-started')" class="home-compass-hub">
+                  <span class="home-compass-hub__idx" aria-hidden="true">01</span>
                   <span class="home-compass-hub__body">
-                    <span class="home-compass-hub__title">{{ hub.title }}</span>
-                    <span class="home-compass-hub__hint">{{ hub.hint }}</span>
-                    <span class="home-compass-hub__path">{{ hub.to }}</span>
+                    <span class="home-compass-hub__title">{{ $t('homePage.compass.hubs.gettingStarted.title') }}</span>
+                    <span class="home-compass-hub__hint">{{ $t('homePage.compass.hubs.gettingStarted.hint') }}</span>
+                    <span class="home-compass-hub__path">/getting-started</span>
+                  </span>
+                  <span class="home-compass-hub__go" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/wiki')" class="home-compass-hub">
+                  <span class="home-compass-hub__idx" aria-hidden="true">02</span>
+                  <span class="home-compass-hub__body">
+                    <span class="home-compass-hub__title">{{ $t('homePage.compass.hubs.wiki.title') }}</span>
+                    <span class="home-compass-hub__hint">{{ $t('homePage.compass.hubs.wiki.hint') }}</span>
+                    <span class="home-compass-hub__path">/wiki</span>
+                  </span>
+                  <span class="home-compass-hub__go" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/guides')" class="home-compass-hub">
+                  <span class="home-compass-hub__idx" aria-hidden="true">03</span>
+                  <span class="home-compass-hub__body">
+                    <span class="home-compass-hub__title">{{ $t('homePage.compass.hubs.guides.title') }}</span>
+                    <span class="home-compass-hub__hint">{{ $t('homePage.compass.hubs.guides.hint') }}</span>
+                    <span class="home-compass-hub__path">/guides</span>
+                  </span>
+                  <span class="home-compass-hub__go" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/map')" class="home-compass-hub">
+                  <span class="home-compass-hub__idx" aria-hidden="true">04</span>
+                  <span class="home-compass-hub__body">
+                    <span class="home-compass-hub__title">{{ $t('homePage.compass.hubs.map.title') }}</span>
+                    <span class="home-compass-hub__hint">{{ $t('homePage.compass.hubs.map.hint') }}</span>
+                    <span class="home-compass-hub__path">/map</span>
+                  </span>
+                  <span class="home-compass-hub__go" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/tasks')" class="home-compass-hub">
+                  <span class="home-compass-hub__idx" aria-hidden="true">05</span>
+                  <span class="home-compass-hub__body">
+                    <span class="home-compass-hub__title">{{ $t('homePage.compass.hubs.tasks.title') }}</span>
+                    <span class="home-compass-hub__hint">{{ $t('homePage.compass.hubs.tasks.hint') }}</span>
+                    <span class="home-compass-hub__path">/tasks</span>
                   </span>
                   <span class="home-compass-hub__go" aria-hidden="true">→</span>
                 </a>
               </li>
             </ul>
-
-            <div class="home-compass-refs" aria-labelledby="home-compass-refs-label">
-              <p
-                id="home-compass-refs-label"
-                class="home-compass__board-label home-compass__board-label--refs"
-              >
-                Guides &amp; wiki picks
-              </p>
-              <ul class="home-compass-refs__list" role="list">
-                <li v-for="r in quickRefs" :key="r.to">
-                  <a :href="r.to" class="home-compass-ref">
-                    <span class="home-compass-ref__text">{{ r.label }}</span>
-                    <span class="home-compass-ref__path">{{ r.to }}</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
 
@@ -246,44 +272,100 @@
         <div class="featured-split reveal-on-scroll">
           <div class="featured-split-intro">
             <header class="section-head">
-              <span class="section-kicker">Wiki &amp; guides</span>
-              <h2>Loot tables and survival write-ups</h2>
+              <span class="section-kicker">{{ $t('homePage.featured.kicker') }}</span>
+              <h2>{{ $t('homePage.featured.title') }}</h2>
               <p>
-                Spawn tables and trader lists drift between patches — we keep them here so you can
-                compare notes with what you see in-game, not to mirror the header menu. Longer
-                explainers sit under
-                <a href="/guides">Guides</a>; the <a href="/map">map</a> and
-                <a href="/tasks">tasks</a> pages are for places and objectives. On the right: a few
-                pages people open most often.
+                {{ $t('homePage.featured.introBeforeGuides') }}
+                <a :href="getLocalizedPath('/guides')">{{ $t('homePage.featured.linkGuides') }}</a>{{ $t('homePage.featured.introBeforeMap') }}
+                <a :href="getLocalizedPath('/map')">{{ $t('homePage.featured.linkMap') }}</a>
+                {{ $t('homePage.featured.leadMid') }}
+                <a :href="getLocalizedPath('/tasks')">{{ $t('homePage.featured.linkTasks') }}</a>
+                {{ $t('homePage.featured.introEnd') }}
               </p>
             </header>
-            <p id="gear-cross-label" class="gear-cross-label">Entry points</p>
+            <p id="gear-cross-label" class="gear-cross-label">{{ $t('homePage.featured.entryPointsLabel') }}</p>
             <ul class="gear-cross-list" role="list" aria-labelledby="gear-cross-label">
-              <li v-for="row in gearCrossLinks" :key="row.to">
-                <a :href="row.to" class="gear-cross-link">{{ row.label }}</a>
-                <span class="gear-cross-hint">{{ row.hint }}</span>
+              <li>
+                <a :href="getLocalizedPath('/wiki')" class="gear-cross-link">{{ $t('homePage.featured.crossWikiLabel') }}</a>
+                <span class="gear-cross-hint">{{ $t('homePage.featured.crossWikiHint') }}</span>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/guides')" class="gear-cross-link">{{ $t('homePage.featured.crossGuidesLabel') }}</a>
+                <span class="gear-cross-hint">{{ $t('homePage.featured.crossGuidesHint') }}</span>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/map')" class="gear-cross-link">{{ $t('homePage.featured.crossMapLabel') }}</a>
+                <span class="gear-cross-hint">{{ $t('homePage.featured.crossMapHint') }}</span>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/tasks')" class="gear-cross-link">{{ $t('homePage.featured.crossTasksLabel') }}</a>
+                <span class="gear-cross-hint">{{ $t('homePage.featured.crossTasksHint') }}</span>
               </li>
             </ul>
           </div>
           <div class="featured-catalog-wrap">
-            <p id="gear-catalog-label" class="gear-catalog-label">Popular picks</p>
+            <p id="gear-catalog-label" class="gear-catalog-label">{{ $t('homePage.featured.popularPicksLabel') }}</p>
             <ul class="featured-catalog" role="list" aria-labelledby="gear-catalog-label">
-              <li
-                v-for="cat in gearCatalog"
-                :key="cat.to + cat.title"
-                class="featured-catalog-item"
-              >
-                <a :href="cat.to" class="featured-catalog-link">
+              <li class="featured-catalog-item">
+                <a :href="getLocalizedPath('/wiki/weapons')" class="featured-catalog-link">
                   <span class="featured-catalog-accent" aria-hidden="true" />
                   <div class="featured-catalog-body">
-                    <span class="featured-catalog-kicker">{{ cat.kicker }}</span>
+                    <span class="featured-catalog-kicker">{{ $t('homePage.featured.catalog.weapons.kicker') }}</span>
                     <h3 class="featured-catalog-title">
-                      {{ cat.title }}
+                      {{ $t('homePage.featured.catalog.weapons.title') }}
                     </h3>
                     <p class="featured-catalog-blurb">
-                      {{ cat.blurb }}
+                      {{ $t('homePage.featured.catalog.weapons.blurb') }}
                     </p>
-                    <span class="featured-catalog-path">{{ cat.to }}</span>
+                    <span class="featured-catalog-path">/wiki/weapons</span>
+                  </div>
+                  <span class="featured-catalog-go" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li class="featured-catalog-item">
+                <a :href="getLocalizedPath('/wiki/npcs')" class="featured-catalog-link">
+                  <span class="featured-catalog-accent" aria-hidden="true" />
+                  <div class="featured-catalog-body">
+                    <span class="featured-catalog-kicker">{{ $t('homePage.featured.catalog.npcs.kicker') }}</span>
+                    <h3 class="featured-catalog-title">
+                      {{ $t('homePage.featured.catalog.npcs.title') }}
+                    </h3>
+                    <p class="featured-catalog-blurb">
+                      {{ $t('homePage.featured.catalog.npcs.blurb') }}
+                    </p>
+                    <span class="featured-catalog-path">/wiki/npcs</span>
+                  </div>
+                  <span class="featured-catalog-go" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li class="featured-catalog-item">
+                <a :href="getLocalizedPath('/wiki/core-tasks')" class="featured-catalog-link">
+                  <span class="featured-catalog-accent" aria-hidden="true" />
+                  <div class="featured-catalog-body">
+                    <span class="featured-catalog-kicker">{{ $t('homePage.featured.catalog.coreTasks.kicker') }}</span>
+                    <h3 class="featured-catalog-title">
+                      {{ $t('homePage.featured.catalog.coreTasks.title') }}
+                    </h3>
+                    <p class="featured-catalog-blurb">
+                      {{ $t('homePage.featured.catalog.coreTasks.blurb') }}
+                    </p>
+                    <span class="featured-catalog-path">/wiki/core-tasks</span>
+                  </div>
+                  <span class="featured-catalog-go" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li class="featured-catalog-item">
+                <a :href="getLocalizedPath('/guides/surviving-the-Minefield')" class="featured-catalog-link">
+                  <span class="featured-catalog-accent" aria-hidden="true" />
+                  <div class="featured-catalog-body">
+                    <span class="featured-catalog-kicker">{{ $t('homePage.featured.catalog.minefield.kicker') }}</span>
+                    <h3 class="featured-catalog-title">
+                      {{ $t('homePage.featured.catalog.minefield.title') }}
+                    </h3>
+                    <p class="featured-catalog-blurb">
+                      {{ $t('homePage.featured.catalog.minefield.blurb') }}
+                    </p>
+                    <span class="featured-catalog-path">/guides/surviving-the-Minefield</span>
                   </div>
                   <span class="featured-catalog-go" aria-hidden="true">→</span>
                 </a>
@@ -299,59 +381,49 @@
       <div class="container">
         <div class="questline-content reveal-on-scroll">
           <header class="section-head">
-            <span class="section-kicker">Progression</span>
-            <h2>West to east: Area 05, the border, Vostok</h2>
+            <span class="section-kicker">{{ $t('homePage.quest.progression.kicker') }}</span>
+            <h2>{{ $t('homePage.quest.progression.title') }}</h2>
             <p>
-              On the
+              {{ $t('homePage.quest.official.leadBefore') }}
               <a href="https://www.roadtovostok.com/game" rel="noopener noreferrer" target="_blank"
-                >official game page</a
-              >, the world is laid out as three regions. You start in <strong>Area 05</strong>, an
-              evacuated part of southeastern Finland: shelters, traders, tasks, and early loot,
-              while <strong>Bandits</strong> patrol the zone. When you are geared enough, the road
-              continues <strong>east</strong> into the <strong>Border Zone</strong>—guarded
-              crossings between Finland and Russia—then, if you cross, into
-              <strong>Vostok</strong> in Russia (high risk; permadeath—dying there costs your whole
-              run stash, unlike the western zones).
+                >{{ $t('homePage.quest.official.linkLabel') }}</a
+              ><span v-html="$t('homePage.quest.official.afterLinkHtml')"></span>
             </p>
             <p>
-              The game is still a <strong>sandbox</strong>: you are not forced into Vostok or a
-              single playstyle. “Pushing east” simply means following that intended difficulty
-              curve—secure the west, then attempt harder crossings—not a hidden story mandate. For
-              step-by-step locations use <a href="/map">Map</a>, <a href="/tasks">Tasks</a>, and
-              <a href="/wiki/npcs">NPCs</a>; for controls and the survival loop,
-              <a href="/getting-started">Start here</a>.
+              <span v-html="$t('homePage.quest.sandbox.beforeLinksHtml')"></span>
+              <a :href="getLocalizedPath('/map')">{{ $t('homePage.quest.inline.linkMap') }}</a>{{ $t('homePage.quest.inline.commaAfterMap') }}
+              <a :href="getLocalizedPath('/tasks')">{{ $t('homePage.quest.inline.linkTasks') }}</a>{{ $t('homePage.quest.inline.midAndNpcs') }}
+              <a :href="getLocalizedPath('/wiki/npcs')">{{ $t('homePage.quest.inline.linkNpcs') }}</a>{{ $t('homePage.quest.inline.beforeStartHere') }}
+              <a :href="getLocalizedPath('/getting-started')">{{ $t('homePage.quest.inline.linkStartHere') }}</a>{{ $t('homePage.quest.inline.periodEnd') }}
             </p>
           </header>
 
-          <div class="quest-zones" aria-label="Three regions from west to east">
+          <div class="quest-zones" :aria-label="$t('homePage.quest.zonesAriaLabel')">
             <div class="quest-zone">
-              <span class="quest-zone-kicker">Finland · West</span>
-              <strong class="quest-zone-title">Area 05</strong>
+              <span class="quest-zone-kicker">{{ $t('homePage.quest.zones.area05.kicker') }}</span>
+              <strong class="quest-zone-title">{{ $t('homePage.quest.zones.area05.title') }}</strong>
               <p>
-                Hub shelters, traders, tasks, starter gear. Hostile bandits in the evacuation zone.
+                {{ $t('homePage.quest.zones.area05.text') }}
               </p>
             </div>
             <div class="quest-zone">
-              <span class="quest-zone-kicker">Crossing · Mid</span>
-              <strong class="quest-zone-title">Border Zone</strong>
+              <span class="quest-zone-kicker">{{ $t('homePage.quest.zones.border.kicker') }}</span>
+              <strong class="quest-zone-title">{{ $t('homePage.quest.zones.border.title') }}</strong>
               <p>
-                Guarded border maps: mines, obstacles, boats, and corrupt Guards with air support.
+                {{ $t('homePage.quest.zones.border.text') }}
               </p>
             </div>
             <div class="quest-zone">
-              <span class="quest-zone-kicker">Russia · East</span>
-              <strong class="quest-zone-title">Vostok</strong>
-              <p>Best loot, Military faction, armored threats. Every Vostok map is permadeath.</p>
+              <span class="quest-zone-kicker">{{ $t('homePage.quest.zones.vostok.kicker') }}</span>
+              <strong class="quest-zone-title">{{ $t('homePage.quest.zones.vostok.title') }}</strong>
+              <p>{{ $t('homePage.quest.zones.vostok.text') }}</p>
             </div>
           </div>
 
           <div class="quest-demo-block">
-            <h3 class="quest-demo-heading">Public demo: how the journal lines up</h3>
+            <h3 class="quest-demo-heading">{{ $t('homePage.quest.demo.heading') }}</h3>
             <p class="quest-demo-lead">
-              The playable demo is only a slice of that world, but it usually nudges you through the
-              same
-              <em>idea</em>: learn your shelter, clear Area 05–style work, follow traders and keys,
-              then the UI may show a completion line often labeled <strong>“All Tasks.”</strong>
+              {{ $t('homePage.quest.demo.lead') }}
             </p>
           </div>
 
@@ -359,43 +431,48 @@
             <div
               class="quest-flow"
               role="img"
-              aria-label="Typical demo order: shelter, Area 05, traders and keys, then All Tasks journal state"
+              :aria-label="$t('homePage.quest.flow.ariaLabel')"
             >
               <div class="quest-track">
                 <div class="quest-node">
                   <span class="quest-dot" />
-                  <span class="quest-name">Shelter &amp; stash</span>
+                  <span class="quest-name">{{ $t('homePage.quest.flow.shelter') }}</span>
                 </div>
                 <span class="quest-line" aria-hidden="true" />
                 <div class="quest-node">
                   <span class="quest-dot" />
-                  <span class="quest-name">Area 05 tasks</span>
+                  <span class="quest-name">{{ $t('homePage.quest.flow.area05') }}</span>
                 </div>
                 <span class="quest-line" aria-hidden="true" />
                 <div class="quest-node">
                   <span class="quest-dot" />
-                  <span class="quest-name">Traders &amp; keys</span>
+                  <span class="quest-name">{{ $t('homePage.quest.flow.traders') }}</span>
                 </div>
                 <span class="quest-line quest-line-accent" aria-hidden="true" />
                 <div class="quest-node quest-node-hub">
                   <span class="quest-dot quest-dot-hub" />
-                  <span class="quest-name">All Tasks</span>
-                  <span class="quest-badge">Journal</span>
+                  <span class="quest-name">{{ $t('homePage.quest.flow.allTasks') }}</span>
+                  <span class="quest-badge">{{ $t('homePage.quest.flow.journalBadge') }}</span>
                 </div>
               </div>
-              <p class="quest-caption">
-                “All Tasks” means the
-                <strong>main task list for that demo build is finished</strong>. It is not a promise
-                that Early Access or later builds will have nothing left to do.
-              </p>
+              <p class="quest-caption" v-html="$t('homePage.quest.flow.captionHtml')"></p>
             </div>
           </div>
 
-          <nav class="quest-related" aria-label="Site pages for regions and progression">
-            <span class="quest-related-label">Open on this site</span>
+          <nav class="quest-related" :aria-label="$t('homePage.quest.relatedNavAria')">
+            <span class="quest-related-label">{{ $t('homePage.quest.related.label') }}</span>
             <ul class="quest-related-list" role="list">
-              <li v-for="l in questRelatedPages" :key="l.to">
-                <a :href="l.to" class="quest-related-link">{{ l.label }}</a>
+              <li>
+                <a :href="getLocalizedPath('/map')" class="quest-related-link">{{ $t('homePage.quest.related.map') }}</a>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/tasks')" class="quest-related-link">{{ $t('homePage.quest.related.tasks') }}</a>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/wiki/npcs')" class="quest-related-link">{{ $t('homePage.quest.related.npcs') }}</a>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/getting-started')" class="quest-related-link">{{ $t('homePage.quest.related.startHere') }}</a>
               </li>
             </ul>
           </nav>
@@ -441,26 +518,27 @@
       <div class="container">
         <div class="devlog-content reveal-on-scroll">
           <header class="section-head">
-            <span class="section-kicker">Signals</span>
-            <h2>Road To Vostok roadmap &amp; devlog</h2>
+            <span class="section-kicker">{{ $t('homePage.devlog.kicker') }}</span>
+            <h2>{{ $t('homePage.devlog.title') }}</h2>
             <p>
-              Long-form developer updates on YouTube cover Early Access scope, shelters, and later
-              beats like fishing and seasons. On this site:
-              <a href="/guides">Guides</a> include
-              <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography"
-                >border geography</a
+              {{ $t('homePage.devlog.introBefore') }}
+              <a :href="getLocalizedPath('/guides')">{{ $t('homePage.devlog.linkGuides') }}</a>
+              {{ $t('homePage.devlog.afterGuides') }}
+              <a :href="getLocalizedPath('/guides/an-analytical-deep-dive-into-its-real-world-geography')"
+                >{{ $t('homePage.devlog.linkGeography') }}</a
               >
-              and
-              <a href="/guides/surviving-the-Minefield">Minefield tactics</a>;
-              <a href="/dev-updates">Road ahead</a> covers builds and patch-style notes; when your
-              build adds it, see <a href="/wiki/fishing">Wiki · Fishing</a>.
+              {{ $t('homePage.devlog.betweenGeoMine') }}
+              <a :href="getLocalizedPath('/guides/surviving-the-Minefield')">{{ $t('homePage.devlog.linkMinefield') }}</a>{{ $t('homePage.devlog.afterMinefield') }}
+              <a :href="getLocalizedPath('/dev-updates')">{{ $t('homePage.devlog.linkRoadAhead') }}</a>
+              {{ $t('homePage.devlog.afterRoadAhead') }}
+              <a :href="getLocalizedPath('/wiki/fishing')">{{ $t('homePage.devlog.linkFishing') }}</a>{{ $t('homePage.devlog.afterFishing') }}
             </p>
           </header>
           <div class="devlog-layout">
             <div class="devlog-video">
               <span class="devlog-video-scan" aria-hidden="true" />
               <iframe
-                :title="devlogIframeTitle"
+                :title="$t('homePage.devlog.iframeTitle')"
                 src="https://www.youtube-nocookie.com/embed/4q6ZuNdGvus"
                 width="560"
                 height="315"
@@ -470,16 +548,17 @@
               />
             </div>
             <div class="devlog-summary">
-              <h3>Episode summary</h3>
+              <h3>{{ $t('homePage.devlog.summaryHeading') }}</h3>
               <ul>
-                <li>Early Access goals: expanded maps, dynamic events, multi-shelter loops.</li>
-                <li>Trader keys and shelter unlock cadence tied to exploration risk.</li>
-                <li>Community wishlists, demo learnings, and transparent roadmap communication.</li>
-                <li>How later builds are expected to layer quests, seasons, and naval content.</li>
+                <li>{{ $t('homePage.devlog.summaryBullet1') }}</li>
+                <li>{{ $t('homePage.devlog.summaryBullet2') }}</li>
+                <li>{{ $t('homePage.devlog.summaryBullet3') }}</li>
+                <li>{{ $t('homePage.devlog.summaryBullet4') }}</li>
               </ul>
               <p>
-                For patch-style notes, visit <a href="/dev-updates">Road ahead</a>. Mod
-                expectations: <a href="/mods">Mods hub</a> (no hosted files).
+                {{ $t('homePage.devlog.footerBeforeRoad') }}
+                <a :href="getLocalizedPath('/dev-updates')">{{ $t('homePage.devlog.footerLinkRoadAhead') }}</a>{{ $t('homePage.devlog.footerMid') }}
+                <a :href="getLocalizedPath('/mods')">{{ $t('homePage.devlog.footerLinkMods') }}</a>{{ $t('homePage.devlog.footerEnd') }}
               </p>
             </div>
           </div>
@@ -491,25 +570,19 @@
     <section class="about-section">
       <div class="container">
         <div class="about-content reveal-on-scroll">
-          <span class="section-kicker">About</span>
-          <h2>About this Road To Vostok guide</h2>
+          <span class="section-kicker">{{ $t('homePage.about.kicker') }}</span>
+          <h2>{{ $t('homePage.about.title') }}</h2>
           <p>
-            Road To Vostok (Road To Vostok Ltd.) is a hardcore single-player survival FPS on the
-            Finland–Russia border. You loot in Area 05, cross the Border Zone, and can enter Vostok
-            under stricter permadeath rules than the rest of a run. The free Steam demo and the
-            Early Access release drive most searches: how to play, loadout and medical questions,
-            tasks, roadmap timing, and PC saves.
+            {{ $t('homePage.about.text1') }}
           </p>
           <p>
-            This English-language guide covers those topics with practical articles on loadouts, the
-            long-term roadmap, crafting, and fishing as patches add them — always double-check what
-            your installed build actually shows.
+            {{ $t('homePage.about.text2') }}
           </p>
-          <nav class="about-hub-links" aria-label="Main site pages">
-            <a href="/getting-started" class="about-hub-link">Start here</a>
-            <a href="/wiki" class="about-hub-link">Wiki</a>
-            <a href="/guides" class="about-hub-link">Guides</a>
-            <a href="/about" class="about-hub-link">About us</a>
+          <nav class="about-hub-links" :aria-label="$t('homePage.about.hubNavAria')">
+            <a :href="getLocalizedPath('/getting-started')" class="about-hub-link">{{ $t('homePage.about.linkStartHere') }}</a>
+            <a :href="getLocalizedPath('/wiki')" class="about-hub-link">{{ $t('homePage.about.linkWiki') }}</a>
+            <a :href="getLocalizedPath('/guides')" class="about-hub-link">{{ $t('homePage.about.linkGuides') }}</a>
+            <a :href="getLocalizedPath('/about')" class="about-hub-link">{{ $t('homePage.about.linkAboutUs') }}</a>
           </nav>
         </div>
       </div>
@@ -519,19 +592,51 @@
     <section class="faq-section">
       <div class="container">
         <div class="faq-content reveal-on-scroll">
-          <span class="section-kicker">FAQ</span>
-          <h2>Frequently asked questions</h2>
+          <span class="section-kicker">{{ $t('homePage.faq.kicker') }}</span>
+          <h2>{{ $t('homePage.faq.title') }}</h2>
           <dl class="faq-list">
-            <div v-for="row in faq" :key="row.q" class="faq-item">
-              <dt>{{ row.q }}</dt>
-              <dd>{{ row.a }}</dd>
+            <div
+              v-for="id in [
+                'releaseEa',
+                'multiplayer',
+                'demoSteam',
+                'whatFirst',
+                'loadWeapons',
+                'inverter',
+                'fracture',
+                'allTasks',
+                'roadmap',
+                'mods',
+                'backup',
+                'crafting',
+                'fishing',
+                'officialSite',
+              ]"
+              :key="id"
+              class="faq-item"
+            >
+              <dt>{{ $t('homePage.faq.items.' + id + '.q') }}</dt>
+              <dd>{{ $t('homePage.faq.items.' + id + '.a') }}</dd>
             </div>
           </dl>
-          <nav class="faq-hub" aria-label="Jump to detailed pages">
-            <span class="faq-hub-label">Related pages</span>
+          <nav class="faq-hub" :aria-label="$t('homePage.faq.hubNavAria')">
+            <span class="faq-hub-label">{{ $t('homePage.faq.relatedLabel') }}</span>
             <ul class="faq-hub-list" role="list">
-              <li v-for="l in faqHubLinks" :key="l.to">
-                <a :href="l.to" class="faq-hub-link">{{ l.label }}</a>
+              <li>
+                <a :href="getLocalizedPath('/getting-started')" class="faq-hub-link">{{ $t('homePage.faq.hubStartHere') }}</a>
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/guides/surviving-the-Minefield')" class="faq-hub-link">{{ $t('homePage.faq.hubMinefield') }}</a>
+              </li>
+              <li>
+                <a
+                  :href="getLocalizedPath('/guides/an-analytical-deep-dive-into-its-real-world-geography')"
+                  class="faq-hub-link"
+                  >{{ $t('homePage.faq.hubGeography') }}</a
+                >
+              </li>
+              <li>
+                <a :href="getLocalizedPath('/tasks')" class="faq-hub-link">{{ $t('homePage.faq.hubTasks') }}</a>
               </li>
             </ul>
           </nav>
@@ -544,166 +649,14 @@
 <script setup>
 import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import { useDeviceDetection } from '../utils/useDeviceDetection'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
+
+const { getLocalizedPath } = useLocalizedPath()
 
 const homeRoot = ref(null)
 let revealObserver = null
 
 const { isMobile } = useDeviceDetection()
-
-/** Site compass: keep hub count ≈ refs count so the two columns stay even */
-const quickHubs = [
-  {
-    to: '/getting-started',
-    title: 'Start here',
-    hint: 'First session, controls, shelter loop',
-  },
-  {
-    to: '/wiki',
-    title: 'Wiki',
-    hint: 'Item tables — weapons, ammo, tasks',
-  },
-  {
-    to: '/guides',
-    title: 'Guides',
-    hint: 'Long-form player articles',
-  },
-  {
-    to: '/map',
-    title: 'Map',
-    hint: 'Area 05, Border, Vostok pins',
-  },
-  {
-    to: '/tasks',
-    title: 'Tasks',
-    hint: 'Objectives, traders, progression',
-  },
-]
-
-const quickRefs = [
-  {
-    to: '/guides/an-analytical-deep-dive-into-its-real-world-geography',
-    label: 'Geography guide',
-  },
-  { to: '/guides/surviving-the-Minefield', label: 'Minefield guide' },
-  { to: '/dev-updates', label: 'Road ahead' },
-  { to: '/wiki/weapons', label: 'Weapons table' },
-  { to: '/wiki/npcs', label: 'NPCs & traders' },
-]
-
-function hubIndex(i) {
-  return String(i + 1).padStart(2, '0')
-}
-
-/** Left column: short link + hint (not duplicate card nav) */
-const gearCrossLinks = [
-  { to: '/wiki', label: 'Wiki hub', hint: 'Tables, NPCs, fishing, gathering' },
-  { to: '/guides', label: 'Guides', hint: 'Roadmap, medical, loadouts' },
-  { to: '/map', label: 'Map', hint: 'Pins and location index' },
-  { to: '/tasks', label: 'Tasks', hint: 'Objectives and zone rules' },
-]
-
-/** Right column: high-traffic tables & guides */
-const gearCatalog = [
-  {
-    kicker: 'Wiki',
-    title: 'Weapons',
-    blurb: 'Category tables and stats — verify against your build.',
-    to: '/wiki/weapons',
-  },
-  {
-    kicker: 'Wiki',
-    title: 'NPCs & traders',
-    blurb: 'Who sells what; pairs with map pins.',
-    to: '/wiki/npcs',
-  },
-  {
-    kicker: 'Wiki',
-    title: 'Core task items',
-    blurb: 'Inverter, cables, keys, and quest props.',
-    to: '/wiki/core-tasks',
-  },
-  {
-    kicker: 'Guide',
-    title: 'Minefield tactics',
-    blurb: 'Mined border routes, AI pressure, and the Vostok gate.',
-    to: '/guides/surviving-the-Minefield',
-  },
-]
-
-const questRelatedPages = [
-  { to: '/map', label: 'Map' },
-  { to: '/tasks', label: 'Tasks' },
-  { to: '/wiki/npcs', label: 'NPCs' },
-  { to: '/getting-started', label: 'Start here' },
-]
-
-const faqHubLinks = [
-  { to: '/getting-started', label: 'Start here' },
-  { to: '/guides/surviving-the-Minefield', label: 'Minefield guide' },
-  { to: '/guides/an-analytical-deep-dive-into-its-real-world-geography', label: 'Geography guide' },
-  { to: '/tasks', label: 'Tasks' },
-]
-
-const devlogIframeTitle = 'Road To Vostok developer interview — Early Access and roadmap discussion'
-
-const faq = [
-  {
-    q: 'What is the Road To Vostok release date and Early Access plan?',
-    a: 'Steam lists a planned Early Access window (check the store page for the current date). The in-game and site roadmap guides summarize build phases after that launch.',
-  },
-  {
-    q: 'Is Road To Vostok online or multiplayer?',
-    a: 'No. The Steam store describes it as a single-player survival game. There is no live co-op or MMO mode in that description.',
-  },
-  {
-    q: 'How do I get the Road To Vostok demo on Steam?',
-    a: 'Use the Steam store entry for Road To Vostok and install the separate demo app (Steam shows a demo download when available).',
-  },
-  {
-    q: 'How to play Road To Vostok — what should I do first?',
-    a: 'Run any tutorial map the demo offers, unlock your shelter save point, then learn looting, traders, and how to load weapons before pushing toward harder maps.',
-  },
-  {
-    q: 'Road To Vostok: how to load shotgun and how to load weapons?',
-    a: 'Magazine guns need loaded mags in your inventory; shotguns and bolt actions use manual per-round steps shown in the tutorial. See our Load weapon guide for a written checklist.',
-  },
-  {
-    q: 'Where is the Road To Vostok inverter or power gear?',
-    a: 'Use the inverter location guide: search industrial and utility POIs, pair with trader hints, and verify spawns in your patch.',
-  },
-  {
-    q: 'I died from a broken bone in Road To Vostok — what now?',
-    a: 'Treat fractures fast with splints or advanced kits before movement penalties and passive damage stack. The medical guide walks through afflictions and healing items.',
-  },
-  {
-    q: 'How do I complete Road To Vostok all tasks?',
-    a: 'Follow the quest chain on the homepage, then the Tasks page for objectives and trader keys and the Map for POIs.',
-  },
-  {
-    q: 'Where is the Road To Vostok roadmap?',
-    a: 'Open the roadmap guide and the Road ahead hub for build names, Early Access scope, and future systems like fishing and seasons as announced.',
-  },
-  {
-    q: 'Are there Road To Vostok mods?',
-    a: 'The Steam Early Access FAQ states modding tools are planned toward full release. Demo builds may not expose full mod support yet.',
-  },
-  {
-    q: 'How to backup Road To Vostok saves on PC?',
-    a: 'Paths vary by build and OS. Snapshot your user data folder before experiments; the Mods hub explains layout at a high level — always verify on your machine.',
-  },
-  {
-    q: 'How does crafting work in Road To Vostok?',
-    a: 'Crafting expands across Early Access builds. Check patch notes and in-game recipes; the Wiki tracks loot that feeds crafting loops.',
-  },
-  {
-    q: 'Is fishing in Road To Vostok?',
-    a: 'Fishing and naval content appear on the official multi-year roadmap for later builds — not always in every demo slice.',
-  },
-  {
-    q: 'Is this an official Road To Vostok website?',
-    a: 'No. This is an independent reference site. Cross-check facts with your installed build and official channels.',
-  },
-]
 
 // ---------- GAM 位 1（仅 GPT / googletag，与下方 ADX 完全分开）----------
 const gptBannerRoot = ref(null)
@@ -1292,28 +1245,39 @@ onUnmounted(() => {
   color: color-mix(in srgb, var(--color-muted) 82%, var(--color-signal));
 }
 
-.home-compass__board-label--refs {
-  margin-bottom: 0.55rem;
-  color: color-mix(in srgb, var(--color-muted) 78%, var(--color-ice));
-}
-
+/* Main sections: 2 hubs top + 3 bottom on a 6-col track (edges align with container) */
 .home-compass-hubs {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 0.5rem 0.65rem;
+  align-items: stretch;
 }
 
-@media (min-width: 1100px) {
-  .home-compass-hubs {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
+.home-compass-hubs > li {
+  min-width: 0;
+}
 
-  .home-compass-hubs > li:first-child {
-    grid-column: span 2;
-  }
+.home-compass-hubs > li:nth-child(1) {
+  grid-column: 1 / span 3;
+}
+
+.home-compass-hubs > li:nth-child(2) {
+  grid-column: 4 / span 3;
+}
+
+.home-compass-hubs > li:nth-child(3) {
+  grid-column: 1 / span 2;
+}
+
+.home-compass-hubs > li:nth-child(4) {
+  grid-column: 3 / span 2;
+}
+
+.home-compass-hubs > li:nth-child(5) {
+  grid-column: 5 / span 2;
 }
 
 .home-compass-hub {
@@ -1321,6 +1285,9 @@ onUnmounted(() => {
   grid-template-columns: auto 1fr auto;
   gap: 0.65rem 0.75rem;
   align-items: start;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   min-height: 4.35rem;
   padding: 0.75rem 0.85rem 0.8rem;
   text-decoration: none;
@@ -1394,52 +1361,14 @@ onUnmounted(() => {
   color: var(--color-primary-soft);
 }
 
-.home-compass-refs {
-  padding-top: 0.35rem;
-  border-top: 1px dashed color-mix(in srgb, var(--color-border) 65%, transparent);
-}
+@media (max-width: 700px) {
+  .home-compass-hubs {
+    grid-template-columns: 1fr;
+  }
 
-.home-compass-refs__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 0.45rem;
-}
-
-.home-compass-ref {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.08rem;
-  padding: 0.42rem 0.65rem 0.48rem;
-  text-decoration: none;
-  color: var(--color-text);
-  border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
-  border-radius: 3px;
-  background: color-mix(in srgb, var(--color-bg) 40%, transparent);
-  transition: border-color 0.18s ease, background 0.18s ease;
-}
-
-.home-compass-ref:hover,
-.home-compass-ref:focus-visible {
-  border-color: color-mix(in srgb, var(--color-ice) 28%, var(--color-border));
-  background: color-mix(in srgb, var(--color-ice) 6%, var(--color-panel));
-}
-
-.home-compass-ref__text {
-  font-family: var(--font-display);
-  font-size: 0.68rem;
-  font-weight: 650;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.home-compass-ref__path {
-  font-size: 0.58rem;
-  color: var(--color-muted);
-  letter-spacing: 0.02em;
+  .home-compass-hubs > li:nth-child(n) {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

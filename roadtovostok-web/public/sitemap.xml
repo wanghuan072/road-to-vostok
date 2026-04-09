@@ -7,7 +7,19 @@
     <priority>1</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/getting-started</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/getting-started</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -19,7 +31,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/wiki</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/wiki/core-tasks</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/wiki/core-tasks</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -31,7 +55,19 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/wiki/weapons</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/wiki/ammunition</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/wiki/ammunition</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -43,7 +79,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/wiki/fishing</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/wiki/gathering</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/wiki/gathering</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -55,7 +103,19 @@
     <priority>0.82</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/wiki/npcs</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/map</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/map</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -67,7 +127,19 @@
     <priority>0.92</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/tasks</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/guides</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/guides</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
@@ -79,7 +151,31 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/dev-updates</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/road-to-vostok-poster</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/road-to-vostok-poster</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/mods</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/mods</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -91,7 +187,19 @@
     <priority>0.45</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/privacy-policy</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.45</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/terms-of-service</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.45</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/terms-of-service</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.45</priority>
@@ -103,7 +211,19 @@
     <priority>0.45</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/copyright</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.45</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/about</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/about</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.55</priority>
@@ -115,7 +235,19 @@
     <priority>0.55</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/contact</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/guides/an-analytical-deep-dive-into-its-real-world-geography</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/guides/an-analytical-deep-dive-into-its-real-world-geography</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -127,7 +259,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/guides/surviving-the-Minefield</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/guides/apartments-complete-survival-loot-guid</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/guides/apartments-complete-survival-loot-guid</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -139,7 +283,43 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/guides/how-to-fish</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/guides/weapons-list</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/guides/weapons-list</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/guides/reload-shotguns-bolt-actions-magazine-checks</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/guides/reload-shotguns-bolt-actions-magazine-checks</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/guides/cat-guide-find-care-shelter-companion</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/guides/cat-guide-find-care-shelter-companion</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -151,7 +331,19 @@
     <priority>0.78</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/mods/item-spawner</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/mods/oldmans-immersive-overhaul</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/mods/oldmans-immersive-overhaul</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
@@ -163,13 +355,43 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/wiki/npcs/bandits</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/wiki/npcs/generalist</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://roadtovostok.org/zh/wiki/npcs/generalist</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://roadtovostok.org/wiki/npcs/doctor</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/wiki/npcs/doctor</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/wiki/npcs/cat</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://roadtovostok.org/zh/wiki/npcs/cat</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>

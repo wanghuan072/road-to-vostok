@@ -1,4 +1,9 @@
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
+import {
+  stripLocaleFromFullPath,
+  applyLocalePrefix,
+  extractLocaleFromPath,
+} from './useLocalizedPath.js'
 
 /** Vite base without trailing slash, e.g. '' or '/myapp' */
 function viteBasePath() {
@@ -13,6 +18,7 @@ function viteBasePath() {
  */
 export function useHtmlContentLinkNavigation() {
   const router = useRouter()
+  const route = useRoute()
 
   function onContentLinkClick(e) {
     if (e.defaultPrevented) return
@@ -46,7 +52,9 @@ export function useHtmlContentLinkNavigation() {
     if (!path.startsWith('/')) return
 
     e.preventDefault()
-    router.push(path + suffix)
+    const logical = stripLocaleFromFullPath(path + suffix)
+    const loc = extractLocaleFromPath(route.path)
+    router.push(applyLocalePrefix(logical, loc))
   }
 
   return { onContentLinkClick }
