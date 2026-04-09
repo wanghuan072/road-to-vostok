@@ -2,25 +2,30 @@
   <article ref="coreTasksAdsRoot" class="item-db-page">
     <section class="page-hero-section">
       <div class="container">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a>
-          <span aria-hidden="true"> / </span>
-          <a href="/wiki">Wiki</a>
-          <span aria-hidden="true"> / </span>
-          <span>Core tasks</span>
-        </nav>
-        <h1>Road To Vostok Core Tasks &amp; Power Items</h1>
-        <p class="lead">
-          Items players pair with shelter power, cabling, and quest chains (<strong>all tasks</strong>).
-          Cross-check
-          <a href="/map">Map</a> and <a href="/tasks">Tasks</a> for
-          progression context; for long reads see
-          <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</a>
-          and
-          <a href="/guides/surviving-the-Minefield">Minefield tactics</a>.
-        </p>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <div
+          ref="coreTasksGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
+        <div class="page-hero-content">
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span aria-hidden="true"> / </span>
+            <a href="/wiki">Wiki</a>
+            <span aria-hidden="true"> / </span>
+            <span>Core tasks</span>
+          </nav>
+          <h1>Road To Vostok Core Tasks &amp; Power Items</h1>
+          <p class="lead">
+            Items players pair with shelter power, cabling, and quest chains (<strong>all tasks</strong>).
+            Cross-check
+            <a href="/map">Map</a> and <a href="/tasks">Tasks</a> for
+            progression context; for long reads see
+            <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">border geography</a>
+            and
+            <a href="/guides/surviving-the-Minefield">Minefield tactics</a>.
+          </p>
+        </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -37,32 +42,8 @@
       </div>
     </section>
 
-    <div class="container">
-      <!-- GAM 广告位 1（与 HomeView 同结构） -->
-      <div
-        ref="coreTasksGptRoot"
-        id="div-gpt-ad-1775617033282-0"
-        style="min-width: 320px; min-height: 50px"
-      ></div>
-    </div>
-
     <section class="page-body-section" aria-label="Core tasks data table">
       <div class="container">
-        <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
-
         <div class="table-wrap">
           <table class="data-table">
             <thead>
@@ -83,18 +64,8 @@
             </tbody>
           </table>
         </div>
-        <div class="cross-links">
-          Related:
-          <a href="/tasks">Tasks</a>
-          ·
-          <a href="/guides/surviving-the-Minefield">Minefield guide</a>
-          ·
-          <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">Geography guide</a>
-        </div>
-
-        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
         <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          style="width: 100%; margin: 1.25rem auto 0; padding: 1rem; text-align: center"
         >
           <ins
             class="adsbygoogle"
@@ -106,6 +77,14 @@
             data-tag-src="gamtg"
           ></ins>
         </aside>
+        <div class="cross-links">
+          Related:
+          <a href="/tasks">Tasks</a>
+          ·
+          <a href="/guides/surviving-the-Minefield">Minefield guide</a>
+          ·
+          <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">Geography guide</a>
+        </div>
       </div>
     </section>
   </article>

@@ -7,21 +7,26 @@
   >
     <header class="page-hero-section page-hero-section--compact page-hero-section--mods page-hero-section--detail">
       <div class="container">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a>
-          <span aria-hidden="true">/</span>
-          <a href="/mods">Mods</a>
-          <span aria-hidden="true">/</span>
-          <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
-        </nav>
-        <div class="mod-detail__hero-pills">
-          <span v-if="article.author" class="mod-detail__pill">By {{ article.author }}</span>
-          <span v-if="article.version" class="mod-detail__pill mod-detail__pill--version">v{{ article.version }}</span>
-          <span v-if="article.loaderName" class="mod-detail__pill mod-detail__pill--muted">{{ article.loaderName }}</span>
+        <div
+          ref="modArticleGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
+        <div class="page-hero-content">
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="/mods">Mods</a>
+            <span aria-hidden="true">/</span>
+            <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
+          </nav>
+          <div class="mod-detail__hero-pills">
+            <span v-if="article.author" class="mod-detail__pill">By {{ article.author }}</span>
+            <span v-if="article.version" class="mod-detail__pill mod-detail__pill--version">v{{ article.version }}</span>
+            <span v-if="article.loaderName" class="mod-detail__pill mod-detail__pill--muted">{{ article.loaderName }}</span>
+          </div>
+          <h1 class="article-detail-hero__title mod-detail__hero-title">{{ article.title }}</h1>
         </div>
-        <h1 class="article-detail-hero__title mod-detail__hero-title">{{ article.title }}</h1>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -37,15 +42,6 @@
         </aside>
       </div>
     </header>
-
-    <div class="container">
-      <!-- GAM 广告位 1（与 HomeView 同结构） -->
-      <div
-        ref="modArticleGptRoot"
-        id="div-gpt-ad-1775617033282-0"
-        style="min-width: 320px; min-height: 50px"
-      ></div>
-    </div>
 
     <div class="mod-detail__body-wrap">
       <div class="container mod-detail__layout">
@@ -149,24 +145,22 @@
               </ul>
               <a href="/mods" class="mod-detail__aside-more-all">All mods</a>
             </div>
-          </div>
-        </aside>
-      </div>
 
-      <div class="container">
-        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
+            <div
+              class="mod-aside-ad"
+              style="width: 100%; margin: 1rem auto 0; padding: 0.75rem 0; text-align: center"
+            >
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-client="ca-pub-9435047454967498"
+                data-ad-slot="roadtovostok_Adx_ban1"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+                data-tag-src="gamtg"
+              ></ins>
+            </div>
+          </div>
         </aside>
       </div>
     </div>

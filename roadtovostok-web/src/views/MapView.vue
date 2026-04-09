@@ -2,6 +2,11 @@
   <article ref="mapPageAdsRoot" class="map-page page-article">
     <section class="page-hero-section">
       <div class="container">
+        <div
+          ref="mapPageGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
@@ -15,8 +20,6 @@
             <a href="/tasks">Tasks</a> page. Verify against your installed build.
           </p>
         </div>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -32,15 +35,6 @@
         </aside>
       </div>
     </section>
-
-    <div class="container">
-      <!-- GAM 广告位 1（与 HomeView 同结构） -->
-      <div
-        ref="mapPageGptRoot"
-        id="div-gpt-ad-1775617033282-0"
-        style="min-width: 320px; min-height: 50px"
-      ></div>
-    </div>
 
     <section class="map-section">
       <div class="container">
@@ -291,6 +285,20 @@
                   </ul>
                 </div>
               </div>
+              <div
+                class="poi-rail-ad"
+                style="width: 100%; margin: 0.75rem 0 0; padding: 0.75rem; text-align: center; flex-shrink: 0"
+              >
+                <ins
+                  class="adsbygoogle"
+                  style="display: block"
+                  data-ad-client="ca-pub-9435047454967498"
+                  data-ad-slot="roadtovostok_Adx_ban1"
+                  data-ad-format="auto"
+                  data-full-width-responsive="true"
+                  data-tag-src="gamtg"
+                ></ins>
+              </div>
             </aside>
           </div>
         </div>
@@ -305,7 +313,6 @@
     </section>
 
     <div class="container">
-      <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
       <aside
         style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
       >
@@ -359,23 +366,6 @@
       </div>
     </section>
 
-    <div class="container">
-      <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
-      <aside
-        style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-      >
-        <ins
-          class="adsbygoogle"
-          style="display: block"
-          data-ad-client="ca-pub-9435047454967498"
-          data-ad-slot="roadtovostok_Adx_ban1"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-          data-tag-src="gamtg"
-        ></ins>
-      </aside>
-    </div>
-
     <section data-nav-anchor="area-05-detail" class="guide-section page-body-section">
       <div class="container">
         <div class="guide-prose">
@@ -422,6 +412,19 @@
             <a href="/tasks">Tasks &amp; Vostok rules</a>.
           </p>
         </div>
+        <aside
+          style="width: 100%; margin: 1.25rem auto 0; padding: 1rem; text-align: center"
+        >
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-9435047454967498"
+            data-ad-slot="roadtovostok_Adx_ban1"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+            data-tag-src="gamtg"
+          ></ins>
+        </aside>
       </div>
     </section>
 

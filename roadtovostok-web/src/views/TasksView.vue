@@ -2,6 +2,11 @@
   <article ref="tasksAdsRoot" class="tasks-page page-article">
     <section class="page-hero-section">
       <div class="container">
+        <div
+          ref="tasksGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
@@ -15,8 +20,6 @@
             <a href="/map">Map</a>. Verify details in your build.
           </p>
         </div>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -40,6 +43,21 @@
         :scroll-root="railScrollRoot"
         :links="asideLinks"
       >
+        <template #aside-extra>
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
+        </template>
         <section data-nav-anchor="all-tasks-guide" class="guide-section page-body-section">
       <div class="container">
         <div class="guide-prose">
@@ -80,21 +98,6 @@
             </li>
           </ol>
 
-          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
-          <aside
-            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-          >
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-9435047454967498"
-              data-ad-slot="roadtovostok_Adx_ban1"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-              data-tag-src="gamtg"
-            ></ins>
-          </aside>
-
           <p class="guide-tools">
             Related:
             <a href="/wiki/core-tasks">Core task items</a>,
@@ -107,15 +110,6 @@
         </div>
       </div>
         </section>
-
-        <div class="container">
-          <!-- GAM 广告位 1（与 HomeView 同结构） -->
-          <div
-            ref="tasksGptRoot"
-            id="div-gpt-ad-1775617033282-0"
-            style="min-width: 320px; min-height: 50px"
-          ></div>
-        </div>
 
         <section data-nav-anchor="vostok-border-guide" class="guide-section page-body-section">
       <div class="container">

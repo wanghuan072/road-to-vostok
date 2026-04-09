@@ -7,16 +7,21 @@
   >
     <header class="page-hero-section page-hero-section--compact page-hero-section--detail">
       <div class="container article-detail-hero">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a>
-          <span aria-hidden="true">/</span>
-          <a href="/guides">Guides</a>
-          <span aria-hidden="true">/</span>
-          <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
-        </nav>
-        <h1 class="article-detail-hero__title">{{ article.title }}</h1>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <div
+          ref="guideArticleGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
+        <div class="page-hero-content">
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="/guides">Guides</a>
+            <span aria-hidden="true">/</span>
+            <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
+          </nav>
+          <h1 class="article-detail-hero__title">{{ article.title }}</h1>
+        </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -32,15 +37,6 @@
         </aside>
       </div>
     </header>
-
-    <div class="container">
-      <!-- GAM 广告位 1（与 HomeView 同结构） -->
-      <div
-        ref="guideArticleGptRoot"
-        id="div-gpt-ad-1775617033282-0"
-        style="min-width: 320px; min-height: 50px"
-      ></div>
-    </div>
 
     <div class="article-split-wrap">
       <div class="container article-split">
@@ -107,24 +103,22 @@
               </ul>
               <a href="/guides" class="aside-more__all">All guides</a>
             </div>
-          </div>
-        </aside>
-      </div>
 
-      <div class="container">
-        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
+            <div
+              class="article-aside-ad"
+              style="width: 100%; margin: 1rem auto 0; padding: 0.75rem 0; text-align: center"
+            >
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-client="ca-pub-9435047454967498"
+                data-ad-slot="roadtovostok_Adx_ban1"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+                data-tag-src="gamtg"
+              ></ins>
+            </div>
+          </div>
         </aside>
       </div>
     </div>

@@ -6,74 +6,79 @@
         aria-hidden="true"
       />
       <div class="container weapons-hero__inner">
-        <nav
-          class="weapons-hero__crumb page-hero-breadcrumb"
-          aria-label="Breadcrumb"
-        >
-          <a href="/">Home</a>
-          <span aria-hidden="true"> / </span>
-          <a href="/wiki">Wiki</a>
-          <span aria-hidden="true"> / </span>
-          <span>Weapons</span>
-        </nav>
-        <p class="weapons-hero__kicker">
-          Armory catalog
-        </p>
-        <h1 class="weapons-hero__title">
-          Road To Vostok Weapons
-        </h1>
-        <p class="weapons-hero__lead">
-          One scrollable catalog: melee, sidearms, long guns, and support weapons. Numeric fields follow the
-          <strong>Road To Vostok Wiki (Fandom)</strong> hub pages below; portraits are the same wiki thumbnails, mirrored under
-          <code>/images/wiki/weapons/</code>. Cross-check every value in your installed build — Early Access shifts stats, names, and loot.
-        </p>
-        <p class="weapons-hero__ammo">
-          Pair rounds with the
-          <a href="/wiki/ammunition">Ammunition</a> table (also sourced from Fandom).
-        </p>
-
         <div
-          class="weapons-sources"
-          aria-label="Fandom data sources"
-        >
-          <span class="weapons-sources__label">Wiki sources</span>
-          <ul
-            class="weapons-sources__list"
-            role="list"
+          ref="weaponsGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
+        <div class="page-hero-content">
+          <nav
+            class="weapons-hero__crumb page-hero-breadcrumb"
+            aria-label="Breadcrumb"
           >
-            <li
-              v-for="c in weaponCategories"
-              :key="c.id"
+            <a href="/">Home</a>
+            <span aria-hidden="true"> / </span>
+            <a href="/wiki">Wiki</a>
+            <span aria-hidden="true"> / </span>
+            <span>Weapons</span>
+          </nav>
+          <p class="weapons-hero__kicker">
+            Armory catalog
+          </p>
+          <h1 class="weapons-hero__title">
+            Road To Vostok Weapons
+          </h1>
+          <p class="weapons-hero__lead">
+            One scrollable catalog: melee, sidearms, long guns, and support weapons. Numeric fields follow the
+            <strong>Road To Vostok Wiki (Fandom)</strong> hub pages below; portraits are the same wiki thumbnails, mirrored under
+            <code>/images/wiki/weapons/</code>. Cross-check every value in your installed build — Early Access shifts stats, names, and loot.
+          </p>
+          <p class="weapons-hero__ammo">
+            Pair rounds with the
+            <a href="/wiki/ammunition">Ammunition</a> table (also sourced from Fandom).
+          </p>
+
+          <div
+            class="weapons-sources"
+            aria-label="Fandom data sources"
+          >
+            <span class="weapons-sources__label">Wiki sources</span>
+            <ul
+              class="weapons-sources__list"
+              role="list"
             >
-              <a
-                :href="c.wikiUrl"
-                class="weapons-sources__link"
-                rel="noopener noreferrer"
-                target="_blank"
-              >{{ c.label }}</a>
-            </li>
-          </ul>
+              <li
+                v-for="c in weaponCategories"
+                :key="c.id"
+              >
+                <a
+                  :href="c.wikiUrl"
+                  class="weapons-sources__link"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >{{ c.label }}</a>
+              </li>
+            </ul>
+          </div>
+
+          <dl
+            class="weapons-hero__stats"
+            aria-label="Dataset summary"
+          >
+            <div class="weapons-hero__stat">
+              <dt>Entries</dt>
+              <dd>{{ weapons.length }}</dd>
+            </div>
+            <div class="weapons-hero__stat">
+              <dt>Categories</dt>
+              <dd>{{ weaponCategories.length }}</dd>
+            </div>
+            <div class="weapons-hero__stat">
+              <dt>With portrait</dt>
+              <dd>{{ withImageCount }}</dd>
+            </div>
+          </dl>
         </div>
-
-        <dl
-          class="weapons-hero__stats"
-          aria-label="Dataset summary"
-        >
-          <div class="weapons-hero__stat">
-            <dt>Entries</dt>
-            <dd>{{ weapons.length }}</dd>
-          </div>
-          <div class="weapons-hero__stat">
-            <dt>Categories</dt>
-            <dd>{{ weaponCategories.length }}</dd>
-          </div>
-          <div class="weapons-hero__stat">
-            <dt>With portrait</dt>
-            <dd>{{ withImageCount }}</dd>
-          </div>
-        </dl>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -89,15 +94,6 @@
         </aside>
       </div>
     </header>
-
-    <div class="container">
-      <!-- GAM 广告位 1（与 HomeView 同结构） -->
-      <div
-        ref="weaponsGptRoot"
-        id="div-gpt-ad-1775617033282-0"
-        style="min-width: 320px; min-height: 50px"
-      ></div>
-    </div>
 
     <div class="weapons-body">
       <div class="container weapons-layout">
@@ -132,27 +128,15 @@
         </nav>
 
         <div class="armory-main">
-          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
-          <aside
-            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-          >
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-9435047454967498"
-              data-ad-slot="roadtovostok_Adx_ban1"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-              data-tag-src="gamtg"
-            ></ins>
-          </aside>
-
-          <section
-            v-for="c in weaponCategories"
+          <div
+            v-for="(c, ci) in weaponCategories"
             :key="c.id"
-            :id="'weapons-cat-' + c.id"
-            class="armory-section"
+            class="armory-fragment"
           >
+            <section
+              :id="'weapons-cat-' + c.id"
+              class="armory-section"
+            >
             <div class="armory-section__head">
               <h2 class="armory-section__title">
                 {{ c.label }}
@@ -214,9 +198,23 @@
                 </div>
               </article>
             </div>
-          </section>
+            </section>
+            <aside
+              v-if="ci === weaponsMidAdIndex"
+              style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+            >
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-client="ca-pub-9435047454967498"
+                data-ad-slot="roadtovostok_Adx_ban1"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+                data-tag-src="gamtg"
+              ></ins>
+            </aside>
+          </div>
 
-          <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
           <aside
             style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
           >
@@ -283,6 +281,13 @@ onMounted(() => {
 const weapons = weaponsData
 
 const withImageCount = computed(() => weapons.filter((w) => Boolean(w.imageUrl)).length)
+
+/** Insert one in-content ad after roughly the first half of category sections (no ad above the TOC/list). */
+const weaponsMidAdIndex = computed(() => {
+  const n = weaponCategories.length
+  if (n < 2) return -1
+  return Math.floor(n / 2) - 1
+})
 
 function countInCategory(catId) {
   return weapons.filter((w) => w.categoryId === catId).length
@@ -640,6 +645,10 @@ export default {
   min-width: 0;
 }
 
+.armory-fragment {
+  display: contents;
+}
+
 .armory-section {
   scroll-margin-top: calc(var(--app-header-sticky-offset) + 0.5rem);
   margin-bottom: clamp(2.25rem, 4vw, 3rem);
@@ -647,7 +656,7 @@ export default {
   border-bottom: 1px solid color-mix(in srgb, var(--color-border) 72%, transparent);
 }
 
-.armory-section:last-child {
+.armory-main > .armory-section:last-of-type {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;

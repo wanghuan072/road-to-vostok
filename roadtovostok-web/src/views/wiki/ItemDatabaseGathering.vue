@@ -2,22 +2,27 @@
   <article ref="gatheringAdsRoot" class="item-db-page">
     <section class="page-hero-section">
       <div class="container">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a>
-          <span aria-hidden="true"> / </span>
-          <a href="/wiki">Wiki</a>
-          <span aria-hidden="true"> / </span>
-          <span>Gathering</span>
-        </nav>
-        <h1>Road To Vostok Gathering &amp; Raw Materials</h1>
-        <p class="lead">
-          Environmental loot and harvest nodes that feed crafting and survival. For combat loot,
-          see <a href="/wiki/weapons">weapons</a> and
-          <a href="/wiki/ammunition">ammunition</a>; crafting context on
-          <a href="/getting-started">Start here</a>.
-        </p>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <div
+          ref="gatheringGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
+        <div class="page-hero-content">
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span aria-hidden="true"> / </span>
+            <a href="/wiki">Wiki</a>
+            <span aria-hidden="true"> / </span>
+            <span>Gathering</span>
+          </nav>
+          <h1>Road To Vostok Gathering &amp; Raw Materials</h1>
+          <p class="lead">
+            Environmental loot and harvest nodes that feed crafting and survival. For combat loot,
+            see <a href="/wiki/weapons">weapons</a> and
+            <a href="/wiki/ammunition">ammunition</a>; crafting context on
+            <a href="/getting-started">Start here</a>.
+          </p>
+        </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -34,32 +39,8 @@
       </div>
     </section>
 
-    <div class="container">
-      <!-- GAM 广告位 1（与 HomeView 同结构） -->
-      <div
-        ref="gatheringGptRoot"
-        id="div-gpt-ad-1775617033282-0"
-        style="min-width: 320px; min-height: 50px"
-      ></div>
-    </div>
-
     <section class="page-body-section" aria-label="Gathering data table">
       <div class="container">
-        <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
-
         <div class="table-wrap">
           <table class="data-table">
             <thead>
@@ -78,16 +59,8 @@
             </tbody>
           </table>
         </div>
-        <div class="cross-links">
-          Crafting context:
-          <a href="/getting-started">How to craft in Road To Vostok</a>
-          ·
-          <a href="/wiki/ammunition">Ammunition</a>
-        </div>
-
-        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
         <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          style="width: 100%; margin: 1.25rem auto 0; padding: 1rem; text-align: center"
         >
           <ins
             class="adsbygoogle"
@@ -99,6 +72,12 @@
             data-tag-src="gamtg"
           ></ins>
         </aside>
+        <div class="cross-links">
+          Crafting context:
+          <a href="/getting-started">How to craft in Road To Vostok</a>
+          ·
+          <a href="/wiki/ammunition">Ammunition</a>
+        </div>
       </div>
     </section>
   </article>

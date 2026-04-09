@@ -12,68 +12,74 @@
         aria-hidden="true"
       />
       <div class="container npc-hero__wrap">
-        <nav
-          class="npc-breadcrumb"
-          aria-label="Breadcrumb"
-        >
-          <a href="/">Home</a>
-          <span aria-hidden="true">/</span>
-          <a href="/wiki">Wiki</a>
-          <span aria-hidden="true">/</span>
-          <a href="/wiki/npcs">NPCs</a>
-          <span aria-hidden="true">/</span>
-          <span class="npc-breadcrumb__current">{{ npc.title }}</span>
-        </nav>
-
-        <div class="npc-hero__grid">
-          <div class="npc-hero__copy">
-            <p class="npc-hero__role">
-              {{ npc.role }}
-            </p>
-            <h1 class="npc-hero__title">
-              {{ npc.title }}
-            </h1>
-            <p class="npc-hero__summary">
-              {{ npc.summary }}
-            </p>
-            <div class="npc-hero__actions">
-              <a
-                :href="
-                  npc.mapLocationId
-                    ? `/map?loc=${encodeURIComponent(npc.mapLocationId)}`
-                    : '/map'
-                "
-                class="npc-btn npc-btn--solid"
-              >
-                {{ npc.mapLocationId ? 'Show on map' : 'Open map' }}
-              </a>
-            </div>
-          </div>
-
-          <div
-            v-if="npc.imageUrl"
-            class="npc-hero__visual"
+        <div
+          ref="npcDetailGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
+        <div class="page-hero-content">
+          <nav
+            class="npc-breadcrumb"
+            aria-label="Breadcrumb"
           >
-            <div class="npc-hero__frame">
-              <div class="npc-hero__frame-inner">
-                <img
-                  :src="npc.imageUrl"
-                  :alt="npc.imageAlt || ''"
-                  width="480"
-                  height="480"
-                  loading="eager"
-                  decoding="async"
-                  class="npc-hero__img"
-                >
-              </div>
-              <p class="npc-hero__caption">
-                Illustration for this NPC guide.
+            <a href="/">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="/wiki">Wiki</a>
+            <span aria-hidden="true">/</span>
+            <a href="/wiki/npcs">NPCs</a>
+            <span aria-hidden="true">/</span>
+            <span class="npc-breadcrumb__current">{{ npc.title }}</span>
+          </nav>
+
+          <div class="npc-hero__grid">
+            <div class="npc-hero__copy">
+              <p class="npc-hero__role">
+                {{ npc.role }}
               </p>
+              <h1 class="npc-hero__title">
+                {{ npc.title }}
+              </h1>
+              <p class="npc-hero__summary">
+                {{ npc.summary }}
+              </p>
+              <div class="npc-hero__actions">
+                <a
+                  :href="
+                    npc.mapLocationId
+                      ? `/map?loc=${encodeURIComponent(npc.mapLocationId)}`
+                      : '/map'
+                  "
+                  class="npc-btn npc-btn--solid"
+                >
+                  {{ npc.mapLocationId ? 'Show on map' : 'Open map' }}
+                </a>
+              </div>
+            </div>
+
+            <div
+              v-if="npc.imageUrl"
+              class="npc-hero__visual"
+            >
+              <div class="npc-hero__frame">
+                <div class="npc-hero__frame-inner">
+                  <img
+                    :src="npc.imageUrl"
+                    :alt="npc.imageAlt || ''"
+                    width="480"
+                    height="480"
+                    loading="eager"
+                    decoding="async"
+                    class="npc-hero__img"
+                  >
+                </div>
+                <p class="npc-hero__caption">
+                  Illustration for this NPC guide.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -89,15 +95,6 @@
         </aside>
       </div>
     </header>
-
-    <div class="container">
-      <!-- GAM 广告位 1（与 HomeView 同结构） -->
-      <div
-        ref="npcDetailGptRoot"
-        id="div-gpt-ad-1775617033282-0"
-        style="min-width: 320px; min-height: 50px"
-      ></div>
-    </div>
 
     <div class="npc-main">
       <div class="container npc-main__grid">
@@ -189,23 +186,21 @@
               </li>
             </ul>
           </div>
-        </aside>
-      </div>
 
-      <div class="container">
-        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
+          <div
+            class="npc-rail-ad"
+            style="width: 100%; margin: 1rem 0 0; padding: 0.75rem 0; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </div>
         </aside>
       </div>
     </div>

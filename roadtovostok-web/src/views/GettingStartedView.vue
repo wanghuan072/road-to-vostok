@@ -2,6 +2,12 @@
   <article ref="gettingStartedAdsRoot" class="page-article">
     <section class="page-hero-section">
       <div class="container">
+        <!-- GAM：放在 page-hero-content 上方 -->
+        <div
+          ref="gettingStartedGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
@@ -23,8 +29,7 @@
             build.
           </p>
         </div>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <!-- ADX：page-hero-content 下方 -->
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -48,6 +53,21 @@
         :scroll-root="railScrollRoot"
         :links="asideLinks"
       >
+        <template #aside-extra>
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
+        </template>
         <section data-nav-anchor="core-loop" class="page-body-section">
           <div class="page-body-content">
           <h2>How to play — core loop</h2>
@@ -98,15 +118,6 @@
           </p>
           </div>
         </section>
-
-        <div class="container">
-          <!-- GAM 广告位 1（与 HomeView 同结构） -->
-          <div
-            ref="gettingStartedGptRoot"
-            id="div-gpt-ad-1775617033282-0"
-            style="min-width: 320px; min-height: 50px"
-          ></div>
-        </div>
 
         <section data-nav-anchor="controls" class="page-body-section">
           <div class="page-body-content">
@@ -210,7 +221,6 @@
         </section>
 
         <div class="container">
-          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
           <aside
             style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
           >
@@ -273,23 +283,6 @@
           </p>
           </div>
         </section>
-
-        <div class="container">
-          <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
-          <aside
-            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-          >
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-9435047454967498"
-              data-ad-slot="roadtovostok_Adx_ban1"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-              data-tag-src="gamtg"
-            ></ins>
-          </aside>
-        </div>
 
         <section data-nav-anchor="medical" class="page-body-section">
           <div class="page-body-content">
@@ -388,7 +381,6 @@
         </section>
 
         <div class="container">
-          <!-- adx-PC 横幅广告-4（与 HomeView 同结构） -->
           <aside
             style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
           >

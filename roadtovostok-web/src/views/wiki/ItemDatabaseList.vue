@@ -2,25 +2,30 @@
   <article ref="wikiHubAdsRoot" class="item-db-page">
     <section class="page-hero-section">
       <div class="container">
-        <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a>
-          <span aria-hidden="true"> / </span>
-          <span>Wiki</span>
-        </nav>
-        <h1>Road To Vostok item database</h1>
-        <p class="lead">
-          Curated tables for <strong>Road To Vostok guns</strong> and
-          <strong>ammunition types</strong>, <strong>inverter</strong> / <strong>B cables</strong> and
-          other <strong>all tasks</strong> props, plus <strong>how to fish</strong> notes and field
-          <strong>gathering</strong>. Long-form strategy lives under
-          <a href="/guides">Guides</a> — e.g.
-          <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">real-world geography</a>,
-          <a href="/guides/surviving-the-Minefield">Minefield tactics</a>, or
-          <a href="/guides/how-to-fish">fishing spots &amp; pike</a>.
-          Always verify values in your installed build.
-        </p>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <div
+          ref="wikiHubGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
+        <div class="page-hero-content">
+          <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span aria-hidden="true"> / </span>
+            <span>Wiki</span>
+          </nav>
+          <h1>Road To Vostok item database</h1>
+          <p class="lead">
+            Curated tables for <strong>Road To Vostok guns</strong> and
+            <strong>ammunition types</strong>, <strong>inverter</strong> / <strong>B cables</strong> and
+            other <strong>all tasks</strong> props, plus <strong>how to fish</strong> notes and field
+            <strong>gathering</strong>. Long-form strategy lives under
+            <a href="/guides">Guides</a> — e.g.
+            <a href="/guides/an-analytical-deep-dive-into-its-real-world-geography">real-world geography</a>,
+            <a href="/guides/surviving-the-Minefield">Minefield tactics</a>, or
+            <a href="/guides/how-to-fish">fishing spots &amp; pike</a>.
+            Always verify values in your installed build.
+          </p>
+        </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -37,32 +42,8 @@
       </div>
     </section>
 
-    <div class="container">
-      <!-- GAM 广告位 1（与 HomeView 同结构） -->
-      <div
-        ref="wikiHubGptRoot"
-        id="div-gpt-ad-1775617033282-0"
-        style="min-width: 320px; min-height: 50px"
-      ></div>
-    </div>
-
     <section class="page-body-section" aria-label="Wiki categories">
       <div class="container">
-        <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
-
         <ul class="item-db-hub-grid" role="list">
           <li>
             <a href="/wiki/core-tasks" class="item-db-hub-card">
@@ -121,9 +102,8 @@
           </li>
         </ul>
 
-        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
         <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          style="width: 100%; margin: 1.25rem auto 0; padding: 1rem; text-align: center"
         >
           <ins
             class="adsbygoogle"

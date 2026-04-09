@@ -2,39 +2,44 @@
   <article ref="modsListAdsRoot" class="mods-page page-article">
     <section class="page-hero-section page-hero-section--compact page-hero-section--mods">
       <div class="container mods-page__hero">
-        <nav
-          class="page-hero-breadcrumb"
-          aria-label="Breadcrumb"
-        >
-          <a href="/">Home</a>
-          <span aria-hidden="true">/</span>
-          <span>Mods</span>
-        </nav>
         <div
-          class="mods-page__hero-mark"
-          aria-hidden="true"
-        />
-        <p class="mods-page__eyebrow">
-          ModWorkshop · editorial spotlights
-        </p>
-        <h1 class="mods-page__title">
-          Road To Vostok Mods
-        </h1>
-        <div class="mods-page__intro">
-          <p>
-            Here we publish <strong>editorial mod spotlights</strong>: packs and tools we think are worth
-            reading about before you install—gameplay overhauls, QoL compilations, loader requirements
-            (e.g. Metro Mod Loader), and what each listing changes in a run. The list below is our
-            curated recommendations, not an exhaustive ModWorkshop index; we add entries as we review them.
+          ref="modsListGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
+        <div class="page-hero-content">
+          <nav
+            class="page-hero-breadcrumb"
+            aria-label="Breadcrumb"
+          >
+            <a href="/">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Mods</span>
+          </nav>
+          <div
+            class="mods-page__hero-mark"
+            aria-hidden="true"
+          />
+          <p class="mods-page__eyebrow">
+            ModWorkshop · editorial spotlights
           </p>
-          <p>
-            We do <strong>not</strong> host <strong>.vmz</strong> files. Every card links to the author’s
-            source (ModWorkshop or as stated) for the real download. Match the file to your demo or Early
-            Access build and verify checksums before you load anything into the game.
-          </p>
+          <h1 class="mods-page__title">
+            Road To Vostok Mods
+          </h1>
+          <div class="mods-page__intro">
+            <p>
+              Here we publish <strong>editorial mod spotlights</strong>: packs and tools we think are worth
+              reading about before you install—gameplay overhauls, QoL compilations, loader requirements
+              (e.g. Metro Mod Loader), and what each listing changes in a run. The list below is our
+              curated recommendations, not an exhaustive ModWorkshop index; we add entries as we review them.
+            </p>
+            <p>
+              We do <strong>not</strong> host <strong>.vmz</strong> files. Every card links to the author’s
+              source (ModWorkshop or as stated) for the real download. Match the file to your demo or Early
+              Access build and verify checksums before you load anything into the game.
+            </p>
+          </div>
         </div>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -51,35 +56,11 @@
       </div>
     </section>
 
-    <div class="container">
-      <!-- GAM 广告位 1（与 HomeView 同结构） -->
-      <div
-        ref="modsListGptRoot"
-        id="div-gpt-ad-1775617033282-0"
-        style="min-width: 320px; min-height: 50px"
-      ></div>
-    </div>
-
     <section
       class="mods-board"
       aria-label="Mod articles"
     >
       <div class="container mods-board__inner">
-        <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
-        <aside
-          v-if="sorted.length"
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
         <header
           v-if="sorted.length"
           class="mods-board__mast"
@@ -211,10 +192,9 @@
           </li>
         </ul>
 
-        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
         <aside
           v-if="sorted.length"
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          style="width: 100%; margin: 1.25rem auto 0; padding: 1rem; text-align: center"
         >
           <ins
             class="adsbygoogle"

@@ -8,7 +8,11 @@
         <div v-if="title || links.length" class="aside-card">
           <p v-if="title" class="aside-card-kicker">{{ title }}</p>
           <nav v-if="links.length" class="aside-nav">
-            <template v-for="(item, i) in links" :key="i">
+            <div
+              v-for="(item, i) in links"
+              :key="i"
+              class="aside-nav-fragment"
+            >
               <a
                 v-if="item.to"
                 :href="item.to"
@@ -24,10 +28,12 @@
               >
                 {{ item.label }}
               </button>
-            </template>
+            </div>
           </nav>
         </div>
-        <slot name="aside-extra" />
+        <div class="page-rail-aside-extra-wrap">
+          <slot name="aside-extra" />
+        </div>
       </div>
     </aside>
   </div>
@@ -63,6 +69,10 @@ function onScroll(key) {
   display: flex;
   flex-direction: column;
   min-height: 0;
+}
+
+.page-rail-aside-extra-wrap {
+  width: 100%;
 }
 
 .aside-stack {
@@ -127,6 +137,10 @@ function onScroll(key) {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+}
+
+.aside-nav-fragment {
+  display: contents;
 }
 
 .aside-nav-link {

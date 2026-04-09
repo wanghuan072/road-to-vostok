@@ -2,6 +2,11 @@
   <article ref="devUpdatesAdsRoot" class="dev-updates-page page-article">
     <section class="page-hero-section">
       <div class="container">
+        <div
+          ref="devUpdatesGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
@@ -16,8 +21,6 @@
             the live site before you plan around a date.
           </p>
         </div>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -43,6 +46,21 @@
         :scroll-root="railScrollRoot"
         :links="asideLinks"
       >
+        <template #aside-extra>
+          <aside
+            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          >
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-9435047454967498"
+              data-ad-slot="roadtovostok_Adx_ban1"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+              data-tag-src="gamtg"
+            ></ins>
+          </aside>
+        </template>
         <section data-nav-anchor="release-snapshot" class="snap-section" aria-label="Release snapshot">
           <div class="release-snapshot">
             <div class="release-snapshot-main">
@@ -65,15 +83,6 @@
             </div>
           </div>
         </section>
-
-        <div class="container">
-          <!-- GAM 广告位 1（与 HomeView 同结构） -->
-          <div
-            ref="devUpdatesGptRoot"
-            id="div-gpt-ad-1775617033282-0"
-            style="min-width: 320px; min-height: 50px"
-          ></div>
-        </div>
 
         <section data-nav-anchor="live-changes" class="follow-section page-body-section">
           <header class="section-head">
@@ -122,7 +131,6 @@
         </section>
 
         <div class="container">
-          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
           <aside
             style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
           >
@@ -169,7 +177,6 @@
         </section>
 
         <div class="container">
-          <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
           <aside
             style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
           >

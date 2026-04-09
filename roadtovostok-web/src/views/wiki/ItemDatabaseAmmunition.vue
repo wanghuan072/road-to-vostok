@@ -2,48 +2,53 @@
   <article ref="ammoAdsRoot" class="item-db-page ammo-page">
     <section class="page-hero-section">
       <div class="container">
-        <nav
-          class="page-hero-breadcrumb"
-          aria-label="Breadcrumb"
-        >
-          <a href="/">Home</a>
-          <span aria-hidden="true"> / </span>
-          <a href="/wiki">Wiki</a>
-          <span aria-hidden="true"> / </span>
-          <span>Ammunition</span>
-        </nav>
-        <p class="page-hero-kicker">
-          Loadout reference
-        </p>
-        <h1>Road To Vostok Ammunition</h1>
-        <p class="lead">
-          Cartridge value (€), per-round weight, max stack, and weapon compatibility are aligned with the
-          <a
-            href="https://roadtovostok.fandom.com/wiki/Ammunition"
-            rel="noopener noreferrer"
-            target="_blank"
-          >Road To Vostok Wiki (Fandom) · Ammunition</a>
-          table; icons are the same wiki assets, hosted under <code>/images/wiki/Ammunition/</code>. Verify everything in your installed build — patches can change stats and weapon names.
-        </p>
-        <dl
-          class="ammo-hero-stats"
-          aria-label="Dataset summary"
-        >
-          <div class="ammo-hero-stats__item">
-            <dt>Calibers</dt>
-            <dd>{{ stats.count }}</dd>
-          </div>
-          <div class="ammo-hero-stats__item">
-            <dt>Lightest round</dt>
-            <dd>{{ stats.minWeightKg }}&nbsp;kg</dd>
-          </div>
-          <div class="ammo-hero-stats__item">
-            <dt>Tightest stack cap</dt>
-            <dd>{{ stats.minStack }}&nbsp;rnds</dd>
-          </div>
-        </dl>
-
-        <!-- adx-PC 横幅广告-1（与 HomeView 同结构） -->
+        <div
+          ref="ammoGptRoot"
+          id="div-gpt-ad-1775617033282-0"
+          style="min-width: 320px; min-height: 50px"
+        ></div>
+        <div class="page-hero-content">
+          <nav
+            class="page-hero-breadcrumb"
+            aria-label="Breadcrumb"
+          >
+            <a href="/">Home</a>
+            <span aria-hidden="true"> / </span>
+            <a href="/wiki">Wiki</a>
+            <span aria-hidden="true"> / </span>
+            <span>Ammunition</span>
+          </nav>
+          <p class="page-hero-kicker">
+            Loadout reference
+          </p>
+          <h1>Road To Vostok Ammunition</h1>
+          <p class="lead">
+            Cartridge value (€), per-round weight, max stack, and weapon compatibility are aligned with the
+            <a
+              href="https://roadtovostok.fandom.com/wiki/Ammunition"
+              rel="noopener noreferrer"
+              target="_blank"
+            >Road To Vostok Wiki (Fandom) · Ammunition</a>
+            table; icons are the same wiki assets, hosted under <code>/images/wiki/Ammunition/</code>. Verify everything in your installed build — patches can change stats and weapon names.
+          </p>
+          <dl
+            class="ammo-hero-stats"
+            aria-label="Dataset summary"
+          >
+            <div class="ammo-hero-stats__item">
+              <dt>Calibers</dt>
+              <dd>{{ stats.count }}</dd>
+            </div>
+            <div class="ammo-hero-stats__item">
+              <dt>Lightest round</dt>
+              <dd>{{ stats.minWeightKg }}&nbsp;kg</dd>
+            </div>
+            <div class="ammo-hero-stats__item">
+              <dt>Tightest stack cap</dt>
+              <dd>{{ stats.minStack }}&nbsp;rnds</dd>
+            </div>
+          </dl>
+        </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -59,15 +64,6 @@
         </aside>
       </div>
     </section>
-
-    <div class="container">
-      <!-- GAM 广告位 1（与 HomeView 同结构） -->
-      <div
-        ref="ammoGptRoot"
-        id="div-gpt-ad-1775617033282-0"
-        style="min-width: 320px; min-height: 50px"
-      ></div>
-    </div>
 
     <section
       class="page-body-section ammo-body"
@@ -104,21 +100,6 @@
           </label>
         </div>
 
-        <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
-
         <p
           v-if="filteredRows.length === 0"
           class="ammo-empty"
@@ -131,12 +112,15 @@
           v-else
           class="ammo-grid"
         >
-          <article
-            v-for="row in filteredRows"
+          <div
+            v-for="(row, ri) in filteredRows"
             :key="row.id"
-            class="ammo-card"
-            :data-category="row.category"
+            class="ammo-grid-fragment"
           >
+            <article
+              class="ammo-card"
+              :data-category="row.category"
+            >
             <div class="ammo-card__media">
               <img
                 v-if="row.imageUrl"
@@ -212,10 +196,25 @@
                 {{ row.note }}
               </p>
             </div>
-          </article>
+            </article>
+            <aside
+              v-if="ri === ammoMidAdIndex"
+              style="grid-column: 1 / -1; width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+            >
+              <ins
+                class="adsbygoogle"
+                style="display: block"
+                data-ad-client="ca-pub-9435047454967498"
+                data-ad-slot="roadtovostok_Adx_ban1"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+                data-tag-src="gamtg"
+              ></ins>
+            </aside>
+          </div>
         </div>
 
-        <!-- adx-PC 横幅广告-3（与 HomeView 同结构） -->
+        <!-- adx-PC 横幅广告（列表下方） -->
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
         >
@@ -290,6 +289,12 @@ const filteredRows = computed(() => {
       .toLowerCase()
     return hay.includes(q)
   })
+})
+
+const ammoMidAdIndex = computed(() => {
+  const n = filteredRows.value.length
+  if (n < 4) return -1
+  return Math.floor(n / 2) - 1
 })
 
 const ammoAdsRoot = ref(null)
@@ -475,6 +480,10 @@ onMounted(() => {
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
   gap: 1.25rem 1.35rem;
   align-items: stretch;
+}
+
+.ammo-grid-fragment {
+  display: contents;
 }
 
 .ammo-card {
