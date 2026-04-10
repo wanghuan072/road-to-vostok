@@ -49,7 +49,6 @@
           <div
             class="mod-detail__prose article-body article-body--mods content-prose"
             v-html="article.detailsHtml"
-            @click="onContentLinkClick"
           />
 
           <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
@@ -174,10 +173,7 @@ import { useI18n } from 'vue-i18n'
 import { getModArticles } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
-import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'
 import { applyDynamicSeo } from '../../seo/composables.js'
-
-const { onContentLinkClick } = useHtmlContentLinkNavigation()
 
 const modArticleAdsRoot = ref(null)
 const modArticleGptRoot = ref(null)

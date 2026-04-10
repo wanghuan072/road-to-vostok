@@ -1,0 +1,994 @@
+{
+  "tdk": {
+    "homePage": {
+      "title": "Road To Vostok Guide — kartat, tehtävät, aseet ja selviytymistietokanta",
+      "description": "Road To Vostok -selviytymisopas ja tietokanta: pelin perusteet, Steam-demo ja Early Access, interaktiivinen kartta, tehtävien eteneminen, ase- ja esinetaulukot, strategia-artikkelit, modit ja tiekartan konteksti. Tarkista tiedot oman version mukaan.",
+      "keywords": "Road To Vostok, selviytymisopas, pelitietokanta, Steam, Early Access, kartta, tehtävät, aseet, Area 05, rajavyöhyke, Vostok, tiekartta"
+    },
+    "wiki": {
+      "title": "Road To Vostok Wiki — esineet, aseet, NPC:t ja tietokannat",
+      "description": "Road To Vostok -wiki-tyylinen esine- ja tietokantaviite: aseet, ammukset, NPC:t, tehtävät, kalastus ja keräily. Varmista peliversiosi mukaan.",
+      "keywords": "Road To Vostok, wiki, tietokanta, esineet, aseet, NPC, tehtävät"
+    },
+    "aboutPage": {
+      "title": "Tietoa meistä — Road To Vostok Guide",
+      "description": "Tietoa Road To Vostok Guidesta: suomenkielinen viite kartoille, esineille, tehtäville ja selviytymisjärjestelmille. Itsenäinen sivusto; ei sidosta kehittäjään tai julkaisijaan.",
+      "keywords": "Road To Vostok Guide, tietoa, peliviite, selviytymisopas, itsenäinen"
+    },
+    "contactPage": {
+      "title": "Yhteystiedot — Road To Vostok Guide",
+      "description": "Ota yhteyttä Road To Vostok Guideen sähköpostilla: palaute, korjaukset tai oikeudelliset ilmoitukset. Tällä sivulla ei ole lomaketta.",
+      "keywords": "Road To Vostok Guide, yhteystiedot, sähköposti, roadtovostok.org"
+    },
+    "privacyPolicyPage": {
+      "title": "Tietosuoja — Road To Vostok Guide",
+      "description": "Tietosuojaseloste roadtovostok.orgille: selaustiedot, evästeet, kolmannet osapuolet, säilytys ja yhteys sivuston ylläpitoon.",
+      "keywords": "Road To Vostok Guide, tietosuoja, roadtovostok.org, tietosuoja, evästeet"
+    },
+    "termsOfServicePage": {
+      "title": "Käyttöehdot — Road To Vostok Guide",
+      "description": "Road To Vostok Guiden käyttöehdot: sallittu käyttö, immateriaalioikeudet, vastuuvapauslausekkeet, vastuunrajoitus ja yhteystiedot.",
+      "keywords": "Road To Vostok Guide, käyttöehdot, vastuuvapaus, oikeudellinen, viitesivusto"
+    },
+    "copyrightPage": {
+      "title": "Tekijänoikeudet — Road To Vostok Guide",
+      "description": "Tekijänoikeusilmoitus: pelin tavaramerkit ja IP kuuluvat oikeudenhaltijoille; alkuperäinen sivustosisältö ja poistopyynnöt Road To Vostok Guidelle.",
+      "keywords": "Road To Vostok, tekijänoikeus, tavaramerkki, DMCA, immateriaalioikeus"
+    },
+    "notFoundPage": {
+      "title": "Sivua ei löydy",
+      "description": "Tätä sivua ei ole Road To Vostok Guidessa. Siirry etusivulle, wikiin, karttaan, tehtäviin tai oppaisiin.",
+      "keywords": "Road To Vostok Guide, 404"
+    },
+    "gettingStartedPage": {
+      "title": "Miten pelata Road To Vostokia — ohjaimet, ensiaskeleet ja vinkit",
+      "description": "Aloita tästä: Road To Vostok -ohjaimet, ensimmäisen session tavoitteet, suojan kierto, haulikon lataus, lääkintäperusteet ja mitä tarkistaa PC- tai Steam-versiossasi.",
+      "keywords": "Road To Vostok miten pelata, ohjaimet, opastus, ensiaskeleet, haulikko, suoja, Steam, PC"
+    },
+    "wikiHubPage": {
+      "title": "Road To Vostok -tietokanta — varusteet, tehtävät ja valmistustaulukot",
+      "description": "Kuratoidut Road To Vostok -esine- ja resurssitaulukot: aseet, ammukset, ydintehtävien esineet, suojan sähkö, kalastus ja keräily. Tarkista jokainen arvo asennetun version mukaan.",
+      "keywords": "Road To Vostok tietokanta, esineopas, aseet, ammukset, invertteri, keräily, kalastus, valmistus"
+    },
+    "wikiCoreTasksPage": {
+      "title": "Road To Vostok ydintehtävät — invertteri, B-kaapelit ja tehtäväesineet",
+      "description": "Ydintehtävien ja sähköesineiden taulukko: invertteri, B-kaapelit, avaimet ja tehtäviin liittyvät esineet. Varmista demo- tai Early Access -version mukaan.",
+      "keywords": "Road To Vostok invertteri, B-kaapeli, ydintehtävät, tehtäväesineet, suojan virta, kaikki tehtävät"
+    },
+    "wikiWeaponsPage": {
+      "title": "Road To Vostok aseet — veitset, pyssyt, konepistoolit ja kaliiperit",
+      "description": "Road To Vostok -aseviite: veitsistä tarkkuuskivääreihin ja konepistooleihin, luokkahuomiot, tilastoyhteenvedot ja loot-konteksti. Varmista nykyisen patchin mukaan.",
+      "keywords": "Road To Vostok aseet, AKM, MP7, Mosin, SVD, ammukset, survival FPS"
+    },
+    "wikiAmmunitionPage": {
+      "title": "Road To Vostok ammukset — kaliiperit ja patruunatyypit",
+      "description": "Ammus- ja kaliiperiviite Road To Vostokiin: patruunan nimet, tyypilliset aseet ja huomiot loadout-suunnitteluun. Varmista peliversiosi mukaan.",
+      "keywords": "Road To Vostok ammukset, kaliiperit, 7.62, 5.45, haulikko, patruunat"
+    },
+    "wikiFishingPage": {
+      "title": "Road To Vostok kalastusopas — tarkistuslista ja patch-muistiinpanot",
+      "description": "Kalastus Road To Vostokissa: mitä tarkistaa patch-muistiinpanoissa ja demoissa, tiekartan aikataulu ja käytännön lista. Järjestelmät kehittyvät — varmista versiosi mukaan.",
+      "keywords": "Road To Vostok kalastus, miten kalastaa, tiekartta, selviytyminen, Steam"
+    },
+    "wikiGatheringPage": {
+      "title": "Road To Vostok keräily — materiaalit ja resurssitaulukko",
+      "description": "Keräily ja raaka-aineet Road To Vostokissa: resurssityypit, tyypilliset lähteet ja merkitys valmistukselle. Vertaa asennettuun versioon.",
+      "keywords": "Road To Vostok keräily, materiaalit, valmistus, loot, selviytyminen"
+    },
+    "npcListPage": {
+      "title": "Road To Vostok NPC:t — kauppiaat ja Area 05 -keskukset",
+      "description": "Road To Vostok -NPC-viite: Generalist- ja Doctor-kauppiaat, kylä ja telakka, varastokäyttäytyminen ja linkit interaktiivisesta kartasta.",
+      "keywords": "Road To Vostok NPC, kauppiaat, Generalist, Doctor, Village, Area 05, peliopas"
+    },
+    "npcDetailPage": {
+      "title": "NPC — Road To Vostok -viite",
+      "description": "Road To Vostok -NPC-viite: kaupan tarjonta, tehtävät, sijainnit tai taistelukäyttäytyminen. Täydentää virallisia materiaaleja; varmista versiosi mukaan.",
+      "keywords": "Road To Vostok, NPC, kauppiaat, peliopas, viite"
+    },
+    "mapPage": {
+      "title": "Road To Vostok -kartta — Area 05, POI:t ja aluekatsaus",
+      "description": "Road To Vostok -interaktiivinen kartta: Area 05, rajavyöhyke ja Vostok, haettava indeksi ja aluekatsaus. Käytä pelin kartan kanssa ja varmista koordinaatit asiakkaassa.",
+      "keywords": "Road To Vostok kartta, Area 05, rajavyöhyke, Vostok, POI, sijaintihakemisto"
+    },
+    "tasksPage": {
+      "title": "Road To Vostok tehtävät — eteneminen, raja ja Vostok-säännöt",
+      "description": "Road To Vostok -tehtävät ja eteneminen: kauppiaiden tavoitteet, rajanylitykset, Vostok-permadeath-säännöt ja ehdotettu järjestys. Varmista tehtävien käyttäytyminen versiossasi.",
+      "keywords": "Road To Vostok kaikki tehtävät, rajavyöhyke, Vostok, kauppiaat, tehtävät, permadeath"
+    },
+    "guidesListPage": {
+      "title": "Road To Vostok -oppaat — aseet, lääkintä, virta ja tiekartta",
+      "description": "Road To Vostok -strategiaoppaat: aseiden lataus, lääkintäselviytyminen, suojan sähkö ja Early Access -tiekartan konteksti. Toimituksellinen viite — varmista mekaniikat versiossasi.",
+      "keywords": "Road To Vostok oppaat, haulikko, lääkintä, invertteri, tiekartta"
+    },
+    "guideArticlePage": {
+      "title": "Opas — Road To Vostok",
+      "description": "Syvällinen Road To Vostok -opas: taktiikat, järjestelmät tai tiekartan analyysi. Varmista pelitiedot asennetun version mukaan.",
+      "keywords": "Road To Vostok, strategiaopas, läpivienti, Early Access"
+    },
+    "devUpdatesPage": {
+      "title": "Road To Vostok päivitykset ja Early Access -tiekartta",
+      "description": "Road To Vostok Early Access (Build 1 — Road) julkaistiin 7.4.2026. Julkisen tiekartan tiivistelmä Build 8:een, Steam-uutislinkit ja patch-muistiinpanojen sijainti. Toimituksellinen yhteenveto — vahvista päivämäärät Steamissa ja roadtovostok.comissa.",
+      "keywords": "Road To Vostok tiekartta, Early Access, kehityspäivitykset, Steam-uutiset, buildit, patch-muistiinpanot"
+    },
+    "posterPage": {
+      "title": "Road to Vostok -juliste ja viralliset kuvakaappaukset",
+      "description": "Road to Vostok -juliste- ja kuvakaappaussivu: kaikki kaksitoista virallista still-kuvaa roadtovostok.com/screenshots (paikallisesti lukijoille). Taustakuvaystävällinen survival FPS -taide, lightbox, linkit Steam-kehen ja kehittäjän galleriaan. Road to Vostok® on Road to Vostok Ltd:n tavaramerkki; tämä opassivusto on itsenäinen.",
+      "keywords": "road to vostok poster, Road To Vostok kuvakaappaukset, viralliset, taustakuva, Steam survival FPS, roadtovostok.com screenshots",
+      "ogImageAlt": "Road To Vostok virallinen pelikuvakaappaus — julistehenkinen survival FPS -still"
+    },
+    "modsListPage": {
+      "title": "Road To Vostok modit — toimitukselliset valokeilat ja suositellut paketit",
+      "description": "Kuratoidut Road To Vostok -modisuositukset: toimitukselliset valokeilat pelipaketeista ja työkaluista — ominaisuudet, Metro Mod Loader -huomiot ja turvallinen asennusohje. Ei täyttä ModWorkshop-peilausta; ei isännöityjä .vmz-tiedostoja — lataukset vain linkitettyjen tekijäsivujen kautta.",
+      "keywords": "Road To Vostok modit, modaus, Early Access, ModWorkshop, Metro Mod Loader, peliopas"
+    },
+    "modArticlePage": {
+      "title": "Modi-artikkeli — Road To Vostok",
+      "description": "Road To Vostok -modivalokeila: ominaisuuskatsaus, yhteensopivuus, lataajan vaatimukset ja latauslinkit.",
+      "keywords": "Road To Vostok, modit, modausopas, Early Access"
+    }
+  },
+  "wiki": {},
+  "homePage": {
+    "hero": {
+      "eyebrow": "Selviytymisopas · demo ja Steam · Early Access",
+      "title": "Road To Vostok Guide — miten pelata, Steam-demo, aseet ja tiekartta",
+      "stripShotguns": "Lataa haulikko ja aseet",
+      "stripTasks": "Kaikki tehtävät ja tiekartta",
+      "stripMedical": "Invertteri · lääkintä · tallennukset",
+      "leadBeforeLinks": "Huomioita Steam-demolle ja Early Accessille: aseet ja lataus, invertterin virta, tarkistuslistatyyppiset tehtävät ja tiekartan aikataulu, lääkintä, PC-tallennukset, valmistus ja kalastus jos versiosi sisältää ne. Yksinpeliselviytyminen; modityökalut virallisella pitkän aikavälin suunnitelmalla. Käytä",
+      "linkStartHere": "Aloita tästä",
+      "leadAfterStart": "ydinsilmukkaan,",
+      "linkMap": "Kartta",
+      "leadMid": "ja",
+      "linkTasks": "Tehtävät",
+      "leadEnd": "sijainteihin ja tavoitteisiin — kompassilohko alla peilaa kaikki pääosiot.",
+      "caption": "Sivuston tausta — sama taide kuin täyden sivun tunnelmassa",
+      "btnAdvancedGuides": "Laajemmat oppaat",
+      "btnInteractiveMap": "Interaktiivinen kartta"
+    },
+    "compass": {
+      "kicker": "Sivuston kompassi",
+      "title": "Kaikki keskipisteet tällä sivustolla",
+      "intro": "Samat kohteet kuin ylänavigaatiossa, skannattavaksi aseteltuna — kaikki polut ovat reitittimessä.",
+      "boardLabel": "Pääosiot",
+      "hubs": {
+        "gettingStarted": {
+          "title": "Aloita tästä",
+          "hint": "Ensimmäinen sessio, ohjaimet, suojan kierto"
+        },
+        "wiki": {
+          "title": "Wiki",
+          "hint": "Esineiden taulukot — aseet, ammukset, tehtävät"
+        },
+        "guides": {
+          "title": "Oppaat",
+          "hint": "Pitkät pelaaja-artikkelit"
+        },
+        "map": {
+          "title": "Kartta",
+          "hint": "Area 05, raja, Vostok -tapit"
+        },
+        "tasks": {
+          "title": "Tehtävät",
+          "hint": "Tavoitteet, kauppiaat, eteneminen"
+        }
+      }
+    },
+    "featured": {
+      "kicker": "Wiki ja oppaat",
+      "title": "Loot-taulukot ja selviytymistekstit",
+      "introBeforeGuides": "Spawn-taulukot ja kauppiaslistat vaihtelevat patchien välillä — pidämme ne täällä, jotta voit verrata pelissä näkemääsi, emme peilaa ylävalikkoa. Pidemmät selitykset ovat kohdassa",
+      "linkGuides": "Oppaat",
+      "introBeforeMap": "; ",
+      "linkMap": "kartta",
+      "leadMid": "ja",
+      "linkTasks": "tehtävät",
+      "introEnd": "-sivut käsittelevät paikkoja ja tavoitteita. Oikealla: sivuja, joita avataan useimmin.",
+      "entryPointsLabel": "Sisäänpääsyt",
+      "crossWikiLabel": "Wiki-keskus",
+      "crossWikiHint": "Taulukot, NPC:t, kalastus, keräily",
+      "crossGuidesLabel": "Oppaat",
+      "crossGuidesHint": "Tiekartta, lääkintä, loadoutit",
+      "crossMapLabel": "Kartta",
+      "crossMapHint": "Tapit ja sijaintihakemisto",
+      "crossTasksLabel": "Tehtävät",
+      "crossTasksHint": "Tavoitteet ja vyöhykesäännöt",
+      "popularPicksLabel": "Suositut valinnat",
+      "catalog": {
+        "weapons": {
+          "kicker": "Wiki",
+          "title": "Aseet",
+          "blurb": "Luokkatilastot — varmista version mukaan."
+        },
+        "npcs": {
+          "kicker": "Wiki",
+          "title": "NPC:t ja kauppiaat",
+          "blurb": "Kuka myy mitä; parittuu karttatappien kanssa."
+        },
+        "coreTasks": {
+          "kicker": "Wiki",
+          "title": "Ydintehtävien esineet",
+          "blurb": "Invertteri, kaapelit, avaimet ja tehtäväesineet."
+        },
+        "minefield": {
+          "kicker": "Opas",
+          "title": "Miinakenttätaktiikat",
+          "blurb": "Miinoitetut rajareitit, AI-paine ja Vostok-portti."
+        }
+      }
+    },
+    "quest": {
+      "progression": {
+        "kicker": "Eteneminen",
+        "title": "Lännestä itään: Area 05, raja, Vostok"
+      },
+      "official": {
+        "leadBefore": "Virallisella",
+        "linkLabel": "pelin sivulla",
+        "afterLinkHtml": " maailma on jaettu kolmeen alueeseen. Aloitat <strong>Area 05</strong>:stä, evakuoituna Kaakkois-Suomen osana: suojat, kauppiaat, tehtävät ja alkuloot, kun <strong>Bandiitit</strong> partioivat vyöhykettä. Kun varusteet riittävät, tie jatkuu <strong>itään</strong> <strong>rajavyöhykkeeseen</strong> — vartioituja ylityksiä Suomen ja Venäjän välillä — ja ylityksen jälkeen <strong>Vostokiin</strong> Venäjällä (korkea riski; permadeath — kuolema siellä maksaa koko run-varaston toisin kuin läntisillä vyöhykkeillä)."
+      },
+      "sandbox": {
+        "beforeLinksHtml": "Peli on yhä <strong>hiekkalaatikko</strong>: sinua ei pakoteta Vostokiin tai yhteen pelityyliin. „Itään työntyminen” tarkoittaa vain vaikeuskäyrää — turvaa länsi, yritä vaikeampia ylityksiä — ei piilotettua tarinamandaattia. Askel askeleelta sijainnit: "
+      },
+      "inline": {
+        "linkMap": "Kartta",
+        "commaAfterMap": ", ",
+        "linkTasks": "Tehtävät",
+        "midAndNpcs": " ja ",
+        "linkNpcs": "NPC:t",
+        "beforeStartHere": "; ohjaimille ja selviytymissilmukalle",
+        "linkStartHere": "Aloita tästä",
+        "periodEnd": "."
+      },
+      "zones": {
+        "area05": {
+          "kicker": "Suomi · Länsi",
+          "title": "Area 05",
+          "text": "Keskussuojat, kauppiaat, tehtävät, alkuvarusteet. Vihamieliset bandiitit evakuointivyöhykkeellä."
+        },
+        "border": {
+          "kicker": "Ylitys · Keskiosa",
+          "title": "Rajavyöhyke",
+          "text": "Vartioitu rajakartta: miinat, esteet, veneet ja korruptoituneet Guards ilmatuen kanssa."
+        },
+        "vostok": {
+          "kicker": "Venäjä · Itä",
+          "title": "Vostok",
+          "text": "Paras loot, sotilasfaktio, panssaroidut uhat. Jokainen Vostok-kartta on permadeath."
+        }
+      },
+      "demo": {
+        "heading": "Julkinen demo: miten päiväkirja asettuu",
+        "lead": "Pelattava demo on vain siivu maailmasta, mutta se ohjaa yleensä samaan ideaan: opi suoja, tyhjennä Area 05 -tyyppistä työtä, seuraa kauppiaita ja avaimia, sitten käyttöliittymä voi näyttää valmistumisrivin usein nimellä „All Tasks”."
+      },
+      "flow": {
+        "ariaLabel": "Tyypillinen demo-järjestys: suoja, Area 05, kauppiaat ja avaimet, sitten All Tasks -päiväkirjatila",
+        "shelter": "Suoja ja varasto",
+        "area05": "Area 05 -tehtävät",
+        "traders": "Kauppiaat ja avaimet",
+        "allTasks": "All Tasks",
+        "journalBadge": "Päiväkirja",
+        "captionHtml": "„All Tasks” tarkoittaa, että <strong>kyseisen demoversion päätehtävälista on valmis</strong>. Se ei lupaa, ettei Early Accessissa tai myöhemmin olisi tekemistä."
+      },
+      "related": {
+        "label": "Avaa tällä sivustolla",
+        "map": "Kartta",
+        "tasks": "Tehtävät",
+        "npcs": "NPC:t",
+        "startHere": "Aloita tästä"
+      },
+      "zonesAriaLabel": "Kolme aluetta lännestä itään",
+      "relatedNavAria": "Sivuston sivut alueille ja etenemiselle"
+    },
+    "devlog": {
+      "kicker": "Signaalit",
+      "title": "Road To Vostok -tiekartta ja devlog",
+      "introBefore": "Pitkät kehittäjäpäivitykset YouTubessa käsittelevät Early Access -laajuutta, suojia ja myöhempiä osia kuten kalastusta ja vuodenaikoja. Tällä sivustolla: ",
+      "linkGuides": "Oppaat",
+      "afterGuides": " sisältävät ",
+      "linkGeography": "rajan maantiede",
+      "betweenGeoMine": " ja ",
+      "linkMinefield": "miinakenttätaktiikat",
+      "afterMinefield": "; ",
+      "linkRoadAhead": "Julkinen tiekartta",
+      "afterRoadAhead": " käsittelee buildeja ja patch-tyylisiä muistiinpanoja; kun versiosi lisää sen, katso ",
+      "linkFishing": "Wiki · Kalastus",
+      "afterFishing": ".",
+      "iframeTitle": "Road To Vostok -kehittäjähaastattelu — Early Access ja tiekartta",
+      "summaryHeading": "Jakson yhteenveto",
+      "summaryBullet1": "Early Access -tavoitteet: laajennetut kartat, dynaamiset tapahtumat, monisuojasilmukat.",
+      "summaryBullet2": "Kauppiaiden avaimet ja suojien avausrytmi sidottu tutkimusriskiin.",
+      "summaryBullet3": "Yhteisön toivelistat, demo-opit ja läpinäkyvä tiekarttaviestintä.",
+      "summaryBullet4": "Miten myöhempien buildien odotetaan kerrostavan tehtäviä, vuodenaikoja ja merisisältöä.",
+      "footerBeforeRoad": "Patch-tyylisiin muistiinpanoihin: ",
+      "footerLinkRoadAhead": "Julkinen tiekartta",
+      "footerMid": ". Modiodotukset: ",
+      "footerLinkMods": "Modikeskus",
+      "footerEnd": "(ei isännöityjä tiedostoja)."
+    },
+    "about": {
+      "kicker": "Tietoa",
+      "title": "Tästä Road To Vostok -oppaasta",
+      "text1": "Road To Vostok (Road To Vostok Ltd.) on kova yksinpeliselviytymis-FPS Suomen ja Venäjän rajalla. Loottaat Area 05:ssä, ylität rajavyöhykkeen ja voit astua Vostokiin tiukempien permadeath-sääntöjen alle kuin muualla runissa. Ilmainen Steam-demo ja Early Access -julkaisu ajavat hakua: miten pelata, loadout ja lääkintä, tehtävät, tiekartan ajoitus ja PC-tallennukset.",
+      "text2": "Tämä suomenkielinen opas käsittelee aiheita käytännön artikkeleilla loadouteista, pitkän aikavälin tiekartasta, valmistuksesta ja kalastuksesta patchien mukaan — tarkista aina mitä asennettu versiosi näyttää.",
+      "linkStartHere": "Aloita tästä",
+      "linkWiki": "Wiki",
+      "linkGuides": "Oppaat",
+      "linkAboutUs": "Tietoa meistä",
+      "hubNavAria": "Sivuston pääsivut"
+    },
+    "faq": {
+      "kicker": "UKK",
+      "title": "Usein kysytyt kysymykset",
+      "hubNavAria": "Siirry yksityiskohtaisiin sivuihin",
+      "relatedLabel": "Liittyvät sivut",
+      "hubStartHere": "Aloita tästä",
+      "hubMinefield": "Miinakenttäopas",
+      "hubGeography": "Maantiedeopas",
+      "hubTasks": "Tehtävät",
+      "items": {
+        "releaseEa": {
+          "q": "Mikä on Road To Vostok -julkaisupäivä ja Early Access -suunnitelma?",
+          "a": "Steam listaa suunnitellun Early Access -ikkunan (tarkista kauppasivulta ajankohtainen päivä). Pelin ja sivuston tiekarttaoppaat tiivistävät build-vaiheet julkaisun jälkeen."
+        },
+        "multiplayer": {
+          "q": "Onko Road To Vostok verkossa tai moninpeli?",
+          "a": "Ei. Steam kuvaa sitä yksinpeliselviytymisenä. Kuvauksessa ei ole live co-opia tai MMO-tilaa."
+        },
+        "demoSteam": {
+          "q": "Miten saan Road To Vostok -demon Steamissa?",
+          "a": "Käytä Road To Vostokin Steam-kauppamerkintää ja asenna erillinen demo-sovellus (Steam näyttää demolatauksen kun saatavilla)."
+        },
+        "whatFirst": {
+          "q": "Miten pelata Road To Vostokia — mitä ensin?",
+          "a": "Suorita demon tarjoama opastuskartta, avaa suojan tallennuspiste, opi loottaus, kauppiaat ja aseiden lataus ennen vaikeampiin karttoihin menoa."
+        },
+        "loadWeapons": {
+          "q": "Road To Vostok: miten ladata haulikko ja aseet?",
+          "a": "Lipasaseet tarvitsevat ladatut lipaat inventaariossa; haulikot ja pulttilukot käyttävät opastuksessa näytettyjä manuaalisia askeleita. Katso Aseen lataus -opas kirjalliseen listaan."
+        },
+        "inverter": {
+          "q": "Missä on Road To Vostok -invertteri tai virtavarusteet?",
+          "a": "Käytä invertterin sijaintiopasta: etsi teollisuus- ja hyöty-POI:ta, yhdistä kauppiasvihjeisiin ja varmista spawnit patchisi mukaan."
+        },
+        "fracture": {
+          "q": "Kuolin luunmurtumaan Road To Vostokissa — mitä teen?",
+          "a": "Hoida murtumat nopeasti lastoilla tai edistyneillä pakkauksilla ennen liikuntarangaistusten ja passiivivaurion kasaantumista. Lääkintäopas käy läpi vaivat ja parannusesineet."
+        },
+        "allTasks": {
+          "q": "Miten suoritan Road To Vostok kaikki tehtävät?",
+          "a": "Seuraa tehtäväketjua etusivulla, sitten Tehtävät-sivua tavoitteille ja kauppiaiden avaimille ja Karttaa POI:ille."
+        },
+        "roadmap": {
+          "q": "Missä on Road To Vostok -tiekartta?",
+          "a": "Avaa tiekarttaopas ja Julkinen tiekartta -keskus build-nimille, Early Access -laajuudelle ja tuleville järjestelmille kuten kalastus ja vuodenajat ilmoituksen mukaan."
+        },
+        "mods": {
+          "q": "Onko Road To Vostok -modeja?",
+          "a": "Steam Early Access -UKK sanoo modaustyökalut suunnitelluiksi kohti täyttä julkaisua. Demoversiot eivät välttämättä tarjoa täyttä moditukea."
+        },
+        "backup": {
+          "q": "Miten varmuuskopioin Road To Vostok -tallennukset PC:llä?",
+          "a": "Polut vaihtelevat buildin ja käyttöjärjestelmän mukaan. Ota tilannekuva käyttäjädata-kansiosta ennen kokeiluja; Modikeskus selittää rakenteen yleisellä tasolla — varmista koneellasi."
+        },
+        "crafting": {
+          "q": "Miten valmistus toimii Road To Vostokissa?",
+          "a": "Valmistus laajenee Early Access -buildien myötä. Tarkista patch-muistiinpanot ja pelin reseptit; Wiki seuraa loottia, joka ruokkii valmistussilmukoita."
+        },
+        "fishing": {
+          "q": "Onko Road To Vostokissa kalastusta?",
+          "a": "Kalastus ja merisisältö ovat virallisella monivuotisella tiekartalla myöhempiin buildeihin — ei aina jokaisessa demosiivussa."
+        },
+        "officialSite": {
+          "q": "Onko tämä virallinen Road To Vostok -sivusto?",
+          "a": "Ei. Tämä on itsenäinen viitesivusto. Varmista faktat asennetun version ja virallisten kanavien mukaan."
+        }
+      }
+    }
+  },
+  "site": {
+    "breadcrumbHome": "Etusivu",
+    "breadcrumbAriaLabel": "Murupolku",
+    "lastUpdatedLabel": "Päivitetty:",
+    "lastUpdatedDate": "27. maaliskuuta 2026",
+    "navHome": "Etusivu",
+    "navStartHere": "Aloita tästä",
+    "navPoster": "Juliste",
+    "navRoadAhead": "Julkinen tiekartta",
+    "navWiki": "Wiki",
+    "navMap": "Kartta",
+    "navTasks": "Tehtävät",
+    "navGuides": "Oppaat",
+    "navMods": "Modit",
+    "navNpcs": "NPC:t",
+    "navWeapons": "Aseet",
+    "navAmmunition": "Ammukset",
+    "navFishing": "Kalastus",
+    "navGathering": "Keräily",
+    "navCoreTasks": "Ydintehtävät",
+    "brandName": "Road To Vostok",
+    "headerBrandHomeAria": "Road To Vostok Guide — etusivu",
+    "headerNavMainAria": "Päänavigaatio",
+    "headerToggleMenu": "Avaa tai sulje valikko",
+    "footerNavAria": "Alatunniste",
+    "footerLegalAria": "Sivusto ja oikeudellinen",
+    "footerTagline": "Viitteitä loadouteille, lootille, kartoille ja reiteille Area 05:ssä, rajavyöhykkeellä ja Vostokissa.",
+    "footerDisclaimerHtml": "Ei sidosta viralliseen Road To Vostok -peliin tai sen kehittäjään. Peli © oikeudenhaltijat. Oppaat perustuvat yhteisötietoon ja voivat muuttua päivitysten ja julkisen <a href=\"/dev-updates\">tiekartan tiivistelmän</a> mukaan.",
+    "footerCopy": "© {year} Road To Vostok Guide — Survival FPS -wiki ja tehtäväapu.",
+    "footerAbout": "Tietoa",
+    "footerContact": "Yhteystiedot",
+    "footerPrivacy": "Tietosuoja",
+    "footerTerms": "Ehdot",
+    "footerCopyright": "Tekijänoikeudet",
+    "localeSwitchAria": "Käyttöliittymän kieli",
+    "localeCodeEn": "EN",
+    "localeCodeZh": "中文",
+    "localeNameEn": "English",
+    "localeNameZh": "Chinese",
+    "localeCodeDe": "DE",
+    "localeNameDe": "Deutsch",
+    "localeCodeRu": "RU",
+    "localeNameRu": "Russian",
+    "localeCodeFi": "FI",
+    "localeNameFi": "Suomi",
+    "localeCodeFr": "FR",
+    "localeNameFr": "Ranska",
+    "pageRailAsideLabel": "Tiivistelmä",
+    "pageRailNavTitle": "Siirry kohtaan",
+    "seoDefaultPageTitle": "Road To Vostok Guide — selviytymiswiki ja tehtäväapu",
+    "ogDefaultLogoAlt": "Road To Vostok Guide -logo"
+  },
+  "guidesListPage": {
+    "breadcrumb": "Road To Vostok -oppaat",
+    "title": "Road To Vostok -oppaat",
+    "subHtml": "Selviytymisvinkit ja eteneminen — lyhyet tekstit. Yhdistä <a href=\"/map\">karttaan</a>, <a href=\"/tasks\">tehtäviin</a> ja <a href=\"/wiki\">esinetietokantaan</a>, kun tarvitset sijainteja tai taulukoita. Varmista tiedot asennetusta versiosta.",
+    "articlesAria": "Artikkelit"
+  },
+  "wikiHubPage": {
+    "breadcrumb": "Wiki",
+    "title": "Road To Vostok -esinetietokanta",
+    "leadHtml": "Kuratoidut taulukot <strong>Road To Vostok -aseille</strong> ja <strong>ammustyypeille</strong>, <strong>invertterille</strong> / <strong>B-kaapeleille</strong> ja muille <strong>kaikki tehtävät</strong> -esineille, sekä <strong>miten kalastaa</strong> -huomiot ja kenttä<strong>keräily</strong>. Pitkä strategia on <a href=\"/guides\">Oppaiden</a> alla — esim. <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">todellinen maantiede</a>, <a href=\"/guides/surviving-the-Minefield\">miinakenttätaktiikat</a> tai <a href=\"/guides/how-to-fish\">kalapaikat ja hauki</a>. Varmista arvot aina asennetusta versiosta.",
+    "categoriesAria": "Wiki-luokat",
+    "cardCoreKicker": "Ydintehtävät ja virta",
+    "cardCoreTitle": "Invertteri, B-kaapelit ja tehtäväesineet",
+    "cardCoreBlurb": "Suojan virtaketju, kaapelointi ja avaimet sidottuina <strong>kaikki tehtävät</strong> -etenemiseen.",
+    "cardWeaponsKicker": "Aseet ja lisävarusteet",
+    "cardWeaponsTitle": "Pyssyt ja alustat",
+    "cardWeaponsBlurb": "Konepistoolit, kiväärit, haulikot, pistoolit — mitä kukin syöttää ja lyhyet lisävarustehuomiot.",
+    "cardAmmoKicker": "Ammukset",
+    "cardAmmoTitle": "Kaliiperit ja pinot",
+    "cardAmmoBlurb": "Hinta per patruuna, paino, max pino ja aseyhteensopivuus wiki-taulukosta.",
+    "cardFishKicker": "Kalastus",
+    "cardFishTitle": "Miten kalastaa (Early Access)",
+    "cardFishBlurb": "Vavat, syötti ja tiekartta-varoitukset <strong>miten kalastaa</strong> -hauille.",
+    "cardGatherKicker": "Keräily",
+    "cardGatherTitle": "Kenttäresurssit",
+    "cardGatherBlurb": "Puu, romu, keräily ja raaka-aineet selviytymis- ja valmistussilmukoille.",
+    "cardNpcKicker": "Hahmot",
+    "cardNpcTitle": "NPC:t ja keskukset",
+    "cardNpcBlurb": "Kauppiaat, vihamielishuomiot ja suojan <strong>kissakaveri</strong> — karttatapit linkittävät tänne merkinnän mukaan.",
+    "goOpenTable": "Avaa taulukko →",
+    "goOpenGuideList": "Avaa opaslista →",
+    "goOpenNpcWiki": "Avaa NPC-wiki →"
+  },
+  "wikiCoreTasksPage": {
+    "breadcrumb": "Ydintehtävät",
+    "title": "Road To Vostok ydintehtävät ja virtaesineet",
+    "leadHtml": "Esineet, joita yhdistetään suojan virtaan, kaapeleihin ja tehtäväketjuihin (<strong>kaikki tehtävät</strong>). Tarkista <a href=\"/map\">Kartta</a> ja <a href=\"/tasks\">Tehtävät</a> etenemiskontekstille; pitkiin teksteihin <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">rajan maantiede</a> ja <a href=\"/guides/surviving-the-Minefield\">miinakenttätaktiikat</a>.",
+    "tableAria": "Ydintehtävien datataulukko",
+    "colItem": "Esine",
+    "colRole": "Rooli",
+    "colRelated": "Liittyvä eteneminen",
+    "colNotes": "Huomiot",
+    "crossLinksHtml": "Liittyvää: <a href=\"/tasks\">Tehtävät</a> · <a href=\"/guides/surviving-the-Minefield\">Miinakenttäopas</a> · <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">Maantiedeopas</a>"
+  },
+  "wikiWeaponsPage": {
+    "breadcrumb": "Aseet",
+    "kicker": "Arsenaliluettelo",
+    "title": "Road To Vostok -aseet",
+    "leadHtml": "Yksi vieritettävä luettelo: lähitaistelu, sivuaseet, pitkät pyssyt ja tukiaseet. Numerokentät seuraavat alla olevia <strong>Road To Vostok Wiki (Fandom)</strong> -sivuja; muotokuvat ovat samoja wiki-pikkukuvia polussa <code>/images/wiki/weapons/</code>. Tarkista jokainen arvo asennetusta versiosta — Early Access muuttaa tilastoja, nimiä ja loottia.",
+    "ammoPairHtml": "Yhdistä patruunat <a href=\"/wiki/ammunition\">Ammukset</a>-taulukkoon (myös Fandomista).",
+    "sourcesAria": "Fandom-datalähteet",
+    "sourcesLabel": "Wiki-lähteet",
+    "datasetAria": "Aineiston yhteenveto",
+    "statEntries": "Merkinnät",
+    "statCategories": "Luokat",
+    "statWithPortrait": "Muotokuvalla",
+    "jumpToClassAria": "Siirry aseluokkaan",
+    "statsStripAria": "Asetilastot",
+    "tocTitle": "Luokat",
+    "viewOnFandom": "Avaa Fandomissa",
+    "specWt": "Paino",
+    "specDmg": "Vah",
+    "specCaliber": "Kaliiperi",
+    "specMag": "Lipas",
+    "specRpm": "RPM",
+    "specValue": "Arvo",
+    "specTrader": "Kauppias",
+    "specRarity": "Harvinaisuus",
+    "specPen": "Läp",
+    "magRoundsSuffix": " ptr",
+    "lootLabel": "Loot",
+    "summaryKgSuffix": " kg",
+    "summaryDmgPrefix": "VAH ",
+    "summaryMagRoundsSuffix": " ptr",
+    "summaryRpmSuffix": " RPM",
+    "summaryEuroSuffix": " €",
+    "summaryCost": "noin {n} €",
+    "categories": {
+      "knives": "Veitset",
+      "pistols": "Pistoolit",
+      "rifles": "Kiväärit",
+      "smg": "Konepistoolit ja PDW:t",
+      "shotguns": "Haulikot",
+      "bolt": "Pulttilukko",
+      "semi": "Puoliautomaatti"
+    }
+  },
+  "wikiAmmunitionPage": {
+    "breadcrumb": "Ammukset",
+    "kicker": "Loadout-viite",
+    "title": "Road To Vostok -ammukset",
+    "leadBeforeLink": "Patruunan arvo (€), paino per laukaus, max pino ja aseyhteensopivuus on kohdistettu ",
+    "leadWikiLinkText": "Road To Vostok Wiki (Fandom) · Ammunition",
+    "leadAfterLinkHtml": " -taulukkoon; kuvakkeet ovat samoja wiki-resursseja polussa <code>/images/wiki/Ammunition/</code>. Varmista kaikki asennetusta versiosta — patchit voivat muuttaa tilastoja ja aseiden nimiä.",
+    "datasetAria": "Aineiston yhteenveto",
+    "statCalibers": "Kaliiperit",
+    "statLightest": "Kevyin patruuna",
+    "statTightestStack": "Tiukin pinoraja",
+    "heroStatUnitKg": "kg",
+    "heroStatUnitRnds": "ptr",
+    "bodyAria": "Ammusviite",
+    "filterPlatformAria": "Suodata alustan mukaan",
+    "searchPlaceholder": "Kaliiperi, ase, huomio…",
+    "searchLabel": "Haku",
+    "emptyResultsHtml": "Ei osumia tälle suodattimelle ja haulle. Tyhjennä haku tai valitse <strong>Kaikki</strong>.",
+    "imageSlotLabel": "Kuvapaikka",
+    "statValue": "Arvo",
+    "statWeight": "Paino",
+    "statStack": "Pino",
+    "unitEurPerRnd": "€ / ptr",
+    "unitKgPerRnd": "kg / ptr",
+    "unitMax": "max",
+    "feedsLabel": "Syöttää",
+    "filters": {
+      "all": "Kaikki",
+      "rifle": "Kivääri",
+      "dmr": "DMR / täysiteho",
+      "smg": "Konepistooli",
+      "pistol": "Pistooli",
+      "shotgun": "Haulikko"
+    },
+    "categories": {
+      "smg": "Konepistooli",
+      "rifle": "Rynnäkkö / kivääri",
+      "dmr": "Tarkka-ampuja / täysiteho",
+      "shotgun": "Haulikko",
+      "pistol": "Pistooli",
+      "mixed": "Pistooli- ja konepistoolialustat"
+    },
+    "footCrossCheckHtml": "Tarkista aseet ja lisävarusteet sivulla <a href=\"/wiki/weapons\">Aseet ja lisävarusteet</a>.",
+    "footAssetsHtml": "Kuvat: lisää tiedostot polkuun <code>public/images/wiki/ammo/</code> ja aseta <code>imageUrl</code> tiedostossa <code>src/data/item/ammunition/en.js</code> (polku sivuston juuresta, esim. <code>/images/wiki/ammo/46x30.webp</code> — tiedostonimi voi vastata <code>id</code>:tä)."
+  },
+  "wikiFishingPage": {
+    "breadcrumb": "Kalastus",
+    "title": "Road To Vostok -kalastus",
+    "lead": "Miten kalastaa Road To Vostokissa riippuu versiostasi: kalastus on virallisella pitkän aikavälin tiekartalla. Käytä tätä listaa viitteenä ja varmista patch-muistiinpanoista ja asennetusta versiosta.",
+    "checklistAria": "Kalastuksen tarkistuslista",
+    "colTopic": "Aihe",
+    "colWhatToCheck": "Mitä tarkistaa",
+    "crossLinksHtml": "Patch-ajankohta: <a href=\"/dev-updates\">Julkinen tiekartta</a> · <a href=\"/getting-started\">Aloita tästä</a>"
+  },
+  "wikiGatheringPage": {
+    "breadcrumb": "Keräily",
+    "title": "Road To Vostok -keräily ja raaka-aineet",
+    "leadHtml": "Ympäristön loot ja keräilypisteet valmistukseen ja selviytymiseen. Taistelulootille katso <a href=\"/wiki/weapons\">aseet</a> ja <a href=\"/wiki/ammunition\">ammukset</a>; valmistuskonteksti <a href=\"/getting-started\">Aloita tästä</a>.",
+    "tableAria": "Keräilydatataulukko",
+    "colResource": "Resurssi",
+    "colSource": "Tyypillinen lähde",
+    "colUsedFor": "Käyttö",
+    "crossLinksHtml": "Valmistuskonteksti: <a href=\"/getting-started\">Miten valmistaa Road To Vostokissa</a> · <a href=\"/wiki/ammunition\">Ammukset</a>"
+  },
+  "npcListPage": {
+    "breadcrumb": "NPC:t",
+    "title": "Road To Vostok NPC:t ja keskukset",
+    "leadHtml": "<strong>Bandiitit</strong>, <strong>Generalist</strong>, <strong>Doctor</strong> ja suojan <strong>kissa (kumppani)</strong> — yhteisö- ja lehdistölähteisiin perustuvat tiivistelmät Road To Vostokiin. Tarkista tehtävät, varasto ja kumppanuusominaisuudet versiossasi; karttatapit linkittävät tänne merkinnän mukaan. Aluekävelyjä (esim. Apartments, Minefield) on <a href=\"/guides\">Oppaiden</a> alla.",
+    "listAria": "NPC-artikkelit",
+    "cardGo": "Avaa artikkeli →"
+  },
+  "npcDetailPage": {
+    "showOnMap": "Näytä kartalla",
+    "openMap": "Avaa kartta",
+    "moreNpcs": "Lisää NPC:itä",
+    "imageCaption": "Kuvitus tälle NPC-oppaalle.",
+    "articleAsideAria": "Tietoa tästä artikkelista"
+  },
+  "mapPage": {
+    "breadcrumb": "Kartta",
+    "title": "Road To Vostok -kartta",
+    "introHtml": "Käytä karttaa Area 05:lle, rajavyöhykkeelle ja Vostokille, lue sitten aluekatsaus ja Area 05 -huomiot alla. Kauppiaiden tehtäviin, rajanylityksiin ja Vostok-sääntöihin avaa <a href=\"/tasks\">Tehtävät</a>. Varmista asennetusta versiosta.",
+    "sectionKicker": "Maailman yleiskuva",
+    "sectionTitle": "Road To Vostok -interaktiivinen kartta",
+    "hintHtml": "Tapit ovat <strong>vain sijainteja</strong> (kylä, telakka, …). Jokainen paikka voi listata <strong>NPC:itä, loottia, tehtäviä</strong> vasemmassa paneelissa ja alla olevassa hakemistossa — ne eivät ole erillisiä merkkejä. Kun valitset tapin tai sijaintirivin, <strong>tietopaneeli</strong> liukuu vasemmalta; sulje <strong>×</strong> tai avaa uudelleen <strong>Tiedot</strong>. Alirivit wikilinkillä hyppäävät sivulle. Tapit ovat <strong>likimääräisiä</strong>.",
+    "legendAria": "Tapin värit alueittain",
+    "legendArea05": "Area 05",
+    "legendBorder": "Rajavyöhyke",
+    "legendVostok": "Vostok",
+    "detailsTab": "Tiedot",
+    "mapAppAria": "Road To Vostok -maailmankartta. Vieritä tai nipistä zoomataksesi; vedä panoroidaksesi.",
+    "drawerAria": "Valittu kartan sijainti",
+    "closeDrawerAria": "Sulje sijaintipaneeli",
+    "indexRailAria": "Sijaintihakemisto kartan alla, linkitetty tappeihin",
+    "railKickerBelowMap": "Kartan alla",
+    "railTitleLocationIndex": "Sijaintihakemisto",
+    "railLeadHtml": "Ryhmitelty alueittain: jokainen rivi on <strong>sijainti</strong>. Napauta riviä lennättääksesi kartan ja avataksesi paneelin; sisäkkäiset rivit linkittävät wikiin tai tehtäviin kun saatavilla.",
+    "area05ImageAria": "Area 05 -referenssikuvitus",
+    "bottomCrossLinksHtml": "Seuraavaksi: <a href=\"/tasks\">Tehtävät ja raja / Vostok -opas</a> · <a href=\"/wiki/core-tasks\">Ydintehtävien esineet (wiki)</a> · <a href=\"/guides\">Oppaat</a>",
+    "kindNpc": "NPC",
+    "kindLoot": "Loot",
+    "kindTask": "Tehtävä",
+    "kindWeapon": "Ase",
+    "kindFaction": "Faktio",
+    "kindNote": "Huomio",
+    "kindFallback": "Kohde",
+    "drawerMoreLink": "Lisää",
+    "drawerOpenLink": "Avaa",
+    "entriesAtLocation": "Tällä sijainnilla",
+    "emptyPinTitle": "Ei valittua tappia",
+    "emptyPinHint": "Napsauta merkkiä kartalla tai valitse rivi alla olevasta hakemistosta.",
+    "errorDimensions": "Karttakuvan mittoja ei voitu lukea.",
+    "errorImageLoad": "Karttakuva ei latautunut. Tarkista yhteys ja yritä uudelleen.",
+    "regionalSectionHtml": "<h2>Aluekatsaus</h2><p class=\"guide-lead\">Virallinen sivusto kuvaa lineaarista etenemistä: aloitat <strong>Area 05</strong>:stä (Suomi), työnnät itään <strong>rajavyöhykkeen</strong> läpi ja voit lopulta astua <strong>Vostokiin</strong> Venäjällä — kuoleman seuraukset vaihtelevat tasoittain.</p><div class=\"regions\"><article><h3>Area 05</h3><p>Evakuoitu vyöhyke Kaakkois-Suomessa: suojat, kauppiaat, tehtävät ja alkuloot varhaiseen selviytymiseen. Vihamieliset <strong>bandiitit</strong> partioivat aluetta.</p></article><article><h3>Rajavyöhyke</h3><p>Vartioitu raja Suomen ja Venäjän välillä. Ylitykset vaihtelevat: miinat, esteet tai vesireitit veneillä. <strong>Guards</strong> on aseistettu, korruptoitunut ja voi kutsua ilmatukea.</p></article><article><h3>Vostok</h3><p>Korkean riskin ja palkinnon venäläisalue arvokkaimmalla lootilla. Jokainen Vostok-kartta on <strong>permadeath</strong>-kartta. <strong>Sotilas</strong>faktio käyttää raskaita aseita ja panssaroituja ajoneuvoja.</p></article></div>",
+    "area05DetailProseHtml": "<h2>Area 05 -karttaopas ja mistä loot tulee</h2><p>Virallisen <strong>Game</strong>-sivun mukaan Area 05 on aloitusalue: evakuoitu vyöhyke <strong>Suomen kaakkoisosassa</strong>, josta löydät <strong>suojat</strong>, <strong>kauppiaat</strong>, <strong>tehtävät</strong> ja <strong>alkulootin</strong> ensimmäiseen selviytymiseen. Rutiinisi keskeyttävät vihamieliset <strong>bandiitit</strong>, jotka hyödyntävät vallan tyhjiötä.</p><h3>Loot ja „spawn-pisteet” käytännössä</h3><p>Sama sivu listaa <strong>fysiikkaan perustuvan lootin</strong> ydinominaisuutena: esineet ovat fyysisiä objekteja maailmassa, eivät abstrakteja valintoja. Kehittäjät <strong>eivät</strong> julkaise julkista kiinteiden koordinaattien taulukkoa roadtovostok.comissa, ja monet järjestelmät on kuvattu <strong>dynaamisiksi</strong> (tapahtumat, sää, uusittavat runit). Tämä sivu <strong>ei</strong> siis listaa taattuja uudistumiskoordinaatteja — ne vaihtelevat patchien ja proseduraalisen asettelun mukaan.</p><ul><li><strong>Taloudenna loogisesti:</strong> etsi asetuksen implikoimia paikkoja (asutukset, tienvarret, hylätyt rakennukset) ja opi nykyisen version loot-tiheys pelissä.</li><li><strong>Käytä kauppiaita ja tehtäviä:</strong> virallinen ominaisuuslista sisältää kaupankäynnin ja tehtävät ydinsilmukan osana suojien rinnalla — vaihtokauppa ja työpalkkiot on tarkoitettu etenemisreiteiksi, eivät vain maaspawneiksi.</li><li><strong>Pysy hengissä säilyttääksesi lootin:</strong> jos kuolet Area 05:ssä, virallisen Vostok-osuuden mukaan menetät vain <strong>kantamasi</strong> — et koko etenemiskontekstia (ankarampi sääntö koskee kuolemaa Vostokissa).</li></ul><p class=\"guide-tools\">Tällä sivustolla: <a href=\"/wiki\">Wiki</a> (varustetaulukot), <a href=\"/getting-started\">Aloita tästä</a> (silmukka, ohjaimet, lääkintäperusteet), <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">Rajan maantiedeopas</a>, <a href=\"/guides/surviving-the-Minefield\">Miinakenttäopas</a>, <a href=\"/tasks\">Tehtävät ja Vostok-säännöt</a>.</p>",
+    "area05MapImgAlt": "Area 05 — tunnelmallinen karttareferenssitaide oppaan rinnalla"
+  },
+  "tasksPage": {
+    "breadcrumb": "Tehtävät",
+    "title": "Road To Vostok -tehtävät ja eteneminen",
+    "introHtml": "Kauppiaiden tehtävät, rajanylitykset ja Vostok-permadeath-säännöt — linjassa julkisen roadtovostok.com/game -sivun kanssa. Interaktiiviselle kartalle ja POI-hakemistolle avaa <a href=\"/map\">Kartta</a>. Varmista tiedot versiostasi.",
+    "railAside": "Tehtävien tiivistelmä",
+    "railTitle": "Tällä sivulla",
+    "asideAllTasks": "Kaikki tehtävät",
+    "asideBorderVostok": "Raja ja Vostok",
+    "bodyAllTasksHtml": "<h2>Kaikki tehtävät ja eteneminen (nykytila ja tiekartta)</h2><p>Julkinen pelisivu mainostaa <strong>kauppaa ja tehtäviä</strong> pääominaisuutena: työskentelet kauppiaiden kanssa, suoritat heidän työnsä ja käytät palkkioita valmistautuaksesi vaikeampiin karttoihin. Tämä on rehellinen „tehtävien” laajuus, jonka kehittäjä markkinoi itään johtavalle selviytymissilmukalle.</p><p>Saman sivuston <strong>tiekartta</strong> aikatauluttaa syvemmät tarinajärjestelmät myöhemmin: <strong>Build 3 — Signal</strong> (tavoite <strong>Q4 / 2026</strong>) lisää <strong>tehtäväjärjestelmän</strong> ja lore-elementtejä, ja <strong>Build 8 — Silent Night</strong> (päivä TBA) listaa <strong>täyden tehtävälinjan</strong>. Hakuihin <strong>Road To Vostok kaikki tehtävät</strong> kannattaa erottaa: <em>kauppiaiden tehtävät ja hiekkalaatikkotavoitteet nykyisissä / Early Access -buildeissa</em> verrattuna <em>yhteen valmiiseen tarinatehtävälinjaan</em>, jonka tiekartta sijoittaa yhä tulevaan buildiin.</p><h3>Käytännön järjestys pelaajilla</h3><ol class=\"guide-steps\"><li>Varmista <strong>suojan</strong> tallennussilmukka Area 05:ssä ja opi kauppiaiden sijainnit (virallinen teksti sitoo suojat, kauppiaat ja tehtävät aloitusalueella).</li><li>Suorita tehtäviä, jotka rahoittavat lääkkeitä, ammuksia ja matkavarusteita; talleta ylijäämä suojaan ennen riskialttiita reissuja.</li><li>Kun olet valmis, valitse <strong>rajavyöhykkeen</strong> ylitys, joka sopii varusteisiisi (<strong>miinat</strong>, <strong>vesireitit veneillä</strong> tai <strong>esteet</strong> — virallinen vaihtelu). Miinaisiin reitteihin katso opas <a href=\"/guides/surviving-the-Minefield\">Miinakentällä selviytyminen</a>.</li><li>Kohtele <strong>Vostokia</strong> valinnaisena endgameina: permadeath koskee vain siellä virallisen kuvauksen mukaan — sinua ei pakoteta siihen jokaisessa runissa.</li></ol><p class=\"guide-tools\">Liittyvää: <a href=\"/wiki/core-tasks\">Ydintehtävien esineet</a>, <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">Rajan maantiede</a>, <a href=\"/guides/surviving-the-Minefield\">Miinakenttätaktiikat</a>, <a href=\"/map\">Kartta</a>, <a href=\"/dev-updates\">Julkinen tiekartta</a> (buildit), <a href=\"/guides\">Kaikki oppaat</a>.</p>",
+    "bodyBorderVostokHtml": "<h2>Rajavyöhyke ja ylitys Vostokiin</h2><p>Kun varusteet riittävät, virallinen teksti sanoo reitin jatkuvan <strong>itään</strong> <strong>rajavyöhykkeeseen</strong> — vartioitu raja Suomen ja Venäjän välillä. Jokaisella rajakartalla on ilmoitettu <strong>ylityspiste</strong> <strong>erilaisilla haasteilla</strong>: joillain <strong>miinat</strong> tai fyysiset esteet, toisilla <strong>vesireitit ja veneet</strong>.</p><h3>Guards ja taistelupaine</h3><p>Sivusto nimeää <strong>Guards</strong> ulkomaisiksi rajajoukoiksi: aseistettuja, korruptoituneita, voivat turvautua <strong>ilmatukeen</strong> estääkseen ylitykset. Suunnittele kestävyys, suoja ja lääkintä — katso <a href=\"/getting-started\">Aloita tästä</a> (aseet ja lataus) ja <a href=\"/wiki/weapons\">asetaulukko</a> taisteluun.</p><h3>Rajan jälkeen: Vostok-säännöt</h3><p>Onnistuneen ylityksen jälkeen astut <strong>Vostokiin</strong> (Venäjä). Virallinen teksti korostaa:</p><ul><li><strong>Korkea riski, korkea palkinto</strong> — pelin arvokkain loot.</li><li><strong>Permadeath Vostok-kartoilla:</strong> kuolema Area 05:ssä tai rajalla maksaa vain kannetun; kuolema Vostokissa maksaa <strong>kaiken</strong> (Game-sivun mukaan).</li><li><strong>Sotilashallinta:</strong> raskaat aseet ja panssaroidut ajoneuvot; tavoite on työntää sinut takaisin.</li></ul><p>Sama sivu huomauttaa, ettei peli <strong>pakota</strong> permadeath-vyöhykkeeseen — voit pysyä hiekkalaatikossa muualla. Dynaamiset järjestelmät ja satunnaistetut tapahtumat mainitaan uudelleenpeluun, <strong>yhtä voittoehtoa ei ole</strong>.</p><p class=\"guide-disclaimer\">Early Access -julkaisu on virallisella tiekartalla <strong>7. huhtikuuta 2026</strong>; karttojen määrä ja faktio-käyttäytyminen kehittyvät — lue patch-muistiinpanot päivitysten jälkeen.</p>"
+  },
+  "devUpdatesPage": {
+    "breadcrumb": "Julkinen tiekartta",
+    "ariaReleaseSnapshot": "Julkaisunäkymä",
+    "ariaDisclaimer": "Vastuuvapaus",
+    "heroKicker": "Tiekartta · Early Access -aikakausi",
+    "title": "Road To Vostok — päivitykset ja julkinen tiekartta",
+    "heroLeadHtml": "<strong>Steam Early Access</strong> (Build 1 — Road) julkaistiin <strong>7. huhtikuuta 2026</strong>. Alla on yhä kehittäjän julkinen build-suunnitelma osoitteesta <strong>roadtovostok.com/game</strong> — samat nimet ja tavoiteikkunat kuin tässä oppaassa. Patch-todellisuus voittaa aina: lue <strong>Steam-uutiset</strong> elävälle muutoslokille, ja käsittele tätä sivua toimituksellisena tiivistelmänä, ei peilauksena jokaiselle hotfixille.",
+    "railAside": "Tiekartan tiivistelmä",
+    "railTitle": "Tällä sivulla",
+    "asideRelease": "Julkaisupäivät",
+    "asidePatch": "Patch-lähteet",
+    "asideGuideSite": "Tämä opassivusto",
+    "asideAllBuilds": "Kaikki buildit",
+    "snapshotEaKicker": "Early Access · Build 1 — Road",
+    "snapshotEaDate": "7. huhtikuuta 2026 — myynnissä",
+    "snapshotEaNoteHtml": "Virallinen tiekartta listaa tämän päivämäärän <strong>Early Access</strong> -kauppajulkaisuna buildille <strong>Build 1 — Road</strong> Steamissa (AppID <strong>1963610</strong>). EA on kehittyvä haara — ei lopullinen „1.0”. Suosi Steam-julkaisuja kolmannen osapuolen tiivistelmien sijaan, kun build siirtyy tai ominaisuus ilmestyy hiljaa.",
+    "snapshotFullKicker": "Täysi / 1.0 -julkaisu",
+    "snapshotFullTba": "Ei ilmoitettu",
+    "snapshotFullNoteHtml": "Julkinen tiekartta ulottuu <strong>Build 8 — Silent Night</strong> -asti (täysi tehtävälinja, maailman asetukset, uusi faktio) päivämäärällä <strong>TBA</strong>. Erillistä virallista „täysi versio julkaistaan …” -riviä ei ole vielä — laajuus kehittyy Early Accessin aikana.",
+    "liveChangesKicker": "Live-muutokset",
+    "liveChangesTitle": "Mitä kehittäjä päivitti?",
+    "liveChangesIntroHtml": "Patch-muistiinpanot ja yllätyskorjaukset ilmestyvät lähes aina ensin ensisijaisiin kanaviin. Tämä sivu ei peilaa jokaista hotfixiä — käytä näitä, kun haluat oikean muutoslokin. Ilmainen <strong>demo</strong> on yhä Steamissa erillisenä AppID:nä (<strong>2141300</strong>), linkitettynä pääkauppasivulta, jos haluat vertailla käyttäytymistä ilman EA-ostoa.",
+    "followSteamTitle": "Steam-uutiset",
+    "followSteamLead": "Kauppasivu: ",
+    "followSteamMidHtml": " (AppID <strong>1963610</strong>). Tapahtumasyöte: ",
+    "followSteamTail": " — tavallinen koti patch-viesteille ja ilmoituksille.",
+    "followSiteTitle": "Virallinen sivusto",
+    "followSiteRestHtml": " — pelin yleiskuva ja julkinen <strong>tiekartan</strong> lohko (Build 1–8), jonka tiivistämme alla. Tarkista päivämäärät, jos Steam-muotoilu muuttuu päivityksen jälkeen.",
+    "followVideoTitle": "Kehittäjävideo",
+    "followVideoLead": "Pitkät etenemis- ja järjestelmäsyväanalyysit:",
+    "followVideoTail": " — hyvä tarkoitukselle ja suunnalle; ei aina 1:1 paikallisen clientin build-numeron kanssa.",
+    "followSteamStoreLinkText": "Road to Vostok Steamissa",
+    "followSteamNewsLinkText": "Steam-uutiset tälle sovellukselle",
+    "followOfficialGameLinkText": "Virallinen pelisivu (roadtovostok.com/game)",
+    "followYoutubeLinkText": "YouTube {'@'}roadtovostok",
+    "liveChangesCrossLinksHtml": "Tällä sivustolla: <a href=\"/guides\">Oppaat</a> (<a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">maantiede</a>, <a href=\"/guides/surviving-the-Minefield\">miinakenttä</a>) · <a href=\"/map\">Kartta</a> ja <a href=\"/tasks\">Tehtävät</a> · <a href=\"/getting-started\">Aloita tästä</a>",
+    "guideSiteSectionKicker": "Tämä opassivusto",
+    "guideSiteSectionTitle": "Rakennettu ennen EA:ta, päivitetty julkaisuikkunaan",
+    "guideSiteSectionIntroHtml": "<strong>Road To Vostok Guide</strong> (tämä sivusto) valmisteltiin ennen huhtikuun 2026 Early Access -päivää. Wiki-taulukot, karttatapit ja tehtävähuomiot ovat <strong>toimituksellisia viitteitä</strong> — ne voivat jäädä patchin jälkeen. Jokaisen Steam-päivityksen jälkeen tarkista loot, kauppiaat ja mekaniikat omassa asennuksessasi; tietokantasivujen vastuuvapaukset koskevat myös tätä.",
+    "plannedBuildsKicker": "Suunnitellut buildit",
+    "plannedBuildsTitle": "Julkinen tiekartta (kaikki buildit)",
+    "plannedBuildsIntroBeforeHtml": "Tiivistetty virallisesta <strong>tiekartasta</strong> osoitteessa ",
+    "plannedBuildsIntroAfterHtml": ". <strong>Build 1</strong> julkaistiin Early Accessiin <strong>7. huhtikuuta 2026</strong>; myöhemmät ikkunat ovat <strong>tavoitteita</strong>, ei takuita — seuraa Steamia, kun virstanpylväs siirtyy tai jakautuu.",
+    "footnoteHtml": "Vain toimituksellinen tiivistelmä. Jos päivämäärä poikkeaa Steamista tai roadtovostok.comista, luota ensisijaiseen lähteeseen. Sivu tarkistettu huhtikuussa 2026 Early Access -julkaisuikkunaa varten; tiekartan rivit vastaavat silloin virallista pelisivua.",
+    "buildTimelineTitle": "Build {id} — {name}",
+    "roadmapBuilds": [
+      {
+        "id": "1",
+        "name": "Road",
+        "window": "7.4.2026 · Early Access myynnissä",
+        "status": "live",
+        "lines": [
+          "Early Access -julkaisu",
+          "Pelisilmukka",
+          "Laajennetut kartat",
+          "Dynaamiset elementit",
+          "Usean suojan tuki"
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Nomads",
+        "window": "Q3 / 2026",
+        "status": "window",
+        "lines": [
+          "Ystävällinen faktio",
+          "AI vs. AI -taistelu",
+          "AI-variantit",
+          "Driver (kauppias)",
+          "Uusi kartta ja suoja"
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Signal",
+        "window": "Q4 / 2026",
+        "status": "window",
+        "lines": [
+          "Tehtäväjärjestelmä",
+          "Lore-elementit",
+          "Siviilipuolustuksen suojat",
+          "Grandma (kauppias)",
+          "Uusi kartta ja suoja"
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Gunslinger",
+        "window": "TBA",
+        "status": "tba",
+        "lines": [
+          "Aseiden uudistus",
+          "Luodin läpäisy",
+          "Modauspaketit",
+          "Kauppiaiden palvelut",
+          "Uusi kartta ja suoja"
+        ]
+      },
+      {
+        "id": "5",
+        "name": "North",
+        "window": "TBA",
+        "status": "tba",
+        "lines": [
+          "Dynaaminen vuodenaika",
+          "Junajärjestelmä",
+          "Metsästys ja villieläimet",
+          "Shaman (kauppias)",
+          "Uusi kartta ja suoja"
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Abyss",
+        "window": "TBA",
+        "status": "tba",
+        "lines": [
+          "Merijärjestelmä",
+          "Partioveneet",
+          "Sukellusvarusteet",
+          "Fisherman (kauppias)",
+          "Uusi kartta ja suoja"
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Enigma",
+        "window": "TBA",
+        "status": "tba",
+        "lines": [
+          "Dialogijärjestelmä",
+          "SIGINT-työkalut",
+          "Lähetykset",
+          "Scientist (kauppias)",
+          "Uusi kartta ja suoja"
+        ]
+      },
+      {
+        "id": "8",
+        "name": "Silent Night",
+        "window": "TBA",
+        "status": "tba",
+        "lines": [
+          "Täysi tehtävälinja",
+          "Maailman asetukset",
+          "Tuhoamisjärjestelmä",
+          "FINSOF-faktio",
+          "Uusi kartta ja suoja"
+        ]
+      }
+    ]
+  },
+  "gettingStartedPage": {
+    "breadcrumb": "Aloita tästä",
+    "title": "Road To Vostok — miten pelata ja mitä tehdä ensin (PC ja Steam-demo)",
+    "introHtml": "Ydinsilmukka PC:llä, oletustyyliset ohjaimet (varmista versiostasi), haulikon ja muiden aseiden lataus (tällä sivulla <a href=\"/getting-started#weapons-loading\">aseiden lataus</a>), selviytyminen ja lääkintä murtumissa ja verenvuodossa (<a href=\"/getting-started#medical\">lääkintäosio alla</a>) sekä valmistuskonteksti (<a href=\"/wiki\">Wiki</a>, <a href=\"/wiki/gathering\">Keräily</a>). Faktat perustuvat julkiseen Steam-listaukseen ja yhteisöteksteihin — vahvista aina asennetussa demossa tai Early Access -versiossa.",
+    "railAside": "Kenttätiivistelmä",
+    "railTitle": "Siirry kohtaan",
+    "asideCore": "Ydinsilmukka",
+    "asideControls": "Ohjaimet",
+    "asideWeapons": "Lataa aseet",
+    "asideMedical": "Lääkintä",
+    "asideCrafting": "Valmistus",
+    "sectionCoreHtml": "<h2>Miten pelata — ydinsilmukka</h2><p>Pelin virallisessa Steam-kauppamerkinnässä kehittäjä kuvaa Road To Vostokin kovaksi yksinpeliselviytymiseksi post-apokalyptisellä Suomen ja Venäjän rajavyöhykkeellä: selviydyt, loottaat, suunnittelet ja valmistaudut Vostokiin, jossa virheet voivat päättää runin (mukaan lukien permadeath-säännöt kyseiselle vyöhykkeelle kuvauksen mukaan). Tällä sivustolla yhdistä yleiskuva sivuihin <a href=\"/tasks\">Tehtävät</a>, <a href=\"/map\">Kartta</a> ja <a href=\"/wiki/npcs\">NPC:t</a>, kun tarvitset sijainteja ja kauppias-kontekstia.</p><ul><li>Area 05: suojat, kauppiaat, tehtävät ja alkuloot — usein ensimmäinen hiekkalaatikko ennen itään työntymistä.</li><li>Rajavyöhyke: vartioituja ylityksiä vaihtelevine uhkineen (miinat, esteet, veneet joillain reiteillä, vihamieliset vartijat ilmatuen kanssa — kaupan kuvauksen mukaan).</li><li>Vostok: korkea riski ja palkinto; kaupan tekstin mukaan kuolema Vostokissa maksaa koko runin etenemiskontekstin toisin kuin muualla vain kannetun menetys.</li><li>Suojat: kuvattu turvallisiksi vyöhykkeiksi ja tallennustavaksi; loottia voi varastoida ja huonekaluja muokata koristelutilassa.</li><li>Kauppiaat: vaihtotalous (ei käteistä); teemavarusteet, tehtävät ja palvelut mukaan lukien lääkintähuolto ja aseiden huolto (sama kauppasivu). Katso myös <a href=\"/wiki/npcs\">NPC:t ja kauppiaat</a>.</li><li>Loot ja käyttöliittymä: fysiikkaan perustuva loot, tetris-tyylinen inventaario, yhdistäminen ja pinot. Esineiden taulukot ovat <a href=\"/wiki\">Wikissä</a>.</li></ul><p class=\"callout\">Erillinen Road To Vostok -demo on linkitetty Steamissa (AppID 2141300 samalla sivulla). Julkisissa demoissa on ollut opastuskartta, joka esittelee mekaniikat kuten lääkinnän, kaupan, suojan ja loottauksen ennen päähiekkalaatikkoa — tee se ennen kuin luet vain oppaita. Sen jälkeen käytä <a href=\"/guides\">Oppaita</a> kirjallisiin läpivienteihin.</p>",
+    "sectionControlsHtml": "<h2>Perusohjaimet ja liikkuminen (PC)</h2><p>Oletussidokset vaihtelevat buildien välillä. Käytä asennetussa kopiossasi Asetukset → Ohjaimet totuuden lähteenä. Alla oleva taulukko on kolmannen osapuolen PC-ohjainartikkelista koottu viitelayout (Magic Game World, ensijulkaisu 2021, päivitetty), jotta tiedät mitä etsiä — ei takuu patchillesi. Aseiden käyttöliittymän yksityiskohdat ovat myös tämän sivun <a href=\"/getting-started#weapons-loading\">aseiden lataus -osiossa</a>.</p><div class=\"table-wrap\"><table class=\"data-table\"><caption class=\"sr-only\">Viite-PC-ohjaimet Road To Vostokiin</caption><thead><tr><th scope=\"col\">Luokka</th><th scope=\"col\">Toiminto</th><th scope=\"col\">Tyypillinen näppäin</th></tr></thead><tbody><tr><td rowspan=\"7\">Liikkuminen</td><td>Liiku</td><td>W A S D</td></tr><tr><td>Juoksu / sprintti</td><td>Shift / Ctrl (oppaan mukaan)</td></tr><tr><td>Hyppy</td><td>Välilyönti</td></tr><tr><td>Kyykky</td><td>C</td></tr><tr><td>Kallistus</td><td>Q / E</td></tr><tr><td>Tikapuut</td><td>Keskihiiri (oppaan mukaan)</td></tr><tr><td>Vuorovaikutus</td><td>Keskihiiri (oppaan mukaan)</td></tr><tr><td rowspan=\"6\">Aseet</td><td>Ammu / tähtää</td><td>Vasen / oikea hiiri</td></tr><tr><td>Pääase / toissijainen</td><td>1 / 2</td></tr><tr><td>Lataa</td><td>R</td></tr><tr><td>Tarkasta asetta</td><td>X (oppaan mukaan)</td></tr><tr><td>Tulitapa</td><td>F</td></tr><tr><td>Matala / korkea valmius (vieritä)</td><td>Hiiren rulla</td></tr><tr><td rowspan=\"3\">Inventaario</td><td>Nappaa esine</td><td>G</td></tr><tr><td>Siirrä / pudota / kierrä esinettä</td><td>Vasen hiiri / Shift+vasen / R (konteksti)</td></tr><tr><td>Pääkäyttöliittymä</td><td>Tab</td></tr></tbody></table></div><p>Sama opas listaa lisää ase-UI-pikavalintoja (lisävarusteet, elementtien piilotus, optiikan säätö tähtäyksessä). Jos näppäin ei tee mitään, versiosi on voinut uudelleenmäpätä sen — tarkista pelin sidossivu.</p>",
+    "sectionWeaponsHtml": "<h2>Road To Vostok: miten ladata haulikko, aseet ja lipaat</h2><h3>Lipasaseet</h3><p>Steam-yhteisökeskustelut selittävät usein, ettei R ole taika-„täytä ase” -näppäin: tarvitset lipaat, joissa on patruunat. Tyypillinen pelaajakuvaus: irrota lipas, syötä patruunat inventaariossa, aseta lipas takaisin, käytä sitten R:ää vaihtaaksesi valmiiseen lipaaseen taistelussa. Varalipas suositellaan laajasti paineen alla napautettavaksi. Yksityiskohdat vaihtelevat aseen mukaan — katso <a href=\"/getting-started#weapons-loading\">aseiden lataus -osio</a> ja <a href=\"/wiki/ammunition\">Ammukset</a>-taulukko patruunasuunnitteluun.</p><h3>Haulikot, pulttilukot ja muut ei-lipasaseet</h3><p>Nämä käyttävät manuaalista patruuna kerrallaan -latausta. Steam-keskusteluissa haulikon latauksesta (loppuvuosi 2024) useat pelaajat sanovat opastuksen näyttävän selvästi haulikon ja tarkkuusaseiden sekvenssin (vastaus: valitse opastusaseet ja ammukset, seuraa ruudun ohjeita).</p><p>Koska sidokset vaihtelevat asettelun ja patchin mukaan, seuraavat ovat vain esimerkkejä ketjusta — eivät yleisiä faktoja:</p><ul><li>Pidä Alt ja käytä oikeaa hiiren painiketta lataukseen (yksi kommentoija).</li><li>Pidä Ctrl tai oikea Alt ja napsauta vasenta toistuvasti syöttääksesi hylsyjä (toinen).</li><li>Yksi pelaaja kirjoitti opastuksessaan: P, sitten jokainen patruuna vasemmalla hiirellä, laukomisen jälkeen R manuaalisen latausaskeleen kiertoon — voi vastata vain tiettyä demo-buildiä.</li></ul><p class=\"callout callout-warn\">Jos syntyt tyhjällä kammioilla, voit kuolla ennen latauksen loppua. Tee opastussegmentti näille aseille ensin, vahvista samat näppäimet Asetukset → Ohjaimet -kohdassa.</p>",
+    "sectionMedicalHtml": "<h2>Selviytyminen ja lääkintä — verenvuoto, murtumat, parantaminen</h2><p>Steamin ominaisuuslista asettaa lääkintätarvikkeet ruoan, työkalujen ja aseiden rinnalle ja sanoo kauppiaiden voivan tarjota lääkintähuoltoa palveluna. Esinetason luvuille (parannus, käyttöaika, mikä vaiva poistuu) yleisiä viitteitä antaa yhteisön Road To Vostok -wiki Fandomissa (Medical ja Afflictions). Arvot voivat muuttua patchien mukaan — varmista pelin työkaluvihjeistä. Aseiden suunnitteluun <a href=\"/wiki/weapons\">Aseet</a>; miinoitettuihin rajoihin <a href=\"/guides/surviving-the-Minefield\">Miinakenttätaktiikat</a> ja <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">rajan maantiede</a>.</p><h3>Murtumat („kuoli luunmurtumaan” -tilanteet)</h3><p>Fandom Afflictions -sivun mukaan murtuma aiheuttaa jatkuvaa terveyshukkaa (artikkelissa −1 terveysyksikkö / 5 s) ja raskaita liikuntarangaistuksia (liikkuminen, uinti, hyppy). Kohtele kiireellisenä: stabiloi ennen kuin sprinttaat stamina tyhjiin.</p><p>Sama wiki listaa murtumien hoitoina Splint, Medkit, IFAK, AFAK. Lääkintätaulukossa Splint 4 s levitys, 0 suoraa terveyttä — se hoitaa murtuman, ei täytä HP-palkkia yksin.</p><h3>Verenvuoto ja terveyden palautus</h3><p>Fandom yhdistää verenvuodon nopeampaan menetykseen kuin murtumaan ja listaa hoitoina siteen, turnicetin, medkitin, IFAKin, AFAKin. Esimerkkitaulukossa Bandage 4 s, +20 terveyttä (veri/poltto), Medkit/IFAK 4 s, +50, laajemmat parannuslistat per esine.</p><p>Pitkäaikainen selviytyminen riippuu energiasta ja nesteytyksestä: 0 energia tai 0 neste aiheuttaa passiivista terveyshukkaa kunnes syöt/juot — erillinen asia luotiluista mutta yhtä tappava laiminlyötynä.</p><div class=\"table-wrap\"><table class=\"data-table data-table-compact\"><caption>Valitut lääkintäesineet (yhteisöwiki, huhtikuu 2025 — varmista pelissä)</caption><thead><tr><th scope=\"col\">Esine</th><th scope=\"col\">Käyttöaika</th><th scope=\"col\">Terveys (wiki)</th><th scope=\"col\">Huomiot (wiki)</th></tr></thead><tbody><tr><td>Bandage</td><td>4 s</td><td>+20</td><td>Veri / palovamma</td></tr><tr><td>Tourniquet</td><td>4 s</td><td>0</td><td>Veri</td></tr><tr><td>Splint</td><td>4 s</td><td>0</td><td>Murtuma</td></tr><tr><td>Medkit</td><td>4 s</td><td>+50</td><td>Useita vakavia vaivoja</td></tr><tr><td>IFAK</td><td>4 s</td><td>+50</td><td>Edistynyt kenttäpaketti</td></tr></tbody></table></div><p>Tehtäviin liittyvä loot tiivistetty <a href=\"/wiki/core-tasks\">Ydintehtävien esineet</a> -kohdassa.</p>",
+    "sectionCraftingHtml": "<h2>Miten valmistaa Road To Vostokissa</h2><p>Monet etsivät miten valmistaa Road To Vostokissa (mukaan lukien kirjoitusvirhe „crasft”). Reseptit ja työpöydät laajenevat Early Access -patchien myötä — käytä pelin käyttöliittymää ja patch-muistiinpanoja totuutena. <a href=\"/wiki\">Wiki</a> listaa loottia, joka ruokkii valmistussilmukoita: <a href=\"/wiki/gathering\">Keräily</a>, <a href=\"/wiki/fishing\">Kalastus</a> jos versio sisältää sen, ja <a href=\"/wiki/core-tasks\">Ydintehtävien esineet</a> suojan kaapelointiin. Build-ilmoitukset <a href=\"/dev-updates\">Julkisessa tiekartassa</a>.</p>"
+  },
+  "guideArticlePage": {
+    "breadcrumbGuides": "Oppaat",
+    "asideAria": "Tietoa tästä oppaasta",
+    "asideSummary": "Yhteenveto",
+    "asideUpdated": "Päivitetty",
+    "asideTags": "Tunnisteet",
+    "asideMoreGuides": "Lisää oppaita",
+    "asideAllGuides": "Kaikki oppaat"
+  },
+  "modArticlePage": {
+    "breadcrumbMods": "Modit",
+    "byAuthor": "Tekijä: {author}",
+    "asideAria": "Mod-tiedot",
+    "asideSummaryLabel": "Yhteenveto",
+    "metaDownloads": "Lataukset",
+    "metaViews": "Katselut",
+    "listingDateLabel": "Listauspäivä",
+    "tagsLabel": "Tunnisteet",
+    "communityNotesAria": "Yhteisöhuomiot",
+    "communityNotesLabel": "Yhteisöhuomiot",
+    "moreOnSiteLabel": "Lisää tällä sivustolla",
+    "allModsLink": "Kaikki modit",
+    "ctaModWorkshop": "Avaa ModWorkshopissa",
+    "commentsDisclosure": "Lyhyet tiivistelmät kontekstiksi — eivät sanatarkat Workshop-viestit."
+  },
+  "modsListPage": {
+    "breadcrumb": "Modit",
+    "eyebrow": "ModWorkshop · toimitukselliset valokeilat",
+    "title": "Road To Vostok -modit",
+    "introP1Html": "Julkaisemme <strong>toimituksellisia modivalokeiloja</strong>: paketteja ja työkaluja, jotka kannattaa lukea ennen asennusta — pelattavuusmuutokset, QoL-kokoelmat, latausvaatimukset (esim. Metro Mod Loader) ja mitä kukin listaus muuttaa runissa. Alla oleva lista on kuratoituja suosituksia, ei täyttä ModWorkshop-indeksiä; lisäämme merkintöjä arvioidessamme.",
+    "introP2Html": "Emme <strong>isännöi</strong> <strong>.vmz</strong>-tiedostoja. Jokainen kortti linkittää tekijän lähteeseen (ModWorkshop tai mainittu) oikeaa latausta varten. Sovita tiedosto demo- tai Early Access -versioosi ja tarkista tarkistussummat ennen peliin lataamista.",
+    "boardAria": "Modi-artikkelit",
+    "mastLabel": "Manifesti",
+    "mastListingOne": "listaus",
+    "mastListingMany": "listauksia",
+    "mastNoteSuffix": "· itsenäinen viite",
+    "metaDetailsAria": "Tiedot: {title}",
+    "metaLoader": "Lataaja",
+    "metaUpdated": "Päivitetty",
+    "metaAuthor": "Tekijä",
+    "metaVer": "Ver",
+    "metaDl": "DL",
+    "metaViews": "Katselut",
+    "rowLatest": "Uusin",
+    "rowOpen": "Avaa",
+    "emptyState": "Ei modi-artikkeleita vielä."
+  },
+  "posterPage": {
+    "breadcrumb": "Road to Vostok -juliste",
+    "kicker": "Road To Vostok Guide",
+    "title": "Road to Vostok -juliste ja kuvakaappausten galleria",
+    "leadHtml": "Tämä sivu on osa <strong>Road To Vostok Guidea</strong> — suomenkielistä selviytymisviitettä peliin: <a href=\"/map\">interaktiivinen kartta</a>, <a href=\"/wiki\">esine- ja asetietokanta</a>, <a href=\"/tasks\">tehtävät ja eteneminen</a>, <a href=\"/guides\">strategiaoppaat</a> ja <a href=\"/dev-updates\">tiekartan konteksti</a>. Täällä on <strong>road to vostok poster</strong> -tyylinen galleria pelin still-kuvista tunnelman selaamiseen ilman oppaasta poistumista. Napsauta kuvaa suurempaa näkymää varten.",
+    "btnStart": "Aloita tästä",
+    "btnWiki": "Wiki",
+    "btnMap": "Kartta",
+    "btnTasks": "Tehtävät",
+    "featureAriaOpen": "Avaa suuri näkymä: {alt}",
+    "featureCapHtml": "Valittu <strong>road to vostok poster</strong> -still — kuvakaappaus 1/12. Napsauta suurentaaksesi.",
+    "galleryAria": "Kaikki kuvakaappaukset",
+    "galleryTitle": "Galleria — 12 still-kuvaa",
+    "galleryIntroHtml": "Kaksitoista kuvaa yhdessä nopeaan selaamiseen. Yhdistä <a href=\"/wiki\">wikiin</a> loadouteille, <a href=\"/map\">karttaan</a> POI:ille ja <a href=\"/guides\">oppaisiin</a> kirjallisiin läpivienteihin — kaikki tällä sivustolla.",
+    "tileAria": "Näytä kuvakaappaus {index}: {alt}",
+    "footnoteAria": "Attribuutio",
+    "footnoteHtml": "Kuvat © Road to Vostok Ltd. Lähde: roadtovostok.com/screenshots. Kopioitu vain oppaan kontekstia varten; lehdistö- tai kaupalliseen käyttöön noudata kehittäjän sivustoa ja press kit -ehtoja.",
+    "lightboxTitle": "Kuvakaappaus {current} / {total}",
+    "lightboxClose": "Sulje",
+    "lightboxPrev": "Edellinen kuvakaappaus",
+    "lightboxNext": "Seuraava kuvakaappaus",
+    "featureSectionAria": "Valittu still-kuva"
+  },
+  "aboutPage": {
+    "breadcrumb": "Tietoa meistä",
+    "title": "Tietoa Road To Vostok Guidesta",
+    "lead": "Mihin tämä suomenkielinen opas on tarkoitettu — ja mihin ei.",
+    "bodyAriaLabel": "Tietoa tästä verkkosivustosta",
+    "purposeHeading": "Tarkoituksemme",
+    "purposeText": "Road To Vostok Guide on pelaajille suunnattu apusivusto: kartat ja tehtävät, esineiden taulukot, ohjeet aseille ja lääkintäjärjestelmille, tallennuspolut PC:llä ja julkisten tiekarttauutisten tiivistelmät. Tavoitteena selkeät, haettavat sivut, jotka täydentävät virallista pelisivustoa ja Steam-kauppaa — eivät korvaa niitä.",
+    "independenceHeading": "Itsenäisyys",
+    "independenceBeforeLinksHtml": "Emme <strong>ole</strong> virallinen Road To Vostok -tiimi. Emme puhu kehittäjän tai julkaisijan puolesta. Buildit, loot ja mekaniikat muuttuvat; tarkista kriittiset tiedot aina asennetussa pelissä sekä osoitteissa ",
+    "independenceBetweenLinks": " ja ",
+    "exploreHeading": "Miten tutkia",
+    "exploreHtml": "Aloita <a href=\"/getting-started\">Aloita tästä</a> -kohdasta ohjaimille ja ensiaskeleille, <a href=\"/wiki\">Wiki</a> taulukoille sekä <a href=\"/map\">Kartta</a> / <a href=\"/tasks\">Tehtävät</a> etenemisapuun. Päivitykset ja build-nimet on tiivistetty kohdassa <a href=\"/dev-updates\">Julkinen tiekartta</a>.",
+    "contactHeading": "Yhteystiedot",
+    "contactHtml": "Palaute tai oikeudelliset ilmoitukset:",
+    "footerContact": "Yhteystiedot-sivu",
+    "footerPrivacy": "Tietosuojaseloste"
+  },
+  "contactPage": {
+    "breadcrumb": "Yhteystiedot",
+    "title": "Road To Vostok — Yhteystiedot",
+    "lead": "Tavoitat Road To Vostok Guide -sivuston sähköpostilla. Tällä sivulla ei ole yhteydenottolomaketta.",
+    "bodyAriaLabel": "Yhteystiedot",
+    "emailHeading": "Sähköposti",
+    "emailIntroHtml": "Oppaiden korjauksista, rikkinäisistä linkeistä, tekijänoikeushuolista tai yleisistä kysymyksistä tästä sivustosta kirjoita osoitteeseen:",
+    "emailFollowHtml": "Liitä selkeä otsikko ja sisältöongelmissa sivun URL sekä lyhyt kuvaus korjattavasta. Olemme pieni toimitus; vastaukset voivat kestää useita arkipäiviä.",
+    "gameSupportHeading": "Pelituki",
+    "gameSupportHtml": "Vikoihin, ostoihin tai tiliasioihin liittyen <strong>Road To Vostok</strong> -peliin ota yhteyttä pelin virallisiin tukikanaviin (esim. Steam tai kehittäjän sivusto). Emme voi nollata tallennuksia, hyvittää ostoja tai muuttaa pelin buildeja.",
+    "privacyHeading": "Tietosuoja",
+    "privacyHtml": "Jos viestisi sisältää henkilötietoja, katso <a href=\"/privacy-policy\">Tietosuojaseloste</a> siitä, miten käsittelemme viestintää.",
+    "footerAbout": "Tietoa meistä",
+    "footerTerms": "Käyttöehdot"
+  },
+  "notFoundPage": {
+    "breadcrumb": "Ei löydy",
+    "title": "Road To Vostok — Sivua ei löydy",
+    "lead": "Tämä URL ei kuulu Road To Vostok Guideen. Käytä navigointia tai palaa etusivulle.",
+    "backHome": "Takaisin etusivulle",
+    "linkWiki": "Wiki",
+    "linkMap": "Kartta",
+    "linkTasks": "Tehtävät",
+    "linkGuides": "Oppaat"
+  },
+  "copyrightPage": {
+    "breadcrumb": "Tekijänoikeudet",
+    "title": "Road To Vostok — Tekijänoikeudet",
+    "lead": "Miten alkuperäinen sivustosisältö ja kolmannen osapuolen pelimateriaalit mainitaan Road To Vostok Guidessa.",
+    "bodyAriaLabel": "Tekijänoikeusilmoitus",
+    "gameHeading": "Peli ja tavaramerkit",
+    "gameHtml": "<strong>Road To Vostok</strong> ja siihen liittyvät logot, taide ja pelisisältö kuuluvat oikeudenhaltijoilleen. Tämä sivusto ei ole sidoksissa näihin oikeudenhaltijoihin. Kaikki peliin liittyvät tavaramerkit käytetään nimellisesti pelin tunnistamiseksi lukijoille ja pelaajille.",
+    "siteHeading": "Sivustosisältö",
+    "siteHtml": "Alkuperäinen teksti, asettelu ja kooste roadtovostok.orgissa (ellei toisin mainita) on tekijänoikeus © Road To Vostok Guiden ylläpitäjät, paitsi kun sisältö on selvästi lainattu tai attribuoitu yhteisölle tai virallisille lähteille. Toimitukselliset oppaat ja taulukot voivat sisältää faktatietoa pelattavuudesta; tämä ei merkitse pelivarusteiden tai IP:n omistusta.",
+    "takedownHeading": "Reilu käyttö ja poisto",
+    "takedownHtml": "Jos olet oikeudenhaltija ja uskot sivustomme materiaalin loukkaavan tekijänoikeuttasi, ota yhteyttä selkeällä teoksen ja URL:n kuvauksella. Käsittelemme vilpittömät pyynnöt nopeasti. Sähköposti:",
+    "footerTerms": "Käyttöehdot",
+    "footerPrivacy": "Tietosuojaseloste"
+  },
+  "privacyPolicyPage": {
+    "breadcrumb": "Tietosuojaseloste",
+    "title": "Road To Vostok — Tietosuojaseloste",
+    "lead": "Miten Road To Vostok Guide (roadtovostok.org) käsittelee tietoja, kun selaat tätä sivustoa.",
+    "bodyAriaLabel": "Tietosuojaselosteen sisältö",
+    "whoHeading": "Keitä me olemme",
+    "whoLead": "Tämä verkkosivusto on itsenäinen peliviite Road To Vostokiin. Sitä ei ylläpidä pelin kehittäjä tai julkaisija. Kysymyksistä tähän selosteeseen ota yhteyttä",
+    "collectHeading": "Tietoja, joita voimme kerätä",
+    "collectP1Html": "Kuten useimmat sivustot, isännöinti tai infrastruktuuri voi käsitellä automaattisesti teknisiä tietoja vieraillessasi, kuten IP-osoitetta, selainta, likimääräistä aluetta, aikaleimoja ja pyydettyjä sivuja. Emme käytä näitä tietoja henkilöllisyytesi tunnistamiseen ellei turvallisuus tai laki sitä vaadi.",
+    "collectP2Html": "Jos lähetät sähköpostia, saamme osoitteesi ja viestin sisällön voidaksemme vastata. Emme myy sähköpostiasi emmekä käytä sitä markkinointiin ilman nimenomaista suostumustasi.",
+    "cookiesHeading": "Evästeet ja paikallinen tallennus",
+    "cookiesHtml": "Sivusto voi käyttää evästeitä tai vastaavia teknologioita, jotka ovat välttämättömiä perustoiminnalle (esim. istunto tai asetusten tallennus selaimessa). Emme käytä kolmannen osapuolen mainosevästeitä näillä sivuilla tämän selosteen laajuudessa. Jos lisäämme analytiikkaa tai upotettua mediaa, jotka asettavat omia evästeitään, päivitämme selosteen ja tarvittaessa suostumusvirran.",
+    "thirdPartyHeading": "Kolmannen osapuolen palvelut",
+    "thirdPartyHtml": "Sivut voivat linkittää ulkoisille sivustoille (esim. virallinen pelisivusto, Steam tai YouTube). Nillä on omat tietosuojakäytäntönsä; emme vastaa niiden käytännöistä tai tietojen käytöstä.",
+    "childrenHeading": "Lapset",
+    "childrenHtml": "Tämä sivusto on yleisölle suunnattu peliopas. Emme tietoisesti kerää lasten henkilötietoja. Jos uskot lapsen lähettäneen meille henkilötietoja, ota yhteyttä yllä olevaan osoitteeseen ja poistamme tiedot asianmukaisesti.",
+    "rightsHeading": "Oikeutesi",
+    "rightsHtml": "Asuinpaikastasi riippuen sinulla voi olla oikeus tarkastella, korjata tai poistaa meillä olevia henkilötietojasi (esim. sähköpostiviestintä). Ota yhteyttä yllä olevaan sähköpostiin; vastaamme kohtuullisessa ajassa.",
+    "changesHeading": "Muutokset",
+    "changesHtml": "Voimme päivittää tämän tietosuojaselosteen, kun sivusto tai laki muuttuu. Yllä oleva „Päivitetty”-päivämäärä päivitetään. Jatkamalla sivuston käyttöä muutosten jälkeen hyväksyt päivitetyn selosteen.",
+    "footerTerms": "Käyttöehdot",
+    "footerContact": "Yhteystiedot"
+  },
+  "termsOfServicePage": {
+    "breadcrumb": "Käyttöehdot",
+    "title": "Road To Vostok — Käyttöehdot",
+    "lead": "Road To Vostok Guiden (roadtovostok.org) käyttösäännöt. Käyttämällä sivustoa hyväksyt nämä ehdot.",
+    "bodyAriaLabel": "Käyttöehtojen sisältö",
+    "aboutHeading": "Tietoa tästä sivustosta",
+    "aboutHtml": "Road To Vostok Guide on itsenäinen viitesivusto. Sitä ei ole hyväksynyt, sponsoroinut tai siihen liittänyt Road To Vostokin kehittäjät tai julkaisijat tai liittyvät tavaramerkkihaltijat. Pelinimet ja merkit kuuluvat omistajilleen.",
+    "useHeading": "Sisällön käyttö",
+    "useHtml": "Oppaat, taulukot ja tekstit on tarkoitettu henkilökohtaiseen, ei-kaupalliseen viitteeksi pelaajien avuksi. Voit linkittää sivuihimme. Älä kaavi tai levitä suuria osia tavalla, joka kilpailee tai korvaa live-sivuston ilman lupaa. Pelidata ja luvut voivat olla epätarkkoja tai vanhentuneita; varmista aina asennetusta versiosta ja virallisista lähteistä.",
+    "warrantyHeading": "Ei takuuta",
+    "warrantyHtml": "Sivusto tarjotaan „sellaisenaan”. Emme takaa tarkkuutta, saatavuutta tai soveltuvuutta tiettyyn tarkoitukseen. Emme vastaa vahingoista, jotka aiheutuvat sivuston käytöstä tai sen sisältöön luottamisesta.",
+    "conductHeading": "Käyttäytyminen",
+    "conductHtml": "Älä käytä sivustoa muiden häirintään, haittaohjelmien levittämiseen, luvattomiin järjestelmäyrityksiin tai lakien rikkomiseen. Voimme rajoittaa pääsyä, jos uskomme näiden ehtojen rikotun.",
+    "changesHeading": "Muutokset",
+    "changesHtml": "Voimme muuttaa näitä käyttöehtoja milloin tahansa. Päivitämme „Päivitetty”-päivämäärän. Jatkamalla käyttöä muutosten jälkeen hyväksyt uudet ehdot.",
+    "contactHeading": "Yhteystiedot",
+    "contactHtml": "Kysymykset näistä ehdoista:",
+    "footerPrivacy": "Tietosuojaseloste",
+    "footerCopyright": "Tekijänoikeudet"
+  }
+}

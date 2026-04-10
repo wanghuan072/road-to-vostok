@@ -35,7 +35,7 @@
             <a :href="getLocalizedPath('/terms-of-service')">{{ $t('contactPage.footerTerms') }}</a>
           </p>
         </div>
-      </div>
+      </div> 
     </section>
   </article>
 </template>

@@ -12,6 +12,14 @@
   <meta name="author" content="Road To Vostok Guide">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://roadtovostok.org/">
+  <!-- 无 JS 爬虫可发现多语言首页；有 JS 时 applyRouteSeo 会移除并按当前路径重写 -->
+  <link rel="alternate" hreflang="en" href="https://roadtovostok.org/" data-seo-hreflang="true">
+  <link rel="alternate" hreflang="zh-CN" href="https://roadtovostok.org/zh/" data-seo-hreflang="true">
+  <link rel="alternate" hreflang="de" href="https://roadtovostok.org/de/" data-seo-hreflang="true">
+  <link rel="alternate" hreflang="ru" href="https://roadtovostok.org/ru/" data-seo-hreflang="true">
+  <link rel="alternate" hreflang="fi" href="https://roadtovostok.org/fi/" data-seo-hreflang="true">
+  <link rel="alternate" hreflang="fr" href="https://roadtovostok.org/fr/" data-seo-hreflang="true">
+  <link rel="alternate" hreflang="x-default" href="https://roadtovostok.org/" data-seo-hreflang="true">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Road To Vostok Guide">
   <meta property="og:title" content="Road To Vostok Guide — Maps, Tasks, Weapons & Survival Database">
@@ -76,6 +84,13 @@
 </head>
 
 <body>
+  <noscript>
+    <div
+      style="padding: 1rem 1.25rem; font: 14px/1.5 system-ui, sans-serif; max-width: 42rem; border-bottom: 1px solid #ccc; background: #fafafa; color: #222;">
+      <p lang="en"><strong>Road To Vostok Guide</strong> needs JavaScript for the full site. Other languages:
+        <a href="/zh/">中文</a> · <a href="/de/">Deutsch</a> · <a href="/ru/">Русский</a> · <a href="/fi/">Suomi</a> · <a href="/fr/">Français</a> · <a href="/">English</a> (default URL)</p>
+    </div>
+  </noscript>
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
 </body>

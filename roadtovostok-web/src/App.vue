@@ -1,5 +1,5 @@
 <template>
-  <div class="app-shell">
+  <div class="app-shell" @click.capture="onContentLinkClick">
     <!-- 全站底图：固定 cover + 深色渐变压暗（保证正文可读） -->
     <div class="shell-bg shell-bg-photo" aria-hidden="true" />
     <div class="shell-bg shell-bg-grid" aria-hidden="true" />
@@ -18,22 +18,13 @@
 </template>
 
 <script setup>
-import { watch } from 'vue'
-import { useI18n } from 'vue-i18n'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
+import { useHtmlContentLinkNavigation } from './composables/htmlContentLinks.js'
 import { useRouteSeo } from './seo/composables.js'
 
 useRouteSeo()
-
-const { locale } = useI18n()
-watch(
-  locale,
-  (v) => {
-    document.documentElement.lang = v === 'zh' ? 'zh-CN' : 'en'
-  },
-  { immediate: true },
-)
+const { onContentLinkClick } = useHtmlContentLinkNavigation()
 </script>
 
 <style scoped>

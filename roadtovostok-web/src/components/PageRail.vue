@@ -3,10 +3,10 @@
     <div class="page-rail-main">
       <slot />
     </div>
-    <aside class="page-rail-aside" :aria-label="asideLabel">
+    <aside class="page-rail-aside" :aria-label="effectiveAsideLabel">
       <div class="aside-stack">
-        <div v-if="title || links.length" class="aside-card">
-          <p v-if="title" class="aside-card-kicker">{{ title }}</p>
+        <div v-if="effectiveTitle || links.length" class="aside-card">
+          <p v-if="effectiveTitle" class="aside-card-kicker">{{ effectiveTitle }}</p>
           <nav v-if="links.length" class="aside-nav">
             <div
               v-for="(item, i) in links"
@@ -40,16 +40,31 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { scrollToNavAnchor } from '../composables/scrollToNavAnchor.js'
 
+const { t } = useI18n()
+
 const props = defineProps({
-  asideLabel: { type: String, default: 'Briefing' },
-  title: { type: String, default: 'Jump to' },
+  asideLabel: { type: String, default: undefined },
+  title: { type: String, default: undefined },
   /** @type {{ label: string, to?: string, scrollKey?: string }[]} */
   links: { type: Array, default: () => [] },
   /** Ref to element that contains all `[data-nav-anchor]` nodes */
   scrollRoot: { type: Object, default: null },
 })
+
+const effectiveAsideLabel = computed(() =>
+  props.asideLabel === undefined || props.asideLabel === null
+    ? t('site.pageRailAsideLabel')
+    : props.asideLabel,
+)
+const effectiveTitle = computed(() =>
+  props.title === undefined || props.title === null
+    ? t('site.pageRailNavTitle')
+    : props.title,
+)
 
 function onScroll(key) {
   scrollToNavAnchor(props.scrollRoot, key)

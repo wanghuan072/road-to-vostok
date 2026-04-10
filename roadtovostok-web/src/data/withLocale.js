@@ -1,12 +1,13 @@
 /**
- * 将中文补丁合并到英文 canonical 数据上（locale 非 zh 时原样返回）。
- * 由 `localeData.js` 集中调用，合并各模块的 en.js / zh.js。
+ * 将各语言补丁合并到英文 canonical 数据上（en 时原样返回）。
+ * `patchesByLocale` 形如 `{ zh: ..., de: ... }`，缺失或空对象则跳过。
  */
-
 export function mergeLocaleRecord(base, patch) {
   if (!patch) return base
   const out = { ...base, ...patch }
   if (base.seo && patch.seo) out.seo = { ...base.seo, ...patch.seo }
+  if (base.location && patch.location)
+    out.location = { ...base.location, ...patch.location }
   return out
 }
 
@@ -14,14 +15,16 @@ export function mergeLocaleRecord(base, patch) {
  * @template T
  * @param {string} locale
  * @param {T[]} rows
- * @param {Record<string, Partial<T>>|null|undefined} patchesByKey
+ * @param {Record<string, Record<string, Partial<T>>|null|undefined>} patchesByLocale
  * @param {keyof T | string} keyField
  */
-export function mergeLocaleRowsByKey(locale, rows, patchesByKey, keyField = 'id') {
-  if (locale !== 'zh' || !patchesByKey) return rows
+export function mergeLocaleRowsByKey(locale, rows, patchesByLocale, keyField = 'id') {
+  const patchMap = patchesByLocale?.[locale]
+  if (!patchMap || typeof patchMap !== 'object') return rows
+  if (!Object.keys(patchMap).length) return rows
   return rows.map((row) => {
     const key = row[keyField]
-    const patch = patchesByKey[key] ?? patchesByKey[String(key)]
+    const patch = patchMap[key] ?? patchMap[String(key)]
     return mergeLocaleRecord(row, patch)
   })
 }
@@ -30,11 +33,12 @@ export function mergeLocaleRowsByKey(locale, rows, patchesByKey, keyField = 'id'
  * @template T
  * @param {string} locale
  * @param {T[]} rows
- * @param {Partial<T>[]|null|undefined} patchesByIndex 与 rows 等长、按索引对应；可留空对象占位
+ * @param {Record<string, Partial<T>[]|null|undefined>} patchesByLocale 与 rows 等长、按索引对应
  */
-export function mergeLocaleRowsByIndex(locale, rows, patchesByIndex) {
-  if (locale !== 'zh' || !patchesByIndex?.length) return rows
-  return rows.map((row, i) => mergeLocaleRecord(row, patchesByIndex[i]))
+export function mergeLocaleRowsByIndex(locale, rows, patchesByLocale) {
+  const patchList = patchesByLocale?.[locale]
+  if (!Array.isArray(patchList) || !patchList.length) return rows
+  return rows.map((row, i) => mergeLocaleRecord(row, patchList[i]))
 }
 
 /** 地图钉：合并 entries 数组同下标的字段 */
@@ -49,7 +53,8 @@ export function mergeMapPin(base, patch) {
   return out
 }
 
-export function mergeMapPoints(locale, rows, patchesById) {
-  if (locale !== 'zh' || !patchesById) return rows
-  return rows.map((p) => mergeMapPin(p, patchesById[p.id]))
+export function mergeMapPoints(locale, rows, patchesByLocale) {
+  const patchMap = patchesByLocale?.[locale]
+  if (!patchMap || typeof patchMap !== 'object' || !Object.keys(patchMap).length) return rows
+  return rows.map((p) => mergeMapPin(p, patchMap[p.id]))
 }

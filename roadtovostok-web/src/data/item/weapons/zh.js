@@ -14,45 +14,56 @@ export default {
   makarov: {
     imageAlt: '马卡洛夫手枪',
     note: '维基页面拼写为「Markarov」；口径 9×18mm。',
+    penetration: '穿透 1 级',
   },
   c1911: {
     imageAlt: 'C1911 手枪',
     note: '三把手枪中最重；.45 ACP。',
+    penetration: '穿透 1 级',
   },
   g17: {
     imageAlt: 'G17 手枪',
     note: '最轻手枪；标准弹匣最大（17 发）。',
+    penetration: '穿透 1 级',
   },
   'ak-12': {
     imageAlt: 'AK-12 步枪',
+    rarity: '非常见',
     lootNote: '军用箱 · 边境地带、Vostok。',
   },
   akm: {
     imageAlt: 'AKM 步枪',
+    rarity: '稀有',
     lootNote: '木箱、木柜、军用箱 · 边境地带、Vostok、05 区。',
   },
   'aks-74u': {
     imageAlt: 'AKS-74U 短步枪',
+    rarity: '非常见',
     lootNote: '木箱、木柜、军用箱 · 边境地带、Vostok、05 区。',
   },
   'rk-95': {
     imageAlt: 'RK-95 步枪',
+    rarity: '稀有',
     lootNote: '军用箱 · 边境地带、Vostok、05 区。',
   },
   mk18: {
     imageAlt: 'MK18 步枪',
+    rarity: '稀有',
     lootNote: '军用箱 · Vostok。',
   },
   vss: {
     imageAlt: 'VSS 步枪',
+    rarity: '稀有',
     lootNote: '军用箱 · 边境地带、Vostok。',
   },
   'kar-21-308': {
     imageAlt: 'KAR-21 战斗步枪 .308',
+    rarity: '稀有',
     lootNote: '军用箱 · Vostok。',
   },
   'kar-21-223': {
     imageAlt: 'KAR-21 步枪 .223',
+    rarity: '稀有',
     lootNote: '军用箱 · Vostok。',
   },
   mp5: {
@@ -73,6 +84,7 @@ export default {
   },
   'kp-31': {
     imageAlt: 'KP-31 冲锋枪',
+    rarity: '传说',
     lootNote: '木箱、军用箱 · 桑拿、边境地带、Vostok、05 区。',
     note: '维基菜单在「步枪」下，实为 9×19mm 冲锋枪、大弹匣。',
   },

@@ -22,7 +22,10 @@ export function useHtmlContentLinkNavigation() {
 
   function onContentLinkClick(e) {
     if (e.defaultPrevented) return
-    const anchor = e.target?.closest?.('a[href]')
+    const rawTarget = e.target
+    const el =
+      rawTarget?.nodeType === Node.TEXT_NODE ? rawTarget.parentElement : rawTarget
+    const anchor = el?.closest?.('a[href]')
     if (!anchor) return
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
     if (anchor.getAttribute('target') === '_blank') return

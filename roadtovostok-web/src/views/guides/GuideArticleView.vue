@@ -44,7 +44,6 @@
           <div
             class="article-body content-prose"
             v-html="article.detailsHtml"
-            @click="onContentLinkClick"
           />
 
           <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
@@ -131,16 +130,13 @@ import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getGuideArticles } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+import { getByAddressBar } from '../../utils/contentLookup.js'
+import { useInjectedHeadFragment } from '../../composables/useInjectedHeadFragment.js'
+import { applyDynamicSeo } from '../../seo/composables.js'
 
 const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const guideArticles = computed(() => getGuideArticles(locale.value))
-import { getByAddressBar } from '../../utils/contentLookup.js'
-import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'
-import { useInjectedHeadFragment } from '../../composables/useInjectedHeadFragment.js'
-import { applyDynamicSeo } from '../../seo/composables.js'
-
-const { onContentLinkClick } = useHtmlContentLinkNavigation()
 
 const guideArticleAdsRoot = ref(null)
 const guideArticleGptRoot = ref(null)

@@ -1,6 +1,8 @@
 /**
- * 与 Heartopia 一致：默认语言 URL 无前缀，其它语言首段为语言码（如 /zh/wiki）。
- * 纯函数可在 router / seo / sitemap / html 链接中复用，不依赖 Vue 实例。
+ * 与 Heartopia 一致：默认语言 URL 无前缀，其它语言首段为语言码（如 /zh/wiki、/ru/map）。
+ * 模板里显式链接用 `getLocalizedPath()`；locale / 数据里的 `v-html` 内链不改写字符串，
+ * 由 `App.vue` 根节点对 `htmlContentLinks` 做捕获阶段拦截，SPA 内保持当前语言。
+ * `stripLocale*` / `applyLocale*` 供 router、SEO、sitemap、链接拦截复用。
  */
 import { useRoute } from 'vue-router'
 import { supportedLocales } from '../i18n/index.js'

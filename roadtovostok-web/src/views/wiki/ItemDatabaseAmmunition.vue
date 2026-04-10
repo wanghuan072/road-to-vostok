@@ -27,7 +27,7 @@
               href="https://roadtovostok.fandom.com/wiki/Ammunition"
               rel="noopener noreferrer"
               target="_blank"
-            >Road To Vostok Wiki (Fandom) · Ammunition</a><span v-html="$t('wikiAmmunitionPage.leadAfterLinkHtml')"></span>
+            >{{ $t('wikiAmmunitionPage.leadWikiLinkText') }}</a><span v-html="$t('wikiAmmunitionPage.leadAfterLinkHtml')"></span>
           </p>
           <dl
             class="ammo-hero-stats"

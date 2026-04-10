@@ -87,11 +87,11 @@
                   href="https://store.steampowered.com/app/1963610/Road_to_Vostok/"
                   rel="noopener noreferrer"
                   target="_blank"
-                >Road to Vostok</a><span v-html="$t('devUpdatesPage.followSteamMidHtml')"></span><a
+                >{{ $t('devUpdatesPage.followSteamStoreLinkText') }}</a><span v-html="$t('devUpdatesPage.followSteamMidHtml')"></span><a
                   href="https://store.steampowered.com/news/app/1963610"
                   rel="noopener noreferrer"
                   target="_blank"
-                >Steam news for this app</a>{{ $t('devUpdatesPage.followSteamTail') }}
+                >{{ $t('devUpdatesPage.followSteamNewsLinkText') }}</a>{{ $t('devUpdatesPage.followSteamTail') }}
               </p>
             </li>
             <li class="follow-card">
@@ -101,7 +101,7 @@
                   href="https://www.roadtovostok.com/game"
                   rel="noopener noreferrer"
                   target="_blank"
-                ><strong>roadtovostok.com/game</strong></a><span v-html="$t('devUpdatesPage.followSiteRestHtml')"></span>
+                ><strong>{{ $t('devUpdatesPage.followOfficialGameLinkText') }}</strong></a><span v-html="$t('devUpdatesPage.followSiteRestHtml')"></span>
               </p>
             </li>
             <li class="follow-card">
@@ -112,7 +112,7 @@
                   href="https://www.youtube.com/@roadtovostok"
                   rel="noopener noreferrer"
                   target="_blank"
-                ><strong>YouTube @roadtovostok</strong></a>{{ $t('devUpdatesPage.followVideoTail') }}
+                ><strong>{{ $t('devUpdatesPage.followYoutubeLinkText') }}</strong></a>{{ $t('devUpdatesPage.followVideoTail') }}
               </p>
             </li>
           </ul>
@@ -152,7 +152,7 @@
                 href="https://www.roadtovostok.com/game"
                 rel="noopener noreferrer"
                 target="_blank"
-              >roadtovostok.com/game</a><span v-html="$t('devUpdatesPage.plannedBuildsIntroAfterHtml')"></span>
+              >{{ $t('devUpdatesPage.followOfficialGameLinkText') }}</a><span v-html="$t('devUpdatesPage.plannedBuildsIntroAfterHtml')"></span>
             </p>
           </header>
           <ol class="build-timeline" role="list">

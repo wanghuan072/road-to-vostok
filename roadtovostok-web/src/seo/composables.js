@@ -1,16 +1,12 @@
 import { watch } from 'vue'
 import { useRoute } from 'vue-router'
-import { i18n } from '../i18n/index.js'
-
-/** Re-run document SEO when locale changes (future locales). */
-function currentLocaleSignature() {
-  try {
-    const loc = i18n.global.locale
-    return typeof loc === 'object' && loc !== null && 'value' in loc ? loc.value : String(loc)
-  } catch {
-    return ''
-  }
-}
+import {
+  i18n,
+  supportedLocales,
+  localeOg,
+  localeJsonLd,
+  localeHreflang,
+} from '../i18n/index.js'
 import {
   siteOrigin,
   siteName,
@@ -26,6 +22,16 @@ import {
   applyLocalePrefix,
   extractLocaleFromPath,
 } from '../composables/useLocalizedPath.js'
+
+/** Re-run document SEO when locale changes. */
+function currentLocaleSignature() {
+  try {
+    const loc = i18n.global.locale
+    return typeof loc === 'object' && loc !== null && 'value' in loc ? loc.value : String(loc)
+  } catch {
+    return ''
+  }
+}
 
 function normalizePath(path) {
   if (!path || path === '/') return '/'
@@ -66,16 +72,11 @@ function removeHreflangAlternates() {
 function setHreflangAlternates(pathname) {
   removeHreflangAlternates()
   const logical = stripLocaleFromFullPath(pathname)
-  const enPath = applyLocalePrefix(logical, 'en')
-  const zhPath = applyLocalePrefix(logical, 'zh')
-  const enHref = canonicalHref(enPath)
-  const zhHref = canonicalHref(zhPath)
-
-  const pairs = [
-    ['en', enHref],
-    ['zh-CN', zhHref],
-    ['x-default', enHref],
-  ]
+  const pairs = supportedLocales.map((loc) => [
+    localeHreflang[loc] || loc,
+    canonicalHref(applyLocalePrefix(logical, loc)),
+  ])
+  pairs.push(['x-default', canonicalHref(applyLocalePrefix(logical, 'en'))])
   for (const [lang, href] of pairs) {
     const link = document.createElement('link')
     link.setAttribute('rel', 'alternate')
@@ -99,7 +100,14 @@ function injectJsonLd(data) {
   document.head.appendChild(script)
 }
 
-function buildJsonLd({ title, description, path, pageOgType, inLanguage }) {
+function buildJsonLd({
+  title,
+  description,
+  path,
+  pageOgType,
+  inLanguage,
+  websiteDescription,
+}) {
   const url = canonicalHref(path)
   const websiteId = `${siteOrigin}/#website`
   const orgId = `${siteOrigin}/#organization`
@@ -122,7 +130,7 @@ function buildJsonLd({ title, description, path, pageOgType, inLanguage }) {
     '@id': websiteId,
     name: siteName,
     url: siteOrigin,
-    description: seoDefaults.description,
+    description: websiteDescription || seoDefaults.description,
     publisher: { '@id': orgId },
     inLanguage: langTag,
   }
@@ -138,7 +146,13 @@ function buildJsonLd({ title, description, path, pageOgType, inLanguage }) {
   }
 
   if (pageOgType === 'website' && normalizePath(path) === '/') {
-    webPage.about = { '@type': 'VideoGame', name: 'Road To Vostok' }
+    const videoGameName =
+      typeof i18n.global?.te === 'function' &&
+      typeof i18n.global?.t === 'function' &&
+      i18n.global.te('site.brandName')
+        ? i18n.global.t('site.brandName')
+        : 'Road To Vostok'
+    webPage.about = { '@type': 'VideoGame', name: videoGameName }
   }
 
   return {
@@ -168,7 +182,13 @@ export function applyRouteSeo(route) {
           ...baseSeo,
         }
       : { ...baseSeo }
-  const rawTitle = metaSeo.title || `${siteName} — Survival wiki & task help`
+  const defaultPageTitle =
+    typeof i18n.global?.te === 'function' &&
+    typeof i18n.global?.t === 'function' &&
+    i18n.global.te('site.seoDefaultPageTitle')
+      ? i18n.global.t('site.seoDefaultPageTitle')
+      : `${siteName} — Survival wiki & task help`
+  const rawTitle = metaSeo.title || defaultPageTitle
   const title = seoDefaults.titleTemplate(rawTitle)
   const description = metaSeo.description || seoDefaults.description
   const keywords = metaSeo.keywords || seoDefaults.keywords
@@ -177,9 +197,18 @@ export function applyRouteSeo(route) {
   const path = route.path
   const canonical = canonicalHref(path)
   const pageLocale = route.meta?.locale || extractLocaleFromPath(path)
-  const ogLocale = pageLocale === 'zh' ? 'zh_CN' : 'en_US'
-  const ogLocaleAlternate = pageLocale === 'zh' ? 'en_US' : 'zh_CN'
-  const jsonLdLang = pageLocale === 'zh' ? 'zh-CN' : 'en-US'
+  const ogLocale = localeOg[pageLocale] || localeOg.en
+  const ogLocaleAlternate = supportedLocales
+    .filter((l) => l !== pageLocale)
+    .map((l) => localeOg[l])
+    .join(', ')
+  const jsonLdLang = localeJsonLd[pageLocale] || localeJsonLd.en
+  const websiteDescription =
+    typeof i18n.global?.t === 'function' &&
+    typeof i18n.global?.te === 'function' &&
+    i18n.global.te('tdk.homePage.description')
+      ? i18n.global.t('tdk.homePage.description')
+      : seoDefaults.description
 
   document.title = title
 
@@ -194,11 +223,13 @@ export function applyRouteSeo(route) {
   ensureMeta('og:type', ogType, true)
   ensureMeta('og:site_name', siteName, true)
   ensureMeta('og:image', image, true)
-  ensureMeta(
-    'og:image:alt',
-    metaSeo.ogImageAlt || `${siteName} logo`,
-    true,
-  )
+  const defaultOgLogoAlt =
+    typeof i18n.global?.te === 'function' &&
+    typeof i18n.global?.t === 'function' &&
+    i18n.global.te('site.ogDefaultLogoAlt')
+      ? i18n.global.t('site.ogDefaultLogoAlt')
+      : `${siteName} logo`
+  ensureMeta('og:image:alt', metaSeo.ogImageAlt || defaultOgLogoAlt, true)
   ensureMeta('og:locale', ogLocale, true)
   ensureMeta('og:locale:alternate', ogLocaleAlternate, true)
 
@@ -220,6 +251,7 @@ export function applyRouteSeo(route) {
       path,
       pageOgType: ogType,
       inLanguage: jsonLdLang,
+      websiteDescription,
     }),
   )
 }

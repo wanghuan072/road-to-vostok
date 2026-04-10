@@ -103,7 +103,6 @@
             <div
               class="npc-sheet__body npc-detail-rich"
               v-html="npc.detailsHtml"
-              @click="onContentLinkClick"
             />
           </div>
 
@@ -213,11 +212,9 @@ import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getNpcList } from '../../data/localeData.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
-import { useHtmlContentLinkNavigation } from '../../composables/htmlContentLinks.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { applyDynamicSeo } from '../../seo/composables.js'
 
-const { onContentLinkClick } = useHtmlContentLinkNavigation()
 const { getLocalizedPath } = useLocalizedPath()
 
 const npcDetailAdsRoot = ref(null)

@@ -115,7 +115,7 @@ export default {
   },
   'vostok-military': {
     title: '军方高压（东侧）',
-    content: '越向东 opposition 与战利品越强 — 控制药品与弹药。',
+    content: '越向东，敌对压力与战利品越强 — 控制药品与弹药。',
     entries: [
       { title: '东侧压力', content: 'AI 更紧、尸体上装备更好 — 勿在补给不足时久留。' },
       { title: '高级拾取', content: '战利品品质随风险上升；Vostok 地图适用更严死亡规则。' },

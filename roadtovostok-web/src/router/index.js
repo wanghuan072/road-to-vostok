@@ -3,7 +3,7 @@ import {
   createWebHistory,
   createMemoryHistory,
 } from 'vue-router'
-import i18n, { supportedLocales } from '../i18n/index.js'
+import i18n, { supportedLocales, documentHtmlLang } from '../i18n/index.js'
 import { extractLocaleFromPath } from '../composables/useLocalizedPath.js'
 
 const base = import.meta.env?.BASE_URL ?? '/'
@@ -293,8 +293,10 @@ for (const def of defsNo404) {
     routes.push(toRouterRoute(def, loc))
   }
 }
-// 必须先注册 /zh/:pathMatch…，否则英文兜底会吃掉 /zh 下未命中路径
-routes.push(toRouterRoute(notFoundDef, 'zh'))
+// 先注册各非 en 语言的 404，再注册 en 兜底，避免 /zh/…、/de/… 被英文通配吃掉
+for (const loc of supportedLocales) {
+  if (loc !== 'en') routes.push(toRouterRoute(notFoundDef, loc))
+}
 routes.push(toRouterRoute(notFoundDef, 'en'))
 
 const history =
@@ -319,7 +321,7 @@ router.beforeEach((to, _from, next) => {
     gl.value = loc
   }
   if (typeof document !== 'undefined') {
-    document.documentElement.lang = loc === 'zh' ? 'zh-CN' : 'en'
+    document.documentElement.lang = documentHtmlLang(loc)
   }
   next()
 })
