@@ -118,6 +118,15 @@ export const routeDefs = [
     },
   },
   {
+    path: '/map/village',
+    name: 'map-village-detail',
+    view: 'MapVillageView',
+    meta: {
+      sitemap: { priority: 0.88, changefreq: 'weekly' },
+      seoFromI18n: 'tdk.mapVillagePage',
+    },
+  },
+  {
     path: '/tasks',
     name: 'tasks',
     view: 'TasksView',
@@ -254,6 +263,7 @@ const viewLoaders = {
   NpcListView: () => import('../views/wiki/NpcListView.vue'),
   NpcDetailView: () => import('../views/wiki/NpcDetailView.vue'),
   MapView: () => import('../views/MapView.vue'),
+  MapVillageView: () => import('../views/MapVillageView.vue'),
   TasksView: () => import('../views/TasksView.vue'),
   GuidesListView: () => import('../views/guides/GuidesListView.vue'),
   GuideArticleView: () => import('../views/guides/GuideArticleView.vue'),

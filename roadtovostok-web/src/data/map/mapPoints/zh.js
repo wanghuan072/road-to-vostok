@@ -28,6 +28,10 @@ export default {
         title: '商人任务',
         content: '通贩送货线（1–4 级）；物品列表见维基。',
       },
+      {
+        title: '村庄细部地图',
+        content: '本站 Leaflet 细部布局（多图钉），与世界总览相同技术栈。',
+      },
     ],
   },
   shipyard: {

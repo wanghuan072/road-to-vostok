@@ -53,6 +53,13 @@ export default [
         content: 'Generalist delivery lines (levels 1–4); see wiki for item lists.',
         link: '/wiki/npcs/generalist',
       },
+      {
+        kind: 'note',
+        title: 'Village detail map',
+        content:
+          'Closer Leaflet layout of the Village play space with multiple editorial pins — same tooling as the world overview.',
+        link: '/map/village',
+      },
     ],
   },
   {

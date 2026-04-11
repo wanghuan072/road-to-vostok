@@ -664,7 +664,7 @@
     "railTitleLocationIndex": "地点索引",
     "railLeadHtml": "按区域分组：每一行是一个<strong>地点</strong>。点击行可飞到该处并打开抽屉；嵌套行在可用时链接维基或任务。",
     "area05ImageAria": "05 区参考配图",
-    "bottomCrossLinksHtml": "接下来：<a href=\"/tasks\">任务与边境 / 符拉迪沃斯托克说明</a> · <a href=\"/wiki/core-tasks\">核心任务物品（维基）</a> · <a href=\"/guides\">攻略</a>",
+    "bottomCrossLinksHtml": "接下来：<a href=\"/tasks\">任务与边境 / 符拉迪沃斯托克说明</a> · <a href=\"/wiki/core-tasks\">核心任务物品（维基）</a> · <a href=\"/guides\">攻略</a> · <a href=\"/map/village\">村庄细部地图</a>",
     "kindNpc": "NPC",
     "kindLoot": "战利品",
     "kindTask": "任务",

@@ -90,6 +90,11 @@
       "description": "Road To Vostok Interactive map: Area 05, Border Zone, and Vostok points of interest, searchable index, and regional overview. Use alongside the in-game map and confirm coordinates in-client.",
       "keywords": "Road To Vostok map, Area 05, Border Zone, Vostok, POI, location index"
     },
+    "mapVillagePage": {
+      "title": "Road To Vostok — Village map — Area 05 detail | Interactive POI guide",
+      "description": "Road To Vostok village map (Area 05): interactive detail layout with filterable pins for shelters, traders, loot spawns, extractions, and enemy context. Editorial guide site — pair with the world overview map and confirm every marker in your game build.",
+      "keywords": "Road To Vostok, Road To Vostok map, village map, Area 05, Finland survival game, interactive map, POI, shelter, trader, scavenging loot, extraction, bandits, Early Access, game guide"
+    },
     "tasksPage": {
       "title": "Road To Vostok Tasks — Progression, Border & Vostok Rules",
       "description": "Road To Vostok tasks and progression reference: trader objectives, Border Zone crossings, Vostok permadeath rules, and suggested route order. Confirm quest behavior in your build.",
@@ -610,6 +615,7 @@
     "sectionKicker": "World overview",
     "sectionTitle": "Road To Vostok Interactive Map",
     "hintHtml": "Pins are <strong>locations only</strong> (Village, Shipyard, …). Each place can list <strong>NPCs, loot, tasks</strong> in the left panel and in the index below — those are not separate markers. After you select a pin or location row, the <strong>details drawer</strong> slides in from the left; close with <strong>×</strong> or reopen with <strong>Details</strong>. Sub-items with a wiki link jump to that page. Pins are <strong>approximate</strong>.",
+    "villageDetailCalloutHtml": "<p class=\"map-village-callout\"><strong>Village detail map:</strong> For a <strong>closer layout</strong> of the Village play space with multiple pins and notes on our own raster (same Leaflet tool as the overview), open <a href=\"/map/village\">Village detail map</a>. Pin positions are <strong>approximate</strong> — align to your screenshot and in-game checks.</p>",
     "legendAria": "Pin colors by region",
     "legendArea05": "Area 05",
     "legendBorder": "Border Zone",
@@ -623,7 +629,7 @@
     "railTitleLocationIndex": "Location index",
     "railLeadHtml": "Grouped by region: each row is a <strong>location</strong>. Tap the row to fly the map and open the drawer; nested lines link to wiki or tasks when available.",
     "area05ImageAria": "Area 05 reference illustration",
-    "bottomCrossLinksHtml": "Next: <a href=\"/tasks\">Tasks &amp; border / Vostok guide</a> · <a href=\"/wiki/core-tasks\">Core task items (wiki)</a> · <a href=\"/guides\">Guides</a>",
+    "bottomCrossLinksHtml": "Next: <a href=\"/tasks\">Tasks &amp; border / Vostok guide</a> · <a href=\"/wiki/core-tasks\">Core task items (wiki)</a> · <a href=\"/guides\">Guides</a> · <a href=\"/map/village\">Village detail map</a>",
     "kindNpc": "NPC",
     "kindLoot": "Loot",
     "kindTask": "Task",
@@ -641,6 +647,46 @@
     "regionalSectionHtml": "<h2>Regional overview</h2><p class=\"guide-lead\">The official site describes a linear world progression: you start in <strong>Area 05</strong> (Finland), push east through the <strong>Border Zone</strong>, and may eventually enter <strong>Vostok</strong> in Russia — with different death consequences in each tier.</p><div class=\"regions\"><article><h3>Area 05</h3><p>An evacuated zone in southeastern Finland: shelters, traders, tasks, and starting loot for early survival. Hostile <strong>Bandits</strong> patrol the area.</p></article><article><h3>Border Zone</h3><p>A guarded frontier between Finland and Russia. Crossings differ: mines, obstacles, or waterways with boats. <strong>Guards</strong> are armed, corrupt, and may call air support.</p></article><article><h3>Vostok</h3><p>High-risk, high-reward Russian territory with the most valuable loot. Every Vostok map is a <strong>permadeath</strong> map. The <strong>Military</strong> faction fields heavy weapons and armored vehicles.</p></article></div>",
     "area05DetailProseHtml": "<h2>Area 05 map guide &amp; where loot comes from</h2><p>According to the official <strong>Game</strong> page, Area 05 is your starting region: an evacuated zone in the <strong>southeastern part of Finland</strong> where you will find <strong>shelters</strong>, <strong>traders</strong>, <strong>tasks</strong>, and <strong>starting loot</strong> for initial survival. Your routine there is interrupted by hostile <strong>Bandits</strong> exploiting the lack of authority.</p><h3>Loot and “spawn points” in practice</h3><p>The same page lists <strong>physics-based loot</strong> as a core feature: items exist as physical objects in the world rather than abstract menu pickups. The developers do <strong>not</strong> publish a public table of fixed item coordinates on roadtovostok.com, and many systems are described as <strong>dynamic</strong> (events, weather, replayable runs). So this page does <strong>not</strong> list guaranteed refresh coordinates — those change with patches and procedural layout.</p><ul><li><strong>Scavenge logically:</strong> search the kinds of places the setting implies (settlements, roadsides, abandoned structures) and learn your current build’s loot density in-game.</li><li><strong>Use traders &amp; tasks:</strong> the official feature list includes trading and tasks as part of the core loop alongside shelters — barter and job rewards are intended progression paths, not only ground spawns.</li><li><strong>Stay alive to keep loot:</strong> if you die in Area 05, the official Vostok section states you only lose what you are <strong>carrying</strong> — not your whole progression context (that harsher rule applies to death inside Vostok).</li></ul><p class=\"guide-tools\">On this site: <a href=\"/wiki\">Wiki</a> (gear tables), <a href=\"/getting-started\">Start here</a> (loop, controls, medical basics), <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">Border geography guide</a>, <a href=\"/guides/surviving-the-Minefield\">Minefield guide</a>, <a href=\"/tasks\">Tasks &amp; Vostok rules</a>.</p>",
     "area05MapImgAlt": "Area 05 — atmospheric map reference art alongside the guide"
+  },
+  "mapVillagePage": {
+    "breadcrumbCurrent": "Village (detail)",
+    "title": "Road To Vostok — Village map — Area 05 detail",
+    "introHtml": "This page uses your <strong>local village raster</strong> at <code>/images/map/map-02.png</code>. Markers are grouped by <strong>Locations</strong>, <strong>Enemies</strong>, <strong>Quests</strong>, <strong>Loot</strong>, and <strong>NPC</strong> — same idea as the in-game map filters. Open the <a href=\"/map\">world overview</a> for the full regional graphic.",
+    "sectionKicker": "Area 05 · Village line",
+    "sectionTitle": "Interactive Village map",
+    "hintHtml": "Use the <strong>filter panel on the left of the map</strong> to show or hide marker types; counts match the pins in <code>src/data/map/villageDetail/en.js</code>. Click a grid cell to jump between pins of that type. Pin details open in the <strong>map popup</strong>. Deep-link with <code>?loc=</code> and a pin id (e.g. <code>?loc=landmark-1</code>). Coordinates are normalized (0–1) on the PNG.",
+    "mapAppAria": "Road To Vostok Village layout map. Scroll or pinch to zoom; drag to pan.",
+    "railAria": "Map filters and marker counts",
+    "railKicker": "On map",
+    "railTitle": "Markers by category",
+    "railLeadHtml": "Toggle categories or individual types. Numbers show how many pins exist per type on this map data.",
+    "legendAria": "Marker category colors",
+    "footnoteHtml": "<strong>Note:</strong> Base image is <code>/images/map/map-02.png</code>. Pins use <code>category</code> + <code>kind</code> in <code>src/data/map/villageDetail/en.js</code> (see <code>taxonomy.js</code> for allowed kinds). Trademarks belong to their owners; verify gameplay in your build.",
+    "belowMapHtml": "<h2>Village map guide for Road To Vostok (Area 05)</h2><p><strong>Road To Vostok</strong> places you in a harsh survival loop through Finland toward <strong>Vostok</strong>; official marketing describes <strong>Area 05</strong> as an evacuated Finnish zone with <strong>shelters</strong>, <strong>traders</strong>, <strong>tasks</strong>, and <strong>starting loot</strong>, interrupted by hostile <strong>bandits</strong>. This page is a <strong>third-party editorial layout</strong>: an interactive raster map with category filters (locations, enemies, quests, loot, NPC) so you can plan routes, scavenging stops, and trader visits next to our <a href=\"/map\">regional overview map</a>.</p><h3>How to read the pins</h3><ul><li><strong>Normalized coordinates</strong> pin each marker to the PNG; they are <strong>approximate</strong> — align markers to your screenshot or in-game compass after patches.</li><li><strong>Loot categories</strong> (crates, cabinets, electronics, and similar) illustrate <em>types</em> of container spawns for study; they are not a guarantee of specific item rolls.</li><li><strong>Share a location</strong> with <code>?loc=</code> plus a pin id (for example <code>?loc=trader-1</code>) so friends open the same popup.</li></ul><h3>Accuracy &amp; updates</h3><p>Topics such as <strong>Road To Vostok village map</strong>, <strong>Area 05 layout</strong>, or <strong>trader and shelter positions</strong> should always be checked against your installed build and official sources. Dynamic systems, events, and procedural layout can move spawns; this guide exists to <strong>support orientation</strong>, not to replace the in-game map.</p><h3>More on this guide site</h3><p>For border crossings and Vostok rules, read <a href=\"/tasks\">Tasks &amp; progression</a>; for controls, medical basics, and the core loop, start with <a href=\"/getting-started\">Getting started</a>; for tables of weapons, ammo, and items, browse the <a href=\"/wiki\">Wiki</a>.</p>",
+    "backToOverview": "Back to world overview map",
+    "categories": {
+      "locations": "Locations",
+      "enemies": "Enemies",
+      "quests": "Quests",
+      "loot": "Loot",
+      "npc": "NPC"
+    },
+    "kinds": {
+      "hideout": "Shelter",
+      "landmark": "Landmark",
+      "fishing_spot": "Fishing spot",
+      "locked_structure": "Locked structure",
+      "extraction": "Extraction",
+      "enemy_spawn": "Enemy spawn",
+      "quest": "Quest",
+      "crate": "Crate",
+      "fridge": "Fridge",
+      "cabinet": "Cabinet",
+      "trash": "Trash",
+      "electronics": "Electronics",
+      "tools": "Tools",
+      "trader": "Trader"
+    }
   },
   "tasksPage": {
     "breadcrumb": "Tasks",
