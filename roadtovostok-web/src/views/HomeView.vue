@@ -46,15 +46,6 @@
             <h1 class="hero-title">
               {{ $t('homePage.hero.title') }}
             </h1>
-            <nav class="hero-strip hero-strip--quicklinks" :aria-label="$t('homePage.hero.quickLinksAria')">
-              <a :href="getLocalizedPath('/guides')" class="hero-strip-link">{{ $t('homePage.hero.quickGuides') }}</a>
-              <span class="hero-strip-div" aria-hidden="true" />
-              <a :href="getLocalizedPath('/map')" class="hero-strip-link">{{ $t('homePage.hero.quickMap') }}</a>
-              <span class="hero-strip-div" aria-hidden="true" />
-              <a :href="getLocalizedPath('/mods')" class="hero-strip-link">{{ $t('homePage.hero.quickMods') }}</a>
-              <span class="hero-strip-div" aria-hidden="true" />
-              <a :href="getLocalizedPath('/road-to-vostok-poster')" class="hero-strip-link">{{ $t('homePage.hero.quickPoster') }}</a>
-            </nav>
             <p class="hero-lead">
               {{ $t('homePage.hero.leadBeforeLinks') }}
               <a :href="getLocalizedPath('/getting-started')">{{ $t('homePage.hero.linkStartHere') }}</a>
@@ -856,7 +847,7 @@ onUnmounted(() => {
 }
 
 .hero-title {
-  margin: 0;
+  margin: 0 0 1.25rem;
   font-family: var(--font-journey);
   font-weight: 600;
   font-size: clamp(1.65rem, 3.2vw, 2.55rem);
@@ -904,51 +895,6 @@ onUnmounted(() => {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-muted);
-}
-
-.hero-strip {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem 0.75rem;
-  margin: 0 0 1.25rem;
-  font-family: var(--font-display);
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--color-ice-dim);
-}
-
-.hero-strip--quicklinks {
-  margin-bottom: 1.25rem;
-}
-
-.hero-strip-link {
-  font-family: var(--font-display);
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--color-primary-soft);
-  border-bottom: 1px solid color-mix(in srgb, var(--color-primary-soft) 35%, transparent);
-  padding-bottom: 1px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.hero-strip-link:hover,
-.hero-strip-link:focus-visible {
-  color: var(--color-signal-soft);
-  border-bottom-color: color-mix(in srgb, var(--color-signal) 50%, transparent);
-}
-
-.hero-strip-div {
-  width: 6px;
-  height: 6px;
-  background: var(--color-rust);
-  opacity: 0.75;
-  transform: rotate(45deg);
 }
 
 .hero-lead {
