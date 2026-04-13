@@ -1,9 +1,9 @@
 {
   "tdk": {
     "homePage": {
-      "title": "Road To Vostok 指南 — 地图、任务、武器与生存资料库",
-      "description": "Road To Vostok 生存指南与资料站：玩法基础、Steam 试玩与抢先体验、互动地图、任务推进、武器与物品表、攻略文章、模组概览与路线图背景。请结合你的游戏版本核对细节。",
-      "keywords": "Road To Vostok, 生存指南, 游戏资料, Steam, 抢先体验, 地图, 任务, 武器, 05 区, 边境地带, 符拉迪沃斯托克, 路线图"
+      "title": "Road To Vostok 指南 — 怎么玩 · 攻略、互动地图、模组、海报",
+      "description": "Road To Vostok 独立资料站：怎么玩与抢先体验生存要点 — 深度攻略、世界与村庄互动地图、模组兼容说明、官方海报与截图汇总。请与你的安装版本逐项核对。",
+      "keywords": "Road To Vostok, 生存指南, 怎么玩, 攻略, 互动地图, 村庄地图, 模组, 海报, 抢先体验, Steam, Area 05"
     },
     "wiki": {
       "title": "Road To Vostok 维基 — 物品、武器、NPC 与数据库",
@@ -130,7 +130,12 @@
   "homePage": {
     "hero": {
       "eyebrow": "生存指南 · 试玩与 Steam · 抢先体验",
-      "title": "Road To Vostok 指南 — 怎么玩、Steam 试玩、枪械与路线图",
+      "title": "Road To Vostok 指南 — 怎么玩 · 攻略、互动地图、模组、海报",
+      "quickLinksAria": "快捷入口：攻略、地图、模组与海报",
+      "quickGuides": "攻略",
+      "quickMap": "地图",
+      "quickMods": "模组",
+      "quickPoster": "海报",
       "stripShotguns": "霰弹枪与枪械装填",
       "stripTasks": "全任务与路线图",
       "stripMedical": "逆变器 · 医疗 · 存档",
@@ -141,7 +146,9 @@
       "leadMid": "与",
       "linkTasks": "任务",
       "leadEnd": "查看地点与目标 — 下方指南针区块与顶部导航一一对应。",
-      "caption": "站点背景图 — 与整站氛围同款美术",
+      "caption": "Area 05 村庄布局（预览）",
+      "villageMapBlurb": "互动村庄地图：在 Area 05 底图上查看战利品、商人、任务与出口 — 进入完整地图可筛选图钉并分享深链。",
+      "villageMapLinkAria": "打开互动村庄地图（Area 05 细部）",
       "btnAdvancedGuides": "进阶攻略",
       "btnInteractiveMap": "互动地图"
     },
@@ -396,6 +403,8 @@
     "navRoadAhead": "版本前瞻",
     "navWiki": "维基",
     "navMap": "地图",
+    "navMapOverview": "世界地图",
+    "navMapVillage": "村庄地图",
     "navTasks": "任务",
     "navGuides": "攻略",
     "navMods": "模组",
@@ -664,7 +673,7 @@
     "railTitleLocationIndex": "地点索引",
     "railLeadHtml": "按区域分组：每一行是一个<strong>地点</strong>。点击行可飞到该处并打开抽屉；嵌套行在可用时链接维基或任务。",
     "area05ImageAria": "05 区参考配图",
-    "bottomCrossLinksHtml": "接下来：<a href=\"/tasks\">任务与边境 / 符拉迪沃斯托克说明</a> · <a href=\"/wiki/core-tasks\">核心任务物品（维基）</a> · <a href=\"/guides\">攻略</a> · <a href=\"/map/village\">村庄细部地图</a>",
+    "bottomCrossLinksHtml": "接下来：<a href=\"/tasks\">任务与边境 / 符拉迪沃斯托克说明</a> · <a href=\"/wiki/core-tasks\">核心任务物品（维基）</a> · <a href=\"/guides\">攻略</a> · <a href=\"/map/village-map\">村庄细部地图</a>",
     "kindNpc": "NPC",
     "kindLoot": "战利品",
     "kindTask": "任务",

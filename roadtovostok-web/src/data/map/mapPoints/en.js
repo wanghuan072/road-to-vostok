@@ -58,7 +58,7 @@ export default [
         title: 'Village detail map',
         content:
           'Closer Leaflet layout of the Village play space with multiple editorial pins — same tooling as the world overview.',
-        link: '/map/village',
+        link: '/map/village-map',
       },
     ],
   },

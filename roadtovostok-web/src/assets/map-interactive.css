@@ -764,6 +764,31 @@
   );
 }
 
+/* World overview map: teardrop pins; bubble hues match former region dots */
+.map-page .rtv-map-marker--area05 .rtv-village-pin__bubble {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--color-frost, #7eb8c9) 88%, #fff),
+    color-mix(in srgb, #3d6f82 86%, #020810)
+  );
+}
+
+.map-page .rtv-map-marker--border .rtv-village-pin__bubble {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--color-rust, #c45c3e) 90%, #fff),
+    color-mix(in srgb, #8a3d28 88%, #180605)
+  );
+}
+
+.map-page .rtv-map-marker--vostok .rtv-village-pin__bubble {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, #c44 88%, #fff),
+    color-mix(in srgb, #701818 90%, #0a0202)
+  );
+}
+
 @keyframes rtv-village-pin-pulse {
   0%,
   100% {

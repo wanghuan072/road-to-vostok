@@ -46,13 +46,15 @@
             <h1 class="hero-title">
               {{ $t('homePage.hero.title') }}
             </h1>
-            <p class="hero-strip" aria-hidden="true">
-              <span>{{ $t('homePage.hero.stripShotguns') }}</span>
-              <span class="hero-strip-div" />
-              <span>{{ $t('homePage.hero.stripTasks') }}</span>
-              <span class="hero-strip-div" />
-              <span>{{ $t('homePage.hero.stripMedical') }}</span>
-            </p>
+            <nav class="hero-strip hero-strip--quicklinks" :aria-label="$t('homePage.hero.quickLinksAria')">
+              <a :href="getLocalizedPath('/guides')" class="hero-strip-link">{{ $t('homePage.hero.quickGuides') }}</a>
+              <span class="hero-strip-div" aria-hidden="true" />
+              <a :href="getLocalizedPath('/map')" class="hero-strip-link">{{ $t('homePage.hero.quickMap') }}</a>
+              <span class="hero-strip-div" aria-hidden="true" />
+              <a :href="getLocalizedPath('/mods')" class="hero-strip-link">{{ $t('homePage.hero.quickMods') }}</a>
+              <span class="hero-strip-div" aria-hidden="true" />
+              <a :href="getLocalizedPath('/road-to-vostok-poster')" class="hero-strip-link">{{ $t('homePage.hero.quickPoster') }}</a>
+            </nav>
             <p class="hero-lead">
               {{ $t('homePage.hero.leadBeforeLinks') }}
               <a :href="getLocalizedPath('/getting-started')">{{ $t('homePage.hero.linkStartHere') }}</a>
@@ -69,23 +71,34 @@
             </div>
           </div>
           <div class="hero-visual">
-            <figure class="hero-frame">
-              <span class="hero-frame-corner hero-frame-corner--tl" aria-hidden="true" />
-              <span class="hero-frame-corner hero-frame-corner--tr" aria-hidden="true" />
-              <span class="hero-frame-corner hero-frame-corner--bl" aria-hidden="true" />
-              <span class="hero-frame-corner hero-frame-corner--br" aria-hidden="true" />
-              <img
-                src="/images/bg.webp"
-                alt=""
-                width="640"
-                height="640"
-                class="hero-img"
-                decoding="async"
-              />
-              <figcaption class="hero-caption">
-                {{ $t('homePage.hero.caption') }}
-              </figcaption>
-            </figure>
+            <a
+              :href="getLocalizedPath('/map/village-map')"
+              class="hero-map-teaser"
+              :aria-label="$t('homePage.hero.villageMapLinkAria')"
+            >
+              <figure class="hero-frame">
+                <span class="hero-frame-corner hero-frame-corner--tl" aria-hidden="true" />
+                <span class="hero-frame-corner hero-frame-corner--tr" aria-hidden="true" />
+                <span class="hero-frame-corner hero-frame-corner--bl" aria-hidden="true" />
+                <span class="hero-frame-corner hero-frame-corner--br" aria-hidden="true" />
+                <img
+                  src="/images/map/map-02.png"
+                  alt=""
+                  width="960"
+                  height="600"
+                  class="hero-img hero-img--map-teaser"
+                  decoding="async"
+                  loading="eager"
+                  fetchpriority="high"
+                />
+                <figcaption class="hero-caption">
+                  {{ $t('homePage.hero.caption') }}
+                </figcaption>
+              </figure>
+            </a>
+            <p class="hero-map-teaser-note">
+              {{ $t('homePage.hero.villageMapBlurb') }}
+            </p>
           </div>
         </div>
 
@@ -817,7 +830,7 @@ onUnmounted(() => {
 
 .hero-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, min(42vw, 440px));
   gap: 3.5rem;
   align-items: center;
 }
@@ -843,8 +856,10 @@ onUnmounted(() => {
 }
 
 .hero-title {
+  margin: 0;
   font-family: var(--font-journey);
   font-weight: 600;
+  font-size: clamp(1.65rem, 3.2vw, 2.55rem);
   text-transform: none;
   letter-spacing: 0.02em;
   line-height: 1.08;
@@ -903,6 +918,29 @@ onUnmounted(() => {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-ice-dim);
+}
+
+.hero-strip--quicklinks {
+  margin-bottom: 1.25rem;
+}
+
+.hero-strip-link {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-primary-soft);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-primary-soft) 35%, transparent);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.hero-strip-link:hover,
+.hero-strip-link:focus-visible {
+  color: var(--color-signal-soft);
+  border-bottom-color: color-mix(in srgb, var(--color-signal) 50%, transparent);
 }
 
 .hero-strip-div {
@@ -1046,7 +1084,27 @@ onUnmounted(() => {
 
 .hero-visual {
   width: 100%;
-  max-width: 320px;
+  max-width: 440px;
+}
+
+.hero-map-teaser {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 2px;
+  outline-offset: 4px;
+}
+
+.hero-map-teaser:focus-visible {
+  outline: 2px solid var(--color-ice);
+}
+
+.hero-map-teaser-note {
+  margin: 0.85rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+  max-width: 42ch;
 }
 
 @media (max-width: 1023px) {
@@ -1123,7 +1181,19 @@ onUnmounted(() => {
   transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), filter 0.35s ease;
 }
 
-.hero-frame:hover .hero-img {
+.hero-img--map-teaser {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.hero-map-teaser:hover .hero-img--map-teaser,
+.hero-map-teaser:focus-visible .hero-img--map-teaser {
+  transform: scale(1.03);
+  filter: saturate(0.95) contrast(1.08);
+}
+
+.hero-frame:hover .hero-img:not(.hero-img--map-teaser) {
   transform: scale(1.04);
   filter: saturate(0.95) contrast(1.08);
 }

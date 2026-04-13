@@ -118,7 +118,7 @@ export const routeDefs = [
     },
   },
   {
-    path: '/map/village',
+    path: '/map/village-map',
     name: 'map-village-detail',
     view: 'MapVillageView',
     meta: {
@@ -302,6 +302,13 @@ for (const def of defsNo404) {
   for (const loc of supportedLocales) {
     routes.push(toRouterRoute(def, loc))
   }
+}
+/** Legacy URL /map/village → /map/village-map (per locale prefix). */
+for (const loc of supportedLocales) {
+  routes.push({
+    path: createRoutePath('/map/village', loc),
+    redirect: createRoutePath('/map/village-map', loc),
+  })
 }
 // 先注册各非 en 语言的 404，再注册 en 兜底，避免 /zh/…、/de/… 被英文通配吃掉
 for (const loc of supportedLocales) {

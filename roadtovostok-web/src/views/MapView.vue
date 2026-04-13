@@ -382,6 +382,7 @@ import { useI18n } from 'vue-i18n'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { getMapPoints } from '../data/localeData.js'
+import { buildVillagePinHtml } from '../data/map/villageDetail/pinIcons.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const route = useRoute()
@@ -610,9 +611,10 @@ function setupMap() {
       const latlng = normalizedToLatLng(p.x, p.y, w, h)
       const icon = L.divIcon({
         className: `rtv-map-marker rtv-map-marker--${p.type}`,
-        html: '<span class="rtv-map-marker-dot" aria-hidden="true"></span>',
-        iconSize: [24, 24],
-        iconAnchor: [12, 12],
+        html: buildVillagePinHtml({ kind: 'landmark' }),
+        iconSize: [40, 48],
+        iconAnchor: [20, 46],
+        popupAnchor: [0, -22],
       })
       const marker = L.marker(latlng, { icon, title: p.title })
       const hasRichPopup = Boolean(locationHeroImage(p) || locationEntries(p).length)
@@ -620,6 +622,7 @@ function setupMap() {
       marker.bindPopup(buildPopupHtml(p), {
         className: 'rtv-map-popup-wrap',
         maxWidth: popupW,
+        offset: L.point(0, -6),
       })
       marker.on('click', () => {
         selectedPoiId.value = p.id

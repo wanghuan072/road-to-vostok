@@ -43,16 +43,64 @@
             </svg>
           </button>
           <nav id="site-nav" class="site-nav" :class="{ 'is-open': menuOpen }" :aria-label="$t('site.headerNavMainAria')">
-            <a
-              v-for="item in nav"
-              :key="item.to"
-              :href="getLocalizedPath(item.to)"
-              class="nav-link"
-              :class="{ 'is-active': isNavActive(item.to) }"
-              @click="menuOpen = false"
-            >
-              {{ item.label }}
-            </a>
+            <template v-for="item in nav">
+              <div
+                v-if="item.kind === 'mapDropdown'"
+                :key="'map-dd-' + item.kind"
+                id="site-nav-map-dd"
+                class="nav-dropdown"
+              >
+                <button
+                  type="button"
+                  class="nav-link nav-dropdown-trigger"
+                  :class="{ 'is-active': isMapDropdownActive }"
+                  :aria-expanded="mapMenuOpen"
+                  aria-haspopup="true"
+                  aria-controls="site-nav-map-submenu"
+                  @click="mapMenuOpen = !mapMenuOpen"
+                >
+                  {{ $t('site.navMap') }}
+                  <svg class="nav-dropdown-chevron" width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <ul
+                  id="site-nav-map-submenu"
+                  v-show="mapMenuOpen"
+                  class="nav-dropdown-menu"
+                  role="menu"
+                >
+                  <li role="none">
+                    <a
+                      role="menuitem"
+                      :href="getLocalizedPath('/map')"
+                      class="nav-dropdown-item"
+                      :class="{ 'is-active': isWorldMapActive }"
+                      @click="closeMenus"
+                    >{{ $t('site.navMapOverview') }}</a>
+                  </li>
+                  <li role="none">
+                    <a
+                      role="menuitem"
+                      :href="getLocalizedPath('/map/village-map')"
+                      class="nav-dropdown-item"
+                      :class="{ 'is-active': isVillageMapActive }"
+                      @click="closeMenus"
+                    >{{ $t('site.navMapVillage') }}</a>
+                  </li>
+                </ul>
+              </div>
+              <a
+                v-else
+                :key="item.to"
+                :href="getLocalizedPath(item.to)"
+                class="nav-link"
+                :class="{ 'is-active': isNavActive(item.to) }"
+                @click="closeMenus"
+              >
+                {{ item.label }}
+              </a>
+            </template>
           </nav>
           <div ref="localeRootRef" class="locale-dropdown-wrap">
             <button
@@ -97,9 +145,9 @@ import { localeNames, supportedLocales } from '../i18n/index.js'
 const route = useRoute()
 const router = useRouter()
 const menuOpen = ref(false)
+const mapMenuOpen = ref(false)
 const localeMenuOpen = ref(false)
 const localeRootRef = ref(null)
-
 const { t } = useI18n()
 const { getLocalizedPath, getCurrentLocale } = useLocalizedPath()
 
@@ -114,16 +162,33 @@ function selectLanguage(newLocale) {
   const target = applyLocalePrefix(logical, newLocale)
   localeMenuOpen.value = false
   menuOpen.value = false
+  mapMenuOpen.value = false
   void router.push(target)
 }
 
+function normalizedLogicalPath() {
+  const p = stripLocaleFromFullPath(route.path).replace(/\/$/, '')
+  return p === '' ? '/' : p
+}
+
 function isNavActive(logicalTo) {
-  const logicalCurrent = stripLocaleFromFullPath(route.path)
+  const logicalCurrent = normalizedLogicalPath()
   const segment = logicalTo === '/' ? '/' : logicalTo.replace(/\/$/, '')
   if (segment === '/') {
     return logicalCurrent === '/' || logicalCurrent === ''
   }
   return logicalCurrent === segment || logicalCurrent.startsWith(`${segment}/`)
+}
+
+const isWorldMapActive = computed(() => normalizedLogicalPath() === '/map')
+
+const isVillageMapActive = computed(() => normalizedLogicalPath() === '/map/village-map')
+
+const isMapDropdownActive = computed(() => isWorldMapActive.value || isVillageMapActive.value)
+
+function closeMenus() {
+  menuOpen.value = false
+  mapMenuOpen.value = false
 }
 
 const brandLogoSrc = '/images/logo.webp'
@@ -133,7 +198,7 @@ const nav = computed(() => [
   { label: t('site.navStartHere'), to: '/getting-started' },
   { label: t('site.navPoster'), to: '/road-to-vostok-poster' },
   { label: t('site.navWiki'), to: '/wiki' },
-  { label: t('site.navMap'), to: '/map' },
+  { kind: 'mapDropdown' },
   { label: t('site.navTasks'), to: '/tasks' },
   { label: t('site.navGuides'), to: '/guides' },
   { label: t('site.navRoadAhead'), to: '/dev-updates' },
@@ -141,10 +206,16 @@ const nav = computed(() => [
 ])
 
 function onDocPointerDown(e) {
-  const root = localeRootRef.value
-  if (!root || !localeMenuOpen.value) return
-  if (e.target instanceof Node && !root.contains(e.target)) {
+  const t = e.target
+  if (!(t instanceof Node)) return
+  const localeRoot = localeRootRef.value
+  if (localeRoot && localeMenuOpen.value && !localeRoot.contains(t)) {
     localeMenuOpen.value = false
+  }
+  const mapRoot =
+    typeof document !== 'undefined' ? document.getElementById('site-nav-map-dd') : null
+  if (mapRoot && mapMenuOpen.value && !mapRoot.contains(t)) {
+    mapMenuOpen.value = false
   }
 }
 
@@ -398,6 +469,74 @@ onUnmounted(() => {
   background: var(--color-signal-soft);
 }
 
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: stretch;
+}
+
+.nav-dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  margin: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-dropdown-chevron {
+  flex-shrink: 0;
+  opacity: 0.72;
+  transition: transform 0.2s ease;
+}
+
+.nav-dropdown-trigger[aria-expanded='true'] .nav-dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px);
+  min-width: 11.5rem;
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow:
+    0 12px 36px rgba(0, 0, 0, 0.35),
+    0 0 0 1px color-mix(in srgb, var(--color-ice) 12%, transparent);
+  z-index: 125;
+}
+
+.nav-dropdown-item {
+  display: block;
+  padding: 0.5rem 0.65rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-dropdown-item:hover,
+.nav-dropdown-item:focus-visible {
+  background: var(--color-panel);
+  color: var(--color-text);
+}
+
+.nav-dropdown-item.is-active {
+  color: var(--color-bg);
+  background: var(--color-ice-dim);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -444,6 +583,25 @@ onUnmounted(() => {
 
   .nav-link {
     padding: 0.65rem 0.75rem;
+  }
+
+  .nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-dropdown-trigger {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    margin: 0 0 0.35rem 0.5rem;
+    border: 1px dashed color-mix(in srgb, var(--color-border) 80%, var(--color-ice));
+    box-shadow: none;
   }
 }
 </style>

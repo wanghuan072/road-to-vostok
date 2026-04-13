@@ -1,9 +1,9 @@
 {
   "tdk": {
     "homePage": {
-      "title": "Road To Vostok Guide — Maps, Tasks, Weapons & Survival Database",
-      "description": "Road To Vostok survival guide and database: gameplay basics, Steam demo and Early Access, interactive map, task progression, weapon and item tables, strategy articles, mods overview, and roadmap context. Verify details against your build.",
-      "keywords": "Road To Vostok, survival guide, game database, Steam, Early Access, map, tasks, weapons, Area 05, Border Zone, Vostok, roadmap"
+      "title": "Road To Vostok Guide — how to play · guides, map, mods & poster",
+      "description": "Independent Road To Vostok guide: how to play and survive Early Access — long-form guides, interactive world and village maps, mod compatibility notes, and the official poster & screenshot hub. Cross-check every detail with your installed build.",
+      "keywords": "Road To Vostok, survival guide, how to play, guides, interactive map, village map, game mods, poster, Early Access, Area 05, Steam"
     },
     "wiki": {
       "title": "Road To Vostok Wiki — Items, weapons, NPCs & databases",
@@ -136,7 +136,12 @@
   "homePage": {
     "hero": {
       "eyebrow": "Survival guide · demo & Steam · Early Access",
-      "title": "Road To Vostok Guide — how to play, Steam demo, guns & roadmap",
+      "title": "Road To Vostok Guide — how to play · guides, map, mods & poster",
+      "quickLinksAria": "Shortcuts to guides, map, mods, and poster",
+      "quickGuides": "Guides",
+      "quickMap": "Map",
+      "quickMods": "Mods",
+      "quickPoster": "Poster",
       "stripShotguns": "Load shotgun & guns",
       "stripTasks": "All tasks & roadmap",
       "stripMedical": "Inverter · medical · saves",
@@ -147,7 +152,9 @@
       "leadMid": "and",
       "linkTasks": "Tasks",
       "leadEnd": "for locations and objectives — the compass block below mirrors every main section.",
-      "caption": "Site backdrop — same art as full-page mood",
+      "caption": "Area 05 village layout (preview)",
+      "villageMapBlurb": "Interactive village map: loot, traders, tasks, and exits on the Area 05 raster — open the full map to filter pins and deep-link locations.",
+      "villageMapLinkAria": "Open the interactive village map (Area 05 detail)",
       "btnAdvancedGuides": "Advanced guides",
       "btnInteractiveMap": "Interactive map"
     },
@@ -402,6 +409,8 @@
     "navRoadAhead": "Road ahead",
     "navWiki": "Wiki",
     "navMap": "Map",
+    "navMapOverview": "World map",
+    "navMapVillage": "Village map",
     "navTasks": "Tasks",
     "navGuides": "Guides",
     "navMods": "Mods",
@@ -615,7 +624,7 @@
     "sectionKicker": "World overview",
     "sectionTitle": "Road To Vostok Interactive Map",
     "hintHtml": "Pins are <strong>locations only</strong> (Village, Shipyard, …). Each place can list <strong>NPCs, loot, tasks</strong> in the left panel and in the index below — those are not separate markers. After you select a pin or location row, the <strong>details drawer</strong> slides in from the left; close with <strong>×</strong> or reopen with <strong>Details</strong>. Sub-items with a wiki link jump to that page. Pins are <strong>approximate</strong>.",
-    "villageDetailCalloutHtml": "<p class=\"map-village-callout\"><strong>Village detail map:</strong> For a <strong>closer layout</strong> of the Village play space with multiple pins and notes on our own raster (same Leaflet tool as the overview), open <a href=\"/map/village\">Village detail map</a>. Pin positions are <strong>approximate</strong> — align to your screenshot and in-game checks.</p>",
+    "villageDetailCalloutHtml": "<p class=\"map-village-callout\"><strong>Village detail map:</strong> For a <strong>closer layout</strong> of the Village play space with multiple pins and notes on our own raster (same Leaflet tool as the overview), open <a href=\"/map/village-map\">Village detail map</a>. Pin positions are <strong>approximate</strong> — align to your screenshot and in-game checks.</p>",
     "legendAria": "Pin colors by region",
     "legendArea05": "Area 05",
     "legendBorder": "Border Zone",
@@ -629,7 +638,7 @@
     "railTitleLocationIndex": "Location index",
     "railLeadHtml": "Grouped by region: each row is a <strong>location</strong>. Tap the row to fly the map and open the drawer; nested lines link to wiki or tasks when available.",
     "area05ImageAria": "Area 05 reference illustration",
-    "bottomCrossLinksHtml": "Next: <a href=\"/tasks\">Tasks &amp; border / Vostok guide</a> · <a href=\"/wiki/core-tasks\">Core task items (wiki)</a> · <a href=\"/guides\">Guides</a> · <a href=\"/map/village\">Village detail map</a>",
+    "bottomCrossLinksHtml": "Next: <a href=\"/tasks\">Tasks &amp; border / Vostok guide</a> · <a href=\"/wiki/core-tasks\">Core task items (wiki)</a> · <a href=\"/guides\">Guides</a> · <a href=\"/map/village-map\">Village detail map</a>",
     "kindNpc": "NPC",
     "kindLoot": "Loot",
     "kindTask": "Task",
