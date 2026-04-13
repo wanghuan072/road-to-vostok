@@ -63,7 +63,7 @@
                   :aria-label="$t('mapVillagePage.mapAppAria')"
                   tabindex="0"
                 />
-                <!-- 临时：标点用归一化坐标；不需要时设 VILLAGE_COORD_HUD = false 或删掉本块 -->
+                <!-- 临时：右下角归一化坐标；不需要时设 VILLAGE_COORD_HUD = false 或删掉本块 -->
                 <div
                   v-show="mapReady && VILLAGE_COORD_HUD"
                   class="village-coord-hud"
@@ -168,12 +168,13 @@ import { useI18n } from 'vue-i18n'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import villagePinsEn from '../data/map/villageDetail/en.js'
+import { buildVillagePinHtml } from '../data/map/villageDetail/pinIcons.js'
 import { VILLAGE_CATEGORY_ORDER, VILLAGE_KINDS } from '../data/map/villageDetail/taxonomy.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const MAP_IMAGE_URL = '/images/map/map-02.png'
 
-/** 临时：左下角显示鼠标归一化坐标，方便写 en.js 的 x/y；不需要时改为 false 或删除 HUD。 */
+/** 临时：右下角显示鼠标归一化坐标，方便写 en.js 的 x/y；不需要时改为 false 或删除 HUD。 */
 const VILLAGE_COORD_HUD = true
 
 const route = useRoute()
@@ -417,7 +418,7 @@ function setupMap() {
       const y = Math.min(1, Math.max(0, (mapImagePxH - lat) / mapImagePxH))
       const xr = x.toFixed(4)
       const yr = y.toFixed(4)
-      coordHud.value = `x ${xr} · y ${yr} →  en.js: x: ${xr}, y: ${yr}`
+      coordHud.value = `x: ${xr}, y: ${yr}`
     })
     mapInstance.on('mouseout', () => {
       coordHud.value = '—'
@@ -429,9 +430,11 @@ function setupMap() {
       const latlng = normalizedToLatLng(p.x, p.y, w, h)
       const icon = L.divIcon({
         className: `rtv-map-marker ${markerModifierForPin(p)}`,
-        html: '<span class="rtv-map-marker-dot" aria-hidden="true"></span>',
-        iconSize: [24, 24],
-        iconAnchor: [12, 12],
+        html: buildVillagePinHtml(p),
+        iconSize: [40, 48],
+        iconAnchor: [20, 46],
+        // 相对 iconAnchor（泪滴尖端）：负 y 把弹层接到图钉上方，避免挡住图标
+        popupAnchor: [0, -22],
       })
       const marker = L.marker(latlng, { icon, title: pinTitle(p) })
       const hasRichPopup = Boolean(heroForPin(p))
@@ -439,6 +442,7 @@ function setupMap() {
       marker.bindPopup(buildPopupHtml(p), {
         className: 'rtv-map-popup-wrap',
         maxWidth: popupW,
+        offset: L.point(0, -6),
       })
       marker.on('click', () => {
         selectedPoiId.value = p.id
@@ -486,9 +490,10 @@ onUnmounted(() => {
 .village-coord-hud {
   position: absolute;
   z-index: 1100;
-  left: max(10px, env(safe-area-inset-left, 0px));
+  right: max(10px, env(safe-area-inset-right, 0px));
+  left: auto;
   bottom: max(10px, env(safe-area-inset-bottom, 0px));
-  max-width: min(100% - 20px, 22rem);
+  max-width: min(100% - 20px, 18rem);
   padding: 0.35rem 0.5rem;
   border-radius: 6px;
   border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);

@@ -1,14 +1,14 @@
 /** Village map filter taxonomy (categories → kinds). Kind ids are unique across the map. */
 
-export const VILLAGE_CATEGORY_ORDER = ['locations', 'enemies', 'quests', 'loot', 'npc']
+export const VILLAGE_CATEGORY_ORDER = ['locations', 'loot', 'npc', 'quests']
 
 /** @type {Record<string, string[]>} */
 export const VILLAGE_KINDS = {
   locations: ['hideout', 'landmark', 'fishing_spot', 'locked_structure', 'extraction'],
-  enemies: ['enemy_spawn'],
-  quests: ['quest'],
-  loot: ['crate', 'fridge', 'cabinet', 'trash', 'electronics', 'tools'],
+  // enemies: ['enemy_spawn'],
+  loot: ['crate', 'fridge', 'cabinet', 'garbage_bag', 'electronics', 'tools'],
   npc: ['trader'],
+  quests: ['tasks'],
 }
 
 /**

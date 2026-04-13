@@ -687,6 +687,109 @@
   border: none;
 }
 
+/* Village map: teardrop pins + white kind icons (see pinIcons.js) */
+.map-page .rtv-village-pin {
+  position: relative;
+  width: 40px;
+  height: 48px;
+  margin: 0;
+  pointer-events: none;
+}
+
+.map-page .rtv-village-pin__bubble {
+  position: absolute;
+  left: 50%;
+  top: 1px;
+  width: 32px;
+  height: 32px;
+  margin-left: -16px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  transform-origin: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 color-mix(in srgb, #fff 16%, transparent);
+  border: 1px solid color-mix(in srgb, #000 32%, transparent);
+}
+
+.map-page .rtv-village-pin__svg {
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  color: #fff;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.map-page .rtv-map-marker--vcat-locations .rtv-village-pin__bubble {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, #4a9eff 92%, #fff),
+    color-mix(in srgb, #2f6fbe 88%, #020810)
+  );
+}
+
+.map-page .rtv-map-marker--vcat-enemies .rtv-village-pin__bubble {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, #e85d4c 94%, #fff),
+    color-mix(in srgb, #a8382e 90%, #180605)
+  );
+}
+
+.map-page .rtv-map-marker--vcat-quests .rtv-village-pin__bubble {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, #9b72cf 92%, #fff),
+    color-mix(in srgb, #6b4898 88%, #0c0614)
+  );
+}
+
+.map-page .rtv-map-marker--vcat-loot .rtv-village-pin__bubble {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--color-amber, #e8c547) 92%, #fff),
+    color-mix(in srgb, #a67c18 88%, #1a1204)
+  );
+}
+
+.map-page .rtv-map-marker--vcat-npc .rtv-village-pin__bubble {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--color-signal-soft, #ffb87a) 94%, #fff),
+    color-mix(in srgb, var(--color-signal, #e8893a) 82%, #2a1002)
+  );
+}
+
+@keyframes rtv-village-pin-pulse {
+  0%,
+  100% {
+    transform: rotate(-45deg) scale(1);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+
+  50% {
+    transform: rotate(-45deg) scale(1.08);
+    filter: drop-shadow(0 0 8px color-mix(in srgb, var(--color-frost, #7eb8c9) 55%, transparent));
+  }
+}
+
+.map-page .rtv-map-marker--selected .rtv-village-pin__bubble {
+  animation: rtv-village-pin-pulse 1.35s ease-in-out infinite;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .map-page .rtv-map-marker--selected .rtv-village-pin__bubble {
+    animation: none;
+    outline: 2px solid color-mix(in srgb, var(--color-frost, #7eb8c9) 72%, transparent);
+    outline-offset: 2px;
+  }
+}
+
 .map-page .rtv-map-marker-dot {
   display: block;
   width: 14px;

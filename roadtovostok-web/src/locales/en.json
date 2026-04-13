@@ -666,10 +666,9 @@
     "backToOverview": "Back to world overview map",
     "categories": {
       "locations": "Locations",
-      "enemies": "Enemies",
-      "quests": "Quests",
       "loot": "Loot",
-      "npc": "NPC"
+      "npc": "NPC",
+      "quests": "Quests"
     },
     "kinds": {
       "hideout": "Shelter",
@@ -678,11 +677,11 @@
       "locked_structure": "Locked structure",
       "extraction": "Extraction",
       "enemy_spawn": "Enemy spawn",
-      "quest": "Quest",
+      "tasks": "Tasks",
       "crate": "Crate",
       "fridge": "Fridge",
       "cabinet": "Cabinet",
-      "trash": "Trash",
+      "garbage_bag": "Garbage Bag",
       "electronics": "Electronics",
       "tools": "Tools",
       "trader": "Trader"
