@@ -495,4 +495,68 @@ export default {
   <li><strong>Vihollisten spawn:</strong> voi ilmestyä selän taakse tyhjennyksen jälkeen.</li>
   </ol>`,
   },
+
+  'road-to-vostok-shelter-locations': {
+    title:
+      'Road to Vostok — suojat: täydellinen kartta ja avausopas',
+    description:
+      'Kaikki Road to Vostok -suojat: teltta, bunkkeri, koulu. Luokan avain ja interaktiivinen kartta selviytymiseen.',
+    imageAlt: 'Road to Vostok -suojat',
+    tags: ['Road to Vostok', 'Suoja', 'Kartta', 'Avain'],
+    seo: {
+      title:
+        'Road to Vostok — suojat: täydellinen kartta ja avausopas',
+      description:
+        'Suojien sijainnit, teltta ja bunkkeri etuvartiossa, koulun luokka, avaimet ja tukikohtalogistiikka; interaktiivinen kartta reiteille.',
+      keywords:
+        'road to vostok shelter, suojat, teltta, kartta, bunkkeri, koulu, kissa, luokan avain',
+    },
+    detailsHtml: `<h1>Road to Vostok -suojat: kaikki paikat ja avaukset</h1>
+  <p><strong>Road to Vostok</strong> -hardcore-maailmassa suoja on ainoa todella turvallinen tila lootille, palautumiselle ja hengissä pysymiselle — olitpa aloittelija tai loppupelin varustaja.</p>
+  <p>Tämä opas kokoaa yhteen tunnetut suojat, avainreitit ja tärkeät mekaniikat yhteisön varmentamien tietojen pohjalta.</p>
+  <h2>Suojien jako</h2>
+  <p>Kaksi pääryhmää: <strong>avoinna alusta</strong> ja <strong>tehtävillä / avaimilla</strong>. Sijaintien hallinta nopeuttaa farmia karttojen välillä.</p>
+  <h3>Aloitussuojat</h3>
+  <ol>
+  <li><strong>Mökki (kylä):</strong> ensimmäinen suoja — pieni mutta välttämätön varhaiselle varastolle.</li>
+  <li><strong>Teltta (etuvartio):</strong> heti käytössä — vasemmalla tullessa <strong>koulusta</strong>, laakson vastapäätä isosta punaisesta navetasta.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158305/cms-uploads/cms-1776158305834-85606712.webp" alt="Kylän mökki ja ullakko" width="50%"></p>
+  <h3>Avattavat suojat ja stash-pisteet</h3>
+  <ol>
+  <li><strong>Bunkkeri (etuvartio):</strong> iso huipputason suoja — vaatii varustuksen, <strong>„Punisherin”</strong> kaatamisen, hatun noston ja asepelin tehtävän etuvartiossa.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158461/cms-uploads/cms-1776158461157-243281608.webp" alt="Teltta ja bunkkeri etuvartiossa" width="50%"></p>
+  <ol>
+  <li><strong>Koulun luokka:</strong> <strong>koulu</strong>-kartalla — lukittu luokkahuone, tarvitsee <strong>fyysisen avaimen</strong>.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158410/cms-uploads/cms-1776158410763-6355250.webp" alt="Koulun luokka-suoja" width="50%"></p>
+  <ol>
+  <li><strong>Ullakko:</strong> enemmän tilaa kuin alkumökissä — avain <strong>kauppiaan viimeisestä tehtävästä</strong>.</li>
+  </ol>
+  <p><br></p>
+  <p>!!! <strong>Moottoritietunnelin stash:</strong> piilotettu tunnelissa <strong>Highway</strong>-kartalla — ennemminkin lukittu <strong>stash</strong> kuin täysi suoja, mutta vaatii oman avaimen.</p>
+  <h2>Luokan avain ja muut avaimet</h2>
+  <ol>
+  <li><strong>Kauppiaiden ketjut:</strong> eteneminen — esim. ullakon avain viimeisen tehtävän jälkeen.</li>
+  <li><strong>Loot kuumissa paikoissa:</strong> avaimia arvokkaissa vyöhykkeissä — vahvistettu koulun <strong>salissa</strong>, joskus syvällä <strong>Vostokissa</strong> loppupelissä.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158642/cms-uploads/cms-1776158642474-180454868.webp" alt="Road to Vostok -avaimet" width="50%"></p>
+  <h2>Suojan hallinta</h2>
+  <h3>1. F1-sijoittelu</h3>
+  <p>Osta kalusteita ja säiliöitä kauppiailta (<strong>lääkäri</strong> hyllyihin suositeltu). Suojassa: <strong>F1</strong> sijoitustilaan; rulla + oikea klikki kiertoon.</p>
+  <h3>2. Henkinen tila</h3>
+  <p>Tulitaistelujen jälkeen <strong>tuli suojassa</strong> nostaa mental-nopeasti.</p>
+  <h3>3. Esineiden menetys</h3>
+  <p>Jos kuolema lähestyy suojassa (verenvuoto, tauti), pudota arvokas <strong>lattialle</strong> ennen kuolemaa vähentääksesi varustemenetystä (patchista riippuen).</p>
+  <h2>Interaktiivinen kartta</h2>
+  <p>Karttayhteydet ratkaisevat — esim. koulun läpi etuvartioon.</p>
+  <p>Käytä <a href="https://roadtovostok.org/map">interaktiivista Road to Vostok -karttaa</a> avaimille, spawneille ja turvalliselle reitille bunkkeriin.</p>
+  <h2>Yhteisömodit: kissa ja QoL</h2>
+  <ol>
+  <li><strong>Immortal Cat -tyyppiset:</strong> suojan kissa ei kuole — vähemmän hallintaa.</li>
+  <li><strong>Ei nälkää/janoa suojassa:</strong> sopii järjestelyyn ja hyllyihin ilman ruoan tuhlausta.</li>
+  </ol>
+  <p>(Lisää oppaita: <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
+  },
 }

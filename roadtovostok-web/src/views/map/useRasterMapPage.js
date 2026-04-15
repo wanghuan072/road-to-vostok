@@ -19,8 +19,10 @@ import { buildMapPinHtml } from '../../data/map/pinIcons.js'
  *   mapLegend: Array<{ id: string, label: string }>
  *   pinCategoryField?: string
  * }} bundle
+ * @param {{ coordHud?: import('vue').Ref<string> }} [options] 传入时在地图上显示归一化 x,y（右下角 HUD）。
  */
-export function useRasterMapPage(bundle) {
+export function useRasterMapPage(bundle, options = {}) {
+  const { coordHud: coordHudRef } = options
   const {
     imageUrl,
     pins,
@@ -189,7 +191,10 @@ export function useRasterMapPage(bundle) {
       ? `<div class="rtv-map-popup__thumb"><img src="${escapeHtml(hero.src)}" alt="${escapeHtml(hero.alt)}" width="88" height="88" loading="lazy" decoding="async"></div>`
       : ''
     const cls = thumb ? 'rtv-map-popup rtv-map-popup--with-media' : 'rtv-map-popup'
-    const body = p.content ? `<p>${escapeHtml(p.content)}</p>` : ''
+    /* content：仓库内静态 HTML（可含 <a>），与 Vue v-html 等价，勿注入不可信字符串 */
+    const body = p.content
+      ? `<div class="rtv-map-popup__html">${String(p.content)}</div>`
+      : ''
     return `<div class="${cls}"><div class="rtv-map-popup__body"><strong>${escapeHtml(title)}</strong>${body}</div>${thumb}</div>`
   }
 
@@ -231,6 +236,7 @@ export function useRasterMapPage(bundle) {
     markerById.clear()
     mapReady.value = false
     selectedPoiId.value = null
+    if (coordHudRef) coordHudRef.value = '—'
   }
 
   function setupMap() {
@@ -268,6 +274,19 @@ export function useRasterMapPage(bundle) {
 
       L.imageOverlay(imageUrl, bounds).addTo(mapInstance)
       L.control.zoom({ position: 'topright' }).addTo(mapInstance)
+
+      if (coordHudRef) {
+        mapInstance.on('mousemove', (e) => {
+          const lat = e.latlng.lat
+          const lng = e.latlng.lng
+          const x = Math.min(1, Math.max(0, lng / w))
+          const y = Math.min(1, Math.max(0, (h - lat) / h))
+          coordHudRef.value = `x: ${x.toFixed(4)}, y: ${y.toFixed(4)}`
+        })
+        mapInstance.on('mouseout', () => {
+          coordHudRef.value = '—'
+        })
+      }
 
       markerById.clear()
       markersLayer = L.layerGroup()

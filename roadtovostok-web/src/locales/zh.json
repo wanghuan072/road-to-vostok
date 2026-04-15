@@ -175,10 +175,10 @@
       "linkMap": "地图",
       "leadMid": "与",
       "linkTasks": "任务",
-      "leadEnd": "查看地点与目标 — 下方指南针区块与顶部导航一一对应。",
-      "caption": "Area 05 村庄布局（预览）",
-      "villageMapBlurb": "互动村庄地图：在 Area 05 底图上查看战利品、商人、任务与出口 — 进入完整地图可筛选图钉并分享深链。",
-      "villageMapLinkAria": "打开互动村庄地图（Area 05 细部）",
+      "leadEnd": "查看地点与目标。右侧为氛围主图。下方指南针区块仍与顶部导航一一对应。",
+      "caption": "主视觉",
+      "heroImgAria": "首页主视觉插图",
+      "heroImgBlurb": "仅作氛围展示 — 请用上方「地图」「互动地图」按钮进入可操作的地图站。",
       "btnAdvancedGuides": "进阶攻略",
       "btnInteractiveMap": "互动地图"
     },
@@ -686,6 +686,7 @@
   },
   "mapPage": {
     "breadcrumb": "地图",
+    "heroMosaicNavAria": "七张细部地图单行横排（阶梯错位）；点击切换地图，当前页高亮。",
     "title": "Road To Vostok 地图",
     "introHtml": "使用地图查看 05 区、边境地带与符拉迪沃斯托克，并阅读下方区域概览与 05 区说明。商人任务、边境过境与符拉迪沃斯托克规则见 <a href=\"/tasks\">任务</a> 页。请与已安装版本核对。",
     "sectionKicker": "世界概览",

@@ -62,33 +62,31 @@
             </div>
           </div>
           <div class="hero-visual">
-            <a
-              :href="getLocalizedPath('/map/village-map')"
-              class="hero-map-teaser"
-              :aria-label="$t('homePage.hero.villageMapLinkAria')"
+            <figure
+              class="hero-frame"
+              role="group"
+              :aria-label="$t('homePage.hero.heroImgAria')"
             >
-              <figure class="hero-frame">
-                <span class="hero-frame-corner hero-frame-corner--tl" aria-hidden="true" />
-                <span class="hero-frame-corner hero-frame-corner--tr" aria-hidden="true" />
-                <span class="hero-frame-corner hero-frame-corner--bl" aria-hidden="true" />
-                <span class="hero-frame-corner hero-frame-corner--br" aria-hidden="true" />
-                <img
-                  src="/images/map/map-02.png"
-                  alt=""
-                  width="960"
-                  height="600"
-                  class="hero-img hero-img--map-teaser"
-                  decoding="async"
-                  loading="eager"
-                  fetchpriority="high"
-                />
-                <figcaption class="hero-caption">
-                  {{ $t('homePage.hero.caption') }}
-                </figcaption>
-              </figure>
-            </a>
-            <p class="hero-map-teaser-note">
-              {{ $t('homePage.hero.villageMapBlurb') }}
+              <span class="hero-frame-corner hero-frame-corner--tl" aria-hidden="true" />
+              <span class="hero-frame-corner hero-frame-corner--tr" aria-hidden="true" />
+              <span class="hero-frame-corner hero-frame-corner--bl" aria-hidden="true" />
+              <span class="hero-frame-corner hero-frame-corner--br" aria-hidden="true" />
+              <img
+                src="/images/hero-img.webp"
+                alt=""
+                width="960"
+                height="540"
+                class="hero-img hero-img--key-art"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+              />
+              <figcaption class="hero-caption">
+                {{ $t('homePage.hero.caption') }}
+              </figcaption>
+            </figure>
+            <p class="hero-img-note">
+              {{ $t('homePage.hero.heroImgBlurb') }}
             </p>
           </div>
         </div>
@@ -1030,22 +1028,10 @@ onUnmounted(() => {
 
 .hero-visual {
   width: 100%;
-  max-width: 440px;
+  max-width: min(100%, 32rem);
 }
 
-.hero-map-teaser {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  border-radius: 2px;
-  outline-offset: 4px;
-}
-
-.hero-map-teaser:focus-visible {
-  outline: 2px solid var(--color-ice);
-}
-
-.hero-map-teaser-note {
+.hero-img-note {
   margin: 0.85rem 0 0;
   font-size: 0.82rem;
   line-height: 1.5;
@@ -1127,21 +1113,15 @@ onUnmounted(() => {
   transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), filter 0.35s ease;
 }
 
-.hero-img--map-teaser {
-  aspect-ratio: 16 / 10;
+.hero-img--key-art {
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 38%;
 }
 
-.hero-map-teaser:hover .hero-img--map-teaser,
-.hero-map-teaser:focus-visible .hero-img--map-teaser {
-  transform: scale(1.03);
-  filter: saturate(0.95) contrast(1.08);
-}
-
-.hero-frame:hover .hero-img:not(.hero-img--map-teaser) {
-  transform: scale(1.04);
-  filter: saturate(0.95) contrast(1.08);
+.hero-frame:hover .hero-img--key-art {
+  transform: scale(1.02);
+  filter: saturate(0.94) contrast(1.06);
 }
 
 @media (prefers-reduced-motion: reduce) {

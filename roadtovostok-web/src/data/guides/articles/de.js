@@ -592,4 +592,76 @@ export default {
   <li><strong>Spawns:</strong> Paranoia — Gegner spawnen hinter dir, auch in gerade geräumten Zonen.</li>
   </ol>`,
   },
+
+  'road-to-vostok-shelter-locations': {
+    title:
+      'Road to Vostok Shelter-Standorte: Vollständige Karte &amp; Freischalt-Guide',
+    description:
+      'Alle Shelter in Road to Vostok — Zelt, Bunker, Schule u. a. So bekommst du den Klassenzimmer-Schlüssel und nutzt unsere interaktive Karte fürs Überleben.',
+    imageAlt: 'Road to Vostok Shelter',
+    tags: ['Road to Vostok', 'Shelter', 'Karte', 'Schlüssel'],
+    seo: {
+      title:
+        'Road to Vostok Shelter-Standorte: Vollständige Karte &amp; Freischalt-Guide',
+      description:
+        'Alle Shelter-Standorte, Zelt- und Bunker-Infos, Schule, Klassenzimmer-Schlüssel und interaktive Karte für effizientes Looten.',
+      keywords:
+        'road to vostok shelter, shelter standorte, zelt shelter, karte, bunker, schule shelter, katze, klassenzimmer schlüssel',
+    },
+    detailsHtml: `<h1>Das ultimative Road-to-Vostok-Shelter-Handbuch: Alle Orte &amp; Freischaltungen</h1>
+  <p>In der Hardcore-Welt von <strong>Road to Vostok</strong> ist ein Shelter deine einzige wirklich sichere Zone zum Lagern, Regenerieren und Überleben. Ob Early-Game-Stash oder Endgame-Waffenkammer — exakte Orte und Mechaniken zu kennen ist Pflicht.</p>
+  <p>Dieser Guide fasst alle bekannten Shelter, Schlüssel-Wege und wichtige Management-Mechaniken auf Basis verifizierter Community-Infos zusammen.</p>
+  <h2>Kern-Intel: Shelter-Kategorien</h2>
+  <p>Shelter sind <strong>von Anfang an frei</strong> oder <strong>über Quests/Schlüssel</strong> — das Beherrschen der Standorte steigert deine Effizenz über alle Karten.</p>
+  <h3>Start-Shelter</h3>
+  <p>Neue Spieler können sofort nutzen:</p>
+  <ol>
+  <li><strong>Hütten-Shelter:</strong> auf der <strong>Dorf</strong>-Karte — dein erstes Shelter; kompakt, aber essenziell fürs Anfangslager.</li>
+  <li><strong>Zelt-Shelter:</strong> ebenfalls sofort nutzbar auf der <strong>Außenposten</strong>-Karte — links vom Einstieg aus der Schule (Tal gegenüber der großen roten Scheune).</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158305/cms-uploads/cms-1776158305834-85606712.webp" alt="Dorf-Hütte und Dachboden-Shelter" width="50%"></p>
+  <h3>Freischaltbare Shelter &amp; Stash-Punkte</h3>
+  <p>Weitere hochwertige Zonen brauchen Voraussetzungen:</p>
+  <ol>
+  <li><strong>Bunker-Shelter:</strong> großes Top-Tier-Shelter auf dem Außenposten. Freischaltung anspruchsvoll: gut ausrüsten, den <strong>„Punisher“</strong> besiegen, Hut nehmen, am Außenposten die Aufgabe des Waffenhändlers erledigen.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158461/cms-uploads/cms-1776158461157-243281608.webp" alt="Außenposten Zelt und Bunker" width="50%"></p>
+  <ol>
+  <li><strong>Schul-Shelter (Klassenzimmer):</strong> auf der <strong>Schul</strong>-Karte — verschlossenes Klassenzimmer, Zugang nur mit <strong>physischem Schlüssel</strong>.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158410/cms-uploads/cms-1776158410763-6355250.webp" alt="Schul-Klassenzimmer-Shelter" width="50%"></p>
+  <ol>
+  <li><strong>Dachboden-Shelter:</strong> mehr Platz als die Starthütte. Schlüssel über die <strong>letzte Händler-Quest</strong>.</li>
+  </ol>
+  <p><br></p>
+  <p>!!! <strong>Highway-Tunnel-Stash:</strong> versteckt in einem Tunnel auf der <strong>Highway</strong>-Karte — eher ein verschlossener <strong>Stash</strong> als ein volles Shelter, braucht aber ebenfalls einen speziellen Schlüssel.</p>
+  <h2>Klassenzimmer-Schlüssel &amp; andere Schlüssel</h2>
+  <p>Klassenzimmer, Dachboden und Highway-Tunnel sind gesperrt. Zuverlässige Wege:</p>
+  <ol>
+  <li><strong>Händler-Quests:</strong> Questlines voranbringen — z. B. Dachboden-Schlüssel nach der finalen Händler-Quest.</li>
+  <li><strong>Loot in Hotspots:</strong> Schlüssel in Hochwert-Zonen; bestätigt u. a. <strong>Sporthalle</strong> auf der Schulkarte, teils tief in <strong>Vostok</strong> im Endgame.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158642/cms-uploads/cms-1776158642474-180454868.webp" alt="Road to Vostok Schlüssel" width="50%"></p>
+  <h2>Shelter-Management &amp; Survival</h2>
+  <p>Den Ort finden reicht nicht — baue eine effiziente Logistikbasis.</p>
+  <h3>1. F1 Platzierungs-System</h3>
+  <p>Container und Möbel bei Händlern kaufen (<strong>Arzt</strong> für Regale empfehlenswert). Im Shelter:</p>
+  <ol>
+  <li><strong>F1</strong> für Platzierungsmodus.</li>
+  <li>Maus zum Setzen, Mausrad + Rechtsklick zum Drehen.</li>
+  </ol>
+  <h3>2. Mental-Regeneration</h3>
+  <p>Versteckter Mental-Wert: Nach Gefechten schnell regenerieren, indem du am <strong>Feuer im Shelter</strong> stehst.</p>
+  <h3>3. Item-Verlust minimieren</h3>
+  <p>Hardcore-Tipp: droht Tod durch Blutung/Krankheit <strong>im Shelter</strong>, lege Wertvolles <strong>auf den Boden</strong>, bevor du stirbst — reduziert Verlust von Ausrüstung (je nach Patch).</p>
+  <h2>Mit der interaktiven Karte navigieren</h2>
+  <p>Kartenverbindungen sind entscheidend — z. B. gerade durch die Schule zum Außenposten.</p>
+  <p>Für Routenplanung empfehlen wir unsere interaktive <a href="https://roadtovostok.org/map">Road-to-Vostok-Karte</a> — Schlüssel, Loot-Hotspots und sichere Wege zum Bunker.</p>
+  <h2>Community-Mods: Katze &amp; QoL</h2>
+  <ol>
+  <li><strong>Immortal Cat / Shelter-Katze:</strong> Mods, damit die Katze nicht stirbt — weniger Mikromanagement.</li>
+  <li><strong>Kein Hunger/Durst im Shelter:</strong> ideal zum Sortieren und Regale bauen ohne Rationen zu verbrennen.</li>
+  </ol>
+  <p>(Mehr Guides und Updates: <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
+  },
 }

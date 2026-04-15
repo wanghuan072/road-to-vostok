@@ -176,10 +176,10 @@
       "linkMap": "Map",
       "leadMid": "and",
       "linkTasks": "Tasks",
-      "leadEnd": "for locations and objectives — the compass block below mirrors every main section.",
-      "caption": "Area 05 village layout (preview)",
-      "villageMapBlurb": "Interactive village map: loot, traders, tasks, and exits on the Area 05 raster — open the full map to filter pins and deep-link locations.",
-      "villageMapLinkAria": "Open the interactive village map (Area 05 detail)",
+      "leadEnd": "for locations and objectives. The key art on the right is decorative. The compass block below still mirrors every main section.",
+      "caption": "Key art",
+      "heroImgAria": "Homepage hero illustration",
+      "heroImgBlurb": "Atmosphere only — use Map or Interactive map in the buttons for the live site.",
       "btnAdvancedGuides": "Advanced guides",
       "btnInteractiveMap": "Interactive map"
     },
@@ -645,6 +645,7 @@
   },
   "mapPage": {
     "breadcrumb": "Map",
+    "heroMosaicNavAria": "Area map strip: seven thumbnails in one row with path-like offsets; click to switch map; current page is highlighted.",
     "title": "Road To Vostok Map",
     "introHtml": "Use the map for Area 05, the Border Zone, and Vostok, then read the regional overview and Area 05 notes below. For trader tasks, border crossings, and Vostok rules, open the <a href=\"/tasks\">Tasks</a> page. Verify against your installed build.",
     "sectionKicker": "World overview",

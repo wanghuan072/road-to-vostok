@@ -1,4 +1,81 @@
 /* 栅格 / 村庄地图页 MapRasterM01–M07 — 选择器挂在 .map-raster-page 下 */
+
+/* Hero：正文左；右侧七图 — 外框相对定位、宽 50%、固定高；7 个链接绝对定位 + 固定 72×72，只改每项 top/left */
+.map-raster-page .map-raster-hero-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: clamp(1rem, 3vw, 2.25rem);
+}
+
+@media (min-width: 721px) {
+  .map-raster-page .map-raster-hero-row {
+    grid-template-columns: 1fr 1.9fr;
+  }
+}
+
+.map-raster-page .map-raster-hero-row__main {
+  min-width: 0;
+}
+
+.map-raster-page .map-raster-hero-mosaic {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 18rem;
+  margin-inline-start: auto;
+  padding: 0.35rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-panel);
+}
+
+.map-raster-page .map-raster-hero-mosaic__item {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+.map-raster-page .map-raster-hero-mosaic__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.map-raster-page .map-raster-hero-mosaic__item:nth-child(1) { top: 9rem; left: 0.5rem; }
+.map-raster-page .map-raster-hero-mosaic__item:nth-child(2) { top: 0.5rem; left: 72px; }
+.map-raster-page .map-raster-hero-mosaic__item:nth-child(3) { top: 3.5rem; left: 12.9rem; }
+.map-raster-page .map-raster-hero-mosaic__item:nth-child(4) { top: 5rem; left: 21.3rem; }
+.map-raster-page .map-raster-hero-mosaic__item:nth-child(5) { top: 6rem; left: 29.6rem; }
+.map-raster-page .map-raster-hero-mosaic__item:nth-child(6) { top: 5.8rem; left: 38rem; }
+.map-raster-page .map-raster-hero-mosaic__item:nth-child(7) { top: 1.6rem; left: 46.4rem; }
+
+.map-raster-page .map-raster-hero-mosaic__item--active {
+  outline: 2px solid var(--color-signal);
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+.map-raster-page .map-raster-hero-mosaic__item:focus-visible {
+  outline: 2px solid var(--color-primary-soft);
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+@media (max-width: 720px) {
+  .map-raster-page .map-raster-hero-mosaic {
+    width: 100%;
+    margin-inline: 0;
+  }
+}
+
 .map-raster-page .map-legend--village {
   gap: 0.5rem 0.85rem;
 }
@@ -294,4 +371,25 @@
   font-weight: 700;
   color: var(--color-text);
   opacity: 0.9;
+}
+
+/* 右下角归一化坐标 HUD（MapRasterM01–M07，与第一张村庄图一致） */
+.map-raster-page .map-stage .raster-coord-hud {
+  position: absolute;
+  z-index: 1100;
+  right: max(10px, env(safe-area-inset-right, 0px));
+  left: auto;
+  bottom: max(10px, env(safe-area-inset-bottom, 0px));
+  max-width: min(100% - 20px, 18rem);
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
+  background: color-mix(in srgb, #0a0c0b 92%, var(--color-panel));
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--color-text) 92%, #8fa);
+  pointer-events: none;
+  word-break: break-all;
 }

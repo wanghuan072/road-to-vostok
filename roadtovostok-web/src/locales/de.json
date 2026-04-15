@@ -652,6 +652,7 @@
   },
   "mapPage": {
     "breadcrumb": "Karte",
+    "heroMosaicNavAria": "Miniaturraster der Kartensegmente im Gesamtlayout: Klick wechselt die Karte; die aktuelle Seite ist hervorgehoben.",
     "title": "Road To Vostok Karte",
     "introHtml": "Karte für Area 05, Grenzzone und Vostok; regionaler Überblick unten. Händler-Aufgaben und Vostok-Regeln: <a href=\"/tasks\">Aufgaben</a>. Mit installiertem Build abgleichen.",
     "sectionKicker": "Weltüberblick",

@@ -4,15 +4,28 @@
  * 新子类型：`kinds[]` 含 `id`、`label`、`pinIcon`（`PIN_ICON_BY_ID`）、`pinColor`（`#rrggbb`）；pins 的 `kind` 与 `id` 一致。
  */
 
-export const mapLegend = []
+export const mapLegend = [
+  { id: 'locations', label: 'Locations' },
+]
 
-export const mapCategories = []
+export const mapCategories = [
+  {
+    id: 'locations',
+    label: 'Locations',
+    kinds: [
+      { id: 'road', label: 'Map Transition', pinIcon: 'location', pinColor: '#4a9eff' },
+    ],
+  },
+]
 
-const pins = []
+const pins = [
+  { id: 'road-1', title: 'School', category: 'locations', kind: 'road', x: 0.1823, y: 0.4922, content: `<p>Map Transition</p><a href="/map/school-map">View Map</a>` },
+  { id: 'road-2', title: 'Minefield', category: 'locations', kind: 'road', x: 0.8157, y: 0.6661, content: `<p>Map Transition</p><a href="/map/minefield-map">View Map</a>` },
+]
 
 export default {
   mapId: 'map04',
-  imageUrl: '/images/map/map-05.png',
+  imageUrl: '/images/map/map-04.png',
   pinCategoryField: 'category',
   mapLegend,
   mapCategories,

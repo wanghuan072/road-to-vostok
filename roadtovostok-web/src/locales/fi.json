@@ -643,6 +643,7 @@
   },
   "mapPage": {
     "breadcrumb": "Kartta",
+    "heroMosaicNavAria": "Kartan palat alkuperäisessä järjestyksessä: klikkaa vaihtaaksesi karttaa; nykyinen sivu korostuu.",
     "title": "Road To Vostok -kartta",
     "introHtml": "Käytä karttaa Area 05:lle, rajavyöhykkeelle ja Vostokille, lue sitten aluekatsaus ja Area 05 -huomiot alla. Kauppiaiden tehtäviin, rajanylityksiin ja Vostok-sääntöihin avaa <a href=\"/tasks\">Tehtävät</a>. Varmista asennetusta versiosta.",
     "sectionKicker": "Maailman yleiskuva",

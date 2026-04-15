@@ -495,4 +495,68 @@ export default {
   <li><strong>Spawns ennemis :</strong> peuvent apparaître dans le dos après avoir vidé une zone.</li>
   </ol>`,
   },
+
+  'road-to-vostok-shelter-locations': {
+    title:
+      'Road to Vostok — Emplacements des abris : carte complète &amp; déblocage',
+    description:
+      'Tous les abris Road to Vostok (tente, bunker, école…), clé de la salle de classe et carte interactive pour survivre et optimiser le loot.',
+    imageAlt: 'Abris Road to Vostok',
+    tags: ['Road to Vostok', 'Abris', 'Carte', 'Clé'],
+    seo: {
+      title:
+        'Road to Vostok — Emplacements des abris : carte complète &amp; déblocage',
+      description:
+        'Liste des abris, tente et bunker, école, clé de classe, gestion et carte interactive pour routes de farm en sécurité.',
+      keywords:
+        'road to vostok shelter, emplacements abris, tente, carte, bunker, école, chat, clé salle de classe',
+    },
+    detailsHtml: `<h1>Guide ultime des abris Road to Vostok : lieux &amp; déblocages</h1>
+  <p>Dans la survie hardcore de <strong>Road to Vostok</strong>, l'abri est votre zone sûre pour stocker, récupérer et tenir. Du stash début à l'arsenal final, connaître chaque site et mécanique est indispensable.</p>
+  <p>Ce guide synthétise les abris connus, l'obtention des clés et la gestion d'abri à partir d'infos communautaires vérifiées.</p>
+  <h2>Intel : types d'abris</h2>
+  <p>Deux familles : <strong>débloqués dès le départ</strong> et <strong>via quêtes / clés</strong>. Maîtriser les emplacements accélère le farm inter-cartes.</p>
+  <h3>Abris de départ</h3>
+  <ol>
+  <li><strong>Cabane (village) :</strong> premier abri, petit mais vital pour le début.</li>
+  <li><strong>Tente (avant-poste) :</strong> disponible tout de suite — à gauche en arrivant de l'école, en face de la vallée de la grande grange rouge.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158305/cms-uploads/cms-1776158305834-85606712.webp" alt="Cabane village et grenier" width="50%"></p>
+  <h3>Abris déblocables &amp; points de stockage</h3>
+  <ol>
+  <li><strong>Bunker (avant-poste) :</strong> grand abri de haut niveau — exige équipement solide, éliminer le <strong>« Punisher »</strong>, récupérer son chapeau, puis quête du marchand d'armes à l'avant-poste.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158461/cms-uploads/cms-1776158461157-243281608.webp" alt="Tente et bunker avant-poste" width="50%"></p>
+  <ol>
+  <li><strong>École (salle de classe) :</strong> sur la carte <strong>École</strong> — pièce verrouillée, accès par <strong>clé physique</strong>.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158410/cms-uploads/cms-1776158410763-6355250.webp" alt="Salle de classe abri école" width="50%"></p>
+  <ol>
+  <li><strong>Grenier :</strong> plus spacieux que la cabane de départ — clé via la <strong>quête finale du marchand</strong>.</li>
+  </ol>
+  <p><br></p>
+  <p>!!! <strong>Tunnel autoroute :</strong> stash caché dans un tunnel sur la carte <strong>Highway</strong> — plutôt un <strong>stash</strong> verrouillé qu'un abri complet, mais clé requise.</p>
+  <h2>Clé de la salle de classe &amp; autres clés</h2>
+  <ol>
+  <li><strong>Quêtes marchands :</strong> progression des lignes — ex. clé du grenier après la quête finale.</li>
+  <li><strong>Loot zones chaudes :</strong> clés dans les zones à fort intérêt — confirmé au <strong>gymnase</strong> de l'école, parfois profond dans <strong>Vostok</strong> en fin de jeu.</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158642/cms-uploads/cms-1776158642474-180454868.webp" alt="Clés Road to Vostok" width="50%"></p>
+  <h2>Gestion d'abri &amp; mécaniques</h2>
+  <h3>1. Placement F1</h3>
+  <p>Achetez meubles et conteneurs (le <strong>docteur</strong> pour étagères). Au shelter : <strong>F1</strong> pour placer ; molette + clic droit pour pivoter.</p>
+  <h3>2. Mental</h3>
+  <p>Rester près du <strong>feu dans l'abri</strong> remonte vite le mental après les combats.</p>
+  <h3>3. Limite les pertes</h3>
+  <p>Si la mort approche (saignement, maladie) <strong>dans l'abri</strong>, jetez vite les objets précieux au sol avant de mourir pour limiter la perte d'équipement (selon version).</p>
+  <h2>Carte interactive</h2>
+  <p>Les liaisons entre cartes comptent — ex. traverser l'école pour rejoindre l'avant-poste.</p>
+  <p>Utilisez notre <a href="https://roadtovostok.org/map">carte interactive Road to Vostok</a> pour clés, spawns et route bunker.</p>
+  <h2>Mods communautaires : chat &amp; QoL</h2>
+  <ol>
+  <li><strong>Chat immortel :</strong> évite de gérer la survie du félin dans l'abri.</li>
+  <li><strong>Pas de faim/soif en abri :</strong> pratique pour trier et aménager sans gaspiller les rations.</li>
+  </ol>
+  <p>(Plus de guides : <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
+  },
 }

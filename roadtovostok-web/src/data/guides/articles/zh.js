@@ -503,4 +503,75 @@ export default {
   <li><strong>刷新：</strong>保持警惕，敌人可能在你刚清过的位置背后生成。</li>
   </ol>`,
   },
+
+  'road-to-vostok-shelter-locations': {
+    title: 'Road to Vostok 避难所位置：全地图与解锁指南',
+    description:
+      '盘点《Road to Vostok》全部避难所（帐篷、地堡、教室等），教室钥匙与其它钥匙的获取方式，并配合互动地图规划生存与搜刮路线。',
+    imageAlt: 'Road to Vostok 避难所',
+    tags: ['Road to Vostok', '避难所', '地图', '钥匙'],
+    seo: {
+      title: 'Road to Vostok 避难所位置：全地图与解锁指南',
+      description:
+        '全部避难所位置（帐篷、地堡、教室）、钥匙获取与避难所管理要点；配合互动地图规划最安全路线。',
+      keywords:
+        'road to vostok, 避难所, 避难所位置, 帐篷, 地图, 地堡, 学校避难所, 猫, 教室钥匙',
+    },
+    detailsHtml: `<h1>《Road to Vostok》避难所终极指南：全部位置与解锁方式</h1>
+  <p>在硬核生存世界《Road to Vostok》中，避难所是你存放战利品、回复状态、延续生命的<strong>绝对安全区</strong>。无论是整理开荒背包还是打造终极军火库，掌握每一处避难所的坐标与机制都是老手必修课。</p>
+  <p>本篇依据已验证的社区情报，系统梳理全部已知避难所、钥匙获取方式与避难所管理要点。</p>
+  <h2>核心情报：避难所分类与位置</h2>
+  <p>游戏中的避难所分为两类：<strong>开局即可使用</strong>与<strong>需任务/钥匙解锁</strong>。熟记这些位置能显著提升跨图搜刮效率。</p>
+  <h3>开局避难所</h3>
+  <p>新玩家可立即使用下列两处休息与储物：</p>
+  <ol>
+  <li>木屋避难所：位于<strong>村庄</strong>地图，是流程中第一个避难所。室内空间有限，但对前期囤积必不可少。</li>
+  <li>帐篷避难所：开局即可用，位于<strong>前哨</strong>地图。从学校图进入前哨后，可在入口<strong>左侧</strong>找到（与大红色谷仓隔谷相对的一侧）。</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158305/cms-uploads/cms-1776158305834-85606712.webp" alt="村庄木屋与阁楼避难所" width="50%"></p>
+  <h3>可解锁避难所与储物点</h3>
+  <p>在开局区域之外，还有更高价值的安全区与储藏点，但需满足特定条件：</p>
+  <ol>
+  <li>地堡避难所：顶级大型避难所之一，位于<strong>前哨</strong>。解锁要求高：需武装到能击杀「Punisher（行刑者）」并拿到其帽子，再回前哨完成军火商人相关任务。</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158461/cms-uploads/cms-1776158461157-243281608.webp" alt="前哨帐篷与地堡避难所" width="50%"></p>
+  <ol>
+  <li>学校教室避难所：位于<strong>学校</strong>地图内的上锁房间（教室），需要<strong>实体钥匙</strong>进入。</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158410/cms-uploads/cms-1776158410763-6355250.webp" alt="学校教室避难所" width="50%"></p>
+  <ol>
+  <li>阁楼避难所：比初始木屋更大、储物空间更足。完成商人最终任务可获得钥匙解锁。</li>
+  </ol>
+  <p><br></p>
+  <p>!!! 公路隧道储物点：隐藏在<strong>公路</strong>地图隧道中。严格来说它更像带锁的<strong>储藏点（stash）</strong>而非功能完备的避难所，但仍需特定钥匙才能启用存放战利品。</p>
+  <h2>如何获得教室钥匙与其它钥匙</h2>
+  <p>教室、阁楼、公路隧道等高价值区域上锁。若你在找教室钥匙或其它避难所钥匙，目前游戏内主要有两条可靠途径：</p>
+  <ol>
+  <li>商人任务线：推进各商人任务；例如阁楼钥匙可在完成商人最终任务后稳定获得。</li>
+  <li>重点区域搜刮：偏好探索的玩家可在高价值区域拾取钥匙。已确认的刷新点包括学校地图体育馆等，甚至在终局危险区「沃斯托克（Vostok）」深处也可能出现。</li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158642/cms-uploads/cms-1776158642474-180454868.webp" alt="Road to Vostok 各类钥匙" width="50%"></p>
+  <h2>避难所管理与生存机制</h2>
+  <p>找到避难所只是第一步，硬核玩家还需把它建成高效后勤基地。</p>
+  <h3>1. F1 布置与收纳系统</h3>
+  <p>本作支持深度自定义避难所。可向商人购买容器与家具（置物架首推医生商人）。回到避难所后：</p>
+  <ol>
+  <li>按 <strong>F1</strong> 进入摆放模式。</li>
+  <li>用鼠标放置物品；滚轮 + 右键可旋转。</li>
+  </ol>
+  <h3>2. 精神值回复</h3>
+  <p>游戏存在隐藏的<strong>心理健康</strong>机制：激烈交火后，只要在避难所内待在火旁，精神状态会较快回升。</p>
+  <h3>3. 极限止损：避免装备连带丢失</h3>
+  <p>重要技巧：若你因流血、疾病等要在避难所内濒死，请在死亡前把贵重物品<strong>丢在地上</strong>，可降低装备连带损失风险（以当前版本机制为准）。</p>
+  <h2>用互动地图高效导航</h2>
+  <p>熟记地图衔接对安全转移至关重要。例如从学校直线穿过即可抵达前哨。</p>
+  <p>对新手与规划终极搜刮路线的玩家，我们强烈推荐使用本站独家互动 <a href="https://roadtovostok.org/map">Road to Vostok 地图</a>，持续更新、覆盖钥匙与高价值刷新点，并辅助规划前往地堡的最安全路线。</p>
+  <h2>社区模组：避难所猫与 QoL</h2>
+  <p>在高压原版环境下，不少玩家借助社区模组改善避难所体验：</p>
+  <ol>
+  <li>Road to Vostok 猫 / 不死猫模组：避难所里可能有一只需照料的猫；安装 Immortal Cat（不死猫）类模组可让其无法死亡，省去额外管理负担。</li>
+  <li>避难所内不消耗饮食模组：在安全屋内不降低饥渴值，适合长时间整理货架、打造仓储的囤积型玩家。</li>
+  </ol>
+  <p>（更多硬核攻略与战术更新，请持续关注 <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>。）</p>`,
+  },
 }

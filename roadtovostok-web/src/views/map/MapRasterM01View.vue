@@ -2,16 +2,19 @@
   <article class="map-page page-article map-raster-page">
     <section class="page-hero-section">
       <div class="container">
-        <div class="page-hero-content">
-          <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
-            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
-            <span aria-hidden="true">/</span>
-            <a :href="getLocalizedPath('/map')">{{ $t('mapPage.breadcrumb') }}</a>
-            <span aria-hidden="true">/</span>
-            <span>{{ $t('mapVillagePage.breadcrumbCurrent') }}</span>
-          </nav>
-          <h1>{{ $t('mapVillagePage.title') }}</h1>
-          <p v-html="$t('mapVillagePage.introHtml')"></p>
+        <div class="map-raster-hero-row">
+          <div class="page-hero-content map-raster-hero-row__main">
+            <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+              <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
+              <span aria-hidden="true">/</span>
+              <a :href="getLocalizedPath('/map')">{{ $t('mapPage.breadcrumb') }}</a>
+              <span aria-hidden="true">/</span>
+              <span>{{ $t('mapVillagePage.breadcrumbCurrent') }}</span>
+            </nav>
+            <h1>{{ $t('mapVillagePage.title') }}</h1>
+            <p v-html="$t('mapVillagePage.introHtml')"></p>
+          </div>
+          <MapRasterHeroMosaic />
         </div>
       </div>
     </section>
@@ -51,6 +54,13 @@
                   :aria-label="$t('mapVillagePage.mapAppAria')"
                   tabindex="0"
                 />
+                <div
+                  v-show="mapReady"
+                  class="raster-coord-hud"
+                  aria-hidden="true"
+                >
+                  {{ coordHud }}
+                </div>
                 <aside
                   v-if="mapReady"
                   ref="filterRailRef"
@@ -142,12 +152,15 @@
 </template>
 
 <script setup>
-import { nextTick } from 'vue'
+import { nextTick, ref } from 'vue'
 import map01 from '../../data/map/maps/map01.js'
+import MapRasterHeroMosaic from './MapRasterHeroMosaic.vue'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { useRasterMapPage } from './useRasterMapPage.js'
 
 const { getLocalizedPath } = useLocalizedPath()
+
+const coordHud = ref('—')
 
 const {
   mapContainer,
@@ -163,7 +176,7 @@ const {
   categoryAllOn,
   focusKindPins,
   syncCategoryMasterCheckboxes,
-} = useRasterMapPage(map01)
+} = useRasterMapPage(map01, { coordHud })
 </script>
 
 <style src="./raster-map-pages.css"></style>

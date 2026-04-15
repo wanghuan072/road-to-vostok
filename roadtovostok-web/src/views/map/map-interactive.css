@@ -951,6 +951,35 @@
   color: var(--color-muted, #9aa3ad);
 }
 
+.map-page .rtv-map-popup__html {
+  margin: 0.25rem 0 0;
+  color: var(--color-muted, #9aa3ad);
+}
+
+.map-page .rtv-map-popup__html a {
+  color: var(--color-primary-soft, #a8c4d4);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.map-page .rtv-map-popup__html a:hover {
+  color: var(--color-signal-soft, #e8b86a);
+}
+
+.map-page .map-poi-detail__body a,
+.map-page .map-poi-entry__text a,
+.map-page .poi-list-blurb a {
+  color: var(--color-primary-soft);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.map-page .map-poi-detail__body a:hover,
+.map-page .map-poi-entry__text a:hover,
+.map-page .poi-list-blurb a:hover {
+  color: var(--color-signal-soft);
+}
+
 .map-page .rtv-map-popup__meta {
   margin: 0.4rem 0 0;
   font-size: 0.72rem;

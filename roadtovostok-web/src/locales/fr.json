@@ -643,6 +643,7 @@
   },
   "mapPage": {
     "breadcrumb": "Carte",
+    "heroMosaicNavAria": "Vignettes des cartes dans la disposition d’origine : cliquer pour ouvrir une carte ; la page actuelle est mise en évidence.",
     "title": "Carte Road To Vostok",
     "introHtml": "Utilisez la carte pour la zone 05, la zone frontière et Vostok, puis lisez la vue régionale et les notes zone 05 ci-dessous. Pour les quêtes marchands, passages frontière et règles Vostok, ouvrez la page <a href=\"/tasks\">Quêtes</a>. Vérifiez en jeu.",
     "sectionKicker": "Vue du monde",

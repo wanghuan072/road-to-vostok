@@ -123,9 +123,11 @@
                           decoding="async"
                         >
                       </figure>
-                      <p class="map-poi-detail__body">
-                        {{ selectedPoi.content }}
-                      </p>
+                      <div
+                        v-if="selectedPoi.content"
+                        class="map-poi-detail__body"
+                        v-html="selectedPoi.content"
+                      ></div>
                       <a
                         v-if="selectedPoi.link"
                         :href="selectedPoi.link"
@@ -154,12 +156,11 @@
                         >
                           <span class="map-poi-entry__kind">{{ entryKindLabel(ent.kind) }}</span>
                           <strong class="map-poi-entry__title">{{ ent.title }}</strong>
-                          <p
+                          <div
                             v-if="ent.content"
                             class="map-poi-entry__text"
-                          >
-                            {{ ent.content }}
-                          </p>
+                            v-html="ent.content"
+                          ></div>
                           <figure
                             v-if="ent.image"
                             class="map-poi-entry__figure"
@@ -242,9 +243,11 @@
                         <span class="poi-list-label">{{ p.title }}</span>
                         <span class="poi-list-chevron" aria-hidden="true">→</span>
                       </button>
-                      <p class="poi-list-blurb">
-                        {{ p.content }}
-                      </p>
+                      <div
+                        v-if="p.content"
+                        class="poi-list-blurb"
+                        v-html="p.content"
+                      ></div>
                       <ul
                         v-if="locationEntries(p).length"
                         class="poi-list-sub"
@@ -529,7 +532,10 @@ function buildPopupHtml(p) {
   const meta = titles.length
     ? `<p class="rtv-map-popup__meta">${escapeHtml(titles.slice(0, 6).join(' · '))}${titles.length > 6 ? '…' : ''}</p>`
     : ''
-  return `<div class="${cls}"><div class="rtv-map-popup__body"><strong>${escapeHtml(p.title)}</strong><p>${escapeHtml(p.content)}</p>${meta}</div>${thumb}</div>`
+  const bodyHtml = p.content
+    ? `<div class="rtv-map-popup__html">${String(p.content)}</div>`
+    : ''
+  return `<div class="${cls}"><div class="rtv-map-popup__body"><strong>${escapeHtml(p.title)}</strong>${bodyHtml}${meta}</div>${thumb}</div>`
 }
 
 /** Normalized top-left image coords → Leaflet CRS.Simple lat/lng for our bounds. */
