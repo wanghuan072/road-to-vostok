@@ -79,14 +79,18 @@
                       @click="closeMenus"
                     >{{ $t('site.navMapOverview') }}</a>
                   </li>
-                  <li role="none">
+                  <li
+                    v-for="item in MAP_GAME_MAPS_NAV"
+                    :key="'map-game-' + item.path"
+                    role="none"
+                  >
                     <a
                       role="menuitem"
-                      :href="getLocalizedPath('/map/village-map')"
+                      :href="getLocalizedPath(item.path)"
                       class="nav-dropdown-item"
-                      :class="{ 'is-active': isVillageMapActive }"
+                      :class="{ 'is-active': isGameDetailMapPathActive(item.path) }"
                       @click="closeMenus"
-                    >{{ $t('site.navMapVillage') }}</a>
+                    >{{ $t(item.labelKey) }}</a>
                   </li>
                 </ul>
               </div>
@@ -141,6 +145,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useLocalizedPath, stripLocaleFromFullPath, applyLocalePrefix } from '../composables/useLocalizedPath.js'
 import { localeNames, supportedLocales } from '../i18n/index.js'
+import { MAP_GAME_MAPS_NAV } from '../router/index.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -182,9 +187,19 @@ function isNavActive(logicalTo) {
 
 const isWorldMapActive = computed(() => normalizedLogicalPath() === '/map')
 
-const isVillageMapActive = computed(() => normalizedLogicalPath() === '/map/village-map')
+function isGameDetailMapPathActive(path) {
+  const logical = normalizedLogicalPath()
+  const segment = path.replace(/\/$/, '')
+  return logical === segment
+}
 
-const isMapDropdownActive = computed(() => isWorldMapActive.value || isVillageMapActive.value)
+const isAnyGameDetailMapActive = computed(() =>
+  MAP_GAME_MAPS_NAV.some((item) => isGameDetailMapPathActive(item.path)),
+)
+
+const isMapDropdownActive = computed(
+  () => isWorldMapActive.value || isAnyGameDetailMapActive.value,
+)
 
 function closeMenus() {
   menuOpen.value = false
@@ -510,6 +525,36 @@ onUnmounted(() => {
     0 12px 36px rgba(0, 0, 0, 0.35),
     0 0 0 1px color-mix(in srgb, var(--color-ice) 12%, transparent);
   z-index: 125;
+}
+
+.nav-dropdown-divider {
+  height: 1px;
+  margin: 0.35rem 0.25rem;
+  padding: 0;
+  list-style: none;
+  background: color-mix(in srgb, var(--color-border) 80%, transparent);
+}
+
+.nav-dropdown-group-label {
+  list-style: none;
+  margin: 0.15rem 0 0.2rem;
+  padding: 0.2rem 0.5rem 0.1rem;
+  pointer-events: none;
+}
+
+.nav-dropdown-group-text {
+  font-family: var(--font-journey);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-ice-dim);
+  opacity: 0.9;
+}
+
+.nav-dropdown-item--raster {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
 }
 
 .nav-dropdown-item {

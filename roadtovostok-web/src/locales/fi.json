@@ -90,6 +90,11 @@
       "description": "Road To Vostok -interaktiivinen kartta: Area 05, rajavyöhyke ja Vostok, haettava indeksi ja aluekatsaus. Käytä pelin kartan kanssa ja varmista koordinaatit asiakkaassa.",
       "keywords": "Road To Vostok kartta, Area 05, rajavyöhyke, Vostok, POI, sijaintihakemisto"
     },
+    "mapVillagePage": {
+      "title": "Road To Vostok — kyläkartta — Area 05 yksityiskohta | interaktiiviset POI:t",
+      "description": "Road To Vostok -kylän tarkennuskartta (Area 05): suodatettavat merkit suojille, kauppiaille, lootille, poistumille ja uhkille. Kolmannen osapuolen opas — yhdistä maailmanäkymään ja vahvista merkit pelissä.",
+      "keywords": "Road To Vostok, kyläkartta, Area 05, Suomi, interaktiivinen kartta, POI, suoja, kauppias, loot, poistuminen, bandiitit, Early Access, peliopas"
+    },
     "tasksPage": {
       "title": "Road To Vostok tehtävät — eteneminen, raja ja Vostok-säännöt",
       "description": "Road To Vostok -tehtävät ja eteneminen: kauppiaiden tavoitteet, rajanylitykset, Vostok-permadeath-säännöt ja ehdotettu järjestys. Varmista tehtävien käyttäytyminen versiossasi.",
@@ -125,6 +130,36 @@
       "title": "Modi-artikkeli — Road To Vostok",
       "description": "Road To Vostok -modivalokeila: ominaisuuskatsaus, yhteensopivuus, lataajan vaatimukset ja latauslinkit.",
       "keywords": "Road To Vostok, modit, modausopas, Early Access"
+    },
+    "mapRasterM02Page": {
+      "title": "Road To Vostok Highway-kartta — interaktiiviset POI:t ja suodattimet | opas",
+      "description": "Highway-osuuden interaktiivinen kartta Road To Vostokissa: legenda, luokkasuodattimet ja kiinnostavat pisteet rajatien varrella. Yhdistä maailman- ja kylänäkymään; tarkista merkit omassa Early Access -versiossasi.",
+      "keywords": "Road To Vostok Highway kartta, interaktiivinen kartta, Highway POI, survival Suomi, alue 05, rajavyöhyke, Early Access opas"
+    },
+    "mapRasterM03Page": {
+      "title": "Road To Vostok koulu-kartta — interaktiivinen asettelu ja POI-suodattimet",
+      "description": "Koulualueen lähikartta: luokat, suodattimet ja huone-/pihamerkit. Täydentää kylä- ja Highway-karttoja; tarkista spawnaus ja uloskäynnit patchien jälkeen pelissä.",
+      "keywords": "Road To Vostok koulu kartta, interaktiivinen kartta, POI, survival opas, Early Access"
+    },
+    "mapRasterM04Page": {
+      "title": "Road To Vostok etukartta — interaktiiviset POI:t ja suodattimet",
+      "description": "Etuaseman alue: reitit, suoja ja kontit suodattimilla. Itsenäinen pelaajaopas — ei virallinen koordinaattilista; vahvista asennetulla versiolla.",
+      "keywords": "Road To Vostok etukartta, interaktiivinen kartta, rajavyöhyke POI, Early Access"
+    },
+    "mapRasterM05Page": {
+      "title": "Road To Vostok miinakenttä — riskit, POI:t ja suodattimet",
+      "description": "Miinoitettu käytävä: kartta vain suuntaa varten. Lue Minefield-opas; merkit eivät ole turvallisia vapaita kaistoja.",
+      "keywords": "Road To Vostok miinakenttä, interaktiivinen kartta, miinat survival, Early Access"
+    },
+    "mapRasterM06Page": {
+      "title": "Road To Vostok kerrostalo-kartta — tiheät POI:t ja suodattimet",
+      "description": "Tiivis kerrostaloalue: porrashuoneet, asunnot ja kujat vertikaaliseen lootaukseen. Ovet ja loot muuttuvat patcheissa — tarkista pelissä.",
+      "keywords": "Road To Vostok asunnot kartta, interaktiivinen kartta, kaupunki POI, Early Access opas"
+    },
+    "mapRasterM07Page": {
+      "title": "Road To Vostok terminaali-kartta — myöhäisreitti, POI:t ja suodattimet",
+      "description": "Myöhäisen teollisuus-/keskusalueen kartta: salit, arvohuoneet ja poistumiset. Lue tehtävät ja Vostok-säännöt ennen kallista varustusta.",
+      "keywords": "Road To Vostok terminaali kartta, interaktiivinen kartta, myöhäinen reitti, Early Access"
     }
   },
   "wiki": {},
@@ -399,6 +434,7 @@
     "navMap": "Kartta",
     "navMapOverview": "Maailmankartta",
     "navMapVillage": "Kyläkartta",
+    "navMapRasterGroup": "Rasterikartat",
     "navTasks": "Tehtävät",
     "navGuides": "Oppaat",
     "navMods": "Modit",
@@ -643,6 +679,23 @@
     "regionalSectionHtml": "<h2>Aluekatsaus</h2><p class=\"guide-lead\">Virallinen sivusto kuvaa lineaarista etenemistä: aloitat <strong>Area 05</strong>:stä (Suomi), työnnät itään <strong>rajavyöhykkeen</strong> läpi ja voit lopulta astua <strong>Vostokiin</strong> Venäjällä — kuoleman seuraukset vaihtelevat tasoittain.</p><div class=\"regions\"><article><h3>Area 05</h3><p>Evakuoitu vyöhyke Kaakkois-Suomessa: suojat, kauppiaat, tehtävät ja alkuloot varhaiseen selviytymiseen. Vihamieliset <strong>bandiitit</strong> partioivat aluetta.</p></article><article><h3>Rajavyöhyke</h3><p>Vartioitu raja Suomen ja Venäjän välillä. Ylitykset vaihtelevat: miinat, esteet tai vesireitit veneillä. <strong>Guards</strong> on aseistettu, korruptoitunut ja voi kutsua ilmatukea.</p></article><article><h3>Vostok</h3><p>Korkean riskin ja palkinnon venäläisalue arvokkaimmalla lootilla. Jokainen Vostok-kartta on <strong>permadeath</strong>-kartta. <strong>Sotilas</strong>faktio käyttää raskaita aseita ja panssaroituja ajoneuvoja.</p></article></div>",
     "area05DetailProseHtml": "<h2>Area 05 -karttaopas ja mistä loot tulee</h2><p>Virallisen <strong>Game</strong>-sivun mukaan Area 05 on aloitusalue: evakuoitu vyöhyke <strong>Suomen kaakkoisosassa</strong>, josta löydät <strong>suojat</strong>, <strong>kauppiaat</strong>, <strong>tehtävät</strong> ja <strong>alkulootin</strong> ensimmäiseen selviytymiseen. Rutiinisi keskeyttävät vihamieliset <strong>bandiitit</strong>, jotka hyödyntävät vallan tyhjiötä.</p><h3>Loot ja „spawn-pisteet” käytännössä</h3><p>Sama sivu listaa <strong>fysiikkaan perustuvan lootin</strong> ydinominaisuutena: esineet ovat fyysisiä objekteja maailmassa, eivät abstrakteja valintoja. Kehittäjät <strong>eivät</strong> julkaise julkista kiinteiden koordinaattien taulukkoa roadtovostok.comissa, ja monet järjestelmät on kuvattu <strong>dynaamisiksi</strong> (tapahtumat, sää, uusittavat runit). Tämä sivu <strong>ei</strong> siis listaa taattuja uudistumiskoordinaatteja — ne vaihtelevat patchien ja proseduraalisen asettelun mukaan.</p><ul><li><strong>Taloudenna loogisesti:</strong> etsi asetuksen implikoimia paikkoja (asutukset, tienvarret, hylätyt rakennukset) ja opi nykyisen version loot-tiheys pelissä.</li><li><strong>Käytä kauppiaita ja tehtäviä:</strong> virallinen ominaisuuslista sisältää kaupankäynnin ja tehtävät ydinsilmukan osana suojien rinnalla — vaihtokauppa ja työpalkkiot on tarkoitettu etenemisreiteiksi, eivät vain maaspawneiksi.</li><li><strong>Pysy hengissä säilyttääksesi lootin:</strong> jos kuolet Area 05:ssä, virallisen Vostok-osuuden mukaan menetät vain <strong>kantamasi</strong> — et koko etenemiskontekstia (ankarampi sääntö koskee kuolemaa Vostokissa).</li></ul><p class=\"guide-tools\">Tällä sivustolla: <a href=\"/wiki\">Wiki</a> (varustetaulukot), <a href=\"/getting-started\">Aloita tästä</a> (silmukka, ohjaimet, lääkintäperusteet), <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">Rajan maantiedeopas</a>, <a href=\"/guides/surviving-the-Minefield\">Miinakenttäopas</a>, <a href=\"/tasks\">Tehtävät ja Vostok-säännöt</a>.</p>",
     "area05MapImgAlt": "Area 05 — tunnelmallinen karttareferenssitaide oppaan rinnalla"
+  },
+  "mapVillagePage": {
+    "breadcrumbCurrent": "Kyläkartta",
+    "title": "Road To Vostok — kyläkartta — Area 05 yksityiskohta",
+    "introHtml": "Tämä sivu on <strong>interaktiivinen kyläkartta</strong> Area 05:lle: merkit ryhmiteltynä <strong>Paikkoihin</strong>, <strong>Vihollisiin</strong>, <strong>Tehtäviin</strong>, <strong>Lootiin</strong> ja <strong>NPC:ihin</strong> — sama idea kuin pelin karttasuodattimet. Avaa <a href=\"/map\">maailmanäkymä</a> aluekontekstia varten.",
+    "sectionKicker": "Area 05 · kylä",
+    "sectionTitle": "Interaktiivinen kyläkartta",
+    "hintHtml": "Käytä kartan <strong>vasenta suodatinpaneelia</strong> näyttääksesi tai piilottaaksesi merkkityyppejä; numerot kertovat, montako merkkiä kutakin tyyppiä on tällä kartalla. Napsauta karttaa tai riviä alla olevassa listassa avataksesi tiedot popupissa. Merkin avaamisen jälkeen voit tallentaa sivun kirjanmerkkeihin tai jakaa osoitteen palataksesi samaan kohtaan. Zoomaa rullalla tai nipistämällä; vedä panoroidaksesi.",
+    "mapAppAria": "Road To Vostok kylän asettelukartta. Zoomaa rullalla tai nipistämällä; vedä panoroidaksesi.",
+    "railAria": "Karttasuodattimet ja merkkien määrät",
+    "railKicker": "Kartalla",
+    "railTitle": "Merkit luokittain",
+    "railLeadHtml": "Vaihda luokkia tai alatyyppejä. Numerot näyttävät, montako merkkiä kutakin tyyppiä on tällä kartalla.",
+    "legendAria": "Luokkamerkkien värit",
+    "footnoteHtml": "<strong>Huom:</strong> Itsenäinen pelaajaopas — ei kehittäjän ylläpitämä. Tavaramerkit omistajilleen. Varmista aina merkkien sijainti ja loot asennetussa Road To Vostok -versiossasi.",
+    "belowMapHtml": "<h2>Kyläkarttaopas Road To Vostokiin (Area 05)</h2><p><strong>Road To Vostok</strong> asettaa sinut karkeaan selviytymissilmukkaan Suomen läpi kohti <strong>Vostokia</strong>; virallinen markkinointi kuvaa <strong>Area 05</strong>:ää evakuoituna suomalaisena vyöhykkeenä, jossa on <strong>suojia</strong>, <strong>kauppiaita</strong>, <strong>tehtäviä</strong> ja <strong>alkulootia</strong>, ja jota häiritsevät vihamieliset <strong>bandiitit</strong>. Tämä sivu on <strong>toimituksellinen kolmannen osapuolen asettelu</strong>: interaktiivinen kartta luokkasuodattimilla (paikat, viholliset, tehtävät, loot, NPC), jotta voit suunnitella reittejä, loot-pysähdyksiä ja kauppavierailuja rinnalla <a href=\"/map\">aluekatsauskartan</a> kanssa.</p><h3>Merkkien lukeminen</h3><ul><li>Merkit ovat kuvituksella <strong>likimääräisiä</strong> — pienet siirtymät patchien jälkeen ovat tavallisia; epäselvissä tapauksissa tarkista pelinäkymä.</li><li><strong>Loot-luokat</strong> (laatikot, kaapit, elektroniikka jne.) kuvaavat <em>tyyppejä</em> paikkoja, ei taattuja item-rollaaja.</li><li>Merkin avaamisen jälkeen käytä selaimen kirjanmerkkiä tai jakoa, jotta kaverit avaavat saman popupin.</li></ul><h3>Tarkkuus ja päivitykset</h3><p>Aiheet kuten <strong>Road To Vostok kyläkartta</strong>, <strong>Area 05 -asettelu</strong> tai <strong>kauppiaiden ja suojien sijainnit</strong> on aina tarkistettava asennetun version ja virallisten lähteiden mukaan. Dynaamiset järjestelmät ja proseduraalinen asettelu voivat siirtää spawneja; tämä opas <strong>tukee suunnistusta</strong>, ei korvaa pelin karttaa.</p><h3>Lisää tällä sivustolla</h3><p>Rajanylitykset ja Vostok-säännöt: <a href=\"/tasks\">Tehtävät ja eteneminen</a>; ohjaimet, lääkintä ja ydinloop: <a href=\"/getting-started\">Aloita tästä</a>; aseet, patruunat ja esineet: <a href=\"/wiki\">Wiki</a>.</p>",
+    "backToOverview": "Takaisin maailmanäkymäkarttaan"
   },
   "tasksPage": {
     "breadcrumb": "Tehtävät",
@@ -992,5 +1045,113 @@
     "contactHtml": "Kysymykset näistä ehdoista:",
     "footerPrivacy": "Tietosuojaseloste",
     "footerCopyright": "Tekijänoikeudet"
+  },
+  "mapRasterM02": {
+    "navLabel": "Highway-kartta",
+    "breadcrumbCurrent": "Highway-kartta",
+    "legendAria": "Highway-kartan kategorian värit",
+    "railAria": "Highway-suodattimet ja merkkien määrät",
+    "railKicker": "Kartalla",
+    "railTitle": "Merkit luokittain",
+    "title": "Road To Vostok — Highway-kartta — yksityiskohta ja POI-suodattimet",
+    "introHtml": "<p>Tämä <strong>Highway</strong>-kartta näyttää tien ja rajalinjan alkukylän jälkeen <em>Road To Vostokissa</em>: värilegenda, suodattimet ja merkit kaupoille, suojille, konteille ja vaaroille. Vertaa <a href=\"/map\">maailmanäkymään</a> ja <a href=\"/map/village-map\">kyläkarttaan</a> sijoittaaksesi osuuden alueelle&nbsp;05.</p>",
+    "sectionKicker": "Rajareitti · Highway",
+    "sectionTitle": "Interaktiivinen Highway-kartta",
+    "hintHtml": "Käytä <strong>vasemman reunan suodattimia</strong> näyttääksesi vain tarvittavat merkkityypit. Klikkaa merkkejä infopopupiin; tallenna tai jaa sivu selaimella palataksesi samaan pisteeseen. Zoomaa rullalla tai nipistämällä; vedä panoroidaksesi.",
+    "mapAppAria": "Road To Vostok Highway -kartta. Zoomaa rullalla tai nipistämällä; vedä panoroidaksesi.",
+    "railLeadHtml": "Vaihda luokkia tai alatyyppejä. Numerot kertovat, montako merkkiä kutakin tyyppiä on tällä Highway-kartalla.",
+    "belowMapHtml": "<h2>Miten käytät karttaa</h2><p>Suunnittele ajolinjaa, tunnista kaupat, suojat ja kuumat alueet. Patchit siirtävät lootia ja kohtaamisia — kaikki on vain apua. Tehtäviin ja sääntöihin: <a href=\"/tasks\">tehtävät ja raja / Vostok</a>.</p>",
+    "footnoteHtml": "<strong>Huom:</strong> toimituksellinen; tarkista pelissä.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Maailmanäkymä</a> · <a href=\"/map/village-map\">Kyläkartta</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">Koulu</a> · <a href=\"/map/outpost-map\">Etukartta</a> · <a href=\"/map/minefield-map\">Miinakenttä</a> · <a href=\"/map/apartments-map\">Asunnot</a> · <a href=\"/map/terminal-map\">Terminaali</a></p>"
+  },
+  "mapRasterM03": {
+    "navLabel": "Koulu-kartta",
+    "breadcrumbCurrent": "Koulu-kartta",
+    "legendAria": "Koulu-kartan legenda",
+    "railAria": "Koulu-suodattimet ja määrät",
+    "railKicker": "Kartalla",
+    "railTitle": "Merkit luokittain",
+    "title": "Road To Vostok — Koulu-kartta — yksityiskohta ja POI-suodattimet",
+    "introHtml": "<p><strong>Koulu</strong>-alue lähietäisyydeltä: rakennukset, piha ja uhat. Käytä yhdessä <a href=\"/map\">maailmanäkymän</a> ja <a href=\"/map/highway-map\">Highway-kartan</a> kanssa itää kohti.</p>",
+    "sectionKicker": "Kaupunki · koulu",
+    "sectionTitle": "Interaktiivinen koulu-kartta",
+    "hintHtml": "<strong>Vasen suodatin</strong> vähentää kohinaa; klikkaa merkkejä; kirjanmerkki tai jako avatun merkin jälkeen.",
+    "mapAppAria": "Road To Vostok koulu-kartta. Zoom ja pan.",
+    "railLeadHtml": "Numerot kertovat, montako merkkiä kutakin tyyppiä on tällä koulu-kartalla.",
+    "belowMapHtml": "<h2>Miten käytät karttaa</h2><p>Hyvä linjojen ja loot-järjestyksen harjoitteluun. Tarkista päivitysten jälkeen pelissä. Tekstit: <a href=\"/guides\">Oppaat</a>, jos artikkeli löytyy.</p>",
+    "footnoteHtml": "<strong>Huom:</strong> toimituksellinen.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Maailmanäkymä</a> · <a href=\"/map/village-map\">Kyläkartta</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">Koulu</a> · <a href=\"/map/outpost-map\">Etukartta</a> · <a href=\"/map/minefield-map\">Miinakenttä</a> · <a href=\"/map/apartments-map\">Asunnot</a> · <a href=\"/map/terminal-map\">Terminaali</a></p>"
+  },
+  "mapRasterM04": {
+    "navLabel": "Etukartta",
+    "breadcrumbCurrent": "Etukartta",
+    "legendAria": "Etualueen legenda",
+    "railAria": "Etu-suodattimet ja määrät",
+    "railKicker": "Kartalla",
+    "railTitle": "Merkit luokittain",
+    "title": "Road To Vostok — Etukartta — yksityiskohta ja POI-suodattimet",
+    "introHtml": "<p><strong>Etukartta</strong>: rakennukset, suoja, kontit ja reittivalinnat. <a href=\"/map\">Maailmanäkymä</a> näyttää, missä tämä etappi on kokonaisreitillä.</p>",
+    "sectionKicker": "Tukikohta · etulinja",
+    "sectionTitle": "Interaktiivinen etukartta",
+    "hintHtml": "<strong>Vasen suodatin</strong>; popup klikkauksella; kirjanmerkki tai jako samaan näkymään.",
+    "mapAppAria": "Road To Vostok etukartta. Zoom ja pan.",
+    "railLeadHtml": "Numerot kertovat, montako merkkiä kutakin tyyppiä on tällä etukartalla.",
+    "belowMapHtml": "<h2>Miten käytät karttaa</h2><p>Lähestymiskulmat, huoneet, poistumisaika. Itsenäinen opas — vahvista buildilläsi.</p>",
+    "footnoteHtml": "<strong>Huom:</strong> toimituksellinen.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Maailmanäkymä</a> · <a href=\"/map/village-map\">Kyläkartta</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">Koulu</a> · <a href=\"/map/outpost-map\">Etukartta</a> · <a href=\"/map/minefield-map\">Miinakenttä</a> · <a href=\"/map/apartments-map\">Asunnot</a> · <a href=\"/map/terminal-map\">Terminaali</a></p>"
+  },
+  "mapRasterM05": {
+    "navLabel": "Miinakenttä-kartta",
+    "breadcrumbCurrent": "Miinakenttä-kartta",
+    "legendAria": "Miinakentän legenda",
+    "railAria": "Miina-suodattimet ja määrät",
+    "railKicker": "Kartalla",
+    "railTitle": "Merkit luokittain",
+    "title": "Road To Vostok — Miinakenttä-kartta — yksityiskohta ja POI-suodattimet",
+    "introHtml": "<p><strong>Miinakenttä</strong>: kartta vain <strong>suuntaa</strong> varten. Lue <a href=\"/guides/surviving-the-Minefield\">Minefield-opas</a> — <strong>älä koskaan</strong> oleta viivan olevan turvallinen miinaton kaista.</p>",
+    "sectionKicker": "Riskikäytävä · miinat",
+    "sectionTitle": "Interaktiivinen miinakenttä-kartta",
+    "hintHtml": "<strong>Vasen suodatin</strong> vähentää kohinaa; klikkaa huomautuksia; kirjanmerkki samaan viitteeseen.",
+    "mapAppAria": "Road To Vostok miinakenttä. Zoom ja pan.",
+    "railLeadHtml": "Numerot kertovat, montako merkkiä kutakin tyyppiä on tällä miinakenttä-kartalla.",
+    "belowMapHtml": "<h2>Miten käytät karttaa</h2><p>Yhdistä pelin kuunteluun, hitauteen ja taktiikkaan. Varovaisuus voittaa merkin.</p>",
+    "footnoteHtml": "<strong>Huom:</strong> toimituksellinen.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Maailmanäkymä</a> · <a href=\"/map/village-map\">Kyläkartta</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">Koulu</a> · <a href=\"/map/outpost-map\">Etukartta</a> · <a href=\"/map/minefield-map\">Miinakenttä</a> · <a href=\"/map/apartments-map\">Asunnot</a> · <a href=\"/map/terminal-map\">Terminaali</a></p>"
+  },
+  "mapRasterM06": {
+    "navLabel": "Asunto-kartta",
+    "breadcrumbCurrent": "Asunto-kartta",
+    "legendAria": "Asuntoalueen legenda",
+    "railAria": "Asunto-suodattimet ja määrät",
+    "railKicker": "Kartalla",
+    "railTitle": "Merkit luokittain",
+    "title": "Road To Vostok — Asunto-kartta — yksityiskohta ja POI-suodattimet",
+    "introHtml": "<p><strong>Asunnot</strong>: tiivis kortteli, portaat, asunnot ja käytävät. Ovet ja loot muuttuvat patcheissa — sijoita alue <a href=\"/map\">maailmanäkymään</a>.</p>",
+    "sectionKicker": "Tiivis kaupunki · asunnot",
+    "sectionTitle": "Interaktiivinen asunto-kartta",
+    "hintHtml": "<strong>Vasen suodatin</strong> piilottaa turhat luokat; vihjeet popupissa; kirjanmerkki samaan merkkiin.",
+    "mapAppAria": "Road To Vostok asunto-kartta. Zoom ja pan.",
+    "railLeadHtml": "Numerot kertovat, montako merkkiä kutakin tyyppiä on tällä asunto-kartalla.",
+    "belowMapHtml": "<h2>Miten käytät karttaa</h2><p>Hyvä siipien järjestyksen ja korkeuserojen harjoitteluun. Merkit ovat oppimisapua, eivät lupaus avoimesta ovesta.</p>",
+    "footnoteHtml": "<strong>Huom:</strong> toimituksellinen.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Maailmanäkymä</a> · <a href=\"/map/village-map\">Kyläkartta</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">Koulu</a> · <a href=\"/map/outpost-map\">Etukartta</a> · <a href=\"/map/minefield-map\">Miinakenttä</a> · <a href=\"/map/apartments-map\">Asunnot</a> · <a href=\"/map/terminal-map\">Terminaali</a></p>"
+  },
+  "mapRasterM07": {
+    "navLabel": "Terminaali-kartta",
+    "breadcrumbCurrent": "Terminaali-kartta",
+    "legendAria": "Terminaalin legenda",
+    "railAria": "Terminaali-suodattimet ja määrät",
+    "railKicker": "Kartalla",
+    "railTitle": "Merkit luokittain",
+    "title": "Road To Vostok — Terminaali-kartta — yksityiskohta ja POI-suodattimet",
+    "introHtml": "<p><strong>Terminaali</strong>: myöhäisen teollisuus-/keskusalueen salit, arvohuoneet ja poistumiset. Ennen kallista varustusta lue <a href=\"/tasks\">tehtävät ja raja / Vostok</a>.</p>",
+    "sectionKicker": "Myöhäinen reitti · terminaali",
+    "sectionTitle": "Interaktiivinen terminaali-kartta",
+    "hintHtml": "<strong>Vasen suodatin</strong> kohdistaa sivupaneelin; tiedot klikkauksella; kirjanmerkki tai jako.",
+    "mapAppAria": "Road To Vostok terminaali-kartta. Zoom ja pan.",
+    "railLeadHtml": "Numerot kertovat, montako merkkiä kutakin tyyppiä on tällä terminaali-kartalla.",
+    "belowMapHtml": "<h2>Miten käytät karttaa</h2><p>Harjoittele kulkua ja arvohuoneiden prioriteettia. Myöhäispeli muuttuu usein — tarkista asiakkaassa.</p>",
+    "footnoteHtml": "<strong>Huom:</strong> toimituksellinen.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Maailmanäkymä</a> · <a href=\"/map/village-map\">Kyläkartta</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">Koulu</a> · <a href=\"/map/outpost-map\">Etukartta</a> · <a href=\"/map/minefield-map\">Miinakenttä</a> · <a href=\"/map/apartments-map\">Asunnot</a> · <a href=\"/map/terminal-map\">Terminaali</a></p>"
   }
 }

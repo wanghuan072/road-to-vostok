@@ -64,6 +64,8 @@ export const localeHreflang = Object.freeze({
 export const i18n = createI18n({
   legacy: false,
   globalInjection: true,
+  /** Locale JSON uses trusted HTML in *Html keys rendered with v-html; suppress intlify XSS noise. */
+  warnHtmlMessage: false,
   locale: 'en',
   fallbackLocale: 'en',
   messages: {

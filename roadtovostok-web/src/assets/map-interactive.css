@@ -1,4 +1,4 @@
-/* Shared Map + MapVillage: extracted from MapView (scoped → .map-page). */
+/* Shared map UI: MapView, MapRasterM01–M07View (views/map/). */
 .map-page.page-article{
   padding-bottom: 4rem;
 }.map-page .page-hero-content p{
@@ -687,8 +687,9 @@
   border: none;
 }
 
-/* Village map: teardrop pins + white kind icons (see pinIcons.js) */
-.map-page .rtv-village-pin {
+/* Image-map pins: teardrop + inline SVG glyphs (`pinIcons.js`) */
+.map-page .rtv-village-pin,
+.map-page .rtv-map-pin {
   position: relative;
   width: 40px;
   height: 48px;
@@ -696,7 +697,8 @@
   pointer-events: none;
 }
 
-.map-page .rtv-village-pin__bubble {
+.map-page .rtv-village-pin__bubble,
+.map-page .rtv-map-pin__bubble {
   position: absolute;
   left: 50%;
   top: 1px;
@@ -715,16 +717,19 @@
   border: 1px solid color-mix(in srgb, #000 32%, transparent);
 }
 
-.map-page .rtv-village-pin__svg {
+.map-page .rtv-village-pin__svg,
+.map-page .rtv-map-pin__svg {
   width: 15px;
   height: 15px;
   transform: rotate(45deg);
   color: #fff;
   flex-shrink: 0;
   overflow: visible;
+  display: block;
 }
 
-.map-page .rtv-map-marker--vcat-locations .rtv-village-pin__bubble {
+.map-page .rtv-map-marker--vcat-locations .rtv-village-pin__bubble,
+.map-page .rtv-map-marker--vcat-locations .rtv-map-pin__bubble {
   background: linear-gradient(
     145deg,
     color-mix(in srgb, #4a9eff 92%, #fff),
@@ -732,7 +737,8 @@
   );
 }
 
-.map-page .rtv-map-marker--vcat-enemies .rtv-village-pin__bubble {
+.map-page .rtv-map-marker--vcat-enemies .rtv-village-pin__bubble,
+.map-page .rtv-map-marker--vcat-enemies .rtv-map-pin__bubble {
   background: linear-gradient(
     145deg,
     color-mix(in srgb, #e85d4c 94%, #fff),
@@ -740,7 +746,8 @@
   );
 }
 
-.map-page .rtv-map-marker--vcat-quests .rtv-village-pin__bubble {
+.map-page .rtv-map-marker--vcat-quests .rtv-village-pin__bubble,
+.map-page .rtv-map-marker--vcat-quests .rtv-map-pin__bubble {
   background: linear-gradient(
     145deg,
     color-mix(in srgb, #9b72cf 92%, #fff),
@@ -748,7 +755,8 @@
   );
 }
 
-.map-page .rtv-map-marker--vcat-loot .rtv-village-pin__bubble {
+.map-page .rtv-map-marker--vcat-loot .rtv-village-pin__bubble,
+.map-page .rtv-map-marker--vcat-loot .rtv-map-pin__bubble {
   background: linear-gradient(
     145deg,
     color-mix(in srgb, var(--color-amber, #e8c547) 92%, #fff),
@@ -756,7 +764,8 @@
   );
 }
 
-.map-page .rtv-map-marker--vcat-npc .rtv-village-pin__bubble {
+.map-page .rtv-map-marker--vcat-npc .rtv-village-pin__bubble,
+.map-page .rtv-map-marker--vcat-npc .rtv-map-pin__bubble {
   background: linear-gradient(
     145deg,
     color-mix(in srgb, var(--color-signal-soft, #ffb87a) 94%, #fff),
@@ -765,7 +774,8 @@
 }
 
 /* World overview map: teardrop pins; bubble hues match former region dots */
-.map-page .rtv-map-marker--area05 .rtv-village-pin__bubble {
+.map-page .rtv-map-marker--area05 .rtv-village-pin__bubble,
+.map-page .rtv-map-marker--area05 .rtv-map-pin__bubble {
   background: linear-gradient(
     145deg,
     color-mix(in srgb, var(--color-frost, #7eb8c9) 88%, #fff),
@@ -773,7 +783,8 @@
   );
 }
 
-.map-page .rtv-map-marker--border .rtv-village-pin__bubble {
+.map-page .rtv-map-marker--border .rtv-village-pin__bubble,
+.map-page .rtv-map-marker--border .rtv-map-pin__bubble {
   background: linear-gradient(
     145deg,
     color-mix(in srgb, var(--color-rust, #c45c3e) 90%, #fff),
@@ -781,7 +792,8 @@
   );
 }
 
-.map-page .rtv-map-marker--vostok .rtv-village-pin__bubble {
+.map-page .rtv-map-marker--vostok .rtv-village-pin__bubble,
+.map-page .rtv-map-marker--vostok .rtv-map-pin__bubble {
   background: linear-gradient(
     145deg,
     color-mix(in srgb, #c44 88%, #fff),
@@ -802,13 +814,15 @@
   }
 }
 
-.map-page .rtv-map-marker--selected .rtv-village-pin__bubble {
+.map-page .rtv-map-marker--selected .rtv-village-pin__bubble,
+.map-page .rtv-map-marker--selected .rtv-map-pin__bubble {
   animation: rtv-village-pin-pulse 1.35s ease-in-out infinite;
   z-index: 2;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .map-page .rtv-map-marker--selected .rtv-village-pin__bubble {
+  .map-page .rtv-map-marker--selected .rtv-village-pin__bubble,
+  .map-page .rtv-map-marker--selected .rtv-map-pin__bubble {
     animation: none;
     outline: 2px solid color-mix(in srgb, var(--color-frost, #7eb8c9) 72%, transparent);
     outline-offset: 2px;

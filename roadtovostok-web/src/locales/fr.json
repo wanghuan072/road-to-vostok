@@ -90,6 +90,11 @@
       "description": "Carte interactive Road To Vostok : zone 05, zone frontière et Vostok, index des lieux et aperçu régional. À utiliser avec la carte en jeu ; coordonnées à confirmer.",
       "keywords": "Road To Vostok carte, Area 05, zone frontière, Vostok, POI, index lieux"
     },
+    "mapVillagePage": {
+      "title": "Road To Vostok — carte Village — détail zone 05 | POI interactifs",
+      "description": "Carte Village détaillée (zone 05) pour Road To Vostok : filtres par catégories pour abris, marchands, loot, extractions et menaces. Guide tiers — croiser avec la vue monde et vérifier chaque marqueur en jeu.",
+      "keywords": "Road To Vostok, carte Village, zone 05, Finlande, carte interactive, POI, abri, marchand, loot, extraction, bandits, Early Access, guide jeu"
+    },
     "tasksPage": {
       "title": "Road To Vostok — quêtes : progression, frontière et règles Vostok",
       "description": "Quêtes et progression : objectifs marchands, passages frontière, permadeath Vostok et ordre suggéré. Confirmez le comportement en jeu.",
@@ -125,6 +130,36 @@
       "title": "Article mod — Road To Vostok",
       "description": "Focus mod Road To Vostok : fonctionnalités, compatibilité, chargeur requis et liens de téléchargement.",
       "keywords": "Road To Vostok, mods, guide modding, Early Access"
+    },
+    "mapRasterM02Page": {
+      "title": "Road To Vostok — Carte Highway — POI interactifs et filtres | Guide",
+      "description": "Carte du tronçon Highway dans Road To Vostok : légende, filtres par catégorie et marqueurs d’intérêt le long de la route frontalière. À croiser avec la vue monde et la carte Village ; vérifiez chaque point en jeu (Early Access).",
+      "keywords": "Road To Vostok carte Highway, carte interactive Road To Vostok, POI Highway, survival Finlande, Zone 05, route vers la frontière, extraction, guide Early Access"
+    },
+    "mapRasterM03Page": {
+      "title": "Road To Vostok — Carte École — disposition interactive et filtres POI",
+      "description": "Carte de la zone École : salles, cour et filtres pour planifier pillage et combats. Complète Village et Highway ; confirmez les spawns et sorties après patch.",
+      "keywords": "Road To Vostok carte École, carte interactive, POI école, guide survie, Early Access"
+    },
+    "mapRasterM04Page": {
+      "title": "Road To Vostok — Carte Avant-poste — POI interactifs et filtres",
+      "description": "Carte d’avant-poste : itinéraires, couvertures et conteneurs en aide à l’orientation. Guide joueur indépendant — pas de feuille officielle ; validez avec votre version installée.",
+      "keywords": "Road To Vostok avant-poste, carte interactive, POI, zone frontalière, guide Early Access"
+    },
+    "mapRasterM05Page": {
+      "title": "Road To Vostok — Carte Champ de mines — risques, POI et filtres",
+      "description": "Carte d’orientation pour un couloir miné : repères uniquement. Lisez le guide Surviving the Minefield ; les marqueurs ne sont pas des voies sécurisées.",
+      "keywords": "Road To Vostok champ de mines, carte interactive, mines survie, zone frontalière, Early Access"
+    },
+    "mapRasterM06Page": {
+      "title": "Road To Vostok — Carte Appartements — POI urbains denses et filtres",
+      "description": "Carte d’îlot d’immeubles denses : cages d’escalier, appartements et ruelles pour étudier le pillage vertical. Portes et loot changent avec les patchs — vérifiez en jeu.",
+      "keywords": "Road To Vostok appartements, carte interactive, POI urbain, pillage survie, Early Access"
+    },
+    "mapRasterM07Page": {
+      "title": "Road To Vostok — Carte Terminal — POI fin de route et filtres",
+      "description": "Carte de zone terminale / hub tardif : salles à fort intérêt et sorties. Croisez avec la page Tâches pour frontière et règles Vostok avant d’engager votre équipement.",
+      "keywords": "Road To Vostok Terminal, carte interactive, POI, progression survie, Early Access"
     }
   },
   "wiki": {},
@@ -399,6 +434,7 @@
     "navMap": "Carte",
     "navMapOverview": "Carte du monde",
     "navMapVillage": "Carte du village",
+    "navMapRasterGroup": "Cartes raster",
     "navTasks": "Quêtes",
     "navGuides": "Guides",
     "navMods": "Mods",
@@ -643,6 +679,23 @@
     "regionalSectionHtml": "<h2>Vue régionale</h2><p class=\"guide-lead\">Le site officiel décrit une progression linéaire : vous commencez en <strong>zone 05</strong> (Finlande), avancez vers l’est dans la <strong>zone frontière</strong>, et pouvez entrer en <strong>Vostok</strong> en Russie — avec des conséquences de mort différentes à chaque palier.</p><div class=\"regions\"><article><h3>Zone 05</h3><p>Zone évacuée du sud-est de la Finlande : abris, marchands, quêtes et loot de départ pour la survie précoce. Des <strong>bandits</strong> hostiles patrouillent.</p></article><article><h3>Zone frontière</h3><p>Frontière gardée entre Finlande et Russie. Les passages varient : mines, obstacles ou voies d’eau avec bateaux. Les <strong>gardes</strong> sont armés, corrompus et peuvent appeler l’aviation.</p></article><article><h3>Vostok</h3><p>Territoire russe à haut risque et fort gain avec le loot le plus précieux. Chaque carte Vostok est en <strong>permadeath</strong>. La faction <strong>militaire</strong> déploie armes lourdes et véhicules blindés.</p></article></div>",
     "area05DetailProseHtml": "<h2>Guide carte zone 05 et origine du loot</h2><p>Selon la page officielle <strong>Jeu</strong>, la zone 05 est votre région de départ : zone évacuée du <strong>sud-est de la Finlande</strong> avec <strong>abris</strong>, <strong>marchands</strong>, <strong>quêtes</strong> et <strong>loot de départ</strong> pour la survie initiale. Votre routine y est interrompue par des <strong>bandits</strong> hostiles profitant du vide d’autorité.</p><h3>Loot et « points de spawn » en pratique</h3><p>La même page cite le <strong>loot physique</strong> comme fonction clé : les objets existent dans le monde plutôt qu’en ramassage abstrait. Les développeurs ne publient <strong>pas</strong> de tableau public de coordonnées fixes sur roadtovostok.com, et beaucoup de systèmes sont <strong>dynamiques</strong> (événements, météo, runs rejouables). Cette page ne liste donc <strong>pas</strong> de coordonnées de respawn garanties — elles varient avec les patchs et la disposition procédurale.</p><ul><li><strong>Fouillez logiquement :</strong> explorez les lieux que le setting suggère (hameaux, bords de route, structures abandonnées) et apprenez la densité de loot de votre build en jeu.</li><li><strong>Marchands et quêtes :</strong> la liste officielle inclut commerce et quêtes dans la boucle avec les abris — troc et récompenses de missions sont des voies de progression prévues, pas seulement le sol.</li><li><strong>Restez en vie pour garder le loot :</strong> si vous mourez en zone 05, la section Vostok officielle indique que vous ne perdez que ce que vous <strong>portez</strong> — pas tout le contexte de progression (la règle plus dure s’applique à la mort à Vostok).</li></ul><p class=\"guide-tools\">Sur ce site : <a href=\"/wiki\">Wiki</a> (tableaux équipement), <a href=\"/getting-started\">Par ici</a> (boucle, contrôles, soins), <a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">Guide géographie frontière</a>, <a href=\"/guides/surviving-the-Minefield\">Guide champ de mines</a>, <a href=\"/tasks\">Quêtes et règles Vostok</a>.</p>",
     "area05MapImgAlt": "Zone 05 — illustration carte atmosphérique avec le guide"
+  },
+  "mapVillagePage": {
+    "breadcrumbCurrent": "Carte Village",
+    "title": "Road To Vostok — Carte Village — détail zone 05",
+    "introHtml": "Page de <strong>carte Village interactive</strong> pour la zone 05 : marqueurs regroupés par <strong>Lieux</strong>, <strong>Ennemis</strong>, <strong>Quêtes</strong>, <strong>Loot</strong> et <strong>PNJ</strong>, sur le même principe que les filtres de la carte en jeu. Ouvrez la <a href=\"/map\">vue monde</a> pour le contexte régional.",
+    "sectionKicker": "Zone 05 · ligne Village",
+    "sectionTitle": "Carte Village interactive",
+    "hintHtml": "Utilisez le <strong>panneau de filtres à gauche</strong> pour afficher ou masquer les types de marqueurs ; les chiffres indiquent combien de marqueurs de chaque type figurent sur cette carte. Cliquez la carte ou une ligne dans la liste pour ouvrir les détails. Après ouverture d’un marqueur, signet ou partage de la page pour y revenir. Molette ou pincement pour zoomer ; glisser pour déplacer.",
+    "mapAppAria": "Carte Village Road To Vostok. Zoom molette ou pincement ; glisser pour déplacer.",
+    "railAria": "Filtres carte et compteurs de marqueurs",
+    "railKicker": "Sur la carte",
+    "railTitle": "Marqueurs par catégorie",
+    "railLeadHtml": "Activez ou masquez catégories et sous-types ; les chiffres indiquent combien de marqueurs de chaque type apparaissent sur cette carte.",
+    "legendAria": "Couleurs des catégories de marqueurs",
+    "footnoteHtml": "<strong>Note :</strong> guide joueur indépendant — non affilié aux développeurs. Marques déposées à leurs propriétaires. Vérifiez toujours positions et loot dans votre build Road To Vostok.",
+    "belowMapHtml": "<h2>Guide carte Village Road To Vostok (zone 05)</h2><p><strong>Road To Vostok</strong> vous place dans une boucle de survie vers le <strong>Vostok</strong> ; le marketing officiel décrit la <strong>zone 05</strong> comme une zone finlandaise évacuée avec <strong>abris</strong>, <strong>marchands</strong>, <strong>quêtes</strong> et <strong>loot de départ</strong>, perturbée par des <strong>bandits</strong>. Cette page est une <strong>mise en page éditoriale tierce</strong> : carte interactive avec filtres (lieux, ennemis, quêtes, loot, PNJ) pour planifier routes, arrêts de fouille et visites marchands à côté de notre <a href=\"/map\">carte d’aperçu régional</a>.</p><h3>Lire les marqueurs</h3><ul><li>Les marqueurs sont des repères <strong>approximatifs</strong> sur l’illustration — légers décalages après patch ; recoupez avec la vue en jeu.</li><li>Les <strong>catégories de loot</strong> (caisses, armoires, électronique, etc.) indiquent des <em>types</em> d’emplacements à fouiller, pas un tableau de rolls garantis.</li><li>Après ouverture d’un marqueur, utilisez le signet ou le partage du navigateur pour retrouver la même fenêtre.</li></ul><h3>Précision et mises à jour</h3><p>Les sujets « carte Village Road To Vostok », « disposition zone 05 » ou « positions marchands / abris » doivent être recoupés avec votre build installé et les sources officielles. Systèmes dynamiques et layout procédural peuvent déplacer les spawns ; ce guide <strong>aide à l’orientation</strong>, il ne remplace pas la carte en jeu.</p><h3>Sur ce site</h3><p>Pour passages frontière et règles Vostok : <a href=\"/tasks\">Quêtes et progression</a> ; contrôles, soins et boucle : <a href=\"/getting-started\">Par ici</a> ; armes, munitions et objets : <a href=\"/wiki\">Wiki</a>.</p>",
+    "backToOverview": "Retour à la vue monde"
   },
   "tasksPage": {
     "breadcrumb": "Quêtes",
@@ -992,5 +1045,113 @@
     "contactHtml": "Questions sur ces conditions :",
     "footerPrivacy": "Politique de confidentialité",
     "footerCopyright": "Droits d’auteur"
+  },
+  "mapRasterM02": {
+    "navLabel": "Carte Highway",
+    "breadcrumbCurrent": "Carte Highway",
+    "legendAria": "Légende des catégories pour la carte Highway",
+    "railAria": "Filtres et compteurs de marqueurs — Highway",
+    "railKicker": "Sur la carte",
+    "railTitle": "Marqueurs par catégorie",
+    "title": "Road To Vostok — Carte Highway — détail et filtres POI",
+    "introHtml": "<p>Cette carte <strong>Highway</strong> couvre la route et la ligne frontalière après le village de départ dans <em>Road To Vostok</em> : légende couleur, filtres et marqueurs (commerces, couverture, conteneurs, dangers). Comparez avec la <a href=\"/map\">vue monde</a> et la <a href=\"/map/village-map\">carte Village</a> pour situer ce segment en Zone&nbsp;05.</p>",
+    "sectionKicker": "Route frontière · ligne Highway",
+    "sectionTitle": "Carte Highway interactive",
+    "hintHtml": "Utilisez les <strong>filtres à gauche</strong> pour n’afficher que les types utiles. Cliquez sur un marqueur pour lire la fenêtre d’info ; ensuite signet ou partage de la page pour y revenir. Molette ou pincement pour zoomer ; glisser pour déplacer.",
+    "mapAppAria": "Carte Highway Road To Vostok. Molette ou pincement pour zoomer ; glisser pour déplacer.",
+    "railLeadHtml": "Activez ou masquez catégories et sous-types. Les chiffres indiquent combien de marqueurs de chaque type figurent sur cette carte Highway.",
+    "belowMapHtml": "<h2>Utiliser cette carte</h2><p>Planifiez déplacements, commerces, abris et zones chaudes. Les mises à jour déplacent pillage et rencontres — tout reste une aide, pas une garantie. Pour quêtes et règles de fin de parcours, voir aussi <a href=\"/tasks\">Tâches et règles frontière / Vostok</a>.</p>",
+    "footnoteHtml": "<strong>Note :</strong> mise en page éditoriale tierce ; vérifiez en jeu.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Vue monde</a> · <a href=\"/map/village-map\">Carte Village</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">École</a> · <a href=\"/map/outpost-map\">Avant-poste</a> · <a href=\"/map/minefield-map\">Champ de mines</a> · <a href=\"/map/apartments-map\">Appartements</a> · <a href=\"/map/terminal-map\">Terminal</a></p>"
+  },
+  "mapRasterM03": {
+    "navLabel": "Carte École",
+    "breadcrumbCurrent": "Carte École",
+    "legendAria": "Légende des catégories — École",
+    "railAria": "Filtres et compteurs — École",
+    "railKicker": "Sur la carte",
+    "railTitle": "Marqueurs par catégorie",
+    "title": "Road To Vostok — Carte École — détail et filtres POI",
+    "introHtml": "<p>Carte rapprochée de la <strong>école</strong> : bâtiments, cours et menaces. À utiliser avec la <a href=\"/map\">vue monde</a> et la <a href=\"/map/highway-map\">carte Highway</a> en poussant vers l’est.</p>",
+    "sectionKicker": "Site urbain · ligne École",
+    "sectionTitle": "Carte École interactive",
+    "hintHtml": "Filtres <strong>à gauche</strong> pour réduire le bruit ; cliquez sur les marqueurs pour les détails. Signet ou partage de la page après ouverture d’un point. Zoom et déplacement comme d’habitude.",
+    "mapAppAria": "Carte École Road To Vostok. Zoom molette ou pincement ; glisser pour déplacer.",
+    "railLeadHtml": "Les chiffres indiquent combien de marqueurs de chaque type figurent sur cette carte École.",
+    "belowMapHtml": "<h2>Utiliser cette carte</h2><p>Utile pour les angles de tir et l’ordre de pillage. Vérifiez en jeu après mise à jour. Textes d’appui dans <a href=\"/guides\">Guides</a> si un article existe.</p>",
+    "footnoteHtml": "<strong>Note :</strong> référence éditoriale ; vérifiez votre build.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Vue monde</a> · <a href=\"/map/village-map\">Carte Village</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">École</a> · <a href=\"/map/outpost-map\">Avant-poste</a> · <a href=\"/map/minefield-map\">Champ de mines</a> · <a href=\"/map/apartments-map\">Appartements</a> · <a href=\"/map/terminal-map\">Terminal</a></p>"
+  },
+  "mapRasterM04": {
+    "navLabel": "Carte Avant-poste",
+    "breadcrumbCurrent": "Carte Avant-poste",
+    "legendAria": "Légende — Avant-poste",
+    "railAria": "Filtres et compteurs — Avant-poste",
+    "railKicker": "Sur la carte",
+    "railTitle": "Marqueurs par catégorie",
+    "title": "Road To Vostok — Carte Avant-poste — détail et filtres POI",
+    "introHtml": "<p>Carte d’<strong>avant-poste</strong> : bâtiments, couvertures, conteneurs et choix d’itinéraire. La <a href=\"/map\">vue monde</a> situe cette étape dans l’ensemble de la route.</p>",
+    "sectionKicker": "Base avancée · ligne Avant-poste",
+    "sectionTitle": "Carte Avant-poste interactive",
+    "hintHtml": "Filtres <strong>à gauche</strong> ; cliquez pour les popups ; signet ou partage pour revenir à la même vue.",
+    "mapAppAria": "Carte Avant-poste Road To Vostok. Zoom et pan.",
+    "railLeadHtml": "Les chiffres indiquent combien de marqueurs de chaque type figurent sur cette carte Avant-poste.",
+    "belowMapHtml": "<h2>Utiliser cette carte</h2><p>Angles d’approche, salles à fouiller, timing d’extraction. Guide indépendant — confirmez avec votre build.</p>",
+    "footnoteHtml": "<strong>Note :</strong> référence éditoriale.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Vue monde</a> · <a href=\"/map/village-map\">Carte Village</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">École</a> · <a href=\"/map/outpost-map\">Avant-poste</a> · <a href=\"/map/minefield-map\">Champ de mines</a> · <a href=\"/map/apartments-map\">Appartements</a> · <a href=\"/map/terminal-map\">Terminal</a></p>"
+  },
+  "mapRasterM05": {
+    "navLabel": "Carte Champ de mines",
+    "breadcrumbCurrent": "Carte Champ de mines",
+    "legendAria": "Légende — Champ de mines",
+    "railAria": "Filtres et compteurs — Champ de mines",
+    "railKicker": "Sur la carte",
+    "railTitle": "Marqueurs par catégorie",
+    "title": "Road To Vostok — Carte Champ de mines — détail et filtres POI",
+    "introHtml": "<p><strong>Champ de mines</strong> : carte d’<strong>orientation uniquement</strong>. Lisez <a href=\"/guides/surviving-the-Minefield\">Surviving the Minefield</a> — <strong>ne considérez jamais</strong> une ligne sur la carte comme voie déminée.</p>",
+    "sectionKicker": "Couloir à risque · mines",
+    "sectionTitle": "Carte Champ de mines interactive",
+    "hintHtml": "Filtres <strong>à gauche</strong> pour réduire le bruit ; cliquez pour les notes ; signet utile pour revenir au même repère.",
+    "mapAppAria": "Carte mines Road To Vostok. Zoom et pan.",
+    "railLeadHtml": "Les chiffres indiquent combien de marqueurs de chaque type figurent sur cette carte Champ de mines.",
+    "belowMapHtml": "<h2>Utiliser cette carte</h2><p>Combinez avec l’écoute, la lenteur et les tactiques en jeu. La prudence prime sur tout marqueur.</p>",
+    "footnoteHtml": "<strong>Note :</strong> référence éditoriale.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Vue monde</a> · <a href=\"/map/village-map\">Carte Village</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">École</a> · <a href=\"/map/outpost-map\">Avant-poste</a> · <a href=\"/map/minefield-map\">Champ de mines</a> · <a href=\"/map/apartments-map\">Appartements</a> · <a href=\"/map/terminal-map\">Terminal</a></p>"
+  },
+  "mapRasterM06": {
+    "navLabel": "Carte Appartements",
+    "breadcrumbCurrent": "Carte Appartements",
+    "legendAria": "Légende — Appartements",
+    "railAria": "Filtres et compteurs — Appartements",
+    "railKicker": "Sur la carte",
+    "railTitle": "Marqueurs par catégorie",
+    "title": "Road To Vostok — Carte Appartements — détail et filtres POI",
+    "introHtml": "<p><strong>Appartements</strong> : îlot dense, escaliers, logements et ruelles. Portes et loot bougent avec les patchs — croisez avec la <a href=\"/map\">vue monde</a> pour le contexte régional.</p>",
+    "sectionKicker": "Urbain dense · Appartements",
+    "sectionTitle": "Carte Appartements interactive",
+    "hintHtml": "Filtres <strong>à gauche</strong> pour masquer les catégories inutiles ; popups au clic ; signet ou partage pour le même marqueur.",
+    "mapAppAria": "Carte Appartements Road To Vostok. Zoom et pan.",
+    "railLeadHtml": "Les chiffres indiquent combien de marqueurs de chaque type figurent sur cette carte Appartements.",
+    "belowMapHtml": "<h2>Utiliser cette carte</h2><p>Idéal pour l’ordre de nettoyage des ailes et la verticalité. Les marqueurs sont pédagogiques, pas une promesse de porte ouverte.</p>",
+    "footnoteHtml": "<strong>Note :</strong> référence éditoriale.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Vue monde</a> · <a href=\"/map/village-map\">Carte Village</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">École</a> · <a href=\"/map/outpost-map\">Avant-poste</a> · <a href=\"/map/minefield-map\">Champ de mines</a> · <a href=\"/map/apartments-map\">Appartements</a> · <a href=\"/map/terminal-map\">Terminal</a></p>"
+  },
+  "mapRasterM07": {
+    "navLabel": "Carte Terminal",
+    "breadcrumbCurrent": "Carte Terminal",
+    "legendAria": "Légende — Terminal",
+    "railAria": "Filtres et compteurs — Terminal",
+    "railKicker": "Sur la carte",
+    "railTitle": "Marqueurs par catégorie",
+    "title": "Road To Vostok — Carte Terminal — détail et filtres POI",
+    "introHtml": "<p><strong>Terminal</strong> : zone industrielle / hub tardif avec salles fortes et sorties. Avant d’engager du matériel coûteux, lisez <a href=\"/tasks\">Tâches et règles frontière / Vostok</a>.</p>",
+    "sectionKicker": "Fin de route · Terminal",
+    "sectionTitle": "Carte Terminal interactive",
+    "hintHtml": "Filtres <strong>à gauche</strong> pour cibler la barre latérale ; détails au clic ; signet ou partage pour la même vue.",
+    "mapAppAria": "Carte Terminal Road To Vostok. Zoom et pan.",
+    "railLeadHtml": "Les chiffres indiquent combien de marqueurs de chaque type figurent sur cette carte Terminal.",
+    "belowMapHtml": "<h2>Utiliser cette carte</h2><p>Répétition mentale des déplacements et priorités de salles. La fin de jeu bouge souvent — revérifiez en client.</p>",
+    "footnoteHtml": "<strong>Note :</strong> référence éditoriale.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">Vue monde</a> · <a href=\"/map/village-map\">Carte Village</a> · <a href=\"/map/highway-map\">Highway</a> · <a href=\"/map/school-map\">École</a> · <a href=\"/map/outpost-map\">Avant-poste</a> · <a href=\"/map/minefield-map\">Champ de mines</a> · <a href=\"/map/apartments-map\">Appartements</a> · <a href=\"/map/terminal-map\">Terminal</a></p>"
   }
 }

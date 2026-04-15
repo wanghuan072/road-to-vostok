@@ -8,6 +8,80 @@ import { extractLocaleFromPath } from '../composables/useLocalizedPath.js'
 
 const base = import.meta.env?.BASE_URL ?? '/'
 
+/**
+ * 栅格图 m02–m07：与 `/map/village-map` 一致采用 kebab-case 路径，供 `routeDefs` 与顶栏 `MAP_GAME_MAPS_NAV`。
+ * 旧路径 `/map/m02` … `/map/m07` 在路由层重定向到新 URL。
+ */
+export const MAP_RASTER_NAV = [
+  {
+    id: 'm02',
+    path: '/map/highway-map',
+    name: 'map-raster-m02',
+    view: 'MapRasterM02View',
+    i18nKey: 'mapRasterM02',
+    seoFromI18n: 'tdk.mapRasterM02Page',
+  },
+  {
+    id: 'm03',
+    path: '/map/school-map',
+    name: 'map-raster-m03',
+    view: 'MapRasterM03View',
+    i18nKey: 'mapRasterM03',
+    seoFromI18n: 'tdk.mapRasterM03Page',
+  },
+  {
+    id: 'm04',
+    path: '/map/outpost-map',
+    name: 'map-raster-m04',
+    view: 'MapRasterM04View',
+    i18nKey: 'mapRasterM04',
+    seoFromI18n: 'tdk.mapRasterM04Page',
+  },
+  {
+    id: 'm05',
+    path: '/map/minefield-map',
+    name: 'map-raster-m05',
+    view: 'MapRasterM05View',
+    i18nKey: 'mapRasterM05',
+    seoFromI18n: 'tdk.mapRasterM05Page',
+  },
+  {
+    id: 'm06',
+    path: '/map/apartments-map',
+    name: 'map-raster-m06',
+    view: 'MapRasterM06View',
+    i18nKey: 'mapRasterM06',
+    seoFromI18n: 'tdk.mapRasterM06Page',
+  },
+  {
+    id: 'm07',
+    path: '/map/terminal-map',
+    name: 'map-raster-m07',
+    view: 'MapRasterM07View',
+    i18nKey: 'mapRasterM07',
+    seoFromI18n: 'tdk.mapRasterM07Page',
+  },
+]
+
+/** 旧版短路径 → 与 village-map 一致的 slug（按 locale 前缀重定向） */
+const MAP_RASTER_LEGACY_PATHS = [
+  ['/map/m02', '/map/highway-map'],
+  ['/map/m03', '/map/school-map'],
+  ['/map/m04', '/map/outpost-map'],
+  ['/map/m05', '/map/minefield-map'],
+  ['/map/m06', '/map/apartments-map'],
+  ['/map/m07', '/map/terminal-map'],
+]
+
+/** 顶栏「地图」下拉：村庄 + 各栅格图（`labelKey` → vue-i18n） */
+export const MAP_GAME_MAPS_NAV = [
+  { path: '/map/village-map', labelKey: 'site.navMapVillage' },
+  ...MAP_RASTER_NAV.map((r) => ({
+    path: r.path,
+    labelKey: `${r.i18nKey}.navLabel`,
+  })),
+]
+
 function createRoutePath(path, locale) {
   if (locale === 'en') return path
   return `/${locale}${path}`
@@ -120,12 +194,21 @@ export const routeDefs = [
   {
     path: '/map/village-map',
     name: 'map-village-detail',
-    view: 'MapVillageView',
+    view: 'MapRasterM01View',
     meta: {
       sitemap: { priority: 0.88, changefreq: 'weekly' },
       seoFromI18n: 'tdk.mapVillagePage',
     },
   },
+  ...MAP_RASTER_NAV.map((r) => ({
+    path: r.path,
+    name: r.name,
+    view: r.view,
+    meta: {
+      sitemap: { priority: 0.78, changefreq: 'weekly' },
+      seoFromI18n: r.seoFromI18n,
+    },
+  })),
   {
     path: '/tasks',
     name: 'tasks',
@@ -262,8 +345,14 @@ const viewLoaders = {
   ItemDatabaseGathering: () => import('../views/wiki/ItemDatabaseGathering.vue'),
   NpcListView: () => import('../views/wiki/NpcListView.vue'),
   NpcDetailView: () => import('../views/wiki/NpcDetailView.vue'),
-  MapView: () => import('../views/MapView.vue'),
-  MapVillageView: () => import('../views/MapVillageView.vue'),
+  MapView: () => import('../views/map/MapView.vue'),
+  MapRasterM01View: () => import('../views/map/MapRasterM01View.vue'),
+  MapRasterM02View: () => import('../views/map/MapRasterM02View.vue'),
+  MapRasterM03View: () => import('../views/map/MapRasterM03View.vue'),
+  MapRasterM04View: () => import('../views/map/MapRasterM04View.vue'),
+  MapRasterM05View: () => import('../views/map/MapRasterM05View.vue'),
+  MapRasterM06View: () => import('../views/map/MapRasterM06View.vue'),
+  MapRasterM07View: () => import('../views/map/MapRasterM07View.vue'),
   TasksView: () => import('../views/TasksView.vue'),
   GuidesListView: () => import('../views/guides/GuidesListView.vue'),
   GuideArticleView: () => import('../views/guides/GuideArticleView.vue'),
@@ -310,6 +399,14 @@ for (const loc of supportedLocales) {
     redirect: createRoutePath('/map/village-map', loc),
   })
 }
+for (const loc of supportedLocales) {
+  for (const [fromPath, toPath] of MAP_RASTER_LEGACY_PATHS) {
+    routes.push({
+      path: createRoutePath(fromPath, loc),
+      redirect: createRoutePath(toPath, loc),
+    })
+  }
+}
 // 先注册各非 en 语言的 404，再注册 en 兜底，避免 /zh/…、/de/… 被英文通配吃掉
 for (const loc of supportedLocales) {
   if (loc !== 'en') routes.push(toRouterRoute(notFoundDef, loc))
@@ -331,7 +428,7 @@ const router = createRouter({
   },
 })
 
-router.beforeEach((to, _from, next) => {
+router.beforeEach((to) => {
   const loc = extractLocaleFromPath(to.path)
   const gl = i18n.global.locale
   if (typeof gl === 'object' && gl !== null && 'value' in gl) {
@@ -340,7 +437,6 @@ router.beforeEach((to, _from, next) => {
   if (typeof document !== 'undefined') {
     document.documentElement.lang = documentHtmlLang(loc)
   }
-  next()
 })
 
 export default router

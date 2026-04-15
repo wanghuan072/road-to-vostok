@@ -95,6 +95,36 @@
       "description": "Road To Vostok village map (Area 05): interactive detail layout with filterable pins for shelters, traders, loot spawns, extractions, and enemy context. Editorial guide site — pair with the world overview map and confirm every marker in your game build.",
       "keywords": "Road To Vostok, Road To Vostok map, village map, Area 05, Finland survival game, interactive map, POI, shelter, trader, scavenging loot, extraction, bandits, Early Access, game guide"
     },
+    "mapRasterM02Page": {
+      "title": "Road To Vostok Highway Map — Interactive POI & filters | Area progression guide",
+      "description": "Highway segment map for Road To Vostok: legend, category filters, and interactive POI markers along the border road. Use with the world overview and Village map for Area 05 context; verify markers in your Early Access build.",
+      "keywords": "Road To Vostok Highway map, Road To Vostok interactive map, Highway POI, survival FPS map, Finland Area 05, Border Zone route, scavenging, extractions, Early Access guide"
+    },
+    "mapRasterM03Page": {
+      "title": "Road To Vostok School Map — Interactive layout & POI filters",
+      "description": "School grounds and building map for Road To Vostok: filters and POI markers for classrooms, loot, and danger. Compare with the Village and Highway maps when pushing east; confirm spawns in-game after patches.",
+      "keywords": "Road To Vostok School map, Road To Vostok interactive map, School POI, survival game guide, Area progression, loot routes, Early Access"
+    },
+    "mapRasterM04Page": {
+      "title": "Road To Vostok Outpost Map — Interactive POI & category filters",
+      "description": "Outpost area map for Road To Vostok: interactive POI and filters for routes, cover, and containers. Third-party orientation aid — not an official coordinate sheet; validate against your installed version.",
+      "keywords": "Road To Vostok Outpost map, Road To Vostok interactive map, Outpost POI, survival extraction game, Border Zone maps, Early Access guide"
+    },
+    "mapRasterM05Page": {
+      "title": "Road To Vostok Minefield Map — Hazards, POI & interactive filters",
+      "description": "Minefield route map for Road To Vostok: hazard and POI orientation only. Read the Minefield survival guide for tactics; markers are not guaranteed safe lanes.",
+      "keywords": "Road To Vostok Minefield map, mines survival guide, Road To Vostok interactive map, hazard routing, Border Zone, Early Access"
+    },
+    "mapRasterM06Page": {
+      "title": "Road To Vostok Apartments Map — Interactive POI & layout filters",
+      "description": "Dense apartment block map for Road To Vostok: filters and POI markers for floors, doors, and loot. Ideal for studying urban navigation — confirm doors and exits in your build after patches.",
+      "keywords": "Road To Vostok Apartments map, Road To Vostok interactive map, urban POI, survival scavenging, Early Access guide"
+    },
+    "mapRasterM07Page": {
+      "title": "Road To Vostok Terminal Map — Interactive POI & end-route filters",
+      "description": "Terminal area map for Road To Vostok: late-route POI and filters. Pair with the Tasks page for border crossings and Vostok rules; verify markers in-game before committing gear.",
+      "keywords": "Road To Vostok Terminal map, Road To Vostok interactive map, Terminal POI, survival progression, Border Zone endgame, Early Access guide"
+    },
     "tasksPage": {
       "title": "Road To Vostok Tasks — Progression, Border & Vostok Rules",
       "description": "Road To Vostok tasks and progression reference: trader objectives, Border Zone crossings, Vostok permadeath rules, and suggested route order. Confirm quest behavior in your build.",
@@ -405,7 +435,8 @@
     "navWiki": "Wiki",
     "navMap": "Map",
     "navMapOverview": "World map",
-    "navMapVillage": "Village map",
+    "navMapVillage": "Village Map",
+    "navMapRasterGroup": "Raster maps",
     "navTasks": "Tasks",
     "navGuides": "Guides",
     "navMods": "Mods",
@@ -653,43 +684,21 @@
     "area05MapImgAlt": "Area 05 — atmospheric map reference art alongside the guide"
   },
   "mapVillagePage": {
-    "breadcrumbCurrent": "Village (detail)",
-    "title": "Road To Vostok — Village map — Area 05 detail",
-    "introHtml": "This page uses your <strong>local village raster</strong> at <code>/images/map/map-02.png</code>. Markers are grouped by <strong>Locations</strong>, <strong>Enemies</strong>, <strong>Quests</strong>, <strong>Loot</strong>, and <strong>NPC</strong> — same idea as the in-game map filters. Open the <a href=\"/map\">world overview</a> for the full regional graphic.",
+    "breadcrumbCurrent": "Village Map",
+    "title": "Road To Vostok — Village Map — Area 05 detail",
+    "introHtml": "This page is an <strong>interactive village map</strong> for Area 05: markers grouped by <strong>Locations</strong>, <strong>Enemies</strong>, <strong>Quests</strong>, <strong>Loot</strong>, and <strong>NPC</strong>, similar to in-game map filters. Open the <a href=\"/map\">world overview</a> for the full regional picture.",
     "sectionKicker": "Area 05 · Village line",
     "sectionTitle": "Interactive Village map",
-    "hintHtml": "Use the <strong>filter panel on the left of the map</strong> to show or hide marker types; counts match the pins in <code>src/data/map/villageDetail/en.js</code>. Click a grid cell to jump between pins of that type. Pin details open in the <strong>map popup</strong>. Deep-link with <code>?loc=</code> and a pin id (e.g. <code>?loc=landmark-1</code>). Coordinates are normalized (0–1) on the PNG.",
+    "hintHtml": "Use the <strong>filter panel on the left of the map</strong> to show or hide marker types; the numbers show how many markers of each type appear on this map. Click the map or a row in the list below to open details in the popup. After opening a marker, you can bookmark or share the page from your browser to return to the same spot. Scroll or pinch to zoom; drag to pan.",
     "mapAppAria": "Road To Vostok Village layout map. Scroll or pinch to zoom; drag to pan.",
     "railAria": "Map filters and marker counts",
     "railKicker": "On map",
     "railTitle": "Markers by category",
-    "railLeadHtml": "Toggle categories or individual types. Numbers show how many pins exist per type on this map data.",
+    "railLeadHtml": "Toggle categories or individual types. Numbers show how many markers of each type appear on this map.",
     "legendAria": "Marker category colors",
-    "footnoteHtml": "<strong>Note:</strong> Base image is <code>/images/map/map-02.png</code>. Pins use <code>category</code> + <code>kind</code> in <code>src/data/map/villageDetail/en.js</code> (see <code>taxonomy.js</code> for allowed kinds). Trademarks belong to their owners; verify gameplay in your build.",
-    "belowMapHtml": "<h2>Village map guide for Road To Vostok (Area 05)</h2><p><strong>Road To Vostok</strong> places you in a harsh survival loop through Finland toward <strong>Vostok</strong>; official marketing describes <strong>Area 05</strong> as an evacuated Finnish zone with <strong>shelters</strong>, <strong>traders</strong>, <strong>tasks</strong>, and <strong>starting loot</strong>, interrupted by hostile <strong>bandits</strong>. This page is a <strong>third-party editorial layout</strong>: an interactive raster map with category filters (locations, enemies, quests, loot, NPC) so you can plan routes, scavenging stops, and trader visits next to our <a href=\"/map\">regional overview map</a>.</p><h3>How to read the pins</h3><ul><li><strong>Normalized coordinates</strong> pin each marker to the PNG; they are <strong>approximate</strong> — align markers to your screenshot or in-game compass after patches.</li><li><strong>Loot categories</strong> (crates, cabinets, electronics, and similar) illustrate <em>types</em> of container spawns for study; they are not a guarantee of specific item rolls.</li><li><strong>Share a location</strong> with <code>?loc=</code> plus a pin id (for example <code>?loc=trader-1</code>) so friends open the same popup.</li></ul><h3>Accuracy &amp; updates</h3><p>Topics such as <strong>Road To Vostok village map</strong>, <strong>Area 05 layout</strong>, or <strong>trader and shelter positions</strong> should always be checked against your installed build and official sources. Dynamic systems, events, and procedural layout can move spawns; this guide exists to <strong>support orientation</strong>, not to replace the in-game map.</p><h3>More on this guide site</h3><p>For border crossings and Vostok rules, read <a href=\"/tasks\">Tasks &amp; progression</a>; for controls, medical basics, and the core loop, start with <a href=\"/getting-started\">Getting started</a>; for tables of weapons, ammo, and items, browse the <a href=\"/wiki\">Wiki</a>.</p>",
-    "backToOverview": "Back to world overview map",
-    "categories": {
-      "locations": "Locations",
-      "loot": "Loot",
-      "npc": "NPC",
-      "quests": "Quests"
-    },
-    "kinds": {
-      "hideout": "Shelter",
-      "landmark": "Landmark",
-      "fishing_spot": "Fishing spot",
-      "locked_structure": "Locked structure",
-      "extraction": "Extraction",
-      "enemy_spawn": "Enemy spawn",
-      "tasks": "Tasks",
-      "crate": "Crate",
-      "fridge": "Fridge",
-      "cabinet": "Cabinet",
-      "garbage_bag": "Garbage Bag",
-      "electronics": "Electronics",
-      "tools": "Tools",
-      "trader": "Trader"
-    }
+    "footnoteHtml": "<strong>Note:</strong> Independent player guide — not affiliated with the developer. Trademarks belong to their owners. Always confirm marker positions and loot in your installed Road To Vostok build.",
+    "belowMapHtml": "<h2>Village map guide for Road To Vostok (Area 05)</h2><p><strong>Road To Vostok</strong> places you in a harsh survival loop through Finland toward <strong>Vostok</strong>; official marketing describes <strong>Area 05</strong> as an evacuated Finnish zone with <strong>shelters</strong>, <strong>traders</strong>, <strong>tasks</strong>, and <strong>starting loot</strong>, interrupted by hostile <strong>bandits</strong>. This page is a <strong>third-party editorial layout</strong>: an interactive map with category filters (locations, enemies, quests, loot, NPC) so you can plan routes, scavenging stops, and trader visits next to our <a href=\"/map\">regional overview map</a>.</p><h3>How to read the pins</h3><ul><li>Markers sit on the art as <strong>approximate</strong> references — small shifts are normal after patches; align with your in-game view when in doubt.</li><li><strong>Loot categories</strong> (crates, cabinets, electronics, and similar) illustrate <em>types</em> of places to search; they are not a guarantee of specific item rolls.</li><li>After you open a marker, use your browser’s bookmark or share on the page address so friends can jump to the same popup.</li></ul><h3>Accuracy &amp; updates</h3><p>Topics such as <strong>Road To Vostok village map</strong>, <strong>Area 05 layout</strong>, or <strong>trader and shelter positions</strong> should always be checked against your installed build and official sources. Dynamic systems, events, and procedural layout can move spawns; this guide exists to <strong>support orientation</strong>, not to replace the in-game map.</p><h3>More on this guide site</h3><p>For border crossings and Vostok rules, read <a href=\"/tasks\">Tasks &amp; progression</a>; for controls, medical basics, and the core loop, start with <a href=\"/getting-started\">Getting started</a>; for tables of weapons, ammo, and items, browse the <a href=\"/wiki\">Wiki</a>.</p>",
+    "backToOverview": "Back to world overview map"
   },
   "tasksPage": {
     "breadcrumb": "Tasks",
@@ -1039,5 +1048,113 @@
     "contactHtml": "Questions about these terms:",
     "footerPrivacy": "Privacy Policy",
     "footerCopyright": "Copyright"
+  },
+  "mapRasterM02": {
+    "navLabel": "Highway Map",
+    "breadcrumbCurrent": "Highway Map",
+    "legendAria": "Marker category legend for the Highway map",
+    "railAria": "Highway map filters and marker counts",
+    "railKicker": "On map",
+    "railTitle": "Markers by category",
+    "title": "Road To Vostok — Highway map — detail & POI filters",
+    "introHtml": "<p>This <strong>Highway</strong> map covers the road and border-line stretch in <em>Road To Vostok</em> after the starting village: a colour legend, filters, and markers for traders, loot, cover, and hazards so you can plan movement without clutter. Compare with the <a href=\"/map\">world overview</a> and the <a href=\"/map/village-map\">Village map</a> to see how this segment fits Area&nbsp;05.</p>",
+    "sectionKicker": "Border route · Highway line",
+    "sectionTitle": "Interactive Highway map",
+    "hintHtml": "Use the <strong>filters on the left</strong> to show only the marker types you need. Click markers to read the popup. After opening a marker, bookmark or share the page from your browser to return to the same spot. Scroll or pinch to zoom; drag to move the map.",
+    "mapAppAria": "Road To Vostok Highway layout map. Scroll or pinch to zoom; drag to pan.",
+    "railLeadHtml": "Toggle categories or subtypes. The numbers show how many markers of each type appear on this Highway map.",
+    "belowMapHtml": "<h2>Using this map</h2><p>Use it to plan travel along the highway and to spot traders, shelters, containers, and danger zones at a glance. Patches can move loot and encounters — treat everything as a planning aid, not a guarantee. For quests, crossings, and end rules, also read <a href=\"/tasks\">Tasks &amp; border / Vostok rules</a>.</p>",
+    "footnoteHtml": "<strong>Note:</strong> Third-party editorial layout; trademarks belong to their owners. Confirm markers against your installed Road To Vostok build.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">World overview</a> · <a href=\"/map/village-map\">Village Map</a> · <a href=\"/map/highway-map\">Highway Map</a> · <a href=\"/map/school-map\">School Map</a> · <a href=\"/map/outpost-map\">Outpost Map</a> · <a href=\"/map/minefield-map\">Minefield Map</a> · <a href=\"/map/apartments-map\">Apartments Map</a> · <a href=\"/map/terminal-map\">Terminal Map</a></p>"
+  },
+  "mapRasterM03": {
+    "navLabel": "School Map",
+    "breadcrumbCurrent": "School Map",
+    "legendAria": "Marker category legend for the School map",
+    "railAria": "School map filters and marker counts",
+    "railKicker": "On map",
+    "railTitle": "Markers by category",
+    "title": "Road To Vostok — School map — detail & POI filters",
+    "introHtml": "<p>The <strong>School</strong> map is a close-up of the school grounds and interiors: filters and markers for rooms, loot, and threats. Use it together with the <a href=\"/map\">world overview</a> and <a href=\"/map/highway-map\">Highway map</a> when you are pushing east from the village.</p>",
+    "sectionKicker": "Urban site · School line",
+    "sectionTitle": "Interactive School map",
+    "hintHtml": "Use the <strong>filters on the left</strong> to limit marker types. Click markers for details; bookmark or share the page from your browser to return to the same marker. Scroll or pinch to zoom; drag to pan.",
+    "mapAppAria": "Road To Vostok School layout map. Scroll or pinch to zoom; drag to pan.",
+    "railLeadHtml": "Toggle categories or subtypes. The numbers show how many markers of each type appear on this School map.",
+    "belowMapHtml": "<h2>Using this map</h2><p>Good for learning room layout, sightlines, and where to search before a raid. Confirm spawns and exits in your build after updates. For written tactics, browse <a href=\"/guides\">Guides</a> when a relevant article exists.</p>",
+    "footnoteHtml": "<strong>Note:</strong> Editorial layout; confirm against your installed build.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">World overview</a> · <a href=\"/map/village-map\">Village Map</a> · <a href=\"/map/highway-map\">Highway Map</a> · <a href=\"/map/school-map\">School Map</a> · <a href=\"/map/outpost-map\">Outpost Map</a> · <a href=\"/map/minefield-map\">Minefield Map</a> · <a href=\"/map/apartments-map\">Apartments Map</a> · <a href=\"/map/terminal-map\">Terminal Map</a></p>"
+  },
+  "mapRasterM04": {
+    "navLabel": "Outpost Map",
+    "breadcrumbCurrent": "Outpost Map",
+    "legendAria": "Marker category legend for the Outpost map",
+    "railAria": "Outpost map filters and marker counts",
+    "railKicker": "On map",
+    "railTitle": "Markers by category",
+    "title": "Road To Vostok — Outpost map — detail & POI filters",
+    "introHtml": "<p>The <strong>Outpost</strong> map highlights a forward military-style site: markers for buildings, cover, loot, and route choices. Check the <a href=\"/map\">world overview</a> to see where this stop sits on the wider journey east.</p>",
+    "sectionKicker": "Forward base · Outpost line",
+    "sectionTitle": "Interactive Outpost map",
+    "hintHtml": "Use the <strong>filters on the left</strong> to focus on the marker types you care about. Click markers for popups; bookmark or share the page to return to the same view. Scroll or pinch to zoom; drag to pan.",
+    "mapAppAria": "Road To Vostok Outpost layout map. Scroll or pinch to zoom; drag to pan.",
+    "railLeadHtml": "Toggle categories or subtypes. The numbers show how many markers of each type appear on this Outpost map.",
+    "belowMapHtml": "<h2>Using this map</h2><p>Use it to plan approach angles, container sweeps, and extraction timing. This is a player guide, not an official layout — always verify against your installed version.</p>",
+    "footnoteHtml": "<strong>Note:</strong> Editorial layout; confirm against your installed build.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">World overview</a> · <a href=\"/map/village-map\">Village Map</a> · <a href=\"/map/highway-map\">Highway Map</a> · <a href=\"/map/school-map\">School Map</a> · <a href=\"/map/outpost-map\">Outpost Map</a> · <a href=\"/map/minefield-map\">Minefield Map</a> · <a href=\"/map/apartments-map\">Apartments Map</a> · <a href=\"/map/terminal-map\">Terminal Map</a></p>"
+  },
+  "mapRasterM05": {
+    "navLabel": "Minefield Map",
+    "breadcrumbCurrent": "Minefield Map",
+    "legendAria": "Marker category legend for the Minefield map",
+    "railAria": "Minefield map filters and marker counts",
+    "railKicker": "On map",
+    "railTitle": "Markers by category",
+    "title": "Road To Vostok — Minefield map — detail & POI filters",
+    "introHtml": "<p>The <strong>Minefield</strong> map is for <em>orientation only</em>: it shows reference markers in a mine-heavy corridor. Read <a href=\"/guides/surviving-the-Minefield\">Surviving the Minefield</a> for real tactics — <strong>never</strong> assume a line on the map is a safe path through live mines.</p>",
+    "sectionKicker": "Hazard corridor · Minefield line",
+    "sectionTitle": "Interactive Minefield map",
+    "hintHtml": "Use the <strong>filters on the left</strong> to reduce noise. Click markers for notes. Bookmark or share the page if you need to return to the same reference. Scroll or pinch to zoom; drag to pan.",
+    "mapAppAria": "Road To Vostok Minefield layout map. Scroll or pinch to zoom; drag to pan.",
+    "railLeadHtml": "Toggle categories or subtypes. The numbers show how many markers of each type appear on this Minefield map.",
+    "belowMapHtml": "<h2>Using this map</h2><p>Pair the visual with sound, probes, and slow movement in-game. Official layouts and mine logic can change — your own caution matters more than any pin.</p>",
+    "footnoteHtml": "<strong>Note:</strong> Editorial layout; confirm against your installed build.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">World overview</a> · <a href=\"/map/village-map\">Village Map</a> · <a href=\"/map/highway-map\">Highway Map</a> · <a href=\"/map/school-map\">School Map</a> · <a href=\"/map/outpost-map\">Outpost Map</a> · <a href=\"/map/minefield-map\">Minefield Map</a> · <a href=\"/map/apartments-map\">Apartments Map</a> · <a href=\"/map/terminal-map\">Terminal Map</a></p>"
+  },
+  "mapRasterM06": {
+    "navLabel": "Apartments Map",
+    "breadcrumbCurrent": "Apartments Map",
+    "legendAria": "Marker category legend for the Apartments map",
+    "railAria": "Apartments map filters and marker counts",
+    "railKicker": "On map",
+    "railTitle": "Markers by category",
+    "title": "Road To Vostok — Apartments map — detail & POI filters",
+    "introHtml": "<p>The <strong>Apartments</strong> map is a dense urban block: stairwells, flats, and alleys with markers for navigation and loot. Door states and spawns can change with patches — cross-check in-game and use the <a href=\"/map\">world overview</a> for how this block fits the region.</p>",
+    "sectionKicker": "Dense urban · Apartments line",
+    "sectionTitle": "Interactive Apartments map",
+    "hintHtml": "Use the <strong>filters on the left</strong> to hide categories you do not need. Click markers for building-level hints. Bookmark or share the page to revisit the same marker. Scroll or pinch to zoom; drag to pan.",
+    "mapAppAria": "Road To Vostok Apartments layout map. Scroll or pinch to zoom; drag to pan.",
+    "railLeadHtml": "Toggle categories or subtypes. The numbers show how many markers of each type appear on this Apartments map.",
+    "belowMapHtml": "<h2>Using this map</h2><p>Best for learning vertical layout and which wings to clear first. Treat markers as study aids, not a promise that a door is open or unlooted.</p>",
+    "footnoteHtml": "<strong>Note:</strong> Editorial layout; confirm against your installed build.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">World overview</a> · <a href=\"/map/village-map\">Village Map</a> · <a href=\"/map/highway-map\">Highway Map</a> · <a href=\"/map/school-map\">School Map</a> · <a href=\"/map/outpost-map\">Outpost Map</a> · <a href=\"/map/minefield-map\">Minefield Map</a> · <a href=\"/map/apartments-map\">Apartments Map</a> · <a href=\"/map/terminal-map\">Terminal Map</a></p>"
+  },
+  "mapRasterM07": {
+    "navLabel": "Terminal Map",
+    "breadcrumbCurrent": "Terminal Map",
+    "legendAria": "Marker category legend for the Terminal map",
+    "railAria": "Terminal map filters and marker counts",
+    "railKicker": "On map",
+    "railTitle": "Markers by category",
+    "title": "Road To Vostok — Terminal map — detail & POI filters",
+    "introHtml": "<p>The <strong>Terminal</strong> map covers a late-route industrial hub: filters and markers for halls, loot, and exits. Before you commit expensive gear, read <a href=\"/tasks\">Tasks &amp; border / Vostok rules</a> so you understand crossings and permadeath stakes.</p>",
+    "sectionKicker": "Late route · Terminal line",
+    "sectionTitle": "Interactive Terminal map",
+    "hintHtml": "Use the <strong>filters on the left</strong> to focus the sidebar. Click markers for details; bookmark or share the page to return to the same view. Scroll or pinch to zoom; drag to pan.",
+    "mapAppAria": "Road To Vostok Terminal layout map. Scroll or pinch to zoom; drag to pan.",
+    "railLeadHtml": "Toggle categories or subtypes. The numbers show how many markers of each type appear on this Terminal map.",
+    "belowMapHtml": "<h2>Using this map</h2><p>Use it to rehearse movement inside the complex and to note high-value rooms. Late-game balance shifts often — confirm key rooms in your current build.</p>",
+    "footnoteHtml": "<strong>Note:</strong> Editorial layout; confirm against your installed build.",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">World overview</a> · <a href=\"/map/village-map\">Village Map</a> · <a href=\"/map/highway-map\">Highway Map</a> · <a href=\"/map/school-map\">School Map</a> · <a href=\"/map/outpost-map\">Outpost Map</a> · <a href=\"/map/minefield-map\">Minefield Map</a> · <a href=\"/map/apartments-map\">Apartments Map</a> · <a href=\"/map/terminal-map\">Terminal Map</a></p>"
   }
 }

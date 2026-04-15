@@ -90,6 +90,11 @@
       "description": "Road To Vostok 互动地图：05 区、边境地带与符拉迪沃斯托克兴趣点、可检索索引与区域说明。请结合游戏内地图与客户端坐标核对。",
       "keywords": "Road To Vostok 地图, 05 区, 边境地带, 符拉迪沃斯托克, POI, 地点索引"
     },
+    "mapVillagePage": {
+      "title": "Road To Vostok — 村庄地图 — 05 区细部 | 互动兴趣点指南",
+      "description": "Road To Vostok 起始村庄细部互动地图：可按大类筛选避难所、商人、战利品刷新、撤离点与敌人等兴趣点。第三方攻略站 — 请结合世界总览地图，并在游戏中核对每个标记。",
+      "keywords": "Road To Vostok, Road To Vostok 地图, 村庄地图, 05 区, 芬兰生存游戏, 互动地图, 兴趣点, 避难所, 商人, 搜刮, 撤离, 强盗, 抢先体验, 游戏指南"
+    },
     "tasksPage": {
       "title": "Road To Vostok 任务 — 推进、边境与符拉迪沃斯托克规则",
       "description": "Road To Vostok 任务与推进参考：商人目标、边境穿越、符拉迪沃斯托克永久死亡规则与建议路线顺序。请在游戏中确认任务行为。",
@@ -125,6 +130,36 @@
       "title": "模组文章 — Road To Vostok",
       "description": "Road To Vostok 模组聚焦：功能概述、兼容说明、加载器要求与权威下载链接。",
       "keywords": "Road To Vostok, 模组, Mod 指南, 抢先体验"
+    },
+    "mapRasterM02Page": {
+      "title": "Road To Vostok 公路地图 — 互动兴趣点与筛选 | 流程向指南",
+      "description": "公路路段互动地图：图例、分类筛选与沿途兴趣点（商人、掩体、容器与风险等）。请结合世界总览与村庄细部地图理解 05 区走向，并在游戏中核对标记。",
+      "keywords": "Road To Vostok 公路地图, Road To Vostok 互动地图, 公路兴趣点, 生存游戏地图, 芬兰 05 区, 边境地带路线, 搜刮撤离, 抢先体验攻略"
+    },
+    "mapRasterM03Page": {
+      "title": "Road To Vostok 学校地图 — 互动布局与兴趣点筛选",
+      "description": "学校区域互动地图：教室与校园内的兴趣点与筛选，便于规划搜刮与战斗路线。可与村庄、公路地图对照；补丁后请在游戏内核实刷新与出口。",
+      "keywords": "Road To Vostok 学校地图, 互动地图, 学校兴趣点, 生存攻略, 地图推进, 抢先体验"
+    },
+    "mapRasterM04Page": {
+      "title": "Road To Vostok 前哨地图 — 互动兴趣点与分类筛选",
+      "description": "前哨据点互动地图：路线、掩体与容器等兴趣点筛选。玩家攻略向参考，非官方坐标说明 — 请以当前安装版本为准。",
+      "keywords": "Road To Vostok 前哨地图, 互动地图, 前哨兴趣点, 边境地带, 生存撤离, 抢先体验指南"
+    },
+    "mapRasterM05Page": {
+      "title": "Road To Vostok 雷区地图 — 风险路线与互动筛选",
+      "description": "雷区路段互动地图，仅作方位与风险参考。务必阅读雷区生存攻略；地图上的线或点不代表绝对安全通道。",
+      "keywords": "Road To Vostok 雷区地图, 地雷生存攻略, 互动地图, 边境地带, 抢先体验"
+    },
+    "mapRasterM06Page": {
+      "title": "Road To Vostok 公寓地图 — 密集城区兴趣点与筛选",
+      "description": "密集公寓街区互动地图：楼梯、单元与巷弄等兴趣点，便于学习立体搜刮路线。门状态与战利品会随版本变化，请进游戏核对。",
+      "keywords": "Road To Vostok 公寓地图, 互动地图, 城区兴趣点, 生存搜刮, 抢先体验攻略"
+    },
+    "mapRasterM07Page": {
+      "title": "Road To Vostok 终端地图 — 后期路线兴趣点与筛选",
+      "description": "终端/枢纽类后期区域互动地图：大厅、高价值房间与出口等参考。请结合任务与符拉迪沃斯托克规则再决定装备与是否过境。",
+      "keywords": "Road To Vostok 终端地图, 互动地图, 终端兴趣点, 生存推进, 边境后期, 抢先体验指南"
     }
   },
   "homePage": {
@@ -439,7 +474,8 @@
     "pageRailAsideLabel": "页面简报",
     "pageRailNavTitle": "本页跳转",
     "seoDefaultPageTitle": "Road To Vostok 指南 — 生存维基与任务帮助",
-    "ogDefaultLogoAlt": "Road To Vostok 指南站点标志"
+    "ogDefaultLogoAlt": "Road To Vostok 指南站点标志",
+    "navMapRasterGroup": "栅格地图"
   },
   "notFoundPage": {
     "breadcrumb": "未找到",
@@ -686,6 +722,23 @@
     "regionalSectionHtml": "<h2>区域概览</h2><p class=\"guide-lead\">官方网站将世界描述为线性推进：你从<strong>05 区</strong>（芬兰）起步，向东穿过<strong>边境地带</strong>，最终可进入俄罗斯的<strong>符拉迪沃斯托克</strong> — 各层级死亡后果不同。</p><div class=\"regions\"><article><h3>05 区</h3><p>芬兰东南部一片撤离区：避难所、商人、任务与前期生存战利品。敌对<strong>强盗</strong>在区内巡逻。</p></article><article><h3>边境地带</h3><p>芬兰与俄罗斯之间的设防边境。过境方式各异：地雷、障碍，或需船只的水路。武装腐败的<strong>卫兵</strong>可能呼叫空中支援。</p></article><article><h3>符拉迪沃斯托克</h3><p>高风险的俄罗斯领土，战利品价值最高。每张符拉迪沃斯托克地图均为<strong>永久死亡</strong>图。<strong>军方</strong>派系拥有重武器与装甲车辆。</p></article></div>",
     "area05DetailProseHtml": "<h2>05 区地图说明与战利品从哪来</h2><p>据官方<strong>游戏</strong>页，05 区是开局区域：芬兰<strong>东南部</strong>一片撤离区，可找到<strong>避难所</strong>、<strong>商人</strong>、<strong>任务</strong>与<strong>起步战利品</strong>。日常节奏会被利用权力真空的敌对<strong>强盗</strong>打断。</p><h3>战利品与「刷新点」实务</h3><p>同一页将<strong>物理化战利品</strong>列为核心：物品以世界中的实体存在，而非抽象菜单拾取。开发商<strong>未</strong>在 roadtovostok.com 公布固定坐标表，许多系统被描述为<strong>动态</strong>（事件、天气、可重复跑图）。因此本站<strong>不</strong>列出保证刷新坐标 — 其会随补丁与程序布局变化。</p><ul><li><strong>按设定逻辑搜刮：</strong>搜索设定暗示的地点类型（聚落、路边、废弃建筑），并在游戏内感受当前版本的战利品密度。</li><li><strong>利用商人与任务：</strong>官方功能列表将交易与任务与避难所一并列为核心循环 — 以物易物与任务奖励是预期推进手段，不仅地面刷新。</li><li><strong>活着才能留住物资：</strong>据官方符拉迪沃斯托克说明，在 05 区阵亡通常只损失<strong>随身携带</strong>物 — 不会清空整局储藏（更严规则适用于符拉迪沃斯托克内死亡）。</li></ul><p class=\"guide-tools\">本站：<a href=\"/wiki\">维基</a>（装备表）、<a href=\"/getting-started\">新手指南</a>（循环、操作、医疗基础）、<a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">边境地理攻略</a>、<a href=\"/guides/surviving-the-Minefield\">雷区攻略</a>、<a href=\"/tasks\">任务与符拉迪沃斯托克规则</a>。</p>",
     "area05MapImgAlt": "05 区 — 与指南并列的氛围地图参考图"
+  },
+  "mapVillagePage": {
+    "breadcrumbCurrent": "村庄细部地图",
+    "title": "Road To Vostok — 村庄细部地图 — 05 区",
+    "introHtml": "本页是 05 区的<strong>互动村庄地图</strong>：兴趣点按<strong>地点</strong>、<strong>敌人</strong>、<strong>任务</strong>、<strong>战利品</strong>与 <strong>NPC</strong> 分组，思路接近游戏内地图筛选。打开 <a href=\"/map\">世界总览</a> 查看更大范围区域关系。",
+    "sectionKicker": "05 区 · 村庄线",
+    "sectionTitle": "互动村庄地图",
+    "hintHtml": "使用地图<strong>左侧筛选面板</strong>开关各类型兴趣点；数字表示当前地图上该类型的标记数量。点击地图上的标记或下方列表中的行，在弹出层中查看详情。打开某个标记后，可用浏览器收藏或分享页面地址，以便回到同一位置。滚轮或双指缩放，拖拽平移。",
+    "mapAppAria": "Road To Vostok 村庄布局地图。滚轮或双指缩放；拖拽平移。",
+    "railAria": "地图筛选与标记数量",
+    "railKicker": "地图上",
+    "railTitle": "按大类的标记",
+    "railLeadHtml": "开关各大类或子类型；数字表示本页地图上各类型标记的数量。",
+    "legendAria": "大类标记颜色图例",
+    "footnoteHtml": "<strong>说明：</strong>独立玩家攻略站，非开发商运营。商标归权利人所有。请务必在已安装的 Road To Vostok 中核对标记位置与战利品。",
+    "belowMapHtml": "<h2>Road To Vostok 村庄地图指南（05 区）</h2><p><strong>Road To Vostok</strong> 将你置于穿越芬兰前往<strong>符拉迪沃斯托克</strong>的严酷生存循环中；官方宣传将<strong>05 区</strong>描述为芬兰东南一片撤离区，有<strong>避难所</strong>、<strong>商人</strong>、<strong>任务</strong>与<strong>起步战利品</strong>，并常有敌对<strong>强盗</strong>出没。本页为<strong>第三方编辑排版</strong>：带大类筛选的互动地图（地点、敌人、任务、战利品、NPC），便于与我们的 <a href=\"/map\">区域总览地图</a> 对照规划路线、搜刮节奏与商人拜访。</p><h3>如何阅读标记</h3><ul><li>标记在底图上为<strong>近似</strong>参考 — 补丁后可能有小幅偏移；不确定时请对照游戏内画面。</li><li><strong>战利品大类</strong>（箱子、柜子、电器等）表示适合搜刮的<strong>类型</strong>位置，不保证具体掉落。</li><li>打开某个标记后，可将浏览器当前页加入收藏或分享给他人，对方打开后通常会落在同一弹出说明。</li></ul><h3>准确性与更新</h3><p>「Road To Vostok 村庄地图」「05 区布局」「商人避难所位置」等话题，请始终以已安装版本与官方来源为准。动态事件与程序布局会改变刷新；本页旨在<strong>辅助辨向</strong>，不能替代游戏内地图。</p><h3>本站延伸阅读</h3><p>过境与符拉迪沃斯托克规则见 <a href=\"/tasks\">任务与推进</a>；操作、医疗与核心循环见 <a href=\"/getting-started\">新手指南</a>；武器弹药与物品表见 <a href=\"/wiki\">维基</a>。</p>",
+    "backToOverview": "返回世界总览地图"
   },
   "tasksPage": {
     "breadcrumb": "任务",
@@ -993,5 +1046,113 @@
     "contactHtml": "有关本条款的疑问：",
     "footerPrivacy": "隐私政策",
     "footerCopyright": "版权"
+  },
+  "mapRasterM02": {
+    "navLabel": "公路地图",
+    "breadcrumbCurrent": "公路地图",
+    "legendAria": "公路地图大类图例色块",
+    "railAria": "公路地图筛选与图钉数量",
+    "railKicker": "地图上",
+    "railTitle": "按大类的标记",
+    "title": "Road To Vostok — 公路地图 — 细部与兴趣点筛选",
+    "introHtml": "<p>这张<strong>公路</strong>图表现离开起始村庄后的道路与边境线一带：有色图例、侧栏筛选和兴趣点标记，便于查看商人、掩体、容器与危险区域而不被信息淹没。可与 <a href=\"/map\">世界总览</a>、<a href=\"/map/village-map\">村庄细部地图</a> 对照，理解在 05 区整体中的位置。</p>",
+    "sectionKicker": "边境路线 · 公路线",
+    "sectionTitle": "互动公路地图",
+    "hintHtml": "用地图<strong>左侧筛选</strong>只显示你关心的标记类型；点击图钉阅读说明。打开某个图钉后，可用浏览器收藏或复制地址栏链接，方便下次回到同一位置。滚轮或双指缩放，拖拽平移。",
+    "mapAppAria": "Road To Vostok 公路布局地图。滚轮或双指缩放；拖拽平移。",
+    "railLeadHtml": "开关大类或子类型；旁数字表示<strong>本页公路地图</strong>上各类型标记的数量。",
+    "belowMapHtml": "<h2>怎么用这个地图</h2><p>适合规划沿路推进、找商人/避难所/容器和预判交火区。版本更新可能改变刷新与遭遇 — 一律以游戏内为准。任务、过境与后期规则请同时阅读 <a href=\"/tasks\">任务与边境 / 符拉迪沃斯托克说明</a>。</p>",
+    "footnoteHtml": "<strong>说明：</strong>第三方编辑排版；商标归权利人。请在已安装的 Road To Vostok 版本中核对标记。",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">世界总览</a> · <a href=\"/map/village-map\">村庄地图</a> · <a href=\"/map/highway-map\">公路地图</a> · <a href=\"/map/school-map\">学校地图</a> · <a href=\"/map/outpost-map\">前哨地图</a> · <a href=\"/map/minefield-map\">雷区地图</a> · <a href=\"/map/apartments-map\">公寓地图</a> · <a href=\"/map/terminal-map\">终端地图</a></p>"
+  },
+  "mapRasterM03": {
+    "navLabel": "学校地图",
+    "breadcrumbCurrent": "学校地图",
+    "legendAria": "学校地图大类图例色块",
+    "railAria": "学校地图筛选与图钉数量",
+    "railKicker": "地图上",
+    "railTitle": "按大类的标记",
+    "title": "Road To Vostok — 学校地图 — 细部与兴趣点筛选",
+    "introHtml": "<p><strong>学校</strong>区域细图：校舍与操场周边的房间、战利品与威胁等兴趣点。向东推进时建议与 <a href=\"/map\">世界总览</a>、<a href=\"/map/highway-map\">公路地图</a> 一起使用。</p>",
+    "sectionKicker": "城市场景 · 学校线",
+    "sectionTitle": "互动学校地图",
+    "hintHtml": "用<strong>左侧筛选</strong>减少无关标记；点击图钉查看说明。打开图钉后可收藏或分享页面以回到同一位置。滚轮或双指缩放，拖拽平移。",
+    "mapAppAria": "Road To Vostok 学校布局地图。滚轮或双指缩放；拖拽平移。",
+    "railLeadHtml": "开关大类或子类型；数字表示<strong>本页学校地图</strong>上各类型标记的数量。",
+    "belowMapHtml": "<h2>怎么用这个地图</h2><p>适合熟悉室内动线、架枪位与搜刮顺序。刷新与出口请在更新后于游戏内再确认。文字攻略见 <a href=\"/guides\">攻略</a>（若有相关文章）。</p>",
+    "footnoteHtml": "<strong>说明：</strong>编辑参考；请在游戏中核对。",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">世界总览</a> · <a href=\"/map/village-map\">村庄地图</a> · <a href=\"/map/highway-map\">公路地图</a> · <a href=\"/map/school-map\">学校地图</a> · <a href=\"/map/outpost-map\">前哨地图</a> · <a href=\"/map/minefield-map\">雷区地图</a> · <a href=\"/map/apartments-map\">公寓地图</a> · <a href=\"/map/terminal-map\">终端地图</a></p>"
+  },
+  "mapRasterM04": {
+    "navLabel": "前哨地图",
+    "breadcrumbCurrent": "前哨地图",
+    "legendAria": "前哨地图大类图例色块",
+    "railAria": "前哨地图筛选与图钉数量",
+    "railKicker": "地图上",
+    "railTitle": "按大类的标记",
+    "title": "Road To Vostok — 前哨地图 — 细部与兴趣点筛选",
+    "introHtml": "<p><strong>前哨</strong>一类据点：建筑、掩体、容器与路线选择的兴趣点。结合 <a href=\"/map\">世界总览</a> 可看出这一站在整条东进路线中的大致位置。</p>",
+    "sectionKicker": "前进据点 · 前哨线",
+    "sectionTitle": "互动前哨地图",
+    "hintHtml": "用<strong>左侧筛选</strong>聚焦需要的类型；点击图钉看说明，可收藏或分享页面回到同一视图。滚轮或双指缩放，拖拽平移。",
+    "mapAppAria": "Road To Vostok 前哨布局地图。滚轮或双指缩放；拖拽平移。",
+    "railLeadHtml": "开关大类或子类型；数字表示<strong>本页前哨地图</strong>上各类型标记的数量。",
+    "belowMapHtml": "<h2>怎么用这个地图</h2><p>适合规划接近角、清楼顺序与撤离时机。本站为玩家攻略，非官方布局 — 务必与当前版本对照。</p>",
+    "footnoteHtml": "<strong>说明：</strong>编辑参考；请在游戏中核对。",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">世界总览</a> · <a href=\"/map/village-map\">村庄地图</a> · <a href=\"/map/highway-map\">公路地图</a> · <a href=\"/map/school-map\">学校地图</a> · <a href=\"/map/outpost-map\">前哨地图</a> · <a href=\"/map/minefield-map\">雷区地图</a> · <a href=\"/map/apartments-map\">公寓地图</a> · <a href=\"/map/terminal-map\">终端地图</a></p>"
+  },
+  "mapRasterM05": {
+    "navLabel": "雷区地图",
+    "breadcrumbCurrent": "雷区地图",
+    "legendAria": "雷区地图大类图例色块",
+    "railAria": "雷区地图筛选与图钉数量",
+    "railKicker": "地图上",
+    "railTitle": "按大类的标记",
+    "title": "Road To Vostok — 雷区地图 — 细部与兴趣点筛选",
+    "introHtml": "<p><strong>雷区</strong>路段地图仅用于<strong>方位与风险参考</strong>。请务必阅读 <a href=\"/guides/surviving-the-Minefield\">雷区生存攻略</a>；图上的线或点<strong>绝不</strong>代表已排雷的安全路线。</p>",
+    "sectionKicker": "高风险走廊 · 雷区线",
+    "sectionTitle": "互动雷区地图",
+    "hintHtml": "用<strong>左侧筛选</strong>减少干扰；点击图钉阅读备注。需要反复查看时可收藏页面。滚轮或双指缩放，拖拽平移。",
+    "mapAppAria": "Road To Vostok 雷区布局地图。滚轮或双指缩放；拖拽平移。",
+    "railLeadHtml": "开关大类或子类型；数字表示<strong>本页雷区地图</strong>上各类型标记的数量。",
+    "belowMapHtml": "<h2>怎么用这个地图</h2><p>请与游戏内听声、探雷与慢推结合使用。官方逻辑与地形会变 — 谨慎比任何标记都重要。</p>",
+    "footnoteHtml": "<strong>说明：</strong>编辑参考；请在游戏中核对。",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">世界总览</a> · <a href=\"/map/village-map\">村庄地图</a> · <a href=\"/map/highway-map\">公路地图</a> · <a href=\"/map/school-map\">学校地图</a> · <a href=\"/map/outpost-map\">前哨地图</a> · <a href=\"/map/minefield-map\">雷区地图</a> · <a href=\"/map/apartments-map\">公寓地图</a> · <a href=\"/map/terminal-map\">终端地图</a></p>"
+  },
+  "mapRasterM06": {
+    "navLabel": "公寓地图",
+    "breadcrumbCurrent": "公寓地图",
+    "legendAria": "公寓地图大类图例色块",
+    "railAria": "公寓地图筛选与图钉数量",
+    "railKicker": "地图上",
+    "railTitle": "按大类的标记",
+    "title": "Road To Vostok — 公寓地图 — 细部与兴趣点筛选",
+    "introHtml": "<p><strong>公寓</strong>密集街区：楼梯、单元与巷道等兴趣点，便于立体搜刮与清楼。门状态与战利品会随补丁变化，请结合 <a href=\"/map\">世界总览</a> 理解在区域中的位置。</p>",
+    "sectionKicker": "密集城区 · 公寓线",
+    "sectionTitle": "互动公寓地图",
+    "hintHtml": "用<strong>左侧筛选</strong>隐藏不需要的大类；点击图钉查看楼层级提示。可收藏或分享页面回到同一图钉。滚轮或双指缩放，拖拽平移。",
+    "mapAppAria": "Road To Vostok 公寓布局地图。滚轮或双指缩放；拖拽平移。",
+    "railLeadHtml": "开关大类或子类型；数字表示<strong>本页公寓地图</strong>上各类型标记的数量。",
+    "belowMapHtml": "<h2>怎么用这个地图</h2><p>适合先看清哪几翼先清、楼梯与制高点关系。标记是学习用参考，不保证某扇门一定可开或未搜过。</p>",
+    "footnoteHtml": "<strong>说明：</strong>编辑参考；请在游戏中核对。",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">世界总览</a> · <a href=\"/map/village-map\">村庄地图</a> · <a href=\"/map/highway-map\">公路地图</a> · <a href=\"/map/school-map\">学校地图</a> · <a href=\"/map/outpost-map\">前哨地图</a> · <a href=\"/map/minefield-map\">雷区地图</a> · <a href=\"/map/apartments-map\">公寓地图</a> · <a href=\"/map/terminal-map\">终端地图</a></p>"
+  },
+  "mapRasterM07": {
+    "navLabel": "终端地图",
+    "breadcrumbCurrent": "终端地图",
+    "legendAria": "终端地图大类图例色块",
+    "railAria": "终端地图筛选与图钉数量",
+    "railKicker": "地图上",
+    "railTitle": "按大类的标记",
+    "title": "Road To Vostok — 终端地图 — 细部与兴趣点筛选",
+    "introHtml": "<p><strong>终端</strong>一类后期工业/枢纽区域：大厅、高价值房间与出口等参考标记。投入贵重装备前，请先阅读 <a href=\"/tasks\">任务与边境 / 符拉迪沃斯托克规则</a>，了解过境与永久死亡风险。</p>",
+    "sectionKicker": "后期路线 · 终端线",
+    "sectionTitle": "互动终端地图",
+    "hintHtml": "用<strong>左侧筛选</strong>让侧栏只显示相关类型；点击图钉看详情，可收藏或分享页面。滚轮或双指缩放，拖拽平移。",
+    "mapAppAria": "Road To Vostok 终端布局地图。滚轮或双指缩放；拖拽平移。",
+    "railLeadHtml": "开关大类或子类型；数字表示<strong>本页终端地图</strong>上各类型标记的数量。",
+    "belowMapHtml": "<h2>怎么用这个地图</h2><p>适合在脑中预演楼内移动与高价值房间优先级。后期平衡常调 — 关键房间请在当前版本里再确认。</p>",
+    "footnoteHtml": "<strong>说明：</strong>编辑参考；请在游戏中核对。",
+    "crossLinksHtml": "<p class=\"map-next-link\"><a href=\"/map\">世界总览</a> · <a href=\"/map/village-map\">村庄地图</a> · <a href=\"/map/highway-map\">公路地图</a> · <a href=\"/map/school-map\">学校地图</a> · <a href=\"/map/outpost-map\">前哨地图</a> · <a href=\"/map/minefield-map\">雷区地图</a> · <a href=\"/map/apartments-map\">公寓地图</a> · <a href=\"/map/terminal-map\">终端地图</a></p>"
   }
 }

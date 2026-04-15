@@ -1,0 +1,297 @@
+/* 栅格 / 村庄地图页 MapRasterM01–M07 — 选择器挂在 .map-raster-page 下 */
+.map-raster-page .map-legend--village {
+  gap: 0.5rem 0.85rem;
+}
+
+.map-raster-page .map-legend--village .map-legend-swatch--v-locations {
+  background: color-mix(in srgb, #4a9eff 88%, #fff);
+  box-shadow: 0 0 0 1px color-mix(in srgb, #4a9eff 40%, transparent);
+}
+
+.map-raster-page .map-legend--village .map-legend-swatch--v-enemies {
+  background: color-mix(in srgb, #e85d4c 88%, #300);
+  box-shadow: 0 0 0 1px color-mix(in srgb, #e85d4c 45%, transparent);
+}
+
+.map-raster-page .map-legend--village .map-legend-swatch--v-quests {
+  background: color-mix(in srgb, #9b72cf 88%, #fff);
+  box-shadow: 0 0 0 1px color-mix(in srgb, #9b72cf 40%, transparent);
+}
+
+.map-raster-page .map-legend--village .map-legend-swatch--v-loot {
+  background: color-mix(in srgb, var(--color-amber) 88%, #fff);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-amber) 40%, transparent);
+}
+
+.map-raster-page .map-legend--village .map-legend-swatch--v-npc {
+  background: color-mix(in srgb, var(--color-signal-soft) 82%, #520);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-signal) 45%, transparent);
+}
+
+.map-raster-page .village-filter-rail--overlay {
+  position: absolute;
+  z-index: 1000;
+  left: max(10px, env(safe-area-inset-left, 0px));
+  top: max(10px, env(safe-area-inset-top, 0px));
+  bottom: max(10px, env(safe-area-inset-bottom, 0px));
+  width: min(292px, calc(100% - 3.5rem));
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 12px 12px 0;
+  border: 1px solid color-mix(in srgb, var(--color-border) 88%, transparent);
+  background: color-mix(in srgb, var(--color-panel) 96%, #000);
+  box-shadow:
+    6px 0 32px rgba(0, 0, 0, 0.42),
+    inset 1px 0 0 color-mix(in srgb, var(--color-frost) 10%, transparent);
+  overflow: hidden;
+}
+
+.map-raster-page .village-filter-rail--overlay .village-filter-rail__head {
+  flex-shrink: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+}
+
+.map-raster-page .village-filter-rail--overlay .village-filter-rail__body {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 0.35rem 0 0.15rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 767px) {
+  .map-raster-page .village-filter-rail--overlay {
+    width: min(268px, calc(100vw - 4.25rem));
+    left: max(8px, env(safe-area-inset-left, 0px));
+  }
+}
+
+/* ≥768px：左侧栏占一列，Leaflet 地图独占右列（世界地图 MapView 无 .map-raster-page，不受影响） */
+@media (min-width: 768px) {
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) {
+    --map-rail-w: min(292px, max(232px, 28vw));
+    display: grid;
+    grid-template-columns: var(--map-rail-w) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    align-items: stretch;
+    min-height: 0;
+  }
+
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .rtv-map-host {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .village-filter-rail--overlay {
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: stretch;
+    z-index: 2;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: none;
+    min-height: 0;
+    height: auto;
+    max-height: none;
+  }
+
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .map-stage-corner {
+    z-index: 3;
+  }
+
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .map-stage-corner--tl,
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .map-stage-corner--bl {
+    left: calc(var(--map-rail-w) + 10px);
+  }
+}
+
+.map-raster-page .village-filter-cat {
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 55%, transparent);
+}
+
+.map-raster-page .village-filter-cat:last-child {
+  border-bottom: none;
+}
+
+.map-raster-page .village-filter-cat__head {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem 0.65rem 0.45rem 0.5rem;
+}
+
+.map-raster-page .village-filter-cat__expand {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.map-raster-page .village-filter-cat__expand:hover .village-filter-cat__label {
+  color: var(--color-primary-soft);
+}
+
+.map-raster-page .village-filter-cat__chev {
+  flex-shrink: 0;
+  width: 1rem;
+  font-size: 0.55rem;
+  opacity: 0.75;
+}
+
+.map-raster-page .village-filter-cat__label {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.map-raster-page .village-filter-cat[data-vcat='locations'] .village-filter-cat__label {
+  color: color-mix(in srgb, #4a9eff 75%, var(--color-muted));
+}
+
+.map-raster-page .village-filter-cat[data-vcat='enemies'] .village-filter-cat__label {
+  color: color-mix(in srgb, #e85d4c 72%, var(--color-muted));
+}
+
+.map-raster-page .village-filter-cat[data-vcat='quests'] .village-filter-cat__label {
+  color: color-mix(in srgb, #9b72cf 72%, var(--color-muted));
+}
+
+.map-raster-page .village-filter-cat[data-vcat='loot'] .village-filter-cat__label {
+  color: color-mix(in srgb, var(--color-amber) 78%, var(--color-muted));
+}
+
+.map-raster-page .village-filter-cat[data-vcat='npc'] .village-filter-cat__label {
+  color: color-mix(in srgb, var(--color-signal-soft) 70%, var(--color-muted));
+}
+
+.map-raster-page .village-filter-cat__master {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--v-vcat-accent, var(--color-frost));
+  cursor: pointer;
+}
+
+.map-raster-page .village-filter-cat[data-vcat='locations'] .village-filter-cat__master {
+  accent-color: #4a9eff;
+}
+
+.map-raster-page .village-filter-cat[data-vcat='enemies'] .village-filter-cat__master {
+  accent-color: #e85d4c;
+}
+
+.map-raster-page .village-filter-cat[data-vcat='quests'] .village-filter-cat__master {
+  accent-color: #9b72cf;
+}
+
+.map-raster-page .village-filter-cat[data-vcat='loot'] .village-filter-cat__master {
+  accent-color: var(--color-amber);
+}
+
+.map-raster-page .village-filter-cat[data-vcat='npc'] .village-filter-cat__master {
+  accent-color: var(--color-signal);
+}
+
+.map-raster-page .village-kind-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem 0.5rem;
+  padding: 0.15rem 0.5rem 0.65rem 1.6rem;
+}
+
+@media (max-width: 767px) {
+  .map-raster-page .village-kind-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.map-raster-page .village-kind-cell {
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--color-border) 82%, transparent);
+  background: color-mix(in srgb, var(--color-panel) 45%, transparent);
+  overflow: hidden;
+}
+
+.map-raster-page .village-kind-cell__toggle {
+  display: flex;
+  align-items: center;
+  padding: 0 0.35rem 0 0.45rem;
+  border-right: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+  cursor: pointer;
+}
+
+.map-raster-page .village-kind-cell__toggle input {
+  width: 0.85rem;
+  height: 0.85rem;
+  accent-color: var(--color-frost);
+  cursor: pointer;
+}
+
+.map-raster-page .village-kind-cell__main {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0.4rem 0.45rem 0.4rem 0.35rem;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.map-raster-page .village-kind-cell__main:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--color-frost) 6%, transparent);
+}
+
+.map-raster-page .village-kind-cell__main:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.map-raster-page .village-kind-cell__name {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  line-height: 1.25;
+}
+
+.map-raster-page .village-kind-cell__main:hover:not(:disabled) .village-kind-cell__name {
+  color: var(--color-primary-soft);
+}
+
+.map-raster-page .village-kind-cell__count {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-text);
+  opacity: 0.9;
+}
