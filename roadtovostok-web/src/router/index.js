@@ -281,7 +281,7 @@ export const routeDefs = [
     view: 'PrivacyPolicyView',
     meta: {
       sitemap: { priority: 0.45, changefreq: 'monthly' },
-      seoFromI18n: 'tdk.privacyPolicy',
+      seoFromI18n: 'tdk.privacyPolicyPage',
     },
   },
   {

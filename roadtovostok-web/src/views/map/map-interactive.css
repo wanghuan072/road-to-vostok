@@ -1,4 +1,4 @@
-/* Shared map UI: MapView, MapRasterM01–M07View (views/map/). */
+/* Shared map UI (global): MapView + MapRasterM01–M07 — imported from main.css */
 .map-page.page-article{
   padding-bottom: 4rem;
 }.map-page .page-hero-content p{
