@@ -765,6 +765,11 @@
     "emptyPinHint": "点击地图上的标记，或从下方地点索引中选择一行。",
     "errorDimensions": "无法读取地图图片尺寸。",
     "errorImageLoad": "地图图片加载失败。请检查网络后重试。",
+    "pinSearchLabel": "搜索本图标记",
+    "pinSearchPlaceholder": "按名称、id、类型或弹出说明文字…",
+    "pinSearchClearAria": "清空搜索",
+    "pinSearchNoMatches": "没有匹配的标记。有搜索词时，不匹配的标记会隐藏；可清空搜索或放宽左侧筛选。",
+    "pinSearchHasMatches": "共 {n} 处匹配 — 按 Enter 依次跳转。",
     "regionalSectionHtml": "<h2>区域概览</h2><p class=\"guide-lead\">官方网站将世界描述为线性推进：你从<strong>05 区</strong>（芬兰）起步，向东穿过<strong>边境地带</strong>，最终可进入俄罗斯的<strong>符拉迪沃斯托克</strong> — 各层级死亡后果不同。</p><div class=\"regions\"><article><h3>05 区</h3><p>芬兰东南部一片撤离区：避难所、商人、任务与前期生存战利品。敌对<strong>强盗</strong>在区内巡逻。</p></article><article><h3>边境地带</h3><p>芬兰与俄罗斯之间的设防边境。过境方式各异：地雷、障碍，或需船只的水路。武装腐败的<strong>卫兵</strong>可能呼叫空中支援。</p></article><article><h3>符拉迪沃斯托克</h3><p>高风险的俄罗斯领土，战利品价值最高。每张符拉迪沃斯托克地图均为<strong>永久死亡</strong>图。<strong>军方</strong>派系拥有重武器与装甲车辆。</p></article></div>",
     "area05DetailProseHtml": "<h2>05 区地图说明与战利品从哪来</h2><p>据官方<strong>游戏</strong>页，05 区是开局区域：芬兰<strong>东南部</strong>一片撤离区，可找到<strong>避难所</strong>、<strong>商人</strong>、<strong>任务</strong>与<strong>起步战利品</strong>。日常节奏会被利用权力真空的敌对<strong>强盗</strong>打断。</p><h3>战利品与「刷新点」实务</h3><p>同一页将<strong>物理化战利品</strong>列为核心：物品以世界中的实体存在，而非抽象菜单拾取。开发商<strong>未</strong>在 roadtovostok.com 公布固定坐标表，许多系统被描述为<strong>动态</strong>（事件、天气、可重复跑图）。因此本站<strong>不</strong>列出保证刷新坐标 — 其会随补丁与程序布局变化。</p><ul><li><strong>按设定逻辑搜刮：</strong>搜索设定暗示的地点类型（聚落、路边、废弃建筑），并在游戏内感受当前版本的战利品密度。</li><li><strong>利用商人与任务：</strong>官方功能列表将交易与任务与避难所一并列为核心循环 — 以物易物与任务奖励是预期推进手段，不仅地面刷新。</li><li><strong>活着才能留住物资：</strong>据官方符拉迪沃斯托克说明，在 05 区阵亡通常只损失<strong>随身携带</strong>物 — 不会清空整局储藏（更严规则适用于符拉迪沃斯托克内死亡）。</li></ul><p class=\"guide-tools\">本站：<a href=\"/wiki\">维基</a>（装备表）、<a href=\"/getting-started\">新手指南</a>（循环、操作、医疗基础）、<a href=\"/guides/an-analytical-deep-dive-into-its-real-world-geography\">边境地理攻略</a>、<a href=\"/guides/surviving-the-Minefield\">雷区攻略</a>、<a href=\"/tasks\">任务与符拉迪沃斯托克规则</a>。</p>",
     "area05MapImgAlt": "05 区 — 与指南并列的氛围地图参考图"

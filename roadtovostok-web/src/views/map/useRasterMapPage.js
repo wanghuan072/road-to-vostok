@@ -54,6 +54,9 @@ export function useRasterMapPage(bundle, options = {}) {
 
   const mapPoints = computed(() => (Array.isArray(pins) ? pins : []))
 
+  const pinSearchQuery = ref('')
+  const searchCycleIndex = ref(0)
+
   const kindVisible = reactive(
     Object.fromEntries(
       mapCategories.flatMap((c) =>
@@ -79,6 +82,77 @@ export function useRasterMapPage(bundle, options = {}) {
       }
     }
     return m
+  })
+
+  /** kind id → 侧栏子类名称（用于搜索） */
+  const kindLabelById = computed(() => {
+    const m = Object.create(null)
+    for (const c of mapCategories) {
+      for (const k of c.kinds || []) {
+        m[k.id] = k.label
+      }
+    }
+    return m
+  })
+
+  function pinMatchesQueryRaw(p, qLower) {
+    if (!qLower) return true
+    if (String(pinTitle(p)).toLowerCase().includes(qLower)) return true
+    if (String(p?.id ?? '').toLowerCase().includes(qLower)) return true
+    if (String(p?.kind ?? '').toLowerCase().includes(qLower)) return true
+    const kl = String(kindLabelById.value[p?.kind] ?? '').toLowerCase()
+    if (kl && kl.includes(qLower)) return true
+    const plain = String(p?.content ?? '')
+      .replace(/<[^>]+>/g, ' ')
+      .toLowerCase()
+    if (plain.includes(qLower)) return true
+    return false
+  }
+
+  function pinMatchesSearch(p) {
+    const q = pinSearchQuery.value.trim().toLowerCase()
+    if (!q) return true
+    return pinMatchesQueryRaw(p, q)
+  }
+
+  const searchMatches = computed(() => {
+    const q = pinSearchQuery.value.trim().toLowerCase()
+    if (!q) return []
+    return mapPoints.value.filter((p) => pinMatchesQueryRaw(p, q))
+  })
+
+  const searchMatchCount = computed(() => searchMatches.value.length)
+
+  function ensurePinKindVisible(p) {
+    const k = p?.kind
+    if (k != null && !kindVisible[k]) {
+      kindVisible[k] = true
+      const catId = p[pinCategoryField] ?? p.category
+      if (typeof catId === 'string' && catId in categoryExpanded) {
+        categoryExpanded[catId] = true
+      }
+    }
+  }
+
+  function focusNextSearchMatch() {
+    const list = searchMatches.value
+    if (!list.length) return
+    const idx = searchCycleIndex.value % list.length
+    const p = list[idx]
+    searchCycleIndex.value = (idx + 1) % list.length
+    ensurePinKindVisible(p)
+    applyMarkerVisibility()
+    nextTick(() => focusPoi(p.id))
+  }
+
+  function clearPinSearch() {
+    pinSearchQuery.value = ''
+    searchCycleIndex.value = 0
+  }
+
+  watch(pinSearchQuery, () => {
+    searchCycleIndex.value = 0
+    nextTick(() => applyMarkerVisibility())
   })
 
   const mapContainer = ref(null)
@@ -185,13 +259,8 @@ export function useRasterMapPage(bundle, options = {}) {
     if (raw == null || raw === '' || !mapReady.value) return
     const match = mapPoints.value.find((x) => String(x.id) === String(raw))
     if (!match) return
-    const k = match.kind
-    if (k != null && !kindVisible[k]) {
-      kindVisible[k] = true
-      const catId = match[pinCategoryField] ?? match.category
-      if (typeof catId === 'string' && catId in categoryExpanded) {
-        categoryExpanded[catId] = true
-      }
+    if (match.kind != null && !kindVisible[match.kind]) {
+      ensurePinKindVisible(match)
       nextTick(() => focusPoi(match.id))
       return
     }
@@ -242,7 +311,7 @@ export function useRasterMapPage(bundle, options = {}) {
     for (const [id, marker] of markerById) {
       const p = mapPoints.value.find((x) => x.id === id)
       if (!p) continue
-      const vis = kindVisible[p.kind] === true
+      const vis = kindVisible[p.kind] === true && pinMatchesSearch(p)
       if (vis) {
         if (!markersLayer.hasLayer(marker)) markersLayer.addLayer(marker)
       } else {
@@ -263,6 +332,7 @@ export function useRasterMapPage(bundle, options = {}) {
     markerById.clear()
     mapReady.value = false
     selectedPoiId.value = null
+    clearPinSearch()
     if (coordHudRef) coordHudRef.value = '—'
   }
 
@@ -393,5 +463,9 @@ export function useRasterMapPage(bundle, options = {}) {
     categoryAllOn,
     focusKindPins,
     syncCategoryMasterCheckboxes,
+    pinSearchQuery,
+    searchMatchCount,
+    focusNextSearchMatch,
+    clearPinSearch,
   }
 }

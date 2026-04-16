@@ -41,6 +41,12 @@
 
         <div class="map-command">
           <div class="map-command-inner">
+            <MapRasterPinSearch
+              v-model="pinSearchQuery"
+              :disabled="!mapReady"
+              :match-count="searchMatchCount"
+              @enter="focusNextSearchMatch"
+            />
             <div class="map-map-row">
               <div class="map-stage">
                 <div class="map-raster-map-frame">
@@ -155,6 +161,7 @@
 import { nextTick, ref } from 'vue'
 import map03 from '../../data/map/maps/map03.js'
 import MapRasterHeroMosaic from './MapRasterHeroMosaic.vue'
+import MapRasterPinSearch from './MapRasterPinSearch.vue'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { useRasterMapPage } from './useRasterMapPage.js'
 
@@ -176,6 +183,9 @@ const {
   categoryAllOn,
   focusKindPins,
   syncCategoryMasterCheckboxes,
+  pinSearchQuery,
+  searchMatchCount,
+  focusNextSearchMatch,
 } = useRasterMapPage(map03, { coordHud })
 </script>
 
