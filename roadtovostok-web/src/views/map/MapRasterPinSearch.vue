@@ -31,7 +31,7 @@
           </span>
           <input
             :id="inputId"
-            v-model="query"
+            :value="modelValue"
             type="search"
             enterkeyhint="search"
             class="map-raster-poi-search__input"
@@ -39,12 +39,13 @@
             :disabled="disabled"
             autocomplete="off"
             spellcheck="false"
+            @input="onInput"
             @keydown.enter.prevent="$emit('enter')"
           />
         </div>
 
         <button
-          v-show="query.trim()"
+          v-show="modelValue.trim()"
           type="button"
           class="map-raster-poi-search__clear"
           :aria-label="$t('mapPage.pinSearchClearAria')"
@@ -79,23 +80,30 @@
 import { computed, useId } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+defineOptions({ name: 'MapRasterPinSearch' })
+
 const props = defineProps({
+  modelValue: { type: String, default: '' },
   disabled: { type: Boolean, default: false },
   matchCount: { type: Number, default: 0 },
 })
 
-defineEmits(['enter'])
-
-const query = defineModel({ type: String, default: '' })
+const emit = defineEmits(['update:modelValue', 'enter'])
 
 const { t } = useI18n()
 const inputId = useId()
 
-function clear() {
-  query.value = ''
+function onInput(e) {
+  const el = e.target
+  if (!el || el.tagName !== 'INPUT') return
+  emit('update:modelValue', el.value)
 }
 
-const hasQuery = computed(() => Boolean(query.value?.trim()))
+function clear() {
+  emit('update:modelValue', '')
+}
+
+const hasQuery = computed(() => Boolean(props.modelValue?.trim()))
 
 const metaLine = computed(() => {
   if (!hasQuery.value) return ''
