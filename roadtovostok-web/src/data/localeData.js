@@ -1,5 +1,6 @@
 /**
- * 按界面语言合并 en + 各语言补丁；`withLocale` 需要 `{ zh, de, ru, … }` 等补丁表（可省略某语言则回退 en）。
+ * 数据按界面语言合并或直出。Guides：`en` 为 canonical 数组，其它语言为与 `en` 同字段的完整数组（见 `guides/articles/*.js`）。
+ * 其余模块仍用 `withLocale` 的补丁表（可省略某语言则回退 en）。
  */
 import {
   mergeLocaleRowsByKey,
@@ -77,7 +78,8 @@ import modArticlesRu from './mods/mods/ru.js'
 import modArticlesFi from './mods/mods/fi.js'
 import modArticlesFr from './mods/mods/fr.js'
 
-const guidePatches = {
+/** Guides：各语言与 en.js 同构的完整数组（非 addressBar 补丁） */
+const guideRowsByLocale = {
   zh: guideArticlesZh,
   de: guideArticlesDe,
   ru: guideArticlesRu,
@@ -137,7 +139,8 @@ const modPatches = {
 }
 
 export function getGuideArticles(locale) {
-  return mergeLocaleRowsByKey(locale, guideArticlesEn, guidePatches, 'addressBar')
+  if (locale === 'en') return guideArticlesEn
+  return guideRowsByLocale[locale] ?? guideArticlesEn
 }
 
 export function getFishingRows(locale) {

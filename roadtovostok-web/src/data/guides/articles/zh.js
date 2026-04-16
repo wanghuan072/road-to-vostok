@@ -1,21 +1,22 @@
 /**
- * 中文覆盖：`localeData.js` 的 `getGuideArticles` 将本对象按 addressBar 与 en.js 合并（seo 深合并）。
- * 德语补丁见 `de.js`。
+ * ZH — same row shape as guides/articles/en.js.
  */
-export default {
-  'an-analytical-deep-dive-into-its-real-world-geography': {
-    title: 'Road to Vostok：现实世界地理考据深读',
-    description:
-      '硬核生存射击游戏中，环境往往不只是背景，而是主要对手。本文梳理创作者 Tenebris Infinite 的视频分析：从芬兰历史上的萨帕防线到俄罗斯边境城市的衰败，Road to Vostok 如何把真实地缘与建筑肌理写进关卡与氛围。',
-    imageAlt: 'Road to Vostok 现实世界地理考据',
-    tags: ['Road to Vostok'],
+export default [
+  {
+    id: 1,
+    title: "Road to Vostok：现实世界地理考据深读",
+    iframeUrl: "https://www.youtube.com/embed/RsDE26kkAtU",
+    description: "硬核生存射击游戏中，环境往往不只是背景，而是主要对手。本文梳理创作者 Tenebris Infinite 的视频分析：从芬兰历史上的萨帕防线到俄罗斯边境城市的衰败，Road to Vostok 如何把真实地缘与建筑肌理写进关卡与氛围。",
+    tags: ["Road to Vostok"],
+    publishDate: "2026-03-27",
+    imageUrl: "/images/guides/guides01.webp",
+    imageAlt: "Road to Vostok 现实世界地理考据",
     seo: {
-      title: 'Road to Vostok：现实世界地理考据深读',
-      description:
-        '从芬兰萨帕防线到俄芬边境口岸与维堡等地，梳理 Road to Vostok 关卡背后的真实地理灵感与玩法节奏差异。',
-      keywords:
-        'Road to Vostok, 生存射击, 萨帕防线, 芬兰俄罗斯边境, 维堡, 硬核 FPS, 地理考据, Tenebris Infinite',
+      title: "Road to Vostok：现实世界地理考据深读",
+      description: "从芬兰萨帕防线到俄芬边境口岸与维堡等地，梳理 Road to Vostok 关卡背后的真实地理灵感与玩法节奏差异。",
+      keywords: "Road to Vostok, 生存射击, 萨帕防线, 芬兰俄罗斯边境, 维堡, 硬核 FPS, 地理考据, Tenebris Infinite",
     },
+    addressBar: "an-analytical-deep-dive-into-its-real-world-geography",
     detailsHtml: `
       <p>在硬核生存射击的赛道里，环境很少只是「布景」，它常常是真正的对手。<strong>Road to Vostok</strong> 这部备受期待的末日题材作品，令人不安的氛围并非来自科幻设定，而是来自一丝不苟的地理写实。正如创作者 <em>Tenebris Infinite</em> 的分析视频所示，游戏的地形与建筑血脉，直接取自芬兰与俄罗斯之间的边境地带。</p>
   <p>把真实历史与地缘张力映射到虚拟地图上，让这款单人主导的作品拥有了少见的沉浸深度。本文拆解这些地理灵感如何构成玩法的节奏与气氛基底。</p>
@@ -60,19 +61,21 @@ export default {
     `,
   },
 
-  'surviving-the-Minefield': {
-    title: '雷区求生：Road to Vostok 进阶战术攻略',
-    description:
-      '深度解析边境「雷区」地图：识别感应地雷、射击诱爆清路，以及进入永久死亡区前的生存要点。',
-    imageAlt: 'Road to Vostok 雷区',
-    tags: ['Road to Vostok 雷区'],
+  {
+    id: 2,
+    title: "雷区求生：Road to Vostok 进阶战术攻略",
+    iframeUrl: "https://www.youtube.com/embed/zmF0pO8h2vk",
+    description: "深度解析边境「雷区」地图：识别感应地雷、射击诱爆清路，以及进入永久死亡区前的生存要点。",
+    tags: ["Road to Vostok 雷区"],
+    publishDate: "2026-03-27",
+    imageUrl: "/images/guides/guides02.webp",
+    imageAlt: "Road to Vostok 雷区",
     seo: {
-      title: '雷区求生：Road to Vostok 战术攻略',
-      description:
-        '雷区生存：目视识别地雷、远距离射击引爆、非对称 AI 与直升机噪音遮蔽听觉——含主动清雷流程。',
-      keywords:
-        'Road to Vostok, 雷区, 排雷, 射击引爆, 永久死亡, 硬核 FPS, StarVox, 感应地雷',
+      title: "雷区求生：Road to Vostok 战术攻略",
+      description: "雷区生存：目视识别地雷、远距离射击引爆、非对称 AI 与直升机噪音遮蔽听觉——含主动清雷流程。",
+      keywords: "Road to Vostok, 雷区, 排雷, 射击引爆, 永久死亡, 硬核 FPS, StarVox, 感应地雷",
     },
+    addressBar: "surviving-the-Minefield",
     detailsHtml: `
     <p> <strong>主题聚焦：</strong>对边境地图「雷区」及爆炸物清除机制的进阶战术分析。</p>
   <p>在硬核生存射击的生态里，从高压玩法迈向「一次失误全盘皆输」需要一道物理门槛。在 <em>Road to Vostok</em> 中，这道门槛就是 <strong>雷区</strong>。如 StarVox 的实况拆解所示，该图是进入 Vostok 前的最后一关——永久死亡区：一次死亡会清空存档与阁楼保险箱囤积。边境走向与图钉可配合 <a href="/map">交互地图</a>（边境地带）阅读。</p>
@@ -109,18 +112,20 @@ export default {
     `,
   },
 
-  'apartments-complete-survival-loot-guid': {
-    title: 'Road to Vostok 公寓区：生存与搜刮完全攻略',
-    description:
-      '掌握 Vostok 公寓：路线、安全屋、用火桶对抗寒冷机制、高阶战利品与「通贩」商人交易循环。',
-    imageAlt: 'Road to Vostok 公寓区',
-    tags: ['Road to Vostok 公寓', '搜刮', 'CQB', '商人'],
+  {
+    id: 3,
+    title: "Road to Vostok 公寓区：生存与搜刮完全攻略",
+    description: "掌握 Vostok 公寓：路线、安全屋、用火桶对抗寒冷机制、高阶战利品与「通贩」商人交易循环。",
+    tags: ["Road to Vostok 公寓", "搜刮", "CQB", "商人"],
+    publishDate: "2026-03-30",
+    imageUrl: "/images/guides/guides03.webp",
+    imageAlt: "Road to Vostok 公寓区",
     seo: {
-      title: 'Road to Vostok 公寓生存与搜刮攻略',
-      description:
-        '公寓完整流程：夜战与 NVG、火桶取暖、军用箱与敌人掉落、与 The Generalist 以枪换药。结合地图 Vostok 图钉核对。',
-      keywords: 'Road to Vostok, 公寓, 搜刮, CQB, 通贩, 生存攻略',
+      title: "Road to Vostok 公寓生存与搜刮攻略",
+      description: "公寓完整流程：夜战与 NVG、火桶取暖、军用箱与敌人掉落、与 The Generalist 以枪换药。结合地图 Vostok 图钉核对。",
+      keywords: "Road to Vostok, 公寓, 搜刮, CQB, 通贩, 生存攻略",
     },
+    addressBar: "apartments-complete-survival-loot-guid",
     detailsHtml: `
     <iframe name="rtvApartmentsGuideYt" src="https://www.youtube.com/embed/ttvN5s0cdBI" title="YouTube 视频" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <h3><strong>不想看完？跳到关键节点：</strong></h3>
@@ -163,18 +168,8 @@ export default {
     `,
   },
 
-  'how-to-fish': {
-    title: 'Road to Vostok 钓鱼攻略：最佳钓点、鱼竿机制与狗鱼',
-    description:
-      '掌握水下「鱼块」机制、排水管与木栈桥等标点抛竿，高效钓取任务必备的高价狗鱼——硬核永久死亡局最稳赚钱手段之一。',
-    imageAlt: 'Road to Vostok 钓鱼',
-    tags: ['Road to Vostok 钓鱼', '钓点', '鱼竿', '狗鱼'],
-    seo: {
-      title: 'Road to Vostok 钓鱼：钓点、鱼竿与鱼市价格',
-      description:
-        '钓鱼经济：识别鱼块、排水管与栈桥标点、高效钓狗鱼。数值与站点维基钓鱼表对照。',
-      keywords: 'Road to Vostok, 钓鱼, 狗鱼, 鱼块, 永久死亡, 生存',
-    },
+  {
+    id: 4,
     head: `<script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -218,6 +213,18 @@ export default {
         ]
       }
       </script>`,
+    title: "Road to Vostok 钓鱼攻略：最佳钓点、鱼竿机制与狗鱼",
+    description: "掌握水下「鱼块」机制、排水管与木栈桥等标点抛竿，高效钓取任务必备的高价狗鱼——硬核永久死亡局最稳赚钱手段之一。",
+    tags: ["Road to Vostok 钓鱼", "钓点", "鱼竿", "狗鱼"],
+    publishDate: "2026-03-30",
+    imageUrl: "/images/guides/guides04.webp",
+    imageAlt: "Road to Vostok 钓鱼",
+    seo: {
+      title: "Road to Vostok 钓鱼：钓点、鱼竿与鱼市价格",
+      description: "钓鱼经济：识别鱼块、排水管与栈桥标点、高效钓狗鱼。数值与站点维基钓鱼表对照。",
+      keywords: "Road to Vostok, 钓鱼, 狗鱼, 鱼块, 永久死亡, 生存",
+    },
+    addressBar: "how-to-fish",
     detailsHtml: `
 <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/QVdZjWBqMH4" title="YouTube 视频" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -291,18 +298,8 @@ export default {
   </ol>`,
   },
 
-  'weapons-list': {
-    title: 'Road to Vostok 武器清单：全枪械与强度解析',
-    description:
-      '完整武器演示：稀有度、耐久与修理、传奇枪与穿透等级——靶场数据向生存配装。',
-    imageAlt: 'Road to Vostok 武器',
-    tags: ['Road to Vostok 武器', '武器表', '修理', 'Meta'],
-    seo: {
-      title: 'Road to Vostok 武器攻略：数据与配装',
-      description:
-        'RtV 军火库：口径、伤害、穿透、稀有度、KP-31 与 M78 等。表格与站点维基武器页对齐游戏版本。',
-      keywords: 'Road to Vostok, 武器, 清单, 传奇, 穿透, 修理',
-    },
+  {
+    id: 5,
     head: `<script type="application/ld+json">
       {
         "@context": "https://schema.org/",
@@ -339,6 +336,19 @@ export default {
         ]
       }
       </script>`,
+    title: "Road to Vostok 武器清单：全枪械与强度解析",
+    iframeUrl: "https://www.youtube.com/embed/R5721mXs4lY",
+    description: "完整武器演示：稀有度、耐久与修理、传奇枪与穿透等级——靶场数据向生存配装。",
+    tags: ["Road to Vostok 武器", "武器表", "修理", "Meta"],
+    publishDate: "2026-03-30",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageAlt: "Road to Vostok 武器",
+    seo: {
+      title: "Road to Vostok 武器攻略：数据与配装",
+      description: "RtV 军火库：口径、伤害、穿透、稀有度、KP-31 与 M78 等。表格与站点维基武器页对齐游戏版本。",
+      keywords: "Road to Vostok, 武器, 清单, 传奇, 穿透, 修理",
+    },
+    addressBar: "weapons-list",
     detailsHtml: `<p>硬核生存作 <strong>Road to Vostok</strong> 的武器系统建立在高拟真面板之上。当前靶场演示涵盖约 20 种枪械。每把枪独立列出口径、基础伤害、穿透等级与耐久。进废土前读懂 UI、按敌人护甲匹配穿透是必修课。价值、商人价、稀有度等行见 <a href="/wiki/weapons">维基 · 武器</a>。</p>
   <iframe name="rtvWeaponsGuideYt" src="https://www.youtube.com/embed/R5721mXs4lY" title="YouTube 视频" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <p>不想看完？直达时间点：</p>
@@ -387,19 +397,20 @@ export default {
   <p>A：SVD、莫辛、M78 均为穿透 4 级；M78 与 SVD 基础伤害 50，清重甲最优。</p>`,
   },
 
-  'reload-shotguns-bolt-actions-magazine-checks': {
-    title: 'Road to Vostok 换弹完全指南：霰弹枪、栓动与弹匣检查',
-    description:
-      'RM-870、莫辛的精确操作流程，以及用 V 检查弹匣——基于社区与实测，非街机逻辑。',
-    imageAlt: 'Road to Vostok 换弹演示',
-    tags: ['Road to Vostok', '换弹', 'RM-870', '莫辛'],
+  {
+    id: 6,
+    title: "Road to Vostok 换弹完全指南：霰弹枪、栓动与弹匣检查",
+    description: "RM-870、莫辛的精确操作流程，以及用 V 检查弹匣——基于社区与实测，非街机逻辑。",
+    tags: ["Road to Vostok", "换弹", "RM-870", "莫辛"],
+    publishDate: "2026-04-09",
+    imageUrl: "/images/guides/guides06.webp",
+    imageAlt: "Road to Vostok 换弹演示",
     seo: {
-      title: 'Road to Vostok 换弹：霰弹枪、栓动与弹匣',
-      description:
-        '战术换弹：CTRL 开膛、左键逐发装填、射击后按 R 上膛。建议在教程关练熟。',
-      keywords:
-        'Road to Vostok, 换弹, RM-870, 莫辛, 弹匣, V 键, 硬核',
+      title: "Road to Vostok 换弹：霰弹枪、栓动与弹匣",
+      description: "战术换弹：CTRL 开膛、左键逐发装填、射击后按 R 上膛。建议在教程关练熟。",
+      keywords: "Road to Vostok, 换弹, RM-870, 莫辛, 弹匣, V 键, 硬核",
     },
+    addressBar: "reload-shotguns-bolt-actions-magazine-checks",
     detailsHtml: `<h1>Road to Vostok 换弹指南：栓动与霰弹枪</h1>
   <p><strong>可信度：</strong>本文基于社区机制总结与玩家（如 MasterDeBunker）实测，非街机逻辑——老玩家常说：慌了忘换弹就会死。</p>
   <h2>核心循环</h2>
@@ -436,19 +447,20 @@ export default {
   <p>先在教程掌握操作，再出门搜刮交火（不保证能活着回来）。</p>`,
   },
 
-  'cat-guide-find-care-shelter-companion': {
-    title: 'Road to Vostok 猫咪攻略：避难所伙伴获取与饲养',
-    description:
-      '如何触发「找猫」事件、在前哨地堡定位随机刷新的猫、携带 3×5 猫箱返回避难所——含物资、路线与社区勘误。',
-    imageAlt: '纸箱中的黑猫 — Road to Vostok 避难所伙伴',
-    tags: ['Road to Vostok', '猫咪', '避难所', '任务'],
+  {
+    id: 7,
+    title: "Road to Vostok 猫咪攻略：避难所伙伴获取与饲养",
+    description: "如何触发「找猫」事件、在前哨地堡定位随机刷新的猫、携带 3×5 猫箱返回避难所——含物资、路线与社区勘误。",
+    tags: ["Road to Vostok", "猫咪", "避难所", "任务"],
+    publishDate: "2026-04-09",
+    imageUrl: "/images/guides/guides07.webp",
+    imageAlt: "纸箱中的黑猫 — Road to Vostok 避难所伙伴",
     seo: {
-      title: 'Road to Vostok 猫咪：寻找与避难所饲养',
-      description:
-        '第 4 天起失踪猫事件、村庄—学校—前哨五段传送链、精神值补给与背包规划，建议单次连续完成。',
-      keywords:
-        'road to vostok, 猫, 避难所伙伴, 任务, 地堡, 生存技巧',
+      title: "Road to Vostok 猫咪：寻找与避难所饲养",
+      description: "第 4 天起失踪猫事件、村庄—学校—前哨五段传送链、精神值补给与背包规划，建议单次连续完成。",
+      keywords: "road to vostok, 猫, 避难所伙伴, 任务, 地堡, 生存技巧",
     },
+    addressBar: "cat-guide-find-care-shelter-companion",
     detailsHtml: `<h1>Road to Vostok 猫咪完全指南：寻找与照料</h1>
   <p><strong>为何可信：</strong>基于社区硬核玩家多次跑图与勘误整理；在残酷生存游戏里养「活物」成本极高，本文汇总路线、物资与常见翻车点。</p>
   <h2>准备与触发「失踪的猫」</h2>
@@ -504,19 +516,20 @@ export default {
   </ol>`,
   },
 
-  'road-to-vostok-shelter-locations': {
-    title: 'Road to Vostok 避难所位置：全地图与解锁指南',
-    description:
-      '盘点《Road to Vostok》全部避难所（帐篷、地堡、教室等），教室钥匙与其它钥匙的获取方式，并配合互动地图规划生存与搜刮路线。',
-    imageAlt: 'Road to Vostok 避难所',
-    tags: ['Road to Vostok', '避难所', '地图', '钥匙'],
+  {
+    id: 8,
+    title: "Road to Vostok 避难所位置：全地图与解锁指南",
+    description: "盘点《Road to Vostok》全部避难所（帐篷、地堡、教室等），教室钥匙与其它钥匙的获取方式，并配合互动地图规划生存与搜刮路线。",
+    tags: ["Road to Vostok", "避难所", "地图", "钥匙"],
+    publishDate: "2026-04-14",
+    imageUrl: "/images/guides/guides08.webp",
+    imageAlt: "Road to Vostok 避难所",
     seo: {
-      title: 'Road to Vostok 避难所位置：全地图与解锁指南',
-      description:
-        '全部避难所位置（帐篷、地堡、教室）、钥匙获取与避难所管理要点；配合互动地图规划最安全路线。',
-      keywords:
-        'road to vostok, 避难所, 避难所位置, 帐篷, 地图, 地堡, 学校避难所, 猫, 教室钥匙',
+      title: "Road to Vostok 避难所位置：全地图与解锁指南",
+      description: "全部避难所位置（帐篷、地堡、教室）、钥匙获取与避难所管理要点；配合互动地图规划最安全路线。",
+      keywords: "road to vostok, 避难所, 避难所位置, 帐篷, 地图, 地堡, 学校避难所, 猫, 教室钥匙",
     },
+    addressBar: "road-to-vostok-shelter-locations",
     detailsHtml: `<h1>《Road to Vostok》避难所终极指南：全部位置与解锁方式</h1>
   <p>在硬核生存世界《Road to Vostok》中，避难所是你存放战利品、回复状态、延续生命的<strong>绝对安全区</strong>。无论是整理开荒背包还是打造终极军火库，掌握每一处避难所的坐标与机制都是老手必修课。</p>
   <p>本篇依据已验证的社区情报，系统梳理全部已知避难所、钥匙获取方式与避难所管理要点。</p>
@@ -528,17 +541,17 @@ export default {
   <li>木屋避难所：位于<strong>村庄</strong>地图，是流程中第一个避难所。室内空间有限，但对前期囤积必不可少。</li>
   <li>帐篷避难所：开局即可用，位于<strong>前哨</strong>地图。从学校图进入前哨后，可在入口<strong>左侧</strong>找到（与大红色谷仓隔谷相对的一侧）。</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158305/cms-uploads/cms-1776158305834-85606712.webp" alt="村庄木屋与阁楼避难所" width="50%"></p>
+  <p><img src="/images/guides/guides08-01.webp" alt="村庄木屋与阁楼避难所" width="50%"></p>
   <h3>可解锁避难所与储物点</h3>
   <p>在开局区域之外，还有更高价值的安全区与储藏点，但需满足特定条件：</p>
   <ol>
   <li>地堡避难所：顶级大型避难所之一，位于<strong>前哨</strong>。解锁要求高：需武装到能击杀「Punisher（行刑者）」并拿到其帽子，再回前哨完成军火商人相关任务。</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158461/cms-uploads/cms-1776158461157-243281608.webp" alt="前哨帐篷与地堡避难所" width="50%"></p>
+  <p><img src="/images/guides/guides08-02.webp" alt="前哨帐篷与地堡避难所" width="50%"></p>
   <ol>
   <li>学校教室避难所：位于<strong>学校</strong>地图内的上锁房间（教室），需要<strong>实体钥匙</strong>进入。</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158410/cms-uploads/cms-1776158410763-6355250.webp" alt="学校教室避难所" width="50%"></p>
+  <p><img src="/images/guides/guides08-03.webp" alt="学校教室避难所" width="50%"></p>
   <ol>
   <li>阁楼避难所：比初始木屋更大、储物空间更足。完成商人最终任务可获得钥匙解锁。</li>
   </ol>
@@ -550,7 +563,7 @@ export default {
   <li>商人任务线：推进各商人任务；例如阁楼钥匙可在完成商人最终任务后稳定获得。</li>
   <li>重点区域搜刮：偏好探索的玩家可在高价值区域拾取钥匙。已确认的刷新点包括学校地图体育馆等，甚至在终局危险区「沃斯托克（Vostok）」深处也可能出现。</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158642/cms-uploads/cms-1776158642474-180454868.webp" alt="Road to Vostok 各类钥匙" width="50%"></p>
+  <p><img src="/images/guides/guides08-04.webp" alt="Road to Vostok 各类钥匙" width="50%"></p>
   <h2>避难所管理与生存机制</h2>
   <p>找到避难所只是第一步，硬核玩家还需把它建成高效后勤基地。</p>
   <h3>1. F1 布置与收纳系统</h3>
@@ -573,5 +586,5 @@ export default {
   <li>避难所内不消耗饮食模组：在安全屋内不降低饥渴值，适合长时间整理货架、打造仓储的囤积型玩家。</li>
   </ol>
   <p>（更多硬核攻略与战术更新，请持续关注 <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>。）</p>`,
-  },
-}
+  }
+]

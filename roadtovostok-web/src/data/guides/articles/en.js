@@ -367,7 +367,7 @@ export default [
     title: "Road to Vostok Weapons List: All Guns & Best Weapons Guide",
     iframeUrl: "https://www.youtube.com/embed/R5721mXs4lY",
     description: "Comprehensive Road to Vostok weapons list . Discover the best weapons, learn about the condition and repair mechanics, and explore all legendary firearms.",
-    tags: ["Road to Vostok Weapons","road to vostok weapons list","road to vostok repair weapons","road to vostok best weapons","road to vostok all weapons"],
+    tags: ["Road to Vostok Weapons", "road to vostok weapons list", "road to vostok repair weapons", "road to vostok best weapons", "road to vostok all weapons"],
     publishDate: "2026-03-30",
     imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
     imageAlt: "road to vostok weapons",
@@ -522,7 +522,7 @@ export default [
     id: 6,
     title: "The Ultimate Road to Vostok Reload Guide: Master Bolt Actions & Shotguns",
     description: "Struggling to reload in Road to Vostok? Learn the exact mechanics for the RM-870 shotgun, Mosin bolt-action, and how to check your magazine based on hardcore community guides.",
-    tags: ["Road to Vostok","Reload Guide","Survival Shooter","Tactical Gameplay","Bolt Action"],
+    tags: ["Road to Vostok", "Reload Guide", "Survival Shooter", "Tactical Gameplay", "Bolt Action"],
     publishDate: "2026-04-09",
     imageUrl: "/images/guides/guides06.webp",
     imageAlt: "Road to Vostok gameplay showing a player reloading a weapon, highlighting tactical actions for shotguns and bolt-action rifles.",
@@ -610,7 +610,7 @@ export default [
     id: 7,
     title: "Road to Vostok Cat Guide: How to Find & Care for Your Shelter Companion",
     description: "This complete guide teaches you how to trigger the \"Find the Cat\" quest in Road to Vostok, locate the randomly spawning cats in the bunker, and bring them back to your shelter. Based on testing by experienced players, it includes essential supplies, route planning, and cat-raising tips.",
-    tags: ["Road to Vostok","Cat Companion","Survival Guide","Wasteland Survival","Shelter Pet"],
+    tags: ["Road to Vostok", "Cat Companion", "Survival Guide", "Wasteland Survival", "Shelter Pet"],
     publishDate: "2026-04-09",
     imageUrl: "/images/guides/guides07.webp",
     imageAlt: "A black cat in a cardboard box, representing the shelter companion in Road to Vostok.",
@@ -729,9 +729,9 @@ export default [
     id: 8,
     title: "Road to Vostok Shelter Locations: Complete Map & Unlock Guide",
     description: "Discover all Road to Vostok shelter locations, including the tent, bunker, and school. Learn how to get the classroom key and use our interactive map for survival.",
-    tags: [" road to vostok shelter"," road to vostok shelter locations"],
+    tags: [" road to vostok shelter", " road to vostok shelter locations"],
     publishDate: "2026-04-14",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776157225/cms-uploads/cms-1776157225142-665717598.jpg",
+    imageUrl: "/images/guides/guides08.webp",
     imageAlt: "Road-to-Vostok-Shelter",
     seo: {
       title: "Road to Vostok Shelter Locations: Complete Map & Unlock Guide",
@@ -759,7 +759,7 @@ export default [
   <li>Road to Vostok Tent Shelter: Also available from the start. It is located on the Outpost map. Specifically, it can be found to the left of where you enter from the school map (opposite the valley from the big red barn).
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158305/cms-uploads/cms-1776158305834-85606712.webp" alt="Road to Vostok village Shelter Cabin&amp; Attic" width="50%">
+  <p><img src="/images/guides/guides08-01.webp" alt="Road to Vostok village Shelter Cabin&amp; Attic" width="50%">
   </p>
   <h3>Unlockable Shelters &amp; Storage Points
   </h3>
@@ -769,13 +769,13 @@ export default [
   <li>Road to Vostok Bunker Location: One of the largest top-tier shelters, located in the Outpost map. Unlocking it requires high tactical skills: you must become very well-equipped, learn to kill the "Punisher," grab their hat, and head to the Outpost to complete a task given by the gun trader.
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158461/cms-uploads/cms-1776158461157-243281608.webp" alt="Road to Vostok Outpost Shelter Tent&amp;Bunker" width="50%">
+  <p><img src="/images/guides/guides08-02.webp" alt="Road to Vostok Outpost Shelter Tent&amp;Bunker" width="50%">
   </p>
   <ol>
   <li>Road to Vostok School Shelter: Located inside the School map. This is a locked shelter (Classroom) that requires a physical key to access.
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158410/cms-uploads/cms-1776158410763-6355250.webp" alt="Road to Vostok school Shelter Classroom" width="50%">
+  <p><img src="/images/guides/guides08-03.webp" alt="Road to Vostok school Shelter Classroom" width="50%">
   </p>
   <ol>
   <li>Attic Shelter: Larger than the starting cabin with much more storage space. You unlock it by obtaining a key from completing the trader's final quest.
@@ -796,7 +796,7 @@ export default [
   <li>Looting Major Locations: If you prefer exploration, keys can be looted in major high-value zones. Confirmed spawn locations for shelter keys include the gym on the School map, and they can even be found deep inside the endgame danger zone, Vostok.
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158642/cms-uploads/cms-1776158642474-180454868.webp" alt="Road to Vostok keys" width="50%">
+  <p><img src="/images/guides/guides08-04.webp" alt="Road to Vostok keys" width="50%">
   </p>
   <h2>Shelter Management &amp; Survival Mechanics
   </h2>

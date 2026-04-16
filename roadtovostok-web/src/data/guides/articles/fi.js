@@ -1,20 +1,22 @@
 /**
- * FI: addressBar-avaimet, yhdistys en.js:ään (seo syvä withLocale).
+ * FI — same row shape as guides/articles/en.js.
  */
-export default {
-  'an-analytical-deep-dive-into-its-real-world-geography': {
-    title: 'Road to Vostok: analyyttinen sukellus todelliseen maantieteeseen',
-    description:
-      'Miten kova survival-ammuntapeli nojaa fiktion sijaan Suomen ja Venäjän rajan todelliseen topografiaan ja arkkitehtuuriin — Salpa-linjasta kaupunkirappioon.',
-    imageAlt: 'Road to Vostok — todellisen maailman maantiede',
-    tags: ['Road to Vostok'],
+export default [
+  {
+    id: 1,
+    title: "Road to Vostok: analyyttinen sukellus todelliseen maantieteeseen",
+    iframeUrl: "https://www.youtube.com/embed/RsDE26kkAtU",
+    description: "Miten kova survival-ammuntapeli nojaa fiktion sijaan Suomen ja Venäjän rajan todelliseen topografiaan ja arkkitehtuuriin — Salpa-linjasta kaupunkirappioon.",
+    tags: ["Road to Vostok"],
+    publishDate: "2026-03-27",
+    imageUrl: "/images/guides/guides01.webp",
+    imageAlt: "Road to Vostok — todellisen maailman maantiede",
     seo: {
-      title: 'Road to Vostok: todellinen maantiede ja karttojen inspiraatio',
-      description:
-        'Salpa-linjasta rajanylityspaikkoihin ja Viipuriin: miten Road To Vostok siirtää oikean maiseman ja rakennukset tasoihin ja tunnelmaan.',
-      keywords:
-        'Road to Vostok, survival shooter, Salpa Line, Suomen ja Venäjän raja, Viipuri, kova FPS, maantiede, Tenebris Infinite',
+      title: "Road to Vostok: todellinen maantiede ja karttojen inspiraatio",
+      description: "Salpa-linjasta rajanylityspaikkoihin ja Viipuriin: miten Road To Vostok siirtää oikean maiseman ja rakennukset tasoihin ja tunnelmaan.",
+      keywords: "Road to Vostok, survival shooter, Salpa Line, Suomen ja Venäjän raja, Viipuri, kova FPS, maantiede, Tenebris Infinite",
     },
+    addressBar: "an-analytical-deep-dive-into-its-real-world-geography",
     detailsHtml: `
       <p>Kovissa survival-ammunnoissa ympäristö on harvoin vain tausta — usein se on päävastustaja. <strong>Road to Vostok</strong> rakentaa ahdistavan tunnelman ilman sci-fiä, vaan maantieteellisellä realismilla. Tekijän <em>Tenebris Infinite</em> analyysin mukaan topografia ja arkkitehtuuri ammentavat Suomen ja Venäjän raja-alueesta.</p>
   <p>Todellisen historian ja geopoliittisen jännitteen siirtäminen virtuaalimaisemaan antaa harvinaisen syvyyden yhden kehittäjän projektille. Alla — miten nämä prototyypit tukevat mekaniikkoja ja tunnelmaa.</p>
@@ -59,19 +61,21 @@ export default {
     `,
   },
 
-  'surviving-the-Minefield': {
-    title: 'Selviytyminen miinakentästä: taktiikkaopas Road to Vostokiin',
-    description:
-      'Raja-alueen miinakartta: tunnista miinat, räjäytä ne tulituksella turvalliselta etäisyydeltä ja läpäise portti permadeath-vyöhykkeeseen.',
-    imageAlt: 'Road to Vostok — miinakenttä',
-    tags: ['Road to Vostok miinakenttä'],
+  {
+    id: 2,
+    title: "Selviytyminen miinakentästä: taktiikkaopas Road to Vostokiin",
+    iframeUrl: "https://www.youtube.com/embed/zmF0pO8h2vk",
+    description: "Raja-alueen miinakartta: tunnista miinat, räjäytä ne tulituksella turvalliselta etäisyydeltä ja läpäise portti permadeath-vyöhykkeeseen.",
+    tags: ["Road to Vostok miinakenttä"],
+    publishDate: "2026-03-27",
+    imageUrl: "/images/guides/guides02.webp",
+    imageAlt: "Road to Vostok — miinakenttä",
     seo: {
-      title: 'Miinakenttä Road to Vostokissa: taktiikka ja läpäisy',
-      description:
-        'Miinakentän puhdistus: visuaalinen tunnistus, ballistinen detonaatio, tekoälyn asymmetria ja akustiset peitteet — painotus aktiiviseen puhdistukseen.',
-      keywords:
-        'Road to Vostok miinakenttä, miinanraivaus, laukaus miinaan, permadeath, FPS-taktiikka, StarVox, miinat',
+      title: "Miinakenttä Road to Vostokissa: taktiikka ja läpäisy",
+      description: "Miinakentän puhdistus: visuaalinen tunnistus, ballistinen detonaatio, tekoälyn asymmetria ja akustiset peitteet — painotus aktiiviseen puhdistukseen.",
+      keywords: "Road to Vostok miinakenttä, miinanraivaus, laukaus miinaan, permadeath, FPS-taktiikka, StarVox, miinat",
     },
+    addressBar: "surviving-the-Minefield",
     detailsHtml: `
     <p> <strong>Fokus:</strong> taktiikka «Minefield»-kartalle ja räjähteiden neutraloinnille tulituksella.</p>
   <p>Kovassa survivalissa tarvitaan fyysinen kynnys vaikean pelin ja lopullisen rangaistuksen välillä. <em>Road to Vostokissa</em> se on <strong>miinakenttä</strong>. StarVoxin analyysin mukaan viimeiset portit ennen Vostokia: permadeath-vyöhyke, jossa kuolema vie tallennuksen ja varaston. Rajan kuvaa kannattaa tarkastella <a href="/map">interaktiivisella kartalla</a> (Border Zone).</p>
@@ -108,18 +112,20 @@ export default {
     `,
   },
 
-  'apartments-complete-survival-loot-guid': {
-    title: 'Road to Vostok — asunnot: selviytyminen ja täydellinen loot-opas',
-    description:
-      'Vostokin asunnot: reitit, turvalliset pisteet, tynnyrit lämpöön, eliittiloot ja kaupankäyntisykli Generalistin kanssa.',
-    imageAlt: 'Road to Vostok — asuntoalue',
-    tags: ['Road to Vostok asunnot', 'loot', 'CQB', 'kauppias'],
+  {
+    id: 3,
+    title: "Road to Vostok — asunnot: selviytyminen ja täydellinen loot-opas",
+    description: "Vostokin asunnot: reitit, turvalliset pisteet, tynnyrit lämpöön, eliittiloot ja kaupankäyntisykli Generalistin kanssa.",
+    tags: ["Road to Vostok asunnot", "loot", "CQB", "kauppias"],
+    publishDate: "2026-03-30",
+    imageUrl: "/images/guides/guides03.webp",
+    imageAlt: "Road to Vostok — asuntoalue",
     seo: {
-      title: 'Asunnot Road to Vostokissa: loot ja selviytyminen',
-      description:
-        'Täysi sykli: yö ja NVG, lämmitys tynnyreillä, sotilaslaatikot ja vihollisten droppi, aseiden vaihto The Generalistille. Varmista Vostok-merkintä kartalta.',
-      keywords: 'Road to Vostok, asunnot, loot, CQB, Generalist, opas',
+      title: "Asunnot Road to Vostokissa: loot ja selviytyminen",
+      description: "Täysi sykli: yö ja NVG, lämmitys tynnyreillä, sotilaslaatikot ja vihollisten droppi, aseiden vaihto The Generalistille. Varmista Vostok-merkintä kartalta.",
+      keywords: "Road to Vostok, asunnot, loot, CQB, Generalist, opas",
     },
+    addressBar: "apartments-complete-survival-loot-guid",
     detailsHtml: `
     <iframe name="rtvApartmentsGuideYt" src="https://www.youtube.com/embed/ttvN5s0cdBI" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <h3><strong>Tärkeät aikaleimat:</strong></h3>
@@ -162,18 +168,8 @@ export default {
     `,
   },
 
-  'how-to-fish': {
-    title: 'Kalastus Road to Vostokissa: pisteet, onki ja hauki',
-    description:
-      'Piilotetut vedenalaiset «kalavyöhykkeet», heitto putken ja laiturin luona — vakaa hauki tehtäviin ja myyntiin kovassa permadeathissa.',
-    imageAlt: 'Road to Vostok — kalastus',
-    tags: ['Road to Vostok kalastus', 'pisteet', 'onki', 'hauki'],
-    seo: {
-      title: 'Kalastus Road to Vostokissa: pisteet ja hinnat',
-      description:
-        'Kalatalous: vyöhykkeet veden alla, putki ja laiturit, hauen farmi. Luvut — kalastus-wikissä.',
-      keywords: 'Road to Vostok, kalastus, hauki, permadeath, survival',
-    },
+  {
+    id: 4,
     head: `<script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -217,6 +213,18 @@ export default {
         ]
       }
       </script>`,
+    title: "Kalastus Road to Vostokissa: pisteet, onki ja hauki",
+    description: "Piilotetut vedenalaiset «kalavyöhykkeet», heitto putken ja laiturin luona — vakaa hauki tehtäviin ja myyntiin kovassa permadeathissa.",
+    tags: ["Road to Vostok kalastus", "pisteet", "onki", "hauki"],
+    publishDate: "2026-03-30",
+    imageUrl: "/images/guides/guides04.webp",
+    imageAlt: "Road to Vostok — kalastus",
+    seo: {
+      title: "Kalastus Road to Vostokissa: pisteet ja hinnat",
+      description: "Kalatalous: vyöhykkeet veden alla, putki ja laiturit, hauen farmi. Luvut — kalastus-wikissä.",
+      keywords: "Road to Vostok, kalastus, hauki, permadeath, survival",
+    },
+    addressBar: "how-to-fish",
     detailsHtml: `
 <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/QVdZjWBqMH4" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -289,18 +297,8 @@ export default {
   </ol>`,
   },
 
-  'weapons-list': {
-    title: 'Aseet Road to Vostokissa: täydellinen lista ja tehot',
-    description:
-      'Noin 20 piipun katsaus: harvinaisuus, kuluma ja korjaus, legendaarit ja läpäisytasot — data harjoitusalueelta loadoutille.',
-    imageAlt: 'Road to Vostok — aseet',
-    tags: ['Road to Vostok aseet', 'taulukko', 'korjaus', 'meta'],
-    seo: {
-      title: 'Aseet Road to Vostokissa: luvut ja buildit',
-      description:
-        'Kaliiperit, vamma, läpäisy, harvinaisuus, KP-31 ja M78. Taulukot vastaavat wiki-ase-sivua buildisi mukaan.',
-      keywords: 'Road to Vostok, aseet, lista, legendaarinen, läpäisy, korjaus',
-    },
+  {
+    id: 5,
     head: `<script type="application/ld+json">
       {
         "@context": "https://schema.org/",
@@ -337,6 +335,19 @@ export default {
         ]
       }
       </script>`,
+    title: "Aseet Road to Vostokissa: täydellinen lista ja tehot",
+    iframeUrl: "https://www.youtube.com/embed/R5721mXs4lY",
+    description: "Noin 20 piipun katsaus: harvinaisuus, kuluma ja korjaus, legendaarit ja läpäisytasot — data harjoitusalueelta loadoutille.",
+    tags: ["Road to Vostok aseet", "taulukko", "korjaus", "meta"],
+    publishDate: "2026-03-30",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageAlt: "Road to Vostok — aseet",
+    seo: {
+      title: "Aseet Road to Vostokissa: luvut ja buildit",
+      description: "Kaliiperit, vamma, läpäisy, harvinaisuus, KP-31 ja M78. Taulukot vastaavat wiki-ase-sivua buildisi mukaan.",
+      keywords: "Road to Vostok, aseet, lista, legendaarinen, läpäisy, korjaus",
+    },
+    addressBar: "weapons-list",
     detailsHtml: `<p><strong>Road to Vostokissa</strong> asepaneelit ovat mahdollisimman «kuivia». Harjoitusalueella ~20 piippua: kaliiperi, vamma, läpäisy, kuluma. Ennen vyöhykkeelle lähtöä opi käyttöliittymä ja valitse läpäisy vihollisen panssaria vasten. Hinta, kauppa ja harvinaisuus — <a href="/wiki/weapons">wiki · aseet</a>.</p>
   <iframe name="rtvWeaponsGuideYt" src="https://www.youtube.com/embed/R5721mXs4lY" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <p>Aikaleimat:</p>
@@ -385,18 +396,20 @@ export default {
   <p>SVD, Mosin, M78 läpäisyllä 4; M78:lla ja SVD:llä vamma 50 — vahvempi raskaita kohteita vastaan.</p>`,
   },
 
-  'reload-shotguns-bolt-actions-magazine-checks': {
-    title: 'Lataus Road to Vostokissa: haulikot, pulttilukot ja lipastarkistus',
-    description:
-      'RM-870 ja Mosin: Ctrl + vasen hiiri patruunaan, laukauksen jälkeen R. Lipastarkistus V-näppäimellä — ei arcadea.',
-    imageAlt: 'Road to Vostok — lataus',
-    tags: ['Road to Vostok', 'lataus', 'RM-870', 'Mosin'],
+  {
+    id: 6,
+    title: "Lataus Road to Vostokissa: haulikot, pulttilukot ja lipastarkistus",
+    description: "RM-870 ja Mosin: Ctrl + vasen hiiri patruunaan, laukauksen jälkeen R. Lipastarkistus V-näppäimellä — ei arcadea.",
+    tags: ["Road to Vostok", "lataus", "RM-870", "Mosin"],
+    publishDate: "2026-04-09",
+    imageUrl: "/images/guides/guides06.webp",
+    imageAlt: "Road to Vostok — lataus",
     seo: {
-      title: 'Lataus Road to Vostokissa: haulikko ja pulttilukko',
-      description:
-        'Taktinen lataus: Ctrl avaa sulkimen, vasen hiiri syöttää, laukauksen jälkeen R. Harjoittele tutoriaalissa.',
-      keywords: 'Road to Vostok, lataus, RM-870, Mosin, lipas, V, kova peli',
+      title: "Lataus Road to Vostokissa: haulikko ja pulttilukko",
+      description: "Taktinen lataus: Ctrl avaa sulkimen, vasen hiiri syöttää, laukauksen jälkeen R. Harjoittele tutoriaalissa.",
+      keywords: "Road to Vostok, lataus, RM-870, Mosin, lipas, V, kova peli",
     },
+    addressBar: "reload-shotguns-bolt-actions-magazine-checks",
     detailsHtml: `<h1>Lataus: pulttilukot ja haulikko</h1>
   <p><strong>Lähde:</strong> yhteisön tiivistelmä ja pelaajatestit (esim. MasterDeBunker) — ei arcade; paniikissa unohtunut patruunakammio = kuolema.</p>
   <h2>Perussykli</h2>
@@ -432,18 +445,20 @@ export default {
   <p>Pistoolit yksinkertaisemmat, mutta harjoittele <strong>tutoriaalissa</strong> automaatioksi.</p>`,
   },
 
-  'cat-guide-find-care-shelter-companion': {
-    title: 'Kissa Road to Vostokissa: miten löytää ja hoitaa suojassa',
-    description:
-      '«Kadonneen kissan» tapahtuma, bunkkeri etuvartiossa, kuljetuslaatikko 3×5, paluu mökkiin — varusteet, reitti ja yhteisön korjaukset.',
-    imageAlt: 'Musta kissa laatikossa — suojan kumppani',
-    tags: ['Road to Vostok', 'kissa', 'suoja', 'tehtävä'],
+  {
+    id: 7,
+    title: "Kissa Road to Vostokissa: miten löytää ja hoitaa suojassa",
+    description: "«Kadonneen kissan» tapahtuma, bunkkeri etuvartiossa, kuljetuslaatikko 3×5, paluu mökkiin — varusteet, reitti ja yhteisön korjaukset.",
+    tags: ["Road to Vostok", "kissa", "suoja", "tehtävä"],
+    publishDate: "2026-04-09",
+    imageUrl: "/images/guides/guides07.webp",
+    imageAlt: "Musta kissa laatikossa — suojan kumppani",
     seo: {
-      title: 'Kissa Road to Vostokissa: etsintä ja hoito',
-      description:
-        '4. pelipäivästä tapahtuma, ketju kylä—koulu—etuvartio, mentaali ja reppu; parempi yhdellä juoksulla.',
-      keywords: 'road to vostok, kissa, suoja, tehtävä, bunkkeri, survival',
+      title: "Kissa Road to Vostokissa: etsintä ja hoito",
+      description: "4. pelipäivästä tapahtuma, ketju kylä—koulu—etuvartio, mentaali ja reppu; parempi yhdellä juoksulla.",
+      keywords: "road to vostok, kissa, suoja, tehtävä, bunkkeri, survival",
     },
+    addressBar: "cat-guide-find-care-shelter-companion",
     detailsHtml: `<h1>Kissa: täysi opas</h1>
   <p><strong>Perusta:</strong> useat yhteisön juoksut; kovassa survivalissa «elävä» maksaa — reitti, loot ja tyypilliset virheet.</p>
   <h2>«Kadonnut kissa» -tapahtuman alku</h2>
@@ -496,21 +511,20 @@ export default {
   </ol>`,
   },
 
-  'road-to-vostok-shelter-locations': {
-    title:
-      'Road to Vostok — suojat: täydellinen kartta ja avausopas',
-    description:
-      'Kaikki Road to Vostok -suojat: teltta, bunkkeri, koulu. Luokan avain ja interaktiivinen kartta selviytymiseen.',
-    imageAlt: 'Road to Vostok -suojat',
-    tags: ['Road to Vostok', 'Suoja', 'Kartta', 'Avain'],
+  {
+    id: 8,
+    title: "Road to Vostok — suojat: täydellinen kartta ja avausopas",
+    description: "Kaikki Road to Vostok -suojat: teltta, bunkkeri, koulu. Luokan avain ja interaktiivinen kartta selviytymiseen.",
+    tags: ["Road to Vostok", "Suoja", "Kartta", "Avain"],
+    publishDate: "2026-04-14",
+    imageUrl: "/images/guides/guides08.webp",
+    imageAlt: "Road to Vostok -suojat",
     seo: {
-      title:
-        'Road to Vostok — suojat: täydellinen kartta ja avausopas',
-      description:
-        'Suojien sijainnit, teltta ja bunkkeri etuvartiossa, koulun luokka, avaimet ja tukikohtalogistiikka; interaktiivinen kartta reiteille.',
-      keywords:
-        'road to vostok shelter, suojat, teltta, kartta, bunkkeri, koulu, kissa, luokan avain',
+      title: "Road to Vostok — suojat: täydellinen kartta ja avausopas",
+      description: "Suojien sijainnit, teltta ja bunkkeri etuvartiossa, koulun luokka, avaimet ja tukikohtalogistiikka; interaktiivinen kartta reiteille.",
+      keywords: "road to vostok shelter, suojat, teltta, kartta, bunkkeri, koulu, kissa, luokan avain",
     },
+    addressBar: "road-to-vostok-shelter-locations",
     detailsHtml: `<h1>Road to Vostok -suojat: kaikki paikat ja avaukset</h1>
   <p><strong>Road to Vostok</strong> -hardcore-maailmassa suoja on ainoa todella turvallinen tila lootille, palautumiselle ja hengissä pysymiselle — olitpa aloittelija tai loppupelin varustaja.</p>
   <p>Tämä opas kokoaa yhteen tunnetut suojat, avainreitit ja tärkeät mekaniikat yhteisön varmentamien tietojen pohjalta.</p>
@@ -521,16 +535,16 @@ export default {
   <li><strong>Mökki (kylä):</strong> ensimmäinen suoja — pieni mutta välttämätön varhaiselle varastolle.</li>
   <li><strong>Teltta (etuvartio):</strong> heti käytössä — vasemmalla tullessa <strong>koulusta</strong>, laakson vastapäätä isosta punaisesta navetasta.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158305/cms-uploads/cms-1776158305834-85606712.webp" alt="Kylän mökki ja ullakko" width="50%"></p>
+  <p><img src="/images/guides/guides08-01.webp" alt="Kylän mökki ja ullakko" width="50%"></p>
   <h3>Avattavat suojat ja stash-pisteet</h3>
   <ol>
   <li><strong>Bunkkeri (etuvartio):</strong> iso huipputason suoja — vaatii varustuksen, <strong>„Punisherin”</strong> kaatamisen, hatun noston ja asepelin tehtävän etuvartiossa.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158461/cms-uploads/cms-1776158461157-243281608.webp" alt="Teltta ja bunkkeri etuvartiossa" width="50%"></p>
+  <p><img src="/images/guides/guides08-02.webp" alt="Teltta ja bunkkeri etuvartiossa" width="50%"></p>
   <ol>
   <li><strong>Koulun luokka:</strong> <strong>koulu</strong>-kartalla — lukittu luokkahuone, tarvitsee <strong>fyysisen avaimen</strong>.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158410/cms-uploads/cms-1776158410763-6355250.webp" alt="Koulun luokka-suoja" width="50%"></p>
+  <p><img src="/images/guides/guides08-03.webp" alt="Koulun luokka-suoja" width="50%"></p>
   <ol>
   <li><strong>Ullakko:</strong> enemmän tilaa kuin alkumökissä — avain <strong>kauppiaan viimeisestä tehtävästä</strong>.</li>
   </ol>
@@ -541,7 +555,7 @@ export default {
   <li><strong>Kauppiaiden ketjut:</strong> eteneminen — esim. ullakon avain viimeisen tehtävän jälkeen.</li>
   <li><strong>Loot kuumissa paikoissa:</strong> avaimia arvokkaissa vyöhykkeissä — vahvistettu koulun <strong>salissa</strong>, joskus syvällä <strong>Vostokissa</strong> loppupelissä.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158642/cms-uploads/cms-1776158642474-180454868.webp" alt="Road to Vostok -avaimet" width="50%"></p>
+  <p><img src="/images/guides/guides08-04.webp" alt="Road to Vostok -avaimet" width="50%"></p>
   <h2>Suojan hallinta</h2>
   <h3>1. F1-sijoittelu</h3>
   <p>Osta kalusteita ja säiliöitä kauppiailta (<strong>lääkäri</strong> hyllyihin suositeltu). Suojassa: <strong>F1</strong> sijoitustilaan; rulla + oikea klikki kiertoon.</p>
@@ -558,5 +572,5 @@ export default {
   <li><strong>Ei nälkää/janoa suojassa:</strong> sopii järjestelyyn ja hyllyihin ilman ruoan tuhlausta.</li>
   </ol>
   <p>(Lisää oppaita: <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
-  },
-}
+  }
+]

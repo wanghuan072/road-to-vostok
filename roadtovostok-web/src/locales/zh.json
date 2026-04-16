@@ -178,7 +178,7 @@
       "leadEnd": "查看地点与目标。右侧为氛围主图。下方指南针区块仍与顶部导航一一对应。",
       "caption": "主视觉",
       "heroImgAria": "首页主视觉插图",
-      "heroImgBlurb": "仅作氛围展示 — 请用上方「地图」「互动地图」按钮进入可操作的地图站。",
+      "heroImgBlurb": "主图为场景与氛围呈现；带标点、图层与筛选的 Road to Vostok 互动地图请用「地图」或「互动地图」。",
       "btnAdvancedGuides": "进阶攻略",
       "btnInteractiveMap": "互动地图"
     },

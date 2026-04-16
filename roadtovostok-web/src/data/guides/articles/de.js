@@ -1,21 +1,22 @@
 /**
- * Deutsch: Feld-Overrides zu `en.js` (nach addressBar), per `localeData` gemerged.
- * Fehlende Felder fallen auf `en.js` zurück; alle derzeitigen Guide-Slugs haben hier `detailsHtml`.
+ * DE — same row shape as guides/articles/en.js.
  */
-export default {
-  'an-analytical-deep-dive-into-its-real-world-geography': {
-    title: 'Road to Vostok: Tiefenanalyse der realen Geografie',
-    description:
-      'Rigide Analyse der realen geographischen Vorbilder hinter dem Hardcore-Survival-Shooter Road to Vostok — von Finnlands historischer Salpa-Linie bis zur urbanen Verwahrlosung an der Grenze.',
-    imageAlt: 'Road to Vostok — Realwelt-Geografie',
-    tags: ['Road to Vostok'],
+export default [
+  {
+    id: 1,
+    title: "Road to Vostok: Tiefenanalyse der realen Geografie",
+    iframeUrl: "https://www.youtube.com/embed/RsDE26kkAtU",
+    description: "Rigide Analyse der realen geographischen Vorbilder hinter dem Hardcore-Survival-Shooter Road to Vostok — von Finnlands historischer Salpa-Linie bis zur urbanen Verwahrlosung an der Grenze.",
+    tags: ["Road to Vostok"],
+    publishDate: "2026-03-27",
+    imageUrl: "/images/guides/guides01.webp",
+    imageAlt: "Road to Vostok — Realwelt-Geografie",
     seo: {
-      title: 'Road to Vostok: Tiefenanalyse der realen Geografie',
-      description:
-        'Von der Salpa-Linie bis zu Grenzorten und Wyborg: wie Road to Vostok echte Topografie und Architektur in Leveldesign und Atmosphäre übersetzt.',
-      keywords:
-        'Road to Vostok, Survival Shooter, Salpa Linie, Finnland Russland Grenze, Wyborg, Hardcore FPS, Geografie, Tenebris Infinite',
+      title: "Road to Vostok: Tiefenanalyse der realen Geografie",
+      description: "Von der Salpa-Linie bis zu Grenzorten und Wyborg: wie Road to Vostok echte Topografie und Architektur in Leveldesign und Atmosphäre übersetzt.",
+      keywords: "Road to Vostok, Survival Shooter, Salpa Linie, Finnland Russland Grenze, Wyborg, Hardcore FPS, Geografie, Tenebris Infinite",
     },
+    addressBar: "an-analytical-deep-dive-into-its-real-world-geography",
     detailsHtml: `
       <p>Im Hardcore-Survival-Shooter ist die Umgebung selten nur Kulisse — oft ist sie der Hauptgegner. <strong>Road to Vostok</strong> schafft seine bedrückende Atmosphäre nicht durch Science-Fiction, sondern durch geografischen Realismus. Wie die Analyse von <em>Tenebris Infinite</em> zeigt, beziehen Topografie und Architektur des Spiels ihr Leben direkt aus der Grenzregion zwischen Finnland und Russland.</p>
   <p>Echte Geschichte und geopolitische Spannung auf die virtuelle Landschaft zu mappen verleiht diesem Solo-Projekt seltene Tiefe. Dieser Artikel zerlegt, wie diese geografischen Vorbilder Mechanik und Stimmung tragen.</p>
@@ -60,19 +61,21 @@ export default {
     `,
   },
 
-  'surviving-the-Minefield': {
-    title: 'Das Minenfeld überleben: Taktik-Guide für Road to Vostok',
-    description:
-      'Tiefer taktischer Guide zur Minenfeld-Karte: Näherungsminen erkennen, ballistisch freischießen und den Übergang in die Permadeath-Zone meistern.',
-    imageAlt: 'Road to Vostok Minenfeld',
-    tags: ['Road to Vostok Minenfeld'],
+  {
+    id: 2,
+    title: "Das Minenfeld überleben: Taktik-Guide für Road to Vostok",
+    iframeUrl: "https://www.youtube.com/embed/zmF0pO8h2vk",
+    description: "Tiefer taktischer Guide zur Minenfeld-Karte: Näherungsminen erkennen, ballistisch freischießen und den Übergang in die Permadeath-Zone meistern.",
+    tags: ["Road to Vostok Minenfeld"],
+    publishDate: "2026-03-27",
+    imageUrl: "/images/guides/guides02.webp",
+    imageAlt: "Road to Vostok Minenfeld",
     seo: {
-      title: 'Das Minenfeld überleben: Taktik-Guide für Road to Vostok',
-      description:
-        'Minenfeld-Survival: Minen optisch identifizieren, aus sicherer Distanz detonieren, asymmetrische KI und Audio-Maskierung — mit Fokus auf aktive Räumung.',
-      keywords:
-        'Road to Vostok Minenfeld, Minenräumung, Schuss freilegen, Permadeath Zone, Hardcore FPS Taktik, StarVox, Näherungsminen',
+      title: "Das Minenfeld überleben: Taktik-Guide für Road to Vostok",
+      description: "Minenfeld-Survival: Minen optisch identifizieren, aus sicherer Distanz detonieren, asymmetrische KI und Audio-Maskierung — mit Fokus auf aktive Räumung.",
+      keywords: "Road to Vostok Minenfeld, Minenräumung, Schuss freilegen, Permadeath Zone, Hardcore FPS Taktik, StarVox, Näherungsminen",
     },
+    addressBar: "surviving-the-Minefield",
     detailsHtml: `
     <p> <strong>Schwerpunkt:</strong> Taktische Tiefenanalyse der Grenzkarte „Minenfeld“ und der Sprengmittelräum-Mechanik.</p>
   <p>Im Ökosystem der Hardcore-Survival-Shooter braucht es eine physische Schwelle zwischen hartem Spiel und endgültiger Strafe. In <em>Road to Vostok</em> ist das das <strong>Minenfeld</strong>. Wie StarVox dokumentiert, ist diese Karte das letzte Tor nach Vostok — Permadeath-Zone: ein Tod löscht den Spielstand und alles im Dachboden-Tresor. Grenzverläufe und Markierungen liest du gut mit der <a href="/map">interaktiven Karte</a> (Border Zone).</p>
@@ -109,26 +112,20 @@ export default {
     `,
   },
 
-  'apartments-complete-survival-loot-guid': {
-    title:
-      'Road to Vostok Apartments: Survival- und Loot-Guide (komplett)',
-    description:
-      'Vostok-Apartments meistern: Layout, Unterkünfte, Kälte mit Feuern, High-Tier-Loot und Handel beim Generalisten.',
-    imageAlt: 'Road to Vostok Apartments',
-    tags: [
-      'Road to Vostok Apartments',
-      'Loot',
-      'CQB',
-      'Händler',
-    ],
+  {
+    id: 3,
+    title: "Road to Vostok Apartments: Survival- und Loot-Guide (komplett)",
+    description: "Vostok-Apartments meistern: Layout, Unterkünfte, Kälte mit Feuern, High-Tier-Loot und Handel beim Generalisten.",
+    tags: ["Road to Vostok Apartments", "Loot", "CQB", "Händler"],
+    publishDate: "2026-03-30",
+    imageUrl: "/images/guides/guides03.webp",
+    imageAlt: "Road to Vostok Apartments",
     seo: {
-      title:
-        'Road to Vostok Apartments: Survival- und Loot-Guide',
-      description:
-        'Kompletter Guide zu Vostok-Apartments: Routen, Feuertonnen gegen Kälte, militärische Kisten, Waffen-Drops und der Händler „The Generalist“.',
-      keywords:
-        'Road to Vostok Apartments, Loot, CQB, Generalist, Survival Guide',
+      title: "Road to Vostok Apartments: Survival- und Loot-Guide",
+      description: "Kompletter Guide zu Vostok-Apartments: Routen, Feuertonnen gegen Kälte, militärische Kisten, Waffen-Drops und der Händler „The Generalist“.",
+      keywords: "Road to Vostok Apartments, Loot, CQB, Generalist, Survival Guide",
     },
+    addressBar: "apartments-complete-survival-loot-guid",
     detailsHtml: `
     <iframe name="rtvApartmentsGuideYt" src="https://www.youtube.com/embed/ttvN5s0cdBI" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <h3><strong>Kein Bock aufs ganze Video? Zu den wichtigsten Momenten springen:</strong></h3>
@@ -168,26 +165,8 @@ export default {
     `,
   },
 
-  'how-to-fish': {
-    title:
-      'Road to Vostok Angel-Guide: Spots, Ruten-Mechanik &amp; Hecht',
-    description:
-      'Versteckte Unterwasser-Fischblöcke, beste Spots (Rohr, Steg), Rutenbedienung und Hecht für Quests — sicherster Cashflow im Permadeath-Run.',
-    imageAlt: 'Road to Vostok Angeln',
-    tags: [
-      'Road to Vostok Angeln',
-      'Hecht',
-      'Spots',
-      'Rute',
-    ],
-    seo: {
-      title:
-        'Road to Vostok Angeln: Spots, Rute, Hecht &amp; Marktpreise',
-      description:
-        'Angel-Ökonomie in RtV: Fischblöcke finden, Drainage-Rohr und Steg nutzen, Hecht farmen. Werte mit Wiki · Fishing abgleichen.',
-      keywords:
-        'Road to Vostok Angeln, Hecht, Fischblöcke, Permadeath, Survival',
-    },
+  {
+    id: 4,
     head: `<script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -231,6 +210,18 @@ export default {
         ]
       }
       </script>`,
+    title: "Road to Vostok Angel-Guide: Spots, Ruten-Mechanik &amp; Hecht",
+    description: "Versteckte Unterwasser-Fischblöcke, beste Spots (Rohr, Steg), Rutenbedienung und Hecht für Quests — sicherster Cashflow im Permadeath-Run.",
+    tags: ["Road to Vostok Angeln", "Hecht", "Spots", "Rute"],
+    publishDate: "2026-03-30",
+    imageUrl: "/images/guides/guides04.webp",
+    imageAlt: "Road to Vostok Angeln",
+    seo: {
+      title: "Road to Vostok Angeln: Spots, Rute, Hecht &amp; Marktpreise",
+      description: "Angel-Ökonomie in RtV: Fischblöcke finden, Drainage-Rohr und Steg nutzen, Hecht farmen. Werte mit Wiki · Fishing abgleichen.",
+      keywords: "Road to Vostok Angeln, Hecht, Fischblöcke, Permadeath, Survival",
+    },
+    addressBar: "how-to-fish",
     detailsHtml: `
 <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/QVdZjWBqMH4" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -304,26 +295,8 @@ export default {
   </ol>`,
   },
 
-  'weapons-list': {
-    title:
-      'Road to Vostok Waffenliste: Alle Gewehre &amp; Meta-Guide',
-    description:
-      'Komplette Waffenübersicht: bestes Gear, Zustand &amp; Reparatur, Legendaries und Durchschlags-Levels — alles am Schießstand erklärt.',
-    imageAlt: 'Road to Vostok Waffen',
-    tags: [
-      'Road to Vostok Waffen',
-      'Liste',
-      'Reparatur',
-      'Meta',
-    ],
-    seo: {
-      title:
-        'Road to Vostok Waffen: Liste, Stats &amp; beste Loadouts',
-      description:
-        'Arsenal in RtV: Kaliber, Schaden, Penetration, Seltenheit, KP-31 &amp; M78. Tabellenzeilen im Wiki · Weapons.',
-      keywords:
-        'Road to Vostok Waffen, Liste, Legendary, Penetration, Reparatur',
-    },
+  {
+    id: 5,
     head: `<script type="application/ld+json">
       {
         "@context": "https://schema.org/",
@@ -360,6 +333,19 @@ export default {
         ]
       }
       </script>`,
+    title: "Road to Vostok Waffenliste: Alle Gewehre &amp; Meta-Guide",
+    iframeUrl: "https://www.youtube.com/embed/R5721mXs4lY",
+    description: "Komplette Waffenübersicht: bestes Gear, Zustand &amp; Reparatur, Legendaries und Durchschlags-Levels — alles am Schießstand erklärt.",
+    tags: ["Road to Vostok Waffen", "Liste", "Reparatur", "Meta"],
+    publishDate: "2026-03-30",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageAlt: "Road to Vostok Waffen",
+    seo: {
+      title: "Road to Vostok Waffen: Liste, Stats &amp; beste Loadouts",
+      description: "Arsenal in RtV: Kaliber, Schaden, Penetration, Seltenheit, KP-31 &amp; M78. Tabellenzeilen im Wiki · Weapons.",
+      keywords: "Road to Vostok Waffen, Liste, Legendary, Penetration, Reparatur",
+    },
+    addressBar: "weapons-list",
     detailsHtml: `<p>Im Hardcore-Survival <strong>Road to Vostok</strong> baut das Waffensystem auf realistischen Stat-Blättern. Die Schießstand-Demo zeigt bis zu 20 Feuerwaffen für verschiedene Rollen — Kaliber, Basisschaden, Durchschlagslevel und Zustand pro Waffe. Wer Penetration nicht zur gegnerischen Rüstung matcht, stirbt schnell. Aktuelle Tabellenzeilen (Wert, Händlerpreis, Seltenheit): <a href="/wiki/weapons">Wiki · Waffen</a>.</p>
   <iframe name="rtvWeaponsGuideYt" src="https://www.youtube.com/embed/R5721mXs4lY" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <p>Kein Bock aufs volle Video? Zu den Markern:</p>
@@ -443,27 +429,20 @@ export default {
   <p><strong>A:</strong> SVD, Mosin und M78 mit Penetration Stufe 4; M78 und SVD mit 50 Basisschaden — Top gegen Panzerung.</p>`,
   },
 
-  'reload-shotguns-bolt-actions-magazine-checks': {
-    title:
-      'Nachladen in Road to Vostok: Flinten, Repetierer &amp; Magazin-Check',
-    description:
-      'Exakte Abläufe für RM-870, Mosin und Magazin prüfen (V) — Community-getestet, ohne Arcade-Logik.',
-    imageAlt:
-      'Road to Vostok: Nachladen von Schrotflinte und Repetierbüchse',
-    tags: [
-      'Road to Vostok',
-      'Nachladen',
-      'RM-870',
-      'Mosin',
-    ],
+  {
+    id: 6,
+    title: "Nachladen in Road to Vostok: Flinten, Repetierer &amp; Magazin-Check",
+    description: "Exakte Abläufe für RM-870, Mosin und Magazin prüfen (V) — Community-getestet, ohne Arcade-Logik.",
+    tags: ["Road to Vostok", "Nachladen", "RM-870", "Mosin"],
+    publishDate: "2026-04-09",
+    imageUrl: "/images/guides/guides06.webp",
+    imageAlt: "Road to Vostok: Nachladen von Schrotflinte und Repetierbüchse",
     seo: {
-      title:
-        'Road to Vostok Nachladen: Flinten, Waffen &amp; Magazine',
-      description:
-        'Taktisches Nachladen: CTRL öffnet Verschluss, LMB lädt einzeln, R nach Schuss. Im Tutorial üben.',
-      keywords:
-        'Road to Vostok reload, RM-870, Mosin, Magazin, V Taste, Hardcore',
+      title: "Road to Vostok Nachladen: Flinten, Waffen &amp; Magazine",
+      description: "Taktisches Nachladen: CTRL öffnet Verschluss, LMB lädt einzeln, R nach Schuss. Im Tutorial üben.",
+      keywords: "Road to Vostok reload, RM-870, Mosin, Magazin, V Taste, Hardcore",
     },
+    addressBar: "reload-shotguns-bolt-actions-magazine-checks",
     detailsHtml: `<h1>Nachladen in Road to Vostok: Repetierer &amp; Schrotflinten meistern
   </h1>
   <p><strong>Vertrauenswürdigkeit:</strong> Dieser Guide basiert auf Community-Mechaniken und Feldtests (u. a. MasterDeBunker). Arcade-Logik gilt nicht — wie die Veteranen sagen: Wer in Panik das Nachladen vergisst, stirbt.</p>
@@ -516,27 +495,20 @@ export default {
   <p>Controls dort sicher beherrschen — dann raus plündern und schießen (ohne Garantie auf Überleben).</p>`,
   },
 
-  'cat-guide-find-care-shelter-companion': {
-    title:
-      'Road to Vostok Katzen-Guide: Shelter-Begleiter finden &amp; versorgen',
-    description:
-      'Quest „Katze finden“ auslösen, Bunker-Katzen lokalisieren, Kiste (3×5) transportieren — Routen, Vorräte und Community-Hinweise.',
-    imageAlt:
-      'Schwarze Katze im Karton — Shelter-Begleiter in Road to Vostok',
-    tags: [
-      'Road to Vostok',
-      'Katze',
-      'Shelter',
-      'Quest',
-    ],
+  {
+    id: 7,
+    title: "Road to Vostok Katzen-Guide: Shelter-Begleiter finden &amp; versorgen",
+    description: "Quest „Katze finden“ auslösen, Bunker-Katzen lokalisieren, Kiste (3×5) transportieren — Routen, Vorräte und Community-Hinweise.",
+    tags: ["Road to Vostok", "Katze", "Shelter", "Quest"],
+    publishDate: "2026-04-09",
+    imageUrl: "/images/guides/guides07.webp",
+    imageAlt: "Schwarze Katze im Karton — Shelter-Begleiter in Road to Vostok",
     seo: {
-      title:
-        'Road to Vostok Katze: Finden &amp; im Shelter halten',
-      description:
-        'Fehlende Katze ab Tag 4, Route Dorf–Schule–Außenposten, Mental-Stats, Inventarplanung — alles in einem Durchlauf.',
-      keywords:
-        'road to vostok katze, shelter begleiter, quest, bunker, survival tipps',
+      title: "Road to Vostok Katze: Finden &amp; im Shelter halten",
+      description: "Fehlende Katze ab Tag 4, Route Dorf–Schule–Außenposten, Mental-Stats, Inventarplanung — alles in einem Durchlauf.",
+      keywords: "road to vostok katze, shelter begleiter, quest, bunker, survival tipps",
     },
+    addressBar: "cat-guide-find-care-shelter-companion",
     detailsHtml: `<h1>Road to Vostok Katzen-Guide: Begleiter finden &amp; versorgen</h1>
   <p><strong>Vertrauenswürdigkeit:</strong> Basierend auf Community-Feldtests — exakte Routen, Vorräte und Korrekturen, damit du die Reise überlebst.</p>
   <h2>Vorbereitung &amp; „vermisste Katze“-Event</h2>
@@ -593,21 +565,20 @@ export default {
   </ol>`,
   },
 
-  'road-to-vostok-shelter-locations': {
-    title:
-      'Road to Vostok Shelter-Standorte: Vollständige Karte &amp; Freischalt-Guide',
-    description:
-      'Alle Shelter in Road to Vostok — Zelt, Bunker, Schule u. a. So bekommst du den Klassenzimmer-Schlüssel und nutzt unsere interaktive Karte fürs Überleben.',
-    imageAlt: 'Road to Vostok Shelter',
-    tags: ['Road to Vostok', 'Shelter', 'Karte', 'Schlüssel'],
+  {
+    id: 8,
+    title: "Road to Vostok Shelter-Standorte: Vollständige Karte &amp; Freischalt-Guide",
+    description: "Alle Shelter in Road to Vostok — Zelt, Bunker, Schule u. a. So bekommst du den Klassenzimmer-Schlüssel und nutzt unsere interaktive Karte fürs Überleben.",
+    tags: ["Road to Vostok", "Shelter", "Karte", "Schlüssel"],
+    publishDate: "2026-04-14",
+    imageUrl: "/images/guides/guides08.webp",
+    imageAlt: "Road to Vostok Shelter",
     seo: {
-      title:
-        'Road to Vostok Shelter-Standorte: Vollständige Karte &amp; Freischalt-Guide',
-      description:
-        'Alle Shelter-Standorte, Zelt- und Bunker-Infos, Schule, Klassenzimmer-Schlüssel und interaktive Karte für effizientes Looten.',
-      keywords:
-        'road to vostok shelter, shelter standorte, zelt shelter, karte, bunker, schule shelter, katze, klassenzimmer schlüssel',
+      title: "Road to Vostok Shelter-Standorte: Vollständige Karte &amp; Freischalt-Guide",
+      description: "Alle Shelter-Standorte, Zelt- und Bunker-Infos, Schule, Klassenzimmer-Schlüssel und interaktive Karte für effizientes Looten.",
+      keywords: "road to vostok shelter, shelter standorte, zelt shelter, karte, bunker, schule shelter, katze, klassenzimmer schlüssel",
     },
+    addressBar: "road-to-vostok-shelter-locations",
     detailsHtml: `<h1>Das ultimative Road-to-Vostok-Shelter-Handbuch: Alle Orte &amp; Freischaltungen</h1>
   <p>In der Hardcore-Welt von <strong>Road to Vostok</strong> ist ein Shelter deine einzige wirklich sichere Zone zum Lagern, Regenerieren und Überleben. Ob Early-Game-Stash oder Endgame-Waffenkammer — exakte Orte und Mechaniken zu kennen ist Pflicht.</p>
   <p>Dieser Guide fasst alle bekannten Shelter, Schlüssel-Wege und wichtige Management-Mechaniken auf Basis verifizierter Community-Infos zusammen.</p>
@@ -619,17 +590,17 @@ export default {
   <li><strong>Hütten-Shelter:</strong> auf der <strong>Dorf</strong>-Karte — dein erstes Shelter; kompakt, aber essenziell fürs Anfangslager.</li>
   <li><strong>Zelt-Shelter:</strong> ebenfalls sofort nutzbar auf der <strong>Außenposten</strong>-Karte — links vom Einstieg aus der Schule (Tal gegenüber der großen roten Scheune).</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158305/cms-uploads/cms-1776158305834-85606712.webp" alt="Dorf-Hütte und Dachboden-Shelter" width="50%"></p>
+  <p><img src="/images/guides/guides08-01.webp" alt="Dorf-Hütte und Dachboden-Shelter" width="50%"></p>
   <h3>Freischaltbare Shelter &amp; Stash-Punkte</h3>
   <p>Weitere hochwertige Zonen brauchen Voraussetzungen:</p>
   <ol>
   <li><strong>Bunker-Shelter:</strong> großes Top-Tier-Shelter auf dem Außenposten. Freischaltung anspruchsvoll: gut ausrüsten, den <strong>„Punisher“</strong> besiegen, Hut nehmen, am Außenposten die Aufgabe des Waffenhändlers erledigen.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158461/cms-uploads/cms-1776158461157-243281608.webp" alt="Außenposten Zelt und Bunker" width="50%"></p>
+  <p><img src="/images/guides/guides08-02.webp" alt="Außenposten Zelt und Bunker" width="50%"></p>
   <ol>
   <li><strong>Schul-Shelter (Klassenzimmer):</strong> auf der <strong>Schul</strong>-Karte — verschlossenes Klassenzimmer, Zugang nur mit <strong>physischem Schlüssel</strong>.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158410/cms-uploads/cms-1776158410763-6355250.webp" alt="Schul-Klassenzimmer-Shelter" width="50%"></p>
+  <p><img src="/images/guides/guides08-03.webp" alt="Schul-Klassenzimmer-Shelter" width="50%"></p>
   <ol>
   <li><strong>Dachboden-Shelter:</strong> mehr Platz als die Starthütte. Schlüssel über die <strong>letzte Händler-Quest</strong>.</li>
   </ol>
@@ -641,7 +612,7 @@ export default {
   <li><strong>Händler-Quests:</strong> Questlines voranbringen — z. B. Dachboden-Schlüssel nach der finalen Händler-Quest.</li>
   <li><strong>Loot in Hotspots:</strong> Schlüssel in Hochwert-Zonen; bestätigt u. a. <strong>Sporthalle</strong> auf der Schulkarte, teils tief in <strong>Vostok</strong> im Endgame.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158642/cms-uploads/cms-1776158642474-180454868.webp" alt="Road to Vostok Schlüssel" width="50%"></p>
+  <p><img src="/images/guides/guides08-04.webp" alt="Road to Vostok Schlüssel" width="50%"></p>
   <h2>Shelter-Management &amp; Survival</h2>
   <p>Den Ort finden reicht nicht — baue eine effiziente Logistikbasis.</p>
   <h3>1. F1 Platzierungs-System</h3>
@@ -663,5 +634,5 @@ export default {
   <li><strong>Kein Hunger/Durst im Shelter:</strong> ideal zum Sortieren und Regale bauen ohne Rationen zu verbrennen.</li>
   </ol>
   <p>(Mehr Guides und Updates: <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
-  },
-}
+  }
+]

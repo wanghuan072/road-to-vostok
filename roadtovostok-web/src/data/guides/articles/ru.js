@@ -1,20 +1,22 @@
 /**
- * RU: объекты по addressBar, merge с en.js (seo глубокий).
+ * RU — same row shape as guides/articles/en.js.
  */
-export default {
-  'an-analytical-deep-dive-into-its-real-world-geography': {
-    title: 'Road to Vostok: аналитический разбор реальной географии',
-    description:
-      'Как хардкорный survival-shooter опирается не на фантастику, а на реальную топографию и архитектуру финско-российского пограничья — от линии Salpa до городского упадка.',
-    imageAlt: 'Road to Vostok — география реального мира',
-    tags: ['Road to Vostok'],
+export default [
+  {
+    id: 1,
+    title: "Road to Vostok: аналитический разбор реальной географии",
+    iframeUrl: "https://www.youtube.com/embed/RsDE26kkAtU",
+    description: "Как хардкорный survival-shooter опирается не на фантастику, а на реальную топографию и архитектуру финско-российского пограничья — от линии Salpa до городского упадка.",
+    tags: ["Road to Vostok"],
+    publishDate: "2026-03-27",
+    imageUrl: "/images/guides/guides01.webp",
+    imageAlt: "Road to Vostok — география реального мира",
     seo: {
-      title: 'Road to Vostok: реальная география и вдохновение карт',
-      description:
-        'От линии Salpa до приграничных переходов и Выборга: как Road To Vostok переносит настоящий ландшафт и постройки в уровни и атмосферу.',
-      keywords:
-        'Road to Vostok, survival shooter, Salpa Line, граница Финляндии и России, Выборг, хардкор FPS, география, Tenebris Infinite',
+      title: "Road to Vostok: реальная география и вдохновение карт",
+      description: "От линии Salpa до приграничных переходов и Выборга: как Road To Vostok переносит настоящий ландшафт и постройки в уровни и атмосферу.",
+      keywords: "Road to Vostok, survival shooter, Salpa Line, граница Финляндии и России, Выборг, хардкор FPS, география, Tenebris Infinite",
     },
+    addressBar: "an-analytical-deep-dive-into-its-real-world-geography",
     detailsHtml: `
       <p>В хардкорных survival-шутерах среда редко бывает просто декорацией — чаще это главный противник. <strong>Road to Vostok</strong> создаёт тягостную атмосферу не за счёт sci-fi, а за счёт географического реализма. Как показывает разбор автора <em>Tenebris Infinite</em>, топография и архитектура игры черпают жизнь из пограничья между Финляндией и Россией.</p>
   <p>Перенос реальной истории и геополитического напряжения на виртуальный ландшафт даёт редкую глубину для соло-проекта. Ниже — как эти прототипы поддерживают механики и настроение.</p>
@@ -59,19 +61,21 @@ export default {
     `,
   },
 
-  'surviving-the-Minefield': {
-    title: 'Выживание на минном поле: тактический гайд по Road to Vostok',
-    description:
-      'Минная карта пограничья: как распознать мины, подорвать их огнём с безопасной дистанции и пройти ворота в зону permadeath.',
-    imageAlt: 'Road to Vostok — минное поле',
-    tags: ['Road to Vostok минное поле'],
+  {
+    id: 2,
+    title: "Выживание на минном поле: тактический гайд по Road to Vostok",
+    iframeUrl: "https://www.youtube.com/embed/zmF0pO8h2vk",
+    description: "Минная карта пограничья: как распознать мины, подорвать их огнём с безопасной дистанции и пройти ворота в зону permadeath.",
+    tags: ["Road to Vostok минное поле"],
+    publishDate: "2026-03-27",
+    imageUrl: "/images/guides/guides02.webp",
+    imageAlt: "Road to Vostok — минное поле",
     seo: {
-      title: 'Минное поле Road to Vostok: тактика и проход',
-      description:
-        'Очистка минного поля: визуальная идентификация, баллистическая детонация, асимметрия ИИ и акустические маски — с акцентом на активную зачистку.',
-      keywords:
-        'Road to Vostok минное поле, сапёр, выстрел по минам, permadeath, тактика FPS, StarVox, мины',
+      title: "Минное поле Road to Vostok: тактика и проход",
+      description: "Очистка минного поля: визуальная идентификация, баллистическая детонация, асимметрия ИИ и акустические маски — с акцентом на активную зачистку.",
+      keywords: "Road to Vostok минное поле, сапёр, выстрел по минам, permadeath, тактика FPS, StarVox, мины",
     },
+    addressBar: "surviving-the-Minefield",
     detailsHtml: `
     <p> <strong>Фокус:</strong> тактический разбор карты «Minefield» и механики обезвреживания взрывчаткой.</p>
   <p>У хардкорного survival нужен физический порог между трудной игрой и окончательным наказанием. В <em>Road to Vostok</em> это <strong>минное поле</strong>. По разбору StarVox — последние ворота перед Vostok: зона permadeath, где смерть сносит сейв и чердак. Схему границы удобно смотреть на <a href="/map">интерактивной карте</a> (Border Zone).</p>
@@ -108,18 +112,20 @@ export default {
     `,
   },
 
-  'apartments-complete-survival-loot-guid': {
-    title: 'Road to Vostok — апартаменты: выживание и полный лут-гайд',
-    description:
-      'Vostok-апартаменты: маршруты, безопасные точки, бочки с огнём против холода, элитный лут и цикл торговли с Generalist.',
-    imageAlt: 'Road to Vostok — район апартаментов',
-    tags: ['Road to Vostok апартаменты', 'лут', 'CQB', 'торговец'],
+  {
+    id: 3,
+    title: "Road to Vostok — апартаменты: выживание и полный лут-гайд",
+    description: "Vostok-апартаменты: маршруты, безопасные точки, бочки с огнём против холода, элитный лут и цикл торговли с Generalist.",
+    tags: ["Road to Vostok апартаменты", "лут", "CQB", "торговец"],
+    publishDate: "2026-03-30",
+    imageUrl: "/images/guides/guides03.webp",
+    imageAlt: "Road to Vostok — район апартаментов",
     seo: {
-      title: 'Апартаменты Road to Vostok: лут и выживание',
-      description:
-        'Полный цикл: ночь и ПНВ, обогрев бочками, военные ящики и дроп с врагов, обмен оружия у The Generalist. Сверяйтесь с меткой Vostok на карте.',
-      keywords: 'Road to Vostok, апартаменты, лут, CQB, Generalist, гайд',
+      title: "Апартаменты Road to Vostok: лут и выживание",
+      description: "Полный цикл: ночь и ПНВ, обогрев бочками, военные ящики и дроп с врагов, обмен оружия у The Generalist. Сверяйтесь с меткой Vostok на карте.",
+      keywords: "Road to Vostok, апартаменты, лут, CQB, Generalist, гайд",
     },
+    addressBar: "apartments-complete-survival-loot-guid",
     detailsHtml: `
     <iframe name="rtvApartmentsGuideYt" src="https://www.youtube.com/embed/ttvN5s0cdBI" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <h3><strong>Ключевые таймкоды:</strong></h3>
@@ -162,18 +168,8 @@ export default {
     `,
   },
 
-  'how-to-fish': {
-    title: 'Рыбалка в Road to Vostok: точки, удочка и щука',
-    description:
-      'Скрытые подводные «рыбные зоны», заброс у трубы и мостка — стабильная щука для квестов и продажи в хардкорном permadeath.',
-    imageAlt: 'Road to Vostok — рыбалка',
-    tags: ['Road to Vostok рыбалка', 'точки', 'удочка', 'щука'],
-    seo: {
-      title: 'Рыбалка Road to Vostok: точки и цены',
-      description:
-        'Экономика рыбалки: зоны под водой, труба и мостки, фарм щуки. Цифры — на вики по рыбалке.',
-      keywords: 'Road to Vostok, рыбалка, щука, permadeath, survival',
-    },
+  {
+    id: 4,
     head: `<script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -217,6 +213,18 @@ export default {
         ]
       }
       </script>`,
+    title: "Рыбалка в Road to Vostok: точки, удочка и щука",
+    description: "Скрытые подводные «рыбные зоны», заброс у трубы и мостка — стабильная щука для квестов и продажи в хардкорном permadeath.",
+    tags: ["Road to Vostok рыбалка", "точки", "удочка", "щука"],
+    publishDate: "2026-03-30",
+    imageUrl: "/images/guides/guides04.webp",
+    imageAlt: "Road to Vostok — рыбалка",
+    seo: {
+      title: "Рыбалка Road to Vostok: точки и цены",
+      description: "Экономика рыбалки: зоны под водой, труба и мостки, фарм щуки. Цифры — на вики по рыбалке.",
+      keywords: "Road to Vostok, рыбалка, щука, permadeath, survival",
+    },
+    addressBar: "how-to-fish",
     detailsHtml: `
 <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/QVdZjWBqMH4" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -289,18 +297,8 @@ export default {
   </ol>`,
   },
 
-  'weapons-list': {
-    title: 'Оружие Road to Vostok: полный список и сила стволов',
-    description:
-      'Обзор ~20 стволов: редкость, износ и ремонт, легендарки и уровни пробоя — данные с полигона для лодаута.',
-    imageAlt: 'Road to Vostok — оружие',
-    tags: ['Road to Vostok оружие', 'таблица', 'ремонт', 'meta'],
-    seo: {
-      title: 'Оружие Road to Vostok: цифры и билды',
-      description:
-        'Калибры, урон, пробой, редкость, KP-31 и M78. Таблицы совпадают с вики-страницей оружия под ваш билд.',
-      keywords: 'Road to Vostok, оружие, список, легендарный, пробой, ремонт',
-    },
+  {
+    id: 5,
     head: `<script type="application/ld+json">
       {
         "@context": "https://schema.org/",
@@ -337,6 +335,19 @@ export default {
         ]
       }
       </script>`,
+    title: "Оружие Road to Vostok: полный список и сила стволов",
+    iframeUrl: "https://www.youtube.com/embed/R5721mXs4lY",
+    description: "Обзор ~20 стволов: редкость, износ и ремонт, легендарки и уровни пробоя — данные с полигона для лодаута.",
+    tags: ["Road to Vostok оружие", "таблица", "ремонт", "meta"],
+    publishDate: "2026-03-30",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageAlt: "Road to Vostok — оружие",
+    seo: {
+      title: "Оружие Road to Vostok: цифры и билды",
+      description: "Калибры, урон, пробой, редкость, KP-31 и M78. Таблицы совпадают с вики-страницей оружия под ваш билд.",
+      keywords: "Road to Vostok, оружие, список, легендарный, пробой, ремонт",
+    },
+    addressBar: "weapons-list",
     detailsHtml: `<p>В <strong>Road to Vostok</strong> панели оружия максимально «сухие». На полигоне ~20 стволов: калибр, урон, пробой, износ. Перед выходом в зону разберитесь с UI и подберите пробой под броню противника. Цена, торговля и редкость — <a href="/wiki/weapons">вики · оружие</a>.</p>
   <iframe name="rtvWeaponsGuideYt" src="https://www.youtube.com/embed/R5721mXs4lY" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <p>Таймкоды:</p>
@@ -385,18 +396,20 @@ export default {
   <p>SVD, Мосин, M78 с пробоем 4; у M78 и SVD урон 50 — сильнее против тяжёлых целей.</p>`,
   },
 
-  'reload-shotguns-bolt-actions-magazine-checks': {
-    title: 'Перезарядка в Road to Vostok: дробовики, болтовки и проверка магазина',
-    description:
-      'RM-870 и Мосин: Ctrl + ЛКМ по патрону, после выстрела R. Проверка магазина клавишей V — не аркада.',
-    imageAlt: 'Road to Vostok — перезарядка',
-    tags: ['Road to Vostok', 'перезарядка', 'RM-870', 'Мосин'],
+  {
+    id: 6,
+    title: "Перезарядка в Road to Vostok: дробовики, болтовки и проверка магазина",
+    description: "RM-870 и Мосин: Ctrl + ЛКМ по патрону, после выстрела R. Проверка магазина клавишей V — не аркада.",
+    tags: ["Road to Vostok", "перезарядка", "RM-870", "Мосин"],
+    publishDate: "2026-04-09",
+    imageUrl: "/images/guides/guides06.webp",
+    imageAlt: "Road to Vostok — перезарядка",
     seo: {
-      title: 'Перезарядка Road to Vostok: дробовик и болтовка',
-      description:
-        'Тактическая перезарядка: Ctrl открывает затвор, ЛКМ досылает, после выстрела R. Тренируйтесь в туториале.',
-      keywords: 'Road to Vostok, перезарядка, RM-870, Мосин, магазин, V, хардкор',
+      title: "Перезарядка Road to Vostok: дробовик и болтовка",
+      description: "Тактическая перезарядка: Ctrl открывает затвор, ЛКМ досылает, после выстрела R. Тренируйтесь в туториале.",
+      keywords: "Road to Vostok, перезарядка, RM-870, Мосин, магазин, V, хардкор",
     },
+    addressBar: "reload-shotguns-bolt-actions-magazine-checks",
     detailsHtml: `<h1>Перезарядка: болтовки и дробовик</h1>
   <p><strong>Источник:</strong> сводка сообщества и тесты игроков (напр. MasterDeBunker) — не аркада; в панике забыть патронник = смерть.</p>
   <h2>Базовый цикл</h2>
@@ -432,18 +445,20 @@ export default {
   <p>Пистолеты проще, но отработайте в <strong>туториале</strong> до автоматизма.</p>`,
   },
 
-  'cat-guide-find-care-shelter-companion': {
-    title: 'Кот в Road to Vostok: как найти и содержать в убежище',
-    description:
-      'Событие «пропавший кот», бункер на форпосте, переноска 3×5, возврат в избушку — припасы, маршрут и поправки сообщества.',
-    imageAlt: 'Чёрный кот в коробке — компаньон убежища',
-    tags: ['Road to Vostok', 'кот', 'убежище', 'квест'],
+  {
+    id: 7,
+    title: "Кот в Road to Vostok: как найти и содержать в убежище",
+    description: "Событие «пропавший кот», бункер на форпосте, переноска 3×5, возврат в избушку — припасы, маршрут и поправки сообщества.",
+    tags: ["Road to Vostok", "кот", "убежище", "квест"],
+    publishDate: "2026-04-09",
+    imageUrl: "/images/guides/guides07.webp",
+    imageAlt: "Чёрный кот в коробке — компаньон убежища",
     seo: {
-      title: 'Кот Road to Vostok: поиск и уход',
-      description:
-        'С 4-го дня событие, цепочка деревня—школа—форпост, ментал и рюкзак; лучше пройти за один заход.',
-      keywords: 'road to vostok, кот, убежище, квест, бункер, survival',
+      title: "Кот Road to Vostok: поиск и уход",
+      description: "С 4-го дня событие, цепочка деревня—школа—форпост, ментал и рюкзак; лучше пройти за один заход.",
+      keywords: "road to vostok, кот, убежище, квест, бункер, survival",
     },
+    addressBar: "cat-guide-find-care-shelter-companion",
     detailsHtml: `<h1>Кот: полный гайд</h1>
   <p><strong>Основа:</strong> многократные забеги сообщества; в жёстком survival «живое» стоит дорого — маршрут, лут и типичные ошибки.</p>
   <h2>Старт события «пропавший кот»</h2>
@@ -496,21 +511,20 @@ export default {
   </ol>`,
   },
 
-  'road-to-vostok-shelter-locations': {
-    title:
-      'Road to Vostok: убежища — полная карта и гайд по разблокировке',
-    description:
-      'Все убежища Road to Vostok: палатка, бункер, школа. Как получить ключ от класса и пользоваться интерактивной картой для выживания.',
-    imageAlt: 'Убежища Road to Vostok',
-    tags: ['Road to Vostok', 'Убежище', 'Карта', 'Ключ'],
+  {
+    id: 8,
+    title: "Road to Vostok: убежища — полная карта и гайд по разблокировке",
+    description: "Все убежища Road to Vostok: палатка, бункер, школа. Как получить ключ от класса и пользоваться интерактивной картой для выживания.",
+    tags: ["Road to Vostok", "Убежище", "Карта", "Ключ"],
+    publishDate: "2026-04-14",
+    imageUrl: "/images/guides/guides08.webp",
+    imageAlt: "Убежища Road to Vostok",
     seo: {
-      title:
-        'Road to Vostok: убежища — полная карта и гайд по разблокировке',
-      description:
-        'Список убежищ, палатка и бункер на аванпосте, школьный класс, ключи и управление базой; интерактивная карта для маршрутов лута.',
-      keywords:
-        'road to vostok shelter, убежища, палатка, карта, бункер, школа, кот, ключ от класса',
+      title: "Road to Vostok: убежища — полная карта и гайд по разблокировке",
+      description: "Список убежищ, палатка и бункер на аванпосте, школьный класс, ключи и управление базой; интерактивная карта для маршрутов лута.",
+      keywords: "road to vostok shelter, убежища, палатка, карта, бункер, школа, кот, ключ от класса",
     },
+    addressBar: "road-to-vostok-shelter-locations",
     detailsHtml: `<h1>Полный гайд по убежищам Road to Vostok: локации и открытие</h1>
   <p>В хардкорном мире <strong>Road to Vostok</strong> убежище — единственная по-настоящему безопасная зона для хранения добычи, восстановления статов и выживания. Знать координаты и механики каждого убежища нужно и новичку, и ветерану.</p>
   <p>Здесь собраны проверенные данные сообщества: все известные убежища, способы получить ключи и важные механики управления базой.</p>
@@ -521,16 +535,16 @@ export default {
   <li><strong>Избушка:</strong> карта <strong>Деревня</strong> — первое убежище; компактно, но критично для раннего склада.</li>
   <li><strong>Палатка:</strong> сразу доступна на <strong>Аванпосте</strong> — слева от точки входа со <strong>Школы</strong>, напротив долины с большим красным амбаром.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158305/cms-uploads/cms-1776158305834-85606712.webp" alt="Деревня избушка и чердак" width="50%"></p>
+  <p><img src="/images/guides/guides08-01.webp" alt="Деревня избушка и чердак" width="50%"></p>
   <h3>Открываемые убежища и тайники</h3>
   <ol>
   <li><strong>Бункер:</strong> крупное топовое убежище на аванпосте. Сложная разблокировка: хорошо экипироваться, убить <strong>«Punisher»</strong>, взять его шляпу и выполнить задание оружейника на аванпосте.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158461/cms-uploads/cms-1776158461157-243281608.webp" alt="Палатка и бункер на аванпосте" width="50%"></p>
+  <p><img src="/images/guides/guides08-02.webp" alt="Палатка и бункер на аванпосте" width="50%"></p>
   <ol>
   <li><strong>Школьный класс:</strong> карта <strong>Школа</strong> — запертая аудитория, нужен <strong>физический ключ</strong>.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158410/cms-uploads/cms-1776158410763-6355250.webp" alt="Класс-убежище в школе" width="50%"></p>
+  <p><img src="/images/guides/guides08-03.webp" alt="Класс-убежище в школе" width="50%"></p>
   <ol>
   <li><strong>Чердак:</strong> больше места, чем в стартовой избушке — ключ за <strong>финальный квест торговца</strong>.</li>
   </ol>
@@ -541,7 +555,7 @@ export default {
   <li><strong>Квесты торговцев:</strong> линии квестов — например ключ от чердака после финала у торговца.</li>
   <li><strong>Лут в горячих зонах:</strong> ключи в ценных локациях — подтверждён спавн в <strong>спортзале</strong> школы, иногда глубоко в <strong>Востоке</strong> в эндгейме.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776158642/cms-uploads/cms-1776158642474-180454868.webp" alt="Ключи Road to Vostok" width="50%"></p>
+  <p><img src="/images/guides/guides08-04.webp" alt="Ключи Road to Vostok" width="50%"></p>
   <h2>Управление убежищем</h2>
   <h3>1. Режим F1</h3>
   <p>Покупайте мебель и контейнеры у торговцев (для полок часто советуют <strong>доктора</strong>). В убежище: <strong>F1</strong> — режим расстановки; колёсико мыши + ПКМ — поворот.</p>
@@ -558,5 +572,5 @@ export default {
   <li><strong>Без голода/жажды в shelter:</strong> удобно для сортировки и стеллажей без расхода пайков.</li>
   </ol>
   <p>(Больше гайдов: <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
-  },
-}
+  }
+]
