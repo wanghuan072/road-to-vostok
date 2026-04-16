@@ -5,6 +5,9 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { buildMapPinHtml } from '../../data/map/pinIcons.js'
 
+/** 侧栏默认勾选并展开的大类（Map → `poi`）；Fire 与其余大类 kind 默认关闭，由用户自行勾选。 */
+const DEFAULT_ON_CATEGORY_IDS = new Set(['poi'])
+
 /**
  * Leaflet + 筛选；供 MapRasterM01–M07。bundle 来自各图独立数据 `maps/map01.js` … `maps/map07.js`。
  *
@@ -19,10 +22,20 @@ import { buildMapPinHtml } from '../../data/map/pinIcons.js'
  *   mapLegend: Array<{ id: string, label: string }>
  *   pinCategoryField?: string
  * }} bundle
- * @param {{ coordHud?: import('vue').Ref<string> }} [options] 传入时在地图上显示归一化 x,y（右下角 HUD）。
+ * @param {{
+ *   coordHud?: import('vue').Ref<string>
+ *   markerCluster?: boolean | {
+ *     maxClusterRadius?: number
+ *     disableClusteringAtZoom?: number | null
+ *     spiderfyOnMaxZoom?: boolean
+ *     showCoverageOnHover?: boolean
+ *     zoomToBoundsOnClick?: boolean
+ *   }
+ * }} [options]
+ *   markerCluster：启用 Leaflet 点聚合（仅对传入 bundle 的页面开启；村庄图试用）。
  */
 export function useRasterMapPage(bundle, options = {}) {
-  const { coordHud: coordHudRef } = options
+  const { coordHud: coordHudRef, markerCluster: markerClusterOpt } = options
   const {
     imageUrl,
     pins,
@@ -43,12 +56,16 @@ export function useRasterMapPage(bundle, options = {}) {
 
   const kindVisible = reactive(
     Object.fromEntries(
-      mapCategories.flatMap((c) => c.kinds.map((k) => [k.id, true])),
+      mapCategories.flatMap((c) =>
+        c.kinds.map((k) => [k.id, DEFAULT_ON_CATEGORY_IDS.has(c.id)]),
+      ),
     ),
   )
 
   const categoryExpanded = reactive(
-    Object.fromEntries(mapCategories.map((c) => [c.id, c.id !== 'quests'])),
+    Object.fromEntries(
+      mapCategories.map((c) => [c.id, DEFAULT_ON_CATEGORY_IDS.has(c.id)]),
+    ),
   )
 
   const kindCycle = reactive({})
@@ -168,6 +185,16 @@ export function useRasterMapPage(bundle, options = {}) {
     if (raw == null || raw === '' || !mapReady.value) return
     const match = mapPoints.value.find((x) => String(x.id) === String(raw))
     if (!match) return
+    const k = match.kind
+    if (k != null && !kindVisible[k]) {
+      kindVisible[k] = true
+      const catId = match[pinCategoryField] ?? match.category
+      if (typeof catId === 'string' && catId in categoryExpanded) {
+        categoryExpanded[catId] = true
+      }
+      nextTick(() => focusPoi(match.id))
+      return
+    }
     focusPoi(match.id)
   }
 

@@ -43,23 +43,25 @@
           <div class="map-command-inner">
             <div class="map-map-row">
               <div class="map-stage">
-                <span class="map-stage-corner map-stage-corner--tl" aria-hidden="true" />
-                <span class="map-stage-corner map-stage-corner--tr" aria-hidden="true" />
-                <span class="map-stage-corner map-stage-corner--bl" aria-hidden="true" />
-                <span class="map-stage-corner map-stage-corner--br" aria-hidden="true" />
-                <div
-                  ref="mapContainer"
-                  class="rtv-map-host"
-                  role="application"
-                  :aria-label="$t('mapRasterM04.mapAppAria')"
-                  tabindex="0"
-                />
-                <div
-                  v-show="mapReady"
-                  class="raster-coord-hud"
-                  aria-hidden="true"
-                >
-                  {{ coordHud }}
+                <div class="map-raster-map-frame">
+                  <span class="map-stage-corner map-stage-corner--tl" aria-hidden="true" />
+                  <span class="map-stage-corner map-stage-corner--tr" aria-hidden="true" />
+                  <span class="map-stage-corner map-stage-corner--bl" aria-hidden="true" />
+                  <span class="map-stage-corner map-stage-corner--br" aria-hidden="true" />
+                  <div
+                    ref="mapContainer"
+                    class="rtv-map-host"
+                    role="application"
+                    :aria-label="$t('mapRasterM04.mapAppAria')"
+                    tabindex="0"
+                  />
+                  <div
+                    v-show="mapReady"
+                    class="raster-coord-hud"
+                    aria-hidden="true"
+                  >
+                    {{ coordHud }}
+                  </div>
                 </div>
                 <aside
                   v-if="mapReady"

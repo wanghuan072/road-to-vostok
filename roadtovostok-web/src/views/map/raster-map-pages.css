@@ -18,6 +18,15 @@
   min-width: 0;
 }
 
+/* Hero 七图导航：裁剪 + 小屏等比缩小，避免横向溢出 */
+.map-raster-page .map-raster-hero-mosaic-clip {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .map-raster-page .map-raster-hero-mosaic {
   position: relative;
   box-sizing: border-box;
@@ -28,6 +37,7 @@
   border-radius: 8px;
   border: 1px solid var(--color-border);
   background: var(--color-panel);
+  flex-shrink: 0;
 }
 
 .map-raster-page .map-raster-hero-mosaic__item {
@@ -70,9 +80,22 @@
 }
 
 @media (max-width: 720px) {
+  .map-raster-page .map-raster-hero-mosaic-clip {
+    /* 与桌面相同的绝对定位拼图；按视口宽度等比缩放；靠左贴齐、横向占满可视宽度 */
+    --mosaic-scale: min(1, calc((100vw - 2rem) / 56rem));
+    height: calc(18rem * var(--mosaic-scale));
+    margin-inline: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .map-raster-page .map-raster-hero-mosaic {
     width: 100%;
+    max-width: none;
     margin-inline: 0;
+    margin-inline-start: 0;
+    transform: scale(var(--mosaic-scale));
+    transform-origin: top left;
   }
 }
 
@@ -103,6 +126,35 @@
 .map-raster-page .map-legend--village .map-legend-swatch--v-npc {
   background: color-mix(in srgb, var(--color-signal-soft) 82%, #520);
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-signal) 45%, transparent);
+}
+
+/* 村庄图 map01：图例 id 与 wiki 侧栏大类一致 */
+.map-raster-page .map-legend--village .map-legend-swatch--v-poi {
+  background: color-mix(in srgb, #2ec4b6 82%, #fff);
+  box-shadow: 0 0 0 1px color-mix(in srgb, #2ec4b6 45%, transparent);
+}
+
+.map-raster-page .map-legend--village .map-legend-swatch--v-fire {
+  background: color-mix(in srgb, #e85d2c 85%, #300);
+  box-shadow: 0 0 0 1px color-mix(in srgb, #e85d2c 45%, transparent);
+}
+
+.map-raster-page .map-legend--village .map-legend-swatch--v-lootContainer {
+  background: color-mix(in srgb, #e8a838 88%, #fff);
+  box-shadow: 0 0 0 1px color-mix(in srgb, #e8a838 42%, transparent);
+}
+
+.map-raster-page .map-legend--village .map-legend-swatch--v-groundLoot {
+  background: color-mix(in srgb, #7cb97c 88%, #fff);
+  box-shadow: 0 0 0 1px color-mix(in srgb, #6b9ec9 35%, transparent);
+}
+
+/* 地图 + 角标 + HUD；与侧栏兄弟，便于小屏纵向叠放 */
+.map-raster-page .map-raster-map-frame {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
 }
 
 .map-raster-page .village-filter-rail--overlay {
@@ -137,10 +189,42 @@
   -webkit-overflow-scrolling: touch;
 }
 
+/* 移动端：地图在上、筛选侧栏在下（全宽可滚动） */
 @media (max-width: 767px) {
-  .map-raster-page .village-filter-rail--overlay {
-    width: min(268px, calc(100vw - 4.25rem));
-    left: max(8px, env(safe-area-inset-left, 0px));
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+    height: auto;
+    min-height: 0;
+  }
+
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .map-raster-map-frame {
+    flex: 0 0 auto;
+    width: 100%;
+    height: clamp(220px, min(46dvh, 48vh), 420px);
+    min-height: 200px;
+  }
+
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .rtv-map-host {
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .village-filter-rail--overlay {
+    position: relative;
+    inset: auto;
+    z-index: 2;
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: none;
+    min-height: 0;
+    max-height: min(52dvh, 400px);
+    border-radius: 12px;
+    box-shadow:
+      0 10px 36px rgba(0, 0, 0, 0.38),
+      inset 0 1px 0 color-mix(in srgb, var(--color-frost) 8%, transparent);
   }
 }
 
@@ -155,10 +239,15 @@
     min-height: 0;
   }
 
-  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .rtv-map-host {
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .map-raster-map-frame {
     grid-column: 2;
     grid-row: 1;
     min-width: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .rtv-map-host {
     width: 100%;
     height: 100%;
   }
@@ -182,11 +271,6 @@
 
   .map-raster-page .map-stage:has(.village-filter-rail--overlay) .map-stage-corner {
     z-index: 3;
-  }
-
-  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .map-stage-corner--tl,
-  .map-raster-page .map-stage:has(.village-filter-rail--overlay) .map-stage-corner--bl {
-    left: calc(var(--map-rail-w) + 10px);
   }
 }
 
@@ -261,6 +345,22 @@
   color: color-mix(in srgb, var(--color-signal-soft) 70%, var(--color-muted));
 }
 
+.map-raster-page .village-filter-cat[data-vcat='poi'] .village-filter-cat__label {
+  color: color-mix(in srgb, #2ec4b6 72%, var(--color-muted));
+}
+
+.map-raster-page .village-filter-cat[data-vcat='fire'] .village-filter-cat__label {
+  color: color-mix(in srgb, #e85d2c 72%, var(--color-muted));
+}
+
+.map-raster-page .village-filter-cat[data-vcat='lootContainer'] .village-filter-cat__label {
+  color: color-mix(in srgb, #e8a838 78%, var(--color-muted));
+}
+
+.map-raster-page .village-filter-cat[data-vcat='groundLoot'] .village-filter-cat__label {
+  color: color-mix(in srgb, #7cb97c 72%, var(--color-muted));
+}
+
 .map-raster-page .village-filter-cat__master {
   flex-shrink: 0;
   width: 1rem;
@@ -287,6 +387,22 @@
 
 .map-raster-page .village-filter-cat[data-vcat='npc'] .village-filter-cat__master {
   accent-color: var(--color-signal);
+}
+
+.map-raster-page .village-filter-cat[data-vcat='poi'] .village-filter-cat__master {
+  accent-color: #2ec4b6;
+}
+
+.map-raster-page .village-filter-cat[data-vcat='fire'] .village-filter-cat__master {
+  accent-color: #e85d2c;
+}
+
+.map-raster-page .village-filter-cat[data-vcat='lootContainer'] .village-filter-cat__master {
+  accent-color: #e8a838;
+}
+
+.map-raster-page .village-filter-cat[data-vcat='groundLoot'] .village-filter-cat__master {
+  accent-color: #7cb97c;
 }
 
 .map-raster-page .village-kind-grid {
@@ -373,8 +489,8 @@
   opacity: 0.9;
 }
 
-/* 右下角归一化坐标 HUD（MapRasterM01–M07，与第一张村庄图一致） */
-.map-raster-page .map-stage .raster-coord-hud {
+/* 右下角归一化坐标 HUD（锚在地图框内，小屏不随侧栏下移） */
+.map-raster-page .map-raster-map-frame .raster-coord-hud {
   position: absolute;
   z-index: 1100;
   right: max(10px, env(safe-area-inset-right, 0px));

@@ -34,6 +34,8 @@
 
     <section class="page-body-section" :aria-label="$t('wikiHubPage.categoriesAria')">
       <div class="container">
+        <WikiLootTable />
+
         <ul class="item-db-hub-grid" role="list">
           <li>
             <a :href="getLocalizedPath('/wiki/core-tasks')" class="item-db-hub-card">
@@ -105,6 +107,7 @@
 
 <script setup>
 import { ref, onMounted, nextTick } from 'vue'
+import WikiLootTable from '@/components/WikiLootTable.vue'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 
 const { getLocalizedPath } = useLocalizedPath()

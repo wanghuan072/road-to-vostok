@@ -113,7 +113,7 @@ export const routeDefs = [
   {
     path: '/wiki',
     name: 'wiki',
-    view: 'ItemDatabaseList',
+    view: 'WikiList',
     meta: {
       sitemap: { priority: 0.9, changefreq: 'weekly' },
       seoFromI18n: 'tdk.wikiHubPage',
@@ -122,7 +122,7 @@ export const routeDefs = [
   {
     path: '/wiki/core-tasks',
     name: 'wiki-core-tasks',
-    view: 'ItemDatabaseCoreTasks',
+    view: 'WikiCoreTasksList',
     meta: {
       sitemap: { priority: 0.85, changefreq: 'monthly' },
       seoFromI18n: 'tdk.wikiCoreTasksPage',
@@ -131,7 +131,7 @@ export const routeDefs = [
   {
     path: '/wiki/weapons',
     name: 'wiki-weapons',
-    view: 'ItemDatabaseWeapons',
+    view: 'WikiWeaponsList',
     meta: {
       sitemap: { priority: 0.85, changefreq: 'monthly' },
       seoFromI18n: 'tdk.wikiWeaponsPage',
@@ -140,7 +140,7 @@ export const routeDefs = [
   {
     path: '/wiki/ammunition',
     name: 'wiki-ammunition',
-    view: 'ItemDatabaseAmmunition',
+    view: 'WikiAmmunitionList',
     meta: {
       sitemap: { priority: 0.85, changefreq: 'monthly' },
       seoFromI18n: 'tdk.wikiAmmunitionPage',
@@ -149,7 +149,7 @@ export const routeDefs = [
   {
     path: '/wiki/fishing',
     name: 'wiki-fishing',
-    view: 'ItemDatabaseFishing',
+    view: 'WikiFishingList',
     meta: {
       sitemap: { priority: 0.8, changefreq: 'monthly' },
       seoFromI18n: 'tdk.wikiFishingPage',
@@ -158,7 +158,7 @@ export const routeDefs = [
   {
     path: '/wiki/gathering',
     name: 'wiki-gathering',
-    view: 'ItemDatabaseGathering',
+    view: 'WikiGatheringList',
     meta: {
       sitemap: { priority: 0.8, changefreq: 'monthly' },
       seoFromI18n: 'tdk.wikiGatheringPage',
@@ -167,7 +167,7 @@ export const routeDefs = [
   {
     path: '/wiki/npcs',
     name: 'wiki-npcs',
-    view: 'NpcListView',
+    view: 'WikiNpcList',
     meta: {
       sitemap: { priority: 0.82, changefreq: 'monthly' },
       seoFromI18n: 'tdk.npcListPage',
@@ -176,7 +176,7 @@ export const routeDefs = [
   {
     path: '/wiki/npcs/:addressBar',
     name: 'wiki-npc-detail',
-    view: 'NpcDetailView',
+    view: 'WikiNpcDetail',
     meta: {
       sitemap: false,
       seoFromI18n: 'tdk.npcDetailPage',
@@ -337,14 +337,14 @@ export const routeDefs = [
 const viewLoaders = {
   HomeView: () => import('../views/HomeView.vue'),
   GettingStartedView: () => import('../views/GettingStartedView.vue'),
-  ItemDatabaseList: () => import('../views/wiki/ItemDatabaseList.vue'),
-  ItemDatabaseCoreTasks: () => import('../views/wiki/ItemDatabaseCoreTasks.vue'),
-  ItemDatabaseWeapons: () => import('../views/wiki/ItemDatabaseWeapons.vue'),
-  ItemDatabaseAmmunition: () => import('../views/wiki/ItemDatabaseAmmunition.vue'),
-  ItemDatabaseFishing: () => import('../views/wiki/ItemDatabaseFishing.vue'),
-  ItemDatabaseGathering: () => import('../views/wiki/ItemDatabaseGathering.vue'),
-  NpcListView: () => import('../views/wiki/NpcListView.vue'),
-  NpcDetailView: () => import('../views/wiki/NpcDetailView.vue'),
+  WikiList: () => import('../views/wiki/WikiList.vue'),
+  WikiCoreTasksList: () => import('../views/wiki/WikiCoreTasksList.vue'),
+  WikiWeaponsList: () => import('../views/wiki/WikiWeaponsList.vue'),
+  WikiAmmunitionList: () => import('../views/wiki/WikiAmmunitionList.vue'),
+  WikiFishingList: () => import('../views/wiki/WikiFishingList.vue'),
+  WikiGatheringList: () => import('../views/wiki/WikiGatheringList.vue'),
+  WikiNpcList: () => import('../views/wiki/WikiNpcList.vue'),
+  WikiNpcDetail: () => import('../views/wiki/WikiNpcDetail.vue'),
   MapView: () => import('../views/map/MapView.vue'),
   MapRasterM01View: () => import('../views/map/MapRasterM01View.vue'),
   MapRasterM02View: () => import('../views/map/MapRasterM02View.vue'),

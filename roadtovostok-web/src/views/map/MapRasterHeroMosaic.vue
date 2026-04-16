@@ -22,27 +22,29 @@ function isActive(tile) {
 </script>
 
 <template>
-  <nav
-    class="map-raster-hero-mosaic"
-    :aria-label="$t('mapPage.heroMosaicNavAria')"
-  >
-    <a
-      v-for="tile in tiles"
-      :key="tile.path"
-      class="map-raster-hero-mosaic__item"
-      :class="{ 'map-raster-hero-mosaic__item--active': isActive(tile) }"
-      :href="getLocalizedPath(tile.path)"
-      :title="$t(tile.titleKey)"
-      :aria-current="isActive(tile) ? 'page' : undefined"
+  <div class="map-raster-hero-mosaic-clip">
+    <nav
+      class="map-raster-hero-mosaic"
+      :aria-label="$t('mapPage.heroMosaicNavAria')"
     >
-      <img
-        :src="tile.img"
-        alt=""
-        width="72"
-        height="72"
-        loading="lazy"
-        decoding="async"
+      <a
+        v-for="tile in tiles"
+        :key="tile.path"
+        class="map-raster-hero-mosaic__item"
+        :class="{ 'map-raster-hero-mosaic__item--active': isActive(tile) }"
+        :href="getLocalizedPath(tile.path)"
+        :title="$t(tile.titleKey)"
+        :aria-current="isActive(tile) ? 'page' : undefined"
       >
-    </a>
-  </nav>
+        <img
+          :src="tile.img"
+          alt=""
+          width="72"
+          height="72"
+          loading="lazy"
+          decoding="async"
+        >
+      </a>
+    </nav>
+  </div>
 </template>
