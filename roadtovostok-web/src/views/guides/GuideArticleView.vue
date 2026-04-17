@@ -225,14 +225,6 @@ watch(
 </script>
 
 <style scoped>
-.page-hero-breadcrumb-current {
-  color: color-mix(in srgb, var(--color-text) 55%, var(--color-muted));
-  max-width: min(28ch, 100%);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .article-split-wrap {
   padding: 2rem 0 2.75rem;
 }

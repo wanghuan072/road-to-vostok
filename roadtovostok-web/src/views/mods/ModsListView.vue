@@ -325,12 +325,12 @@ function statViews(m) {
   line-height: 1.06;
   letter-spacing: -0.035em;
   color: var(--color-text);
-  max-width: 18ch;
+  max-width: none;
 }
 
 .mods-page__intro {
   margin: 0.85rem 0 0;
-  max-width: min(58ch, 100%);
+  max-width: none;
   font-size: 0.875rem;
   line-height: 1.58;
   color: color-mix(in srgb, var(--color-muted) 90%, var(--color-text));

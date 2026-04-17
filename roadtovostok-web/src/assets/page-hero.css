@@ -28,10 +28,16 @@
   pointer-events: none;
 }
 
-.page-hero-section::after {
+/* 底边装饰条：非地图内页对齐 .container 左内缘（与正文同宽） */
+article:not(.map-page) .page-hero-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+article:not(.map-page) .page-hero-section > .container::after {
   content: '';
   position: absolute;
-  left: clamp(1rem, 4vw, 1.75rem);
+  left: 0;
   bottom: 0;
   width: min(12rem, 28vw);
   height: 3px;
@@ -75,6 +81,14 @@
   color: var(--color-primary-soft);
 }
 
+.page-hero-section .page-hero-breadcrumb-current {
+  max-width: none;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  color: color-mix(in srgb, var(--color-text) 55%, var(--color-muted));
+}
+
 /* Kicker */
 .page-hero-section .page-hero-kicker,
 .page-hero-section .hero-kicker {
@@ -92,7 +106,7 @@
   position: relative;
   z-index: 1;
   margin: 0 0 0.75rem;
-  max-width: min(36ch, 100%);
+  max-width: none;
   font-size: clamp(1.6rem, 3.1vw, 2.35rem);
   line-height: 1.14;
   font-weight: 600;
@@ -109,7 +123,7 @@
   position: relative;
   z-index: 1;
   margin: 0;
-  max-width: min(68ch, 100%);
+  max-width: none;
   font-size: clamp(0.9rem, 1.15vw, 1rem);
   line-height: 1.62;
   color: var(--color-muted);
@@ -117,6 +131,10 @@
 
 .page-hero-section .page-hero-content > p strong {
   color: color-mix(in srgb, var(--color-text) 82%, var(--color-muted));
+}
+
+.page-hero-content{
+  padding-bottom: 1rem;
 }
 
 /* 文章类 hero：底图氛围 + 底部对齐文案 */
@@ -193,7 +211,7 @@
   position: relative;
   z-index: 1;
   margin: 0;
-  max-width: min(46ch, 100%);
+  max-width: none;
   font-family: var(--font-display);
   font-size: clamp(1.85rem, 5vw, 3.1rem);
   font-weight: 650;

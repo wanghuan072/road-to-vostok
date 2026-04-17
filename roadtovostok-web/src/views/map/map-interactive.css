@@ -1,4 +1,37 @@
 /* Shared map UI (global): MapView + MapRasterM01–M07 — imported from main.css */
+/* 地图页 hero：底边条相对整段 section；标题/导语保留原 ch 限制（内页非地图见 page-hero.css） */
+.map-page .page-hero-section::after {
+  content: '';
+  position: absolute;
+  left: clamp(1rem, 4vw, 1.75rem);
+  bottom: 0;
+  width: min(12rem, 28vw);
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-ice) 75%, transparent),
+    color-mix(in srgb, var(--color-signal) 55%, transparent),
+    transparent
+  );
+  pointer-events: none;
+}
+
+.map-page .page-hero-section h1 {
+  max-width: min(36ch, 100%);
+}
+
+.map-page .page-hero-section .page-hero-content > p,
+.map-page .page-hero-section .page-hero-lead,
+.map-page .page-hero-section .hero-lead,
+.map-page .page-hero-section .lead {
+  max-width: min(68ch, 100%);
+}
+
+.map-page .page-hero-section--detail .article-detail-hero__title {
+  max-width: min(46ch, 100%);
+}
+
 .map-page.page-article{
   padding-bottom: 4rem;
 }.map-page .page-hero-content p{

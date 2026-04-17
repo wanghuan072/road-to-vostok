@@ -1,5 +1,5 @@
 <template>
-  <article ref="mapPageAdsRoot" class="map-page page-article">
+  <article ref="mapPageAdsRoot" class="map-page page-article map-raster-page">
     <section class="page-hero-section">
       <div class="container">
         <div
@@ -7,14 +7,17 @@
           id="div-gpt-ad-1775617033282-0"
           style="min-width: 320px; min-height: 50px"
         ></div>
-        <div class="page-hero-content">
-          <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
-            <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
-            <span aria-hidden="true">/</span>
-            <span>{{ $t('mapPage.breadcrumb') }}</span>
-          </nav>
-          <h1>{{ $t('mapPage.title') }}</h1>
-          <p v-html="$t('mapPage.introHtml')"></p>
+        <div class="map-raster-hero-row">
+          <div class="page-hero-content map-raster-hero-row__main">
+            <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
+              <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
+              <span aria-hidden="true">/</span>
+              <span>{{ $t('mapPage.breadcrumb') }}</span>
+            </nav>
+            <h1>{{ $t('mapPage.title') }}</h1>
+            <p v-html="$t('mapPage.introHtml')"></p>
+          </div>
+          <MapRasterHeroMosaic />
         </div>
         <aside
           style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
@@ -387,6 +390,7 @@ import 'leaflet/dist/leaflet.css'
 import { getMapPoints } from '../../data/localeData.js'
 import { buildMapPinHtml } from '../../data/map/pinIcons.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
+import MapRasterHeroMosaic from './MapRasterHeroMosaic.vue'
 
 const route = useRoute()
 const { t, locale } = useI18n()
@@ -696,6 +700,8 @@ onUnmounted(() => {
   teardownMap()
 })
 </script>
+
+<style src="./raster-map-pages.css"></style>
 
 <style scoped>
 .page-body-content h2 {

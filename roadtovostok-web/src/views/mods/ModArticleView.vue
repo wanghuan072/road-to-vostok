@@ -270,19 +270,6 @@ watch(
 </script>
 
 <style scoped>
-.page-hero-breadcrumb-current {
-  color: color-mix(in srgb, var(--color-text) 55%, var(--color-muted));
-  max-width: min(28ch, 100%);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/* 覆盖 page-hero.css 中 detail 标题的 max-width，宽度随 .container */
-.page-hero-section--detail .article-detail-hero__title.mod-detail__hero-title {
-  max-width: none;
-}
-
 .mod-detail__hero-pills {
   display: flex;
   flex-wrap: wrap;
