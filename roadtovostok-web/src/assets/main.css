@@ -1,5 +1,4 @@
-/* 全局：寒带战术简报风 — 更高对比、偏蓝夜色 + 信号色点缀 */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap');
+/* 全局：寒带战术简报风 — 更高对比、偏蓝夜色 + 信号色点缀（正文/标题均为系统字体栈，无网络字体） */
 @import './page-hero.css';
 @import './content-prose.css';
 @import '../views/map/map-interactive.css';
@@ -27,9 +26,13 @@
   --color-primary: var(--color-ice);
   --color-primary-soft: #7ee8f9;
   --color-accent: var(--color-signal);
-  --font-display: 'Barlow Semi Condensed', 'Arial Narrow', system-ui, sans-serif;
-  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
-  --font-journey: 'Unbounded', var(--font-display);
+  /* 标题/数据：偏窄无衬线，接近原 Barlow Semi Condensed 的简报感 */
+  --font-display: 'Bahnschrift', 'Franklin Gothic Medium', 'Arial Narrow', system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* 正文：各平台默认 UI 无衬线 */
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* Kicker / 小标题：衬线略作「文牍」气质，替代原 Unbounded */
+  --font-journey: Constantia, Cambria, Georgia, 'Times New Roman', ui-serif, serif;
   --fx-glow-frost: 0 0 48px color-mix(in srgb, var(--color-ice) 28%, transparent);
   --fx-glow-rust: 0 0 40px color-mix(in srgb, var(--color-signal) 32%, transparent);
   /**
@@ -184,4 +187,18 @@ img {
   50% {
     box-shadow: 0 0 20px 2px color-mix(in srgb, var(--color-signal) 25%, transparent);
   }
+}
+
+/* PageSpeed / CLS：广告位占位（脚本在 index.html 中延迟加载，仍预留高度避免布局跳动） */
+ins.adsbygoogle {
+  display: block;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+#div-gpt-ad-1775617033282-0 {
+  min-height: 50px;
+  min-width: min(320px, 100%);
+  max-width: 100%;
+  box-sizing: border-box;
 }

@@ -36,45 +36,54 @@
   <meta name="twitter:image" content="https://roadtovostok.org/images/logo.webp">
   <title>Road To Vostok Guide</title>
 
-  <!-- 延迟加载第三方脚本 -->
+  <!-- 延迟加载第三方脚本：window.load 后再等 2s（原 1.5s）；GPT、ADX direct 原在 head 同步，已并入本段 -->
   <script>
     window.addEventListener('load', function () {
       setTimeout(function () {
-        // 延迟加载Google Analytics
+        // GAM：加载 GPT 库（广告位定义在下方独立 script，先入 cmd 队列）
+        const gptScript = document.createElement('script');
+        gptScript.async = true;
+        gptScript.crossOrigin = 'anonymous';
+        gptScript.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
+        document.head.appendChild(gptScript);
+
+        // ADX（ca-pub-9435047454967498）：adsbygoogle_direct.js；URL 必须单行，否则 client 参数会失效
+        const adsDirectScript = document.createElement('script');
+        adsDirectScript.async = true;
+        adsDirectScript.crossOrigin = 'anonymous';
+        adsDirectScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle_direct.js?client=ca-pub-9435047454967498';
+        document.head.appendChild(adsDirectScript);
+
+        // 延迟加载 Google Analytics（gtag.js）
         const gtagScript = document.createElement('script');
         gtagScript.async = true;
         gtagScript.defer = true;
         gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-07JJBR1F1S';
         document.head.appendChild(gtagScript);
 
+        // gtag 初始化（与官方片段一致：先 dataLayer，再 gtag('js') / gtag('config')）
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-07JJBR1F1S');
 
-
-        // 延迟加载广告
+        // 延迟加载 AdSense（ca-pub-8041655671892982；与上方 ADX direct 不是同一 client，勿合并）
         const adsScript = document.createElement('script');
         adsScript.async = true;
         adsScript.defer = true;
         adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8041655671892982';
         adsScript.crossOrigin = 'anonymous';
         document.head.appendChild(adsScript);
-      }, 1500);
+      }, 2000);
     });
   </script>
 
-  <!-- ADX（ca-pub-9435047454967498）— URL 必须单行，否则 client 参数会失效 -->
-  <script async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle_direct.js?client=ca-pub-9435047454967498"
-    crossorigin="anonymous"></script>
-
-
   <!-- ========== GAM 广告位 1（独立一段，与后台「第一段」head 代码一致，不与位 2 合并）========== -->
-  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
   <script>
+    // 在 GPT 脚本到达前即可 cmd.push；库加载后会执行队列
     window.googletag = window.googletag || { cmd: [] };
     googletag.cmd.push(function () {
+      // 位 1：/23346398271/anchor 320×50，页面内容器 id 须为 div-gpt-ad-1775617033282-0
       googletag.defineSlot('/23346398271/anchor', [320, 50], 'div-gpt-ad-1775617033282-0').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
