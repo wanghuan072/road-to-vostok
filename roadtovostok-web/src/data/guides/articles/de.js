@@ -443,8 +443,7 @@ export default [
       keywords: "Road to Vostok reload, RM-870, Mosin, Magazin, V Taste, Hardcore",
     },
     addressBar: "reload-shotguns-bolt-actions-magazine-checks",
-    detailsHtml: `<h1>Nachladen in Road to Vostok: Repetierer &amp; Schrotflinten meistern
-  </h1>
+    detailsHtml: `
   <p><strong>Vertrauenswürdigkeit:</strong> Dieser Guide basiert auf Community-Mechaniken und Feldtests (u. a. MasterDeBunker). Arcade-Logik gilt nicht — wie die Veteranen sagen: Wer in Panik das Nachladen vergisst, stirbt.</p>
   <h2>Kernzyklus: der Nachlade-Loop
   </h2>
@@ -509,7 +508,7 @@ export default [
       keywords: "road to vostok katze, shelter begleiter, quest, bunker, survival tipps",
     },
     addressBar: "cat-guide-find-care-shelter-companion",
-    detailsHtml: `<h1>Road to Vostok Katzen-Guide: Begleiter finden &amp; versorgen</h1>
+    detailsHtml: `
   <p><strong>Vertrauenswürdigkeit:</strong> Basierend auf Community-Feldtests — exakte Routen, Vorräte und Korrekturen, damit du die Reise überlebst.</p>
   <h2>Vorbereitung &amp; „vermisste Katze“-Event</h2>
   <p>Eine <strong>Katze</strong> zu bekommen ist anspruchsvoller als es klingt: In einem Durchgang fünfmal die Karte wechseln (Dorf → Schule → Außenposten → Schule → Dorf). Jeder Transfer kostet Flüssigkeit und Energie.</p>
@@ -579,7 +578,7 @@ export default [
       keywords: "road to vostok shelter, shelter standorte, zelt shelter, karte, bunker, schule shelter, katze, klassenzimmer schlüssel",
     },
     addressBar: "road-to-vostok-shelter-locations",
-    detailsHtml: `<h1>Das ultimative Road-to-Vostok-Shelter-Handbuch: Alle Orte &amp; Freischaltungen</h1>
+    detailsHtml: `
   <p>In der Hardcore-Welt von <strong>Road to Vostok</strong> ist ein Shelter deine einzige wirklich sichere Zone zum Lagern, Regenerieren und Überleben. Ob Early-Game-Stash oder Endgame-Waffenkammer — exakte Orte und Mechaniken zu kennen ist Pflicht.</p>
   <p>Dieser Guide fasst alle bekannten Shelter, Schlüssel-Wege und wichtige Management-Mechaniken auf Basis verifizierter Community-Infos zusammen.</p>
   <h2>Kern-Intel: Shelter-Kategorien</h2>
@@ -634,5 +633,146 @@ export default [
   <li><strong>Kein Hunger/Durst im Shelter:</strong> ideal zum Sortieren und Regale bauen ohne Rationen zu verbrennen.</li>
   </ol>
   <p>(Mehr Guides und Updates: <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
+  },
+
+  {
+    id: 9,
+    head: `<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Road to Vostok The Punisher-Guide: Spawns, Karten &amp; Kampf",
+        "description": "Hardcore-Leitfaden: The Punisher finden, spawnen und besiegen — inkl. Modding für ~100 % Spawnrate, beste Karte (Außenposten) und Taktik für die Flame Beanie.",
+        "uploadDate": "2024-05-20T08:00:00+08:00",
+        "duration": "PT13M0S",
+        "thumbnailUrl": "https://img.youtube.com/vi/o3Hwsuv4fk4/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/o3Hwsuv4fk4",
+        "hasPart": [
+          {
+            "@type": "Clip",
+            "name": "Modding für ~100 % Spawnrate",
+            "startOffset": 161,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=161s"
+          },
+          {
+            "@type": "Clip",
+            "name": "Beste Karte: Außenposten",
+            "startOffset": 347,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=347s"
+          },
+          {
+            "@type": "Clip",
+            "name": "Kampf &amp; Flame Beanie looten",
+            "startOffset": 610,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=610s"
+          }
+        ]
+      }
+      </script>`,
+    title: "Road to Vostok The Punisher-Guide: Spawns, Karten &amp; Kampf",
+    iframeUrl: "https://www.youtube.com/embed/o3Hwsuv4fk4",
+    description: "Hardcore-Leitfaden: The Punisher finden, spawnen und besiegen — inkl. Modding für ~100 % Spawnrate, beste Karte (Außenposten) und Taktik für die Flame Beanie.",
+    tags: ["Road to Vostok", "The Punisher"],
+    publishDate: "2026-04-20",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageAlt: "Road to Vostok The Punisher Guide",
+    seo: {
+      title: "Road to Vostok The Punisher-Guide: Spawns, Karten &amp; Kampf",
+      description: "The Punisher farmen: Mods für hohe Spawnrate, Außenposten als Arena, Kampf und Flame Beanie.",
+      keywords: "Road to Vostok, The Punisher, Flame Beanie, Metro Mod Loader, Event Hints",
+    },
+    addressBar: "road-to-vostok-the-punisher-guide",
+    detailsHtml: `<p>Im Vanilla-Build von Road to Vostok ist die natürliche Spawnrate von The Punisher extrem niedrig (ca. 2,5 % bis 3,33 %). Für die exklusive Flame Beanie solltest du als Einsteiger Metro Mod Loader und Event Hints installieren, um auf ~100 % zu kommen. Vermeide Dorf und Schule wegen erzwungenem Nahkampf und störender Banditen-KI — nimm stattdessen die Außenposten-Karte mit freien Schussfeldern und Felsdeckung. Sturmgewehr mit über 70 % Zustand und viele Medkits mitbringen. Sobald die Sirenen losgehen: sofort Felsdeckung, seine Unterdrückungssalve unterbrechen, Kill sichern.
+
+  <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/o3Hwsuv4fk4" title="YouTube-Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Keine Lust aufs ganze Video? Springe zu den Markern:</p>
+  <ol>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=161&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">02:41</a> — Modding: Metro Mod Loader &amp; Event Hints
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=347&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">05:47</a> — Warum der Außenposten die beste Karte ist
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=610&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">10:10</a> — Kampf: Felsdeckung &amp; Flame Beanie looten
+  </li>
+  </ol>
+  <h2>Spawn-Mechanik &amp; Modding (~100 %)
+  </h2>
+  <p>Im Basisspiel würfelt die Engine zuerst ein Kartenereignis (ca. 10 %), dann einen Pool (Luftabwürfe, Abstürze, Helis, The Punisher usw.). Die echte Chance ist daher winzig. Selbst wenn er spawnt, kann er mit dem Polizeiwagen nur durchfahren, ohne zu kämpfen. Er spawnt niemals in der Border Zone oder auf der Vostok-Permadeath-Karte.
+  </p>
+  <p>Statt zu warten: Hintergrundwahrscheinlichkeit anpassen. Du brauchst Metro Mod Loader, Mod Configuration Menu (MCM) und Event Hints. Loader ins Spielverzeichnis entpacken und override.cfg überschreiben; unter AppData/Roaming/Road to Vostok einen mods-Ordner anlegen und modloader.gd hineinlegen. Die .vmz-Dateien von MCM und Event Hints in denselben mods-Ordner. Beim Start MCM-Priority im Overlay auf -100 setzen. Im MCM-Menü % Chance Punisher auf 100 und Max-Wartezeit auf ~60 s — dann erscheint er zuverlässig.
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  </p>
+  <h2>Beste Karten für den Fight
+  </h2>
+  <p>Wer die Mechanik kennt, wählt das Schlachtfeld. Die KI in Road to Vostok ist tödlich; Flankiertwerden oft = sofortiger Run-Ende.
+  </p>
+  <p>Nimm den Außenposten: Erstens kreuzen sich alle Wege zentral — der Van muss durch. Zweitens Felsen, Brückenkanten und Wracks als Hardcover. Drittens extrem offene Schussfelder, du siehst den Van früh.
+  </p>
+  <p>Vermeide Dorf und Schule: Erzwungener CQB plus native Banditen-KI — du wirst zwischen The Punisher und Scavs eingequetscht.
+  </p>
+  <table>
+  <tbody>
+  <tr>
+  <td data-row="row-nxno8f">Karten-Tipp
+  </td>
+  <td data-row="row-nxno8f">Vorteile &amp; Deckung
+  </td>
+  <td data-row="row-nxno8f">Nachteile &amp; Risiken
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-ce7861">Außenposten
+  </td>
+  <td data-row="row-ce7861">Sehr empfohlen. Viele Felsen/Brücken-Cover; zentraler Knoten = vorhersagbare Route.
+  </td>
+  <td data-row="row-ce7861">Querschläger aus der Ferne; Körpermitte nicht freihalten.
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-kjwyyq">Dorf
+  </td>
+  <td data-row="row-kjwyyq">Nicht empfohlen. Dichte Bebauung.
+  </td>
+  <td data-row="row-kjwyyq">CQB + Banditen-KI; hohes Flankenrisiko.
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-2cmgse">Schule
+  </td>
+  <td data-row="row-2cmgse">Stark abzuraten. Enge Innenräume.
+  </td>
+  <td data-row="row-2cmgse">Map-AI; kaum Fehlerbudget an Ecken.
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  </p>
+  <h2>Kampf: finden &amp; besiegen
+  </h2>
+  <p>Am Außenposten lauschen. Mit Event Hints: Hinweis oben links. Ohne Mod: ferne Polizeisirenen = er kommt.
+  </p>
+  <p>Sofort hinter Fels. Goldene Regel: Körpermitte nie zeigen. Er bremst den POLIISI-Bus; beim Aussteigen kommt starke Unterdrückung. Minimal peeken, Primärwaffe &gt;70 % (z. B. M4A1), Feuer in kurzen Salven. Bei Treffer nicht über offenes Feld rennen — Deckung, Medkit, Blutung stoppen.
+  </p>
+  <p>Nach dem Kill: Flame Beanie looten. Nimmst du sie nicht, bleibt sie sichtbar auf dem Körper.
+  </p>
+  <p>(Easter Egg: Sirenen aus = gute Laune. Schieß nicht, spring aufs Dach — er fährt dich quer über die Karte.)
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  </p>
+  <h2>FAQ
+  </h2>
+  <p>F: Spawnt The Punisher auf jeder Karte?
+  </p>
+  <p>A: Nein — nie Border Zone oder Vostok-Permadeath.
+  </p>
+  <p>F: Warum steigt er trotz 100 %-Mod nicht aus?
+  </p>
+  <p>A: Er kann trotzdem nur durchpatrouillieren. Mehrfach versuchen, Aufmerksamkeit von Deckung aus holen.
+  </p>
+  <p>F: Pflichtwaffe?
+  </p>
+  <p>A: Nein, aber Primär &gt;70 % Zustand — sonst Ladehemmung im Fight.
+  </p>`,
   }
 ]

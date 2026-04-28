@@ -411,7 +411,7 @@ export default [
       keywords: "Road to Vostok, 换弹, RM-870, 莫辛, 弹匣, V 键, 硬核",
     },
     addressBar: "reload-shotguns-bolt-actions-magazine-checks",
-    detailsHtml: `<h1>Road to Vostok 换弹指南：栓动与霰弹枪</h1>
+    detailsHtml: `
   <p><strong>可信度：</strong>本文基于社区机制总结与玩家（如 MasterDeBunker）实测，非街机逻辑——老玩家常说：慌了忘换弹就会死。</p>
   <h2>核心循环</h2>
   <p>四把栓动（及同类手动流程）遵循三步「栓动手感」：</p>
@@ -461,7 +461,7 @@ export default [
       keywords: "road to vostok, 猫, 避难所伙伴, 任务, 地堡, 生存技巧",
     },
     addressBar: "cat-guide-find-care-shelter-companion",
-    detailsHtml: `<h1>Road to Vostok 猫咪完全指南：寻找与照料</h1>
+    detailsHtml: `
   <p><strong>为何可信：</strong>基于社区硬核玩家多次跑图与勘误整理；在残酷生存游戏里养「活物」成本极高，本文汇总路线、物资与常见翻车点。</p>
   <h2>准备与触发「失踪的猫」</h2>
   <p>拿到猫比想象中难：单次行程需五次跨图传送（村庄 → 学校 → 前哨 → 学校 → 村庄），每次都会消耗水分与体力。</p>
@@ -530,7 +530,7 @@ export default [
       keywords: "road to vostok, 避难所, 避难所位置, 帐篷, 地图, 地堡, 学校避难所, 猫, 教室钥匙",
     },
     addressBar: "road-to-vostok-shelter-locations",
-    detailsHtml: `<h1>《Road to Vostok》避难所终极指南：全部位置与解锁方式</h1>
+    detailsHtml: `
   <p>在硬核生存世界《Road to Vostok》中，避难所是你存放战利品、回复状态、延续生命的<strong>绝对安全区</strong>。无论是整理开荒背包还是打造终极军火库，掌握每一处避难所的坐标与机制都是老手必修课。</p>
   <p>本篇依据已验证的社区情报，系统梳理全部已知避难所、钥匙获取方式与避难所管理要点。</p>
   <h2>核心情报：避难所分类与位置</h2>
@@ -586,5 +586,146 @@ export default [
   <li>避难所内不消耗饮食模组：在安全屋内不降低饥渴值，适合长时间整理货架、打造仓储的囤积型玩家。</li>
   </ol>
   <p>（更多硬核攻略与战术更新，请持续关注 <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>。）</p>`,
+  },
+
+  {
+    id: 9,
+    head: `<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Road to Vostok「行刑者」攻略：刷新、地图与战斗",
+        "description": "硬核指南：如何寻找、刷新并击杀 The Punisher；含 Metro Mod Loader 与 Event Hints 模组实现约 100% 刷新、推荐前哨地图与夺取火焰针织帽的战术。",
+        "uploadDate": "2024-05-20T08:00:00+08:00",
+        "duration": "PT13M0S",
+        "thumbnailUrl": "https://img.youtube.com/vi/o3Hwsuv4fk4/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/o3Hwsuv4fk4",
+        "hasPart": [
+          {
+            "@type": "Clip",
+            "name": "模组实现约 100% 刷新率",
+            "startOffset": 161,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=161s"
+          },
+          {
+            "@type": "Clip",
+            "name": "最佳地图：前哨",
+            "startOffset": 347,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=347s"
+          },
+          {
+            "@type": "Clip",
+            "name": "战斗演示与拾取火焰针织帽",
+            "startOffset": 610,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=610s"
+          }
+        ]
+      }
+      </script>`,
+    title: "Road to Vostok「行刑者」攻略：刷新、地图与战斗",
+    iframeUrl: "https://www.youtube.com/embed/o3Hwsuv4fk4",
+    description: "硬核指南：如何寻找、刷新并击杀 The Punisher；含 Metro Mod Loader 与 Event Hints 模组实现约 100% 刷新、推荐前哨地图与夺取火焰针织帽的战术。",
+    tags: ["Road to Vostok", "The Punisher", "行刑者"],
+    publishDate: "2026-04-20",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageAlt: "Road to Vostok 行刑者攻略",
+    seo: {
+      title: "Road to Vostok「行刑者」攻略：刷新、地图与战斗",
+      description: "如何寻找、刷新并击杀 The Punisher；模组调至约 100% 刷新、前哨接战与火焰针织帽获取要点。",
+      keywords: "Road to Vostok, The Punisher, 行刑者, 火焰针织帽, Metro Mod Loader, Event Hints",
+    },
+    addressBar: "road-to-vostok-the-punisher-guide",
+    detailsHtml: `<p>在《Road to Vostok》原版机制下，The Punisher 的自然刷新率极低（约 2.5%～3.33%）。若要稳定刷取其专属「火焰针织帽」，强烈建议新手安装 Metro Mod Loader 与 Event Hints 等模组，将遭遇概率拉到接近 100%。选图时避开村庄与学校等强制近距离作战、且易被本地土匪 AI 搅局的地图；优先选择<strong>前哨（Outpost）</strong>，视野开阔、岩石掩体天然。携带状态 70% 以上的可靠突击步枪与足量医疗包。听到警笛后立刻找岩石掩护，打断其下车后的压制扫射，再完成击杀。
+
+  <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/o3Hwsuv4fk4" title="YouTube 视频" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>不想看完？直接跳到关键片段：</p>
+  <ol>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=161&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">02:41</a> — Metro Mod Loader 与 Event Hints 模组教程
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=347&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">05:47</a> — 为何前哨是接战的最佳地图
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=610&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">10:10</a> — 战斗演示：利用岩石掩护与拾取火焰针织帽
+  </li>
+  </ol>
+  <h2>刷新机制与模组调至约 100% 概率
+  </h2>
+  <p>原版流程中，引擎先判定是否触发地图事件（约 10%），再从事件池（空投、坠机、武装直升机、The Punisher 等）中随机抽取。因此 The Punisher 的实际出现概率极低；即便触发，他也可能驾驶标有「POLIISI」的警车径直穿过地图而不停车交战。注意：他<strong>绝不会</strong>在边境区（Border Zone）或沃斯托克永久死亡地图刷新。
+  </p>
+  <p>与其干等，修改后台概率是最省时的做法。需要三个组件：Metro Mod Loader、Mod Configuration Menu（MCM）与 Event Hints。先将 Metro Mod Loader 解压到游戏根目录并覆盖 override.cfg；同时在系统路径 AppData/Roaming/Road to Vostok 下新建 mods 文件夹，放入 modloader.gd。再把 MCM 与 Event Hints 的 .vmz 文件丢进该 mods 文件夹。启动游戏后，在模组管理界面将 MCM 的 Priority 设为 -100。进入游戏设置打开 MCM，将「% Chance Punisher」拉到 100，并把最长等待时间降到约 60 秒，即可稳定刷出遭遇。
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  </p>
+  <h2>最佳接战地图
+  </h2>
+  <p>掌握刷新后，选战场决定生死。《Road to Vostok》的 AI 极其致命，被侧翼包夹往往意味着直接回主菜单。
+  </p>
+  <p>强烈推荐以<strong>前哨</strong>为狩猎场。理由有三：其一，地图中央十字路口汇聚各路车流，他的警车无论从哪一侧进入都必须经过；其二，路口周围有整块岩石、桥缘与烧毁车辆，构成理想硬掩体；其三，视野极其开阔，便于远距离跟踪警车动向。
+  </p>
+  <p>务必避免在<strong>村庄</strong>或<strong>学校</strong>接战：这两张图不仅强制高风险近距离战斗（CQB），还会刷新本地土匪 AI；一旦开火，极易被 The Punisher 与周围 scavenger 夹击。
+  </p>
+  <table>
+  <tbody>
+  <tr>
+  <td data-row="row-nxno8f">地图建议
+  </td>
+  <td data-row="row-nxno8f">优势与掩体
+  </td>
+  <td data-row="row-nxno8f">劣势与风险
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-ce7861">前哨
+  </td>
+  <td data-row="row-ce7861">强烈推荐。岩石与桥体掩体丰富；中央路口使其路线可预测。
+  </td>
+  <td data-row="row-ce7861">流弹可从远处飞来；切忌将躯干长时间暴露在开阔地。
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-kjwyyq">村庄
+  </td>
+  <td data-row="row-kjwyyq">不推荐。建筑密集。
+  </td>
+  <td data-row="row-kjwyyq">强制 CQB 且受本地土匪 AI 干扰；极易被侧翼。
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-2cmgse">学校
+  </td>
+  <td data-row="row-2cmgse">极不推荐。室内空间局促。
+  </td>
+  <td data-row="row-2cmgse">地图原生 AI 威胁大；转角遭遇时容错极低。
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  </p>
+  <h2>如何接战并击杀
+  </h2>
+  <p>部署到前哨后，仔细听环境音。若安装了 Event Hints，屏幕左上角会出现明确提示；没有模组时，远处的<strong>警笛</strong>即为他正在接近的信号。
+  </p>
+  <p>立刻躲到岩石后。本战黄金法则：<strong>永远不要暴露躯干中心</strong>。被他发现后，他会刹停「POLIISI」警车；下车后的首轮攻击是极强压制扫射。利用岩石小幅探头，用状态 70% 以上的主武器（如 M4A1，避免关键时刻卡壳）进行点射。若中弹不要惊慌跑过开阔地；退回掩体用医疗包止血——此阶段因流血而死最令人挫败。
+  </p>
+  <p>击倒后靠近尸体拾取其标志性战利品：<strong>火焰针织帽</strong>。若不拾取，帽子会仍显示戴在他的头上。
+  </p>
+  <p>（趣味战术彩蛋：若他刷新且警笛关闭，代表「心情不错」。只要不开火，你可以跳上警车车顶，他会真的载你绕图一圈回家。）
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  </p>
+  <h2>常见问题
+  </h2>
+  <p>问：The Punisher 会在每张图刷新吗？
+  </p>
+  <p>答：不会。他<strong>绝不会</strong>出现在边境区或沃斯托克永久死亡地图。
+  </p>
+  <p>问：我已经把刷新率模组调到 100%，为什么他仍不下车攻击？
+  </p>
+  <p>答：即便强制事件概率，他仍可能驾车巡逻径直穿过地图。需要多试几次，并在掩体后确保引起其注意。
+  </p>
+  <p>问：是否有指定武器才能打 The Punisher？
+  </p>
+  <p>答：没有硬性枪械锁定，但实操标准是：主武器<strong>耐久须高于 70%</strong>。不要拿 50% 耐久捡来的枪上场，否则交火中卡壳会变成活靶子。
+  </p>`,
   }
 ]

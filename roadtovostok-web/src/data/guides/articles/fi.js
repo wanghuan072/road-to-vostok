@@ -410,7 +410,7 @@ export default [
       keywords: "Road to Vostok, lataus, RM-870, Mosin, lipas, V, kova peli",
     },
     addressBar: "reload-shotguns-bolt-actions-magazine-checks",
-    detailsHtml: `<h1>Lataus: pulttilukot ja haulikko</h1>
+    detailsHtml: `
   <p><strong>Lähde:</strong> yhteisön tiivistelmä ja pelaajatestit (esim. MasterDeBunker) — ei arcade; paniikissa unohtunut patruunakammio = kuolema.</p>
   <h2>Perussykli</h2>
   <p>Pulttilukot ja kolmen askeleen manuaalinen sykli:</p>
@@ -459,7 +459,7 @@ export default [
       keywords: "road to vostok, kissa, suoja, tehtävä, bunkkeri, survival",
     },
     addressBar: "cat-guide-find-care-shelter-companion",
-    detailsHtml: `<h1>Kissa: täysi opas</h1>
+    detailsHtml: `
   <p><strong>Perusta:</strong> useat yhteisön juoksut; kovassa survivalissa «elävä» maksaa — reitti, loot ja tyypilliset virheet.</p>
   <h2>«Kadonnut kissa» -tapahtuman alku</h2>
   <p>Viisi karttasiirtymää (kylä → koulu → etuvartio → koulu → kylä) — vesi ja kestävyys jokaiseen hyppyyn.</p>
@@ -525,7 +525,7 @@ export default [
       keywords: "road to vostok shelter, suojat, teltta, kartta, bunkkeri, koulu, kissa, luokan avain",
     },
     addressBar: "road-to-vostok-shelter-locations",
-    detailsHtml: `<h1>Road to Vostok -suojat: kaikki paikat ja avaukset</h1>
+    detailsHtml: `
   <p><strong>Road to Vostok</strong> -hardcore-maailmassa suoja on ainoa todella turvallinen tila lootille, palautumiselle ja hengissä pysymiselle — olitpa aloittelija tai loppupelin varustaja.</p>
   <p>Tämä opas kokoaa yhteen tunnetut suojat, avainreitit ja tärkeät mekaniikat yhteisön varmentamien tietojen pohjalta.</p>
   <h2>Suojien jako</h2>
@@ -572,5 +572,146 @@ export default [
   <li><strong>Ei nälkää/janoa suojassa:</strong> sopii järjestelyyn ja hyllyihin ilman ruoan tuhlausta.</li>
   </ol>
   <p>(Lisää oppaita: <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
+  },
+
+  {
+    id: 9,
+    head: `<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Road to Vostok The Punisher -opas: spawnit, kartat ja taistelu",
+        "description": "Hardcore-opas: The Punisherin löytäminen, spawnit ja tappaminen — Metro Mod Loader ja Event Hints lähes 100 %:n spawniin, paras kartta (etuvartio) ja Flame Beanie -taktiikka.",
+        "uploadDate": "2024-05-20T08:00:00+08:00",
+        "duration": "PT13M0S",
+        "thumbnailUrl": "https://img.youtube.com/vi/o3Hwsuv4fk4/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/o3Hwsuv4fk4",
+        "hasPart": [
+          {
+            "@type": "Clip",
+            "name": "Modit lähes 100 % spawnille",
+            "startOffset": 161,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=161s"
+          },
+          {
+            "@type": "Clip",
+            "name": "Paras kartta: etuvartio",
+            "startOffset": 347,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=347s"
+          },
+          {
+            "@type": "Clip",
+            "name": "Taistelu ja Flame Beanie",
+            "startOffset": 610,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=610s"
+          }
+        ]
+      }
+      </script>`,
+    title: "Road to Vostok The Punisher -opas: spawnit, kartat ja taistelu",
+    iframeUrl: "https://www.youtube.com/embed/o3Hwsuv4fk4",
+    description: "Hardcore-opas: The Punisherin löytäminen, spawnit ja tappaminen — Metro Mod Loader ja Event Hints lähes 100 %:n spawniin, paras kartta (etuvartio) ja Flame Beanie -taktiikka.",
+    tags: ["Road to Vostok", "The Punisher"],
+    publishDate: "2026-04-20",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageAlt: "Road to Vostok The Punisher -opas",
+    seo: {
+      title: "Road to Vostok The Punisher -opas: spawnit, kartat ja taistelu",
+      description: "The Punisher -farmi: modit, etuvartio, taistelu ja Flame Beanie.",
+      keywords: "Road to Vostok, The Punisher, Flame Beanie, Metro Mod Loader, Event Hints",
+    },
+    addressBar: "road-to-vostok-the-punisher-guide",
+    detailsHtml: `<p>Vaniljassa The Punisherin luonnollinen spawn-todennäköisyys on erittäin matala (noin 2,5–3,33 %). Flame Beanieta varten asenna Metro Mod Loader ja Event Hints ja nosta kohtaaminen lähes 100 %:iin. Vältä kylää ja koulua — pakotettu lähitaistelu ja paikalliset rosvot; valitse etuvartio avoimilla näköaloilla ja kalliosuojalla. Luotettava rynnäkkökivääri yli 70 % kunnossa ja paljon ensiapupakkauksia. Kun sireenit kuuluvat, heti kiven taakse, keskeytä hänen tukistuslaukaisunsa ja varmista tappo.
+
+  <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/o3Hwsuv4fk4" title="YouTube-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Ei koko videota? Hyppää kohtiin:</p>
+  <ol>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=161&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">02:41</a> — Metro Mod Loader ja Event Hints
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=347&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">05:47</a> — miksi etuvartio on paras
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=610&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">10:10</a> — taistelu kivisuojasta ja Flame Beanie
+  </li>
+  </ol>
+  <h2>Spawn-mekaniikka ja modit (~100 %)
+  </h2>
+  <p>Pelimoottori heittää ensin karttatapahtuman (~10 %), sitten poolista (ilmapudotukset, romutukset, helikopterit, The Punisher jne.). Todellinen mahdollisuus on surkea. Vaikka hän spawnisi, hän voi ajaa POLIISI-pakun läpi ilman pysähdystä. Hän ei koskaan spawna Border Zonella eikä Vostok-permadeath-kartalla.
+  </p>
+  <p>Tarvitset Metro Mod Loaderin, Mod Configuration Menun (MCM) ja Event Hints -modin. Pura Loader pelin juureen ja korvaa override.cfg; AppData/Roaming/Road to Vostok -kansioon mods-kansio ja modloader.gd. MCM:n ja Event Hints -tiedostot (.vmz) samaan mods-kansioon. Käynnistyksessä aseta MCM:n Priority -100:ksi. MCM-valikossa % Chance Punisher 100:een ja max odotus ~60 s.
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  </p>
+  <h2>Parhaat kartat kohtaamiseen
+  </h2>
+  <p>Kun mekaniikka on hallussa, taistelukenttä ratkaisee. Road to Vostokin tekoäly on tappava; sivustaan joutuminen usein = välitön loppu.
+  </p>
+  <p>Suosittelemme etuvartiota: keskusristeys — pakun on kuljettava; kivet, sillan reunat ja palaneet autot kovana suojana; avoimet näköalat.
+  </p>
+  <p>Vältä kylää ja koulua: CQB ja paikalliset rosvot — joudut puristukseen The Punisherin ja scavien väliin.
+  </p>
+  <table>
+  <tbody>
+  <tr>
+  <td data-row="row-nxno8f">Kartta
+  </td>
+  <td data-row="row-nxno8f">Etu &amp; suoja
+  </td>
+  <td data-row="row-nxno8f">Haitta &amp; riski
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-ce7861">Etuvartio
+  </td>
+  <td data-row="row-ce7861">Erittäin suositeltava. Kivet ja silta; keskusristeys ennustettava.
+  </td>
+  <td data-row="row-ce7861">Kimmokit kaukaa; älä paljasta keskivartaloa.
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-kjwyyq">Kylä
+  </td>
+  <td data-row="row-kjwyyq">Ei suositella. Tiivis rakennus.
+  </td>
+  <td data-row="row-kjwyyq">CQB ja rosvot; korkea sivustusriski.
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-2cmgse">Koulu
+  </td>
+  <td data-row="row-2cmgse">Ei suositella. Ahtaat sisätilat.
+  </td>
+  <td data-row="row-2cmgse">Kartan AI; ei virhemarginaalia kulmissa.
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  </p>
+  <h2>Miten löydät ja voitat
+  </h2>
+  <p>Etuvartiossa kuuntele. Event Hints: ilmoitus vasemmalla ylhäällä. Ilman modia: kaukaiset poliisisireenit.
+  </p>
+  <p>Heti kiven taakse. Kultainen sääntö: älä paljasta keskivartaloa. Hän jarruttaa POLIISI-pakun; ulos tullessaan voimakas tukitus. Pieni peek, pääase &gt;70 % (esim. M4A1), lyhyet purskeet. Osumasta ei paniikkijuoksu avoimelle — suoja, medkit, verenvuoto.
+  </p>
+  <p>Tapon jälkeen: Flame Beanie ruumiilta. Et ota — pipo näkyy yhä päällä.
+  </p>
+  <p>(Easter egg: sireenit pois = hyvä tuuli. Älä ammu, hyppää katolle — hän ajaa sinut kierrokselle.)
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  </p>
+  <h2>UKK
+  </h2>
+  <p>K: Spawnaako The Punisher kaikilla kartoilla?
+  </p>
+  <p>V: Ei — ei koskaan Border Zonella tai Vostok-permadeathilla.
+  </p>
+  <p>K: Miksi ei nouse pakusta vaikka modi 100 %?
+  </p>
+  <p>V: Voi ajaa vain läpi. Yritä uudelleen, hae huomio suojasta.
+  </p>
+  <p>K: Pakollinen ase?
+  </p>
+  <p>V: Ei, mutta pääase &gt;70 % — muuten jumi taistelussa.
+  </p>`,
   }
 ]

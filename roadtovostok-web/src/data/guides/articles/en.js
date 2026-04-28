@@ -532,8 +532,7 @@ export default [
       keywords: "Road to Vostok reload, shotgun reload, bolt action reload, magazine check, tactical guide, survival shooter, RM-870, Mosin-Nagant, game mechanics, hardcore"
     },
     addressBar: "reload-shotguns-bolt-actions-magazine-checks",
-    detailsHtml: `<h1>The Ultimate Road to Vostok Reload Guide: Master Bolt Actions &amp; Shotguns
-  </h1>
+    detailsHtml: `
   <p>Why Trust This Guide: This guide is 100% based on hardcore community mechanics and the definitive field tests by veteran player MasterDeBunker. In this hardcore survival game, traditional arcade shooter mechanics don't apply. As the veterans say: "Panicking and forgetting how to reload WILL get you killed."
   </p>
   <h2>Core Mechanics: Mastering the Road to Vostok Reload Weapon Cycle
@@ -620,8 +619,7 @@ export default [
       keywords: "road to vostok cat, cat guide, shelter companion, survival game, wasteland pet, road to vostok tips, find cat, care for cat, game guide"
     },
     addressBar: "cat-guide-find-care-shelter-companion",
-    detailsHtml: `<h1>The Ultimate Road to Vostok Cat Guide: Find &amp; Care for Your Companion
-  </h1>
+    detailsHtml: `
   <p>[Why You Can Trust This Guide]
   </p>
   <p>This comprehensive Road to Vostok guide is 100% based on the definitive field tests and verified by the hardcore community. Finding a living companion in this brutal survival game is a massive undertaking. We have compiled the exact routes, required supplies, and community corrections to ensure you survive the journey.
@@ -739,8 +737,7 @@ export default [
       keywords: "road to vostok shelter, road to vostok shelter locations, road to vostok tent shelter, road to vostok map, road to vostok bunker location, road to vostok school shelter, road to vostok cat, road to vostok classroom key"
     },
     addressBar: "road-to-vostok-shelter-locations",
-    detailsHtml: `<h1>The Ultimate Road to Vostok Shelter Guide: All Locations &amp; Unlock Methods
-  </h1>
+    detailsHtml: `
   <p>In the hardcore survival world of Road to Vostok, a road to vostok shelter is your only absolute safe zone for storing loot, recovering stats, and staying alive. Whether you are organizing your early-game stash or building the ultimate armory, knowing the exact coordinates and mechanics of every shelter is mandatory for veteran players.
   </p>
   <p>This rigorous guide breaks down all known shelter locations, key acquisition methods, and crucial shelter management mechanics based on verified community intelligence.
@@ -838,5 +835,147 @@ export default [
   </ol>
   <p>(For more hardcore survival guides, real-time tactical updates, and top-tier game intel, keep your eyes on <a href="http://roadtovostok.org/">https://roadtovostok.org/</a> as we conquer this frozen wasteland together.)
   </p>`,
+  },
+
+  {
+    id: 9,
+    head: `<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Road to Vostok The Punisher Guide: Spawns, Locations & Combat",
+    "description": "A definitive hardcore guide on how to find, spawn, and kill The Punisher in Road to Vostok. Includes modding instructions for a 100% punisher spawn rate, the best map locations like Outpost, and combat tactics to secure the Flame Beanie.",
+    "uploadDate": "2024-05-20T08:00:00+08:00",
+    "duration": "PT13M0S",
+    "thumbnailUrl": "https://img.youtube.com/vi/o3Hwsuv4fk4/maxresdefault.jpg",
+    "embedUrl": "https://www.youtube.com/embed/o3Hwsuv4fk4",
+    "hasPart": [
+      {
+        "@type": "Clip",
+        "name": "Modding for 100% Spawn Rate",
+        "startOffset": 161,
+        "url": "https://example.com/road-to-vostok-punisher-guide#t=161s"
+      },
+      {
+        "@type": "Clip",
+        "name": "Best Map Location: Outpost",
+        "startOffset": 347,
+        "url": "https://example.com/road-to-vostok-punisher-guide#t=347s"
+      },
+      {
+        "@type": "Clip",
+        "name": "Combat Tactics & Looting the Flame Beanie",
+        "startOffset": 610,
+        "url": "https://example.com/road-to-vostok-punisher-guide#t=610s"
+      }
+    ]
   }
+  </script>`,
+    title: "Road to Vostok The Punisher Guide: Spawns, Locations & Combat",
+    iframeUrl: "https://www.youtube.com/embed/o3Hwsuv4fk4",
+    description: "A definitive hardcore guide on how to find, spawn, and kill The Punisher in Road to Vostok. Includes modding instructions for a 100% punisher spawn rate, the best map locations like Outpost, and combat tactics to secure the Flame Beanie.",
+    tags: [],
+    publishDate: "2026-04-20",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageAlt: "road to vostok the punisher guide",
+    seo: {
+      title: "Road to Vostok The Punisher Guide: Spawns, Locations & Combat",
+      description: "A definitive hardcore guide on how to find, spawn, and kill The Punisher in Road to Vostok. Includes modding instructions for a 100% punisher spawn rate, the best map locations like Outpost, and combat tactics to secure the Flame Beanie.",
+      keywords: "Road to Vostok The Punisher;"
+    },
+    addressBar: "road-to-vostok-the-punisher-guide",
+    detailsHtml: `<p>In the vanilla mechanics of Road to Vostok, the natural spawn rate for The Punisher is extremely low (roughly 2.5% to 3.33%). To efficiently farm his exclusive Flame Beanie, it is highly recommended that rookies install the Metro Mod Loader and Event Hints mods to force a 100% spawn rate. When choosing an engagement zone, avoid the Village or School due to forced CQB and interfering bandit AI. Instead, opt for the Outpost map, which offers open sightlines and natural rock cover. Bring a reliable assault rifle with over 70% condition and plenty of medkits. Once you hear the sirens, immediately find rock cover, interrupt his suppressive fire spray, and secure the kill.
+  
+  <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/o3Hwsuv4fk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Don't want to watch the whole video? Jump straight to the key moments:</p>
+  <ol>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=161&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">02:41</a> - ⚙️ Modding tutorial for Metro Mod Loader and Event Hints
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=347&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">05:47</a> - 🗺️ Why Outpost is the absolute best map for the encounter
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=610&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">10:10</a> - 🔫 Combat demo: Using rock cover and looting the Flame Beanie
+  </li>
+  </ol>
+  <h2>Spawn Mechanics &amp; Modding for 100% Rate
+  </h2>
+  <p>In the base game, the engine first rolls for a map event (about a 10% chance), and then randomly selects from the available event pool (airdrops, crashes, attack helis, the punisher, etc.). Therefore, The Punisher's actual spawn chance is abysmal. Even if he does spawn, there is a chance he will just drive his police van straight through the map without stopping to fight. Note that he will absolutely never spawn on the Border Zone or Vostok Permadeath maps.
+  </p>
+  <p>To stop wasting time waiting, modifying the background probability is the most efficient tactic. You will need three files: Metro Mod Loader, Mod Configuration Menu (MCM), and the Event Hints mod. First, extract the Metro Mod Loader into your game root folder and overwrite the override.cfg file. Simultaneously, navigate to AppData/Roaming/Road to Vostok on your system, create a mods folder, and drop modloader.gd inside. Next, drop the .vmz files for MCM and Event Hints directly into that newly created mods folder. Upon launching the game, ensure MCM's Priority is set to -100 in the mod manager overlay. Enter the game settings, open the MCM menu, crank the % Chance Punisher up to 100, and reduce the Max wait time to 60 seconds. This guarantees his appearance.
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  </p>
+  <h2>Best Map Locations for the Encounter
+  </h2>
+  <p>Once you master the spawn mechanics, choosing your battleground dictates your survival. Road to Vostok's AI is lethal, and getting flanked often means an instant trip back to the main menu.
+  </p>
+  <p>It is highly recommended to use the Outpost as your hunting ground. There are three reasons for this: First, the map features a central intersection where all roads converge, meaning his van must pass through regardless of where it enters. Second, the intersection is surrounded by solid rocks, bridge edges, and burnt-out cars, providing perfect hard cover. Third, the sightlines are extremely open, allowing you to track the van from afar.
+  </p>
+  <p>Absolutely avoid hunting him in the Village or School. Not only do these maps force high-risk CQB (Close Quarters Battle), but they also spawn inherent bandit AI. Once a firefight breaks out, you will likely get pinched by The Punisher and surrounding scavengers.
+  </p>
+  <table>
+  <tbody>
+  <tr>
+  <td data-row="row-nxno8f">Map Recommendation
+  </td>
+  <td data-row="row-nxno8f">Advantages &amp; Cover
+  </td>
+  <td data-row="row-nxno8f">Disadvantages &amp; Risks
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-ce7861">Outpost
+  </td>
+  <td data-row="row-ce7861">Highly recommended. Abundant rocks and bridge cover; central road intersection makes pathing predictable.
+  </td>
+  <td data-row="row-ce7861">Stray bullets can hit from afar; must be careful not to expose your center of mass.
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-kjwyyq">Village
+  </td>
+  <td data-row="row-kjwyyq">Not recommended. Dense buildings.
+  </td>
+  <td data-row="row-kjwyyq">Forced CQB with native bandit AI interference; high risk of getting flanked.
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-2cmgse">School
+  </td>
+  <td data-row="row-2cmgse">Highly not recommended. Tight indoor environments.
+  </td>
+  <td data-row="row-2cmgse">Native map AI threats; extremely low margin for error if you encounter him around a corner.
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  </p>
+  <h2>How to Find &amp; Defeat Him in Combat
+  </h2>
+  <p>After deploying at the Outpost, listen closely to the environmental audio. If you installed the Event Hints mod, a clear notification will pop up on the top left of your screen. Even without it, distant Police Sirens are the definitive signal that he is inbound.
+  </p>
+  <p>Immediately move behind a rock. The golden rule of this engagement: Never expose your Center of Mass. Once he spots you, he will brake his "POLIISI" van. His initial attack upon exiting the vehicle is a highly suppressive bullet spray. Use the rock to peek slightly, and use a primary weapon with over 70% condition (like an M4A1, to avoid jamming at critical moments) to tap-fire him. If you take a hit, don't panic and run across the open field. Hide behind cover and use a Medkit to stop the bleeding—bleeding out at this stage is the most frustrating way to die.
+  </p>
+  <p>Once he is down, approach his corpse to loot his signature item: the Flame Beanie. If you don't take it, the beanie will remain visibly equipped on his body.
+  </p>
+  <p>(Fun tactical easter egg: If he spawns and his sirens are off, it means he is in a "good mood". As long as you don't shoot him, you can jump onto the roof of his van, and he will literally give you a ride home around the map!)
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  </p>
+  <h2>FAQ
+  </h2>
+  <p>Q: Does The Punisher spawn on every map?
+  </p>
+  <p>A: No. The Punisher will absolutely never spawn on the Border Zone or the Vostok Permadeath maps.
+  </p>
+  <p>Q: Why didn't he get out of the van to attack me even after I modded the spawn rate?
+  </p>
+  <p>A: Even if you force the event spawn probability to 100% via mods, there is still a chance he will simply drive through the map on patrol without stopping. You need to try a few times and ensure you grab his attention from behind cover.
+  </p>
+  <p>Q: Are there specific weapon requirements to fight The Punisher?
+  </p>
+  <p>A: There are no specific gun locks, but the strict objective standard is: your primary weapon's condition must be above 70%. Do not bring a scavenged gun with 50% durability, or it will jam during the firefight, turning you into a sitting duck.
+  </p>`,
+  }
+
 ]

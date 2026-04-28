@@ -410,7 +410,7 @@ export default [
       keywords: "Road to Vostok, rechargement, RM-870, Mosin, chargeur, V, jeu exigeant",
     },
     addressBar: "reload-shotguns-bolt-actions-magazine-checks",
-    detailsHtml: `<h1>Rechargement : verrous et pompe</h1>
+    detailsHtml: `
   <p><strong>Source :</strong> synthèse communauté et tests joueurs (ex. MasterDeBunker) — pas d’arcade ; chambre vide en panique = mort.</p>
   <h2>Cycle de base</h2>
   <p>Verrous et cycle manuel en trois étapes :</p>
@@ -459,7 +459,7 @@ export default [
       keywords: "road to vostok, chat, abri, quête, bunker, survival",
     },
     addressBar: "cat-guide-find-care-shelter-companion",
-    detailsHtml: `<h1>Chat : guide complet</h1>
+    detailsHtml: `
   <p><strong>Base :</strong> plusieurs runs communauté ; en survival exigeant le « vivant » a un coût — route, loot et erreurs typiques.</p>
   <h2>Début événement « chat perdu »</h2>
   <p>Cinq transitions de carte (village → école → avant-poste → école → village) — eau et endurance à chaque saut.</p>
@@ -525,7 +525,7 @@ export default [
       keywords: "road to vostok shelter, emplacements abris, tente, carte, bunker, école, chat, clé salle de classe",
     },
     addressBar: "road-to-vostok-shelter-locations",
-    detailsHtml: `<h1>Guide ultime des abris Road to Vostok : lieux &amp; déblocages</h1>
+    detailsHtml: `
   <p>Dans la survie hardcore de <strong>Road to Vostok</strong>, l'abri est votre zone sûre pour stocker, récupérer et tenir. Du stash début à l'arsenal final, connaître chaque site et mécanique est indispensable.</p>
   <p>Ce guide synthétise les abris connus, l'obtention des clés et la gestion d'abri à partir d'infos communautaires vérifiées.</p>
   <h2>Intel : types d'abris</h2>
@@ -572,5 +572,146 @@ export default [
   <li><strong>Pas de faim/soif en abri :</strong> pratique pour trier et aménager sans gaspiller les rations.</li>
   </ol>
   <p>(Plus de guides : <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
+  },
+
+  {
+    id: 9,
+    head: `<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Road to Vostok — guide The Punisher : spawns, cartes et combat",
+        "description": "Guide hardcore : trouver, faire apparaître et tuer The Punisher ; mods Metro Mod Loader et Event Hints pour ~100 % de spawn, meilleure carte (avant-poste) et tactique pour la Flame Beanie.",
+        "uploadDate": "2024-05-20T08:00:00+08:00",
+        "duration": "PT13M0S",
+        "thumbnailUrl": "https://img.youtube.com/vi/o3Hwsuv4fk4/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/o3Hwsuv4fk4",
+        "hasPart": [
+          {
+            "@type": "Clip",
+            "name": "Modding pour ~100 % de spawn",
+            "startOffset": 161,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=161s"
+          },
+          {
+            "@type": "Clip",
+            "name": "Meilleure carte : avant-poste",
+            "startOffset": 347,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=347s"
+          },
+          {
+            "@type": "Clip",
+            "name": "Combat et loot de la Flame Beanie",
+            "startOffset": 610,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=610s"
+          }
+        ]
+      }
+      </script>`,
+    title: "Road to Vostok — guide The Punisher : spawns, cartes et combat",
+    iframeUrl: "https://www.youtube.com/embed/o3Hwsuv4fk4",
+    description: "Guide hardcore : trouver, faire apparaître et tuer The Punisher ; mods Metro Mod Loader et Event Hints pour ~100 % de spawn, meilleure carte (avant-poste) et tactique pour la Flame Beanie.",
+    tags: ["Road to Vostok", "The Punisher"],
+    publishDate: "2026-04-20",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageAlt: "Road to Vostok guide The Punisher",
+    seo: {
+      title: "Road to Vostok — guide The Punisher : spawns, cartes et combat",
+      description: "Farm The Punisher : mods, avant-poste, combat et Flame Beanie.",
+      keywords: "Road to Vostok, The Punisher, Flame Beanie, Metro Mod Loader, Event Hints",
+    },
+    addressBar: "road-to-vostok-the-punisher-guide",
+    detailsHtml: `<p>En vanilla, le taux naturel de spawn de The Punisher est extrêmement bas (environ 2,5 % à 3,33 %). Pour farmer la Flame Beanie exclusive, installez Metro Mod Loader et Event Hints pour viser ~100 %. Évitez le village et l&apos;école (CQB forcé et bandits locaux) ; privilégiez l&apos;avant-poste, lignes de vue ouvertes et rochers. Fusil d&apos;assaut fiable à plus de 70 % d&apos;état et beaucoup de kits médicaux. Dès les sirènes, couverture rocheuse, coupez sa salve de suppression, sécurisez le kill.
+
+  <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/o3Hwsuv4fk4" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Pas toute la vidéo ? Sauts directs :</p>
+  <ol>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=161&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">02:41</a> — Metro Mod Loader et Event Hints
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=347&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">05:47</a> — pourquoi l&apos;avant-poste est la meilleure carte
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=610&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">10:10</a> — démo combat et Flame Beanie
+  </li>
+  </ol>
+  <h2>Mécaniques de spawn et modding (~100 %)
+  </h2>
+  <p>Le moteur tire d&apos;abord un événement de carte (~10 %), puis dans le pool (airdrops, crashs, hélicos, The Punisher, etc.). Le taux réel est minuscule. Même spawné, il peut traverser la carte en fourgon POLIISI sans s&apos;arrêter. Il ne spawn jamais sur la Border Zone ni sur la carte permadeath Vostok.
+  </p>
+  <p>Modifiez la probabilité de fond : Metro Mod Loader, Mod Configuration Menu (MCM), Event Hints. Extrayez le loader à la racine du jeu en écrasant override.cfg ; sous AppData/Roaming/Road to Vostok créez mods et placez modloader.gd. Les .vmz MCM et Event Hints dans ce dossier mods. Au lancement, priorité MCM à -100. Dans MCM, % Chance Punisher à 100 et attente max ~60 s.
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  </p>
+  <h2>Meilleures cartes pour l&apos;affrontement
+  </h2>
+  <p>Une fois la mécanique maîtrisée, le terrain décide. L&apos;IA de Road to Vostok est mortelle ; le flanc = souvent fin de run.
+  </p>
+  <p>Privilégiez l&apos;avant-poste : carrefour central — le fourgon passe ; rochers, bords de pont et épaves en couverture dure ; très bonnes lignes de vue.
+  </p>
+  <p>Évitez village et école : CQB forcé et bandits — pris entre The Punisher et les scavengers.
+  </p>
+  <table>
+  <tbody>
+  <tr>
+  <td data-row="row-nxno8f">Carte
+  </td>
+  <td data-row="row-nxno8f">Avantages &amp; couverture
+  </td>
+  <td data-row="row-nxno8f">Inconvénients &amp; risques
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-ce7861">Avant-poste
+  </td>
+  <td data-row="row-ce7861">Très recommandé. Rochers et pont ; carrefour = trajectoire lisible.
+  </td>
+  <td data-row="row-ce7861">Ricochets au loin ; ne pas exposer le tronc.
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-kjwyyq">Village
+  </td>
+  <td data-row="row-kjwyyq">Non recommandé. Bâti dense.
+  </td>
+  <td data-row="row-kjwyyq">CQB + bandits ; fort risque de flanc.
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-2cmgse">École
+  </td>
+  <td data-row="row-2cmgse">Fortement déconseillé. Intérieurs étroits.
+  </td>
+  <td data-row="row-2cmgse">Menaces IA natives ; marge d&apos;erreur nulle au coin.
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  </p>
+  <h2>Trouver et vaincre au combat
+  </h2>
+  <p>Déployé à l&apos;avant-poste, écoutez. Avec Event Hints : notification en haut à gauche. Sans mod : sirènes de police au loin.
+  </p>
+  <p>Derrière un rocher tout de suite. Règle d&apos;or : ne jamais exposer le centre de masse. Il freine le fourgon POLIISI ; à la sortie, salve de suppression. Peek minimal, arme primaire &gt;70 % (ex. M4A1), rafales courtes. Touché : pas de sprint en plaine — couverture, medkit, saignement.
+  </p>
+  <p>Après le kill : loot la Flame Beanie sur le corps. Sinon le bonnet reste visible équipé.
+  </p>
+  <p>(Easter egg : sirènes coupées = bonne humeur. Ne tirez pas, montez sur le toit — il vous fait le tour de la carte.)
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  </p>
+  <h2>FAQ
+  </h2>
+  <p>Q : The Punisher sur toutes les cartes ?
+  </p>
+  <p>R : Non — jamais Border Zone ni Vostok permadeath.
+  </p>
+  <p>Q : Pourquoi ne sort-il pas du fourgon malgré 100 % en mod ?
+  </p>
+  <p>R : Il peut patrouiller sans s&apos;arrêter. Réessayez, attirez l&apos;attention depuis la couverture.
+  </p>
+  <p>Q : Arme imposée ?
+  </p>
+  <p>R : Non, mais primaire &gt;70 % — sinon bourrage au pire moment.
+  </p>`,
   }
 ]

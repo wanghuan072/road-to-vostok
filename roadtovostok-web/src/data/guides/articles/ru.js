@@ -410,7 +410,7 @@ export default [
       keywords: "Road to Vostok, перезарядка, RM-870, Мосин, магазин, V, хардкор",
     },
     addressBar: "reload-shotguns-bolt-actions-magazine-checks",
-    detailsHtml: `<h1>Перезарядка: болтовки и дробовик</h1>
+    detailsHtml: `
   <p><strong>Источник:</strong> сводка сообщества и тесты игроков (напр. MasterDeBunker) — не аркада; в панике забыть патронник = смерть.</p>
   <h2>Базовый цикл</h2>
   <p>Болтовки и ручной цикл из трёх шагов:</p>
@@ -459,7 +459,7 @@ export default [
       keywords: "road to vostok, кот, убежище, квест, бункер, survival",
     },
     addressBar: "cat-guide-find-care-shelter-companion",
-    detailsHtml: `<h1>Кот: полный гайд</h1>
+    detailsHtml: `
   <p><strong>Основа:</strong> многократные забеги сообщества; в жёстком survival «живое» стоит дорого — маршрут, лут и типичные ошибки.</p>
   <h2>Старт события «пропавший кот»</h2>
   <p>Пять переходов между картами (деревня → школа → форпост → школа → деревня) — вода и стамина на каждый прыжок.</p>
@@ -525,7 +525,7 @@ export default [
       keywords: "road to vostok shelter, убежища, палатка, карта, бункер, школа, кот, ключ от класса",
     },
     addressBar: "road-to-vostok-shelter-locations",
-    detailsHtml: `<h1>Полный гайд по убежищам Road to Vostok: локации и открытие</h1>
+    detailsHtml: `
   <p>В хардкорном мире <strong>Road to Vostok</strong> убежище — единственная по-настоящему безопасная зона для хранения добычи, восстановления статов и выживания. Знать координаты и механики каждого убежища нужно и новичку, и ветерану.</p>
   <p>Здесь собраны проверенные данные сообщества: все известные убежища, способы получить ключи и важные механики управления базой.</p>
   <h2>Классификация убежищ</h2>
@@ -572,5 +572,146 @@ export default [
   <li><strong>Без голода/жажды в shelter:</strong> удобно для сортировки и стеллажей без расхода пайков.</li>
   </ol>
   <p>(Больше гайдов: <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
+  },
+
+  {
+    id: 9,
+    head: `<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Road to Vostok: гайд по The Punisher — спавны, карты и бой",
+        "description": "Хардкор-гайд: как найти, заспавнить и убить The Punisher; моды Metro Mod Loader и Event Hints для почти 100% спавна, лучшая карта (Аванпост) и тактика для Flame Beanie.",
+        "uploadDate": "2024-05-20T08:00:00+08:00",
+        "duration": "PT13M0S",
+        "thumbnailUrl": "https://img.youtube.com/vi/o3Hwsuv4fk4/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/o3Hwsuv4fk4",
+        "hasPart": [
+          {
+            "@type": "Clip",
+            "name": "Моды для почти 100% спавна",
+            "startOffset": 161,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=161s"
+          },
+          {
+            "@type": "Clip",
+            "name": "Лучшая карта: Аванпост",
+            "startOffset": 347,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=347s"
+          },
+          {
+            "@type": "Clip",
+            "name": "Бой и лут Flame Beanie",
+            "startOffset": 610,
+            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=610s"
+          }
+        ]
+      }
+      </script>`,
+    title: "Road to Vostok: гайд по The Punisher — спавны, карты и бой",
+    iframeUrl: "https://www.youtube.com/embed/o3Hwsuv4fk4",
+    description: "Хардкор-гайд: как найти, заспавнить и убить The Punisher; моды Metro Mod Loader и Event Hints для почти 100% спавна, лучшая карта (Аванпост) и тактика для Flame Beanie.",
+    tags: ["Road to Vostok", "The Punisher"],
+    publishDate: "2026-04-20",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageAlt: "Road to Vostok The Punisher",
+    seo: {
+      title: "Road to Vostok: The Punisher — спавны, карты и бой",
+      description: "Как фармить The Punisher: моды, аванпост, бой и шапка Flame Beanie.",
+      keywords: "Road to Vostok, The Punisher, Flame Beanie, Metro Mod Loader, Event Hints",
+    },
+    addressBar: "road-to-vostok-the-punisher-guide",
+    detailsHtml: `<p>В ванильной механике Road to Vostok естественный шанс спавна The Punisher крайне низок (примерно 2,5–3,33 %). Чтобы стабильно фармить эксклюзивную Flame Beanie, новичкам лучше поставить Metro Mod Loader и Event Hints и вывести шанс почти на 100 %. Избегайте Деревни и Школы — там принудительный CQB и мешают местные бандиты; берите Аванпост с открытыми дистанциями и каменным укрытием. Штурмовая винтовка с состоянием выше 70 % и много аптечек. Услышали сирены — сразу за скалу, прервите его огонь на подавление после выхода из фургона и добейте.
+
+  <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/o3Hwsuv4fk4" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Сразу к ключевым моментам:</p>
+  <ol>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=161&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">02:41</a> — Metro Mod Loader и Event Hints
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=347&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">05:47</a> — почему Аванпост лучшая карта
+  </li>
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=610&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">10:10</a> — бой за скалой и лут шапки
+  </li>
+  </ol>
+  <h2>Спавн и моды (~100 %)
+  </h2>
+  <p>В базе движок сначала кидает событие карты (~10 %), потом тянет из пула (аирдропы, крушения, вертолёты, The Punisher и т. д.). Итоговый шанс мизерный. Даже при спавне он может проехать на полицейском фургоне сквозь карту без боя. На Border Zone и на карте пермасмерти Vostok он не появляется никогда.
+  </p>
+  <p>Чтобы не ждать, правьте фоновую вероятность. Нужны Metro Mod Loader, Mod Configuration Menu (MCM) и Event Hints. Распакуйте Loader в корень игры с заменой override.cfg; в AppData/Roaming/Road to Vostok создайте папку mods и положите modloader.gd. Файлы .vmz MCM и Event Hints — в эту же папку mods. В оверлее модов выставьте Priority MCM на -100. В MCM поднимите % Chance Punisher до 100 и уменьшите макс. ожидание до ~60 с.
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  </p>
+  <h2>Лучшие карты для боя
+  </h2>
+  <p>Зная механику, выбирайте поле боя. ИИ в Road to Vostok смертоносен; фланг — часто мгновенный конец забега.
+  </p>
+  <p>Оптимален Аванпост: центральный перекрёсток — фургон проедет в любом случае; вокруг камни, края моста и сгоревшие машины как жёсткое укрытие; дальние прострелы — видно фургон заранее.
+  </p>
+  <p>Не охотьтесь в Деревне и Школе: вынужденный CQB и местные бандиты — вас зажмут между The Punisher и мародёрами.
+  </p>
+  <table>
+  <tbody>
+  <tr>
+  <td data-row="row-nxno8f">Карта
+  </td>
+  <td data-row="row-nxno8f">Плюсы и укрытие
+  </td>
+  <td data-row="row-nxno8f">Минусы и риски
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-ce7861">Аванпост
+  </td>
+  <td data-row="row-ce7861">Рекомендуется. Камни и мост; центр дорог — предсказуемый маршрут.
+  </td>
+  <td data-row="row-ce7861">Рикошеты издалека; не светите корпус.
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-kjwyyq">Деревня
+  </td>
+  <td data-row="row-kjwyyq">Не рекомендуется. Плотная застройка.
+  </td>
+  <td data-row="row-kjwyyq">CQB и бандиты; высокий риск фланга.
+  </td>
+  </tr>
+  <tr>
+  <td data-row="row-2cmgse">Школа
+  </td>
+  <td data-row="row-2cmgse">Сильно не рекомендуется. Тесные помещения.
+  </td>
+  <td data-row="row-2cmgse">Угрозы ИИ карты; нулевой запас на углу.
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  </p>
+  <h2>Как найти и убить в бою
+  </h2>
+  <p>На аванпосте слушайте звук. С Event Hints — уведомление слева сверху. Без мода — далёкие сирены полиции.
+  </p>
+  <p>Сразу за камень. Правило: не показывайте центр массы. Он тормозит фургон POLIISI; при выходе — плотный огонь на подавление. Чуть выглядывайте, основное оружие &gt;70 % (например M4A1), короткими очередями. Получили пулю — не бегите по открытой местности; аптечка и кровотечение.
+  </p>
+  <p>После убийства заберите Flame Beanie. Не взяли — шапка останется на теле.
+  </p>
+  <p>(Пасхалка: сирены выключены — «хорошее настроение». Не стреляйте, залезьте на крышу фургона — он покатает вас по карте.)
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  </p>
+  <h2>FAQ
+  </h2>
+  <p>В: The Punisher на каждой карте?
+  </p>
+  <p>О: Нет. Никогда Border Zone и пермасмерть Vostok.
+  </p>
+  <p>В: Почему не выходит из фургона при 100 % в модах?
+  </p>
+  <p>О: Может просто проехать патруль. Пробуйте снова, привлекайте внимание из укрытия.
+  </p>
+  <p>В: Нужно ли конкретное оружие?
+  </p>
+  <p>О: Нет жёсткого лока, но основное &gt;70 % — иначе заклинит в бою.
+  </p>`,
   }
 ]
