@@ -68,19 +68,6 @@ body {
   line-height: 1.65;
   color: var(--color-text);
   background-color: var(--color-bg);
-  /* 原 App.vue shell-bg-photo：全站底图放在 body，与 windrose-web「无固定壳层」一致 */
-  background-image:
-    linear-gradient(
-      168deg,
-      color-mix(in srgb, var(--color-bg) 86%, transparent) 0%,
-      color-mix(in srgb, var(--color-bg) 72%, transparent) 38%,
-      color-mix(in srgb, #0a1520 78%, transparent) 100%
-    ),
-    url('/images/bg.webp');
-  background-size: cover;
-  background-position: center 22%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
   -webkit-font-smoothing: antialiased;
 }
 

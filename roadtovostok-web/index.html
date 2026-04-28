@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="/favicon.ico">
-  <!-- 全站背景图（body）；与 og 主图可不同；尽早发起请求（对齐 windrose-web：单条 bg.webp + fetchpriority=high） -->
+  <!-- 全站壳背景（App.vue shell-bg-photo）；尽早发起请求，减轻首帧等待（参考 windrose-web index 对 bg.webp 的 preload） -->
   <link rel="preload" href="/images/bg.webp" as="image" type="image/webp" fetchpriority="high" />
+  <!-- 首页 Hero 主图（LCP）；与 og 主图区分，避免仅依赖 CSS 后才请求 -->
+  <link rel="preload" href="/images/hero-img.webp" as="image" type="image/webp" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#070a10">
   <meta name="description"
@@ -73,14 +75,15 @@
 
         const gtagScript = document.createElement('script');
         gtagScript.async = true;
-        gtagScript.defer = true;
         gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-07JJBR1F1S';
+        gtagScript.onload = function () {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', 'G-07JJBR1F1S');
+        };
         document.head.appendChild(gtagScript);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-07JJBR1F1S');
       }, 3000);
     });
   </script>
