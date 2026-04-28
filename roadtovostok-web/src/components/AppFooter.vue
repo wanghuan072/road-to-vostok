@@ -75,7 +75,6 @@ const legal = computed(() => [
   border-top: 1px solid var(--color-border);
   background: linear-gradient(180deg, var(--color-panel) 0%, var(--color-surface) 45%);
   box-shadow: 0 -24px 48px rgba(0, 0, 0, 0.25);
-  contain: layout;
 }
 
 .app-footer::before {
