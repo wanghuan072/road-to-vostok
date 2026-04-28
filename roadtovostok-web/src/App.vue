@@ -55,7 +55,8 @@ const { onContentLinkClick } = useHtmlContentLinkNavigation()
   background-size: cover;
   background-position: center 22%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* fixed 在部分桌面/Lighthouse 下会放大 CLS 与合成成本；与移动策略统一为 scroll */
+  background-attachment: scroll;
 }
 
 .shell-bg-grid {
@@ -67,35 +68,33 @@ const { onContentLinkClick } = useHtmlContentLinkNavigation()
   mask-image: radial-gradient(ellipse 85% 75% at 50% 42%, black 20%, transparent 72%);
 }
 
-@media (max-width: 1023px) {
-  .shell-bg-photo {
-    background-attachment: scroll;
-    
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .shell-bg-photo {
-    background-attachment: scroll;
-  }
-}
-
 .shell-fx {
   position: fixed;
   inset: 0;
   z-index: 1;
   pointer-events: none;
   overflow: hidden;
+  /* 装饰层 paint 隔离，减轻极光动画带来的 CLS 计量 */
+  contain: paint;
 }
 
 .shell-fx-aurora {
   position: absolute;
-  inset: -20%;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   background:
-    radial-gradient(ellipse 55% 40% at 15% 18%, color-mix(in srgb, var(--color-ice) 11%, transparent), transparent 55%),
-    radial-gradient(ellipse 42% 34% at 88% 78%, color-mix(in srgb, var(--color-signal) 8%, transparent), transparent 52%),
-    radial-gradient(ellipse 48% 48% at 50% 100%, color-mix(in srgb, var(--color-ice-dim) 6%, transparent), transparent 48%);
+    radial-gradient(ellipse 62% 48% at 12% 16%, color-mix(in srgb, var(--color-ice) 12%, transparent), transparent 58%),
+    radial-gradient(ellipse 50% 40% at 90% 80%, color-mix(in srgb, var(--color-signal) 9%, transparent), transparent 55%),
+    radial-gradient(ellipse 55% 55% at 50% 100%, color-mix(in srgb, var(--color-ice-dim) 7%, transparent), transparent 52%);
+  transform: translate3d(0, 0, 0);
   animation: aurora-drift 28s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .shell-fx-aurora {
+    will-change: transform;
+  }
 }
 
 .shell-fx-vignette {
@@ -121,17 +120,18 @@ const { onContentLinkClick } = useHtmlContentLinkNavigation()
 
 @keyframes aurora-drift {
   0% {
-    transform: translate(0, 0) rotate(0deg);
+    transform: translate3d(0, 0, 0) rotate(0deg);
   }
 
   100% {
-    transform: translate(-2%, 1%) rotate(2deg);
+    transform: translate3d(-1.5%, 0.8%, 0) rotate(1.5deg);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .shell-fx-aurora {
     animation: none;
+    will-change: auto;
   }
 
   .shell-fx-grain {

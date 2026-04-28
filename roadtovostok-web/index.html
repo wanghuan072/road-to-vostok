@@ -4,14 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="/favicon.ico">
-  <link rel="preload" href="/images/hero-img.webp" as="image">
+  <!-- 全站壳背景（App.vue shell-bg-photo）；尽早发起请求，减轻首帧等待（参考 windrose-web index 对 bg.webp 的 preload） -->
+  <link rel="preload" href="/images/bg.webp" as="image" type="image/webp" fetchpriority="high" />
+  <!-- 首页 Hero 主图（LCP）；与 og 主图区分，避免仅依赖 CSS 后才请求 -->
+  <link rel="preload" href="/images/hero-img.webp" as="image" type="image/webp" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070a10">
   <meta name="description"
     content="Road To Vostok survival guide and database: Steam demo and Early Access, maps, tasks, weapons, medical, saves, and roadmap. Cross-check with your installed build.">
   <meta name="keywords"
     content="Road To Vostok, survival guide, game database, Steam, Early Access, maps, tasks, weapons, Area 05, Border Zone, Vostok">
   <meta name="author" content="Road To Vostok Guide">
   <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="googlebot" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://roadtovostok.org/">
   <!-- 无 JS 爬虫可发现多语言首页；有 JS 时 applyRouteSeo 会移除并按当前路径重写 -->
   <link rel="alternate" hreflang="en" href="https://roadtovostok.org/" data-seo-hreflang="true">
@@ -36,11 +41,19 @@
     content="Road To Vostok survival guide: maps, tasks, weapons, loadouts, strategy articles, and Early Access roadmap context.">
   <meta name="twitter:image" content="https://roadtovostok.org/images/logo.webp">
   <title>Road To Vostok Guide</title>
+  <!-- 广告临时关闭：与 scheduleAdSlotInit.js 中 ADS_DISABLED 一起改回；恢复广告时取消下行注释 -->
+  <!-- <script>window.googletag = window.googletag || { cmd: [] };</script> -->
 
-  <!-- 第三方广告/统计：window load 后再延迟 2s，与 Vue 侧 scheduleAdSlotInit 对齐 -->
+  <!-- 统计仍延迟加载；GAM/AdSense 已注释便于对比 PSI 是否受广告影响 -->
   <script>
     window.addEventListener('load', function () {
       setTimeout(function () {
+        /* 广告临时关闭（PSI 对比）——恢复时取消整段块注释，并恢复上一行 googletag stub
+        googletag.cmd.push(function () {
+          googletag.defineSlot('/23346398271/anchor', [320, 50], 'div-gpt-ad-1775617033282-0').addService(googletag.pubads());
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+        });
         const gptScript = document.createElement('script');
         gptScript.async = true;
         gptScript.crossOrigin = 'anonymous';
@@ -58,6 +71,7 @@
         adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8041655671892982';
         adsScript.crossOrigin = 'anonymous';
         document.head.appendChild(adsScript);
+        */
 
         const gtagScript = document.createElement('script');
         gtagScript.async = true;
@@ -70,19 +84,7 @@
           gtag('config', 'G-07JJBR1F1S');
         };
         document.head.appendChild(gtagScript);
-      }, 2000);
-    });
-  </script>
-
-  <!-- ========== GAM 广告位 1（独立一段，与后台「第一段」head 代码一致，不与位 2 合并）========== -->
-  <script>
-    // 在 GPT 脚本到达前即可 cmd.push；库加载后会执行队列
-    window.googletag = window.googletag || { cmd: [] };
-    googletag.cmd.push(function () {
-      // 位 1：/23346398271/anchor 320×50，页面内容器 id 须为 div-gpt-ad-1775617033282-0
-      googletag.defineSlot('/23346398271/anchor', [320, 50], 'div-gpt-ad-1775617033282-0').addService(googletag.pubads());
-      googletag.pubads().enableSingleRequest();
-      googletag.enableServices();
+      }, 3000);
     });
   </script>
 
