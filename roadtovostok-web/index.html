@@ -41,14 +41,12 @@
     content="Road To Vostok survival guide: maps, tasks, weapons, loadouts, strategy articles, and Early Access roadmap context.">
   <meta name="twitter:image" content="https://roadtovostok.org/images/logo.webp">
   <title>Road To Vostok Guide</title>
-  <!-- 广告临时关闭：与 scheduleAdSlotInit.js 中 ADS_DISABLED 一起改回；恢复广告时取消下行注释 -->
-  <!-- <script>window.googletag = window.googletag || { cmd: [] };</script> -->
+  <script>window.googletag = window.googletag || { cmd: [] };</script>
 
-  <!-- 统计仍延迟加载；GAM/AdSense 已注释便于对比 PSI 是否受广告影响 -->
+  <!-- 第三方广告 + 统计：window load 后延迟 3s，与 Vue scheduleAdSlotInit 对齐 -->
   <script>
     window.addEventListener('load', function () {
       setTimeout(function () {
-        /* 广告临时关闭（PSI 对比）——恢复时取消整段块注释，并恢复上一行 googletag stub
         googletag.cmd.push(function () {
           googletag.defineSlot('/23346398271/anchor', [320, 50], 'div-gpt-ad-1775617033282-0').addService(googletag.pubads());
           googletag.pubads().enableSingleRequest();
@@ -71,7 +69,6 @@
         adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8041655671892982';
         adsScript.crossOrigin = 'anonymous';
         document.head.appendChild(adsScript);
-        */
 
         const gtagScript = document.createElement('script');
         gtagScript.async = true;
