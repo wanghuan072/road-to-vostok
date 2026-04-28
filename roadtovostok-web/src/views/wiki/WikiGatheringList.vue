@@ -76,6 +76,7 @@
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { getGatheringRows } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 
@@ -109,17 +110,19 @@ function pushGatheringAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountGatheringGptDisplay()
-  } catch (e) {
-    console.error('Gathering GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushGatheringAdx()
-    } catch (e) {
-      console.error('Gathering ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountGatheringGptDisplay()
+      } catch (e) {
+        console.error('Gathering GAM failed:', e)
+      }
+      try {
+        pushGatheringAdx()
+      } catch (e) {
+        console.error('Gathering ADX failed:', e)
+      }
+    })
   })
 })
 </script>

@@ -97,6 +97,7 @@
 import { ref, onMounted, nextTick, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import PageRail from '../components/PageRail.vue'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const { getLocalizedPath } = useLocalizedPath()
@@ -128,17 +129,19 @@ function pushTasksAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountTasksGptDisplay()
-  } catch (e) {
-    console.error('Tasks GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushTasksAdx()
-    } catch (e) {
-      console.error('Tasks ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountTasksGptDisplay()
+      } catch (e) {
+        console.error('Tasks GAM failed:', e)
+      }
+      try {
+        pushTasksAdx()
+      } catch (e) {
+        console.error('Tasks ADX failed:', e)
+      }
+    })
   })
 })
 

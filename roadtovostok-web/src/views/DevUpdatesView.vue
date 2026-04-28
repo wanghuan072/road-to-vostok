@@ -205,6 +205,7 @@
 
 <script setup>
 import { ref, onMounted, nextTick, computed } from 'vue'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useI18n } from 'vue-i18n'
 import PageRail from '../components/PageRail.vue'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
@@ -238,17 +239,19 @@ function pushDevUpdatesAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountDevUpdatesGptDisplay()
-  } catch (e) {
-    console.error('DevUpdates GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushDevUpdatesAdx()
-    } catch (e) {
-      console.error('DevUpdates ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountDevUpdatesGptDisplay()
+      } catch (e) {
+        console.error('DevUpdates GAM failed:', e)
+      }
+      try {
+        pushDevUpdatesAdx()
+      } catch (e) {
+        console.error('DevUpdates ADX failed:', e)
+      }
+    })
   })
 })
 

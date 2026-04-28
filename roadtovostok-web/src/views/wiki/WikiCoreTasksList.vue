@@ -78,6 +78,7 @@
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { getCoreTaskRows } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 
@@ -111,17 +112,19 @@ function pushCoreTasksAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountCoreTasksGptDisplay()
-  } catch (e) {
-    console.error('CoreTasks GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushCoreTasksAdx()
-    } catch (e) {
-      console.error('CoreTasks ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountCoreTasksGptDisplay()
+      } catch (e) {
+        console.error('CoreTasks GAM failed:', e)
+      }
+      try {
+        pushCoreTasksAdx()
+      } catch (e) {
+        console.error('CoreTasks ADX failed:', e)
+      }
+    })
   })
 })
 </script>

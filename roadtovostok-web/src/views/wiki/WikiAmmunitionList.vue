@@ -237,6 +237,7 @@
 
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useI18n } from 'vue-i18n'
 import { ammunitionFilters, getAmmunitionRows } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
@@ -311,17 +312,19 @@ function pushAmmoAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountAmmoGptDisplay()
-  } catch (e) {
-    console.error('Ammo GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushAmmoAdx()
-    } catch (e) {
-      console.error('Ammo ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountAmmoGptDisplay()
+      } catch (e) {
+        console.error('Ammo GAM failed:', e)
+      }
+      try {
+        pushAmmoAdx()
+      } catch (e) {
+        console.error('Ammo ADX failed:', e)
+      }
+    })
   })
 })
 </script>

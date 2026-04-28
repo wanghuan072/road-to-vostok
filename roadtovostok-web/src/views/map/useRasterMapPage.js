@@ -3,6 +3,7 @@ import { reactive, ref, computed, watch, nextTick, onMounted, onUnmounted } from
 import { useI18n } from 'vue-i18n'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import './map-interactive.css'
 import { buildMapPinHtml } from '../../data/map/pinIcons.js'
 
 /** 侧栏默认勾选并展开的大类（Map → `poi`）；Fire 与其余大类 kind 默认关闭，由用户自行勾选。 */
@@ -35,7 +36,7 @@ const DEFAULT_ON_CATEGORY_IDS = new Set(['poi'])
  *   markerCluster：启用 Leaflet 点聚合（仅对传入 bundle 的页面开启；村庄图试用）。
  */
 export function useRasterMapPage(bundle, options = {}) {
-  const { coordHud: coordHudRef, markerCluster: markerClusterOpt } = options
+  const { coordHud: coordHudRef, markerCluster: _markerClusterOpt } = options
   const {
     imageUrl,
     pins,

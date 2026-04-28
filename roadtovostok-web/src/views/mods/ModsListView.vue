@@ -213,6 +213,7 @@
 
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useI18n } from 'vue-i18n'
 import { getModArticles } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
@@ -247,17 +248,19 @@ function pushModsListAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountModsListGptDisplay()
-  } catch (e) {
-    console.error('ModsList GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushModsListAdx()
-    } catch (e) {
-      console.error('ModsList ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountModsListGptDisplay()
+      } catch (e) {
+        console.error('ModsList GAM failed:', e)
+      }
+      try {
+        pushModsListAdx()
+      } catch (e) {
+        console.error('ModsList ADX failed:', e)
+      }
+    })
   })
 })
 

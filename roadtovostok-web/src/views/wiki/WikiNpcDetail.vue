@@ -208,6 +208,7 @@
 
 <script setup>
 import { computed, watch, ref, onMounted, nextTick } from 'vue'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getNpcList } from '../../data/localeData.js'
@@ -243,17 +244,19 @@ function pushNpcDetailAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountNpcDetailGptDisplay()
-  } catch (e) {
-    console.error('NpcDetail GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushNpcDetailAdx()
-    } catch (e) {
-      console.error('NpcDetail ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountNpcDetailGptDisplay()
+      } catch (e) {
+        console.error('NpcDetail GAM failed:', e)
+      }
+      try {
+        pushNpcDetailAdx()
+      } catch (e) {
+        console.error('NpcDetail ADX failed:', e)
+      }
+    })
   })
 })
 

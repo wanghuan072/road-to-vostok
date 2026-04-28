@@ -131,6 +131,7 @@
 import { ref, onMounted, nextTick, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import PageRail from '../components/PageRail.vue'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const { getLocalizedPath } = useLocalizedPath()
@@ -162,17 +163,19 @@ function pushGettingStartedAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountGettingStartedGptDisplay()
-  } catch (e) {
-    console.error('GettingStarted GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushGettingStartedAdx()
-    } catch (e) {
-      console.error('GettingStarted ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountGettingStartedGptDisplay()
+      } catch (e) {
+        console.error('GettingStarted GAM failed:', e)
+      }
+      try {
+        pushGettingStartedAdx()
+      } catch (e) {
+        console.error('GettingStarted ADX failed:', e)
+      }
+    })
   })
 })
 

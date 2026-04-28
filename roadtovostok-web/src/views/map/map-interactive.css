@@ -1,4 +1,4 @@
-/* Shared map UI (global): MapView + MapRasterM01–M07 — imported from main.css */
+/* Shared map UI：由 MapView / useRasterMapPage（M01–M07）按需引入，勿放入 main.css 以免全站打包 */
 /* 地图页 hero：底边条相对整段 section；标题/导语保留原 ch 限制（内页非地图见 page-hero.css） */
 .map-page .page-hero-section::after {
   content: '';

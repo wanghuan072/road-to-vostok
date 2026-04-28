@@ -229,6 +229,7 @@
 
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useI18n } from 'vue-i18n'
 import { weaponCategories, getWeaponsData } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
@@ -262,17 +263,19 @@ function pushWeaponsAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountWeaponsGptDisplay()
-  } catch (e) {
-    console.error('Weapons GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushWeaponsAdx()
-    } catch (e) {
-      console.error('Weapons ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountWeaponsGptDisplay()
+      } catch (e) {
+        console.error('Weapons GAM failed:', e)
+      }
+      try {
+        pushWeaponsAdx()
+      } catch (e) {
+        console.error('Weapons ADX failed:', e)
+      }
+    })
   })
 })
 

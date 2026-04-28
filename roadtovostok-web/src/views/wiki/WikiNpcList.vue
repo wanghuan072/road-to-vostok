@@ -68,6 +68,7 @@
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { getNpcList } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 
@@ -101,17 +102,19 @@ function pushNpcListAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountNpcListGptDisplay()
-  } catch (e) {
-    console.error('NpcList GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushNpcListAdx()
-    } catch (e) {
-      console.error('NpcList ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountNpcListGptDisplay()
+      } catch (e) {
+        console.error('NpcList GAM failed:', e)
+      }
+      try {
+        pushNpcListAdx()
+      } catch (e) {
+        console.error('NpcList ADX failed:', e)
+      }
+    })
   })
 })
 </script>

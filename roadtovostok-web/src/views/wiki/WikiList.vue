@@ -108,6 +108,7 @@
 <script setup>
 import { ref, onMounted, nextTick } from 'vue'
 import WikiLootTable from '@/components/WikiLootTable.vue'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 
 const { getLocalizedPath } = useLocalizedPath()
@@ -138,17 +139,19 @@ function pushWikiHubAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountWikiHubGptDisplay()
-  } catch (e) {
-    console.error('WikiHub GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushWikiHubAdx()
-    } catch (e) {
-      console.error('WikiHub ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountWikiHubGptDisplay()
+      } catch (e) {
+        console.error('WikiHub GAM failed:', e)
+      }
+      try {
+        pushWikiHubAdx()
+      } catch (e) {
+        console.error('WikiHub ADX failed:', e)
+      }
+    })
   })
 })
 </script>

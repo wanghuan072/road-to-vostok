@@ -126,6 +126,7 @@
 
 <script setup>
 import { computed, watch, ref, onMounted, nextTick } from 'vue'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getGuideArticles } from '../../data/localeData.js'
@@ -164,17 +165,19 @@ function pushGuideArticleAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountGuideArticleGptDisplay()
-  } catch (e) {
-    console.error('GuideArticle GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushGuideArticleAdx()
-    } catch (e) {
-      console.error('GuideArticle ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountGuideArticleGptDisplay()
+      } catch (e) {
+        console.error('GuideArticle GAM failed:', e)
+      }
+      try {
+        pushGuideArticleAdx()
+      } catch (e) {
+        console.error('GuideArticle ADX failed:', e)
+      }
+    })
   })
 })
 

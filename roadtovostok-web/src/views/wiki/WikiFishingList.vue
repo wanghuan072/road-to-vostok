@@ -76,6 +76,7 @@
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { getFishingRows } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 
@@ -109,17 +110,19 @@ function pushFishingAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountFishingGptDisplay()
-  } catch (e) {
-    console.error('Fishing GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushFishingAdx()
-    } catch (e) {
-      console.error('Fishing ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountFishingGptDisplay()
+      } catch (e) {
+        console.error('Fishing GAM failed:', e)
+      }
+      try {
+        pushFishingAdx()
+      } catch (e) {
+        console.error('Fishing ADX failed:', e)
+      }
+    })
   })
 })
 </script>

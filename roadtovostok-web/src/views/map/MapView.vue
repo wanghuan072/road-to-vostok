@@ -387,6 +387,8 @@ import { ref, computed, watch, nextTick, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import './map-interactive.css'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { getMapPoints } from '../../data/localeData.js'
 import { buildMapPinHtml } from '../../data/map/pinIcons.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
@@ -676,17 +678,19 @@ function setupMap() {
 
 onMounted(() => {
   setupMap()
-  try {
-    mountMapPageGptDisplay()
-  } catch (e) {
-    console.error('MapPage GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushMapPageAdx()
-    } catch (e) {
-      console.error('MapPage ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountMapPageGptDisplay()
+      } catch (e) {
+        console.error('MapPage GAM failed:', e)
+      }
+      try {
+        pushMapPageAdx()
+      } catch (e) {
+        console.error('MapPage ADX failed:', e)
+      }
+    })
   })
 })
 

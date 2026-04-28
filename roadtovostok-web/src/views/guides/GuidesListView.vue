@@ -81,6 +81,7 @@
 
 <script setup>
 import { computed, ref, onMounted, nextTick } from 'vue'
+import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useI18n } from 'vue-i18n'
 import { getGuideArticles } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
@@ -115,17 +116,19 @@ function pushGuidesListAdx() {
 }
 
 onMounted(() => {
-  try {
-    mountGuidesListGptDisplay()
-  } catch (e) {
-    console.error('GuidesList GAM failed:', e)
-  }
-  void nextTick(() => {
-    try {
-      pushGuidesListAdx()
-    } catch (e) {
-      console.error('GuidesList ADX failed:', e)
-    }
+  scheduleAdSlotInit(() => {
+    void nextTick(() => {
+      try {
+        mountGuidesListGptDisplay()
+      } catch (e) {
+        console.error('GuidesList GAM failed:', e)
+      }
+      try {
+        pushGuidesListAdx()
+      } catch (e) {
+        console.error('GuidesList ADX failed:', e)
+      }
+    })
   })
 })
 
