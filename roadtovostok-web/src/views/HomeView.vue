@@ -540,14 +540,38 @@
             <div class="devlog-video">
               <span class="devlog-video-scan" aria-hidden="true" />
               <iframe
+                v-if="devlogVideoEmbedOpen"
                 :title="$t('homePage.devlog.iframeTitle')"
-                src="https://www.youtube-nocookie.com/embed/4q6ZuNdGvus"
+                :src="devlogIframeSrc"
                 width="560"
                 height="315"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
                 loading="lazy"
+                class="devlog-video__embed"
               />
+              <button
+                v-else
+                type="button"
+                class="devlog-video-facade"
+                :aria-label="$t('homePage.devlog.playVideoAria')"
+                @click="devlogVideoEmbedOpen = true"
+              >
+                <img
+                  src="/images/poster/Road_to_Vostok_Screenshot_01.jpg"
+                  alt=""
+                  width="560"
+                  height="315"
+                  class="devlog-video-facade__poster"
+                  decoding="async"
+                  loading="lazy"
+                />
+                <span class="devlog-video-facade__mask" aria-hidden="true" />
+                <svg class="devlog-video-facade__play" viewBox="0 0 80 80" aria-hidden="true">
+                  <circle class="devlog-video-facade__play-bg" cx="40" cy="40" r="36" />
+                  <path class="devlog-video-facade__play-icon" d="M32 26L32 54L54 40Z" />
+                </svg>
+              </button>
             </div>
             <div class="devlog-summary">
               <h3>{{ $t('homePage.devlog.summaryHeading') }}</h3>
@@ -649,7 +673,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, nextTick } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { useDeviceDetection } from '../utils/useDeviceDetection'
 import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
@@ -658,6 +682,14 @@ const { getLocalizedPath } = useLocalizedPath()
 
 const homeRoot = ref(null)
 let revealObserver = null
+
+/** Devlog：首屏不加载 YouTube iframe，点击蒙层后再嵌入（减 TBT / 首包请求） */
+const DEVLOG_YOUTUBE_VIDEO_ID = '4q6ZuNdGvus'
+const devlogVideoEmbedOpen = ref(false)
+const devlogIframeSrc = computed(
+  () =>
+    `https://www.youtube-nocookie.com/embed/${DEVLOG_YOUTUBE_VIDEO_ID}?autoplay=1&rel=0`,
+)
 
 const { isMobile } = useDeviceDetection()
 
@@ -1921,7 +1953,7 @@ onUnmounted(() => {
 .devlog-video-scan {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
   background: repeating-linear-gradient(
     0deg,
@@ -1940,13 +1972,78 @@ onUnmounted(() => {
   }
 }
 
-.devlog-video iframe {
+.devlog-video__embed {
   position: absolute;
   inset: 0;
+  z-index: 3;
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.devlog-video-facade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  cursor: pointer;
+  background: #050508;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+}
+
+.devlog-video-facade:focus-visible {
+  outline: 2px solid var(--color-ice);
+  outline-offset: 2px;
+}
+
+.devlog-video-facade__poster {
+  position: absolute;
+  inset: 0;
   z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.devlog-video-facade__mask {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-bg) 40%, transparent) 0%,
+    color-mix(in srgb, #000 58%, transparent) 100%
+  );
+}
+
+.devlog-video-facade__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: clamp(3.25rem, 9vw, 4.5rem);
+  height: clamp(3.25rem, 9vw, 4.5rem);
+  translate: -50% -50%;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 22px rgba(0, 0, 0, 0.7));
+}
+
+.devlog-video-facade__play-bg {
+  fill: color-mix(in srgb, var(--color-bg) 82%, transparent);
+  stroke: var(--color-primary-soft);
+  stroke-width: 1.35;
+}
+
+.devlog-video-facade__play-icon {
+  fill: var(--color-primary-soft);
 }
 
 .devlog-summary {
