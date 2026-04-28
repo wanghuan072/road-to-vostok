@@ -47,11 +47,18 @@
   box-sizing: border-box;
 }
 
+#app {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 html {
   min-height: 100%;
   scroll-behavior: smooth;
   /* 与 body 同色底，避免 overscroll 露白（windrose-web main.css） */
   background-color: var(--color-bg);
+  /* 竖条滚动条出现时预留槽位，避免整页横向挤压导致页脚重排（桌面 CLS） */
+  scrollbar-gutter: stable;
 }
 
 @media (prefers-reduced-motion: reduce) {

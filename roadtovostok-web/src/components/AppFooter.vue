@@ -10,8 +10,9 @@
               width="36"
               height="36"
               alt=""
-              loading="lazy"
+              loading="eager"
               decoding="async"
+              fetchpriority="low"
             >
             <p class="footer-title">{{ $t('site.brandName') }}</p>
           </div>
@@ -74,6 +75,7 @@ const legal = computed(() => [
   border-top: 1px solid var(--color-border);
   background: linear-gradient(180deg, var(--color-panel) 0%, var(--color-surface) 45%);
   box-shadow: 0 -24px 48px rgba(0, 0, 0, 0.25);
+  contain: layout;
 }
 
 .app-footer::before {
@@ -83,6 +85,7 @@ const legal = computed(() => [
   left: 0;
   right: 0;
   height: 2px;
+  /* 静态顶线，避免 background-position 动画在部分审计里计入布局不稳定 */
   background: linear-gradient(
     90deg,
     transparent,
@@ -91,26 +94,7 @@ const legal = computed(() => [
     var(--color-ice-dim),
     transparent
   );
-  background-size: 200% 100%;
-  animation: footer-glow 8s linear infinite;
   opacity: 0.65;
-}
-
-@keyframes footer-glow {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  100% {
-    background-position: 200% 50%;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .app-footer::before {
-    animation: none;
-    background-size: 100% 100%;
-  }
 }
 
 .app-footer-content {

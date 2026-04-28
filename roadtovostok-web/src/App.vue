@@ -31,6 +31,7 @@ const { onContentLinkClick } = useHtmlContentLinkNavigation()
 .app-shell {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   isolation: isolate;

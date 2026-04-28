@@ -769,26 +769,19 @@ onUnmounted(() => {
   position: relative;
 }
 
-/* 滚动进入：探险「发现」感 */
+/* 滚动进入：仅淡入，避免 translate/blur 改变溢出与滚动高度导致页脚 CLS */
 .reveal-on-scroll {
   opacity: 0;
-  transform: translateY(28px) scale(0.99);
-  filter: blur(6px);
-  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1), filter 0.65s ease;
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal-on-scroll.is-revealed {
   opacity: 1;
-  transform: none;
-  filter: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .reveal-on-scroll {
     opacity: 1;
-    transform: none;
-    filter: none;
     transition: none;
   }
 }
