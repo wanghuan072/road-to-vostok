@@ -341,7 +341,7 @@ export default [
     description: "完整武器演示：稀有度、耐久与修理、传奇枪与穿透等级——靶场数据向生存配装。",
     tags: ["Road to Vostok 武器", "武器表", "修理", "Meta"],
     publishDate: "2026-03-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageUrl: "/images/guides/guides05.webp",
     imageAlt: "Road to Vostok 武器",
     seo: {
       title: "Road to Vostok 武器攻略：数据与配装",
@@ -359,7 +359,7 @@ export default [
   </ol>
   <h2>武器表与稀有度</h2>
   <p>在 Vostok，认枪等于保命。演示面板含重量、口径、价值、伤害等硬数值，并引入明确的<strong>稀有度</strong>：从普通（如马卡洛夫）到罕见（AKM）、稀有（MP7、SVD）直至传奇。</p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199602/cms-uploads/cms-1775199602075-445545533.webp" alt="武器耐久（Condition）界面" width="50%"></p>
+  <p><img src="/images/guides/guides05-01.webp" alt="武器耐久（Condition）界面" width="50%"></p>
   <h2>维护：耐久与修理</h2>
   <p>新手常搜「怎么修枪」。注意右侧武器 UI 的绿色指标——<strong>Condition: 100%</strong>。视频未展示工作台，但该参数证实存在严格磨损：下降后可能出现卡壳、精度暴跌等惩罚。</p>
   <h2>强度分析：什么是「最强武器」？</h2>
@@ -368,7 +368,7 @@ export default [
   <li><strong>KP-31：</strong>传奇；穿透仅 1 级，但大弹鼓高射速，近战压制极强。</li>
   <li><strong>M78：</strong>传奇；基础伤害 50，演示中穿透 4 级。面对重甲与 SVD、莫辛同为首选。</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199629/cms-uploads/cms-1775199629391-201412167.webp" alt="莫辛-纳甘步枪靶场演示" width="50%"></p>
+  <p><img src="/images/guides/guides05-02.webp" alt="莫辛-纳甘步枪靶场演示" width="50%"></p>
   <h2>演示武器简表（穿透 / 稀有度）</h2>
   <table>
   <tbody>
@@ -387,7 +387,7 @@ export default [
   <tr><td>M78</td><td>传奇</td><td>50</td><td>4 级</td></tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199649/cms-uploads/cms-1775199649008-580842117.webp" alt="MK18 等枪械靶场画面" width="50%"></p>
+  <p><img src="/images/guides/guides05-03.webp" alt="MK18 等枪械靶场画面" width="50%"></p>
   <h3>FAQ</h3>
   <p><strong>Q1：有官方强度榜吗？</strong></p>
   <p>A：游戏内置客观稀有度。演示中 Common / Uncommon / Rare / Legendary 可视为分层，M78 与 KP-31 为确认的传奇掉落。</p>
@@ -627,7 +627,7 @@ export default [
     description: "硬核指南：如何寻找、刷新并击杀 The Punisher；含 Metro Mod Loader 与 Event Hints 模组实现约 100% 刷新、推荐前哨地图与夺取火焰针织帽的战术。",
     tags: ["Road to Vostok", "The Punisher", "行刑者"],
     publishDate: "2026-04-20",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageUrl: "/images/guides/guides09.webp",
     imageAlt: "Road to Vostok 行刑者攻略",
     seo: {
       title: "Road to Vostok「行刑者」攻略：刷新、地图与战斗",
@@ -653,7 +653,7 @@ export default [
   </p>
   <p>与其干等，修改后台概率是最省时的做法。需要三个组件：Metro Mod Loader、Mod Configuration Menu（MCM）与 Event Hints。先将 Metro Mod Loader 解压到游戏根目录并覆盖 override.cfg；同时在系统路径 AppData/Roaming/Road to Vostok 下新建 mods 文件夹，放入 modloader.gd。再把 MCM 与 Event Hints 的 .vmz 文件丢进该 mods 文件夹。启动游戏后，在模组管理界面将 MCM 的 Priority 设为 -100。进入游戏设置打开 MCM，将「% Chance Punisher」拉到 100，并把最长等待时间降到约 60 秒，即可稳定刷出遭遇。
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  <p><img src="/images/guides/guides09-01.webp" alt="road-to-vostok-punisher-mods" width="50%">
   </p>
   <h2>最佳接战地图
   </h2>
@@ -699,7 +699,7 @@ export default [
   </tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  <p><img src="/images/guides/guides09-02.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
   </p>
   <h2>如何接战并击杀
   </h2>
@@ -735,7 +735,7 @@ export default [
     description: "在找 Road to Vostok 控制台命令？本文说明为何原版没有控制台，以及如何借助模组与解包 Godot 资源来调整移速、饥渴等参数。",
     tags: ["Road to Vostok 控制台", "Road to Vostok 模组"],
     publishDate: "2026-04-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageUrl: "/images/guides/guides10.webp",
     imageAlt: "Road to Vostok 模组调节移动速度",
     seo: {
       title: "Road to Vostok 控制台与模组指南：如何修改数值",
@@ -758,7 +758,7 @@ export default [
   </h2>
   <p>最安全、最简单、玩家用得最多的是通过 <a href="https://roadtovostok.org/mods">Road to Vostok 模组</a> 调整。有人嫌模组管理器「臃肿」，但社区已把流程做得很顺，上手大约只需 5～10 分钟。
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok 模组无限生命类示例" width="50%">
+  <p><img src="/images/guides/guides10-01.webp" alt="Road to Vostok 模组无限生命类示例" width="50%">
   </p>
   <h3>如何配置模组（Metro Mod Loader 与 MCM）
   </h3>
@@ -788,7 +788,7 @@ export default [
   <li>此时可用 Notepad++ 或其它编辑器打开原始 GDScript，查找并手动修改目标数值，无需模组加载器。
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok 模组补充弹药类示例" width="50%">
+  <p><img src="/images/guides/guides10-02.webp" alt="Road to Vostok 模组补充弹药类示例" width="50%">
   </p>
   <h2>第三方工具备选
   </h2>

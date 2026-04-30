@@ -340,7 +340,7 @@ export default [
     description: "Обзор ~20 стволов: редкость, износ и ремонт, легендарки и уровни пробоя — данные с полигона для лодаута.",
     tags: ["Road to Vostok оружие", "таблица", "ремонт", "meta"],
     publishDate: "2026-03-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageUrl: "/images/guides/guides05.webp",
     imageAlt: "Road to Vostok — оружие",
     seo: {
       title: "Оружие Road to Vostok: цифры и билды",
@@ -358,7 +358,7 @@ export default [
   </ol>
   <h2>Таблица и редкость</h2>
   <p>В Vostok знание стволов — часть выживания. Есть явная <strong>редкость</strong>: от обычного (Макаров) до необычного, редкого и легендарного.</p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199602/cms-uploads/cms-1775199602075-445545533.webp" alt="Состояние оружия (Condition)" width="50%"></p>
+  <p><img src="/images/guides/guides05-01.webp" alt="Состояние оружия (Condition)" width="50%"></p>
   <h2>Обслуживание</h2>
   <p>Ищут «как чинить оружие»: смотрите зелёный индикатор <strong>Condition: 100%</strong>. Износ ведёт к осечкам и просадке точности — нужны детали/ремкомплекты.</p>
   <h2>Что «сильнее»?</h2>
@@ -367,7 +367,7 @@ export default [
   <li><strong>KP-31:</strong> легендарный; пробой 1, но барабан и скорострельность давят вблизи.</li>
   <li><strong>M78:</strong> легендарный; урон 50 и пробой 4 в демонстрации — против тяжёлой брони вместе с SVD и Мосинкой.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199629/cms-uploads/cms-1775199629391-201412167.webp" alt="Мосин на полигоне" width="50%"></p>
+  <p><img src="/images/guides/guides05-02.webp" alt="Мосин на полигоне" width="50%"></p>
   <h2>Краткая таблица</h2>
   <table>
   <tbody>
@@ -386,7 +386,7 @@ export default [
   <tr><td>M78</td><td>Легендарный</td><td>50</td><td>4</td></tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199649/cms-uploads/cms-1775199649008-580842117.webp" alt="MK18 и др. на полигоне" width="50%"></p>
+  <p><img src="/images/guides/guides05-03.webp" alt="MK18 и др. на полигоне" width="50%"></p>
   <h3>FAQ</h3>
   <p><strong>Официальный тир-лист?</strong></p>
   <p>Есть объективная редкость в игре; Common / Uncommon / Rare / Legendary из демо — ориентир, M78 и KP-31 — подтверждённые легендарки.</p>
@@ -613,7 +613,7 @@ export default [
     description: "Хардкор-гайд: как найти, заспавнить и убить The Punisher; моды Metro Mod Loader и Event Hints для почти 100% спавна, лучшая карта (Аванпост) и тактика для Flame Beanie.",
     tags: ["Road to Vostok", "The Punisher"],
     publishDate: "2026-04-20",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageUrl: "/images/guides/guides09.webp",
     imageAlt: "Road to Vostok The Punisher",
     seo: {
       title: "Road to Vostok: The Punisher — спавны, карты и бой",
@@ -639,7 +639,7 @@ export default [
   </p>
   <p>Чтобы не ждать, правьте фоновую вероятность. Нужны Metro Mod Loader, Mod Configuration Menu (MCM) и Event Hints. Распакуйте Loader в корень игры с заменой override.cfg; в AppData/Roaming/Road to Vostok создайте папку mods и положите modloader.gd. Файлы .vmz MCM и Event Hints — в эту же папку mods. В оверлее модов выставьте Priority MCM на -100. В MCM поднимите % Chance Punisher до 100 и уменьшите макс. ожидание до ~60 с.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  <p><img src="/images/guides/guides09-01.webp" alt="road-to-vostok-punisher-mods" width="50%">
   </p>
   <h2>Лучшие карты для боя
   </h2>
@@ -685,7 +685,7 @@ export default [
   </tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  <p><img src="/images/guides/guides09-02.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
   </p>
   <h2>Как найти и убить в бою
   </h2>
@@ -697,7 +697,7 @@ export default [
   </p>
   <p>(Пасхалка: сирены выключены — «хорошее настроение». Не стреляйте, залезьте на крышу фургона — он покатает вас по карте.)
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  <p><img src="/images/guides/guides09-03.webp" alt="road-to-vostok-punisher" width="50%">
   </p>
   <h2>FAQ
   </h2>
@@ -721,7 +721,7 @@ export default [
     description: "Ищете консольные команды Road to Vostok? Почему их нет в базе и как менять скорость или голод через моды и распаковку .pck.",
     tags: ["Road to Vostok console commands", "Road to Vostok mods"],
     publishDate: "2026-04-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageUrl: "/images/guides/guides10.webp",
     imageAlt: "Road to Vostok мод скорость бега",
     seo: {
       title: "Road to Vostok: консоль и моддинг — как менять значения",
@@ -744,7 +744,7 @@ export default [
   </h2>
   <p>Самый безопасный и популярный способ — <a href="https://roadtovostok.org/mods">моды Road to Vostok</a>. Кому-то не нравятся «раздутые» менеджеры модов, но процесс уже отлажен; установка занимает около 5–10 минут.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok мод бесконечное здоровье" width="50%">
+  <p><img src="/images/guides/guides10-01.webp" alt="Road to Vostok мод бесконечное здоровье" width="50%">
   </p>
   <h3>Как настроить моды (Metro Mod Loader и MCM)
   </h3>
@@ -774,7 +774,7 @@ export default [
   <li>Дальше открывайте сырые .gd в Notepad++ (или другом редакторе), ищите значения и правите вручную без лоадера.
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok мод пополнение патронов" width="50%">
+  <p><img src="/images/guides/guides10-02.webp" alt="Road to Vostok мод пополнение патронов" width="50%">
   </p>
   <h2>Сторонние программы
   </h2>

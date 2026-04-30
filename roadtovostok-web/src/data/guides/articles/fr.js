@@ -340,7 +340,7 @@ export default [
     description: "Environ 20 canons : rareté, usure et réparation, légendaires et pénétration — données depuis la zone d’entraînement jusqu’au loadout.",
     tags: ["Road to Vostok armes", "tableau", "réparation", "meta"],
     publishDate: "2026-03-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageUrl: "/images/guides/guides05.webp",
     imageAlt: "Road to Vostok — armes",
     seo: {
       title: "Armes dans Road to Vostok : chiffres et builds",
@@ -358,7 +358,7 @@ export default [
   </ol>
   <h2>Tableau et rareté</h2>
   <p>À Vostok, connaître les canons fait partie du survival. Il y a une <strong>rareté</strong> claire : commun (Makarov) à inhabituel, rare et légendaire.</p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199602/cms-uploads/cms-1775199602075-445545533.webp" alt="État de l’arme (Condition)" width="50%"></p>
+  <p><img src="/images/guides/guides05-01.webp" alt="État de l’arme (Condition)" width="50%"></p>
   <h2>Entretien</h2>
   <p>Recherche « comment réparer une arme » : voyez l’indicateur vert <strong>Condition: 100%</strong>. L’usure mène à pannes et perte de précision — pièces / kits nécessaires.</p>
   <h2>Qu’est-ce qui est le « plus fort » ?</h2>
@@ -367,7 +367,7 @@ export default [
   <li><strong>KP-31 :</strong> légendaire ; pénétration 1, mais tambour et cadence pèsent au contact.</li>
   <li><strong>M78 :</strong> légendaire ; dégâts 50 et pénétration 4 en démo — contre blindage lourd avec SVD et Mosin.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199629/cms-uploads/cms-1775199629391-201412167.webp" alt="Mosin zone d’entraînement" width="50%"></p>
+  <p><img src="/images/guides/guides05-02.webp" alt="Mosin zone d’entraînement" width="50%"></p>
   <h2>Tableau court</h2>
   <table>
   <tbody>
@@ -386,7 +386,7 @@ export default [
   <tr><td>M78</td><td>Légendaire</td><td>50</td><td>4</td></tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199649/cms-uploads/cms-1775199649008-580842117.webp" alt="MK18 etc. zone d’entraînement" width="50%"></p>
+  <p><img src="/images/guides/guides05-03.webp" alt="MK18 etc. zone d’entraînement" width="50%"></p>
   <h3>FAQ</h3>
   <p><strong>Tier list officielle ?</strong></p>
   <p>Le jeu a une rareté objective ; Common / Uncommon / Rare / Legendary en démo — référence, M78 et KP-31 légendaires confirmés.</p>
@@ -613,7 +613,7 @@ export default [
     description: "Guide hardcore : trouver, faire apparaître et tuer The Punisher ; mods Metro Mod Loader et Event Hints pour ~100 % de spawn, meilleure carte (avant-poste) et tactique pour la Flame Beanie.",
     tags: ["Road to Vostok", "The Punisher"],
     publishDate: "2026-04-20",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageUrl: "/images/guides/guides09.webp",
     imageAlt: "Road to Vostok guide The Punisher",
     seo: {
       title: "Road to Vostok — guide The Punisher : spawns, cartes et combat",
@@ -639,7 +639,7 @@ export default [
   </p>
   <p>Modifiez la probabilité de fond : Metro Mod Loader, Mod Configuration Menu (MCM), Event Hints. Extrayez le loader à la racine du jeu en écrasant override.cfg ; sous AppData/Roaming/Road to Vostok créez mods et placez modloader.gd. Les .vmz MCM et Event Hints dans ce dossier mods. Au lancement, priorité MCM à -100. Dans MCM, % Chance Punisher à 100 et attente max ~60 s.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  <p><img src="/images/guides/guides09-01.webp" alt="road-to-vostok-punisher-mods" width="50%">
   </p>
   <h2>Meilleures cartes pour l&apos;affrontement
   </h2>
@@ -685,7 +685,7 @@ export default [
   </tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  <p><img src="/images/guides/guides09-02.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
   </p>
   <h2>Trouver et vaincre au combat
   </h2>
@@ -697,7 +697,7 @@ export default [
   </p>
   <p>(Easter egg : sirènes coupées = bonne humeur. Ne tirez pas, montez sur le toit — il vous fait le tour de la carte.)
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  <p><img src="/images/guides/guides09-03.webp" alt="road-to-vostok-punisher" width="50%">
   </p>
   <h2>FAQ
   </h2>
@@ -721,7 +721,7 @@ export default [
     description: "Vous cherchez des commandes console Road to Vostok ? Pourquoi elles n&apos;existent pas et comment régler vitesse ou faim via mods ou dépaquetage du .pck.",
     tags: ["Road to Vostok console commands", "Road to Vostok mods"],
     publishDate: "2026-04-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageUrl: "/images/guides/guides10.webp",
     imageAlt: "Road to Vostok mod vitesse de course",
     seo: {
       title: "Road to Vostok — console et modding : ajuster les valeurs",
@@ -744,7 +744,7 @@ export default [
   </h2>
   <p>Le moyen le plus sûr et populaire : les <a href="https://roadtovostok.org/mods">mods Road to Vostok</a>. Certains n&apos;aiment pas le « bloat » des gestionnaires — le flux reste léger ; installation ~5 à 10 minutes.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok mod santé illimitée" width="50%">
+  <p><img src="/images/guides/guides10-01.webp" alt="Road to Vostok mod santé illimitée" width="50%">
   </p>
   <h3>Configurer les mods (Metro Mod Loader &amp; MCM)
   </h3>
@@ -774,7 +774,7 @@ export default [
   <li>Ouvrir les GDScript bruts dans Notepad++, trouver les valeurs et tweaker sans loader.
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok mod recharger munitions" width="50%">
+  <p><img src="/images/guides/guides10-02.webp" alt="Road to Vostok mod recharger munitions" width="50%">
   </p>
   <h2>Outils tiers
   </h2>

@@ -338,7 +338,7 @@ export default [
     description: "Komplette Waffenübersicht: bestes Gear, Zustand &amp; Reparatur, Legendaries und Durchschlags-Levels — alles am Schießstand erklärt.",
     tags: ["Road to Vostok Waffen", "Liste", "Reparatur", "Meta"],
     publishDate: "2026-03-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageUrl: "/images/guides/guides05.webp",
     imageAlt: "Road to Vostok Waffen",
     seo: {
       title: "Road to Vostok Waffen: Liste, Stats &amp; beste Loadouts",
@@ -356,7 +356,7 @@ export default [
   </ol>
   <h2>Waffenliste &amp; Seltenheitsstufen</h2>
   <p>Die Demo zeigt strikte Zahlen (Gewicht, Kaliber, Wert, Schaden) und eine <strong>Seltenheit</strong> vom gängigen Common (Makarov) über Uncommon (AKM), Rare (MP7, SVD) bis <strong>Legendary</strong>.</p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199602/cms-uploads/cms-1775199602075-445545533.webp" alt="Waffen-Zustand (Condition) in der Benutzeroberfläche" width="50%"></p>
+  <p><img src="/images/guides/guides05-01.webp" alt="Waffen-Zustand (Condition) in der Benutzeroberfläche" width="50%"></p>
   <h2>Wartung: Condition &amp; Reparatur</h2>
   <p>Im UI steht pro Waffe ein grüner Kernwert — <strong>Condition: 100 %</strong>. Die Demo zeigt keinen Werkbank-Screen, aber der Parameter belegt Verschleiß: sinkt er, drohen Ladehemmungen und Streuung — typisch Hardcore.</p>
   <h2>Meta: beste Waffen?</h2>
@@ -365,7 +365,7 @@ export default [
   <li><strong>KP-31</strong> (Legendary): nur Penetration Stufe 1, aber hohe Feuerrate und Trommelmag — Nahkampf-Suppression.</li>
   <li><strong>M78</strong> (Legendary): Basisschaden 50, <strong>Penetration Stufe 4</strong> — Top gegen schwere Rüstung, neben SVD und Mosin.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199629/cms-uploads/cms-1775199629391-201412167.webp" alt="Mosin-Nagant Repetierbüchse am Schießstand" width="50%"></p>
+  <p><img src="/images/guides/guides05-02.webp" alt="Mosin-Nagant Repetierbüchse am Schießstand" width="50%"></p>
   <h2>Übersicht nach Penetration (Demo)</h2>
   <table>
   <tbody>
@@ -419,7 +419,7 @@ export default [
   </tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199649/cms-uploads/cms-1775199649008-580842117.webp" alt="MK18 und weitere Gewehre — Schießstand-Szene" width="50%"></p>
+  <p><img src="/images/guides/guides05-03.webp" alt="MK18 und weitere Gewehre — Schießstand-Szene" width="50%"></p>
   <h3>FAQ</h3>
   <p><strong>F1: Offizielle Tier-Liste?</strong></p>
   <p><strong>A:</strong> Das Spiel nutzt die Seltenheitslabels der Demo als objektive Stufen — M78 und KP-31 sind dort klar Legendary.</p>
@@ -674,7 +674,7 @@ export default [
     description: "Hardcore-Leitfaden: The Punisher finden, spawnen und besiegen — inkl. Modding für ~100 % Spawnrate, beste Karte (Außenposten) und Taktik für die Flame Beanie.",
     tags: ["Road to Vostok", "The Punisher"],
     publishDate: "2026-04-20",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageUrl: "/images/guides/guides09.webp",
     imageAlt: "Road to Vostok The Punisher Guide",
     seo: {
       title: "Road to Vostok The Punisher-Guide: Spawns, Karten &amp; Kampf",
@@ -700,7 +700,7 @@ export default [
   </p>
   <p>Statt zu warten: Hintergrundwahrscheinlichkeit anpassen. Du brauchst Metro Mod Loader, Mod Configuration Menu (MCM) und Event Hints. Loader ins Spielverzeichnis entpacken und override.cfg überschreiben; unter AppData/Roaming/Road to Vostok einen mods-Ordner anlegen und modloader.gd hineinlegen. Die .vmz-Dateien von MCM und Event Hints in denselben mods-Ordner. Beim Start MCM-Priority im Overlay auf -100 setzen. Im MCM-Menü % Chance Punisher auf 100 und Max-Wartezeit auf ~60 s — dann erscheint er zuverlässig.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  <p><img src="/images/guides/guides09-01.webp" alt="road-to-vostok-punisher-mods" width="50%">
   </p>
   <h2>Beste Karten für den Fight
   </h2>
@@ -746,7 +746,7 @@ export default [
   </tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  <p><img src="/images/guides/guides09-02.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
   </p>
   <h2>Kampf: finden &amp; besiegen
   </h2>
@@ -758,7 +758,7 @@ export default [
   </p>
   <p>(Easter Egg: Sirenen aus = gute Laune. Schieß nicht, spring aufs Dach — er fährt dich quer über die Karte.)
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  <p><img src="/images/guides/guides09-03.webp" alt="road-to-vostok-punisher" width="50%">
   </p>
   <h2>FAQ
   </h2>
@@ -782,7 +782,7 @@ export default [
     description: "Du suchst Road-to-Vostok-Konsolenbefehle? So ist es, dass es keine gibt — und wie du mit Mods oder Engine-Entpacken Bewegung oder Hunger anpasst.",
     tags: ["Road to Vostok console commands", "Road to Vostok mods"],
     publishDate: "2026-04-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageUrl: "/images/guides/guides10.webp",
     imageAlt: "Road to Vostok Mod Laufgeschwindigkeit",
     seo: {
       title: "Road to Vostok: Konsolenbefehle &amp; Modding — Werte anpassen",
@@ -805,7 +805,7 @@ export default [
   </h2>
   <p>Am sichersten und populärsten passt du über <a href="https://roadtovostok.org/mods">Road-to-Vostok-Mods</a> an. Manche mögen Mod-Manager-Bloat nicht — der Prozess ist trotzdem schlank; Setup dauert etwa 5–10 Minuten.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok Mod unbegrenzte Gesundheit" width="50%">
+  <p><img src="/images/guides/guides10-01.webp" alt="Road to Vostok Mod unbegrenzte Gesundheit" width="50%">
   </p>
   <h3>Mods einrichten (Metro Mod Loader &amp; MCM)
   </h3>
@@ -835,7 +835,7 @@ export default [
   <li>Jetzt kannst du rohe GDScript-Dateien in Notepad++ öffnen, Werte suchen und ohne Loader tweaken.
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok Mod Munition auffüllen" width="50%">
+  <p><img src="/images/guides/guides10-02.webp" alt="Road to Vostok Mod Munition auffüllen" width="50%">
   </p>
   <h2>Drittanbieter-Tools
   </h2>

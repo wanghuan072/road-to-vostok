@@ -369,7 +369,7 @@ export default [
     description: "Comprehensive Road to Vostok weapons list . Discover the best weapons, learn about the condition and repair mechanics, and explore all legendary firearms.",
     tags: ["Road to Vostok Weapons", "road to vostok weapons list", "road to vostok repair weapons", "road to vostok best weapons", "road to vostok all weapons"],
     publishDate: "2026-03-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageUrl: "/images/guides/guides05.webp",
     imageAlt: "road to vostok weapons",
     seo: {
       title: "Road to Vostok Weapons Guide: All Guns, Stats & Best Loadouts",
@@ -394,7 +394,7 @@ export default [
   </h2>
   <p>In the hardcore survival environment of Vostok, knowing your gear is the first step to staying alive as a fresh spawn. According to the gameplay demo panels, the weapon system features extremely rigorous numerical stats (including Weight, Caliber, Value, and Damage). Most importantly, the game introduces an explicit gear rarity mechanic. The loot pool scales from standard Common items (like the Makarov) to Uncommon (AKM), Rare (MP7, SVD), and all the way up to the highly coveted Legendary tier.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199602/cms-uploads/cms-1775199602075-445545533.webp" alt="road to vostok weapons Condition" width="50%">
+  <p><img src="/images/guides/guides05-01.webp" alt="road to vostok weapons Condition" width="50%">
   </p>
   <h2>Weapon Maintenance Mechanics: Understanding Condition and How to Repair Weapons
   </h2>
@@ -410,7 +410,7 @@ export default [
   <li>M78: Also possessing a Legendary tag, this rifle's base damage spikes to 50, and it features the highest armor piercing stat shown in the demo: Penetration: Level 4. When facing heavily armored enemies, the M78, alongside the Level 4 SVD and Mosin, will be the undisputed optimal choice.
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199629/cms-uploads/cms-1775199629391-201412167.webp" alt="road to vostok weapons Mosin" width="50%">
+  <p><img src="/images/guides/guides05-02.webp" alt="road to vostok weapons Mosin" width="50%">
   </p>
   <h2>The Ultimate Arsenal: A Look at Road to Vostok All Weapons
   </h2>
@@ -500,7 +500,7 @@ export default [
   </tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199649/cms-uploads/cms-1775199649008-580842117.webp" alt="road to vostok weapons MK18" width="50%">
+  <p><img src="/images/guides/guides05-03.webp" alt="road to vostok weapons MK18" width="50%">
   </p>
   <h3>Frequently Asked Questions (FAQ)
   </h3>
@@ -876,7 +876,7 @@ export default [
     description: "A definitive hardcore guide on how to find, spawn, and kill The Punisher in Road to Vostok. Includes modding instructions for a 100% punisher spawn rate, the best map locations like Outpost, and combat tactics to secure the Flame Beanie.",
     tags: [],
     publishDate: "2026-04-20",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageUrl: "/images/guides/guides09.webp",
     imageAlt: "road to vostok the punisher guide",
     seo: {
       title: "Road to Vostok The Punisher Guide: Spawns, Locations & Combat",
@@ -902,7 +902,7 @@ export default [
   </p>
   <p>To stop wasting time waiting, modifying the background probability is the most efficient tactic. You will need three files: Metro Mod Loader, Mod Configuration Menu (MCM), and the Event Hints mod. First, extract the Metro Mod Loader into your game root folder and overwrite the override.cfg file. Simultaneously, navigate to AppData/Roaming/Road to Vostok on your system, create a mods folder, and drop modloader.gd inside. Next, drop the .vmz files for MCM and Event Hints directly into that newly created mods folder. Upon launching the game, ensure MCM's Priority is set to -100 in the mod manager overlay. Enter the game settings, open the MCM menu, crank the % Chance Punisher up to 100, and reduce the Max wait time to 60 seconds. This guarantees his appearance.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  <p><img src="/images/guides/guides09-01.webp" alt="road-to-vostok-punisher-mods" width="50%">
   </p>
   <h2>Best Map Locations for the Encounter
   </h2>
@@ -948,7 +948,7 @@ export default [
   </tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  <p><img src="/images/guides/guides09-02.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
   </p>
   <h2>How to Find &amp; Defeat Him in Combat
   </h2>
@@ -960,7 +960,7 @@ export default [
   </p>
   <p>(Fun tactical easter egg: If he spawns and his sirens are off, it means he is in a "good mood". As long as you don't shoot him, you can jump onto the roof of his van, and he will literally give you a ride home around the map!)
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  <p><img src="/images/guides/guides09-03.webp" alt="road-to-vostok-punisher" width="50%">
   </p>
   <h2>FAQ
   </h2>
@@ -984,7 +984,7 @@ export default [
     description: "Looking for Road to Vostok console commands? Learn why they don't exist and how to tweak movement speed or hunger using Road to Vostok mods and engine unpacking.",
     tags: ["Road to Vostok console commands","Road to Vostok mods"],
     publishDate: "2026-04-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageUrl: "/images/guides/guides10.webp",
     imageAlt: "road to vostok mod set run speed",
     seo: {
       title: "Road to Vostok Console Commands & Modding Guide: How to Tweak Values",
@@ -1007,7 +1007,7 @@ export default [
   </h2>
   <p>The safest, easiest, and most popular way to adjust your game is by using <a href="https://roadtovostok.org/mods">road to vostok mods</a>. While some players dislike the "bloat" of mod managers, the community has made the process incredibly streamlined. Setting it up takes roughly 5 to 10 minutes.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok mod unlimited health" width="50%">
+  <p><img src="/images/guides/guides10-01.webp" alt="Road to Vostok mod unlimited health" width="50%">
   </p>
   <h3>How to Set Up Mods (Metro Mod Loader &amp; MCM)
   </h3>
@@ -1037,7 +1037,7 @@ export default [
   <li>At this point, you can use Notepad++ (or any code editor) to open the raw GDScript files, find the values you are looking for, and do your tweaks manually without needing a mod loader.
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok mod refill ammo" width="50%">
+  <p><img src="/images/guides/guides10-02.webp" alt="Road to Vostok mod refill ammo" width="50%">
   </p>
   <h2>Alternative Third-Party Tools
   </h2>

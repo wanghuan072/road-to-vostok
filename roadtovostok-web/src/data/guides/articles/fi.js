@@ -340,7 +340,7 @@ export default [
     description: "Noin 20 piipun katsaus: harvinaisuus, kuluma ja korjaus, legendaarit ja läpäisytasot — data harjoitusalueelta loadoutille.",
     tags: ["Road to Vostok aseet", "taulukko", "korjaus", "meta"],
     publishDate: "2026-03-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1774839128/cms-uploads/cms-1774839128469-38628608.webp",
+    imageUrl: "/images/guides/guides05.webp",
     imageAlt: "Road to Vostok — aseet",
     seo: {
       title: "Aseet Road to Vostokissa: luvut ja buildit",
@@ -358,7 +358,7 @@ export default [
   </ol>
   <h2>Taulukko ja harvinaisuus</h2>
   <p>Vostokissa piippujen tuntemus on osa selviytymistä. On selkeä <strong>harvinaisuus</strong>: tavallisesta (Makarov) epätavalliseen, harvinaiseen ja legendaariseen.</p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199602/cms-uploads/cms-1775199602075-445545533.webp" alt="Aseen kunto (Condition)" width="50%"></p>
+  <p><img src="/images/guides/guides05-01.webp" alt="Aseen kunto (Condition)" width="50%"></p>
   <h2>Huolto</h2>
   <p>Etsitään «miten korjata ase»: katso vihreä <strong>Condition: 100%</strong> -indikaattori. Kuluma johtaa vikoihin ja tarkkuuden laskuun — tarvitaan osia/korjaussarjoja.</p>
   <h2>Mikä on «vahvin»?</h2>
@@ -367,7 +367,7 @@ export default [
   <li><strong>KP-31:</strong> legendaarinen; läpäisy 1, mutta rumpu ja tulitaajuus painavat lähietäisyydellä.</li>
   <li><strong>M78:</strong> legendaarinen; vamma 50 ja läpäisy 4 demossa — raskasta panssaria vastaan SVD:n ja Mosinin kanssa.</li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199629/cms-uploads/cms-1775199629391-201412167.webp" alt="Mosin harjoitusalueella" width="50%"></p>
+  <p><img src="/images/guides/guides05-02.webp" alt="Mosin harjoitusalueella" width="50%"></p>
   <h2>Lyhyt taulukko</h2>
   <table>
   <tbody>
@@ -386,7 +386,7 @@ export default [
   <tr><td>M78</td><td>Legendaarinen</td><td>50</td><td>4</td></tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1775199649/cms-uploads/cms-1775199649008-580842117.webp" alt="MK18 jne. harjoitusalueella" width="50%"></p>
+  <p><img src="/images/guides/guides05-03.webp" alt="MK18 jne. harjoitusalueella" width="50%"></p>
   <h3>FAQ</h3>
   <p><strong>Virallinen tasoituslista?</strong></p>
   <p>Pelissä on objektiivinen harvinaisuus; Common / Uncommon / Rare / Legendary demosta — viite, M78 ja KP-31 vahvistetut legendaarit.</p>
@@ -613,7 +613,7 @@ export default [
     description: "Hardcore-opas: The Punisherin löytäminen, spawnit ja tappaminen — Metro Mod Loader ja Event Hints lähes 100 %:n spawniin, paras kartta (etuvartio) ja Flame Beanie -taktiikka.",
     tags: ["Road to Vostok", "The Punisher"],
     publishDate: "2026-04-20",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678283/cms-uploads/cms-1776678283280-26853670.jpg",
+    imageUrl: "/images/guides/guides09.webp",
     imageAlt: "Road to Vostok The Punisher -opas",
     seo: {
       title: "Road to Vostok The Punisher -opas: spawnit, kartat ja taistelu",
@@ -639,7 +639,7 @@ export default [
   </p>
   <p>Tarvitset Metro Mod Loaderin, Mod Configuration Menun (MCM) ja Event Hints -modin. Pura Loader pelin juureen ja korvaa override.cfg; AppData/Roaming/Road to Vostok -kansioon mods-kansio ja modloader.gd. MCM:n ja Event Hints -tiedostot (.vmz) samaan mods-kansioon. Käynnistyksessä aseta MCM:n Priority -100:ksi. MCM-valikossa % Chance Punisher 100:een ja max odotus ~60 s.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678873/cms-uploads/cms-1776678873048-831293736.webp" alt="road-to-vostok-punisher-mods" width="50%">
+  <p><img src="/images/guides/guides09-01.webp" alt="road-to-vostok-punisher-mods" width="50%">
   </p>
   <h2>Parhaat kartat kohtaamiseen
   </h2>
@@ -685,7 +685,7 @@ export default [
   </tr>
   </tbody>
   </table>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678903/cms-uploads/cms-1776678903321-772448247.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
+  <p><img src="/images/guides/guides09-02.webp" alt="road-to-vostok-punisher-guide 2.png" width="50%">
   </p>
   <h2>Miten löydät ja voitat
   </h2>
@@ -697,7 +697,7 @@ export default [
   </p>
   <p>(Easter egg: sireenit pois = hyvä tuuli. Älä ammu, hyppää katolle — hän ajaa sinut kierrokselle.)
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1776678939/cms-uploads/cms-1776678939033-206562775.webp" alt="road-to-vostok-punisher" width="50%">
+  <p><img src="/images/guides/guides09-03.webp" alt="road-to-vostok-punisher" width="50%">
   </p>
   <h2>UKK
   </h2>
@@ -721,7 +721,7 @@ export default [
     description: "Etsitkö Road to Vostok -konsolikomentoja? Miksi niitä ei ole ja miten säätää nopeutta tai nälkää modeilla tai .pck-purulla.",
     tags: ["Road to Vostok console commands", "Road to Vostok mods"],
     publishDate: "2026-04-30",
-    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageUrl: "/images/guides/guides10.webp",
     imageAlt: "Road to Vostok mod juoksunopeus",
     seo: {
       title: "Road to Vostok -konsolikomennot ja modaus: arvojen säätö",
@@ -744,7 +744,7 @@ export default [
   </h2>
   <p>Turvallisin ja yleisin tapa on käyttää <a href="https://roadtovostok.org/mods">Road to Vostok -modeja</a>. Jotkut inhoavat mod-managerin „pullistumaa”, mutta prosessi on kevyt; asennus ~5–10 min.
   </p>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok mod rajaton terveys" width="50%">
+  <p><img src="/images/guides/guides10-01.webp" alt="Road to Vostok mod rajaton terveys" width="50%">
   </p>
   <h3>Modien asetus (Metro Mod Loader &amp; MCM)
   </h3>
@@ -774,7 +774,7 @@ export default [
   <li>Avaa raaka GDScript Notepad++:ssa (tai muulla), etsi arvot ja säädä ilman loaderia.
   </li>
   </ol>
-  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok mod täytä patruunat" width="50%">
+  <p><img src="/images/guides/guides10-02.webp" alt="Road to Vostok mod täytä patruunat" width="50%">
   </p>
   <h2>Kolmannen osapuolen työkalut
   </h2>
