@@ -976,6 +976,77 @@ export default [
   </p>
   <p>A: There are no specific gun locks, but the strict objective standard is: your primary weapon's condition must be above 70%. Do not bring a scavenged gun with 50% durability, or it will jam during the firefight, turning you into a sitting duck.
   </p>`,
+  },
+
+  {
+    id: 10,
+    title: "Road to Vostok Console Commands & Modding Guide: How to Tweak Values",
+    description: "Looking for Road to Vostok console commands? Learn why they don't exist and how to tweak movement speed or hunger using Road to Vostok mods and engine unpacking.",
+    tags: ["Road to Vostok console commands","Road to Vostok mods"],
+    publishDate: "2026-04-30",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageAlt: "road to vostok mod set run speed",
+    seo: {
+      title: "Road to Vostok Console Commands & Modding Guide: How to Tweak Values",
+      description: "Looking for Road to Vostok console commands? Learn why they don't exist and how to tweak movement speed or hunger using Road to Vostok mods and engine unpacking.",
+      keywords: "road to vostok console commands, road to vostok engine, road to vostok mods, tweak game values, unpack pck, godot modding"
+    },
+    addressBar: "road-to-vostok-console-commands-and-modding",
+    detailsHtml: `
+  <p>If you are tired of the default hunger drain or movement speed and are frantically searching for road to vostok console commands to tweak your game, you need to know the hard truth: there are no built-in console commands or simple text configuration files (.xml or .ini) available in the base game.
+  </p>
+  <p>Unlike older titles (like classic S.T.A.L.K.E.R. games) where you could just open a notepad and change a value from 1 to 1.2, altering this hardcore survival game requires a slightly different approach. This guide covers exactly how to modify your game using community tools and engine workarounds based on verified player methods.
+  </p>
+  <h2>Understanding the Road to Vostok Engine Limitations
+  </h2>
+  <p>To understand why a simple text edit doesn't work, you must look at the road to vostok engine. The game is built on the Godot engine. All of the game's resources and code (written in GDScript, which is somewhat similar to Python) are compiled into a single .pck (or .pkg) file.
+  </p>
+  <p>Because everything is packed inside the RTV.pck file, you cannot simply open a game folder and start editing values with Notepad++. To make changes, you have two primary routes: using mod loaders or manually decompiling the engine files.
+  </p>
+  <h2>The Recommended Way: Road to Vostok Mods
+  </h2>
+  <p>The safest, easiest, and most popular way to adjust your game is by using <a href="https://roadtovostok.org/mods">road to vostok mods</a>. While some players dislike the "bloat" of mod managers, the community has made the process incredibly streamlined. Setting it up takes roughly 5 to 10 minutes.
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok mod unlimited health" width="50%">
+  </p>
+  <h3>How to Set Up Mods (Metro Mod Loader &amp; MCM)
+  </h3>
+  <p>You don't need heavy software like Mod Organizer 2 (MO2) for everything. The community relies on lightweight injectors:
+  </p>
+  <ol>
+  <li>Metro Mod Loader: This is the current standard. Installation is as simple as putting one file into your Appdata folder and another into the main game folder.
+  </li>
+  <li>Mod Configuration Menu (MCM): Once the mod loader is installed, utilizing MCM allows you to configure specific changes (like increasing speed by 20% or slowing thirst/hunger) directly in-game, quickly and painlessly.
+  </li>
+  </ol>
+  <p>Note: If you just want a simple speed modifier, there are already pre-made mods available on platforms like Modworkshop that do exactly that.
+  </p>
+  <h2>The Hardcore Way: Manual Engine Decompiling
+  </h2>
+  <p>If you absolutely refuse to use mod loaders and want to do manual modding using a text/code editor, you have to bypass the packed engine files. Here is the technical workaround shared by the community:
+  </p>
+  <ol>
+  <li>Locate the RTV.pck file in the exact directory where your RTV.exe is located.
+  </li>
+  <li>Unpack the RTV.pck file into that same game folder.
+  </li>
+  <li>Rename the original packed file from RTV.pck to RTV.pck.bak. By removing the primary .pck file, the game executable will now try to load resources directly from the unpacked directory.
+  </li>
+  <li>Decompile the scripts using a Godot decompiling tool and delete the compiled .gdc files.
+  </li>
+  <li>At this point, you can use Notepad++ (or any code editor) to open the raw GDScript files, find the values you are looking for, and do your tweaks manually without needing a mod loader.
+  </li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok mod refill ammo" width="50%">
+  </p>
+  <h2>Alternative Third-Party Tools
+  </h2>
+  <p>If you don't want to deal with mod loaders or decompiling Godot code, another option mentioned by the community is using third-party trainers like WeMod (formerly Wand). However, these tools are usually limited to simple "on or off" toggles (e.g., infinite ammo, unlimited jump height, or adjusting traders). They do not allow you to fine-tune specific rates (like a 20% speed increase) and can severely kill the immersion of a hardcore survival experience.
+  </p>
+  <h2>Stay Updated on Vostok Modding
+  </h2>
+  <p>Modding techniques and game versions change rapidly. For the most up-to-date modding tools, detailed tutorials, and the best interactive maps for your loot runs, we highly recommend visiting our main hub at <a href="http://roadtovostok.org/">http://roadtovostok.org/</a>. We are dedicated to providing the most comprehensive and convenient resources for the Road to Vostok community.
+  </p>`,
   }
 
 ]

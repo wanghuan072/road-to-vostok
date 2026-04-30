@@ -713,5 +713,76 @@ export default [
   </p>
   <p>V: Ei, mutta pääase &gt;70 % — muuten jumi taistelussa.
   </p>`,
+  },
+
+  {
+    id: 10,
+    title: "Road to Vostok -konsolikomennot ja modaus: arvojen säätö",
+    description: "Etsitkö Road to Vostok -konsolikomentoja? Miksi niitä ei ole ja miten säätää nopeutta tai nälkää modeilla tai .pck-purulla.",
+    tags: ["Road to Vostok console commands", "Road to Vostok mods"],
+    publishDate: "2026-04-30",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageAlt: "Road to Vostok mod juoksunopeus",
+    seo: {
+      title: "Road to Vostok -konsolikomennot ja modaus: arvojen säätö",
+      description: "Ei sisäänrakennettua konsolia — modit (Metro Mod Loader, MCM) tai RTV.pck:n purku hienosäätöön.",
+      keywords: "road to vostok console commands, road to vostok engine, road to vostok mods, tweak values, unpack pck, godot modding",
+    },
+    addressBar: "road-to-vostok-console-commands-and-modding",
+    detailsHtml: `
+  <p>Jos kyllästyit nälkäkulutuksen tai liikenopeuden oletuksiin ja etsit kiihkeästi Road to Vostok -konsolikomentoja, totuus on kova: pelissä ei ole sisäänrakennettua konsolia eikä yksinkertaisia tekstitiedostoja (.xml tai .ini).
+  </p>
+  <p>Toisin kuin vanhemmissa peleissä (esim. klassinen S.T.A.L.K.E.R.), joissa muutos 1→1,2 onnistui muistikirjalla, tämä hardcore-survival vaatii eri lähestymistavan. Opas kertoo yhteisön vahvistamilla tavoilla: työkalut ja koneen kiertäminen.
+  </p>
+  <h2>Miksi Road to Vostok -moottori estää helpon editoinnin
+  </h2>
+  <p>Ymmärtääksesi, miksi pelkkä tekstimuutos ei toimi: peli on Godotilla. Resurssit ja GDScript-koodi (Pythonin kaltainen) on pakattu yhteen .pck- (tai .pkg-)tiedostoon.
+  </p>
+  <p>Kaikki on RTV.pck:ssä — et voi vain avata kansiota ja muuttaa arvoja Notepad++:lla. Kaksi pääreittiä: mod-lataimet tai manuaalinen purku/dekompilointi.
+  </p>
+  <h2>Suositeltu tapa: Road to Vostok -modit
+  </h2>
+  <p>Turvallisin ja yleisin tapa on käyttää <a href="https://roadtovostok.org/mods">Road to Vostok -modeja</a>. Jotkut inhoavat mod-managerin „pullistumaa”, mutta prosessi on kevyt; asennus ~5–10 min.
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok mod rajaton terveys" width="50%">
+  </p>
+  <h3>Modien asetus (Metro Mod Loader &amp; MCM)
+  </h3>
+  <p>Mod Organizer 2 (MO2) ei ole pakollinen kaikkeen. Yhteisö luottaa kevyisiin injektoreihin:
+  </p>
+  <ol>
+  <li>Metro Mod Loader: nykyinen standardi — yksi tiedosto Appdataan, toinen pelikansioon.
+  </li>
+  <li>Mod Configuration Menu (MCM): loaderin jälkeen MCM:llä säädät muutokset pelissä (esim. +20 % nopeus tai hitaampi jano/nälkä) nopeasti.
+  </li>
+  </ol>
+  <p>Yksinkertaiseen nopeusmuutokseen löytyy valmiita modeja Modworkshopista yms.
+  </p>
+  <h2>Hardcore: moottorin manuaalinen purku
+  </h2>
+  <p>Jos kieltäydyt lataimista ja haluat muokata editorilla, pakatut tiedostot on ohitettava — yhteisön tekninen kierto:
+  </p>
+  <ol>
+  <li>Etsi RTV.pck samasta kansiosta kuin RTV.exe.
+  </li>
+  <li>Pura RTV.pck samaan pelikansioon.
+  </li>
+  <li>Nimeä alkuperäinen RTV.pck → RTV.pck.bak. Ilman pääasiallista .pck:tä exe lataa resurssit puretusta kansiosta.
+  </li>
+  <li>Dekompiloi skriptit Godot-työkalulla ja poista käännetty .gdc.
+  </li>
+  <li>Avaa raaka GDScript Notepad++:ssa (tai muulla), etsi arvot ja säädä ilman loaderia.
+  </li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok mod täytä patruunat" width="50%">
+  </p>
+  <h2>Kolmannen osapuolen työkalut
+  </h2>
+  <p>Ilman lataimia ja Godot-dekompilointia jotkut mainitsevat WeModin (ent. Wand). Yleensä yksinkertaisia kytkimiä (rajaton ammus, hyppy, kauppiaat) — ei hienosäätöä kuten +20 % nopeus; voi tappaa hardcore-immersion.
+  </p>
+  <h2>Pysy ajan tasalla modauksesta
+  </h2>
+  <p>Työkalut ja peliversiot vaihtuvat nopeasti. Tuoreimmat mod-ohjeet ja interaktiiviset kartat: <a href="http://roadtovostok.org/">http://roadtovostok.org/</a>.
+  </p>`,
   }
 ]

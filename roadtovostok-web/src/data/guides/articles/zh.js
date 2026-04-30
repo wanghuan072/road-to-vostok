@@ -727,5 +727,76 @@ export default [
   </p>
   <p>答：没有硬性枪械锁定，但实操标准是：主武器<strong>耐久须高于 70%</strong>。不要拿 50% 耐久捡来的枪上场，否则交火中卡壳会变成活靶子。
   </p>`,
+  },
+
+  {
+    id: 10,
+    title: "Road to Vostok 控制台与模组指南：如何修改数值",
+    description: "在找 Road to Vostok 控制台命令？本文说明为何原版没有控制台，以及如何借助模组与解包 Godot 资源来调整移速、饥渴等参数。",
+    tags: ["Road to Vostok 控制台", "Road to Vostok 模组"],
+    publishDate: "2026-04-30",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageAlt: "Road to Vostok 模组调节移动速度",
+    seo: {
+      title: "Road to Vostok 控制台与模组指南：如何修改数值",
+      description: "Road to Vostok 没有内置控制台；通过模组（Metro Mod Loader、MCM）或解包 RTV.pck 调整移速、饥渴等。",
+      keywords: "road to vostok 控制台, road to vostok 引擎, road to vostok 模组, 修改数值, 解包 pck, Godot 模组",
+    },
+    addressBar: "road-to-vostok-console-commands-and-modding",
+    detailsHtml: `
+  <p>若你厌倦默认的饥饿消耗或移动速度、正疯狂搜索「road to vostok 控制台命令」来改游戏，需要面对一个事实：原版没有内置控制台，也没有像 .xml、.ini 那样随手可改的纯文本配置。
+  </p>
+  <p>与一些老游戏（例如经典《潜行者》）「记事本里把 1 改成 1.2」不同，要动这款硬核生存游戏的数值，需要换一套做法。本指南根据社区已验证方法，说明如何用社区工具与引擎层面的变通方式修改游戏。
+  </p>
+  <h2>理解 Road to Vostok 的引擎限制
+  </h2>
+  <p>要明白为何不能简单改文本，得先了解本作所用引擎。游戏基于 Godot；资源与 GDScript 代码会打包进单一的 .pck（或 .pkg）文件。
+  </p>
+  <p>因为一切集中在 RTV.pck 里，你无法仅靠打开游戏目录就用 Notepad++ 改数值。主要有两条路：使用模组加载器，或手动解包、反编译引擎文件。
+  </p>
+  <h2>推荐做法：Road to Vostok 模组
+  </h2>
+  <p>最安全、最简单、玩家用得最多的是通过 <a href="https://roadtovostok.org/mods">Road to Vostok 模组</a> 调整。有人嫌模组管理器「臃肿」，但社区已把流程做得很顺，上手大约只需 5～10 分钟。
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok 模组无限生命类示例" width="50%">
+  </p>
+  <h3>如何配置模组（Metro Mod Loader 与 MCM）
+  </h3>
+  <p>并非所有情况都需要 Mod Organizer 2（MO2）这类重型软件，社区更常用轻量注入方案：
+  </p>
+  <ol>
+  <li>Metro Mod Loader：目前主流方案。安装大致只需把一个文件放进 AppData，另一个放进游戏主目录。
+  </li>
+  <li>Mod Configuration Menu（MCM）：加载器就绪后，用 MCM 可在游戏内直接调节具体改动（例如移速 +20%、减缓饥渴等），快速且省事。
+  </li>
+  </ol>
+  <p>说明：若只想简单改移速，Modworkshop 等平台已有现成模组可直接使用。
+  </p>
+  <h2>硬核路线：手动解包引擎
+  </h2>
+  <p>若你坚决不用模组加载器、只想用文本/代码编辑器做手动修改，就必须绕过打包文件。社区分享的技术流步骤如下：
+  </p>
+  <ol>
+  <li>在 RTV.exe 所在目录找到 RTV.pck。
+  </li>
+  <li>将 RTV.pck 解包到同一游戏目录。
+  </li>
+  <li>将原始打包文件 RTV.pck 改名为 RTV.pck.bak。移除主 .pck 后，可执行文件会尝试直接从解包后的目录加载资源。
+  </li>
+  <li>使用 Godot 反编译工具处理脚本，并删除已编译的 .gdc 文件。
+  </li>
+  <li>此时可用 Notepad++ 或其它编辑器打开原始 GDScript，查找并手动修改目标数值，无需模组加载器。
+  </li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok 模组补充弹药类示例" width="50%">
+  </p>
+  <h2>第三方工具备选
+  </h2>
+  <p>若既不想用模组加载器也不想折腾 Godot 反编译，社区提到的另一种选择是使用 WeMod 等第三方修改器（前身为 Wand）。这类工具通常只有简单开关（无限弹药、超高跳跃、调整商人等），难以精细调节例如「移速 +20%」，也容易严重破坏硬核生存的沉浸感。
+  </p>
+  <h2>持续关注模组资讯
+  </h2>
+  <p>模组技术与游戏版本迭代很快。如需最新工具、详细教程与搜刮用互动地图，欢迎常访问我们的主站 <a href="http://roadtovostok.org/">http://roadtovostok.org/</a>，我们致力于为 Road to Vostok 社区提供尽可能全面、易用的资源。
+  </p>`,
   }
 ]

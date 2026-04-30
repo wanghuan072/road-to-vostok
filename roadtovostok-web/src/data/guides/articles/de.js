@@ -774,5 +774,76 @@ export default [
   </p>
   <p>A: Nein, aber Primär &gt;70 % Zustand — sonst Ladehemmung im Fight.
   </p>`,
+  },
+
+  {
+    id: 10,
+    title: "Road to Vostok: Konsolenbefehle &amp; Modding — Werte anpassen",
+    description: "Du suchst Road-to-Vostok-Konsolenbefehle? So ist es, dass es keine gibt — und wie du mit Mods oder Engine-Entpacken Bewegung oder Hunger anpasst.",
+    tags: ["Road to Vostok console commands", "Road to Vostok mods"],
+    publishDate: "2026-04-30",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageAlt: "Road to Vostok Mod Laufgeschwindigkeit",
+    seo: {
+      title: "Road to Vostok: Konsolenbefehle &amp; Modding — Werte anpassen",
+      description: "Keine eingebaute Konsole in RTV — Mods (Metro Mod Loader, MCM) oder RTV.pck entpacken für Speed, Durst/Hunger u. a.",
+      keywords: "road to vostok console commands, road to vostok engine, road to vostok mods, werte tweak, pck unpack, godot modding",
+    },
+    addressBar: "road-to-vostok-console-commands-and-modding",
+    detailsHtml: `
+  <p>Wenn dich Standard-Hunger oder Lauftempo nerven und du verzweifelt nach Road-to-Vostok-Konsolenbefehlen suchst, gilt die harte Wahrheit: Im Basisspiel gibt es keine eingebaute Konsole und keine einfachen Text-Konfigurationen (.xml oder .ini).
+  </p>
+  <p>Anders als bei älteren Titeln (z. B. klassisches S.T.A.L.K.E.R.), wo man im Editor eine 1 in 1,2 ändern konnte, braucht dieses Hardcore-Survival einen anderen Ansatz. Dieser Guide zeigt, wie du mit Community-Tools und Engine-Workarounds anpassen kannst — nach verifizierten Spielermethoden.
+  </p>
+  <h2>Warum die Road-to-Vostok-Engine das verhindert
+  </h2>
+  <p>Damit klar ist, warum kein schneller Text-Edit reicht: Das Spiel nutzt Godot. Ressourcen und Code (GDScript, Python-ähnlich) liegen in einer einzigen .pck- (bzw. .pkg-)Datei.
+  </p>
+  <p>Alles steckt in RTV.pck — du kannst den Ordner nicht einfach öffnen und mit Notepad++ Werte ändern. Zwei Hauptwege: Mod-Loader oder manuelles Entpacken/Decompilieren.
+  </p>
+  <h2>Empfohlen: Road-to-Vostok-Mods
+  </h2>
+  <p>Am sichersten und populärsten passt du über <a href="https://roadtovostok.org/mods">Road-to-Vostok-Mods</a> an. Manche mögen Mod-Manager-Bloat nicht — der Prozess ist trotzdem schlank; Setup dauert etwa 5–10 Minuten.
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok Mod unbegrenzte Gesundheit" width="50%">
+  </p>
+  <h3>Mods einrichten (Metro Mod Loader &amp; MCM)
+  </h3>
+  <p>Schwergewichte wie Mod Organizer 2 (MO2) brauchst du nicht überall. Die Community nutzt leichte Injectoren:
+  </p>
+  <ol>
+  <li>Metro Mod Loader: aktueller Standard — eine Datei in Appdata, eine ins Hauptspielverzeichnis.
+  </li>
+  <li>Mod Configuration Menu (MCM): Mit MCM stellst du konkrete Änderungen ein (z. B. +20 % Speed oder langsamerer Durst/Hunger) direkt im Spiel, schnell und ohne Schmerz.
+  </li>
+  </ol>
+  <p>Hinweis: Für einfachen Speed-Boost gibt es auf Modworkshop u. a. fertige Mods.
+  </p>
+  <h2>Hardcore: Engine manuell entpacken
+  </h2>
+  <p>Wenn du Mod-Loader strikt vermeidest und mit Editor arbeiten willst, musst du die gepackten Dateien umgehen — technischer Community-Workaround:
+  </p>
+  <ol>
+  <li>RTV.pck im selben Ordner finden wie RTV.exe.
+  </li>
+  <li>RTV.pck in denselben Spielordner entpacken.
+  </li>
+  <li>Original RTV.pck in RTV.pck.bak umbenennen. Ohne die primäre .pck lädt die EXE Ressourcen aus dem entpackten Ordner.
+  </li>
+  <li>Skripte mit einem Godot-Decompiler bearbeiten und kompilierte .gdc löschen.
+  </li>
+  <li>Jetzt kannst du rohe GDScript-Dateien in Notepad++ öffnen, Werte suchen und ohne Loader tweaken.
+  </li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok Mod Munition auffüllen" width="50%">
+  </p>
+  <h2>Drittanbieter-Tools
+  </h2>
+  <p>Ohne Loader und ohne Godot-Decompile nennen manche WeMod (früher Wand). Das sind meist simple Schalter (unendlich Munition, Sprunghöhe, Händler) — kein Feintuning wie +20 % Speed; kann Hardcore-Immersion stark zerstören.
+  </p>
+  <h2>Modding-News für Vostok
+  </h2>
+  <p>Tools und Spielversionen ändern sich schnell. Für aktuelle Mod-Tools, Tutorials und interaktive Loot-Karten: unser Hub <a href="http://roadtovostok.org/">http://roadtovostok.org/</a> — umfassende Ressourcen für die Road-to-Vostok-Community.
+  </p>`,
   }
 ]

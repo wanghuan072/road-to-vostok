@@ -713,5 +713,76 @@ export default [
   </p>
   <p>R : Non, mais primaire &gt;70 % — sinon bourrage au pire moment.
   </p>`,
+  },
+
+  {
+    id: 10,
+    title: "Road to Vostok — commandes console et modding : ajuster les valeurs",
+    description: "Vous cherchez des commandes console Road to Vostok ? Pourquoi elles n&apos;existent pas et comment régler vitesse ou faim via mods ou dépaquetage du .pck.",
+    tags: ["Road to Vostok console commands", "Road to Vostok mods"],
+    publishDate: "2026-04-30",
+    imageUrl: "https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538355/cms-uploads/cms-1777538354896-429041977.webp",
+    imageAlt: "Road to Vostok mod vitesse de course",
+    seo: {
+      title: "Road to Vostok — console et modding : ajuster les valeurs",
+      description: "Pas de console intégrée — mods (Metro Mod Loader, MCM) ou dépaquetage RTV.pck pour affiner les réglages.",
+      keywords: "road to vostok console commands, road to vostok engine, road to vostok mods, tweak values, unpack pck, godot modding",
+    },
+    addressBar: "road-to-vostok-console-commands-and-modding",
+    detailsHtml: `
+  <p>Si la faim par défaut ou la vitesse de déplacement vous fatiguent et que vous cherchez désespérément des commandes console Road to Vostok, voici la vérité : le jeu de base n&apos;offre ni console intégrée ni fichiers de config texte simples (.xml ou .ini).
+  </p>
+  <p>Contrairement aux vieux titres (comme S.T.A.L.K.E.R. classique) où l&apos;on changeait 1 en 1,2 dans le Bloc-notes, ce survival hardcore exige une autre approche. Ce guide explique comment modifier le jeu avec des outils communautaires et des contournements moteur validés par les joueurs.
+  </p>
+  <h2>Comprendre les limites du moteur Road to Vostok
+  </h2>
+  <p>Pourquoi un simple édit texte ne suffit pas : le jeu repose sur Godot. Ressources et code GDScript (proche de Python) sont compilés dans un seul fichier .pck (ou .pkg).
+  </p>
+  <p>Tout est dans RTV.pck — vous ne pouvez pas ouvrir un dossier et éditer avec Notepad++. Deux voies : chargeurs de mods ou dépaquetage/décompilation manuel.
+  </p>
+  <h2>Voie recommandée : mods Road to Vostok
+  </h2>
+  <p>Le moyen le plus sûr et populaire : les <a href="https://roadtovostok.org/mods">mods Road to Vostok</a>. Certains n&apos;aiment pas le « bloat » des gestionnaires — le flux reste léger ; installation ~5 à 10 minutes.
+  </p>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538386/cms-uploads/cms-1777538386325-883684663.webp" alt="Road to Vostok mod santé illimitée" width="50%">
+  </p>
+  <h3>Configurer les mods (Metro Mod Loader &amp; MCM)
+  </h3>
+  <p>Pas besoin de Mod Organizer 2 (MO2) partout. La communauté utilise des injecteurs légers :
+  </p>
+  <ol>
+  <li>Metro Mod Loader : standard actuel — un fichier dans AppData, un autre dans le dossier principal du jeu.
+  </li>
+  <li>Mod Configuration Menu (MCM) : une fois le loader en place, MCM permet de régler en jeu (ex. +20 % de vitesse, ralentir soif/faim) rapidement.
+  </li>
+  </ol>
+  <p>Pour un simple modificateur de vitesse, des mods prêts existent sur Modworkshop et ailleurs.
+  </p>
+  <h2>Voie hardcore : dépaquetage moteur manuel
+  </h2>
+  <p>Si vous refusez les chargeurs et voulez éditer du texte/code, il faut contourner les fichiers packagés — méthode partagée par la communauté :
+  </p>
+  <ol>
+  <li>Trouver RTV.pck dans le même répertoire que RTV.exe.
+  </li>
+  <li>Dépaqueter RTV.pck dans ce même dossier de jeu.
+  </li>
+  <li>Renommer l&apos;original RTV.pck en RTV.pck.bak. Sans le .pck principal, l&apos;exe charge depuis le dossier dépaqueté.
+  </li>
+  <li>Décompiler les scripts avec un outil Godot et supprimer les .gdc compilés.
+  </li>
+  <li>Ouvrir les GDScript bruts dans Notepad++, trouver les valeurs et tweaker sans loader.
+  </li>
+  </ol>
+  <p><img src="https://res.cloudinary.com/dnxfdv3fs/image/upload/v1777538407/cms-uploads/cms-1777538407056-168016630.webp" alt="Road to Vostok mod recharger munitions" width="50%">
+  </p>
+  <h2>Outils tiers
+  </h2>
+  <p>Sans loaders ni décompilation Godot, certains citent des trainers type WeMod (ex-Wand). Souvent de simples interrupteurs (munitions infinies, saut, marchands) — pas de réglage fin comme +20 % de vitesse ; peut tuer l&apos;immersion hardcore.
+  </p>
+  <h2>Restez à jour sur le modding Vostok
+  </h2>
+  <p>Les techniques et versions évoluent vite. Outils, tutoriels et cartes interactives loot : notre hub <a href="http://roadtovostok.org/">http://roadtovostok.org/</a>.
+  </p>`,
   }
 ]
