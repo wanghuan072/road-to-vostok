@@ -90,67 +90,9 @@
             </p>
           </div>
         </div>
-
-        <!-- adx-PC 横幅广告-1 -->
-        <aside
-          v-if="!isMobile"
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
-
-        <!-- adx-移动 横幅广告-1 -->
-        <aside
-          v-if="isMobile"
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: inline-block; width: 336px; height: 280px"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_RS_ban3"
-            data-tag-src="gamtg"
-          >
-          </ins>
-        </aside>
+        <GptAdWrap :placement-index="0" />
       </div>
     </section>
-
-    <!-- adx-PC 左侧 skyscraper -->
-    <!-- <aside
-      v-if="!isMobile"
-      style="position: fixed; left: 0; top: 50%; transform: translateY(-50%); z-index: 9999"
-    >
-      <ins
-        class="adsbygoogle"
-        style="display: inline-block; width: 300px; height: 600px"
-        data-ad-client="ca-pub-9435047454967498"
-        data-ad-slot="roadtovostok_Adx_R_R_ban2"
-        data-tag-src="gamtg"
-      ></ins>
-    </aside> -->
-
-    <!-- adx-PC 右侧 skyscraper：若与左侧要不同订单/素材，请在后台使用另一个 ad slot，勿与左侧共用同一单元 -->
-    <!-- <aside
-      v-if="!isMobile"
-      style="position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 9999"
-    >
-      <ins
-        class="adsbygoogle"
-        style="display: inline-block; width: 300px; height: 600px"
-        data-ad-client="ca-pub-9435047454967498"
-        data-ad-slot="roadtovostok_Adx_R_R_ban2"
-        data-tag-src="gamtg"
-      ></ins>
-    </aside> -->
 
     <!-- Site compass: main nav + deep links (matches live routes) -->
     <section class="home-compass-section">
@@ -225,48 +167,9 @@
             </ul>
           </div>
         </div>
-
-        <!-- GAM 广告位 1 -->
-        <div
-          ref="gptBannerRoot"
-          id="div-gpt-ad-1775617033282-0"
-          style="min-width: 320px; min-height: 50px"
-        ></div>
+        <GptAdWrap :placement-index="1" />
       </div>
     </section>
-
-    <div class="container">
-      <!-- adx-PC 横幅广告-2（与 Hero 内 ban1 同结构） -->
-      <aside
-        v-if="!isMobile"
-        style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-      >
-        <ins
-          class="adsbygoogle"
-          style="display: block"
-          data-ad-client="ca-pub-9435047454967498"
-          data-ad-slot="roadtovostok_Adx_ban1"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-          data-tag-src="gamtg"
-        ></ins>
-      </aside>
-
-      <!-- adx-移动 横幅广告-2 -->
-      <aside
-          v-if="isMobile"
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: inline-block; width: 336px; height: 280px"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_RS_ban3"
-            data-tag-src="gamtg"
-          >
-          </ins>
-        </aside>
-    </div>
 
     <!-- Wiki + guides: editorial intro + compact entry list; cards only for deep links -->
     <section class="featured-section">
@@ -375,6 +278,7 @@
             </ul>
           </div>
         </div>
+        <GptAdWrap :placement-index="2" />
       </div>
     </section>
 
@@ -479,41 +383,9 @@
             </ul>
           </nav>
         </div>
+        <GptAdWrap :placement-index="3" />
       </div>
     </section>
-
-    <div class="container">
-      <!-- adx-PC 横幅广告-3（与 Hero 内 ban1 同结构） -->
-      <aside
-        v-if="!isMobile"
-        style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-      >
-        <ins
-          class="adsbygoogle"
-          style="display: block"
-          data-ad-client="ca-pub-9435047454967498"
-          data-ad-slot="roadtovostok_Adx_ban1"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-          data-tag-src="gamtg"
-        ></ins>
-      </aside>
-
-      <!-- adx-移动 横幅广告-1 -->
-      <aside
-          v-if="isMobile"
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: inline-block; width: 336px; height: 280px"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_RS_ban3"
-            data-tag-src="gamtg"
-          >
-          </ins>
-        </aside>
-    </div>
 
     <!-- Devlog -->
     <section class="devlog-section">
@@ -589,6 +461,7 @@
             </div>
           </div>
         </div>
+        <GptAdWrap :placement-index="4" />
       </div>
     </section>
 
@@ -611,6 +484,7 @@
             <a :href="getLocalizedPath('/about')" class="about-hub-link">{{ $t('homePage.about.linkAboutUs') }}</a>
           </nav>
         </div>
+        <GptAdWrap :placement-index="5" />
       </div>
     </section>
 
@@ -667,15 +541,14 @@
             </ul>
           </nav>
         </div>
+        <GptAdWrap :placement-index="6" />
       </div>
     </section>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
-import { useDeviceDetection } from '../utils/useDeviceDetection'
-import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const { getLocalizedPath } = useLocalizedPath()
@@ -691,51 +564,7 @@ const devlogIframeSrc = computed(
     `https://www.youtube-nocookie.com/embed/${DEVLOG_YOUTUBE_VIDEO_ID}?autoplay=1&rel=0`,
 )
 
-const { isMobile } = useDeviceDetection()
-
-// ---------- GAM 位 1（仅 GPT / googletag，与下方 ADX 完全分开）----------
-const gptBannerRoot = ref(null)
-
-function mountGptBan1Display() {
-  const root = gptBannerRoot.value
-  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
-  const s = document.createElement('script')
-  s.setAttribute('data-gam-slot', 'ban1')
-  s.textContent =
-    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
-  root.appendChild(s)
-}
-
-// ---------- ADX / adsbygoogle（每个 <ins.adsbygoogle> 必须各 push 一次，与 GAM 完全分开）----------
-function pushAllHomeAdxSlots() {
-  const root = homeRoot.value
-  if (!root) return
-  const units = root.querySelectorAll('ins.adsbygoogle')
-  units.forEach(() => {
-    try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      console.error('AdSense push failed:', e)
-    }
-  })
-}
-
 onMounted(() => {
-  scheduleAdSlotInit(() => {
-    void nextTick(() => {
-      try {
-        mountGptBan1Display()
-      } catch (e) {
-        console.error('GAM 初始化失败:', e)
-      }
-      try {
-        pushAllHomeAdxSlots()
-      } catch (e) {
-        console.error('ADX 初始化失败:', e)
-      }
-    })
-  })
-
   const root = homeRoot.value
   if (!root) return
   const nodes = root.querySelectorAll('.reveal-on-scroll')

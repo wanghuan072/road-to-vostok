@@ -2,16 +2,12 @@
   <article
     v-if="article"
     :key="article.addressBar"
-    ref="modArticleAdsRoot"
     class="content-article content-article--mods mod-detail page-article"
   >
-    <header class="page-hero-section page-hero-section--compact page-hero-section--mods page-hero-section--detail">
+    <header
+      class="page-hero-section page-hero-section--compact page-hero-section--mods page-hero-section--detail"
+    >
       <div class="container">
-        <div
-          ref="modArticleGptRoot"
-          id="div-gpt-ad-1775617033282-0"
-          style="min-width: 320px; min-height: 50px"
-        ></div>
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
             <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
@@ -21,54 +17,37 @@
             <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
           </nav>
           <div class="mod-detail__hero-pills">
-            <span v-if="article.author" class="mod-detail__pill">{{ $t('modArticlePage.byAuthor', { author: article.author }) }}</span>
-            <span v-if="article.version" class="mod-detail__pill mod-detail__pill--version">v{{ article.version }}</span>
-            <span v-if="article.loaderName" class="mod-detail__pill mod-detail__pill--muted">{{ article.loaderName }}</span>
+            <span v-if="article.author" class="mod-detail__pill">{{
+              $t('modArticlePage.byAuthor', { author: article.author })
+            }}</span>
+            <span v-if="article.version" class="mod-detail__pill mod-detail__pill--version"
+              >v{{ article.version }}</span
+            >
+            <span v-if="article.loaderName" class="mod-detail__pill mod-detail__pill--muted">{{
+              article.loaderName
+            }}</span>
           </div>
           <h1 class="article-detail-hero__title mod-detail__hero-title">{{ article.title }}</h1>
         </div>
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+
+        <GptAdWrap :placement-index="0" />
       </div>
     </header>
 
     <div class="mod-detail__body-wrap">
       <div class="container mod-detail__layout">
         <main class="mod-detail__main">
+          <GptAdWrap :placement-index="1" />
           <div
             class="mod-detail__prose article-body article-body--mods content-prose"
             v-html="article.detailsHtml"
           />
-
-          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
-          <aside
-            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-          >
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-9435047454967498"
-              data-ad-slot="roadtovostok_Adx_ban1"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-              data-tag-src="gamtg"
-            ></ins>
-          </aside>
+          <GptAdWrap :placement-index="2" />
         </main>
 
         <aside class="mod-detail__aside" :aria-label="$t('modArticlePage.asideAria')">
           <div class="mod-detail__aside-stack">
+            <GptAdWrap :placement-index="3" />
             <figure class="mod-detail__cover">
               <img
                 :src="article.imageUrl"
@@ -77,9 +56,9 @@
                 height="400"
                 loading="lazy"
                 decoding="async"
-              >
+              />
             </figure>
-
+            <GptAdWrap :placement-index="4" />
             <div v-if="article.externalUrl" class="mod-detail__aside-cta-wrap">
               <a
                 class="mod-detail__aside-cta"
@@ -96,7 +75,7 @@
               <p class="mod-detail__aside-label">{{ $t('modArticlePage.asideSummaryLabel') }}</p>
               <p class="mod-detail__aside-summary">{{ article.seo.description }}</p>
             </div>
-
+            <GptAdWrap :placement-index="5" />
             <dl v-if="hasStats" class="mod-detail__stats">
               <div v-if="statDownloads" class="mod-detail__stat">
                 <dt>{{ $t('modArticlePage.metaDownloads') }}</dt>
@@ -110,7 +89,9 @@
 
             <div v-if="article.publishDate" class="mod-detail__aside-block">
               <p class="mod-detail__aside-label">{{ $t('modArticlePage.listingDateLabel') }}</p>
-              <time class="mod-detail__aside-value" :datetime="article.publishDate">{{ article.publishDate }}</time>
+              <time class="mod-detail__aside-value" :datetime="article.publishDate">{{
+                article.publishDate
+              }}</time>
             </div>
 
             <div v-if="article.tags?.length" class="mod-detail__aside-block">
@@ -119,8 +100,12 @@
                 <li v-for="t in article.tags" :key="t">{{ t }}</li>
               </ul>
             </div>
-
-            <div v-if="article.comments?.length" class="mod-detail__aside-comments" :aria-label="$t('modArticlePage.communityNotesAria')">
+            <GptAdWrap :placement-index="6" />
+            <div
+              v-if="article.comments?.length"
+              class="mod-detail__aside-comments"
+              :aria-label="$t('modArticlePage.communityNotesAria')"
+            >
               <p class="mod-detail__aside-label">{{ $t('modArticlePage.communityNotesLabel') }}</p>
               <p class="mod-detail__comments-disclosure">
                 {{ $t('modArticlePage.commentsDisclosure') }}
@@ -142,22 +127,9 @@
                   <a :href="l.to">{{ l.label }}</a>
                 </li>
               </ul>
-              <a :href="getLocalizedPath('/mods')" class="mod-detail__aside-more-all">{{ $t('modArticlePage.allModsLink') }}</a>
-            </div>
-
-            <div
-              class="mod-aside-ad"
-              style="width: 100%; margin: 1rem auto 0; padding: 0.75rem 0; text-align: center"
-            >
-              <ins
-                class="adsbygoogle"
-                style="display: block"
-                data-ad-client="ca-pub-9435047454967498"
-                data-ad-slot="roadtovostok_Adx_ban1"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
-                data-tag-src="gamtg"
-              ></ins>
+              <a :href="getLocalizedPath('/mods')" class="mod-detail__aside-more-all">{{
+                $t('modArticlePage.allModsLink')
+              }}</a>
             </div>
           </div>
         </aside>
@@ -167,56 +139,13 @@
 </template>
 
 <script setup>
-import { computed, watch, ref, onMounted, nextTick } from 'vue'
-import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
+import { computed, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getModArticles } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { applyDynamicSeo } from '../../seo/composables.js'
-
-const modArticleAdsRoot = ref(null)
-const modArticleGptRoot = ref(null)
-
-function mountModArticleGptDisplay() {
-  const root = modArticleGptRoot.value
-  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
-  const s = document.createElement('script')
-  s.setAttribute('data-gam-slot', 'ban1')
-  s.textContent =
-    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
-  root.appendChild(s)
-}
-
-function pushModArticleAdx() {
-  const root = modArticleAdsRoot.value
-  if (!root) return
-  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
-    try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      console.error('ModArticle ADX push failed:', e)
-    }
-  })
-}
-
-onMounted(() => {
-  scheduleAdSlotInit(() => {
-    void nextTick(() => {
-      try {
-        mountModArticleGptDisplay()
-      } catch (e) {
-        console.error('ModArticle GAM failed:', e)
-      }
-      try {
-        pushModArticleAdx()
-      } catch (e) {
-        console.error('ModArticle ADX failed:', e)
-      }
-    })
-  })
-})
 
 const route = useRoute()
 const router = useRouter()
@@ -252,7 +181,7 @@ watch(
       router.replace(getLocalizedPath('/mods'))
     }
   },
-  { immediate: true },
+  { immediate: true }
 )
 
 watch(
@@ -268,7 +197,7 @@ watch(
       ogImageAlt: a.imageAlt,
     })
   },
-  { immediate: true, flush: 'post' },
+  { immediate: true, flush: 'post' }
 )
 </script>
 
@@ -360,8 +289,7 @@ watch(
   border: 1px solid color-mix(in srgb, var(--color-amber) 24%, var(--color-border));
   background: var(--color-bg);
   aspect-ratio: 16 / 10;
-  box-shadow:
-    0 0 0 1px color-mix(in srgb, var(--color-ice) 10%, transparent),
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-ice) 10%, transparent),
     0 20px 48px rgba(0, 0, 0, 0.32);
 }
 
@@ -586,5 +514,4 @@ watch(
 .mod-detail__aside-more-all:hover {
   color: color-mix(in srgb, var(--color-amber) 50%, var(--color-primary-soft));
 }
-
 </style>

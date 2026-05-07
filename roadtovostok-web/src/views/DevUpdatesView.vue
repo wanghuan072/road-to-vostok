@@ -1,12 +1,7 @@
 <template>
-  <article ref="devUpdatesAdsRoot" class="dev-updates-page page-article">
+  <article class="dev-updates-page page-article">
     <section class="page-hero-section">
       <div class="container">
-        <div
-          ref="devUpdatesGptRoot"
-          id="div-gpt-ad-1775617033282-0"
-          style="min-width: 320px; min-height: 50px"
-        ></div>
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
             <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
@@ -17,186 +12,152 @@
           <h1 v-html="$t('devUpdatesPage.title')"></h1>
           <p class="hero-lead" v-html="$t('devUpdatesPage.heroLeadHtml')"></p>
         </div>
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
     <div class="wrapper">
-
-    <div ref="railScrollRoot" class="container dev-updates-body">
-      <PageRail
-        :aside-label="$t('devUpdatesPage.railAside')"
-        :title="$t('devUpdatesPage.railTitle')"
-        :scroll-root="railScrollRoot"
-        :links="asideLinks"
-      >
-        <template #aside-extra>
-          <aside
-            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+      <div ref="railScrollRoot" class="container dev-updates-body">
+        <GptAdWrap :placement-index="1" />
+        <PageRail
+          :aside-label="$t('devUpdatesPage.railAside')"
+          :title="$t('devUpdatesPage.railTitle')"
+          :scroll-root="railScrollRoot"
+          :links="asideLinks"
+        >
+          <section
+            data-nav-anchor="release-snapshot"
+            class="snap-section"
+            :aria-label="$t('devUpdatesPage.ariaReleaseSnapshot')"
           >
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-9435047454967498"
-              data-ad-slot="roadtovostok_Adx_ban1"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-              data-tag-src="gamtg"
-            ></ins>
-          </aside>
-        </template>
-        <section data-nav-anchor="release-snapshot" class="snap-section" :aria-label="$t('devUpdatesPage.ariaReleaseSnapshot')">
-          <div class="release-snapshot">
-            <div class="release-snapshot-main">
-              <p class="release-snapshot-kicker">{{ $t('devUpdatesPage.snapshotEaKicker') }}</p>
-              <p class="release-snapshot-date">{{ $t('devUpdatesPage.snapshotEaDate') }}</p>
-              <p class="release-snapshot-note" v-html="$t('devUpdatesPage.snapshotEaNoteHtml')"></p>
+            <div class="release-snapshot">
+              <div class="release-snapshot-main">
+                <p class="release-snapshot-kicker">{{ $t('devUpdatesPage.snapshotEaKicker') }}</p>
+                <p class="release-snapshot-date">{{ $t('devUpdatesPage.snapshotEaDate') }}</p>
+                <p
+                  class="release-snapshot-note"
+                  v-html="$t('devUpdatesPage.snapshotEaNoteHtml')"
+                ></p>
+              </div>
+              <div class="release-snapshot-aside">
+                <p class="release-snapshot-kicker">{{ $t('devUpdatesPage.snapshotFullKicker') }}</p>
+                <p class="release-snapshot-tba">{{ $t('devUpdatesPage.snapshotFullTba') }}</p>
+                <p
+                  class="release-snapshot-note"
+                  v-html="$t('devUpdatesPage.snapshotFullNoteHtml')"
+                ></p>
+              </div>
             </div>
-            <div class="release-snapshot-aside">
-              <p class="release-snapshot-kicker">{{ $t('devUpdatesPage.snapshotFullKicker') }}</p>
-              <p class="release-snapshot-tba">{{ $t('devUpdatesPage.snapshotFullTba') }}</p>
-              <p class="release-snapshot-note" v-html="$t('devUpdatesPage.snapshotFullNoteHtml')"></p>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section data-nav-anchor="live-changes" class="follow-section page-body-section">
-          <header class="section-head">
-            <p class="section-kicker">{{ $t('devUpdatesPage.liveChangesKicker') }}</p>
-            <h2>{{ $t('devUpdatesPage.liveChangesTitle') }}</h2>
-            <p class="section-intro" v-html="$t('devUpdatesPage.liveChangesIntroHtml')"></p>
-          </header>
-          <ul class="follow-cards" role="list">
-            <li class="follow-card">
-              <h3>{{ $t('devUpdatesPage.followSteamTitle') }}</h3>
-              <p>
-                {{ $t('devUpdatesPage.followSteamLead') }}
-                <a
-                  href="https://store.steampowered.com/app/1963610/Road_to_Vostok/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >{{ $t('devUpdatesPage.followSteamStoreLinkText') }}</a><span v-html="$t('devUpdatesPage.followSteamMidHtml')"></span><a
-                  href="https://store.steampowered.com/news/app/1963610"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >{{ $t('devUpdatesPage.followSteamNewsLinkText') }}</a>{{ $t('devUpdatesPage.followSteamTail') }}
-              </p>
-            </li>
-            <li class="follow-card">
-              <h3>{{ $t('devUpdatesPage.followSiteTitle') }}</h3>
-              <p>
-                <a
+          <section data-nav-anchor="live-changes" class="follow-section page-body-section">
+            <header class="section-head">
+              <p class="section-kicker">{{ $t('devUpdatesPage.liveChangesKicker') }}</p>
+              <h2>{{ $t('devUpdatesPage.liveChangesTitle') }}</h2>
+              <p class="section-intro" v-html="$t('devUpdatesPage.liveChangesIntroHtml')"></p>
+            </header>
+            <ul class="follow-cards" role="list">
+              <li class="follow-card">
+                <h3>{{ $t('devUpdatesPage.followSteamTitle') }}</h3>
+                <p>
+                  {{ $t('devUpdatesPage.followSteamLead') }}
+                  <a
+                    href="https://store.steampowered.com/app/1963610/Road_to_Vostok/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >{{ $t('devUpdatesPage.followSteamStoreLinkText') }}</a
+                  ><span v-html="$t('devUpdatesPage.followSteamMidHtml')"></span
+                  ><a
+                    href="https://store.steampowered.com/news/app/1963610"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >{{ $t('devUpdatesPage.followSteamNewsLinkText') }}</a
+                  >{{ $t('devUpdatesPage.followSteamTail') }}
+                </p>
+              </li>
+              <li class="follow-card">
+                <h3>{{ $t('devUpdatesPage.followSiteTitle') }}</h3>
+                <p>
+                  <a
+                    href="https://www.roadtovostok.com/game"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    ><strong>{{ $t('devUpdatesPage.followOfficialGameLinkText') }}</strong></a
+                  ><span v-html="$t('devUpdatesPage.followSiteRestHtml')"></span>
+                </p>
+              </li>
+              <li class="follow-card">
+                <h3>{{ $t('devUpdatesPage.followVideoTitle') }}</h3>
+                <p>
+                  {{ $t('devUpdatesPage.followVideoLead') }}
+                  <a
+                    href="https://www.youtube.com/@roadtovostok"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    ><strong>{{ $t('devUpdatesPage.followYoutubeLinkText') }}</strong></a
+                  >{{ $t('devUpdatesPage.followVideoTail') }}
+                </p>
+              </li>
+            </ul>
+            <p class="cross-links" v-html="$t('devUpdatesPage.liveChangesCrossLinksHtml')"></p>
+          </section>
+          <GptAdWrap :placement-index="2" />
+
+          <section data-nav-anchor="guide-site" class="page-body-section">
+            <header class="section-head">
+              <p class="section-kicker">{{ $t('devUpdatesPage.guideSiteSectionKicker') }}</p>
+              <h2>{{ $t('devUpdatesPage.guideSiteSectionTitle') }}</h2>
+              <p class="section-intro" v-html="$t('devUpdatesPage.guideSiteSectionIntroHtml')"></p>
+            </header>
+          </section>
+
+          <GptAdWrap :placement-index="3" />
+
+          <section data-nav-anchor="public-roadmap" class="roadmap-section page-body-section">
+            <header class="section-head">
+              <p class="section-kicker">{{ $t('devUpdatesPage.plannedBuildsKicker') }}</p>
+              <h2>{{ $t('devUpdatesPage.plannedBuildsTitle') }}</h2>
+              <p class="section-intro">
+                <span v-html="$t('devUpdatesPage.plannedBuildsIntroBeforeHtml')"></span
+                ><a
                   href="https://www.roadtovostok.com/game"
                   rel="noopener noreferrer"
                   target="_blank"
-                ><strong>{{ $t('devUpdatesPage.followOfficialGameLinkText') }}</strong></a><span v-html="$t('devUpdatesPage.followSiteRestHtml')"></span>
+                  >{{ $t('devUpdatesPage.followOfficialGameLinkText') }}</a
+                ><span v-html="$t('devUpdatesPage.plannedBuildsIntroAfterHtml')"></span>
               </p>
-            </li>
-            <li class="follow-card">
-              <h3>{{ $t('devUpdatesPage.followVideoTitle') }}</h3>
-              <p>
-                {{ $t('devUpdatesPage.followVideoLead') }}
-                <a
-                  href="https://www.youtube.com/@roadtovostok"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                ><strong>{{ $t('devUpdatesPage.followYoutubeLinkText') }}</strong></a>{{ $t('devUpdatesPage.followVideoTail') }}
-              </p>
-            </li>
-          </ul>
-          <p class="cross-links" v-html="$t('devUpdatesPage.liveChangesCrossLinksHtml')"></p>
-        </section>
-
-        <div class="container">
-          <aside
-            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-          >
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-9435047454967498"
-              data-ad-slot="roadtovostok_Adx_ban1"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-              data-tag-src="gamtg"
-            ></ins>
-          </aside>
-        </div>
-
-        <section data-nav-anchor="guide-site" class="page-body-section">
-          <header class="section-head">
-            <p class="section-kicker">{{ $t('devUpdatesPage.guideSiteSectionKicker') }}</p>
-            <h2>{{ $t('devUpdatesPage.guideSiteSectionTitle') }}</h2>
-            <p class="section-intro" v-html="$t('devUpdatesPage.guideSiteSectionIntroHtml')"></p>
-          </header>
-        </section>
-
-        <section data-nav-anchor="public-roadmap" class="roadmap-section page-body-section">
-          <header class="section-head">
-            <p class="section-kicker">{{ $t('devUpdatesPage.plannedBuildsKicker') }}</p>
-            <h2>{{ $t('devUpdatesPage.plannedBuildsTitle') }}</h2>
-            <p class="section-intro">
-              <span v-html="$t('devUpdatesPage.plannedBuildsIntroBeforeHtml')"></span><a
-                href="https://www.roadtovostok.com/game"
-                rel="noopener noreferrer"
-                target="_blank"
-              >{{ $t('devUpdatesPage.followOfficialGameLinkText') }}</a><span v-html="$t('devUpdatesPage.plannedBuildsIntroAfterHtml')"></span>
-            </p>
-          </header>
-          <ol class="build-timeline" role="list">
-            <li
-              v-for="b in roadmapBuilds"
-              :key="b.id"
-              class="build-timeline-item"
-              :data-status="b.status"
-            >
-              <div class="build-timeline-marker" aria-hidden="true" />
-              <div class="build-timeline-body">
-                <div class="build-timeline-top">
-                  <h3 class="build-timeline-title">
-                    {{ $t('devUpdatesPage.buildTimelineTitle', { id: b.id, name: b.name }) }}
-                  </h3>
-                  <span class="build-timeline-date" :data-status="b.status">{{ b.window }}</span>
+            </header>
+            <ol class="build-timeline" role="list">
+              <li
+                v-for="b in roadmapBuilds"
+                :key="b.id"
+                class="build-timeline-item"
+                :data-status="b.status"
+              >
+                <div class="build-timeline-marker" aria-hidden="true" />
+                <div class="build-timeline-body">
+                  <div class="build-timeline-top">
+                    <h3 class="build-timeline-title">
+                      {{ $t('devUpdatesPage.buildTimelineTitle', { id: b.id, name: b.name }) }}
+                    </h3>
+                    <span class="build-timeline-date" :data-status="b.status">{{ b.window }}</span>
+                  </div>
+                  <ul class="build-timeline-bullets">
+                    <li v-for="(line, i) in b.lines" :key="i">{{ line }}</li>
+                  </ul>
                 </div>
-                <ul class="build-timeline-bullets">
-                  <li v-for="(line, i) in b.lines" :key="i">{{ line }}</li>
-                </ul>
-              </div>
-            </li>
-          </ol>
-        </section>
+              </li>
+            </ol>
+          </section>
 
-        <div class="container">
-          <aside
-            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
+          <GptAdWrap :placement-index="4" />
+
+          <section
+            class="footnote-section page-body-section"
+            :aria-label="$t('devUpdatesPage.ariaDisclaimer')"
           >
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-9435047454967498"
-              data-ad-slot="roadtovostok_Adx_ban1"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-              data-tag-src="gamtg"
-            ></ins>
-          </aside>
-        </div>
-
-        <section class="footnote-section page-body-section" :aria-label="$t('devUpdatesPage.ariaDisclaimer')">
-          <p class="footnote" v-html="$t('devUpdatesPage.footnoteHtml')"></p>
-        </section>
+            <p class="footnote" v-html="$t('devUpdatesPage.footnoteHtml')"></p>
+          </section>
         </PageRail>
       </div>
     </div>
@@ -204,8 +165,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick, computed } from 'vue'
-import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
+import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import PageRail from '../components/PageRail.vue'
 import { useLocalizedPath } from '../composables/useLocalizedPath.js'
@@ -213,47 +173,6 @@ import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 const { getLocalizedPath } = useLocalizedPath()
 
 const railScrollRoot = ref(null)
-const devUpdatesAdsRoot = ref(null)
-const devUpdatesGptRoot = ref(null)
-
-function mountDevUpdatesGptDisplay() {
-  const root = devUpdatesGptRoot.value
-  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
-  const s = document.createElement('script')
-  s.setAttribute('data-gam-slot', 'ban1')
-  s.textContent =
-    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
-  root.appendChild(s)
-}
-
-function pushDevUpdatesAdx() {
-  const root = devUpdatesAdsRoot.value
-  if (!root) return
-  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
-    try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      console.error('DevUpdates ADX push failed:', e)
-    }
-  })
-}
-
-onMounted(() => {
-  scheduleAdSlotInit(() => {
-    void nextTick(() => {
-      try {
-        mountDevUpdatesGptDisplay()
-      } catch (e) {
-        console.error('DevUpdates GAM failed:', e)
-      }
-      try {
-        pushDevUpdatesAdx()
-      } catch (e) {
-        console.error('DevUpdates ADX failed:', e)
-      }
-    })
-  })
-})
 
 const { t, tm } = useI18n()
 const asideLinks = computed(() => [
@@ -271,7 +190,7 @@ const roadmapBuilds = computed(() => {
 </script>
 
 <style scoped>
-.wrapper{
+.wrapper {
   padding: 2rem 0 0 0;
 }
 

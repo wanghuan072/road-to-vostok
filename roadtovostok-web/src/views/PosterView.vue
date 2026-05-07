@@ -18,6 +18,7 @@
             <a class="poster-btn" :href="getLocalizedPath('/tasks')">{{ $t('posterPage.btnTasks') }}</a>
           </p>
         </div>
+        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -41,6 +42,7 @@
           </button>
           <figcaption class="poster-feature-cap" v-html="$t('posterPage.featureCapHtml')"></figcaption>
         </figure>
+        <GptAdWrap :placement-index="1" />
       </div>
     </section>
 
@@ -70,6 +72,7 @@
             </button>
           </li>
         </ul>
+        <GptAdWrap :placement-index="2" />
       </div>
     </section>
 

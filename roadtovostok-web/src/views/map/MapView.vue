@@ -1,12 +1,7 @@
 <template>
-  <article ref="mapPageAdsRoot" class="map-page page-article map-raster-page">
+  <article class="map-page page-article map-raster-page">
     <section class="page-hero-section">
       <div class="container">
-        <div
-          ref="mapPageGptRoot"
-          id="div-gpt-ad-1775617033282-0"
-          style="min-width: 320px; min-height: 50px"
-        ></div>
         <div class="map-raster-hero-row">
           <div class="page-hero-content map-raster-hero-row__main">
             <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
@@ -19,19 +14,7 @@
           </div>
           <MapRasterHeroMosaic />
         </div>
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -62,6 +45,8 @@
             </li>
           </ul>
         </header>
+
+        <GptAdWrap :placement-index="1" />
 
         <div class="map-command">
           <div class="map-command-inner">
@@ -283,20 +268,6 @@
                   </ul>
                 </div>
               </div>
-              <div
-                class="poi-rail-ad"
-                style="width: 100%; margin: 0.75rem 0 0; padding: 0.75rem; text-align: center; flex-shrink: 0"
-              >
-                <ins
-                  class="adsbygoogle"
-                  style="display: block"
-                  data-ad-client="ca-pub-9435047454967498"
-                  data-ad-slot="roadtovostok_Adx_ban1"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"
-                  data-tag-src="gamtg"
-                ></ins>
-              </div>
             </aside>
           </div>
         </div>
@@ -310,21 +281,7 @@
       </div>
     </section>
 
-    <div class="container">
-      <aside
-        style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-      >
-        <ins
-          class="adsbygoogle"
-          style="display: block"
-          data-ad-client="ca-pub-9435047454967498"
-          data-ad-slot="roadtovostok_Adx_ban1"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-          data-tag-src="gamtg"
-        ></ins>
-      </aside>
-    </div>
+    <GptAdWrap :placement-index="2" />
 
     <section class="page-body-section">
       <div class="container">
@@ -334,6 +291,8 @@
         />
       </div>
     </section>
+
+    <GptAdWrap :placement-index="3" />
 
     <section data-nav-anchor="area-05-detail" class="guide-section page-body-section">
       <div class="container">
@@ -357,21 +316,9 @@
             >
           </figure>
         </div>
-        <aside
-          style="width: 100%; margin: 1.25rem auto 0; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
       </div>
     </section>
+    <GptAdWrap :placement-index="4" />
 
     <section class="page-body-section">
       <div class="container">
@@ -388,7 +335,6 @@ import { useI18n } from 'vue-i18n'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import './map-interactive.css'
-import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
 import { getMapPoints } from '../../data/localeData.js'
 import { buildMapPinHtml } from '../../data/map/pinIcons.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
@@ -412,9 +358,6 @@ const WORLD_MARKER_BY_REGION = {
 /** Official-style overview graphic (Squarespace-hosted asset). */
 const MAP_IMAGE_URL =
   'https://images.squarespace-cdn.com/content/v1/6991f0a1cda81c3c1cc9bb25/7ae6c5f1-6cb4-454e-9cc7-f37c1a237cd3/Road_to_Vostok_Map.jpg'
-
-const mapPageAdsRoot = ref(null)
-const mapPageGptRoot = ref(null)
 
 const mapContainer = ref(null)
 const mapError = ref('')
@@ -551,28 +494,6 @@ function normalizedToLatLng(xNorm, yNorm, w, h) {
   return L.latLng(h - yFromTop, xPx)
 }
 
-function mountMapPageGptDisplay() {
-  const root = mapPageGptRoot.value
-  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
-  const s = document.createElement('script')
-  s.setAttribute('data-gam-slot', 'ban1')
-  s.textContent =
-    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
-  root.appendChild(s)
-}
-
-function pushMapPageAdx() {
-  const root = mapPageAdsRoot.value
-  if (!root) return
-  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
-    try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      console.error('MapPage ADX push failed:', e)
-    }
-  })
-}
-
 function teardownMap() {
   resizeObserver?.disconnect()
   resizeObserver = null
@@ -678,20 +599,6 @@ function setupMap() {
 
 onMounted(() => {
   setupMap()
-  scheduleAdSlotInit(() => {
-    void nextTick(() => {
-      try {
-        mountMapPageGptDisplay()
-      } catch (e) {
-        console.error('MapPage GAM failed:', e)
-      }
-      try {
-        pushMapPageAdx()
-      } catch (e) {
-        console.error('MapPage ADX failed:', e)
-      }
-    })
-  })
 })
 
 watch(locale, () => {

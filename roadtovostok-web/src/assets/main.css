@@ -191,17 +191,3 @@ img {
     box-shadow: 0 0 20px 2px color-mix(in srgb, var(--color-signal) 25%, transparent);
   }
 }
-
-/* CLS：广告位占位（脚本与 Vue 均在 load+3s 后初始化，仍预留高度避免跳动） */
-ins.adsbygoogle {
-  display: block;
-  min-height: 50px;
-  box-sizing: border-box;
-}
-
-#div-gpt-ad-1775617033282-0 {
-  min-height: 50px;
-  min-width: min(320px, 100%);
-  max-width: 100%;
-  box-sizing: border-box;
-}

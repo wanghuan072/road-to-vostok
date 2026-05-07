@@ -1,12 +1,7 @@
 <template>
-  <article ref="guidesListAdsRoot" class="guides-list page-article">
+  <article class="guides-list page-article">
     <section class="page-hero-section page-hero-section--compact">
       <div class="container">
-        <div
-          ref="guidesListGptRoot"
-          id="div-gpt-ad-1775617033282-0"
-          style="min-width: 320px; min-height: 50px"
-        ></div>
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
             <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
@@ -16,21 +11,12 @@
           <h1>{{ $t('guidesListPage.title') }}</h1>
           <p class="guides-list__sub" v-html="$t('guidesListPage.subHtml')"></p>
         </div>
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+
+        <GptAdWrap :placement-index="0" />
       </div>
     </section>
+    
+    <GptAdWrap :placement-index="1" />
 
     <section class="guides-list__body" :aria-label="$t('guidesListPage.articlesAria')">
       <div class="container">
@@ -60,28 +46,14 @@
             </a>
           </li>
         </ul>
-
-        <aside
-          style="width: 100%; margin: 1.25rem auto 0; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+        <GptAdWrap :placement-index="2" />
       </div>
     </section>
   </article>
 </template>
 
 <script setup>
-import { computed, ref, onMounted, nextTick } from 'vue'
-import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { getGuideArticles } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
@@ -89,48 +61,6 @@ import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const guideArticles = computed(() => getGuideArticles(locale.value))
-
-const guidesListAdsRoot = ref(null)
-const guidesListGptRoot = ref(null)
-
-function mountGuidesListGptDisplay() {
-  const root = guidesListGptRoot.value
-  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
-  const s = document.createElement('script')
-  s.setAttribute('data-gam-slot', 'ban1')
-  s.textContent =
-    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
-  root.appendChild(s)
-}
-
-function pushGuidesListAdx() {
-  const root = guidesListAdsRoot.value
-  if (!root) return
-  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
-    try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      console.error('GuidesList ADX push failed:', e)
-    }
-  })
-}
-
-onMounted(() => {
-  scheduleAdSlotInit(() => {
-    void nextTick(() => {
-      try {
-        mountGuidesListGptDisplay()
-      } catch (e) {
-        console.error('GuidesList GAM failed:', e)
-      }
-      try {
-        pushGuidesListAdx()
-      } catch (e) {
-        console.error('GuidesList ADX failed:', e)
-      }
-    })
-  })
-})
 
 const sorted = computed(() =>
   [...guideArticles.value].sort((a, b) => b.publishDate.localeCompare(a.publishDate)),

@@ -1,12 +1,7 @@
 <template>
-  <article ref="modsListAdsRoot" class="mods-page page-article">
+  <article class="mods-page page-article">
     <section class="page-hero-section page-hero-section--compact page-hero-section--mods">
       <div class="container mods-page__hero">
-        <div
-          ref="modsListGptRoot"
-          id="div-gpt-ad-1775617033282-0"
-          style="min-width: 320px; min-height: 50px"
-        ></div>
         <div class="page-hero-content">
           <nav
             class="page-hero-breadcrumb"
@@ -31,21 +26,11 @@
             <p v-html="$t('modsListPage.introP2Html')"></p>
           </div>
         </div>
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+        <GptAdWrap :placement-index="0" />
       </div>
     </section>
+
+    <GptAdWrap :placement-index="1" />
 
     <section
       class="mods-board"
@@ -185,20 +170,7 @@
           </li>
         </ul>
 
-        <aside
-          v-if="sorted.length"
-          style="width: 100%; margin: 1.25rem auto 0; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+        
 
         <p
           v-else
@@ -206,14 +178,15 @@
         >
           {{ $t('modsListPage.emptyState') }}
         </p>
+
+        <GptAdWrap :placement-index="2" />
       </div>
     </section>
   </article>
 </template>
 
 <script setup>
-import { computed, ref, onMounted, nextTick } from 'vue'
-import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { getModArticles } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
@@ -221,48 +194,6 @@ import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const modArticles = computed(() => getModArticles(locale.value))
-
-const modsListAdsRoot = ref(null)
-const modsListGptRoot = ref(null)
-
-function mountModsListGptDisplay() {
-  const root = modsListGptRoot.value
-  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
-  const s = document.createElement('script')
-  s.setAttribute('data-gam-slot', 'ban1')
-  s.textContent =
-    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
-  root.appendChild(s)
-}
-
-function pushModsListAdx() {
-  const root = modsListAdsRoot.value
-  if (!root) return
-  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
-    try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      console.error('ModsList ADX push failed:', e)
-    }
-  })
-}
-
-onMounted(() => {
-  scheduleAdSlotInit(() => {
-    void nextTick(() => {
-      try {
-        mountModsListGptDisplay()
-      } catch (e) {
-        console.error('ModsList GAM failed:', e)
-      }
-      try {
-        pushModsListAdx()
-      } catch (e) {
-        console.error('ModsList ADX failed:', e)
-      }
-    })
-  })
-})
 
 const sorted = computed(() =>
   [...modArticles.value].sort((a, b) => b.publishDate.localeCompare(a.publishDate)),

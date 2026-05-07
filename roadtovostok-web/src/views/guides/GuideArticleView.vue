@@ -2,16 +2,10 @@
   <article
     v-if="article"
     :key="article.addressBar"
-    ref="guideArticleAdsRoot"
     class="content-article page-article"
   >
     <header class="page-hero-section page-hero-section--compact page-hero-section--detail">
       <div class="container article-detail-hero">
-        <div
-          ref="guideArticleGptRoot"
-          id="div-gpt-ad-1775617033282-0"
-          style="min-width: 320px; min-height: 50px"
-        ></div>
         <div class="page-hero-content">
           <nav class="page-hero-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
             <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
@@ -22,48 +16,25 @@
           </nav>
           <h1 class="article-detail-hero__title">{{ article.title }}</h1>
         </div>
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+        <GptAdWrap :placement-index="0" />
       </div>
     </header>
 
     <div class="article-split-wrap">
       <div class="container article-split">
         <main class="article-split__main">
+          <GptAdWrap :placement-index="1" />
           <div
             class="article-body content-prose"
             v-html="article.detailsHtml"
           />
-
-          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
-          <aside
-            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-          >
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-9435047454967498"
-              data-ad-slot="roadtovostok_Adx_ban1"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-              data-tag-src="gamtg"
-            ></ins>
-          </aside>
+          <GptAdWrap :placement-index="2" />
         </main>
+        
 
         <aside class="article-split__aside" :aria-label="$t('guideArticlePage.asideAria')">
           <div class="aside-stack">
+            <GptAdWrap :placement-index="3" />
             <figure class="aside-cover">
               <img
                 :src="article.imageUrl"
@@ -80,6 +51,8 @@
               <p class="aside-block__summary">{{ summaryText }}</p>
             </div>
 
+            <GptAdWrap :placement-index="4" />
+
             <div class="aside-meta">
               <div>
                 <p class="aside-meta__label">{{ $t('guideArticlePage.asideUpdated') }}</p>
@@ -93,6 +66,7 @@
               </div>
             </div>
 
+            <GptAdWrap :placement-index="5" />
             <div class="aside-more">
               <p class="aside-more__label">{{ $t('guideArticlePage.asideMoreGuides') }}</p>
               <ul class="aside-more__list">
@@ -102,21 +76,6 @@
               </ul>
               <a :href="getLocalizedPath('/guides')" class="aside-more__all">{{ $t('guideArticlePage.asideAllGuides') }}</a>
             </div>
-
-            <div
-              class="article-aside-ad"
-              style="width: 100%; margin: 1rem auto 0; padding: 0.75rem 0; text-align: center"
-            >
-              <ins
-                class="adsbygoogle"
-                style="display: block"
-                data-ad-client="ca-pub-9435047454967498"
-                data-ad-slot="roadtovostok_Adx_ban1"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
-                data-tag-src="gamtg"
-              ></ins>
-            </div>
           </div>
         </aside>
       </div>
@@ -125,8 +84,7 @@
 </template>
 
 <script setup>
-import { computed, watch, ref, onMounted, nextTick } from 'vue'
-import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
+import { computed, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getGuideArticles } from '../../data/localeData.js'
@@ -138,48 +96,6 @@ import { applyDynamicSeo } from '../../seo/composables.js'
 const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const guideArticles = computed(() => getGuideArticles(locale.value))
-
-const guideArticleAdsRoot = ref(null)
-const guideArticleGptRoot = ref(null)
-
-function mountGuideArticleGptDisplay() {
-  const root = guideArticleGptRoot.value
-  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
-  const s = document.createElement('script')
-  s.setAttribute('data-gam-slot', 'ban1')
-  s.textContent =
-    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
-  root.appendChild(s)
-}
-
-function pushGuideArticleAdx() {
-  const root = guideArticleAdsRoot.value
-  if (!root) return
-  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
-    try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      console.error('GuideArticle ADX push failed:', e)
-    }
-  })
-}
-
-onMounted(() => {
-  scheduleAdSlotInit(() => {
-    void nextTick(() => {
-      try {
-        mountGuideArticleGptDisplay()
-      } catch (e) {
-        console.error('GuideArticle GAM failed:', e)
-      }
-      try {
-        pushGuideArticleAdx()
-      } catch (e) {
-        console.error('GuideArticle ADX failed:', e)
-      }
-    })
-  })
-})
 
 const route = useRoute()
 const router = useRouter()

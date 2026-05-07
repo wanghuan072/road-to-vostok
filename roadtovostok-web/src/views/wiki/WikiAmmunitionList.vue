@@ -1,12 +1,7 @@
 <template>
-  <article ref="ammoAdsRoot" class="item-db-page ammo-page">
+  <article class="item-db-page ammo-page">
     <section class="page-hero-section">
       <div class="container">
-        <div
-          ref="ammoGptRoot"
-          id="div-gpt-ad-1775617033282-0"
-          style="min-width: 320px; min-height: 50px"
-        ></div>
         <div class="page-hero-content">
           <nav
             class="page-hero-breadcrumb"
@@ -47,19 +42,7 @@
             </div>
           </dl>
         </div>
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -110,7 +93,7 @@
           class="ammo-grid"
         >
           <div
-            v-for="(row, ri) in filteredRows"
+            v-for="row in filteredRows"
             :key="row.id"
             class="ammo-grid-fragment"
           >
@@ -194,37 +177,10 @@
               </p>
             </div>
             </article>
-            <aside
-              v-if="ri === ammoMidAdIndex"
-              style="grid-column: 1 / -1; width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-            >
-              <ins
-                class="adsbygoogle"
-                style="display: block"
-                data-ad-client="ca-pub-9435047454967498"
-                data-ad-slot="roadtovostok_Adx_ban1"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
-                data-tag-src="gamtg"
-              ></ins>
-            </aside>
           </div>
         </div>
 
-        <!-- adx-PC 横幅广告（列表下方） -->
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+        <GptAdWrap :placement-index="1" />
 
         <footer class="ammo-foot">
           <p v-html="$t('wikiAmmunitionPage.footCrossCheckHtml')"></p>
@@ -236,8 +192,7 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted, nextTick } from 'vue'
-import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { ammunitionFilters, getAmmunitionRows } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
@@ -277,54 +232,6 @@ const filteredRows = computed(() => {
       .join(' ')
       .toLowerCase()
     return hay.includes(q)
-  })
-})
-
-const ammoMidAdIndex = computed(() => {
-  const n = filteredRows.value.length
-  if (n < 4) return -1
-  return Math.floor(n / 2) - 1
-})
-
-const ammoAdsRoot = ref(null)
-const ammoGptRoot = ref(null)
-
-function mountAmmoGptDisplay() {
-  const root = ammoGptRoot.value
-  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
-  const s = document.createElement('script')
-  s.setAttribute('data-gam-slot', 'ban1')
-  s.textContent =
-    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
-  root.appendChild(s)
-}
-
-function pushAmmoAdx() {
-  const root = ammoAdsRoot.value
-  if (!root) return
-  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
-    try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      console.error('Ammo ADX push failed:', e)
-    }
-  })
-}
-
-onMounted(() => {
-  scheduleAdSlotInit(() => {
-    void nextTick(() => {
-      try {
-        mountAmmoGptDisplay()
-      } catch (e) {
-        console.error('Ammo GAM failed:', e)
-      }
-      try {
-        pushAmmoAdx()
-      } catch (e) {
-        console.error('Ammo ADX failed:', e)
-      }
-    })
   })
 })
 </script>

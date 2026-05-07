@@ -1,27 +1,10 @@
 <template>
-  <article
-    v-if="npc"
-    :key="npc.addressBar"
-    ref="npcDetailAdsRoot"
-    class="npc-detail-page"
-    :data-npc="npc.addressBar"
-  >
+  <article v-if="npc" :key="npc.addressBar" class="npc-detail-page" :data-npc="npc.addressBar">
     <header class="npc-hero">
-      <div
-        class="npc-hero__glow"
-        aria-hidden="true"
-      />
+      <div class="npc-hero__glow" aria-hidden="true" />
       <div class="container npc-hero__wrap">
-        <div
-          ref="npcDetailGptRoot"
-          id="div-gpt-ad-1775617033282-0"
-          style="min-width: 320px; min-height: 50px"
-        ></div>
         <div class="page-hero-content">
-          <nav
-            class="npc-breadcrumb"
-            :aria-label="$t('site.breadcrumbAriaLabel')"
-          >
+          <nav class="npc-breadcrumb" :aria-label="$t('site.breadcrumbAriaLabel')">
             <a :href="getLocalizedPath('/')">{{ $t('site.breadcrumbHome') }}</a>
             <span aria-hidden="true">/</span>
             <a :href="getLocalizedPath('/wiki')">{{ $t('site.navWiki') }}</a>
@@ -51,15 +34,14 @@
                   "
                   class="npc-btn npc-btn--solid"
                 >
-                  {{ npc.mapLocationId ? $t('npcDetailPage.showOnMap') : $t('npcDetailPage.openMap') }}
+                  {{
+                    npc.mapLocationId ? $t('npcDetailPage.showOnMap') : $t('npcDetailPage.openMap')
+                  }}
                 </a>
               </div>
             </div>
 
-            <div
-              v-if="npc.imageUrl"
-              class="npc-hero__visual"
-            >
+            <div v-if="npc.imageUrl" class="npc-hero__visual">
               <div class="npc-hero__frame">
                 <div class="npc-hero__frame-inner">
                   <img
@@ -70,7 +52,7 @@
                     loading="eager"
                     decoding="async"
                     class="npc-hero__img"
-                  >
+                  />
                 </div>
                 <p class="npc-hero__caption">
                   {{ $t('npcDetailPage.imageCaption') }}
@@ -79,20 +61,7 @@
             </div>
           </div>
         </div>
-
-        <aside
-          style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-        >
-          <ins
-            class="adsbygoogle"
-            style="display: block"
-            data-ad-client="ca-pub-9435047454967498"
-            data-ad-slot="roadtovostok_Adx_ban1"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-            data-tag-src="gamtg"
-          ></ins>
-        </aside>
+        <GptAdWrap :placement-index="0" />
       </div>
     </header>
 
@@ -100,49 +69,20 @@
       <div class="container npc-main__grid">
         <main class="npc-main__article">
           <div class="npc-sheet">
-            <div
-              class="npc-sheet__body npc-detail-rich"
-              v-html="npc.detailsHtml"
-            />
+            <GptAdWrap :placement-index="1" />
+            <div class="npc-sheet__body npc-detail-rich" v-html="npc.detailsHtml" />
+            <GptAdWrap :placement-index="2" />
           </div>
-
-          <!-- adx-PC 横幅广告-2（与 HomeView 同结构） -->
-          <aside
-            style="width: 100%; margin: 0 auto; padding: 1rem; text-align: center"
-          >
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-9435047454967498"
-              data-ad-slot="roadtovostok_Adx_ban1"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-              data-tag-src="gamtg"
-            ></ins>
-          </aside>
         </main>
 
-        <aside
-          class="npc-main__rail"
-          :aria-label="$t('npcDetailPage.articleAsideAria')"
-        >
-          <div
-            v-if="hasLocationRail"
-            class="npc-rail-card npc-rail-card--location"
-          >
-            <p class="npc-rail-card__label">
-              Location
-            </p>
-            <p
-              v-if="npc.location?.title"
-              class="npc-rail-card__place"
-            >
+        <aside class="npc-main__rail" :aria-label="$t('npcDetailPage.articleAsideAria')">
+          <GptAdWrap :placement-index="3" />
+          <div v-if="hasLocationRail" class="npc-rail-card npc-rail-card--location">
+            <p class="npc-rail-card__label">Location</p>
+            <p v-if="npc.location?.title" class="npc-rail-card__place">
               {{ npc.location.title }}
             </p>
-            <figure
-              v-if="npc.location?.imageUrl"
-              class="npc-rail-card__figure"
-            >
+            <figure v-if="npc.location?.imageUrl" class="npc-rail-card__figure">
               <img
                 :src="npc.location.imageUrl"
                 :alt="npc.location.imageAlt || ''"
@@ -151,12 +91,9 @@
                 loading="lazy"
                 decoding="async"
                 class="npc-rail-card__map-img"
-              >
+              />
             </figure>
-            <p
-              v-if="npc.location?.content"
-              class="npc-rail-card__text"
-            >
+            <p v-if="npc.location?.content" class="npc-rail-card__text">
               {{ npc.location.content }}
             </p>
             <a
@@ -167,38 +104,17 @@
               {{ $t('npcDetailPage.showOnMap') }}
             </a>
           </div>
-
+<GptAdWrap :placement-index="4" />
           <div class="npc-rail-card">
             <p class="npc-rail-card__label">
               {{ $t('npcDetailPage.moreNpcs') }}
             </p>
             <ul class="npc-rail-list">
-              <li
-                v-for="r in relatedNpcs"
-                :key="r.to"
-              >
-                <a
-                  :href="r.to"
-                  class="npc-rail-list__link"
-                >{{ r.title }}</a>
+              <li v-for="r in relatedNpcs" :key="r.to">
+                <a :href="r.to" class="npc-rail-list__link">{{ r.title }}</a>
                 <span class="npc-rail-list__meta">{{ r.role }}</span>
               </li>
             </ul>
-          </div>
-
-          <div
-            class="npc-rail-ad"
-            style="width: 100%; margin: 1rem 0 0; padding: 0.75rem 0; text-align: center"
-          >
-            <ins
-              class="adsbygoogle"
-              style="display: block"
-              data-ad-client="ca-pub-9435047454967498"
-              data-ad-slot="roadtovostok_Adx_ban1"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-              data-tag-src="gamtg"
-            ></ins>
           </div>
         </aside>
       </div>
@@ -207,8 +123,7 @@
 </template>
 
 <script setup>
-import { computed, watch, ref, onMounted, nextTick } from 'vue'
-import { scheduleAdSlotInit } from '@/utils/scheduleAdSlotInit.js'
+import { computed, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getNpcList } from '../../data/localeData.js'
@@ -217,48 +132,6 @@ import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { applyDynamicSeo } from '../../seo/composables.js'
 
 const { getLocalizedPath } = useLocalizedPath()
-
-const npcDetailAdsRoot = ref(null)
-const npcDetailGptRoot = ref(null)
-
-function mountNpcDetailGptDisplay() {
-  const root = npcDetailGptRoot.value
-  if (!root || root.querySelector('script[data-gam-slot="ban1"]')) return
-  const s = document.createElement('script')
-  s.setAttribute('data-gam-slot', 'ban1')
-  s.textContent =
-    "googletag.cmd.push(function() { googletag.display('div-gpt-ad-1775617033282-0'); });"
-  root.appendChild(s)
-}
-
-function pushNpcDetailAdx() {
-  const root = npcDetailAdsRoot.value
-  if (!root) return
-  root.querySelectorAll('ins.adsbygoogle').forEach(() => {
-    try {
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      console.error('NpcDetail ADX push failed:', e)
-    }
-  })
-}
-
-onMounted(() => {
-  scheduleAdSlotInit(() => {
-    void nextTick(() => {
-      try {
-        mountNpcDetailGptDisplay()
-      } catch (e) {
-        console.error('NpcDetail GAM failed:', e)
-      }
-      try {
-        pushNpcDetailAdx()
-      } catch (e) {
-        console.error('NpcDetail ADX failed:', e)
-      }
-    })
-  })
-})
 
 const route = useRoute()
 const router = useRouter()
@@ -293,7 +166,7 @@ watch(
       router.replace(getLocalizedPath('/wiki/npcs'))
     }
   },
-  { immediate: true },
+  { immediate: true }
 )
 
 watch(
@@ -309,7 +182,7 @@ watch(
       ogImageAlt: n.imageAlt,
     })
   },
-  { immediate: true, flush: 'post' },
+  { immediate: true, flush: 'post' }
 )
 </script>
 
@@ -342,9 +215,12 @@ watch(
   position: absolute;
   inset: -40% -20% auto -20%;
   height: 85%;
-  background:
-    radial-gradient(ellipse 70% 60% at 18% 40%, var(--npc-accent-dim), transparent 55%),
-    radial-gradient(ellipse 50% 45% at 85% 20%, color-mix(in srgb, var(--color-rust) 12%, transparent), transparent 50%),
+  background: radial-gradient(ellipse 70% 60% at 18% 40%, var(--npc-accent-dim), transparent 55%),
+    radial-gradient(
+      ellipse 50% 45% at 85% 20%,
+      color-mix(in srgb, var(--color-rust) 12%, transparent),
+      transparent 50%
+    ),
     linear-gradient(180deg, color-mix(in srgb, var(--color-panel) 55%, transparent), transparent);
   pointer-events: none;
 }
@@ -443,10 +319,7 @@ watch(
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  transition:
-    background 0.18s ease,
-    border-color 0.18s ease,
-    color 0.18s ease,
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease,
     box-shadow 0.18s ease;
 }
 
@@ -492,9 +365,7 @@ watch(
     color-mix(in srgb, var(--color-border) 70%, transparent) 50%,
     color-mix(in srgb, var(--npc-accent) 25%, transparent)
   );
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 color-mix(in srgb, #fff 6%, transparent);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), inset 0 1px 0 color-mix(in srgb, #fff 6%, transparent);
 }
 
 .npc-hero__img {
