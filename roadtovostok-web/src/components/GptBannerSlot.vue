@@ -1,4 +1,7 @@
 <template>
+  <!--
+  GPT 整站已注释。恢复时取消注释块，删除下方占位 div。
+
   <div ref="hostRef">
     <div
       :id="domId"
@@ -6,14 +9,16 @@
       style="min-width: 300px; min-height: 250px"
     />
   </div>
+  -->
+  <div data-gpt-disabled style="display: none" aria-hidden="true" />
 </template>
 
 <script setup>
+/*
 import { nextTick, onMounted, ref } from 'vue'
 
 const props = defineProps({
   domId: { type: String, required: true },
-  /** 与 GAM 单元路径一致，挂载后在 DOM 中插入注释便于核对后台 */
   unitPath: { type: String, required: true },
 })
 
@@ -38,5 +43,11 @@ function injectDisplay() {
 
 onMounted(() => {
   nextTick(() => injectDisplay())
+})
+*/
+
+defineProps({
+  domId: { type: String, required: true },
+  unitPath: { type: String, required: true },
 })
 </script>
