@@ -123,8 +123,8 @@
     },
     "modsListPage": {
       "title": "Road To Vostok 模组 — 编辑推荐与整合包",
-      "description": "Road To Vostok 模组精选：我们审阅过的玩法包与工具 — 功能说明、Metro Mod Loader 等加载器提示与安全安装建议。非 ModWorkshop 全量镜像；不提供托管 .vmz，下载仅通过作者页面链接。",
-      "keywords": "Road To Vostok 模组, Mod, 抢先体验, ModWorkshop, Metro Mod Loader, 游戏指南"
+      "description": "Road To Vostok 模组精选：我们审阅过的玩法包与工具 — 功能说明、Metro Mod Loader 等加载器提示与安全安装建议。非 ModWorkshop / Nexus Mods 全量镜像；不提供托管 .vmz，下载仅通过作者页面链接。",
+      "keywords": "Road To Vostok 模组, Mod, 抢先体验, ModWorkshop, Nexus Mods, Metro Mod Loader, 游戏指南"
     },
     "modArticlePage": {
       "title": "模组文章 — Road To Vostok",
@@ -995,14 +995,15 @@
     "moreOnSiteLabel": "本站更多",
     "allModsLink": "全部模组",
     "ctaModWorkshop": "在 ModWorkshop 打开",
-    "commentsDisclosure": "为便于理解的短摘要 — 非 Workshop 原文逐字转载。"
+    "ctaNexusMods": "在 Nexus Mods 打开",
+    "commentsDisclosure": "为便于理解的短摘要 — 非 ModWorkshop / Nexus 帖子原文逐字转载。"
   },
   "modsListPage": {
     "breadcrumb": "模组",
-    "eyebrow": "ModWorkshop · 编辑推荐",
+    "eyebrow": "ModWorkshop 与 Nexus Mods · 编辑推荐",
     "title": "Road To Vostok 模组",
-    "introP1Html": "本站发布<strong>编辑向模组聚焦</strong>：我们认为安装前值得一读的整合包与工具 — 玩法大修、QoL 合集、加载器要求（如 Metro Mod Loader）以及各条目会改变一局中的哪些内容。下列为精选推荐，并非 ModWorkshop 全量索引；我们审阅后会陆续增补。",
-    "introP2Html": "我们<strong>不</strong>托管 <strong>.vmz</strong> 文件。每张卡片链向作者源站（ModWorkshop 或文内说明）以下载实包。请匹配你的试玩或抢先体验版本，加载前自行校验校验和。",
+    "introP1Html": "本站发布<strong>编辑向模组聚焦</strong>：我们认为安装前值得一读的整合包与工具 — 玩法大修、QoL 合集、加载器要求（如 Metro Mod Loader）以及各条目会改变一局中的哪些内容。下列为精选推荐，并非 ModWorkshop 或 Nexus Mods 全量索引；我们审阅后会陆续增补。",
+    "introP2Html": "我们<strong>不</strong>托管 <strong>.vmz</strong> 文件。每张卡片链向作者源站（ModWorkshop、Nexus Mods 或文内说明）以下载实包。请匹配你的试玩或抢先体验版本，加载前自行校验校验和。",
     "boardAria": "模组文章",
     "mastLabel": "清单",
     "mastListingOne": "条收录",

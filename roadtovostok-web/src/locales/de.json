@@ -123,8 +123,8 @@
     },
     "modsListPage": {
       "title": "Road To Vostok Mods — redaktionelle Empfehlungen & Packs",
-      "description": "Kuratierte Mod-Empfehlungen: Features, Metro Mod Loader, sichere Installation. Kein vollständiges ModWorkshop-Spiegel; keine gehosteten .vmz-Dateien.",
-      "keywords": "Road To Vostok Mods, Modding, Early Access, ModWorkshop, Metro Mod Loader"
+      "description": "Kuratierte Mod-Empfehlungen: Features, Metro Mod Loader, sichere Installation. Kein vollständiger ModWorkshop- oder Nexus-Mods-Spiegel; keine gehosteten .vmz-Dateien.",
+      "keywords": "Road To Vostok Mods, Modding, Early Access, ModWorkshop, Nexus Mods, Metro Mod Loader"
     },
     "modArticlePage": {
       "title": "Mod-Artikel — Road To Vostok",
@@ -812,14 +812,15 @@
     "moreOnSiteLabel": "Mehr auf dieser Seite",
     "allModsLink": "Alle Mods",
     "ctaModWorkshop": "Auf ModWorkshop öffnen",
-    "commentsDisclosure": "Kurzfassungen zum Kontext — keine wörtlichen Workshop-Posts."
+    "ctaNexusMods": "Auf Nexus Mods öffnen",
+    "commentsDisclosure": "Kurzfassungen zum Kontext — keine wörtlichen Workshop- oder Nexus-Posts."
   },
   "modsListPage": {
     "breadcrumb": "Mod-Packs",
-    "eyebrow": "ModWorkshop · redaktionelle Spotlights",
+    "eyebrow": "ModWorkshop & Nexus Mods · redaktionelle Spotlights",
     "title": "Road To Vostok-Modifikationen",
-    "introP1Html": "Hier erscheinen <strong>redaktionelle Mod-Spotlights</strong>: Packs und Tools vor der Installation — Gameplay-Overhauls, QoL-Sammlungen, Loader (z. B. Metro Mod Loader). Liste ist kuratiert, kein vollständiger Workshop-Index.",
-    "introP2Html": "Wir hosten <strong>keine</strong> <strong>.vmz</strong>-Dateien. Jede Karte verlinkt zur Quelle des Autors. Build matchen und Checksummen prüfen.",
+    "introP1Html": "Hier erscheinen <strong>redaktionelle Mod-Spotlights</strong>: Packs und Tools vor der Installation — Gameplay-Overhauls, QoL-Sammlungen, Loader (z. B. Metro Mod Loader). Liste ist kuratiert, kein vollständiger Workshop- oder Nexus-Index.",
+    "introP2Html": "Wir hosten <strong>keine</strong> <strong>.vmz</strong>-Dateien. Jede Karte verlinkt zur Quelle des Autors (ModWorkshop, Nexus Mods oder wie im Artikel angegeben). Build matchen und Checksummen prüfen.",
     "boardAria": "Mod-Artikel",
     "mastLabel": "Übersicht",
     "mastListingOne": "Eintrag",

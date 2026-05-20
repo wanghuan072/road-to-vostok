@@ -168,4 +168,207 @@ export default {
 </ul>
 `,
   },
+  'armed-enhancement-weapon-attachment-spawner': {
+    title: 'Armed Enhancement – aseen lisävarustespawneri',
+    imageAlt: 'Armed Enhancement – Weapon Attachment Spawner -modi Road to Vostokille (Nexus Mods)',
+    tags: ['Pelattavuus', 'Aseet', 'Loot-vaihtelu', 'MCM'],
+    comments: [
+      {
+        author: 'Lootin luettavuus',
+        body: 'Tähtäimet ja vaimentimet maailma-aseissa tekevät löydöistä vähemmän samanlaisia — RNG säilyy, mutta huiput tuntuvat paremmilta.',
+      },
+      {
+        author: 'MCM',
+        body: 'Kammiokäyttäytymisen asetukset kannattaa silmäillä 1.1.0:n jälkeen; pidin oletuksia, kunnes rytmi tuntui varmalta.',
+      },
+      {
+        author: 'Modipino',
+        body: 'Jos käytössä isoja ase-overhaul-paketteja, lue Nexusista latausjärjestys ennen kuin syytät vain tätä pakettia.',
+      },
+    ],
+    seo: {
+      title:
+        'Armed Enhancement -modi Road to Vostokille: lisävarusteet spawneissa ja MCM-kammiot (Peter4Master) | Road To Vostok Guide',
+      description:
+        'Nexus-modi Road to Vostokille: Armed Enhancement – Weapon Attachment Spawner (Peter4Master) — maailmassa, konteissa ja vihollisilla olevat aseet voivat saada tähtäimiä, vaimentimia ja lasereita; kammiokäyttäytyminen MCM:llä. Metro Mod Loader; lataus Nexus Modsissa.',
+      keywords:
+        'Road to Vostok mod, Armed Enhancement, Weapon Attachment Spawner, Peter4Master, Nexus Mods, aseen lisävarusteet, vaimennin loot, Metro Mod Loader, MCM, loot-vaihtelu',
+    },
+    detailsHtml: `
+<p class="mod-prose-lead">
+  Tämä sivusto <strong>ei isännöi</strong> moditiedostoja. Käytä sivupaneelissa <strong>Avaa Nexus Modsissa</strong> siirtyäksesi viralliselle sivulle, sitten välilehteä <strong>Files</strong> uusimman paketin, tarkistussummien ja hotfix-huomioiden vuoksi.
+</p>
+
+<p><strong>Pelaajalle</strong></p>
+<ul>
+  <li>Maailmassa, konteissa ja vihollisilla olevilla aseilla voi olla <strong>tähtäimiä</strong>, <strong>vaimentimia</strong> ja <strong>lasereita</strong> — vähemmän „tyhjä putki + tyhjä lipas” -tunnetta.</li>
+  <li>Tekijä korostaa <strong>uskottavaa satunnaista vaihtelua</strong>, ei täyttä pakettia joka nostosta.</li>
+  <li>Uudemmat korjaukset (katso Nexus-changelog) tiukentavat duplikaattilisäkkeitä ja parantavat <strong>putki-/kammiokäyttäytymistä</strong>; <strong>MCM</strong> tarjoaa kammiovaihtoehdot (esim. aina valmiina, automaattisesti varustaessa, manuaalisesti — oletuksissa sekoitus).</li>
+</ul>
+
+<h2>Kenelle</h2>
+<p>
+  Kun haluat <strong>lisävarustevaihtelua satunnaisissa aseissa</strong> ilman että asetat jokaisen kiväärin käsin. Jätä pois minimimodilistaa debugatessa; lisää vasta kun Metro Mod Loader ja perus-QoL ovat vakaat.
+</p>
+
+<h2>Asennus (tyypillisesti)</h2>
+<ol>
+  <li>Asenna <strong>Metro Mod Loader</strong> buildisi mukaan (demo vs. early access).</li>
+  <li>Nexusissa <strong>Files</strong>-välilehti: seuraa tekijän nykyistä asettelua — paketti yleensä kansioon <code>mods</code> muiden <code>.vmz</code>-tiedostojen viereen.</li>
+  <li>Jos listauksessa vaaditaan <strong>MCM</strong>, asenna se säätääksesi kammiota ja kytkimiä ilman tiedostomuokkauksia.</li>
+  <li>Isojen pelipäivitysten jälkeen tarkista Nexusin <strong>Posts</strong> ennen pitkää runia.</li>
+</ol>
+
+<h2>Yhteensopivuus ja järjestys</h2>
+<p>
+  Ristiriidat muiden asepakettien kanssa: Nexus-kuvaus ja postaukset ovat totuuslähde. Jos käytät isoja pelattavuuspaketteja (esimerkiksi valokeilamme
+  <a href="/mods/oldmans-immersive-overhaul">Oldman’s Immersive Overhaul</a>),
+  lue molempien tekijöiden huomiot ennen kuin syytät outoa ballistiikkaa vain tähän spawneriin.
+</p>
+
+<h2>Turvallisuus</h2>
+<p>
+  Lataa vain sivupaneelin Nexus-linkistä; tarkista versionumero sivun otsikosta; varmuuskopioi tallennukset ennen kuin vaihdat latausjärjestystä kesken kampanjan.
+</p>
+`,
+  },
+  'lootmodifier': {
+    title: 'LootModifier',
+    loaderName: 'Metro Mod Loader + MCM',
+    imageAlt: 'LootModifier Road to Vostokille — loot-todennäköisyydet, konttien uudelleenheitot ja kuntoalueet (Nexus Mods)',
+    tags: ['Laatu-of-life', 'Loot', 'MCM', 'Keskeneräinen'],
+    comments: [
+      {
+        author: 'Vaikeusvipu',
+        body: 'Lattian vs. kätkön todennäköisyyksien säätö lopetti „kolme tyhjää rakennusta” -putken ilman huijaustunnetta — MCM-lukuja kannattaa kääntää kevyesti.',
+      },
+      {
+        author: 'Uudelleenheitto',
+        body: 'Min/max-reroll on tähti: tönäisee surullisia kaappeja rikkomatta jo isoja heittoja.',
+      },
+      {
+        author: 'Huomio',
+        body: 'Tekijä varoittaa: taattu lattialoot voi harvoin pudota maan läpi — käytin vain reittitesteissä, en ironman-tallennuksilla.',
+      },
+    ],
+    seo: {
+      title:
+        'LootModifier-modi Road to Vostokille: loot-todennäköisyydet, konttien rerollit ja kuntoalueet (HumbleCorpse) | Road To Vostok Guide',
+      description:
+        'Nexus-modi LootModifier Road to Vostokille (HumbleCorpse): säädä lattia- ja konttilootin todennäköisyyksiä, rerollaa liian tyhjät kontit min–max-välillä, muuta esineiden kuntovyöhykkeitä (aseet, NVG, valot); valinnainen taattu lattialoot (tunnettu reunatapaus). Vaatii MCM:n ja Metro Mod Loaderin.',
+      keywords:
+        'Road to Vostok mod, LootModifier, HumbleCorpse, Nexus Mods, loot todennäköisyys, kontti reroll, Metro Mod Loader, MCM, esineen kunto, QoL loot',
+    },
+    detailsHtml: `
+<p class="mod-prose-lead">
+  Tämä sivusto <strong>ei isännöi</strong> moditiedostoja. Käytä <strong>Avaa Nexus Modsissa</strong> -painiketta ja lue Nexus-sivulla <strong>Requirements</strong> ja <strong>Files</strong> ennen asennusta.
+</p>
+
+<p><strong>Pelaajalle</strong></p>
+<ul>
+  <li><strong>Loot-säätö</strong>: kuinka usein lattia- ja konttiloot ilmestyy — vähemmän nälkäkiukkua tai anteliaampaa ilman koko siemenen uudelleenkäynnistystä.</li>
+  <li><strong>Kontin reroll</strong>: jos määrä jää alle asetetun <strong>minimin</strong>, modi voi heittää uudelleen <strong>min–max</strong>-välillä; jo maksimin ylittäviä tuloksia ei kosketa.</li>
+  <li><strong>Kuntoalueet</strong>: säädä kuluvien esineiden (aseet, NVG, valot jne.) luontokäyttäytymistä.</li>
+  <li><strong>Valinnainen taattu lattialoot</strong>: tekijä mainitsee harvinaisen maan läpi putoamisen — käytä tietoisesti.</li>
+</ul>
+
+<p>
+  Nexus-sivulla kuvattu <strong>kesken oleva</strong> työkalu; suunniteltuja suuntia mm. aseet lisävarusteilla/lippailla ja AI-loot — sivu on elävä tiekartta.
+</p>
+
+<h2>Vaatimukset</h2>
+<p>
+  Tekijä listaa <strong>MCM</strong>:n ja <strong>Metro Mod Loader</strong>in. Asenna molemmat buildisi mukaan, hae LootModifier-arkisto Nexusista ja lue <strong>Posts</strong> yhteensopivuudesta.
+</p>
+
+<h2>Asennus (tekijän tiivistelmä)</h2>
+<ol>
+  <li>Lataa arkisto pelin <code>mods</code>-kansioon.</li>
+  <li>Jos Vostok-injektori tai uudempi Metro-työnkulku vaatii <code>.vmz</code>:n, <strong>nimeä <code>.zip</code> → <code>.vmz</code></strong> kuten Nexus-sivulla.</li>
+  <li>Avaa <strong>MCM</strong> pelissä säädelläksesi todennäköisyyksiä, reroll-kynnyksiä, käyriä ja kokeellisia kytkimiä, kun paketti latautuu puhtaasti.</li>
+</ol>
+
+<h2>Yhteensopivuus</h2>
+<p>
+  Loot-modit vaikuttavat talouteen ja stash-tempoon. Jos käytössä isoja pelattavuuspaketteja (esim.
+  <a href="/mods/oldmans-immersive-overhaul">Oldman’s Immersive Overhaul</a>),
+  lue molempien tekijöiden huomiot ennen kuin syytät yksittäistä modia outoihin spawneihin.
+</p>
+
+<h2>Turvallisuus</h2>
+<p>
+  Vain Nexus-linkki sivupaneelista; arkiston versio vastaa sivun otsikkoa; varmuuskopioi ennen liukusäätimien säätöä kesken runin — useat modit loot-tauluilla sekoittavat odotukset nopeasti.
+</p>
+`,
+  },
+  'suspend-save-resume-exploration': {
+    title: 'Suspend Save System (tai „Resume Exploration”)',
+    imageAlt: 'Suspend Save / Resume Exploration Road to Vostokille — poistu ilman suojaa ja palaa viimeiselle kartalle (Nexus Mods)',
+    tags: ['Pelattavuus', 'Käyttöliittymä', 'Laatu-of-life', 'Tallennukset'],
+    comments: [
+      {
+        author: 'Istuntojen pelastaja',
+        body: 'Vihdoin voin lopettaa pitkän raidin ilman sprinttiä suojaan — kun tiedän ettei kyseessä ole pikatallennus, jännite säilyy.',
+      },
+      {
+        author: 'Kartan nollaus',
+        body: 'Luin pienellä: maailman loot arvotaan uudelleen jatkaessa — en käytä taktisena taukona saman huoneen kahdesti farmaamiseen.',
+      },
+      {
+        author: 'Kuri',
+        body: 'Kaatuminen tai kova sulkeminen ei kirjoita suspendia — vain pelin sisäinen valikko; opetti sulkemaan aina oikein.',
+      },
+    ],
+    seo: {
+      title:
+        'Suspend Save -modi Road to Vostokille: poistu suojan ulkopuolelta ja „Resume Exploration” (Levrault) | Road To Vostok Guide',
+      description:
+        'Nexus-modi Suspend Save System (Resume Exploration) Levraultilta: pelin sisäisellä poistumisella tallennetaan inventaario ja viimeinen kartan sisääntulopiste; päävalikon Resume Exploration palauttaa sinne; suspend-paikka kertakäyttöinen, ei pikatallennus. Kuolema vie yhä kannettavan lootin; karttatilaa ei jäädytetä.',
+      keywords:
+        'Road to Vostok mod, Suspend Save, Resume Exploration, Levrault, Nexus Mods, tallennus suojan ulkopuolella, Metro Mod Loader, QoL tallennus',
+    },
+    detailsHtml: `
+<p class="mod-prose-lead">
+  Tämä sivusto <strong>ei isännöi</strong> moditiedostoja. Käytä <strong>Avaa Nexus Modsissa</strong> ja hae välilehti <strong>Files</strong> tarkalle arkistonimelle ja päivitysten jälkeisille ohjeille.
+</p>
+
+<p><strong>Pelaajalle</strong></p>
+<ul>
+  <li>Mahdollistaa <strong>poistumisen pelin valikosta</strong> avoimessa maailmassa ilman pakollista suojajuoksua, säilyttäen <strong>inventaarilootin</strong> ja <strong>viimeisen käytetyn sisääntulopisteen</strong>.</li>
+  <li>Lisää päävalikkoon <strong>Resume Exploration</strong>: lataa hahmon ja asettaa sinut takaisin viimeiselle sisääntulolle viimeksi pelatulla kartalla.</li>
+  <li>Suspend-paikka <strong>kuluu ladattaessa</strong> — tekijän mukaan <strong>ei pikatallennus</strong>, hardcore-silmukka säilyy.</li>
+  <li><strong>Kuolema maksaa yhä</strong> — kannettava loot katoaa kuten vaniljassa.</li>
+</ul>
+
+<h2>Mitä ei tarkoituksella tallenneta</h2>
+<p>
+  Listauksen mukaan suspend-tiedostoon jäävät vain <strong>inventaario</strong> ja <strong>viimeinen sisääntulopiste</strong>. <strong>Karttatilaa</strong> — viholliset, kauppiaat, konttien sisältö — ei jäädytetä; jatettaessa <strong>maailman loot voi arvota uudelleen</strong>, koska pelin tallennusmalli keskittyy pelaajaan ja suojaan. Ota reunaehdoksi, ei vikana „jäädytetylle kätkölle”.
+</p>
+
+<h2>Milloin suspendia ei kirjoiteta</h2>
+<ul>
+  <li>Ei suspendia <strong>kaatumisessa</strong> tai <strong>poistuessa pelin valikon ulkopuolelta</strong> — vain modin koukuttama normaali poistumispolku.</li>
+  <li>Pidä <strong>manuaalisia varmuuskopioita</strong> ennen uusia modipinoja; suspend ei korvaa tallennuskansion kopioimista.</li>
+</ul>
+
+<h2>Asennus</h2>
+<ol>
+  <li>Noudata Nexusin <strong>Files</strong>-välilehden tarkkaa arkistonimeä ja rakennetta.</li>
+  <li>Useimmat Road to Vostok -setit käyttävät <strong>Metro Mod Loader</strong> -tyylistä <code>mods</code>-kansiota; jos tarvitaan <code>.vmz</code>-nimenmuutos, tee täsmälleen kuten tekijä listaa.</li>
+  <li>Testaa yksi suspend-sykli heittotallennuksella ennen pitkää ironman-hahmoa.</li>
+</ol>
+
+<h2>Yhteensopivuus</h2>
+<p>
+  Valikko-, kuolema- tai suojatallennusmodit voivat törmätä suspend-logiikkaan. Jos pinoissa raskaita paketteja (esim.
+  <a href="/mods/oldmans-immersive-overhaul">Oldman’s Immersive Overhaul</a>),
+  lue molempien tekijöiden huomiot ja Nexus-<strong>Posts</strong> ennen kuin oletat puhtaan jatkamisen joka kerta.
+</p>
+
+<h2>Turvallisuus</h2>
+<p>
+  Vain Nexus-linkki sivupaneelista; arkiston versio vastaa Nexus-otsikkoa; pidä ylimääräisiä tallennuksia — suspend koskettaa samoja hermoja kuin permadeath-suunnittelu, joten vakauden vahvistus omalla buildilla ensin.
+</p>
+`,
+  },
 }

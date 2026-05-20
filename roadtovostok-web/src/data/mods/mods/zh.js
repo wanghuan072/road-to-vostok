@@ -167,4 +167,204 @@ export default {
 </ul>
 `,
   },
+  'armed-enhancement-weapon-attachment-spawner': {
+    title: '武装强化：武器配件生成（Armed Enhancement）',
+    imageAlt: 'Road to Vostok「武装强化 — 武器配件生成」模组（Nexus Mods）',
+    tags: ['玩法', '武器', '战利品多样性', 'MCM'],
+    comments: [
+      {
+        author: '战利品观感',
+        body: '地上枪偶尔带镜和消音，搜刮没那么千篇一律——仍是随机，但上限更刺激。',
+      },
+      {
+        author: 'MCM',
+        body: '1.1.0 后的上膛相关选项值得扫一眼；我信任流程前一直用默认。',
+      },
+      {
+        author: '叠模组',
+        body: '若还叠大型武器大修，先在 Nexus 上看加载顺序说明，别单怪这一包。',
+      },
+    ],
+    seo: {
+      title:
+        'Road to Vostok 武装强化模组：随机武器配件与上膛选项（Peter4Master）| Road To Vostok 指南',
+      description:
+        'Road to Vostok Nexus 模组 Armed Enhancement — Weapon Attachment Spawner（Peter4Master）：世界、容器与敌人武器可随机带瞄准镜、消音器与激光；MCM 可调校上膛等行为。需 Metro Mod Loader；在 Nexus Mods 下载。',
+      keywords:
+        'Road to Vostok 模组, Armed Enhancement, Weapon Attachment Spawner, Peter4Master, Nexus Mods, 武器配件, 消音器掉落, Metro Mod Loader, MCM, 战利品多样性',
+    },
+    detailsHtml: `
+<p class="mod-prose-lead">
+  本站<strong>不托管</strong>模组文件。请用侧栏 <strong>在 Nexus Mods 打开</strong> 进入作者页，再在 <strong>Files</strong> 标签取当前压缩包、校验信息与热修说明。
+</p>
+
+<p><strong>玩家向功能</strong></p>
+<ul>
+  <li>你在世界、容器与敌人身上捡到的武器，有机会自带 <strong>瞄准镜</strong>、<strong>消音器</strong> 与 <strong>激光</strong>，减少「光杆枪 + 空弹匣」的单调感。</li>
+  <li>作者强调是更<strong>可信的随机多样性</strong>，而不是每次必出满配。</li>
+  <li>近期更新（见 Nexus changelog）收紧了重复配件等边界情况，并改进<strong>管式供弹 / 上膛</strong>逻辑；<strong>MCM</strong> 可配置上膛策略（如始终预上膛、装备时自动、手动等，默认有混合方案）。</li>
+</ul>
+
+<h2>适合谁</h2>
+<p>
+  想要<strong>随机武器上的配件花样</strong>、又不想自己一个个手摆步枪时选用。若在做最小模组集调试可先不加；待 Metro Mod Loader 与基础 QoL 稳定后再启用更省心。
+</p>
+
+<h2>安装（常见步骤）</h2>
+<ol>
+  <li>按你的 Road to Vostok 版本（试玩 / 抢先体验）安装 <strong>Metro Mod Loader</strong>。</li>
+  <li>在 Nexus 打开 <strong>Files</strong>，按作者当前说明把包放入游戏 <code>mods</code> 目录，与其它 <code>.vmz</code> 并列。</li>
+  <li>若页面列出 <strong>MCM</strong>，请安装以便调节上膛等开关而无需手改脚本。</li>
+  <li>大版本后开新长跑前，再看 Nexus <strong>Posts</strong> 是否有热修。</li>
+</ol>
+
+<h2>兼容与加载顺序</h2>
+<p>
+  与其它武器包是否冲突以 Nexus 正文与帖子为准。若叠大型玩法包（例如本站对
+  <a href="/mods/oldmans-immersive-overhaul">Oldman 沉浸大修</a> 的介绍），请交叉阅读双方说明，别把弹道异常全归到本生成器上。
+</p>
+
+<h2>安全提示</h2>
+<p>
+  只从侧栏 Nexus 链接下载；核对文首版本号；中途改加载顺序前请备份存档。
+</p>
+`,
+  },
+  'lootmodifier': {
+    title: 'LootModifier（战利品修改器）',
+    loaderName: 'Metro 模组加载器 + MCM',
+    imageAlt: 'Road to Vostok LootModifier — 掉率、容器重掷与耐久区间（Nexus Mods）',
+    tags: ['体验优化', '战利品', 'MCM', '开发中'],
+    comments: [
+      {
+        author: '难度旋钮',
+        body: '分开调地面与柜子概率后，终于不再连空三栋楼——又不至于像作弊；MCM 数值要轻手调。',
+      },
+      {
+        author: '重掷逻辑',
+        body: '最小/最大重掷是我最爱：对「太穷」的柜子轻轻推一把，已经大红的不会强行压下去。',
+      },
+      {
+        author: '注意',
+        body: '作者提醒「保证地面掉落」偶发穿地——我只在测路线时开，铁人档不敢乱试。',
+      },
+    ],
+    seo: {
+      title:
+        'Road to Vostok LootModifier：掉率、容器重掷与装备耐久区间（HumbleCorpse）| Road To Vostok 指南',
+      description:
+        'Road to Vostok Nexus 模组 LootModifier（HumbleCorpse）：调节地面与容器掉落概率；低于最小时的容器可重掷到最小～最大之间；可调武器、夜视、手电等耐久生成区间；可选保证地面掉落（有已知穿地风险）。需 MCM 与 Metro Mod Loader。',
+      keywords:
+        'Road to Vostok 模组, LootModifier, HumbleCorpse, Nexus Mods, 掉率, 容器重掷, Metro Mod Loader, MCM, 耐久, 战利品',
+    },
+    detailsHtml: `
+<p class="mod-prose-lead">
+  本站<strong>不托管</strong>模组文件。请用侧栏 <strong>在 Nexus Mods 打开</strong> 查看作者页，安装前务必阅读 <strong>Requirements</strong> 与 <strong>Files</strong>。
+</p>
+
+<p><strong>玩家向功能</strong></p>
+<ul>
+  <li><strong>掉率调节</strong>：调整地面与容器物品出现频率，让流程不那么「饿死」或更慷慨，而无需手改整个随机种子。</li>
+  <li><strong>容器重掷</strong>：若容器生成数量低于你设的<strong>最小值</strong>，可在<strong>最小～最大</strong>之间重掷；已超过<strong>最大值</strong>的欧气结果不会被压回去。</li>
+  <li><strong>耐久区间</strong>：为可磨损装备（武器、夜视、手电等）调整生成时的耐久带，贴合你想要的搜刮体验。</li>
+  <li><strong>可选保证地面掉落</strong>：作者注明偶发会因本体问题穿地——请知情后使用。</li>
+</ul>
+
+<p>
+  Nexus 页将该工具标为<strong>开发中</strong>，并提到后续可能包含武器带配件/弹匣、AI 战利品等方向——以作者页为最新路线图。
+</p>
+
+<h2>依赖</h2>
+<p>
+  作者写明需要 <strong>MCM（Mod Configuration Menu）</strong> 与 <strong>Metro Mod Loader</strong>。请按你的版本安装二者，再回到 Nexus 取 LootModifier 压缩包并查看 <strong>Posts</strong> 中的兼容说明。
+</p>
+
+<h2>安装（作者摘要）</h2>
+<ol>
+  <li>将下载的压缩包放入游戏 <code>mods</code> 目录。</li>
+  <li>若使用 Vostok 注入器或新版 Metro 工作流需要 <code>.vmz</code>，请按 Nexus 说明将 <strong><code>.zip</code> 改名为 <code>.vmz</code></strong>。</li>
+  <li>进游戏打开 <strong>MCM</strong>，在确认模组加载无误后再调概率、重掷阈值、耐久曲线与实验项。</li>
+</ol>
+
+<h2>兼容思路</h2>
+<p>
+  战利品模组会牵动经济与囤货节奏。若同时装大型玩法包（例如本站
+  <a href="/mods/oldmans-immersive-overhaul">Oldman 沉浸大修</a>），请交叉阅读双方说明，别把异常掉落只怪某一个条目。
+</p>
+
+<h2>安全提示</h2>
+<p>
+  只从侧栏 Nexus 链接下载；与文首版本对齐；长跑中途改滑条前请备份存档——多模组同时动战利品表时预期很容易被打乱。
+</p>
+`,
+  },
+  'suspend-save-resume-exploration': {
+    title: '挂起存档系统（或「继续探索」）',
+    imageAlt: 'Road to Vostok「挂起存档 / 继续探索」模组 — 非庇护所退出与回到上一张图（Nexus Mods）',
+    tags: ['玩法', '界面', '体验优化', '存档'],
+    comments: [
+      {
+        author: '分段玩家',
+        body: '终于能长跑后不必先冲回庇护所再关游戏——知道这不是快速存档，紧张感还在。',
+      },
+      {
+        author: '地图重掷',
+        body: '我读细则：恢复后世界搜刮会重掷，所以不会把它当「暂停刷同一间房两次」的漏洞。',
+      },
+      {
+        author: '习惯',
+        body: '崩溃或强退不会写挂起档——只有游戏内菜单退出才算，逼我每次都正规退出。',
+      },
+    ],
+    seo: {
+      title:
+        'Road to Vostok 挂起存档：非庇护所退出与主菜单「继续探索」（Levrault）| Road To Vostok 指南',
+      description:
+        'Road to Vostok Nexus 模组 Suspend Save System（继续探索，Levrault）：在游戏内菜单退出时保留背包与最后地图入口；主菜单「继续探索」回到该点；一次性读取后删除，非快速存档。死亡仍丢携带品；地图状态不冻结。',
+      keywords:
+        'Road to Vostok 模组, Suspend Save, Resume Exploration, Levrault, Nexus Mods, 非庇护所存档, 挂起存档, Metro Mod Loader, 体验优化存档',
+    },
+    detailsHtml: `
+<p class="mod-prose-lead">
+  本站<strong>不托管</strong>模组文件。请用侧栏 <strong>在 Nexus Mods 打开</strong> 查看作者页，在 <strong>Files</strong> 标签获取当前包体及补丁后的安装说明。
+</p>
+
+<p><strong>玩家向功能</strong></p>
+<ul>
+  <li>允许你在野外时通过<strong>游戏内菜单退出</strong>，而不必先赶回庇护所，同时保留<strong>背包内战利品</strong>与<strong>最后使用的地图入口点</strong>。</li>
+  <li>在主菜单新增<strong>继续探索</strong>：加载角色并回到上一张图你最后经过的入口。</li>
+  <li>挂起槽在<strong>读取后即删除</strong>：作者明确这不是<strong>快速存档</strong>，以保留整体硬核节奏。</li>
+  <li><strong>死亡仍会失去携带品</strong>——与本体预期一致。</li>
+</ul>
+
+<h2>刻意不保存的内容</h2>
+<p>
+  作者说明挂起文件只携带<strong>背包</strong>与<strong>最后入口点</strong>。<strong>地图状态</strong>（敌人分布、商人库存、野外容器内容等）不会冻结；恢复后<strong>世界战利品可能重新随机</strong>，因为本体存档模型主要围绕玩家与庇护所。把它当作设计边界，而不是「暂停同一仓库」的漏洞。
+</p>
+
+<h2>何时不会写入挂起档</h2>
+<ul>
+  <li><strong>游戏崩溃</strong>或在<strong>游戏内菜单之外</strong>退出——仅覆盖模组挂钩的正常退出流程。</li>
+  <li>测试新叠装前务必<strong>手动备份</strong>；挂起档是安全网，不能替代拷贝存档目录。</li>
+</ul>
+
+<h2>安装</h2>
+<ol>
+  <li>按 Nexus <strong>Files</strong> 标签中的确切文件名与目录结构操作。</li>
+  <li>多数 Road to Vostok 环境使用 <strong>Metro Mod Loader</strong> 风格的 <code>mods</code> 文件夹；若需将包重命名为 <code>.vmz</code>，请严格照作者页印刷的步骤。</li>
+  <li>装好后请用<strong>弃档</strong>先跑一轮挂起循环，再投入长期铁人角色。</li>
+</ol>
+
+<h2>兼容思路</h2>
+<p>
+  任何改写主菜单、死亡处理或庇护所存档的模组都可能与挂起逻辑交互。若叠大型玩法包（例如本站
+  <a href="/mods/oldmans-immersive-overhaul">Oldman 沉浸大修</a>），请阅读双方说明与 Nexus <strong>Posts</strong>，别默认每次都能干净恢复。
+</p>
+
+<h2>安全提示</h2>
+<p>
+  只从侧栏 Nexus 链接下载；压缩包版本与 Nexus 页眉一致；多留备份——挂起工具触及与永久死亡设计相同的不安点，务必先在自己的版本上验证稳定。
+</p>
+`,
+  },
 }

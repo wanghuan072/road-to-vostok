@@ -123,8 +123,8 @@
     },
     "modsListPage": {
       "title": "Road To Vostok — mods : sélection éditoriale et packs recommandés",
-      "description": "Mods Road To Vostok sélectionnés : orientation gameplay, packs qualité de vie, notes Metro Mod Loader et conseils d’installation. Pas un miroir ModWorkshop complet ; pas de fichiers .vmz hébergés — téléchargements via pages auteurs.",
-      "keywords": "Road To Vostok mods, modding, Early Access, ModWorkshop, Metro Mod Loader, guide jeu"
+      "description": "Mods Road To Vostok sélectionnés : orientation gameplay, packs qualité de vie, notes Metro Mod Loader et conseils d’installation. Pas un miroir ModWorkshop ou Nexus Mods complet ; pas de fichiers .vmz hébergés — téléchargements via pages auteurs.",
+      "keywords": "Road To Vostok mods, modding, Early Access, ModWorkshop, Nexus Mods, Metro Mod Loader, guide jeu"
     },
     "modArticlePage": {
       "title": "Article mod — Road To Vostok",
@@ -953,14 +953,15 @@
     "moreOnSiteLabel": "Plus sur ce site",
     "allModsLink": "Tous les mods",
     "ctaModWorkshop": "Ouvrir sur ModWorkshop",
-    "commentsDisclosure": "Courts résumés pour le contexte — pas des posts Workshop verbatim."
+    "ctaNexusMods": "Ouvrir sur Nexus Mods",
+    "commentsDisclosure": "Courts résumés pour le contexte — pas des posts Workshop ou Nexus verbatim."
   },
   "modsListPage": {
     "breadcrumb": "Mods",
-    "eyebrow": "ModWorkshop · sélection éditoriale",
+    "eyebrow": "ModWorkshop et Nexus Mods · sélection éditoriale",
     "title": "Mods Road To Vostok",
-    "introP1Html": "Nous publions des <strong>focus mods éditoriaux</strong> : packs et outils à lire avant d’installer — refontes du gameplay, compilations qualité de vie, chargeur requis (ex. Metro Mod Loader), et ce que chaque fiche change pour une partie. La liste est une sélection, pas l’index ModWorkshop complet ; nous ajoutons au fil des revues.",
-    "introP2Html": "Nous n’hébergeons <strong>pas</strong> les fichiers <strong>.vmz</strong>. Chaque carte mène à la source auteur (ModWorkshop ou indiqué) pour le vrai téléchargement. Adaptez le fichier à votre démo ou Early Access et vérifiez les sommes de contrôle avant chargement en jeu.",
+    "introP1Html": "Nous publions des <strong>focus mods éditoriaux</strong> : packs et outils à lire avant d’installer — refontes du gameplay, compilations qualité de vie, chargeur requis (ex. Metro Mod Loader), et ce que chaque fiche change pour une partie. La liste est une sélection, pas l’index ModWorkshop ou Nexus Mods complet ; nous ajoutons au fil des revues.",
+    "introP2Html": "Nous n’hébergeons <strong>pas</strong> les fichiers <strong>.vmz</strong>. Chaque carte mène à la source auteur (ModWorkshop, Nexus Mods ou indiqué dans l’article) pour le vrai téléchargement. Adaptez le fichier à votre démo ou Early Access et vérifiez les sommes de contrôle avant chargement en jeu.",
     "boardAria": "Articles mods",
     "mastLabel": "Manifeste",
     "mastListingOne": "fiche",

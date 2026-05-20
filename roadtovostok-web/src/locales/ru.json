@@ -123,8 +123,8 @@
     },
     "modsListPage": {
       "title": "Road To Vostok — моды: обзоры и рекомендованные паки",
-      "description": "Подборка модов Road To Vostok: обзоры геймплей-паков и утилит, Metro Mod Loader и безопасная установка. Не зеркало ModWorkshop; .vmz не хостим — только ссылки на страницы авторов.",
-      "keywords": "Road To Vostok моды, моддинг, ранний доступ, ModWorkshop, Metro Mod Loader, гайд"
+      "description": "Подборка модов Road To Vostok: обзоры геймплей-паков и утилит, Metro Mod Loader и безопасная установка. Не зеркало ModWorkshop или Nexus Mods; .vmz не хостим — только ссылки на страницы авторов.",
+      "keywords": "Road To Vostok моды, моддинг, ранний доступ, ModWorkshop, Nexus Mods, Metro Mod Loader, гайд"
     },
     "modArticlePage": {
       "title": "Мод — Road To Vostok",
@@ -953,14 +953,15 @@
     "moreOnSiteLabel": "Ещё на сайте",
     "allModsLink": "Все моды",
     "ctaModWorkshop": "Открыть на ModWorkshop",
-    "commentsDisclosure": "Краткие выжимки для контекста — не дословные посты Workshop."
+    "ctaNexusMods": "Открыть на Nexus Mods",
+    "commentsDisclosure": "Краткие выжимки для контекста — не дословные посты Workshop или Nexus."
   },
   "modsListPage": {
     "breadcrumb": "Моды",
-    "eyebrow": "ModWorkshop · редакционные обзоры",
+    "eyebrow": "ModWorkshop и Nexus Mods · редакционные обзоры",
     "title": "Моды Road To Vostok",
-    "introP1Html": "Здесь публикуем <strong>редакционные обзоры модов</strong>: паки и утилиты, о которых стоит прочитать до установки — оверхолы геймплея, QoL-сборки, требования к загрузчику (напр. Metro Mod Loader) и что меняется в забеге. Список — наша подборка, не полный индекс ModWorkshop; добавляем по мере разбора.",
-    "introP2Html": "Мы <strong>не</strong> хостим файлы <strong>.vmz</strong>. У каждой карточки — ссылка на источник автора (ModWorkshop или как указано). Сверяйте файл с демо или EA и проверяйте контрольные суммы перед загрузкой в игру.",
+    "introP1Html": "Здесь публикуем <strong>редакционные обзоры модов</strong>: паки и утилиты, о которых стоит прочитать до установки — оверхолы геймплея, QoL-сборки, требования к загрузчику (напр. Metro Mod Loader) и что меняется в забеге. Список — наша подборка, не полный индекс ModWorkshop или Nexus Mods; добавляем по мере разбора.",
+    "introP2Html": "Мы <strong>не</strong> хостим файлы <strong>.vmz</strong>. У каждой карточки — ссылка на источник автора (ModWorkshop, Nexus Mods или как указано в статье). Сверяйте файл с демо или EA и проверяйте контрольные суммы перед загрузкой в игру.",
     "boardAria": "Статьи о модах",
     "mastLabel": "Манифест",
     "mastListingOne": "запись",

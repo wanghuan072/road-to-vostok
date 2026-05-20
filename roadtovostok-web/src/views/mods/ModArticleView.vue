@@ -66,7 +66,11 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {{ $t('modArticlePage.ctaModWorkshop') }}
+                {{
+                  isNexusExternalUrl(article.externalUrl)
+                    ? $t('modArticlePage.ctaNexusMods')
+                    : $t('modArticlePage.ctaModWorkshop')
+                }}
                 <span aria-hidden="true">↗</span>
               </a>
             </div>
@@ -154,6 +158,10 @@ const { getLocalizedPath } = useLocalizedPath()
 const modArticles = computed(() => getModArticles(locale.value))
 
 const article = computed(() => getByAddressBar(modArticles.value, route.params.addressBar))
+
+function isNexusExternalUrl(url) {
+  return typeof url === 'string' && url.includes('nexusmods.com')
+}
 
 function statStr(v) {
   const s = v == null ? '' : String(v).trim()

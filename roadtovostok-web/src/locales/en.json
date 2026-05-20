@@ -153,8 +153,8 @@
     },
     "modsListPage": {
       "title": "Road To Vostok Mods — Editorial Spotlights & Recommended Packs",
-      "description": "Curated Road To Vostok mod recommendations: editorial spotlights on gameplay packs and tools we review—features, Metro Mod Loader notes, and safe install guidance. Not a full ModWorkshop mirror; no hosted .vmz files—downloads only via linked author pages.",
-      "keywords": "Road To Vostok mods, modding, Early Access, ModWorkshop, Metro Mod Loader, game guide"
+      "description": "Curated Road To Vostok mod recommendations: editorial spotlights on gameplay packs and tools we review—features, Metro Mod Loader notes, and safe install guidance. Not a full ModWorkshop or Nexus Mods mirror; no hosted .vmz files—downloads only via linked author pages.",
+      "keywords": "Road To Vostok mods, modding, Early Access, ModWorkshop, Nexus Mods, Metro Mod Loader, game guide"
     },
     "modArticlePage": {
       "title": "Mod article — Road To Vostok",
@@ -955,14 +955,15 @@
     "moreOnSiteLabel": "More on this site",
     "allModsLink": "All mods",
     "ctaModWorkshop": "Open on ModWorkshop",
-    "commentsDisclosure": "Short summaries for context—not verbatim Workshop posts."
+    "ctaNexusMods": "Open on Nexus Mods",
+    "commentsDisclosure": "Short summaries for context—not verbatim Workshop or Nexus posts."
   },
   "modsListPage": {
     "breadcrumb": "Mods",
-    "eyebrow": "ModWorkshop · editorial spotlights",
+    "eyebrow": "ModWorkshop & Nexus Mods · editorial spotlights",
     "title": "Road To Vostok Mods",
-    "introP1Html": "Here we publish <strong>editorial mod spotlights</strong>: packs and tools we think are worth reading about before you install—gameplay overhauls, QoL compilations, loader requirements (e.g. Metro Mod Loader), and what each listing changes in a run. The list below is our curated recommendations, not an exhaustive ModWorkshop index; we add entries as we review them.",
-    "introP2Html": "We do <strong>not</strong> host <strong>.vmz</strong> files. Every card links to the author’s source (ModWorkshop or as stated) for the real download. Match the file to your demo or Early Access build and verify checksums before you load anything into the game.",
+    "introP1Html": "Here we publish <strong>editorial mod spotlights</strong>: packs and tools we think are worth reading about before you install—gameplay overhauls, QoL compilations, loader requirements (e.g. Metro Mod Loader), and what each listing changes in a run. The list below is our curated recommendations, not an exhaustive ModWorkshop or Nexus Mods index; we add entries as we review them.",
+    "introP2Html": "We do <strong>not</strong> host <strong>.vmz</strong> files. Every card links to the author’s source (ModWorkshop, Nexus Mods, or as stated in the article) for the real download. Match the file to your demo or Early Access build and verify checksums before you load anything into the game.",
     "boardAria": "Mod articles",
     "mastLabel": "Manifest",
     "mastListingOne": "listing",

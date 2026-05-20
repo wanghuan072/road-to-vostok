@@ -123,8 +123,8 @@
     },
     "modsListPage": {
       "title": "Road To Vostok modit — toimitukselliset valokeilat ja suositellut paketit",
-      "description": "Kuratoidut Road To Vostok -modisuositukset: toimitukselliset valokeilat pelipaketeista ja työkaluista — ominaisuudet, Metro Mod Loader -huomiot ja turvallinen asennusohje. Ei täyttä ModWorkshop-peilausta; ei isännöityjä .vmz-tiedostoja — lataukset vain linkitettyjen tekijäsivujen kautta.",
-      "keywords": "Road To Vostok modit, modaus, Early Access, ModWorkshop, Metro Mod Loader, peliopas"
+      "description": "Kuratoidut Road To Vostok -modisuositukset: toimitukselliset valokeilat pelipaketeista ja työkaluista — ominaisuudet, Metro Mod Loader -huomiot ja turvallinen asennusohje. Ei täyttä ModWorkshop- tai Nexus Mods -peilausta; ei isännöityjä .vmz-tiedostoja — lataukset vain linkitettyjen tekijäsivujen kautta.",
+      "keywords": "Road To Vostok modit, modaus, Early Access, ModWorkshop, Nexus Mods, Metro Mod Loader, peliopas"
     },
     "modArticlePage": {
       "title": "Modi-artikkeli — Road To Vostok",
@@ -955,14 +955,15 @@
     "moreOnSiteLabel": "Lisää tällä sivustolla",
     "allModsLink": "Kaikki modit",
     "ctaModWorkshop": "Avaa ModWorkshopissa",
-    "commentsDisclosure": "Lyhyet tiivistelmät kontekstiksi — eivät sanatarkat Workshop-viestit."
+    "ctaNexusMods": "Avaa Nexus Modsissa",
+    "commentsDisclosure": "Lyhyet tiivistelmät kontekstiksi — eivät sanatarkat Workshop- tai Nexus-viestit."
   },
   "modsListPage": {
     "breadcrumb": "Modit",
-    "eyebrow": "ModWorkshop · toimitukselliset valokeilat",
+    "eyebrow": "ModWorkshop ja Nexus Mods · toimitukselliset valokeilat",
     "title": "Road To Vostok -modit",
-    "introP1Html": "Julkaisemme <strong>toimituksellisia modivalokeiloja</strong>: paketteja ja työkaluja, jotka kannattaa lukea ennen asennusta — pelattavuusmuutokset, QoL-kokoelmat, latausvaatimukset (esim. Metro Mod Loader) ja mitä kukin listaus muuttaa runissa. Alla oleva lista on kuratoituja suosituksia, ei täyttä ModWorkshop-indeksiä; lisäämme merkintöjä arvioidessamme.",
-    "introP2Html": "Emme <strong>isännöi</strong> <strong>.vmz</strong>-tiedostoja. Jokainen kortti linkittää tekijän lähteeseen (ModWorkshop tai mainittu) oikeaa latausta varten. Sovita tiedosto demo- tai Early Access -versioosi ja tarkista tarkistussummat ennen peliin lataamista.",
+    "introP1Html": "Julkaisemme <strong>toimituksellisia modivalokeiloja</strong>: paketteja ja työkaluja, jotka kannattaa lukea ennen asennusta — pelattavuusmuutokset, QoL-kokoelmat, latausvaatimukset (esim. Metro Mod Loader) ja mitä kukin listaus muuttaa runissa. Alla oleva lista on kuratoituja suosituksia, ei täyttä ModWorkshop- tai Nexus Mods -indeksiä; lisäämme merkintöjä arvioidessamme.",
+    "introP2Html": "Emme <strong>isännöi</strong> <strong>.vmz</strong>-tiedostoja. Jokainen kortti linkittää tekijän lähteeseen (ModWorkshop, Nexus Mods tai artikkelissa mainittu) oikeaa latausta varten. Sovita tiedosto demo- tai Early Access -versioosi ja tarkista tarkistussummat ennen peliin lataamista.",
     "boardAria": "Modi-artikkelit",
     "mastLabel": "Manifesti",
     "mastListingOne": "listaus",
