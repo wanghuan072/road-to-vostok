@@ -798,5 +798,243 @@ export default [
   </h2>
   <p>模组技术与游戏版本迭代很快。如需最新工具、详细教程与搜刮用互动地图，欢迎常访问我们的主站 <a href="http://roadtovostok.org/">http://roadtovostok.org/</a>，我们致力于为 Road to Vostok 社区提供尽可能全面、易用的资源。
   </p>`,
+  },
+
+  {
+    id: 11,
+    title: "Road To Vostok Mods 指南：QoL、合作与安装",
+    description: "安全使用 Road To Vostok Mods：QoL、保物品思路、合作限制、安装流程与兼容检查。",
+    tags: ["Road To Vostok Mods","Road To Vostok 合作 Mod","Road To Vostok Modding"],
+    publishDate: "2026-07-01",
+    imageUrl: "/images/guides/guides10.webp",
+    imageAlt: "Road To Vostok Mods 指南 mod 安装与兼容检查",
+    seo: {
+      title: "Road To Vostok Mods 指南：QoL、合作与安装",
+      description: "安全使用 Road To Vostok Mods：QoL、保物品思路、合作限制、安装流程与兼容检查。",
+      keywords: "road to vostok mods, 合作mod, 多人mod, mod安装"
+    },
+    addressBar: "road-to-vostok-mods-guide",
+    detailsHtml: `
+  <p><strong>快速结论：</strong> Road To Vostok 确实有强烈的社区 Mod 需求，但起步不要装大包。先用小型 QoL 调整、可信 Loader，并在每加一个文件后做一次兼容检查。合作和多人 Mod 只有在页面明确支持当前版本时才可视为可用。</p>
+  <p>本指南不覆盖 torrent、trainer 和作弊菜单。这类工具会污染测试数据，破坏生存平衡，也会让真实 Mod 冲突更难判断。</p>
+
+  <figure>
+    <img src="/images/guides/guides10-01.webp" alt="road to vostok mods 使用 mod loader 和配置菜单安装" title="Road To Vostok Mods 安装流程" width="50%">
+    <figcaption>只走一条 Loader 路线，每个 Road To Vostok Mod 单独测试后再叠加。</figcaption>
+  </figure>
+
+  <h2>最适合先装的 Road To Vostok Mods</h2>
+  <h3>Quality-of-life Mods</h3>
+  <p>最安全的 Road To Vostok Mods 是降低操作摩擦但不改生存循环的 QoL：配置菜单、HUD 提示、仓库整理，以及可以快速关闭的数值调整。</p>
+  <p>如果要做更广泛的调整，先读 <a href="/guides/road-to-vostok-console-commands-and-modding">控制台与 Modding 指南</a> 关键是引擎结构：Road To Vostok 不是旧式 INI 射击游戏，数值不会全部放在纯文本里。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Mod 目的</th>
+        <th>用途</th>
+        <th>风险检查</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>配置菜单</td>
+        <td>在游戏内修改支持的 Mod 数值</td>
+        <td>确认 Loader 优先级和当前版本支持</td>
+      </tr>
+      <tr>
+        <td>事件或提示覆盖层</td>
+        <td>减少测试时的盲找时间</td>
+        <td>判断原版机制前先关闭</td>
+      </tr>
+      <tr>
+        <td>Inventory QoL</td>
+        <td>排序、存储或庇护所管理</td>
+        <td>加载影响仓库的文件前先备份存档</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Secure container 和 no-item-loss Mods</h3>
+  <p>Secure container 和 no-item-loss 搜索指向同一个痛点：一次状态连锁导致整套装备丢失。把它们当作物品保护修改，而不是推进必需品。</p>
+  <p>原版规划请配合 <a href="/guides/road-to-vostok-shelter-locations">庇护所位置指南</a>. 它比保物品绕法更适合处理存储和路线中转。</p>
+
+  <h2>合作与多人 Mod 搜索意图</h2>
+  <h3>合作 Mod 变体</h3>
+  <p>玩家确实在找 Road To Vostok coop mod，但这不等于官方多人。合作 Mod 必须处理物品状态、NPC 权限、世界事件、伤害状态和存档同步。</p>
+  <p><strong>INFERRED:</strong> 如果合作 Mod 没有说明 desync、死亡状态和版本锁定，把它当测试版，不要用于主存档。</p>
+
+  <h3>多人 Mod 限制</h3>
+  <p>风险不只是连不上。更危险的是静默状态漂移：一个玩家拿走容器，另一个客户端仍看到物品；事件只在一端生成；伤口状态只在本地清除。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>检查项</th>
+        <th>需要确认</th>
+        <th>失败信号</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>版本</td>
+        <td>Mod 页面列出当前 Road To Vostok 版本</td>
+        <td>只写旧 Demo 且无更新</td>
+      </tr>
+      <tr>
+        <td>存档安全</td>
+        <td>有备份或独立档说明</td>
+        <td>要求直接用主存档测试</td>
+      </tr>
+      <tr>
+        <td>状态同步</td>
+        <td>Loot、NPC、生命值和区域转移有说明</td>
+        <td>有 desync 报告但无解决方案</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>如何安装和管理 Mods</h2>
+  <h3>Mod 管理器与兼容检查</h3>
+  <p>使用最小可用组合：Loader、必要时加配置菜单，然后只装一个玩法 Mod。用一次性档进入低风险区域，测试它声称会改变的机制。</p>
+  <p>测试路线时打开 <a href="/map">互动地图</a> 并记录区域、庇护所或转移点。很多 Mod 问题会先在地图边界暴露。</p>
+
+  <figure>
+    <img src="/images/guides/guides10-02.webp" alt="如何安全加载 road to vostok mods 且不破坏存档" title="安全加载 Road To Vostok Mods" width="50%">
+    <figcaption>每装一个 Mod，先测试一个机制和一次区域转移，再继续。</figcaption>
+  </figure>
+
+  <h3>安全加载 Mods</h3>
+  <ol>
+    <li>改 Loader、脚本或打包文件前备份存档。</li>
+    <li>严格按作者说明安装 Loader。</li>
+    <li>一次只加一个 Mod，启动一次，再正常退出。</li>
+    <li>在低风险区域测试机制，不要去 Minefield。</li>
+    <li>影响物品、庇护所或死亡的 Mod 先用一次性档测试。</li>
+  </ol>
+  <p>不要用作弊 Mod 做攻略测试基线。干净存档的数据更可靠。</p>
+
+  <h2>FAQ</h2>
+  <h3>Road To Vostok 有 Mods 吗？</h3>
+  <p>有。主要需求集中在 QoL、配置工具、物品保护和合作变体。只用当前仍维护的 Mod 页面。</p>
+  <h3>有 Road To Vostok 合作 Mod 吗？</h3>
+  <p>有合作搜索需求，但不等于官方多人。先确认版本支持、存档安全和 desync 处理。</p>
+  <h3>应该收录作弊 Mods 吗？</h3>
+  <p>不应该。作弊菜单、trainer 和不安全下载不会帮助理解生存系统，也会制造不可靠测试数据。</p>`,
+  },
+
+  {
+    id: 12,
+    title: "Road To Vostok 地图指南：雷区、区域与路线",
+    description: "阅读 Road To Vostok 地图：雷区路线、区域转移、庇护所、Village、Highway、Outpost、Area 05 与 Demo 范围。",
+    tags: ["Road To Vostok 地图","Road To Vostok 雷区","Road To Vostok 路线"],
+    publishDate: "2026-07-01",
+    imageUrl: "/images/guides/guides02.webp",
+    imageAlt: "Road To Vostok 地图 雷区 区域 庇护所和路线",
+    seo: {
+      title: "Road To Vostok 地图指南：雷区、区域与路线",
+      description: "阅读 Road To Vostok 地图：雷区路线、区域转移、庇护所、Village、Highway、Outpost、Area 05 与 Demo 范围。",
+      keywords: "road to vostok 地图, 雷区地图, tactical map, 路线"
+    },
+    addressBar: "road-to-vostok-map-minefield-locations-guide",
+    detailsHtml: `
+  <p><strong>快速结论：</strong> 把 Road To Vostok 地图看成风险区域链，而不是观光图。出发前必须回答三件事：下一个庇护所在哪里、哪个危险挡住转移、如果路线变成战斗需要多少弹药和医疗。</p>
+  <p>Minefield 是硬过滤器。如果你不能识别地雷、控制声音，并保留足够子弹处理 AI 和清雷，不要因为标记很近就硬冲。</p>
+
+  <figure>
+    <img src="/images/guides/guides02-01.webp" alt="road to vostok 雷区地图 路线规划和清雷" title="Road To Vostok 雷区路线规划" width="50%">
+    <figcaption>雷区地图是路线控制问题：扫描、清理、移动，然后重新检查树林线。</figcaption>
+  </figure>
+
+  <h2>Road To Vostok 地图如何运作</h2>
+  <h3>核心地图与区域结构</h3>
+  <p>最有效的读图方式是看区域关系：安全中转、Loot 路线、转移点和后段危险区。每一次移动都是后勤决策。</p>
+  <p>用 <a href="/map">Road To Vostok 互动地图</a> 做视觉确认，再用指南理解机制。地图告诉你问题在哪，指南告诉你哪里会毁掉这趟。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>地图层</th>
+        <th>回答什么</th>
+        <th>常见错误</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>区域布局</td>
+        <td>区域如何连接</td>
+        <td>没有备用庇护所就移动</td>
+      </tr>
+      <tr>
+        <td>Minefield map</td>
+        <td>转移何时变慢且危险</td>
+        <td>清掉一颗雷后立刻冲刺</td>
+      </tr>
+      <tr>
+        <td>命名地点</td>
+        <td>Village、Highway、Outpost、School、Apartments</td>
+        <td>把 Loot 路线当安全路线</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Tactical 与 interactive map 变体</h3>
+  <p>搜索 tactical map 或 interactive map 的玩家需要更快决策。优先标出地雷、庇护所、stash、商人、锁门和敌人路径。</p>
+  <p>不要把每个低价值容器都塞进地图。Road To Vostok 里信息噪音也是风险；好地图只突出下一步决策。</p>
+
+  <h2>雷区与路线规划</h2>
+  <h3>Minefield map 和 Minefield guide</h3>
+  <p>Minefield 需要慢节奏：扫地面、识别地雷、必要时远距离清除，再因为树林线和 AI 压力重新扫描。已有 <a href="/guides/surviving-the-Minefield">雷区生存指南</a> 更细讲清雷机制。</p>
+  <p><strong>路线规则：</strong> 带足够弹药同时处理清雷和战斗。如果弹药计划只算 NPC，Minefield 会逼你做坏选择。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>进入前</th>
+        <th>最低检查</th>
+        <th>放弃条件</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>医疗储备</td>
+        <td>止血加真实创伤恢复选项</td>
+        <td>只有轻绷带</td>
+      </tr>
+      <tr>
+        <td>弹药储备</td>
+        <td>足够应对 AI 和清雷射击</td>
+        <td>路线假设零失误</td>
+      </tr>
+      <tr>
+        <td>头盔和护甲</td>
+        <td>进入前状态可用</td>
+        <td>已经残血或跛行</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>区域之间移动</h3>
+  <p>区域移动就是 Loadout 检查。确认医疗、饮水、食物、枪况、备用弹匣和撤退路线。按口径规划时先看 <a href="/wiki/ammunition">弹药表</a> 再走长路线。</p>
+  <p>卡在区域转移的玩家通常是路线顺序错了。先按庇护所到庇护所规划，再加 Loot 绕路。</p>
+
+  <h2>重要命名地点</h2>
+  <h3>Village、Highway 和 Outpost maps</h3>
+  <p>命名地图要按主要风险读。Village 惩罚错误进楼，Highway 暴露长视线，Outpost 更适合读掩体但过路仍危险。</p>
+  <p>如果路线包含垂直 CQB 或城市 Loot，对照 <a href="/guides/apartments-complete-survival-loot-guid">Apartments 生存和 Loot 指南</a>. 地图变成立体后，路线时机比纯枪法更重要。</p>
+
+  <figure>
+    <img src="/images/guides/guides01-01.webp" alt="road to vostok area 05 demo map 和边境路线规划" title="Road To Vostok Area 05 与 Demo Map 规划" width="50%">
+    <figcaption>区域规划从开第一枪前开始：确认目标、转移风险和备用庇护所。</figcaption>
+  </figure>
+
+  <h3>Area 05 和 Demo Map 覆盖</h3>
+  <p>Area 05 和 Demo map 关键词要谨慎处理，因为 Road To Vostok 会随版本变化。把本页当路线框架，再在当前版本确认具体物体、庇护所或转移点。</p>
+  <p><strong>版本提示：</strong> 地图路线、Loot 点和转移细节可能随补丁移动。带稀有装备前先用低风险装备验证。</p>
+
+  <h2>FAQ</h2>
+  <h3>有 Road To Vostok 地图吗？</h3>
+  <p>有。用 <a href="/map">互动地图</a> 导航，用本指南判断路线逻辑。</p>
+  <h3>Road To Vostok 的雷区在哪里？</h3>
+  <p>Minefield 是危险转移区。带高价值装备进入前先读 <a href="/guides/surviving-the-Minefield">Minefield 指南</a> 。</p>
+  <h3>如何在区域之间移动？</h3>
+  <p>按庇护所、转移点和撤退路线规划，不要只按 Loot 价值规划。</p>`,
   }
+
 ]
