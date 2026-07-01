@@ -845,5 +845,243 @@ export default [
   </h2>
   <p>Tools und Spielversionen ändern sich schnell. Für aktuelle Mod-Tools, Tutorials und interaktive Loot-Karten: unser Hub <a href="http://roadtovostok.org/">http://roadtovostok.org/</a> — umfassende Ressourcen für die Road-to-Vostok-Community.
   </p>`,
+  },
+
+  {
+    id: 11,
+    title: "Road To Vostok Mods Guide: QoL, Koop und Setup",
+    description: "Sichere Road To Vostok Mods: QoL, Secure-Container-Ideen, Koop-Grenzen, Installation und Kompatibilitaetscheck.",
+    tags: ["Road To Vostok Mods","Road To Vostok Koop-Mod","Road To Vostok Modding"],
+    publishDate: "2026-07-01",
+    imageUrl: "/images/guides/guides10.webp",
+    imageAlt: "Road To Vostok Mods Guide fuer Mod Setup und Kompatibilitaet",
+    seo: {
+      title: "Road To Vostok Mods Guide: QoL, Koop und Setup",
+      description: "Sichere Road To Vostok Mods: QoL, Secure-Container-Ideen, Koop-Grenzen, Installation und Kompatibilitaetscheck.",
+      keywords: "road to vostok mods, koop mod, multiplayer mod, modding setup"
+    },
+    addressBar: "road-to-vostok-mods-guide",
+    detailsHtml: `
+  <p><strong>Kurzfassung:</strong> Road To Vostok hat klare Community-Nachfrage nach Mods, aber der saubere Start ist kein riesiges Mod-Pack. Beginne mit kleinen QoL-Aenderungen, einem vertrauenswuerdigen Loader und einem Kompatibilitaetscheck nach jeder Datei. Koop- und Multiplayer-Mods bleiben experimentell, solange die Mod-Seite keinen aktuellen Build belegt.</p>
+  <p>Torrent-, Trainer- und Cheat-Menue-Intent wird hier bewusst ausgeschlossen. Diese Tools erzeugen schlechte Testdaten, brechen die Survival-Balance und machen echte Mod-Konflikte schwerer erkennbar.</p>
+
+  <figure>
+    <img src="/images/guides/guides10-01.webp" alt="road to vostok mods setup mit mod loader und konfigurationsmenue" title="Road To Vostok Mods Setup Workflow" width="50%">
+    <figcaption>Nutze einen Loader-Pfad und teste jeden Road To Vostok Mod, bevor du die naechste Datei stapelst.</figcaption>
+  </figure>
+
+  <h2>Beste Road To Vostok Mods fuer den Start</h2>
+  <h3>Quality-of-life Mods</h3>
+  <p>Die sichersten Road To Vostok Mods sind QoL-Aenderungen, die Reibung im Interface senken, ohne den Survival-Loop umzubauen: Konfigurationsmenues, kleine HUD-Hinweise, Stash-Ordnung und Werte, die schnell deaktiviert werden koennen.</p>
+  <p>Wenn du breiteres Tuning willst, lies zuerst den bestehenden <a href="/guides/road-to-vostok-console-commands-and-modding">Console-Commands- und Modding-Guide</a> Der wichtige Punkt ist die Engine-Struktur: Road To Vostok ist kein alter INI-Shooter, bei dem jeder Wert als Klartext vorliegt.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Mod-Intent</th>
+        <th>Wofuer nutzen</th>
+        <th>Risiko-Check</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Konfigurationsmenue</td>
+        <td>Mod-Werte direkt im Spiel aendern</td>
+        <td>Loader-Prioritaet und aktuellen Build pruefen</td>
+      </tr>
+      <tr>
+        <td>Event- oder Hinweis-Overlay</td>
+        <td>Blinde Suchzeit beim Testen reduzieren</td>
+        <td>Vor Vanilla-Bewertung deaktivieren</td>
+      </tr>
+      <tr>
+        <td>Inventory QoL</td>
+        <td>Sortierung, Storage oder Shelter-Management</td>
+        <td>Save sichern, bevor Stash-Dateien geladen werden</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Secure-Container- und No-Item-Loss-Mods</h3>
+  <p>Secure-Container- und No-Item-Loss-Suchen meinen denselben Schmerzpunkt: ein kompletter Kit-Verlust durch eine schlechte Statuskette. Behandle diese Mods als Inventory-Schutz, nicht als Pflicht fuer Progression.</p>
+  <p>Fuer Vanilla-Planung kombiniere diesen Abschnitt mit dem <a href="/guides/road-to-vostok-shelter-locations">Shelter-Standorte-Guide</a>. Er deckt Storage und Route-Staging besser ab als ein modifizierter Item-Loss-Workaround.</p>
+
+  <h2>Koop- und Multiplayer-Mod-Intent</h2>
+  <h3>Koop-Mod-Varianten</h3>
+  <p>Suchen nach Road To Vostok Koop-Mods sind real, aber nicht gleichbedeutend mit offiziellem Multiplayer. Ein Koop-Mod muss Inventory-State, NPC-Autoritaet, World Events, Schadensstatus und Save-Synchronisierung loesen.</p>
+  <p><strong>INFERRED:</strong> Wenn ein Koop-Mod Desync, Tod-State und Version-Pinning nicht dokumentiert, behandle ihn als Testbuild und nicht fuer dein Hauptsave.</p>
+
+  <h3>Multiplayer-Mod-Grenzen</h3>
+  <p>Das Risiko ist nicht nur Verbindungsabbruch. Gefaehrlich ist leiser State-Drift: ein Spieler leert einen Container, ein anderer sieht den Loot noch, ein Event spawnt nur auf einem Client oder ein Wundstatus klaert nur lokal.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Check</th>
+        <th>Was pruefen</th>
+        <th>Fehlsignal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Build-Version</td>
+        <td>Mod-Seite nennt aktuellen Road To Vostok Build</td>
+        <td>Nur alter Demo-Build ohne Update</td>
+      </tr>
+      <tr>
+        <td>Save-Sicherheit</td>
+        <td>Backup oder separates Profil ist erklaert</td>
+        <td>Test auf Live-Save empfohlen</td>
+      </tr>
+      <tr>
+        <td>State-Sync</td>
+        <td>Loot, NPCs, Health und Transitions dokumentiert</td>
+        <td>Desync-Berichte ohne Workaround</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Mods installieren und verwalten</h2>
+  <h3>Mod Manager und Kompatibilitaetschecks</h3>
+  <p>Nutze den kleinsten funktionierenden Stack: Loader, falls noetig Konfigurationsmenue, dann ein Gameplay-Mod. Starte ein Wegwerfprofil und teste exakt die Mechanik, die der Mod aendert.</p>
+  <p>Fuer Routentests halte die <a href="/map">interaktive Karte</a> offen und notiere Gebiet, Shelter oder Transition. Viele Mod-Fehler zeigen sich zuerst an Kartenuebergaengen.</p>
+
+  <figure>
+    <img src="/images/guides/guides10-02.webp" alt="road to vostok mods sicher laden ohne saves zu zerstoeren" title="Road To Vostok Mods sicher laden" width="50%">
+    <figcaption>Nach jeder Installation: eine Mechanik und eine Area-Transition testen, dann erst weitermachen.</figcaption>
+  </figure>
+
+  <h3>Mods sicher laden</h3>
+  <ol>
+    <li>Save-Ordner sichern, bevor Loader, Scripts oder Packed Files geaendert werden.</li>
+    <li>Loader exakt nach Anleitung des Autors installieren.</li>
+    <li>Einen Mod hinzufuegen, einmal starten, sauber beenden.</li>
+    <li>Mechanik in einer risikoarmen Area pruefen, nicht im Minefield.</li>
+    <li>Inventory-, Shelter- oder Death-Mods zuerst auf Wegwerfprofil testen.</li>
+  </ol>
+  <p>Cheat-Mods nicht als Basis fuer Guide-Tests nutzen. Saubere Profile liefern bessere Daten.</p>
+
+  <h2>FAQ</h2>
+  <h3>Hat Road To Vostok Mods?</h3>
+  <p>Ja. Die Nachfrage betrifft vor allem QoL, Konfiguration, Inventory-Schutz und Koop-Varianten. Nutze aktuelle Mod-Seiten und vermeide veraltete Dateien.</p>
+  <h3>Gibt es einen Road To Vostok Koop-Mod?</h3>
+  <p>Koop-Intent existiert, aber das ist kein offizieller Multiplayer. Behandle solche Mods als experimentell, bis Build-Support, Save-Sicherheit und Desync dokumentiert sind.</p>
+  <h3>Sollten Cheat-Mods enthalten sein?</h3>
+  <p>Nein. Cheat-Menues, Trainer und unsichere Downloads helfen nicht beim Lernen der Survival-Systeme und liefern unzuverlaessige Testdaten.</p>`,
+  },
+
+  {
+    id: 12,
+    title: "Road To Vostok Karten-Guide: Minenfeld und Routen",
+    description: "Road To Vostok Karte lesen: Minenfeld, Gebiete, Shelter, Village, Highway, Outpost, Area 05 und Demo-Routen.",
+    tags: ["Road To Vostok Karte","Road To Vostok Minenfeld","Road To Vostok Routen"],
+    publishDate: "2026-07-01",
+    imageUrl: "/images/guides/guides02.webp",
+    imageAlt: "Road To Vostok Karte mit Minenfeld Gebieten Sheltern und Routen",
+    seo: {
+      title: "Road To Vostok Karten-Guide: Minenfeld und Routen",
+      description: "Road To Vostok Karte lesen: Minenfeld, Gebiete, Shelter, Village, Highway, Outpost, Area 05 und Demo-Routen.",
+      keywords: "road to vostok karte, minenfeld, tactical map, routen"
+    },
+    addressBar: "road-to-vostok-map-minefield-locations-guide",
+    detailsHtml: `
+  <p><strong>Kurzfassung:</strong> Lies die Road To Vostok Karte als Kette von Risikozonen, nicht als Sightseeing-Board. Deine Route muss vor dem Start drei Fragen beantworten: naechster Shelter, Blockade der Transition und Ammo- oder Medical-Reserve fuer einen eskalierenden Kampf.</p>
+  <p>Das Minenfeld ist der harte Filter. Wenn du Minen nicht erkennst, Laerm nicht kontrollierst und keine Reserve fuer Bots plus Mine-Clearing hast, pushe die Route nicht nur wegen eines nahen Markers.</p>
+
+  <figure>
+    <img src="/images/guides/guides02-01.webp" alt="road to vostok minenfeld karte routenplanung und minen clearing" title="Road To Vostok Minenfeld Routenplanung" width="50%">
+    <figcaption>Die Minefield Map ist ein Route-Control-Problem: scannen, raeumen, bewegen, Treeline erneut pruefen.</figcaption>
+  </figure>
+
+  <h2>Wie die Road To Vostok Karte funktioniert</h2>
+  <h3>Kernkarte und Gebietsaufbau</h3>
+  <p>Sinnvoll ist die Karte nach Beziehungen zu lesen: Staging-Zonen, Loot-Routen, Transition Points und spaete Gefahrenzonen. Jede Bewegung ist eine Logistikentscheidung.</p>
+  <p>Nutze die <a href="/map">interaktive Road To Vostok Karte</a> fuer visuelle Checks und die Guides fuer Mechanikdetails. Die Karte zeigt das Problem, der Guide erklaert den Run-Killer.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Kartenebene</th>
+        <th>Antwortet auf</th>
+        <th>Spielerfehler</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gebietslayout</td>
+        <td>Wie Zonen verbunden sind</td>
+        <td>Ohne Fallback-Shelter laufen</td>
+      </tr>
+      <tr>
+        <td>Minefield Map</td>
+        <td>Wo die Transition langsam und explosiv wird</td>
+        <td>Nach einer geraeumten Mine sprinten</td>
+      </tr>
+      <tr>
+        <td>Benannte Orte</td>
+        <td>Village, Highway, Outpost, School und Apartments</td>
+        <td>Loot-Route wie Safe-Route behandeln</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Tactical und Interactive Map Varianten</h3>
+  <p>Wer nach Tactical Map oder Interactive Map sucht, braucht eine schnellere Entscheidungsflaeche. Priorisiere Pins fuer Minen, Shelter, Stashes, Trader, Locks und Enemy Paths.</p>
+  <p>Ueberlade die Karte nicht mit jedem Container. In Road To Vostok ist Clutter ein Risiko; die beste Karte markiert die naechste Entscheidung.</p>
+
+  <h2>Minenfeld und Routenplanung</h2>
+  <h3>Minefield Map und Minefield Guide</h3>
+  <p>Das Minefield verlangt einen langsameren Rhythmus: Boden scannen, Mine erkennen, aus Distanz raeumen und wegen Treeline plus AI-Druck erneut scannen. Der <a href="/guides/surviving-the-Minefield">Minefield Survival Guide</a> deckt die Sprengstoff-Clearing-Mechanik genauer ab.</p>
+  <p><strong>Routenregel:</strong> Nimm genug Munition fuer Mine-Clearing und Kampf mit. Wenn der Ammo-Plan nur NPCs einrechnet, zwingt dich das Minefield in schlechte Entscheidungen.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Vor Eintritt</th>
+        <th>Minimum-Check</th>
+        <th>Abbrechen wenn</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Medical Reserve</td>
+        <td>Bleed Control plus echte Trauma-Option</td>
+        <td>Nur leichte Bandagen vorhanden</td>
+      </tr>
+      <tr>
+        <td>Ammo Reserve</td>
+        <td>Genug fuer AI-Kontakt und Mine Shots</td>
+        <td>Route rechnet mit null Fehlschuessen</td>
+      </tr>
+      <tr>
+        <td>Helm und Ruestung</td>
+        <td>Brauchbarer Zustand vor Crossing</td>
+        <td>Du bist schon angeschlagen</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Zwischen Gebieten reisen</h3>
+  <p>Area Travel ist ein Loadout-Check. Pruefe Meds, Hydration, Food, Waffenstatus, Ersatzmagazin und Fallback. Fuer Kaliberplanung nutze die <a href="/wiki/ammunition">Munitions-Tabelle</a> vor einer langen Route.</p>
+  <p>Wer nach area travel sucht, steckt meist bei der Reihenfolge fest. Plane von Shelter zu Shelter und fuege Loot-Detours erst danach hinzu.</p>
+
+  <h2>Wichtige benannte Orte</h2>
+  <h3>Village, Highway und Outpost Maps</h3>
+  <p>Benannte Maps sollten ueber ihr Hauptproblem gelesen werden. Village bestraft schlechte Building Approaches, Highway oeffnet lange Sichtlinien, Outpost ist besser fuer Cover Reads, bleibt aber gefaehrlich.</p>
+  <p>Wenn dein Run vertikales CQB oder urbanen Loot enthaelt, vergleiche mit dem <a href="/guides/apartments-complete-survival-loot-guid">Apartments Survival- und Loot-Guide</a>. Sobald die Karte vertikal wird, zaehlt Timing mehr als reine Aim-Leistung.</p>
+
+  <figure>
+    <img src="/images/guides/guides01-01.webp" alt="road to vostok area 05 demo karte und border routenplanung" title="Road To Vostok Area 05 und Demo Map Planung" width="50%">
+    <figcaption>Area Planning beginnt vor dem ersten Schuss: Ziel, Transition-Risiko und Fallback-Shelter bestaetigen.</figcaption>
+  </figure>
+
+  <h3>Area 05 und Demo Map Coverage</h3>
+  <p>Area 05 und Demo-Map-Begriffe vorsichtig behandeln, weil sich Road To Vostok ueber Builds veraendert. Nutze diese Seite als Framework und pruefe Objekte, Shelter oder Transition im aktuellen Build.</p>
+  <p><strong>Versionshinweis:</strong> Kartenrouten, Loot-Pins und Transition-Details koennen sich mit Patches verschieben. Verifiziere riskante Wege mit leichtem Loadout.</p>
+
+  <h2>FAQ</h2>
+  <h3>Gibt es eine Road To Vostok Karte?</h3>
+  <p>Ja. Nutze die <a href="/map">interaktive Karte</a> fuer Navigation und diesen Guide fuer Routelogik.</p>
+  <h3>Wo ist das Minenfeld in Road To Vostok?</h3>
+  <p>Das Minefield ist eine gefaehrliche Transition Zone. Lies den <a href="/guides/surviving-the-Minefield">Minefield Guide</a> bevor du mit wertvollem Gear hineinlaeufst.</p>
+  <h3>Wie reist man zwischen Gebieten?</h3>
+  <p>Plane Bewegung ueber Shelter, Transitions und Fallbacks. Route nicht nur nach Loot-Wert.</p>`,
   }
+
 ]
