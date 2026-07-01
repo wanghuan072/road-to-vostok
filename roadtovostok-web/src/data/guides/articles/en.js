@@ -1,4 +1,4 @@
-export default [
+﻿export default [
   {
     id: 1,
     title: "Road to Vostok: An Analytical Deep Dive into Its Real-World Geography",
@@ -36,7 +36,7 @@ export default [
   <p><img src="/images/guides/guides01-01.webp" alt="Vaalimaa3" width="50%" style="width: 50%;" /></p>
   <p>Constructed in the 1940s during the Continuation War between Finland and Soviet Russia, the Salpa Line is a massive bunker network that, while never seeing active combat, was built to near completion. In <em>Road to Vostok</em>, this translates to an environment featuring hundreds of concrete bunkers, trench networks, and dense forestry. These fortifications present organic, historically grounded opportunities for enemy encampments, trader outposts, and tactical guerrilla warfare.</p>
   <h3><strong>The Real-World Crossing Points</strong></h3>
-  <p>To reach the titular Vostok, players must cross the border. The real-life crossing points into Russia—the towns of <strong>Vaalimaa</strong> and <strong>Nuijamaa</strong>—provide a brilliant dichotomy for level design:</p>
+  <p>To reach the titular Vostok, players must cross the border. The real-life crossing points into Russia鈥攖he towns of <strong>Vaalimaa</strong> and <strong>Nuijamaa</strong>鈥攑rovide a brilliant dichotomy for level design:</p>
   <p><img src="/images/guides/guides01-02.webp" alt="Vaalimaa" width="50%" style="width: 50%;" /></p>
   <ol>
    <li><strong>Vaalimaa:</strong> Recognized for its commercial outlet malls, this area translates into a high-density, urbanized scavenging zone, ideal for high-risk looting runs.</li>
@@ -47,7 +47,7 @@ export default [
   <p>Crossing the border shifts the survival paradigm entirely. While the Finnish side relies on forest concealment, the Russian side plunges the player into dense, claustrophobic urban decay. Tenebris Infinite theorizes on several real-world Russian locations that perfectly fit Vostok's hardcore mechanical shift:</p>
   <ol>
    <li><strong>Seleznyovo (Celestavo):</strong> Dominated by imposing, brutalist apartment blocks, this area introduces extreme verticality. These structures act as high-risk loot centers, forcing players into intense Close Quarters Combat (CQC) within narrow stairwells and confined apartments. For in-game vertical CQB and trader loops in a similar setting, see the <a href="/guides/apartments-complete-survival-loot-guid">Apartments survival guide</a>.</li>
-   <li><strong>Vyborg:</strong> A striking coastal city featuring a historical Swedish castle. Integrating a medieval fortress into a modern, post-apocalyptic urban map creates an incredible focal point for exploration. Furthermore, Vyborg’s extensive water features could bridge land-based firefights with tense, aquatic navigation.</li>
+   <li><strong>Vyborg:</strong> A striking coastal city featuring a historical Swedish castle. Integrating a medieval fortress into a modern, post-apocalyptic urban map creates an incredible focal point for exploration. Furthermore, Vyborg鈥檚 extensive water features could bridge land-based firefights with tense, aquatic navigation.</li>
   </ol>
   <p>&quot;The transition from the relative safety of guerrilla warfare in the forests of Area 5 to the urban-based CQC of Vostok creates a brilliant mechanical and atmospheric dichotomy.&quot;</p>
   <h2><strong>Rigorous Critique: Geography as a Mechanical Dictator</strong></h2>
@@ -75,7 +75,7 @@ export default [
     addressBar: "surviving-the-Minefield",
     detailsHtml: `
     <p> <strong>Subject Focus:</strong> Advanced tactical analysis of the &quot;Minefield&quot; border map and explosive clearance mechanics.</p>
-  <p>In the unforgiving ecosystem of hardcore survival shooters, the transition from challenging gameplay to absolute, punishing finality requires a physical threshold. In <em>Road to Vostok</em>, that threshold is the <strong>Minefield</strong>. As meticulously documented in StarVox's gameplay breakdown, this map is the ultimate gatekeeper to Vostok—the permadeath zone where a single death wipes your save data and erases everything hoarded in your Attic safehouse. Border layouts and pins are easier to read alongside the <a href="/map">interactive map</a> (Border Zone).</p>
+  <p>In the unforgiving ecosystem of hardcore survival shooters, the transition from challenging gameplay to absolute, punishing finality requires a physical threshold. In <em>Road to Vostok</em>, that threshold is the <strong>Minefield</strong>. As meticulously documented in StarVox's gameplay breakdown, this map is the ultimate gatekeeper to Vostok鈥攖he permadeath zone where a single death wipes your save data and erases everything hoarded in your Attic safehouse. Border layouts and pins are easier to read alongside the <a href="/map">interactive map</a> (Border Zone).</p>
   <p>Navigating this space is an exercise in psychological endurance and spatial awareness. The Minefield strips away the traditional run-and-gun mechanics of the genre, replacing them with a rigorous, methodical puzzle of ballistics and sensory deprivation. This guide provides an in-depth tactical analysis of how to survive this lethal gauntlet, with a special emphasis on active explosive clearance.</p>
   <h2><strong>1. Explosive Ordnance Identification and Active Clearance</strong></h2>
   <p>The primary hazard of the map is, unsurprisingly, the mines. However, the developer has opted for a design philosophy that rewards acute observation and deliberate action rather than punishing blind luck.</p>
@@ -98,7 +98,7 @@ export default [
    <li><strong>Guard Tower Chokepoints:</strong> The map features elevated Guard Towers holding valuable loot. However, ascending these towers traps the player. The AI pushes aggressively up the narrow stairwells while the player is cornered, turning a loot run into a desperate, close-quarters fight for survival.</li>
   </ol>
   <h2><strong>3. Sensory Deprivation and Audio Masking</strong></h2>
-  <p>In hardcore shooters, audio cues—footsteps, weapon reloads, brush rustling—are as vital as visual information. The Minefield map actively weaponizes sound against the player.</p>
+  <p>In hardcore shooters, audio cues鈥攆ootsteps, weapon reloads, brush rustling鈥攁re as vital as visual information. The Minefield map actively weaponizes sound against the player.</p>
   <p>An ambient, circling helicopter provides a constant, deafening roar over the battlefield. While it poses no direct kinetic threat, its presence is a masterstroke in audio design. It effectively masks the sound of approaching AI footsteps and gunfire directions. When combined with the visual clutter of dense pine trees and chain-link fences, the player is subjected to severe sensory deprivation, forcing them to rely on paranoia and constant 360-degree visual scanning.</p>
   <h2><strong>4. Medical Attrition and Gear Degradation</strong></h2>
   <p>Surviving the Minefield is an exercise in resource attrition. The damage sustained here is rarely minor.</p>
@@ -133,12 +133,12 @@ export default [
   </ol>
     <p><strong>Surviving the Apartments in Road to Vostok requires methodical CQB clearing, strict management of the cold mechanic using fire barrels, and leveraging the local trader, &quot;The Generalist.&quot; High-tier loot like VSS and AK-12 rifles are strictly obtained by eliminating hostiles and securing hidden military crates within the complex.</strong></p>
   <h2><strong>Navigating the Area Layout &amp; Tactical Approach</strong></h2>
-  <p>Reaching this zone requires pushing past the Border Zone <a href="/guides/surviving-the-Minefield">minefield routes</a> and trench networks. Once inside, the layout is highly vertical and dense. Moving at night provides a massive tactical advantage against roaming NPC patrols, but requires Night Vision Goggles (NVGs). The environment forces close-quarters battle (CQB). When the NVGs run out of battery or when clearing pitch-black stairwells, transitioning to a weapon-mounted white light is mandatory to identify targets, though it exposes your position to outside threats. Room-by-room clearing is critical, as enemies like rooftop snipers maintain hard lockdown over the courtyards — cross-check approaches on the <a href="/map">interactive map</a> (Vostok pins).</p>
+  <p>Reaching this zone requires pushing past the Border Zone <a href="/guides/surviving-the-Minefield">minefield routes</a> and trench networks. Once inside, the layout is highly vertical and dense. Moving at night provides a massive tactical advantage against roaming NPC patrols, but requires Night Vision Goggles (NVGs). The environment forces close-quarters battle (CQB). When the NVGs run out of battery or when clearing pitch-black stairwells, transitioning to a weapon-mounted white light is mandatory to identify targets, though it exposes your position to outside threats. Room-by-room clearing is critical, as enemies like rooftop snipers maintain hard lockdown over the courtyards 鈥?cross-check approaches on the <a href="/map">interactive map</a> (Vostok pins).</p>
   <p><img src="/images/guides/guides03-01.webp" alt="road to vostok apartments map" width="50%" style="width: 50%;" /></p>
   <h2><strong>Securing Safe Havens and Resting Spots</strong></h2>
-  <p>Constant exposure to the elements and firefights will drain your character. Safe havens are scattered around the periphery, notably small cabins and tent setups. Inside the primary safe cabin, you will find a sleeping bag. Resting is a core mechanic—sleeping for several hours recovers fatigue and resets your status, giving you the stamina needed for subsequent raids into the main multi-story structures. This shelter also features a weapon display board, allowing you to manage your inventory and stage loadouts without cluttering your immediate backpack space.</p>
+  <p>Constant exposure to the elements and firefights will drain your character. Safe havens are scattered around the periphery, notably small cabins and tent setups. Inside the primary safe cabin, you will find a sleeping bag. Resting is a core mechanic鈥攕leeping for several hours recovers fatigue and resets your status, giving you the stamina needed for subsequent raids into the main multi-story structures. This shelter also features a weapon display board, allowing you to manage your inventory and stage loadouts without cluttering your immediate backpack space.</p>
   <h2><strong>High-Tier Gear, Crates, and Enemy Drops</strong></h2>
-  <p>The economy in this zone relies heavily on scavenging and combat. Standard rooms contain civilian loot (fridges, cabinets), but the real prize lies in Military Crates hidden on the upper floors and bathrooms. Taking down heavily armed hostiles (bandits/soldiers) is the most reliable way to acquire endgame weapons. Drops observed include the AK-12, MP7, VSS, and RK-95 — stat rows for these platforms live on the <a href="/wiki/weapons">wiki weapons table</a>. Meds like IFAKs and painkillers are extremely scarce and usually found in dedicated medical wall cabinets or on dead bodies.</p>
+  <p>The economy in this zone relies heavily on scavenging and combat. Standard rooms contain civilian loot (fridges, cabinets), but the real prize lies in Military Crates hidden on the upper floors and bathrooms. Taking down heavily armed hostiles (bandits/soldiers) is the most reliable way to acquire endgame weapons. Drops observed include the AK-12, MP7, VSS, and RK-95 鈥?stat rows for these platforms live on the <a href="/wiki/weapons">wiki weapons table</a>. Meds like IFAKs and painkillers are extremely scarce and usually found in dedicated medical wall cabinets or on dead bodies.</p>
   <p><img src="/images/guides/guides03-02.webp" alt="road to vostok apartments Enemy Drops" width="50%" style="width: 50%;" /></p>
   <h3><strong>Loot Distribution Table</strong></h3>
   <p>Loot Category Common Items Found Primary Locations</p>
@@ -155,7 +155,7 @@ export default [
   <p>The relentless cold is a silent killer. As your body temperature drops, your combat effectiveness drastically reduces. To survive, you must locate burn barrels scattered around the safe zones and exterior courtyards. Igniting a fire is not optional; it is a vital survival mechanic to restore body heat before you push back into the unheated, concrete apartment blocks.</p>
   <p><img src="/images/guides/guides03-03.webp" alt="road to vostok apartments fire" width="50%" style="width: 50%;" /></p>
   <h2><strong>Interacting with &quot;The Generalist&quot;</strong></h2>
-  <p>Inside one of the secured, reinforced rooms, you will find a key NPC trader known as <a href="/wiki/npcs/generalist">&quot;The Generalist&quot;</a> (easily identifiable by his blue cap and glasses). He operates a supply shop. The primary gameplay loop here involves trading the excess, heavily-damaged firearms you scavenge from dead bandits in exchange for high-value medical supplies and ammunition. Proper inventory management—hauling enemy weapons back to his desk—is essential to keep your health topped off.</p>
+  <p>Inside one of the secured, reinforced rooms, you will find a key NPC trader known as <a href="/wiki/npcs/generalist">&quot;The Generalist&quot;</a> (easily identifiable by his blue cap and glasses). He operates a supply shop. The primary gameplay loop here involves trading the excess, heavily-damaged firearms you scavenge from dead bandits in exchange for high-value medical supplies and ammunition. Proper inventory management鈥攈auling enemy weapons back to his desk鈥攊s essential to keep your health topped off.</p>
   <h2><strong>Frequently Asked Questions</strong></h2>
   <h3><strong>Can you sleep anywhere in the Apartments?</strong></h3>
   <p>No. You must find dedicated resting spots, such as the sleeping bag located inside the specific safe cabin, to safely pass the time and recover fatigue.</p>
@@ -229,17 +229,17 @@ export default [
 <p>Don't want to watch the whole video? Jump straight to the key moments (opens at that time in the player above):
 </p>
 <ol>
-<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=235&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[03:55]</a> - 🐟 Explanation of the hidden underwater fishing blocks mechanic
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=235&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[03:55]</a> - 馃悷 Explanation of the hidden underwater fishing blocks mechanic
 </li>
-<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=483&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[08:03]</a> - 🪈 Drainage Pipe fishing spot gameplay
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=483&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[08:03]</a> - 馃獔 Drainage Pipe fishing spot gameplay
 </li>
-<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=750&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[12:30]</a> - ⚓ Pier location revealing the biggest fish block
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=750&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[12:30]</a> - 鈿?Pier location revealing the biggest fish block
 </li>
-<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=989&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[16:29]</a> - 💰 Fish market values breakdown (Pike, Perch, etc.)
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=989&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[16:29]</a> - 馃挵 Fish market values breakdown (Pike, Perch, etc.)
 </li>
 </ol>
     
-    <p>In Road to Vostok, fishing isn't just randomly throwing your line into the water; it requires accurately locating hidden underwater "fish blocks." By casting your line at specific landmarks like the drainage pipe and the wooden pier, players can avoid empty catches and efficiently farm high-value catches like Pike for quests. It is the safest and most reliable way to make money during a hardcore permadeath run. Rod and fish rows for your build are summarized on the <a href="/wiki/fishing">Wiki · Fishing</a> table.
+    <p>In Road to Vostok, fishing isn't just randomly throwing your line into the water; it requires accurately locating hidden underwater "fish blocks." By casting your line at specific landmarks like the drainage pipe and the wooden pier, players can avoid empty catches and efficiently farm high-value catches like Pike for quests. It is the safest and most reliable way to make money during a hardcore permadeath run. Rod and fish rows for your build are summarized on the <a href="/wiki/fishing">Wiki 路 Fishing</a> table.
   </p>
   <p><img src="/images/guides/guides04-01.webp" alt="road to vostok fishing guide" width="50%">
   </p>
@@ -249,7 +249,7 @@ export default [
   </p>
   <h2>Best Locations to Cast Your Line
   </h2>
-  <p>Finding the right spots is crucial for a massive haul. After testing the waters during a permadeath run, here are some top-tier spots mapped out for you — compare shore landmarks to water pins on the <a href="/map">map</a> when routing.
+  <p>Finding the right spots is crucial for a massive haul. After testing the waters during a permadeath run, here are some top-tier spots mapped out for you 鈥?compare shore landmarks to water pins on the <a href="/map">map</a> when routing.
   </p>
   <ol>
   <li>Tree Line Water Edge: Aim above the tree canopy and cast; there is a very high probability of hitting a static block here.
@@ -263,7 +263,7 @@ export default [
   </p>
   <h2>Equipping and Using the Rod
   </h2>
-  <p>Unequip your MP5 or shotgun and place the Fishing Rod into your primary weapon slot. Platform stats for those guns stay on the <a href="/wiki/weapons">weapons wiki</a>. The casting logic is hardcore: you control the casting power and angle with your mouse. The higher you aim your crosshair, the further the line goes. Once cast, the fishing line will slowly drift back toward your position. When the line passes through an underwater block, a fish will automatically bite if there are any left. There are no complicated QTE fighting mechanics—just find the correct block and wait patiently for the line to reel in.
+  <p>Unequip your MP5 or shotgun and place the Fishing Rod into your primary weapon slot. Platform stats for those guns stay on the <a href="/wiki/weapons">weapons wiki</a>. The casting logic is hardcore: you control the casting power and angle with your mouse. The higher you aim your crosshair, the further the line goes. Once cast, the fishing line will slowly drift back toward your position. When the line passes through an underwater block, a fish will automatically bite if there are any left. There are no complicated QTE fighting mechanics鈥攋ust find the correct block and wait patiently for the line to reel in.
   </p>
   <h2>How to Catch the Valuable Pike
   </h2>
@@ -377,17 +377,17 @@ export default [
       keywords: "Road to Vostok Weapons"
     },
     addressBar: "weapons-list",
-    detailsHtml: `<p>In the hardcore survival game Road to Vostok, the weapons system is built entirely around extreme realism and highly detailed stat sheets. The current firing range demonstration showcases up to 20 different firearms covering various tactical roles. Each weapon features independent, rigorous data, including specific ammo caliber, base damage, penetration level, and weapon condition. For survivors, understanding these UI stats and matching penetration levels to enemy armor is a mandatory survival skill before stepping into the wasteland. Patch-aligned catalog rows (value, trader cost, rarity) are maintained on the <a href="/wiki/weapons">Wiki · Weapons</a> page.
+    detailsHtml: `<p>In the hardcore survival game Road to Vostok, the weapons system is built entirely around extreme realism and highly detailed stat sheets. The current firing range demonstration showcases up to 20 different firearms covering various tactical roles. Each weapon features independent, rigorous data, including specific ammo caliber, base damage, penetration level, and weapon condition. For survivors, understanding these UI stats and matching penetration levels to enemy armor is a mandatory survival skill before stepping into the wasteland. Patch-aligned catalog rows (value, trader cost, rarity) are maintained on the <a href="/wiki/weapons">Wiki 路 Weapons</a> page.
   </p>
   <iframe name="rtvWeaponsGuideYt" src="https://www.youtube.com/embed/R5721mXs4lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <p>Don't want to watch the full video? Jump straight to the key moments:
   </p>
   <ol>
-  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=0&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[00:00]</a> - 🔫 Makarov base stats breakdown and Condition status showcase
+  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=0&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[00:00]</a> - 馃敨 Makarov base stats breakdown and Condition status showcase
   </li>
-  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=196&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[03:16]</a> - 🔥 Legendary submachine gun KP-31 gameplay demonstration
+  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=196&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[03:16]</a> - 馃敟 Legendary submachine gun KP-31 gameplay demonstration
   </li>
-  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=337&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[05:37]</a> - 💥 Tier 0 powerhouse M78 full-auto firing and high penetration display
+  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=337&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[05:37]</a> - 馃挜 Tier 0 powerhouse M78 full-auto firing and high penetration display
   </li>
   </ol>
   <h2>Comprehensive Breakdown: Road to Vostok Weapons List and Rarity Tiers
@@ -398,7 +398,7 @@ export default [
   </p>
   <h2>Weapon Maintenance Mechanics: Understanding Condition and How to Repair Weapons
   </h2>
-  <p>Many beginners are searching for ways to fix their guns. During the shooting demonstrations, if you closely observe the right-side weapon UI panel, you will notice every single firearm features a core green metric—Condition: 100%. While the video focuses purely on gunplay and does not transition to a workbench repair screen, this durability parameter confirms the existence of a strict weapon degradation system. Once this percentage drops, players will likely face hardcore penalties such as jamming or severe accuracy reduction.
+  <p>Many beginners are searching for ways to fix their guns. During the shooting demonstrations, if you closely observe the right-side weapon UI panel, you will notice every single firearm features a core green metric鈥擟ondition: 100%. While the video focuses purely on gunplay and does not transition to a workbench repair screen, this durability parameter confirms the existence of a strict weapon degradation system. Once this percentage drops, players will likely face hardcore penalties such as jamming or severe accuracy reduction.
   </p>
   <h2>Power Analysis: What Are the Road to Vostok Best Weapons?
   </h2>
@@ -537,7 +537,7 @@ export default [
   </p>
   <h2>Core Mechanics: Mastering the Road to Vostok Reload Weapon Cycle
   </h2>
-  <p>When trying to execute a proper road to vostok reload weapon or road to vostok reload gun action—especially for the 4 bolt action weapons in the game—you must follow a strict, realistic three-step tactical loop to achieve true "bolt action satisfaction".
+  <p>When trying to execute a proper road to vostok reload weapon or road to vostok reload gun action鈥攅specially for the 4 bolt action weapons in the game鈥攜ou must follow a strict, realistic three-step tactical loop to achieve true "bolt action satisfaction".
   </p>
   <ol>
   <li>Open the Action: Press CTRL once. This pulls back the bolt or opens the action.
@@ -655,7 +655,7 @@ export default [
   </h3>
   <p>After stocking up at the Generalist, hug the right side of the map past the lake until you see a road. Follow it right to find the Transfer sign to the School area.
   </p>
-  <p>Once in the School area, go straight and cross the bridge. To your left is a huge yellow building where you can find the Doctor NPC on the top floor. Be mindful—he starts with a 200% tax! Buy standard Splints and painkillers if possible.
+  <p>Once in the School area, go straight and cross the bridge. To your left is a huge yellow building where you can find the Doctor NPC on the top floor. Be mindful鈥攈e starts with a 200% tax! Buy standard Splints and painkillers if possible.
   </p>
   <h3>Step 2: School to Outpost
   </h3>
@@ -681,7 +681,7 @@ export default [
   </ol>
   <p><img src="/images/guides/guides07-04.webp" alt="Road To Vostok cat box(1)" width="50%">
   </p>
-  <p>⚠️ [Important Community Update on Bunker Locations]
+  <p>鈿狅笍 [Important Community Update on Bunker Locations]
   </p>
   <p>Based on community feedback from players like GoyimSlayer2599, the cat does not have a fixed spawn. It can spawn in any of the three bunkers in the Outpost area. Bunker 1 is the closest to the spawn point. If you don't find the cat in the first bunker, you must carefully check the other two.
   </p>
@@ -712,7 +712,7 @@ export default [
   <h2>Expert Survival Tips for the Journey
   </h2>
   <ol>
-  <li>Splint Warning: Fractures are highly common. Bring normal Splints. DO NOT USE IMPROVISED SPLINTS—they are bugged and currently do absolutely nothing.
+  <li>Splint Warning: Fractures are highly common. Bring normal Splints. DO NOT USE IMPROVISED SPLINTS鈥攖hey are bugged and currently do absolutely nothing.
   </li>
   <li>Loot Resets: The map resets entirely when you re-enter. If you leave an item on the ground intending to come back for it, it will de-spawn. There is no permanence outside your safehouse.
   </li>
@@ -889,11 +889,11 @@ export default [
   <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/o3Hwsuv4fk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p>Don't want to watch the whole video? Jump straight to the key moments:</p>
   <ol>
-  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=161&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">02:41</a> - ⚙️ Modding tutorial for Metro Mod Loader and Event Hints
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=161&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">02:41</a> - 鈿欙笍 Modding tutorial for Metro Mod Loader and Event Hints
   </li>
-  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=347&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">05:47</a> - 🗺️ Why Outpost is the absolute best map for the encounter
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=347&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">05:47</a> - 馃椇锔?Why Outpost is the absolute best map for the encounter
   </li>
-  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=610&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">10:10</a> - 🔫 Combat demo: Using rock cover and looting the Flame Beanie
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=610&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">10:10</a> - 馃敨 Combat demo: Using rock cover and looting the Flame Beanie
   </li>
   </ol>
   <h2>Spawn Mechanics &amp; Modding for 100% Rate
@@ -954,7 +954,7 @@ export default [
   </h2>
   <p>After deploying at the Outpost, listen closely to the environmental audio. If you installed the Event Hints mod, a clear notification will pop up on the top left of your screen. Even without it, distant Police Sirens are the definitive signal that he is inbound.
   </p>
-  <p>Immediately move behind a rock. The golden rule of this engagement: Never expose your Center of Mass. Once he spots you, he will brake his "POLIISI" van. His initial attack upon exiting the vehicle is a highly suppressive bullet spray. Use the rock to peek slightly, and use a primary weapon with over 70% condition (like an M4A1, to avoid jamming at critical moments) to tap-fire him. If you take a hit, don't panic and run across the open field. Hide behind cover and use a Medkit to stop the bleeding—bleeding out at this stage is the most frustrating way to die.
+  <p>Immediately move behind a rock. The golden rule of this engagement: Never expose your Center of Mass. Once he spots you, he will brake his "POLIISI" van. His initial attack upon exiting the vehicle is a highly suppressive bullet spray. Use the rock to peek slightly, and use a primary weapon with over 70% condition (like an M4A1, to avoid jamming at critical moments) to tap-fire him. If you take a hit, don't panic and run across the open field. Hide behind cover and use a Medkit to stop the bleeding鈥攂leeding out at this stage is the most frustrating way to die.
   </p>
   <p>Once he is down, approach his corpse to loot his signature item: the Flame Beanie. If you don't take it, the beanie will remain visibly equipped on his body.
   </p>
@@ -1047,6 +1047,244 @@ export default [
   </h2>
   <p>Modding techniques and game versions change rapidly. For the most up-to-date modding tools, detailed tutorials, and the best interactive maps for your loot runs, we highly recommend visiting our main hub at <a href="http://roadtovostok.org/">http://roadtovostok.org/</a>. We are dedicated to providing the most comprehensive and convenient resources for the Road to Vostok community.
   </p>`,
+  },
+
+  {
+    id: 11,
+    title: "Road To Vostok Mods Guide: Best Mods, Co-op Mods, and Modding Setup",
+    description: "Safe Road To Vostok modding guide for QoL mods, secure-container intent, co-op mod limits, compatibility checks, and loading workflow.",
+    tags: ["road to vostok mods", "road to vostok co-op mod", "road to vostok modding"],
+    publishDate: "2026-07-01",
+    imageUrl: "/images/guides/guides10.webp",
+    imageAlt: "road to vostok mods guide mod setup and compatibility checker",
+    seo: {
+      title: "Road To Vostok Mods: Co-op, QoL, and Setup",
+      description: "Use safe Road To Vostok mods: QoL picks, secure-container intent, co-op mod limits, install flow, and compatibility checks.",
+      keywords: "road to vostok mods, coop mod, multiplayer mod, secure container, modding setup"
+    },
+    addressBar: "road-to-vostok-mods-guide",
+    detailsHtml: `
+  <p><strong>Fast answer:</strong> Road To Vostok has active community mod demand, but the clean starting point is not a giant mod pack. Start with small QoL changes, a trusted mod loader, and one compatibility check pass after every file you add. Co-op and multiplayer mods should be treated as experimental unless the mod page proves current build support.</p>
+  <p>This guide deliberately ignores torrent, trainer, and cheat-menu intent. Those tools create bad data, break survival balance, and are the fastest way to misdiagnose a real mod conflict.</p>
+
+  <figure>
+    <img src="/images/guides/guides10-01.webp" alt="road to vostok mods setup using mod loader and configuration menu" title="Road To Vostok mods setup workflow" width="50%">
+    <figcaption>Use one loader path, then test each Road To Vostok mod before stacking another file.</figcaption>
+  </figure>
+
+  <h2>Best Road To Vostok mods to start with</h2>
+  <h3>Quality-of-life mods</h3>
+  <p>The safest Road To Vostok mods are QoL changes that reduce interface friction without changing the core survival loop. Good candidates are configuration-menu support, small HUD hints, stash organization help, and controlled value tweaks that you can disable quickly.</p>
+  <p>If your goal is broad tuning, read the existing <a href="/guides/road-to-vostok-console-commands-and-modding">console commands and modding guide</a> first. The important point is engine structure: Road To Vostok does not behave like an old INI-driven shooter where every value sits in plain text.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Mod intent</th>
+        <th>Use it for</th>
+        <th>Risk check</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Configuration menu</td>
+        <td>Changing supported mod values in-game</td>
+        <td>Confirm loader priority and current game build support</td>
+      </tr>
+      <tr>
+        <td>Event or hint overlay</td>
+        <td>Reducing blind search time during testing</td>
+        <td>Disable before judging vanilla spawn or route behavior</td>
+      </tr>
+      <tr>
+        <td>Inventory QoL</td>
+        <td>Sorting, storage, or shelter-management friction</td>
+        <td>Back up the save before adding stash-affecting files</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Secure container and no-item-loss mods</h3>
+  <p>Secure-container and no-item-loss searches point to the same player pain: losing a full kit to one bad status chain. Treat these mods as <strong>inventory-protection modifiers</strong>, not required progression tools. They can be useful for testing routes, but they also hide the real cost of bleeding, cold, hunger, and bad extraction decisions.</p>
+  <p>For vanilla survival planning, pair this section with the <a href="/guides/road-to-vostok-shelter-locations">shelter locations guide</a>. It covers the storage and route-staging side of long runs better than a modded item-loss workaround.</p>
+
+  <h2>Co-op and multiplayer mod intent</h2>
+  <h3>Co-op mod variants</h3>
+  <p>Searches for "road to vostok coop mod", "road to vostok co op mod", and "road to vostok multiplayer mod" are real, but they should not be confused with official multiplayer support. Road To Vostok is built around a single-player survival structure, so any co-op mod has to solve inventory state, NPC authority, world events, damage state, and save synchronization.</p>
+  <p><strong>INFERRED risk:</strong> if a co-op mod does not document desync handling, death-state behavior, and version pinning, assume it is a test build. Do not run it on your main save.</p>
+
+  <h3>Multiplayer mod limitations</h3>
+  <p>The dangerous part of a multiplayer mod is not just connection failure. It is quiet state drift: one player opens a container, another client still sees the item, an event spawns for only one client, or a wound state clears on one side but not the other. In a permadeath-adjacent survival loop, that kind of desync invalidates the run.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Check</th>
+        <th>What to verify</th>
+        <th>Fail signal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Build version</td>
+        <td>Mod page lists the current Road To Vostok build</td>
+        <td>"Works on older demo" with no recent update</td>
+      </tr>
+      <tr>
+        <td>Save safety</td>
+        <td>Clear backup or separate profile instruction</td>
+        <td>Mod tells you to test on your live save</td>
+      </tr>
+      <tr>
+        <td>State sync</td>
+        <td>Loot, NPC, health, and transition behavior documented</td>
+        <td>Known out-of-sync reports with no workaround</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>How to install and manage mods</h2>
+  <h3>Mod manager and compatibility checks</h3>
+  <p>Use the smallest working stack: loader, configuration menu if required, then one gameplay mod. Launch the game, load a throwaway profile, enter a low-risk area, and test the exact mechanic the mod claims to change. Do not install five Road To Vostok mods at once and then try to debug a crash from memory.</p>
+  <p>For route testing, keep the <a href="/map">interactive map</a> open and record which area, shelter, or transition you used. If a mod breaks travel, the bug often appears at map boundaries before it appears in moment-to-moment combat.</p>
+
+  <figure>
+    <img src="/images/guides/guides10-02.webp" alt="how to load mods on road to vostok safely without breaking saves" title="How to load Road To Vostok mods safely" width="50%">
+    <figcaption>After each Road To Vostok mod install, test one mechanic and one area transition before continuing.</figcaption>
+  </figure>
+
+  <h3>Loading mods safely</h3>
+  <ol>
+    <li>Back up the save folder before touching loaders, scripts, or packed files.</li>
+    <li>Install the loader exactly as the mod author describes. Do not mix old and new loader instructions.</li>
+    <li>Add one mod, launch once, then close the game cleanly.</li>
+    <li>Check the changed mechanic in a low-risk area, not in the Minefield or Vostok push.</li>
+    <li>If the mod changes inventory, shelter, or death behavior, test it on a disposable profile first.</li>
+  </ol>
+  <p>Do not use cheat mods as a baseline for guide testing. If you need combat or route data, run a clean profile and compare it with the modded result.</p>
+
+  <h2>FAQ</h2>
+  <h3>Does Road To Vostok have mods?</h3>
+  <p>Yes. There is clear player demand for Road To Vostok mods, especially QoL changes, configuration tools, inventory-protection ideas, and co-op variants. Use current mod pages and avoid stale files.</p>
+  <h3>Is there a Road To Vostok co-op mod?</h3>
+  <p>Co-op mod intent exists, but it is not the same as official multiplayer. Treat any co-op or multiplayer mod as experimental until it documents build support, save safety, and desync handling.</p>
+  <h3>Should cheat mods be included?</h3>
+  <p>No. Cheat menus, trainers, and unsafe downloads are excluded from this guide. They do not help a player learn Road To Vostok's survival systems and they create unreliable test data.</p>`,
+  },
+
+  {
+    id: 12,
+    title: "Road To Vostok Map Guide: Minefield, Areas, Shelters, and Routes",
+    description: "Read the Road To Vostok map, minefield routes, area transitions, shelters, village, highway, outpost, Area 05, and demo map scope.",
+    tags: ["road to vostok map", "road to vostok minefield map", "road to vostok routes"],
+    publishDate: "2026-07-01",
+    imageUrl: "/images/guides/guides02.webp",
+    imageAlt: "road to vostok map minefield areas shelters and routes",
+    seo: {
+      title: "Road To Vostok Map: Minefield, Areas, Routes",
+      description: "Read the Road To Vostok map, minefield routes, area transitions, shelters, village, highway, outpost, Area 05, and demo map scope.",
+      keywords: "road to vostok map, minefield map, tactical map, areas, shelters, routes"
+    },
+    addressBar: "road-to-vostok-map-minefield-locations-guide",
+    detailsHtml: `
+  <p><strong>Fast answer:</strong> read the Road To Vostok map as a chain of risk zones, not as a sightseeing board. Your route should answer three questions before you move: where is the next shelter, what hazard blocks the transition, and what ammo or medical reserve do you need if the route turns into a fight.</p>
+  <p>The Minefield is the hard filter. If you cannot identify mines, control noise, and keep enough rounds for both bots and mine clearing, do not push the route just because the map marker looks close.</p>
+
+  <figure>
+    <img src="/images/guides/guides02-01.webp" alt="road to vostok minefield map route planning and mine clearing" title="Road To Vostok minefield map route planning" width="50%">
+    <figcaption>The Road To Vostok minefield map is a route-control problem: scan, clear, move, then re-check the treeline.</figcaption>
+  </figure>
+
+  <h2>How the Road To Vostok map works</h2>
+  <h3>Core map and area layout</h3>
+  <p>The useful way to study the Road To Vostok map is by area relationship: safer staging zones, loot routes, transition points, and late-route danger zones. Treat every move as a logistics decision. If a route does not give you a shelter, stash, or clean return path, it is not a route. It is a gamble.</p>
+  <p>Use the site's <a href="/map">interactive Road To Vostok map</a> for visual checks, then use written guides for mechanic details. The map tells you where the problem is. The guide tells you what can kill the run there.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Map layer</th>
+        <th>What it answers</th>
+        <th>Player mistake</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Area layout</td>
+        <td>How zones connect and where routes branch</td>
+        <td>Moving without a fallback shelter</td>
+      </tr>
+      <tr>
+        <td>Minefield map</td>
+        <td>Where the transition becomes explosive and slow</td>
+        <td>Sprinting after one cleared mine</td>
+      </tr>
+      <tr>
+        <td>Named locations</td>
+        <td>Village, highway, outpost, school, and apartment intent</td>
+        <td>Using a loot route as if it were a safe route</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Tactical and interactive map variants</h3>
+  <p>Searches for "road to vostok tactical map" and "road to vostok interactive map" usually come from players who need a faster decision surface. For tactical use, prioritize pins that change survival math: mines, shelters, stashes, traders, locked routes, and high-traffic enemy paths.</p>
+  <p>Do not overload your map with every low-value container. In Road To Vostok, clutter is a liability. The best tactical map highlights the next decision, not every object in the area.</p>
+
+  <h2>Minefield and route planning</h2>
+  <h3>Minefield map and minefield guide</h3>
+  <p>The Minefield demands a slower rhythm than most shooter players want to accept. You scan the ground, identify the mine body, clear it from distance when needed, then re-scan because the treeline and AI pressure change your angle. The existing <a href="/guides/surviving-the-Minefield">Minefield survival guide</a> covers the explosive-clearing mechanic in more detail.</p>
+  <p><strong>Route rule:</strong> bring enough ammunition for mine clearing and combat. If your ammo plan only accounts for NPCs, the Minefield can force you into a no-win choice between stepping into a hazard and firing your last useful rounds.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Before entering</th>
+        <th>Minimum check</th>
+        <th>Abort if</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Medical reserve</td>
+        <td>Bleed control plus a real trauma recovery option</td>
+        <td>You only have light bandages</td>
+      </tr>
+      <tr>
+        <td>Ammo reserve</td>
+        <td>Enough for AI contact and controlled mine shots</td>
+        <td>Your route assumes no misses</td>
+      </tr>
+      <tr>
+        <td>Helmet and armor</td>
+        <td>Usable condition before the crossing</td>
+        <td>You are already limping from a previous fight</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Traveling between areas</h3>
+  <p>Area travel is not just walking to an edge marker. It is a loadout check. Before moving between areas, spend 20 seconds on inventory: meds, hydration, food, firearm condition, spare magazine, and one planned fallback. If you are tracking ammunition by caliber, use the <a href="/wiki/ammunition">ammunition table</a> before committing to a long route.</p>
+  <p>Players searching "how to travel road to vostok diffent areas" are usually stuck at route sequencing. The fix is simple: plan from shelter to shelter, then layer loot detours after the survival path is stable.</p>
+
+  <h2>Important named locations</h2>
+  <h3>Village, highway, and outpost maps</h3>
+  <p>Named maps should be treated by their dominant problem. Village routes tend to punish careless building approaches. Highway routes expose you to longer sightlines and stash-tunnel decisions. Outpost routes are better for open cover reads, but they still punish players who cross roads without checking angles.</p>
+  <p>If your run includes vertical CQB or urban loot, compare it with the <a href="/guides/apartments-complete-survival-loot-guid">Apartments survival and loot guide</a>. The same rule applies: once the map turns vertical, your route timing matters more than raw aim.</p>
+
+  <figure>
+    <img src="/images/guides/guides01-01.webp" alt="road to vostok map area 05 demo map and border route planning" title="Road To Vostok Area 05 and demo map planning" width="50%">
+    <figcaption>Area planning starts before the first shot: confirm destination, transition risk, and fallback shelter.</figcaption>
+  </figure>
+
+  <h3>Area 05 and demo map coverage</h3>
+  <p>Area 05 and demo-map searches should be handled carefully because Road To Vostok changes across builds. Use this page as a routing framework, then confirm the exact map object, shelter, or transition in your current version. If a marker moved after an update, the correct move is to update the route notes, not force the old path.</p>
+  <p><strong>Version note:</strong> map routes, loot pins, and transition details can shift with patches. When in doubt, verify the route on a low-risk loadout before carrying rare gear through the Minefield or a late-route push.</p>
+
+  <h2>FAQ</h2>
+  <h3>Is there a Road To Vostok map?</h3>
+  <p>Yes. Use the <a href="/map">interactive map</a> for navigation and this guide for route logic. A good map answers where to go; a good route explains what can kill the attempt.</p>
+  <h3>Where is the minefield in Road To Vostok?</h3>
+  <p>The Minefield functions as a dangerous transition zone. Check the minefield map section and the dedicated <a href="/guides/surviving-the-Minefield">Minefield guide</a> before entering it with valuable gear.</p>
+  <h3>How do you travel between areas in Road To Vostok?</h3>
+  <p>Plan movement by shelters, transitions, and fallback paths. Do not route by loot value alone. If the next area does not have a realistic recovery point, leave early and reset the run.</p>`,
   }
 
 ]
+
