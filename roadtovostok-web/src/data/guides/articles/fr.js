@@ -1,23 +1,25 @@
 /**
- * FR — same row shape as guides/articles/en.js.
+ * Localized guide articles.
  */
 export default [
   {
-    id: 1,
-    title: "Road to Vostok : plongée analytique dans la géographie réelle",
-    iframeUrl: "https://www.youtube.com/embed/RsDE26kkAtU",
-    description: "Comment un survival FPS exigeant s’appuie sur la topographie et l’architecture réelles de la frontière finno-russe plutôt que sur la pure fiction — de la ligne Salpa aux ruines urbaines.",
-    tags: ["Road to Vostok"],
-    publishDate: "2026-03-27",
-    imageUrl: "/images/guides/guides01.webp",
-    imageAlt: "Road to Vostok — géographie du monde réel",
-    seo: {
-      title: "Road to Vostok : géographie réelle et inspiration des cartes",
-      description: "De la ligne Salpa aux postes-frontières et Vyborg : comment Road To Vostok transpose paysage réel et bâtiments dans le rythme des niveaux et l’atmosphère.",
-      keywords: "Road to Vostok, survival shooter, ligne Salpa, frontière Finlande Russie, Vyborg, FPS exigeant, géographie, Tenebris Infinite",
-    },
-    addressBar: "an-analytical-deep-dive-into-its-real-world-geography",
-    detailsHtml: `
+  id: 1,
+  title: "Road to Vostok : plongée analytique dans la géographie réelle",
+  iframeUrl: "https://www.youtube.com/embed/RsDE26kkAtU",
+  description: "Comment un survival FPS exigeant s’appuie sur la topographie et l’architecture réelles de la frontière finno-russe plutôt que sur la pure fiction — de la ligne Salpa aux ruines urbaines.",
+  tags: [
+    "Road to Vostok"
+  ],
+  publishDate: "2026-03-27",
+  imageUrl: "/images/guides/guides01.webp",
+  imageAlt: "Road to Vostok — géographie du monde réel",
+  seo: {
+    title: "Road to Vostok : géographie réelle et inspiration des cartes",
+    description: "De la ligne Salpa aux postes-frontières et Vyborg : comment Road To Vostok transpose paysage réel et bâtiments dans le rythme des niveaux et l’atmosphère.",
+    keywords: "Road to Vostok, survival shooter, ligne Salpa, frontière Finlande Russie, Vyborg, FPS exigeant, géographie, Tenebris Infinite"
+  },
+  addressBar: "an-analytical-deep-dive-into-its-real-world-geography",
+  detailsHtml: `
       <p>Dans les survival FPS exigeants, l’environnement est rarement un simple décor — souvent c’est l’adversaire principal. <strong>Road to Vostok</strong> construit une tension oppressante sans science-fiction, par un réalisme géographique. Selon l’analyse de <em>Tenebris Infinite</em>, la topographie et l’architecture s’inspirent de la zone frontalière finno-russe.</p>
   <p>Transposer l’histoire réelle et la tension géopolitique dans un paysage virtuel donne une profondeur rare pour un projet solo. Ci-dessous : comment ces prototypes soutiennent mécaniques et ambiance.</p>
   <h2><strong>Jeu et contexte</strong></h2>
@@ -58,25 +60,26 @@ export default [
   <p>En zone 05, le paysage finlandais et les bunkers exigent patience, couverture et collecte de ressources ; l’« hachoir » urbain de Vostok supprime la ligne forestière — espaces étroits et permadeath rendent l’erreur fatale.</p>
   <h2><strong>Synthèse</strong></h2>
   <p><em>Road to Vostok</em> utilise la géographie réelle pour un monde concret et menaçant : histoire de Salpa plus contraste architectural à la frontière. Pour les fans de survival exigeant, à la fois instructif et stressant.</p>
-    `,
-  },
-
+    `
+},
   {
-    id: 2,
-    title: "Survivre au champ de mines : tactiques pour Road to Vostok",
-    iframeUrl: "https://www.youtube.com/embed/zmF0pO8h2vk",
-    description: "Carte du champ de mines en zone frontière : repérer les mines, les faire sauter à distance au feu et franchir le portail vers la zone permadeath.",
-    tags: ["Road to Vostok champ de mines"],
-    publishDate: "2026-03-27",
-    imageUrl: "/images/guides/guides02.webp",
-    imageAlt: "Road to Vostok — champ de mines",
-    seo: {
-      title: "Champ de mines dans Road to Vostok : tactique et franchissement",
-      description: "Déminage actif : repérage visuel, détonation balistique, asymétrie IA et couverture acoustique — accent sur le nettoyage au tir.",
-      keywords: "Road to Vostok champ de mines, déminage, tir sur mine, permadeath, tactique FPS, StarVox, mines",
-    },
-    addressBar: "surviving-the-Minefield",
-    detailsHtml: `
+  id: 2,
+  title: "Survivre au champ de mines : tactiques pour Road to Vostok",
+  iframeUrl: "https://www.youtube.com/embed/zmF0pO8h2vk",
+  description: "Carte du champ de mines en zone frontière : repérer les mines, les faire sauter à distance au feu et franchir le portail vers la zone permadeath.",
+  tags: [
+    "Road to Vostok champ de mines"
+  ],
+  publishDate: "2026-03-27",
+  imageUrl: "/images/guides/guides02.webp",
+  imageAlt: "Road to Vostok — champ de mines",
+  seo: {
+    title: "Champ de mines dans Road to Vostok : tactique et franchissement",
+    description: "Déminage actif : repérage visuel, détonation balistique, asymétrie IA et couverture acoustique — accent sur le nettoyage au tir.",
+    keywords: "Road to Vostok champ de mines, déminage, tir sur mine, permadeath, tactique FPS, StarVox, mines"
+  },
+  addressBar: "surviving-the-Minefield",
+  detailsHtml: `
     <p> <strong>Focus :</strong> tactique pour la carte « Minefield » et neutralisation des explosifs au feu.</p>
   <p>Le survival exigeant a besoin d’un seuil physique entre difficulté et punition définitive. Dans <em>Road to Vostok</em>, c’est le <strong>champ de mines</strong>. Selon StarVox, derniers portails avant Vostok : zone permadeath où la mort efface sauvegarde et inventaire. Le contexte frontière vaut le coup sur la <a href="/map">carte interactive</a> (Border Zone).</p>
   <p>Ici il faut patience et orientation. Le champ de mines supprime le run-and-gun au profit d’un puzzle balistique et de limitations sensorielles. Ci-dessous le <strong>nettoyage actif au tir</strong>.</p>
@@ -109,24 +112,28 @@ export default [
   <p><strong>Tactique :</strong> planifiez munitions pour combat IA et pour faire sauter les mines. N’y allez pas sans réserve, lourd médical, attelle et casque de rechange. Calibres — <a href="/wiki/ammunition">table munitions</a>.</p>
   <h2><strong>Synthèse : dernier filtre</strong></h2>
   <p>Le champ de mines de <em>Road to Vostok</em> est cruel mais équitable : il faut combat au feu et nettoyage méthodique des mines. Asymétrie IA, bruit d’hélico et mines contact mènent aux enjeux permadeath de Vostok — sans attention, patience et précision, pas de passage.</p>
-    `,
-  },
-
+    `
+},
   {
-    id: 3,
-    title: "Road to Vostok — appartements : survival et guide loot complet",
-    description: "Appartements de Vostok : itinéraires, points sûrs, fûts pour la chaleur, loot elite et cycle d’échange avec le Generalist.",
-    tags: ["Road to Vostok appartements", "loot", "CQB", "marchand"],
-    publishDate: "2026-03-30",
-    imageUrl: "/images/guides/guides03.webp",
-    imageAlt: "Road to Vostok — zone appartements",
-    seo: {
-      title: "Appartements dans Road to Vostok : loot et survival",
-      description: "Cycle complet : nuit et NVG, chauffage aux fûts, caisses militaires et drops ennemis, échange d’armes avec The Generalist. Vérifiez le marqueur Vostok sur la carte.",
-      keywords: "Road to Vostok, appartements, loot, CQB, Generalist, guide",
-    },
-    addressBar: "apartments-complete-survival-loot-guid",
-    detailsHtml: `
+  id: 3,
+  title: "Road to Vostok — appartements : survival et guide loot complet",
+  description: "Appartements de Vostok : itinéraires, points sûrs, fûts pour la chaleur, loot elite et cycle d’échange avec le Generalist.",
+  tags: [
+    "Road to Vostok appartements",
+    "loot",
+    "CQB",
+    "marchand"
+  ],
+  publishDate: "2026-03-30",
+  imageUrl: "/images/guides/guides03.webp",
+  imageAlt: "Road to Vostok — zone appartements",
+  seo: {
+    title: "Appartements dans Road to Vostok : loot et survival",
+    description: "Cycle complet : nuit et NVG, chauffage aux fûts, caisses militaires et drops ennemis, échange d’armes avec The Generalist. Vérifiez le marqueur Vostok sur la carte.",
+    keywords: "Road to Vostok, appartements, loot, CQB, Generalist, guide"
+  },
+  addressBar: "apartments-complete-survival-loot-guid",
+  detailsHtml: `
     <iframe name="rtvApartmentsGuideYt" src="https://www.youtube.com/embed/ttvN5s0cdBI" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <h3><strong>Repères temporels :</strong></h3>
   <ol>
@@ -165,67 +172,29 @@ export default [
   <p>Souvent sur PNJ lourds, surtout tireurs d’élite sur le toit.</p>
   <h3><strong>Qu’est-ce que le Generalist prend ?</strong></h3>
   <p>Rôle bricoleur : armes en trop contre consommables ; IFAK et <a href="/wiki/ammunition">munitions</a> — selon wiki calibres.</p>
-    `,
-  },
-
+    `
+},
   {
-    id: 4,
-    head: `<script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "VideoObject",
-        "name": "Road to Vostok : pêche — spots et brochet",
-        "description": "Guide pêche : zones sous l’eau, lancer, brochet et prix marché.",
-        "uploadDate": "2024-01-01T00:00:00Z",
-        "duration": "PT17M3S",
-        "contentUrl": "https://www.youtube.com/watch?v=QVdZjWBqMH4",
-        "embedUrl": "https://www.youtube.com/embed/QVdZjWBqMH4",
-        "thumbnailUrl": "https://img.youtube.com/vi/QVdZjWBqMH4/maxresdefault.jpg",
-        "hasPart": [
-          {
-            "@type": "Clip",
-            "name": "Zones de pêche sous l’eau",
-            "startOffset": 235,
-            "endOffset": 483,
-            "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=235s"
-          },
-          {
-            "@type": "Clip",
-            "name": "Spot au tuyau d’évacuation",
-            "startOffset": 483,
-            "endOffset": 750,
-            "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=483s"
-          },
-          {
-            "@type": "Clip",
-            "name": "Pontons et grande zone",
-            "startOffset": 750,
-            "endOffset": 989,
-            "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=750s"
-          },
-          {
-            "@type": "Clip",
-            "name": "Prix marché",
-            "startOffset": 989,
-            "endOffset": 1023,
-            "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=989s"
-          }
-        ]
-      }
-      </script>`,
-    title: "Pêche dans Road to Vostok : spots, canne et brochet",
-    description: "Zones « pêche » sous l’eau cachées, lancer près du tuyau et des pontons — brochet stable pour quêtes et vente en permadeath exigeant.",
-    tags: ["Road to Vostok pêche", "spots", "canne", "brochet"],
-    publishDate: "2026-03-30",
-    imageUrl: "/images/guides/guides04.webp",
-    imageAlt: "Road to Vostok — pêche",
-    seo: {
-      title: "Pêche dans Road to Vostok : spots et prix",
-      description: "Économie pêche : zones sous l’eau, tuyau et pontons, farm brochet. Chiffres — wiki pêche.",
-      keywords: "Road to Vostok, pêche, brochet, permadeath, survival",
-    },
-    addressBar: "how-to-fish",
-    detailsHtml: `
+  id: 4,
+  head: "<script type=\"application/ld+json\">\n      {\n        \@context\: \"https://schema.org\",\n        \@type\: \"VideoObject\",\n        \name\: \"Road to Vostok : pêche — spots et brochet\",\n        \description\: \"Guide pêche : zones sous l’eau, lancer, brochet et prix marché.\",\n        \uploadDate\: \"2024-01-01T00:00:00Z\",\n        \duration\: \"PT17M3S\",\n        \contentUrl\: \"https://www.youtube.com/watch?v=QVdZjWBqMH4\",\n        \embedUrl\: \"https://www.youtube.com/embed/QVdZjWBqMH4\",\n        \thumbnailUrl\: \"https://img.youtube.com/vi/QVdZjWBqMH4/maxresdefault.jpg\",\n        \hasPart\: [\n          {\n            \@type\: \"Clip\",\n            \name\: \"Zones de pêche sous l’eau\",\n            \startOffset\: 235,\n            \endOffset\: 483,\n            \url\: \"https://www.youtube.com/watch?v=QVdZjWBqMH4&t=235s\"\n          },\n          {\n            \@type\: \"Clip\",\n            \name\: \"Spot au tuyau d’évacuation\",\n            \startOffset\: 483,\n            \endOffset\: 750,\n            \url\: \"https://www.youtube.com/watch?v=QVdZjWBqMH4&t=483s\"\n          },\n          {\n            \@type\: \"Clip\",\n            \name\: \"Pontons et grande zone\",\n            \startOffset\: 750,\n            \endOffset\: 989,\n            \url\: \"https://www.youtube.com/watch?v=QVdZjWBqMH4&t=750s\"\n          },\n          {\n            \@type\: \"Clip\",\n            \name\: \"Prix marché\",\n            \startOffset\: 989,\n            \endOffset\: 1023,\n            \url\: \"https://www.youtube.com/watch?v=QVdZjWBqMH4&t=989s\"\n          }\n        ]\n      }\n      </script>",
+  title: "Pêche dans Road to Vostok : spots, canne et brochet",
+  description: "Zones « pêche » sous l’eau cachées, lancer près du tuyau et des pontons — brochet stable pour quêtes et vente en permadeath exigeant.",
+  tags: [
+    "Road to Vostok pêche",
+    "spots",
+    "canne",
+    "brochet"
+  ],
+  publishDate: "2026-03-30",
+  imageUrl: "/images/guides/guides04.webp",
+  imageAlt: "Road to Vostok — pêche",
+  seo: {
+    title: "Pêche dans Road to Vostok : spots et prix",
+    description: "Économie pêche : zones sous l’eau, tuyau et pontons, farm brochet. Chiffres — wiki pêche.",
+    keywords: "Road to Vostok, pêche, brochet, permadeath, survival"
+  },
+  addressBar: "how-to-fish",
+  detailsHtml: `
 <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/QVdZjWBqMH4" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p>Sauts rapides :</p>
@@ -294,61 +263,30 @@ export default [
   <li>Pas de tirage sur toute la longueur du fil — enroulez et changez d’angle.</li>
   <li>Pourquoi le brochet ?</li>
   <li>$250 chez le marchand et souvent en quêtes — vaut le coup de le garder.</li>
-  </ol>`,
-  },
-
+  </ol>`
+},
   {
-    id: 5,
-    head: `<script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "VideoObject",
-        "name": "Road to Vostok : zone d’entraînement — tous les canons",
-        "description": "Tour d’horizon armes : dégâts, pénétration, meilleurs canons, usure et réparation.",
-        "uploadDate": "2024-01-01T12:00:00Z",
-        "duration": "PT5M52S",
-        "contentUrl": "https://www.youtube.com/watch?v=R5721mXs4lY",
-        "embedUrl": "https://www.youtube.com/embed/R5721mXs4lY",
-        "thumbnailUrl": "https://img.youtube.com/vi/R5721mXs4lY/maxresdefault.jpg",
-        "hasPart": [
-          {
-            "@type": "Clip",
-            "name": "Pistolets et interface",
-            "startOffset": 1,
-            "endOffset": 128,
-            "url": "https://www.youtube.com/watch?v=R5721mXs4lY&t=1s"
-          },
-          {
-            "@type": "Clip",
-            "name": "Fusils à verrou et haute pénétration",
-            "startOffset": 128,
-            "endOffset": 306,
-            "url": "https://www.youtube.com/watch?v=R5721mXs4lY&t=128s"
-          },
-          {
-            "@type": "Clip",
-            "name": "Arme légendaire",
-            "startOffset": 306,
-            "endOffset": 352,
-            "url": "https://www.youtube.com/watch?v=R5721mXs4lY&t=306s"
-          }
-        ]
-      }
-      </script>`,
-    title: "Armes dans Road to Vostok : liste complète et efficacité",
-    iframeUrl: "https://www.youtube.com/embed/R5721mXs4lY",
-    description: "Environ 20 canons : rareté, usure et réparation, légendaires et pénétration — données depuis la zone d’entraînement jusqu’au loadout.",
-    tags: ["Road to Vostok armes", "tableau", "réparation", "meta"],
-    publishDate: "2026-03-30",
-    imageUrl: "/images/guides/guides05.webp",
-    imageAlt: "Road to Vostok — armes",
-    seo: {
-      title: "Armes dans Road to Vostok : chiffres et builds",
-      description: "Calibres, dégâts, pénétration, rareté, KP-31 et M78. Tableaux alignés sur la page wiki armes pour votre build.",
-      keywords: "Road to Vostok, armes, liste, légendaire, pénétration, réparation",
-    },
-    addressBar: "weapons-list",
-    detailsHtml: `<p>Dans <strong>Road to Vostok</strong>, les fiches armes sont volontairement « sèches ». Zone d’entraînement ~20 canons : calibre, dégâts, pénétration, usure. Avant la zone difficile, maîtrisez l’UI et choisissez la pénétration face au blindage ennemi. Prix, commerce et rareté — <a href="/wiki/weapons">wiki · armes</a>.</p>
+  id: 5,
+  head: "<script type=\"application/ld+json\">\n      {\n        \@context\: \"https://schema.org/\",\n        \@type\: \"VideoObject\",\n        \name\: \"Road to Vostok : zone d’entraînement — tous les canons\",\n        \description\: \"Tour d’horizon armes : dégâts, pénétration, meilleurs canons, usure et réparation.\",\n        \uploadDate\: \"2024-01-01T12:00:00Z\",\n        \duration\: \"PT5M52S\",\n        \contentUrl\: \"https://www.youtube.com/watch?v=R5721mXs4lY\",\n        \embedUrl\: \"https://www.youtube.com/embed/R5721mXs4lY\",\n        \thumbnailUrl\: \"https://img.youtube.com/vi/R5721mXs4lY/maxresdefault.jpg\",\n        \hasPart\: [\n          {\n            \@type\: \"Clip\",\n            \name\: \"Pistolets et interface\",\n            \startOffset\: 1,\n            \endOffset\: 128,\n            \url\: \"https://www.youtube.com/watch?v=R5721mXs4lY&t=1s\"\n          },\n          {\n            \@type\: \"Clip\",\n            \name\: \"Fusils à verrou et haute pénétration\",\n            \startOffset\: 128,\n            \endOffset\: 306,\n            \url\: \"https://www.youtube.com/watch?v=R5721mXs4lY&t=128s\"\n          },\n          {\n            \@type\: \"Clip\",\n            \name\: \"Arme légendaire\",\n            \startOffset\: 306,\n            \endOffset\: 352,\n            \url\: \"https://www.youtube.com/watch?v=R5721mXs4lY&t=306s\"\n          }\n        ]\n      }\n      </script>",
+  title: "Armes dans Road to Vostok : liste complète et efficacité",
+  iframeUrl: "https://www.youtube.com/embed/R5721mXs4lY",
+  description: "Environ 20 canons : rareté, usure et réparation, légendaires et pénétration — données depuis la zone d’entraînement jusqu’au loadout.",
+  tags: [
+    "Road to Vostok armes",
+    "tableau",
+    "réparation",
+    "meta"
+  ],
+  publishDate: "2026-03-30",
+  imageUrl: "/images/guides/guides05.webp",
+  imageAlt: "Road to Vostok — armes",
+  seo: {
+    title: "Armes dans Road to Vostok : chiffres et builds",
+    description: "Calibres, dégâts, pénétration, rareté, KP-31 et M78. Tableaux alignés sur la page wiki armes pour votre build.",
+    keywords: "Road to Vostok, armes, liste, légendaire, pénétration, réparation"
+  },
+  addressBar: "weapons-list",
+  detailsHtml: `<p>Dans <strong>Road to Vostok</strong>, les fiches armes sont volontairement « sèches ». Zone d’entraînement ~20 canons : calibre, dégâts, pénétration, usure. Avant la zone difficile, maîtrisez l’UI et choisissez la pénétration face au blindage ennemi. Prix, commerce et rareté — <a href="/wiki/weapons">wiki · armes</a>.</p>
   <iframe name="rtvWeaponsGuideYt" src="https://www.youtube.com/embed/R5721mXs4lY" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <p>Repères temps :</p>
   <ol>
@@ -393,24 +331,28 @@ export default [
   <p><strong>À quel point l’usure est critique ?</strong></p>
   <p>L’UI montre 100 % ; avec le temps ça baisse — réparez pour ne pas perdre en efficacité.</p>
   <p><strong>Face au blindage ?</strong></p>
-  <p>SVD, Mosin, M78 avec pénétration 4 ; M78 et SVD à dégâts 50 — plus fort contre cibles lourdes.</p>`,
-  },
-
+  <p>SVD, Mosin, M78 avec pénétration 4 ; M78 et SVD à dégâts 50 — plus fort contre cibles lourdes.</p>`
+},
   {
-    id: 6,
-    title: "Rechargement dans Road to Vostok : fusils à pompe, verrous et vérif chargeur",
-    description: "RM-870 et Mosin : Ctrl + clic gauche pour la cartouche, après tir R. Vérif chargeur avec V — pas d’arcade.",
-    tags: ["Road to Vostok", "rechargement", "RM-870", "Mosin"],
-    publishDate: "2026-04-09",
-    imageUrl: "/images/guides/guides06.webp",
-    imageAlt: "Road to Vostok — rechargement",
-    seo: {
-      title: "Rechargement dans Road to Vostok : pompe et verrou",
-      description: "Rechargement tactique : Ctrl ouvre la culasse, clic gauche alimente, après tir R. Entraînez-vous au tutoriel.",
-      keywords: "Road to Vostok, rechargement, RM-870, Mosin, chargeur, V, jeu exigeant",
-    },
-    addressBar: "reload-shotguns-bolt-actions-magazine-checks",
-    detailsHtml: `
+  id: 6,
+  title: "Rechargement dans Road to Vostok : fusils à pompe, verrous et vérif chargeur",
+  description: "RM-870 et Mosin : Ctrl + clic gauche pour la cartouche, après tir R. Vérif chargeur avec V — pas d’arcade.",
+  tags: [
+    "Road to Vostok",
+    "rechargement",
+    "RM-870",
+    "Mosin"
+  ],
+  publishDate: "2026-04-09",
+  imageUrl: "/images/guides/guides06.webp",
+  imageAlt: "Road to Vostok — rechargement",
+  seo: {
+    title: "Rechargement dans Road to Vostok : pompe et verrou",
+    description: "Rechargement tactique : Ctrl ouvre la culasse, clic gauche alimente, après tir R. Entraînez-vous au tutoriel.",
+    keywords: "Road to Vostok, rechargement, RM-870, Mosin, chargeur, V, jeu exigeant"
+  },
+  addressBar: "reload-shotguns-bolt-actions-magazine-checks",
+  detailsHtml: `
   <p><strong>Source :</strong> synthèse communauté et tests joueurs (ex. MasterDeBunker) — pas d’arcade ; chambre vide en panique = mort.</p>
   <h2>Cycle de base</h2>
   <p>Verrous et cycle manuel en trois étapes :</p>
@@ -442,24 +384,28 @@ export default [
   </ol>
   <h2>Vérif et pistolets</h2>
   <p>Magasin intégré aussi alimenté au clic gauche une par une ; avant combat — <strong>V</strong>.</p>
-  <p>Pistolets plus simples, mais entraînez-vous au <strong>tutoriel</strong> pour l’automatiser.</p>`,
-  },
-
+  <p>Pistolets plus simples, mais entraînez-vous au <strong>tutoriel</strong> pour l’automatiser.</p>`
+},
   {
-    id: 7,
-    title: "Chat dans Road to Vostok : trouver et soigner le compagnon d’abri",
-    description: "Événement « chat perdu », bunker avant-poste, caisse transport 3×5, retour cabane — équipement, route et correctifs communauté.",
-    tags: ["Road to Vostok", "chat", "abri", "quête"],
-    publishDate: "2026-04-09",
-    imageUrl: "/images/guides/guides07.webp",
-    imageAlt: "Chat noir dans une caisse — compagnon d’abri",
-    seo: {
-      title: "Chat dans Road to Vostok : recherche et soins",
-      description: "À partir du 4e jour de jeu, chaîne village—école—avant-poste, mental et sac ; mieux en une seule session.",
-      keywords: "road to vostok, chat, abri, quête, bunker, survival",
-    },
-    addressBar: "cat-guide-find-care-shelter-companion",
-    detailsHtml: `
+  id: 7,
+  title: "Chat dans Road to Vostok : trouver et soigner le compagnon d’abri",
+  description: "Événement « chat perdu », bunker avant-poste, caisse transport 3×5, retour cabane — équipement, route et correctifs communauté.",
+  tags: [
+    "Road to Vostok",
+    "chat",
+    "abri",
+    "quête"
+  ],
+  publishDate: "2026-04-09",
+  imageUrl: "/images/guides/guides07.webp",
+  imageAlt: "Chat noir dans une caisse — compagnon d’abri",
+  seo: {
+    title: "Chat dans Road to Vostok : recherche et soins",
+    description: "À partir du 4e jour de jeu, chaîne village—école—avant-poste, mental et sac ; mieux en une seule session.",
+    keywords: "road to vostok, chat, abri, quête, bunker, survival"
+  },
+  addressBar: "cat-guide-find-care-shelter-companion",
+  detailsHtml: `
   <p><strong>Base :</strong> plusieurs runs communauté ; en survival exigeant le « vivant » a un coût — route, loot et erreurs typiques.</p>
   <h2>Début événement « chat perdu »</h2>
   <p>Cinq transitions de carte (village → école → avant-poste → école → village) — eau et endurance à chaque saut.</p>
@@ -508,24 +454,28 @@ export default [
   <li><strong>Respawn carte :</strong> ne laissez pas le loot au sol en espérant « revenir plus tard ».</li>
   <li><strong>Sauvegarde avant-poste :</strong> tente comme abri ; selon Half Burnt Toast le long du bord gauche.</li>
   <li><strong>Spawns ennemis :</strong> peuvent apparaître dans le dos après avoir vidé une zone.</li>
-  </ol>`,
-  },
-
+  </ol>`
+},
   {
-    id: 8,
+  id: 8,
+  title: "Road to Vostok — Emplacements des abris : carte complète &amp; déblocage",
+  description: "Tous les abris Road to Vostok (tente, bunker, école…), clé de la salle de classe et carte interactive pour survivre et optimiser le loot.",
+  tags: [
+    "Road to Vostok",
+    "Abris",
+    "Carte",
+    "Clé"
+  ],
+  publishDate: "2026-04-14",
+  imageUrl: "/images/guides/guides08.webp",
+  imageAlt: "Abris Road to Vostok",
+  seo: {
     title: "Road to Vostok — Emplacements des abris : carte complète &amp; déblocage",
-    description: "Tous les abris Road to Vostok (tente, bunker, école…), clé de la salle de classe et carte interactive pour survivre et optimiser le loot.",
-    tags: ["Road to Vostok", "Abris", "Carte", "Clé"],
-    publishDate: "2026-04-14",
-    imageUrl: "/images/guides/guides08.webp",
-    imageAlt: "Abris Road to Vostok",
-    seo: {
-      title: "Road to Vostok — Emplacements des abris : carte complète &amp; déblocage",
-      description: "Liste des abris, tente et bunker, école, clé de classe, gestion et carte interactive pour routes de farm en sécurité.",
-      keywords: "road to vostok shelter, emplacements abris, tente, carte, bunker, école, chat, clé salle de classe",
-    },
-    addressBar: "road-to-vostok-shelter-locations",
-    detailsHtml: `
+    description: "Liste des abris, tente et bunker, école, clé de classe, gestion et carte interactive pour routes de farm en sécurité.",
+    keywords: "road to vostok shelter, emplacements abris, tente, carte, bunker, école, chat, clé salle de classe"
+  },
+  addressBar: "road-to-vostok-shelter-locations",
+  detailsHtml: `
   <p>Dans la survie hardcore de <strong>Road to Vostok</strong>, l'abri est votre zone sûre pour stocker, récupérer et tenir. Du stash début à l'arsenal final, connaître chaque site et mécanique est indispensable.</p>
   <p>Ce guide synthétise les abris connus, l'obtention des clés et la gestion d'abri à partir d'infos communautaires vérifiées.</p>
   <h2>Intel : types d'abris</h2>
@@ -571,57 +521,28 @@ export default [
   <li><strong>Chat immortel :</strong> évite de gérer la survie du félin dans l'abri.</li>
   <li><strong>Pas de faim/soif en abri :</strong> pratique pour trier et aménager sans gaspiller les rations.</li>
   </ol>
-  <p>(Plus de guides : <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
-  },
-
+  <p>(Plus de guides : <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`
+},
   {
-    id: 9,
-    head: `<script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "VideoObject",
-        "name": "Road to Vostok — guide The Punisher : spawns, cartes et combat",
-        "description": "Guide hardcore : trouver, faire apparaître et tuer The Punisher ; mods Metro Mod Loader et Event Hints pour ~100 % de spawn, meilleure carte (avant-poste) et tactique pour la Flame Beanie.",
-        "uploadDate": "2024-05-20T08:00:00+08:00",
-        "duration": "PT13M0S",
-        "thumbnailUrl": "https://img.youtube.com/vi/o3Hwsuv4fk4/maxresdefault.jpg",
-        "embedUrl": "https://www.youtube.com/embed/o3Hwsuv4fk4",
-        "hasPart": [
-          {
-            "@type": "Clip",
-            "name": "Modding pour ~100 % de spawn",
-            "startOffset": 161,
-            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=161s"
-          },
-          {
-            "@type": "Clip",
-            "name": "Meilleure carte : avant-poste",
-            "startOffset": 347,
-            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=347s"
-          },
-          {
-            "@type": "Clip",
-            "name": "Combat et loot de la Flame Beanie",
-            "startOffset": 610,
-            "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=610s"
-          }
-        ]
-      }
-      </script>`,
+  id: 9,
+  head: "<script type=\"application/ld+json\">\n      {\n        \@context\: \"https://schema.org\",\n        \@type\: \"VideoObject\",\n        \name\: \"Road to Vostok — guide The Punisher : spawns, cartes et combat\",\n        \description\: \"Guide hardcore : trouver, faire apparaître et tuer The Punisher ; mods Metro Mod Loader et Event Hints pour ~100 % de spawn, meilleure carte (avant-poste) et tactique pour la Flame Beanie.\",\n        \uploadDate\: \"2024-05-20T08:00:00+08:00\",\n        \duration\: \"PT13M0S\",\n        \thumbnailUrl\: \"https://img.youtube.com/vi/o3Hwsuv4fk4/maxresdefault.jpg\",\n        \embedUrl\: \"https://www.youtube.com/embed/o3Hwsuv4fk4\",\n        \hasPart\: [\n          {\n            \@type\: \"Clip\",\n            \name\: \"Modding pour ~100 % de spawn\",\n            \startOffset\: 161,\n            \url\: \"https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=161s\"\n          },\n          {\n            \@type\: \"Clip\",\n            \name\: \"Meilleure carte : avant-poste\",\n            \startOffset\: 347,\n            \url\: \"https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=347s\"\n          },\n          {\n            \@type\: \"Clip\",\n            \name\: \"Combat et loot de la Flame Beanie\",\n            \startOffset\: 610,\n            \url\: \"https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=610s\"\n          }\n        ]\n      }\n      </script>",
+  title: "Road to Vostok — guide The Punisher : spawns, cartes et combat",
+  iframeUrl: "https://www.youtube.com/embed/o3Hwsuv4fk4",
+  description: "Guide hardcore : trouver, faire apparaître et tuer The Punisher ; mods Metro Mod Loader et Event Hints pour ~100 % de spawn, meilleure carte (avant-poste) et tactique pour la Flame Beanie.",
+  tags: [
+    "Road to Vostok",
+    "The Punisher"
+  ],
+  publishDate: "2026-04-20",
+  imageUrl: "/images/guides/guides09.webp",
+  imageAlt: "Road to Vostok guide The Punisher",
+  seo: {
     title: "Road to Vostok — guide The Punisher : spawns, cartes et combat",
-    iframeUrl: "https://www.youtube.com/embed/o3Hwsuv4fk4",
-    description: "Guide hardcore : trouver, faire apparaître et tuer The Punisher ; mods Metro Mod Loader et Event Hints pour ~100 % de spawn, meilleure carte (avant-poste) et tactique pour la Flame Beanie.",
-    tags: ["Road to Vostok", "The Punisher"],
-    publishDate: "2026-04-20",
-    imageUrl: "/images/guides/guides09.webp",
-    imageAlt: "Road to Vostok guide The Punisher",
-    seo: {
-      title: "Road to Vostok — guide The Punisher : spawns, cartes et combat",
-      description: "Farm The Punisher : mods, avant-poste, combat et Flame Beanie.",
-      keywords: "Road to Vostok, The Punisher, Flame Beanie, Metro Mod Loader, Event Hints",
-    },
-    addressBar: "road-to-vostok-the-punisher-guide",
-    detailsHtml: `<p>En vanilla, le taux naturel de spawn de The Punisher est extrêmement bas (environ 2,5 % à 3,33 %). Pour farmer la Flame Beanie exclusive, installez Metro Mod Loader et Event Hints pour viser ~100 %. Évitez le village et l&apos;école (CQB forcé et bandits locaux) ; privilégiez l&apos;avant-poste, lignes de vue ouvertes et rochers. Fusil d&apos;assaut fiable à plus de 70 % d&apos;état et beaucoup de kits médicaux. Dès les sirènes, couverture rocheuse, coupez sa salve de suppression, sécurisez le kill.
+    description: "Farm The Punisher : mods, avant-poste, combat et Flame Beanie.",
+    keywords: "Road to Vostok, The Punisher, Flame Beanie, Metro Mod Loader, Event Hints"
+  },
+  addressBar: "road-to-vostok-the-punisher-guide",
+  detailsHtml: `<p>En vanilla, le taux naturel de spawn de The Punisher est extrêmement bas (environ 2,5 % à 3,33 %). Pour farmer la Flame Beanie exclusive, installez Metro Mod Loader et Event Hints pour viser ~100 %. Évitez le village et l&apos;école (CQB forcé et bandits locaux) ; privilégiez l&apos;avant-poste, lignes de vue ouvertes et rochers. Fusil d&apos;assaut fiable à plus de 70 % d&apos;état et beaucoup de kits médicaux. Dès les sirènes, couverture rocheuse, coupez sa salve de suppression, sécurisez le kill.
 
   <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/o3Hwsuv4fk4" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p>Pas toute la vidéo ? Sauts directs :</p>
@@ -712,24 +633,26 @@ export default [
   <p>Q : Arme imposée ?
   </p>
   <p>R : Non, mais primaire &gt;70 % — sinon bourrage au pire moment.
-  </p>`,
-  },
-
+  </p>`
+},
   {
-    id: 10,
-    title: "Road to Vostok — commandes console et modding : ajuster les valeurs",
-    description: "Vous cherchez des commandes console Road to Vostok ? Pourquoi elles n&apos;existent pas et comment régler vitesse ou faim via mods ou dépaquetage du .pck.",
-    tags: ["Road to Vostok console commands", "Road to Vostok mods"],
-    publishDate: "2026-04-30",
-    imageUrl: "/images/guides/guides10.webp",
-    imageAlt: "Road to Vostok mod vitesse de course",
-    seo: {
-      title: "Road to Vostok — console et modding : ajuster les valeurs",
-      description: "Pas de console intégrée — mods (Metro Mod Loader, MCM) ou dépaquetage RTV.pck pour affiner les réglages.",
-      keywords: "road to vostok console commands, road to vostok engine, road to vostok mods, tweak values, unpack pck, godot modding",
-    },
-    addressBar: "road-to-vostok-console-commands-and-modding",
-    detailsHtml: `
+  id: 10,
+  title: "Road to Vostok — commandes console et modding : ajuster les valeurs",
+  description: "Vous cherchez des commandes console Road to Vostok ? Pourquoi elles n&apos;existent pas et comment régler vitesse ou faim via mods ou dépaquetage du .pck.",
+  tags: [
+    "Road to Vostok console commands",
+    "Road to Vostok mods"
+  ],
+  publishDate: "2026-04-30",
+  imageUrl: "/images/guides/guides10.webp",
+  imageAlt: "Road to Vostok mod vitesse de course",
+  seo: {
+    title: "Road to Vostok — console et modding : ajuster les valeurs",
+    description: "Pas de console intégrée — mods (Metro Mod Loader, MCM) ou dépaquetage RTV.pck pour affiner les réglages.",
+    keywords: "road to vostok console commands, road to vostok engine, road to vostok mods, tweak values, unpack pck, godot modding"
+  },
+  addressBar: "road-to-vostok-console-commands-and-modding",
+  detailsHtml: `
   <p>Si la faim par défaut ou la vitesse de déplacement vous fatiguent et que vous cherchez désespérément des commandes console Road to Vostok, voici la vérité : le jeu de base n&apos;offre ni console intégrée ni fichiers de config texte simples (.xml ou .ini).
   </p>
   <p>Contrairement aux vieux titres (comme S.T.A.L.K.E.R. classique) où l&apos;on changeait 1 en 1,2 dans le Bloc-notes, ce survival hardcore exige une autre approche. Ce guide explique comment modifier le jeu avec des outils communautaires et des contournements moteur validés par les joueurs.
@@ -783,6 +706,249 @@ export default [
   <h2>Restez à jour sur le modding Vostok
   </h2>
   <p>Les techniques et versions évoluent vite. Outils, tutoriels et cartes interactives loot : notre hub <a href="http://roadtovostok.org/">http://roadtovostok.org/</a>.
-  </p>`,
-  }
+  </p>`
+},
+  {
+  id: 11,
+  title: "Mods Road To Vostok : QoL, coop et installation",
+  description: "Guide des mods Road To Vostok : QoL, limites des mods coop, installation, sauvegarde et controles de compatibilite.",
+  tags: [
+    "mods Road To Vostok",
+    "mod coop Road To Vostok",
+    "modding Road To Vostok"
+  ],
+  publishDate: "2026-07-01",
+  imageUrl: "/images/guides/guides10.webp",
+  imageAlt: "guide mods Road To Vostok installation mod loader compatibilite",
+  seo: {
+    title: "Mods Road To Vostok : coop, QoL et setup",
+    description: "Installez des mods Road To Vostok sans casser vos saves : QoL, mods coop, workflow loader et controles de compatibilite.",
+    keywords: "mods Road To Vostok, mod coop, multiplayer mod, secure container"
+  },
+  addressBar: "road-to-vostok-mods-guide",
+  detailsHtml: `
+  <p><strong>Reponse rapide :</strong> Road To Vostok a une vraie demande de mods, mais le bon depart n'est pas un gros pack. Commencez par des changements QoL, un loader fiable et un controle de compatibilite apres chaque fichier ajoute. Les mods coop et multiplayer restent experimentaux sauf si leur page prouve le support du build actuel.</p>
+  <p>Ce guide exclut volontairement les torrents, trainers et menus de triche. Ils cassent l'equilibre survival, polluent les donnees de test et rendent les conflits de mods plus difficiles a diagnostiquer.</p>
+
+  <figure>
+    <img src="/images/guides/guides10-01.webp" alt="mods Road To Vostok avec mod loader et menu de configuration" title="Workflow d'installation des mods Road To Vostok" width="50%">
+    <figcaption>Utilisez un seul chemin de loader, puis testez chaque mod Road To Vostok avant d'empiler un autre fichier.</figcaption>
+  </figure>
+
+  <h2>Meilleurs mods Road To Vostok pour commencer</h2>
+  <h3>Mods quality-of-life</h3>
+  <p>Les mods Road To Vostok les plus surs sont les changements QoL qui reduisent la friction d'interface sans toucher a la boucle survival. Bons candidats : menu de configuration, petits indices HUD, aide au rangement du stash et tweaks controles que vous pouvez desactiver vite.</p>
+  <p>Si vous voulez regler largement le jeu, lisez d'abord le <a href="/guides/road-to-vostok-console-commands-and-modding">guide des commandes console et du modding</a>. Point cle : Road To Vostok ne se comporte pas comme un vieux shooter a fichiers INI lisibles partout.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>But du mod</th>
+        <th>Usage</th>
+        <th>Controle de risque</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Menu de configuration</td>
+        <td>Changer des valeurs supportees en jeu</td>
+        <td>Verifier priorite du loader et support du build actuel</td>
+      </tr>
+      <tr>
+        <td>Overlay d'evenement ou d'indice</td>
+        <td>Reduire le temps de recherche pendant les tests</td>
+        <td>Desactiver avant de juger les spawns ou routes vanilla</td>
+      </tr>
+      <tr>
+        <td>QoL inventaire</td>
+        <td>Tri, stockage ou gestion d'abri</td>
+        <td>Sauvegarder avant tout fichier qui touche au stash</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Secure container et mods sans perte d'objet</h3>
+  <p>Les recherches secure container et no-item-loss repondent a la meme douleur : perdre un kit complet sur une mauvaise chaine d'etats. Traitez-les comme des <strong>modificateurs de protection d'inventaire</strong>, pas comme des outils de progression obligatoires. Ils aident a tester des routes, mais masquent le vrai cout du saignement, du froid, de la faim et des mauvaises decisions d'extraction.</p>
+  <p>Pour planifier en vanilla, combinez cette section avec le <a href="/guides/road-to-vostok-shelter-locations">guide des emplacements d'abris</a>. Il couvre mieux le stockage et le staging des longues sorties qu'un contournement modde de perte d'objet.</p>
+
+  <h2>Intention coop et multiplayer</h2>
+  <h3>Variantes de mods coop</h3>
+  <p>Les recherches "road to vostok coop mod", "road to vostok co op mod" et "road to vostok multiplayer mod" existent, mais ne signifient pas support multiplayer officiel. Road To Vostok est construit autour d'une structure survival solo ; un mod coop doit donc gerer etat d'inventaire, autorite NPC, evenements monde, blessures et synchronisation des saves.</p>
+  <p><strong>Risque INFERRED :</strong> si un mod coop ne documente pas la desynchronisation, l'etat de mort et le pinning de version, partez du principe que c'est un build de test. Ne l'utilisez pas sur votre save principale.</p>
+
+  <h3>Limites des mods multiplayer</h3>
+  <p>Le danger d'un mod multiplayer n'est pas seulement l'echec de connexion. Le vrai probleme est la derive silencieuse d'etat : un joueur ouvre un conteneur, un autre client voit encore l'objet, un evenement apparait sur un seul client, ou une blessure disparait d'un cote. Dans une boucle survival proche du permadeath, cela invalide le run.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Controle</th>
+        <th>A verifier</th>
+        <th>Signal d'echec</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Version du build</td>
+        <td>La page du mod liste le build Road To Vostok actuel</td>
+        <td>"Fonctionne sur ancienne demo" sans mise a jour recente</td>
+      </tr>
+      <tr>
+        <td>Securite de save</td>
+        <td>Instruction claire de backup ou profil separe</td>
+        <td>Le mod demande de tester sur la save active</td>
+      </tr>
+      <tr>
+        <td>Synchronisation d'etat</td>
+        <td>Loot, NPC, sante et transitions documentes</td>
+        <td>Rapports de desync connus sans contournement</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Installer et gerer les mods</h2>
+  <h3>Mod manager et controles de compatibilite</h3>
+  <p>Gardez la pile minimale : loader, menu de configuration si requis, puis un seul mod gameplay. Lancez le jeu, chargez un profil jetable, entrez dans une zone a faible risque et testez la mecanique exacte annoncee. N'installez pas cinq mods Road To Vostok avant de chercher un crash de memoire.</p>
+  <p>Pour tester les routes, gardez la <a href="/map">carte interactive</a> ouverte et notez la zone, l'abri ou la transition utilisee. Si un mod casse le deplacement, le bug apparait souvent aux limites de carte avant le combat moment par moment.</p>
+
+  <figure>
+    <img src="/images/guides/guides10-02.webp" alt="charger des mods Road To Vostok sans casser les sauvegardes" title="Charger des mods Road To Vostok en securite" width="50%">
+    <figcaption>Apres chaque installation de mod Road To Vostok, testez une mecanique et une transition de zone avant de continuer.</figcaption>
+  </figure>
+
+  <h3>Charger les mods sans risque</h3>
+  <ol>
+    <li>Sauvegardez le dossier de save avant de toucher aux loaders, scripts ou fichiers empaquetes.</li>
+    <li>Installez le loader exactement comme l'auteur du mod le decrit. Ne melangez pas anciennes et nouvelles instructions.</li>
+    <li>Ajoutez un mod, lancez une fois, puis fermez le jeu proprement.</li>
+    <li>Verifiez la mecanique changee dans une zone a faible risque, pas dans le Minefield ou une poussee vers Vostok.</li>
+    <li>Si le mod touche inventaire, abri ou mort, testez-le d'abord sur un profil jetable.</li>
+  </ol>
+  <p>N'utilisez pas de cheat mods comme base de test. Pour les donnees de combat ou de route, lancez un profil propre et comparez avec le resultat modde.</p>
+
+  <h2>FAQ</h2>
+  <h3>Road To Vostok a-t-il des mods ?</h3>
+  <p>Oui. La demande est claire : QoL, outils de configuration, protection d'inventaire et variantes coop. Utilisez des pages de mods a jour et evitez les fichiers obsoletes.</p>
+  <h3>Existe-t-il un mod coop Road To Vostok ?</h3>
+  <p>L'intention coop existe, mais ce n'est pas du multiplayer officiel. Traitez tout mod coop ou multiplayer comme experimental tant qu'il ne documente pas build, save et desync.</p>
+  <h3>Faut-il inclure les cheat mods ?</h3>
+  <p>Non. Menus de triche, trainers et telechargements douteux sont exclus. Ils n'aident pas a apprendre les systemes survival et creent des donnees de test non fiables.</p>`
+},
+  {
+  id: 12,
+  title: "Carte Road To Vostok : Minefield, zones et routes",
+  description: "Lire la carte Road To Vostok : Minefield, transitions, abris, village, highway, outpost, Area 05 et limites de la demo.",
+  tags: [
+    "carte Road To Vostok",
+    "Minefield map Road To Vostok",
+    "routes Road To Vostok"
+  ],
+  publishDate: "2026-07-01",
+  imageUrl: "/images/guides/guides02.webp",
+  imageAlt: "carte Road To Vostok Minefield zones abris et routes",
+  seo: {
+    title: "Carte Road To Vostok : Minefield et routes",
+    description: "Lisez la carte Road To Vostok : Minefield, transitions, abris, village, highway, outpost, Area 05 et limites de demo.",
+    keywords: "carte Road To Vostok, minefield map, tactical map, zones, abris"
+  },
+  addressBar: "road-to-vostok-map-minefield-locations-guide",
+  detailsHtml: `
+  <p><strong>Reponse rapide :</strong> lisez la carte Road To Vostok comme une chaine de zones a risque, pas comme un panneau touristique. Avant de bouger, votre route doit repondre a trois questions : ou est le prochain abri, quel danger bloque la transition, et quelle reserve de munitions ou de soins faut-il si la route tourne au combat.</p>
+  <p>Le Minefield est le filtre dur. Si vous ne savez pas identifier les mines, controler le bruit et garder assez de balles pour les bots et le nettoyage des mines, ne forcez pas la route juste parce que le marqueur semble proche.</p>
+
+  <figure>
+    <img src="/images/guides/guides02-01.webp" alt="carte Minefield Road To Vostok planification de route et nettoyage de mines" title="Planification de route Minefield Road To Vostok" width="50%">
+    <figcaption>La carte Minefield de Road To Vostok est un probleme de controle de route : scanner, nettoyer, avancer, puis reverifier la lisiere.</figcaption>
+  </figure>
+
+  <h2>Fonctionnement de la carte Road To Vostok</h2>
+  <h3>Carte principale et layout des zones</h3>
+  <p>La bonne facon d'etudier la carte Road To Vostok passe par les relations entre zones : staging plus sur, routes de loot, transitions et zones dangereuses tardives. Chaque deplacement est une decision logistique. Sans abri, stash ou retour propre, ce n'est pas une route. C'est un pari.</p>
+  <p>Utilisez la <a href="/map">carte interactive Road To Vostok</a> pour verifier visuellement, puis les guides ecrits pour les mecaniques. La carte montre ou est le probleme. Le guide explique ce qui peut tuer le run.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Couche de carte</th>
+        <th>Ce qu'elle resout</th>
+        <th>Erreur joueur</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Layout de zone</td>
+        <td>Comment les zones se connectent et bifurquent</td>
+        <td>Avancer sans abri de repli</td>
+      </tr>
+      <tr>
+        <td>Minefield map</td>
+        <td>Ou la transition devient explosive et lente</td>
+        <td>Sprint apres une seule mine nettoyee</td>
+      </tr>
+      <tr>
+        <td>Lieux nommes</td>
+        <td>Village, highway, outpost, school et apartment intent</td>
+        <td>Traiter une route de loot comme une route sure</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Variantes tactiques et interactives</h3>
+  <p>Les recherches "road to vostok tactical map" et "road to vostok interactive map" viennent souvent de joueurs qui veulent decider plus vite. Pour un usage tactique, priorisez les pins qui changent les maths de survie : mines, abris, stashes, traders, routes verrouillees et chemins ennemis frequentes.</p>
+  <p>Ne surchargez pas la carte avec chaque conteneur faible. Dans Road To Vostok, l'encombrement visuel est une dette. La meilleure carte tactique souligne la prochaine decision, pas chaque objet de la zone.</p>
+
+  <h2>Minefield et planification de route</h2>
+  <h3>Minefield map et guide Minefield</h3>
+  <p>Le Minefield impose un rythme plus lent que beaucoup de joueurs shooter acceptent. Vous scannez le sol, identifiez la mine, la nettoyez a distance si necessaire, puis scannez encore parce que la lisiere et la pression IA changent l'angle. Le <a href="/guides/surviving-the-Minefield">guide de survie Minefield</a> detaille mieux le nettoyage des explosifs.</p>
+  <p><strong>Regle de route :</strong> apportez assez de munitions pour les mines et le combat. Si votre plan ne compte que les NPC, le Minefield peut forcer un choix perdu entre marcher sur un danger et tirer vos dernieres balles utiles.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Avant d'entrer</th>
+        <th>Controle minimum</th>
+        <th>Abandonner si</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Reserve medicale</td>
+        <td>Controle du saignement plus vraie option trauma</td>
+        <td>Vous n'avez que des bandages legers</td>
+      </tr>
+      <tr>
+        <td>Reserve de munitions</td>
+        <td>Assez pour contact IA et tirs controles sur mines</td>
+        <td>Votre route suppose zero tir rate</td>
+      </tr>
+      <tr>
+        <td>Casque et armure</td>
+        <td>Etat utilisable avant la traversee</td>
+        <td>Vous boitez deja apres le combat precedent</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Voyager entre les zones</h3>
+  <p>Le voyage entre zones n'est pas juste marcher vers un marqueur de bord. C'est un controle de loadout. Avant de changer de zone, prenez 20 secondes : soins, hydratation, nourriture, etat de l'arme, chargeur de rechange et repli prevu. Si vous suivez les munitions par calibre, utilisez le <a href="/wiki/ammunition">tableau des munitions</a> avant une longue route.</p>
+  <p>Les joueurs qui cherchent "how to travel road to vostok diffent areas" bloquent souvent sur le sequencing. Correction simple : planifiez d'abri en abri, puis ajoutez les detours de loot quand le chemin de survie est stable.</p>
+
+  <h2>Lieux nommes importants</h2>
+  <h3>Cartes village, highway et outpost</h3>
+  <p>Traitez les cartes nommees par leur probleme dominant. Le village punit les approches de batiment negligentes. La highway expose a de longues lignes de vue et aux choix de tunnels stash. L'outpost aide a lire le couvert ouvert, mais punit encore les traverses de route sans controle d'angle.</p>
+  <p>Si votre run inclut du CQB vertical ou du loot urbain, comparez avec le <a href="/guides/apartments-complete-survival-loot-guid">guide survival et loot Apartments</a>. Meme regle : quand la carte devient verticale, le timing de route compte plus que l'aim brut.</p>
+
+  <figure>
+    <img src="/images/guides/guides01-01.webp" alt="carte Road To Vostok Area 05 demo et route frontiere" title="Planification Area 05 et demo map Road To Vostok" width="50%">
+    <figcaption>La planification commence avant le premier tir : destination, risque de transition et abri de repli.</figcaption>
+  </figure>
+
+  <h3>Area 05 et couverture demo map</h3>
+  <p>Les recherches Area 05 et demo map demandent de la prudence, car Road To Vostok change selon les builds. Utilisez cette page comme cadre de routing, puis confirmez l'objet de carte, l'abri ou la transition dans votre version. Si un marqueur a bouge apres mise a jour, corrigez les notes de route au lieu de forcer l'ancien chemin.</p>
+  <p><strong>Note de version :</strong> routes, pins de loot et transitions peuvent changer avec les patchs. En cas de doute, verifiez la route avec un loadout faible avant de porter du gear rare dans le Minefield ou une poussee tardive.</p>
+
+  <h2>FAQ</h2>
+  <h3>Existe-t-il une carte Road To Vostok ?</h3>
+  <p>Oui. Utilisez la <a href="/map">carte interactive</a> pour naviguer et ce guide pour la logique de route. Une bonne carte dit ou aller ; une bonne route explique ce qui peut tuer l'essai.</p>
+  <h3>Ou se trouve le Minefield dans Road To Vostok ?</h3>
+  <p>Le Minefield fonctionne comme une zone de transition dangereuse. Lisez la section minefield map et le <a href="/guides/surviving-the-Minefield">guide Minefield</a> avant d'y entrer avec du gear de valeur.</p>
+  <h3>Comment voyager entre les zones dans Road To Vostok ?</h3>
+  <p>Planifiez par abris, transitions et chemins de repli. Ne routez pas seulement par valeur de loot. Si la prochaine zone n'a pas de point de recuperation realiste, partez tot et relancez le run.</p>`
+}
 ]
