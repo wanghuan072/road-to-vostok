@@ -1286,5 +1286,264 @@
   <p>Plan movement by shelters, transitions, and fallback paths. Do not route by loot value alone. If the next area does not have a realistic recovery point, leave early and reset the run.</p>`,
   }
 
+  ,
+  {
+    id: 13,
+    title: "Road To Vostok Keys Guide: Cellar, Tunnel, Cabinet, Bunker, and Doctor Key",
+    description: "Find Road To Vostok keys, cellar access, locked cabinets, bypass limits, and current-build checks for rare key searches.",
+    tags: ["road to vostok keys", "cellar key", "locked cabinet", "bunker key"],
+    publishDate: "2026-07-06",
+    imageUrl: "/images/guides/guides13.webp",
+    imageAlt: "road to vostok keys cellar key locked cabinets guide",
+    seo: {
+      title: "Road To Vostok Keys and Cabinets Guide",
+      description: "Find Road To Vostok keys, cellar access, locked cabinets, bypass limits, and which key searches need current-build verification.",
+      keywords: "road to vostok keys, cellar key, locked cabinet, bunker key, doctor key"
+    },
+    addressBar: "road-to-vostok-keys-locked-cabinets",
+    detailsHtml: `
+  <p><strong>Fast answer:</strong> keys in Road To Vostok are optional access tools, not your main progression plan. The cellar key is confirmed as a rare general-loot key; search cabinets, bodies, trash bags, and other searchable containers instead of farming one fixed spawn. The Village cellar door sits close to The Generalist route, roughly in front of the trader approach, and opens into a small loot room with loose items and crates.</p>
+  <p>Do not build a route around unverified key names. Cellar key data is solid from current testing. Tunnel, ceiling, bunker, Doctor/Doktor, gym, and school key searches should be treated as <strong>current-build checks</strong> until the game exposes the exact key label, door prompt, or container prompt in your run.</p>
+
+  <figure>
+    <img src="/images/guides/guides13.webp" alt="road to vostok cellar key route near the village and generalist trader" title="Road To Vostok cellar key route near The Generalist" width="50%">
+    <figcaption>The cellar key route starts in the Village approach. Confirm the locked prompt before burning time on a key hunt.</figcaption>
+  </figure>
+
+  <h2>Where keys fit into progression</h2>
+  <h3>Key system short answer</h3>
+  <p>Keys gate side rooms, locked containers, and route shortcuts. They are useful, but they are not reliable enough to replace a normal loot loop. If you need stable progression, stage from shelters first, then add key checks once your food, hydration, ammo, and medical reserve are under control. The <a href="/guides/road-to-vostok-shelter-locations">shelter locations guide</a> is still the safer base route.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Key or lock intent</th>
+        <th>Best current use</th>
+        <th>Verification status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cellar key</td>
+        <td>Open the locked Village cellar room for loose loot and crates</td>
+        <td>Confirmed as rare general loot</td>
+      </tr>
+      <tr>
+        <td>Tunnel or ceiling key</td>
+        <td>Check route-access prompts before assuming the exact key name</td>
+        <td>INFERRED search intent; verify in current build</td>
+      </tr>
+      <tr>
+        <td>Bunker key</td>
+        <td>Use only when a bunker door or shelter prompt names the key</td>
+        <td>Build-dependent</td>
+      </tr>
+      <tr>
+        <td>Doctor / Doktor key</td>
+        <td>Medical or named-room access if the prompt matches</td>
+        <td>Spelling and prompt should be checked in-game</td>
+      </tr>
+      <tr>
+        <td>Gym / school key</td>
+        <td>School and gimnazium route checks</td>
+        <td>Current-build verification needed</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Can you bypass locked areas?</h3>
+  <p>Do not plan around glitch routes. Searches like "cellar without key" and "get into gimnazium without key" usually mean players saw a fence hop, geometry slip, or outdated route. Treat any no-key entry as unstable until you test it on the current build with disposable gear. The intended path is still safer: find the key, read the prompt, open the door.</p>
+  <p>If you are routing around a locked area because you need loot, use the <a href="/guides/apartments-complete-survival-loot-guid">Apartments survival and loot guide</a> instead. Apartments are a better planned loot target than a rare key gamble.</p>
+
+  <h2>Key location sections</h2>
+  <h3>Cellar, tunnel, and ceiling keys</h3>
+  <p>The cellar key can appear in the general loot pool. Practical search targets are cabinets, dead bodies, trash bags, and other containers that already justify a stop. Do not sprint from container to container with no survival plan; key farming still exposes you to hunger, hydration drain, cold, and contact risk.</p>
+  <figure>
+    <img src="/images/guides/guides13-01.webp" alt="road to vostok cellar key locked basement room and loot crates" title="Road To Vostok locked cellar room and crates" width="50%">
+    <figcaption>The locked cellar is a small loot room. It can pay out, but it is not a guaranteed high-tier stash.</figcaption>
+  </figure>
+  <p>Tunnel and ceiling key searches need stricter handling. If your build shows a tunnel door, ceiling hatch, or vertical route prompt, screenshot the exact key name and route marker before assuming a fixed location. Without that prompt, treat the search term as unconfirmed.</p>
+
+  <h3>Bunker and Doctor key</h3>
+  <p>Bunker-key and Doctor-key searches overlap with shelter, medical, and named-room intent. The rule is simple: trust the interaction prompt, not memory from an older build. Road To Vostok has enough build movement that a stale key label can waste an entire run.</p>
+  <p>For medical planning, pair this with the <a href="/getting-started#medical">medical basics section</a>. A Doctor/Doktor key is only useful if you survive long enough to use the room it opens.</p>
+
+  <h3>Gym and school-related keys</h3>
+  <p>Gym, school, and "gimnazium" searches should be routed like a building access problem. Clear the outside approach, check the door prompt, then decide whether the key hunt is worth the time. If the area has enemies or long sightlines, route it through the <a href="/map">interactive map</a> first.</p>
+
+  <h2>Cabinets and locked containers</h2>
+  <h3>Open cabinet intent</h3>
+  <p>Normal cabinets are worth checking because keys can sit inside broad loot pools. Locked cabinets are different: if the UI says locked, stop spamming the interaction key and read whether it asks for a named key, a generic lock state, or a quest-style condition.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Cabinet type</th>
+        <th>What to do</th>
+        <th>Common mistake</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Normal searchable cabinet</td>
+        <td>Loot it during regular route flow</td>
+        <td>Skipping it while key farming</td>
+      </tr>
+      <tr>
+        <td>Locked office cabinet</td>
+        <td>Check the exact prompt and required key</td>
+        <td>Assuming every cabinet uses the same key</td>
+      </tr>
+      <tr>
+        <td>Named or trader-area cabinet</td>
+        <td>Separate loot container behavior from NPC/vendor behavior</td>
+        <td>Treating scenery as guaranteed storage</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Generalist cabinet</h3>
+  <p>The Generalist area is useful as a landmark, but it should not be treated as a guaranteed cabinet solution. Use the <a href="/wiki/npcs/generalist">Generalist NPC page</a> for trader context, then test the cabinet itself. If it opens like a normal container, loot it. If it names a key, record the prompt. If it does neither, move on.</p>
+  <figure>
+    <img src="/images/guides/guides13-02.webp" alt="road to vostok key farming inventory check after searching cabinets and bodies" title="Road To Vostok key farming inventory check" width="50%">
+    <figcaption>Key farming is inventory discipline. Check containers, confirm the prompt, and leave before status drain turns the run bad.</figcaption>
+  </figure>
+
+  <h2>FAQ</h2>
+  <h3>Where is the cellar key in Road To Vostok?</h3>
+  <p>The cellar key is a rare general-loot item. Search cabinets, bodies, trash bags, and normal containers while running a real loot route. There is no safe fixed spawn to rely on.</p>
+  <h3>Can you open the cellar without the key?</h3>
+  <p>Do not rely on bypasses. If a no-key route exists in one build, it can disappear in the next. The stable method is to use the cellar key on the locked Village cellar door.</p>
+  <h3>Are bunker, Doctor, and gym keys confirmed?</h3>
+  <p>They are valid search intents, but exact use depends on current prompts and build state. Verify the door or cabinet label in your game before planning a route around those keys.</p>`,
+  },
+
+  {
+    id: 14,
+    title: "Road To Vostok Health Guide: Hydration, Regen, Food, and Status Problems",
+    description: "Diagnose Road To Vostok health loss, hydration drain, water, food, cooking tools, hot plate, kilju questions, and recovery planning.",
+    tags: ["road to vostok health", "hydration", "water bottle", "cooking"],
+    publishDate: "2026-07-06",
+    imageUrl: "/images/guides/guides14.webp",
+    imageAlt: "road to vostok health hydration food and status guide",
+    seo: {
+      title: "Road To Vostok Health and Hydration Guide",
+      description: "Diagnose health loss, hydration drain, water, food, cooking tools, hot plate, kilju questions, and status recovery in Road To Vostok.",
+      keywords: "road to vostok health, hydration, water bottle, cooking, hot plate, kilju"
+    },
+    addressBar: "road-to-vostok-health-hydration-guide",
+    detailsHtml: `
+  <p><strong>Fast answer:</strong> if health keeps going down in Road To Vostok, do not stare only at the HP number. Check hydration, food/energy, bleeding, fractures, cold or sickness, and any active status icon. Food and drink solve different problems. A health item can patch HP, but it will not fix a status chain that is still draining you.</p>
+  <p>Hydration is the most common quiet failure. Carry one drink you plan to use and one reserve drink you do not touch unless the route goes long. Juice, soda, water, and food with hydration value are route supplies, not trash loot.</p>
+
+  <figure>
+    <img src="/images/guides/guides14.webp" alt="road to vostok health hydration inventory with food and drink items" title="Road To Vostok health hydration inventory check" width="50%">
+    <figcaption>Before leaving shelter, read the character panel and inventory together. HP alone is not enough data.</figcaption>
+  </figure>
+
+  <h2>Why health keeps going down</h2>
+  <h3>Health drain causes</h3>
+  <p>Road To Vostok punishes status neglect. If health drops after combat, assume a wound or unresolved status first. If health drops during travel, check hydration, energy, cold, and sickness before blaming a bug. Long routes make small resource leaks visible.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Symptom</th>
+        <th>Likely cause</th>
+        <th>First correction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HP falls after a fight</td>
+        <td>Bleeding, fracture, or untreated trauma</td>
+        <td>Stop movement, use the correct medical item, then re-check icons</td>
+      </tr>
+      <tr>
+        <td>HP falls during travel</td>
+        <td>Hydration, food, cold, or sickness pressure</td>
+        <td>Drink first if hydration is low; eat if energy/food is low</td>
+      </tr>
+      <tr>
+        <td>HP improves but drops again</td>
+        <td>The cause was not removed</td>
+        <td>Treat the status, not just the HP bar</td>
+      </tr>
+      <tr>
+        <td>You have medicine but no recovery</td>
+        <td>Wrong item for the current condition</td>
+        <td>Read the item tooltip before consuming it</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Health regen</h3>
+  <p>Do not assume passive health regen will save a bad route. In current testing, food and medical items can show direct health value, but regeneration behavior depends on the condition you are trying to recover from. If the status remains active, the HP gain is temporary.</p>
+  <p>Use the site's <a href="/getting-started#medical">medical basics</a> and <a href="/wiki/core-tasks">core task list</a> to separate combat treatment from survival maintenance. A bandage problem, a food problem, and a hydration problem are three different problems.</p>
+
+  <h2>Hydration and water</h2>
+  <h3>Hydration basics</h3>
+  <p>Hydration drops fast enough that it should be part of every route checklist. Search kitchens, cabinets, trader stock, and general food containers for drinks. If you are already low before crossing into a risky area, turn back or trade. A full backpack does not matter if half of it cannot keep you alive.</p>
+  <figure>
+    <img src="/images/guides/guides14-01.webp" alt="road to vostok hydration products drink reserve and survival inventory" title="Road To Vostok hydration products and drink reserve" width="50%">
+    <figcaption>Keep one hydration product in reserve. Long detours and bad fights turn that spare drink into run insurance.</figcaption>
+  </figure>
+  <table>
+    <thead>
+      <tr>
+        <th>Item type</th>
+        <th>Use case</th>
+        <th>Route note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Water or bottle drink</td>
+        <td>Direct hydration recovery</td>
+        <td>Best reserve item if space allows</td>
+      </tr>
+      <tr>
+        <td>Juice or soda</td>
+        <td>Quick hydration during travel</td>
+        <td>Use before a fight, not after dehydration starts draining the run</td>
+      </tr>
+      <tr>
+        <td>Canned food or fruit</td>
+        <td>Food value, sometimes extra hydration depending on item</td>
+        <td>Read tooltip; do not assume every food gives water</td>
+      </tr>
+      <tr>
+        <td>Trader hydration product</td>
+        <td>Emergency resupply</td>
+        <td>Worth buying before a long route if your stash is dry</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Water lock confusion</h3>
+  <p>"Water lock" searches usually point to one of three things: a locked water source, a bottle/container interaction that is not available yet, or a UI state that looks locked because the wrong item is selected. Check the prompt, check whether the bottle is empty or usable, and check whether your build currently supports the interaction.</p>
+  <p>If the water interaction is unclear, do not wait until dehydration is critical. Use known drinks first, then test the water source with low-value gear.</p>
+
+  <h2>Cooking and survival items</h2>
+  <h3>Cooking basics</h3>
+  <p>Cooking should be treated as shelter-side sustain, not an emergency heal unless the item tooltip says so. Some food can provide health value in the current build, but recipes and tool requirements can shift. Read the cooking item tooltip before spending rare ingredients.</p>
+  <figure>
+    <img src="/images/guides/guides14-02.webp" alt="road to vostok cooking survival inventory with food medicine and hydration status" title="Road To Vostok cooking and survival inventory" width="50%">
+    <figcaption>Food, medicine, and hydration compete for space. Keep route supplies separate from stash crafting materials.</figcaption>
+  </figure>
+
+  <h3>Hot plate and stove use</h3>
+  <p>Hot plate, happy stove, and cooking-unit searches should all start with the same test: does the current build show the tool as usable, placeable, or recipe-bound? If yes, gather the listed ingredients and test at shelter. If no, do not waste route time carrying heavy cooking parts through a combat area.</p>
+  <p>For route planning, connect cooking to shelter logistics. If you cannot return to a safe stash, cooking supplies are dead weight. Use the <a href="/guides/road-to-vostok-shelter-locations">shelter guide</a> to decide where those supplies should live.</p>
+
+  <h3>Making kilju</h3>
+  <p>Kilju is a high-risk search term because recipe details are build-dependent. If your game exposes a kilju recipe, follow the exact in-game ingredient list and tool requirement. If it does not, tag the idea as <strong>INFERRED</strong> and do not spend rare water, sugar, yeast, or cooking materials on guesswork.</p>
+
+  <h2>FAQ</h2>
+  <h3>Why does my health keep going down in Road To Vostok?</h3>
+  <p>Check active status icons, hydration, food/energy, bleeding, fractures, cold, and sickness. If HP rises and then falls again, you treated the number but not the cause.</p>
+  <h3>How do I fix hydration?</h3>
+  <p>Drink water, juice, soda, or another item with hydration value. Carry one planned drink and one reserve drink before leaving shelter or a trader route.</p>
+  <h3>How do cooking and kilju work?</h3>
+  <p>Use only current-build tooltips for exact recipes. Cooking tools and kilju requirements can shift, so verify the recipe in-game before carrying ingredients across a dangerous route.</p>`,
+  }
+
 ]
 
