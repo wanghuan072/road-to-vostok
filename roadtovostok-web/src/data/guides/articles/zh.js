@@ -1037,4 +1037,98 @@ export default [
   <p>按庇护所、转移点和撤退路线规划，不要只按 Loot 价值规划。</p>`,
   }
 
+  ,
+  {
+    id: 13,
+    title: "Road To Vostok 钥匙指南：地窖、锁柜和稀有门锁",
+    description: "查清钥匙、地窖入口、锁柜、绕路风险，以及稀有钥匙在当前版本里的验证方法。",
+    tags: ["road to vostok 钥匙","地窖钥匙","锁柜","bunker key"],
+    publishDate: "2026-07-06",
+    imageUrl: "/images/guides/guides13.webp",
+    imageAlt: "road to vostok 钥匙和锁柜指南",
+    seo: {
+      title: "Road To Vostok 钥匙和锁柜指南",
+      description: "查清 Road To Vostok 钥匙、地窖入口、锁柜、绕路风险，以及哪些钥匙必须按当前版本验证。",
+      keywords: "road to vostok 钥匙, 地窖钥匙, 锁柜, bunker key, doctor key"
+    },
+    addressBar: "road-to-vostok-keys-locked-cabinets",
+    detailsHtml: `
+  <p><strong>快速结论：钥匙是额外通行工具，不是主线推进核心。地窖钥匙确认属于稀有通用掉落；优先搜柜子、尸体、垃圾袋和常规容器，不要死守固定刷新点。</strong></p>
+  <p>不要围绕未验证钥匙名设计路线。tunnel、ceiling、bunker、Doctor/Doktor、gym 和 school 类钥匙必须以当前版本门锁提示为准。</p>
+  <figure><img src="/images/guides/guides13.webp" alt="road to vostok cellar key route near the village and generalist trader" title="Road To Vostok cellar key route near The Generalist" width="50%"><figcaption>地窖钥匙路线从 Village 接近点开始。先确认锁门提示，再决定是否投入时间找钥匙。</figcaption></figure>
+  <h2>钥匙在推进中的位置</h2>
+  <h3>钥匙系统短答案</h3>
+  <p>钥匙控制支线房间、锁柜和路线捷径。先用 <a href="/guides/road-to-vostok-shelter-locations">shelter 位置指南</a>稳住食物、水分、弹药和医疗储备，再把钥匙检查加入路线。</p>
+  <table><thead><tr><th>钥匙或锁定意图</th><th>当前用途</th><th>验证状态</th></tr></thead><tbody><tr><td>地窖钥匙</td><td>打开 Village 锁住的地窖房间</td><td>已确认为稀有通用掉落</td></tr><tr><td>Tunnel / ceiling key</td><td>先确认路线门锁提示</td><td>INFERRED；当前版本验证</td></tr><tr><td>Bunker key</td><td>只在门锁提示点名时使用</td><td>版本相关</td></tr><tr><td>Doctor / Doktor key</td><td>医疗房或命名房间入口</td><td>拼写和提示需确认</td></tr><tr><td>Gym / school key</td><td>学校和 gimnazium 路线检查</td><td>当前版本验证</td></tr></tbody></table>
+  <h3>能不能绕过锁门区域？</h3>
+  <p>不要把 glitch 路线写进计划。no-key 路线可能来自旧版本或不稳定几何体，用低价值装备测试前都不要当成稳定攻略。</p>
+  <p>如果只是为了搜刮，优先看 <a href="/guides/apartments-complete-survival-loot-guid">Apartments 生存和搜刮指南</a>。</p>
+  <h2>钥匙位置分段</h2>
+  <h3>Cellar、tunnel 和 ceiling key</h3>
+  <p>地窖钥匙能从通用掉落池出现。实用搜索点是柜子、尸体、垃圾袋和本来就值得停下的容器。</p>
+  <figure><img src="/images/guides/guides13-01.webp" alt="road to vostok cellar key locked basement room and loot crates" title="Road To Vostok locked cellar room and crates" width="50%"><figcaption>锁住的地窖是小型战利品房。它可能有收益，但不是必掉高级物资点。</figcaption></figure>
+  <p>Tunnel 和 ceiling key 要更保守处理。没有门锁或路线提示，就不要当成确认机制。</p>
+  <h3>Bunker 和 Doctor key</h3>
+  <p>Bunker key 与 Doctor key 搜索通常混在 shelter、医疗和命名房间意图里。相信互动提示，不相信旧版本记忆。</p>
+  <p>医疗规划可配合 <a href="/getting-started#medical">医疗基础部分</a>。</p>
+  <h3>Gym 和学校相关钥匙</h3>
+  <p>Gym、school 和 gimnazium 按建筑入口问题处理。危险路线先用 <a href="/map">互动地图</a>确认。</p>
+  <h2>柜子和锁住容器</h2>
+  <h3>Open cabinet 意图</h3>
+  <p>普通柜子值得搜，因为钥匙可能在宽泛掉落池里。锁柜要先读清楚 UI 提示。</p>
+  <table><thead><tr><th>柜子类型</th><th>操作</th><th>常见错误</th></tr></thead><tbody><tr><td>普通可搜柜子</td><td>正常路线中顺手搜</td><td>找钥匙时反而跳过</td></tr><tr><td>锁住的 office cabinet</td><td>确认准确提示和所需钥匙</td><td>以为所有柜子共用一把钥匙</td></tr><tr><td>命名或商人区柜子</td><td>区分容器、NPC 和 vendor 行为</td><td>把场景物当成固定储物点</td></tr></tbody></table>
+  <h3>Generalist cabinet</h3>
+  <p>The Generalist 区域适合作为地标，但不能当成固定柜子答案。先看 <a href="/wiki/npcs/generalist">Generalist NPC 页面</a>，再测试柜子本身。</p>
+  <figure><img src="/images/guides/guides13-02.webp" alt="road to vostok key farming inventory check after searching cabinets and bodies" title="Road To Vostok key farming inventory check" width="50%"><figcaption>钥匙搜索本质是库存纪律。搜容器、确认提示，然后在状态消耗拖垮路线前撤离。</figcaption></figure>
+  <h2>FAQ</h2>
+  <h3>Road To Vostok 地窖钥匙在哪？</h3><p>地窖钥匙是稀有通用掉落。搜柜子、尸体、垃圾袋和普通容器，没有可靠固定刷新点。</p><h3>没有钥匙能进地窖吗？</h3><p>不要依赖绕路。稳定方法是用地窖钥匙打开 Village 地窖门。</p><h3>Bunker、Doctor 和 gym key 确认了吗？</h3><p>它们是有效搜索意图，但具体用途取决于当前提示和版本。</p>`,
+  }
+
+  ,
+  {
+    id: 14,
+    title: "Road To Vostok 健康指南：水分、回血、食物和状态",
+    description: "排查掉血、水分下降、饮水、食物、烹饪工具、hot plate、kilju 和恢复路线。",
+    tags: ["road to vostok 健康","水分","water bottle","烹饪"],
+    publishDate: "2026-07-06",
+    imageUrl: "/images/guides/guides14.webp",
+    imageAlt: "road to vostok 健康和水分指南",
+    seo: {
+      title: "Road To Vostok 健康和水分指南",
+      description: "排查 Road To Vostok 掉血、水分下降、饮水、食物、烹饪工具、hot plate、kilju 和状态恢复。",
+      keywords: "road to vostok 健康, 水分, water bottle, 烹饪, hot plate, kilju"
+    },
+    addressBar: "road-to-vostok-health-hydration-guide",
+    detailsHtml: `
+  <p><strong>快速结论：如果一直掉血，不要只盯 HP。检查水分、食物/能量、流血、骨折、寒冷或疾病，以及任何激活状态图标。</strong></p>
+  <p>水分是最常见的隐性失败点。带一瓶计划使用的饮料，再带一瓶备用饮料。</p>
+  <figure><img src="/images/guides/guides14.webp" alt="road to vostok health hydration inventory with food and drink items" title="Road To Vostok health hydration inventory check" width="50%"><figcaption>离开 shelter 前同时看角色面板和库存。只看 HP 不够。</figcaption></figure>
+  <h2>为什么健康一直下降</h2>
+  <h3>掉血原因</h3>
+  <p>Road To Vostok 会惩罚忽视状态的玩家。战斗后先查伤口；赶路时先查水分、能量、寒冷和疾病。</p>
+  <table><thead><tr><th>症状</th><th>可能原因</th><th>第一步修正</th></tr></thead><tbody><tr><td>战后 HP 下降</td><td>流血、骨折或创伤未处理</td><td>停下移动，用正确医疗物品</td></tr><tr><td>赶路时 HP 下降</td><td>水分、食物、寒冷或疾病压力</td><td>水分低先喝</td></tr><tr><td>HP 回升后又掉</td><td>原因没有移除</td><td>治疗状态，不是只补数字</td></tr><tr><td>有药但没恢复</td><td>物品不对应当前状态</td><td>使用前读 tooltip</td></tr></tbody></table>
+  <h3>Health regen</h3>
+  <p>不要假设被动回血能救坏路线。状态还在，HP 增益只是暂时的。</p>
+  <p>用 <a href="/getting-started#medical">医疗基础</a> 和 <a href="/wiki/core-tasks">core task list</a> 区分战斗治疗和生存维护。</p>
+  <h2>Hydration 和 water</h2>
+  <h3>水分基础</h3>
+  <p>水分下降速度足以进入每条路线清单。搜厨房、柜子、商人库存和食物容器找饮料。</p>
+  <figure><img src="/images/guides/guides14-01.webp" alt="road to vostok hydration products drink reserve and survival inventory" title="Road To Vostok hydration products and drink reserve" width="50%"><figcaption>保留一件水分补给。长绕路和坏战斗会让备用饮料救回整趟路线。</figcaption></figure>
+  <table><thead><tr><th>物品类型</th><th>用途</th><th>路线备注</th></tr></thead><tbody><tr><td>水或瓶装饮料</td><td>直接恢复水分</td><td>空间允许时最好的备用品</td></tr><tr><td>果汁或苏打</td><td>赶路中快速补水</td><td>战斗前用</td></tr><tr><td>罐头或水果</td><td>食物值，有些还有水分</td><td>读 tooltip</td></tr><tr><td>商人水分商品</td><td>紧急补给</td><td>长路线前缺水就值得买</td></tr></tbody></table>
+  <h3>Water lock 误解</h3>
+  <p>Water lock 通常指锁住的水源、瓶子互动不可用，或选错物品导致 UI 看起来锁住。</p>
+  <p>水源互动不清楚时，先用已知饮料，再用低价值装备测试。</p>
+  <h2>Cooking 和生存物品</h2>
+  <h3>烹饪基础</h3>
+  <p>烹饪应当作为 shelter 续航处理，不是紧急治疗，除非 tooltip 明确写了。</p>
+  <figure><img src="/images/guides/guides14-02.webp" alt="road to vostok cooking survival inventory with food medicine and hydration status" title="Road To Vostok cooking and survival inventory" width="50%"><figcaption>食物、药品和水分都会占空间。把路线补给和 stash 制作材料分开。</figcaption></figure>
+  <h3>Hot plate 和 stove 使用</h3>
+  <p>Hot plate、happy stove 和 cooking unit 都先确认当前版本是否可用、可放置或绑定配方。</p>
+  <p>烹饪要连接 shelter 物流。用 <a href="/guides/road-to-vostok-shelter-locations">shelter 指南</a> 决定材料放哪里。</p>
+  <h3>制作 kilju</h3>
+  <p>Kilju 是高风险搜索词，因为配方随版本变化。没有显示配方就标成 <strong>INFERRED</strong>。</p>
+  <h2>FAQ</h2>
+  <h3>为什么一直掉血？</h3><p>检查状态图标、水分、食物/能量、流血、骨折、寒冷和疾病。</p><h3>水分怎么解决？</h3><p>喝水、果汁、苏打或其他带水分值的物品。</p><h3>烹饪和 kilju 怎么做？</h3><p>只相信当前版本 tooltip。</p>`,
+  }
+
 ]

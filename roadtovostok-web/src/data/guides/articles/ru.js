@@ -249,4 +249,98 @@ export default [
     "addressBar": "road-to-vostok-map-minefield-locations-guide",
     "detailsHtml": "\n  <p><strong>Коротко:</strong> читайте карту Road To Vostok как цепочку risk zones, а не как стенд для осмотра. Перед движением маршрут должен ответить на три вопроса: где следующий shelter, какая опасность блокирует transition, и какой ammo или medical reserve нужен, если путь станет боем.</p>\n  <p>Minefield — жесткий фильтр. Если вы не можете определить mines, контролировать шум и держать достаточно патронов для bots и mine clearing, не давите маршрут только потому, что marker выглядит близко.</p>\n\n  <figure>\n    <img src=\"/images/guides/guides02-01.webp\" alt=\"Road To Vostok Minefield map планирование маршрута и зачистка мин\" title=\"Road To Vostok Minefield map route planning\" width=\"50%\">\n    <figcaption>Minefield map в Road To Vostok — это задача route control: scan, clear, move, затем повторная проверка treeline.</figcaption>\n  </figure>\n\n  <h2>Как работает карта Road To Vostok</h2>\n  <h3>Основная карта и layout зон</h3>\n  <p>Полезный способ изучать Road To Vostok map — смотреть отношения зон: safer staging zones, loot routes, transition points и late-route danger zones. Каждое движение — логистическое решение. Если маршрут не дает shelter, stash или clean return path, это не route. Это gamble.</p>\n  <p>Используйте <a href=\"/map\">interactive Road To Vostok map</a> сайта для визуальной проверки, затем письменные гайды для механик. Карта показывает, где проблема. Гайд объясняет, что может убить run.</p>\n  <table>\n    <thead>\n      <tr>\n        <th>Слой карты</th>\n        <th>Что показывает</th>\n        <th>Ошибка игрока</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>Area layout</td>\n        <td>Как зоны соединяются и где route branch</td>\n        <td>Движение без fallback shelter</td>\n      </tr>\n      <tr>\n        <td>Minefield map</td>\n        <td>Где transition становится взрывным и медленным</td>\n        <td>Спринт после одной очищенной mine</td>\n      </tr>\n      <tr>\n        <td>Named locations</td>\n        <td>Village, highway, outpost, school и apartment intent</td>\n        <td>Использовать loot route как safe route</td>\n      </tr>\n    </tbody>\n  </table>\n\n  <h3>Tactical и interactive map варианты</h3>\n  <p>Запросы \"road to vostok tactical map\" и \"road to vostok interactive map\" обычно идут от игроков, которым нужна быстрая decision surface. Для тактического использования ставьте выше pins, которые меняют survival math: mines, shelters, stashes, traders, locked routes и high-traffic enemy paths.</p>\n  <p>Не перегружайте карту каждым low-value container. В Road To Vostok clutter — liability. Лучшая tactical map подсвечивает следующее решение, а не каждый object в area.</p>\n\n  <h2>Minefield и планирование маршрута</h2>\n  <h3>Minefield map и Minefield guide</h3>\n  <p>Minefield требует более медленного ритма, чем большинство shooter players готовы принять. Вы сканируете землю, находите mine body, чистите с дистанции при необходимости, затем сканируете снова, потому что treeline и AI pressure меняют угол. Существующий <a href=\"/guides/surviving-the-Minefield\">Minefield survival guide</a> подробнее покрывает explosive-clearing mechanic.</p>\n  <p><strong>Правило route:</strong> берите достаточно ammunition для mine clearing и combat. Если ammo plan считает только NPCs, Minefield может загнать в no-win choice между stepping into hazard и последними полезными rounds.</p>\n  <table>\n    <thead>\n      <tr>\n        <th>Перед входом</th>\n        <th>Минимальная проверка</th>\n        <th>Отмена если</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>Medical reserve</td>\n        <td>Bleed control плюс реальная trauma recovery option</td>\n        <td>Есть только light bandages</td>\n      </tr>\n      <tr>\n        <td>Ammo reserve</td>\n        <td>Хватит на AI contact и controlled mine shots</td>\n        <td>Маршрут предполагает zero misses</td>\n      </tr>\n      <tr>\n        <td>Helmet and armor</td>\n        <td>Usable condition перед crossing</td>\n        <td>Вы уже хромаете после предыдущего fight</td>\n      </tr>\n    </tbody>\n  </table>\n\n  <h3>Переход между зонами</h3>\n  <p>Area travel — это не просто идти к edge marker. Это loadout check. Перед переходом потратьте 20 секунд: meds, hydration, food, firearm condition, spare magazine и один planned fallback. Если считаете ammunition по caliber, используйте <a href=\"/wiki/ammunition\">ammunition table</a> перед длинным маршрутом.</p>\n  <p>Игроки с запросом \"how to travel road to vostok diffent areas\" обычно упираются в route sequencing. Исправление простое: планируйте от shelter к shelter, затем добавляйте loot detours после стабилизации survival path.</p>\n\n  <h2>Важные named locations</h2>\n  <h3>Village, highway и outpost maps</h3>\n  <p>Named maps нужно читать через их главную проблему. Village routes наказывают небрежный building approach. Highway routes открывают long sightlines и stash-tunnel decisions. Outpost routes лучше для чтения open cover, но все равно наказывают пересечение дороги без проверки angles.</p>\n  <p>Если run включает vertical CQB или urban loot, сравните с <a href=\"/guides/apartments-complete-survival-loot-guid\">Apartments survival and loot guide</a>. Правило то же: когда карта становится vertical, route timing важнее raw aim.</p>\n\n  <figure>\n    <img src=\"/images/guides/guides01-01.webp\" alt=\"Road To Vostok map Area 05 demo map и border route planning\" title=\"Road To Vostok Area 05 и demo map planning\" width=\"50%\">\n    <figcaption>Area planning начинается до первого выстрела: подтвердите destination, transition risk и fallback shelter.</figcaption>\n  </figure>\n\n  <h3>Area 05 и demo map coverage</h3>\n  <p>Запросы Area 05 и demo-map нужно вести осторожно, потому что Road To Vostok меняется между builds. Используйте страницу как routing framework, затем подтвердите точный map object, shelter или transition в текущей версии. Если marker сдвинулся после update, правильный ход — обновить route notes, а не давить старый path.</p>\n  <p><strong>Version note:</strong> map routes, loot pins и transition details могут сдвигаться с patches. Если сомневаетесь, проверьте route на low-risk loadout перед переносом rare gear через Minefield или late-route push.</p>\n\n  <h2>FAQ</h2>\n  <h3>Есть ли карта Road To Vostok?</h3>\n  <p>Да. Используйте <a href=\"/map\">interactive map</a> для навигации и этот guide для route logic. Хорошая карта отвечает, куда идти; хороший route объясняет, что может убить попытку.</p>\n  <h3>Где находится Minefield в Road To Vostok?</h3>\n  <p>Minefield работает как опасная transition zone. Проверьте раздел minefield map и отдельный <a href=\"/guides/surviving-the-Minefield\">Minefield guide</a> перед входом с ценным gear.</p>\n  <h3>Как путешествовать между зонами в Road To Vostok?</h3>\n  <p>Планируйте движение по shelters, transitions и fallback paths. Не стройте route только по loot value. Если в следующей зоне нет реальной точки восстановления, уходите рано и reset run.</p>"
   }
+  ,
+  {
+    id: 13,
+    title: "Road To Vostok: ключи, подвал, шкафы и редкие замки",
+    description: "Проверь ключи, доступ в подвал, запертые шкафы, риск обходов и актуальные проверки билда.",
+    tags: ["road to vostok ключи","cellar key","запертый шкаф","bunker key"],
+    publishDate: "2026-07-06",
+    imageUrl: "/images/guides/guides13.webp",
+    imageAlt: "road to vostok: ключи и запертые шкафы",
+    seo: {
+      title: "Road To Vostok: ключи и запертые шкафы",
+      description: "Проверь ключи, доступ в подвал, запертые шкафы, риск обходов и ключи, требующие проверки билда.",
+      keywords: "road to vostok ключи, cellar key, locked cabinet, bunker key, doctor key"
+    },
+    addressBar: "road-to-vostok-keys-locked-cabinets",
+    detailsHtml: `
+  <p><strong>Коротко: ключи sind optionale Zugangswerkzeuge, nicht dein Hauptfortschritt. Der cellar key ist als seltener General-Loot bestaetigt; suche Cabinets, Bodies, Trash Bags und normale Container.</strong></p>
+  <p>Plane keine Route um ungepruefte Key-Namen. tunnel, ceiling, bunker, Doctor/Doktor, gym und school ключи brauchen den aktuellen Door- oder Container-Prompt.</p>
+  <figure><img src="/images/guides/guides13.webp" alt="road to vostok cellar key route near the village and generalist trader" title="Road To Vostok cellar key route near The Generalist" width="50%"><figcaption>Die cellar key Route startet beim Village-Ansatz. Prompt проверить, dann erst farmen.</figcaption></figure>
+  <h2>Wo ключи in die Progression passen</h2>
+  <h3>Key-System kurz erklaert</h3>
+  <p>ключи oeffnen Side Rooms, locked containers und Shortcuts. Используй erst <a href="/guides/road-to-vostok-shelter-locations">Shelter Routen</a>, Food, hydration, Ammo und Medizin als Basis.</p>
+  <table><thead><tr><th>Key oder Lock-Intent</th><th>Bester aktueller Используйn</th><th>Verifikation</th></tr></thead><tbody><tr><td>cellar key</td><td>Village cellar fuer Loot und Crates oeffnen</td><td>Bestaetigter seltener General-Loot</td></tr><tr><td>Tunnel / ceiling key</td><td>Prompt vor Key-Namen проверить</td><td>INFERRED; Build проверить</td></tr><tr><td>bunker key</td><td>Nur nutzen, wenn der Door-Prompt ihn nennt</td><td>Build-abhaengig</td></tr><tr><td>Doctor / Doktor key</td><td>Medizin- oder Named-Room-Zugang</td><td>Prompt проверить</td></tr><tr><td>Gym / school key</td><td>School- und gimnazium-Checks</td><td>Aktuellen Build проверить</td></tr></tbody></table>
+  <h3>Kann man locked areas umgehen?</h3>
+  <p>Plane nicht mit Glitches. No-key Routen koennen alte Geometry oder alte Builds sein.</p>
+  <p>Wenn du nur Loot brauchst, nutze den <a href="/guides/apartments-complete-survival-loot-guid">Apartments Loot Guide</a>.</p>
+  <h2>Key Location Sections</h2>
+  <h3>Cellar, tunnel und ceiling keys</h3>
+  <p>Der cellar key kann im General-Loot Pool liegen. Gute Stops sind cabinets, bodies, trash bags und normale Container.</p>
+  <figure><img src="/images/guides/guides13-01.webp" alt="road to vostok cellar key locked basement room and loot crates" title="Road To Vostok locked cellar room and crates" width="50%"><figcaption>Der locked cellar ist ein kleiner Loot Room, kein garantierter High-Tier-Stash.</figcaption></figure>
+  <p>Tunnel und ceiling keys konservativ behandeln: ohne aktuellen Prompt ist der Mechanic nicht bestaetigt.</p>
+  <h3>Bunker und Doctor key</h3>
+  <p>Bunker- und Doctor-key Suchen ueberschneiden Shelter-, Medizin- und Named-Room-Intent. Glaube dem Prompt, nicht altem Build-Wissen.</p>
+  <p>Fuer Medizinplanung den <a href="/getting-started#medical">Medical Basics</a> Abschnitt nutzen.</p>
+  <h3>Gym und school-related keys</h3>
+  <p>Gym, school und gimnazium wie Building Access behandeln. Aussenroute sichern und die <a href="/map">Interactive Map</a> nutzen.</p>
+  <h2>Cabinets und locked containers</h2>
+  <h3>Open cabinet intent</h3>
+  <p>Normale cabinets lohnen sich. Bei locked cabinets Prompt lesen: named key, generic lock oder quest condition.</p>
+  <table><thead><tr><th>Cabinet type</th><th>Was tun</th><th>Common mistake</th></tr></thead><tbody><tr><td>Normal searchable cabinet</td><td>Auf normaler Route looten</td><td>Beim Key-Farm ueberspringen</td></tr><tr><td>Locked office cabinet</td><td>Exakten Prompt und Key проверить</td><td>Alle Cabinets fuer gleich halten</td></tr><tr><td>Named oder trader-area cabinet</td><td>Container von NPC/vendor trennen</td><td>Scenery als Storage behandeln</td></tr></tbody></table>
+  <h3>Generalist cabinet</h3>
+  <p>The Generalist ist ein Landmark, keine Garantie. Используй die <a href="/wiki/npcs/generalist">Generalist NPC page</a>, dann teste den cabinet selbst.</p>
+  <figure><img src="/images/guides/guides13-02.webp" alt="road to vostok key farming inventory check after searching cabinets and bodies" title="Road To Vostok key farming inventory check" width="50%"><figcaption>Key farming ist Inventory Disziplin: Container suchen, Prompt bestaetigen, vor Status-Drain gehen.</figcaption></figure>
+  <h2>FAQ</h2>
+  <h3>Wo ist der cellar key?</h3><p>Als seltener General-Loot in cabinets, bodies, trash bags und normalen Containern.</p><h3>Geht cellar ohne key?</h3><p>Nicht darauf bauen. Stabil ist der cellar key.</p><h3>Sind bunker, Doctor und gym keys bestaetigt?</h3><p>Als Suchintent ja, aber Используйn haengt vom aktuellen Prompt und Build ab.</p>`,
+  }
+
+  ,
+  {
+    id: 14,
+    title: "Road To Vostok: здоровье, вода, еда и статусы",
+    description: "Разбери потерю здоровья, hydration, воду, еду, готовку, hot plate, kilju и восстановление.",
+    tags: ["road to vostok здоровье","hydration","water bottle","готовка"],
+    publishDate: "2026-07-06",
+    imageUrl: "/images/guides/guides14.webp",
+    imageAlt: "road to vostok: здоровье и hydration",
+    seo: {
+      title: "Road To Vostok: здоровье и hydration",
+      description: "Разбери потерю здоровья, hydration, воду, еду, готовку, hot plate, kilju и восстановление статусов.",
+      keywords: "road to vostok здоровье, hydration, water bottle, готовка, hot plate, kilju"
+    },
+    addressBar: "road-to-vostok-health-hydration-guide",
+    detailsHtml: `
+  <p><strong>Коротко: Wenn здоровье faellt, pruefe nicht nur HP. Check hydration, Food/Energy, bleeding, fracture, cold/sickness und aktive Status Icons.</strong></p>
+  <p>hydration ist der haeufigste stille Fehler. Trage einen Drink fuer die Route und einen Reserve-Drink.</p>
+  <figure><img src="/images/guides/guides14.webp" alt="road to vostok health hydration inventory with food and drink items" title="Road To Vostok health hydration inventory check" width="50%"><figcaption>Vor dem Shelter-Exit Character Panel und Inventory zusammen lesen.</figcaption></figure>
+  <h2>Почему здоровье weiter faellt</h2>
+  <h3>здоровье drain causes</h3>
+  <p>Road To Vostok bestraft Status-Ignoranz. Nach Kampf zuerst wound/status проверить; auf Reisen hydration, Energy, Cold und Sickness.</p>
+  <table><thead><tr><th>Symptom</th><th>Wahrscheinliche Ursache</th><th>Erste Korrektur</th></tr></thead><tbody><tr><td>HP faellt nach Kampf</td><td>Bleeding, fracture oder trauma</td><td>Passendes Medical Item nutzen</td></tr><tr><td>HP faellt auf Route</td><td>hydration, Food, Cold oder Sickness</td><td>Bei niedriger hydration zuerst trinken</td></tr><tr><td>HP steigt und faellt wieder</td><td>Ursache nicht entfernt</td><td>Status behandeln</td></tr><tr><td>Medizin hilft nicht</td><td>Falsches Item fuer Condition</td><td>Tooltip lesen</td></tr></tbody></table>
+  <h3>здоровье regen</h3>
+  <p>Passive regen nicht als Rettung planen. Food und Medical Items koennen здоровье geben, aber aktiver Status macht den Gain temporaer.</p>
+  <p>Используй <a href="/getting-started#medical">Medical Basics</a> und <a href="/wiki/core-tasks">core task list</a> fuer klare Trennung.</p>
+  <h2>hydration und water</h2>
+  <h3>hydration basics</h3>
+  <p>hydration gehoert auf jede Route-Checklist. Suche kitchens, cabinets, trader stock und food containers.</p>
+  <figure><img src="/images/guides/guides14-01.webp" alt="road to vostok hydration products drink reserve and survival inventory" title="Road To Vostok hydration products and drink reserve" width="50%"><figcaption>Einen hydration product reservieren. Lange Detours machen ihn wertvoll.</figcaption></figure>
+  <table><thead><tr><th>Item type</th><th>Use case</th><th>Route note</th></tr></thead><tbody><tr><td>Water oder bottle drink</td><td>Direkte hydration</td><td>Bester Reserve-Slot</td></tr><tr><td>Juice oder soda</td><td>Schnell trinken unterwegs</td><td>Vor dem Fight nutzen</td></tr><tr><td>Canned food oder fruit</td><td>Food, manchmal hydration</td><td>Tooltip lesen</td></tr><tr><td>Trader hydration product</td><td>Emergency resupply</td><td>Vor langen Routen kaufen</td></tr></tbody></table>
+  <h3>Water lock confusion</h3>
+  <p>Water lock kann locked source, fehlende bottle interaction oder falsches Item bedeuten.</p>
+  <p>Bei Unsicherheit bekannte Drinks nutzen, dann testen.</p>
+  <h2>Cooking und survival items</h2>
+  <h3>Cooking basics</h3>
+  <p>Cooking ist Shelter-Sustain, kein Emergency Heal ohne Tooltip.</p>
+  <figure><img src="/images/guides/guides14-02.webp" alt="road to vostok cooking survival inventory with food medicine and hydration status" title="Road To Vostok cooking and survival inventory" width="50%"><figcaption>Food, medicine und hydration konkurrieren um Space. Route Supplies von Crafting Materials trennen.</figcaption></figure>
+  <h3>Hot plate und stove use</h3>
+  <p>Hot plate, happy stove und cooking unit zuerst auf usable, placeable oder recipe-bound проверить.</p>
+  <p>Cooking braucht Shelter-Logistik. Используй den <a href="/guides/road-to-vostok-shelter-locations">Shelter Guide</a>.</p>
+  <h3>Making kilju</h3>
+  <p>Kilju ist build-dependent. Wenn kein Recipe sichtbar ist, als <strong>INFERRED</strong> behandeln.</p>
+  <h2>FAQ</h2>
+  <h3>Почему faellt meine здоровье?</h3><p>Status icons, hydration, food/energy, bleeding, fracture, cold und sickness проверить.</p><h3>Wie fixe ich hydration?</h3><p>Water, juice, soda oder Item mit hydration value trinken.</p><h3>Wie funktionieren cooking und kilju?</h3><p>Nur aktuelle Tooltips nutzen; Requirements koennen wechseln.</p>`,
+  }
+
 ]

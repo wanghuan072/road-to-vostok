@@ -249,4 +249,98 @@ export default [
     "addressBar": "road-to-vostok-map-minefield-locations-guide",
     "detailsHtml": "\n  <p><strong>Nopea vastaus:</strong> lue Road To Vostok -karttaa riskivyöhykkeiden ketjuna, ei nähtävyyslautana. Reitin pitää vastata kolmeen kysymykseen ennen liikettä: missä on seuraava shelter, mikä vaara blokkaa transitionin, ja mitä ammo- tai med-reserviä tarvitaan, jos reitti muuttuu taisteluksi.</p>\n  <p>Minefield on kova suodatin. Jos et tunnista miinoja, hallitse melua ja pidä tarpeeksi patruunoita sekä botteihin että miinojen raivaukseen, älä puske reittiä vain koska merkki näyttää läheiseltä.</p>\n\n  <figure>\n    <img src=\"/images/guides/guides02-01.webp\" alt=\"Road To Vostok Minefield map reittisuunnittelu ja miinojen raivaus\" title=\"Road To Vostok Minefield map reittisuunnittelu\" width=\"50%\">\n    <figcaption>Road To Vostokin Minefield map on reitinhallintaongelma: skannaa, raivaa, liiku ja tarkista metsänreuna uudelleen.</figcaption>\n  </figure>\n\n  <h2>Miten Road To Vostok -kartta toimii</h2>\n  <h3>Peruskartta ja alueiden layout</h3>\n  <p>Hyödyllinen tapa tutkia Road To Vostok -karttaa on alueiden suhteet: turvallisemmat staging-alueet, loot-reitit, transition-pisteet ja myöhäisen reitin vaaravyöhykkeet. Jokainen liike on logistiikkapäätös. Jos reitti ei anna shelteriä, stashia tai puhdasta paluuta, se ei ole reitti. Se on uhkapeli.</p>\n  <p>Käytä sivuston <a href=\"/map\">interactive Road To Vostok map</a> -karttaa visuaaliseen tarkistukseen ja kirjoitettuja oppaita mekaniikoihin. Kartta kertoo missä ongelma on. Opas kertoo mikä tappaa runin siellä.</p>\n  <table>\n    <thead>\n      <tr>\n        <th>Karttakerros</th>\n        <th>Mihin se vastaa</th>\n        <th>Pelaajavirhe</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>Aluelayout</td>\n        <td>Miten vyöhykkeet liittyvät ja missä reitit haarautuvat</td>\n        <td>Liikkuminen ilman fallback shelteriä</td>\n      </tr>\n      <tr>\n        <td>Minefield map</td>\n        <td>Missä transition muuttuu räjähtäväksi ja hitaaksi</td>\n        <td>Sprintti yhden raivatun miinan jälkeen</td>\n      </tr>\n      <tr>\n        <td>Nimetyt sijainnit</td>\n        <td>Village, highway, outpost, school ja apartment intent</td>\n        <td>Loot-reitin käsittely turvallisena reittinä</td>\n      </tr>\n    </tbody>\n  </table>\n\n  <h3>Tactical ja interactive map -variantit</h3>\n  <p>Haut \"road to vostok tactical map\" ja \"road to vostok interactive map\" tulevat yleensä pelaajilta, jotka tarvitsevat nopeamman päätöspinnan. Taktisesti priorisoi pinnit, jotka muuttavat selviytymismatematiikkaa: miinat, shelterit, stashit, traderit, lukitut reitit ja vilkkaat vihollispolut.</p>\n  <p>Älä täytä karttaa jokaisella vähäarvoisella kontilla. Road To Vostokissa sotku on riski. Paras tactical map korostaa seuraavaa päätöstä, ei jokaista objektia alueella.</p>\n\n  <h2>Minefield ja reittisuunnittelu</h2>\n  <h3>Minefield map ja Minefield guide</h3>\n  <p>Minefield vaatii hitaamman rytmin kuin moni shooter-pelaaja haluaa hyväksyä. Skannaat maan, tunnistat miinan rungon, raivaat sen etäältä tarvittaessa ja skannaat uudelleen, koska metsänreuna ja AI-paine muuttavat kulmaa. Nykyinen <a href=\"/guides/surviving-the-Minefield\">Minefield survival guide</a> kattaa räjähteiden raivauksen tarkemmin.</p>\n  <p><strong>Reittisääntö:</strong> ota tarpeeksi ammuksia miinoihin ja taisteluun. Jos ammo-suunnitelma huomioi vain NPC:t, Minefield voi pakottaa häviävän valinnan vaaran päälle astumisen ja viimeisten hyödyllisten laukausten välillä.</p>\n  <table>\n    <thead>\n      <tr>\n        <th>Ennen sisäänmenoa</th>\n        <th>Minimitarkistus</th>\n        <th>Keskeytä jos</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>Med-reservi</td>\n        <td>Verenvuodon hallinta ja oikea trauma-palautus</td>\n        <td>Sinulla on vain kevyitä bandageja</td>\n      </tr>\n      <tr>\n        <td>Ammo-reservi</td>\n        <td>Riittävästi AI-kontaktiin ja hallittuihin miinalaukauksiin</td>\n        <td>Reitti olettaa ettei tule huteja</td>\n      </tr>\n      <tr>\n        <td>Kypärä ja panssari</td>\n        <td>Käyttökunto ennen ylitystä</td>\n        <td>Ontut jo edellisestä taistelusta</td>\n      </tr>\n    </tbody>\n  </table>\n\n  <h3>Matkustaminen alueiden välillä</h3>\n  <p>Alueiden välinen liike ei ole vain kävely reunamerkille. Se on loadout-tarkistus. Ennen transitionia käytä 20 sekuntia: meds, hydration, food, aseen kunto, varalipas ja yksi suunniteltu fallback. Jos seuraat ammuksia kaliiperin mukaan, käytä <a href=\"/wiki/ammunition\">ammunition table</a> -taulukkoa ennen pitkää reittiä.</p>\n  <p>Pelaajat, jotka hakevat \"how to travel road to vostok diffent areas\", ovat yleensä jumissa reittijärjestyksessä. Korjaus on yksinkertainen: suunnittele shelteristä shelteriin ja lisää loot-detourit vasta kun survival-polku on vakaa.</p>\n\n  <h2>Tärkeät nimetyt sijainnit</h2>\n  <h3>Village, highway ja outpost maps</h3>\n  <p>Nimettyjä karttoja pitää lukea niiden hallitsevan ongelman kautta. Village rankaisee huolimattomia rakennuslähestymisiä. Highway paljastaa pitkille näkölinjoille ja stash-tunnelipäätöksille. Outpost sopii avoimen suojan lukemiseen, mutta rankaisee tienylitykset ilman kulmatarkistusta.</p>\n  <p>Jos run sisältää pystysuuntaista CQB:tä tai urbaania loottia, vertaa sitä <a href=\"/guides/apartments-complete-survival-loot-guid\">Apartments survival and loot guide</a> -oppaaseen. Sama sääntö pätee: kun kartta muuttuu vertikaaliseksi, reitin ajoitus merkitsee enemmän kuin raaka aim.</p>\n\n  <figure>\n    <img src=\"/images/guides/guides01-01.webp\" alt=\"Road To Vostok map Area 05 demo map ja border route planning\" title=\"Road To Vostok Area 05 ja demo map planning\" width=\"50%\">\n    <figcaption>Aluesuunnittelu alkaa ennen ensimmäistä laukausta: vahvista kohde, transition-riski ja fallback shelter.</figcaption>\n  </figure>\n\n  <h3>Area 05 ja demo map -kattavuus</h3>\n  <p>Area 05- ja demo map -haut pitää käsitellä varovasti, koska Road To Vostok muuttuu buildien mukana. Käytä tätä sivua routing-kehyksenä ja varmista sitten tarkka karttaobjekti, shelter tai transition omassa versiossasi. Jos marker siirtyi päivityksessä, oikea liike on päivittää reittimuistiinpanot, ei pakottaa vanhaa polkua.</p>\n  <p><strong>Version note:</strong> karttareitit, loot-pinnit ja transition-yksityiskohdat voivat muuttua patcheissa. Jos epäilet, vahvista reitti matalan riskin loadoutilla ennen harvinaisen gearin kantamista Minefieldiin tai late-route-pushiin.</p>\n\n  <h2>FAQ</h2>\n  <h3>Onko Road To Vostok -karttaa?</h3>\n  <p>Kyllä. Käytä <a href=\"/map\">interactive map</a> -karttaa navigointiin ja tätä opasta reittilogiikkaan. Hyvä kartta vastaa minne mennä; hyvä reitti kertoo mikä voi tappaa yrityksen.</p>\n  <h3>Missä Minefield on Road To Vostokissa?</h3>\n  <p>Minefield toimii vaarallisena transition-alueena. Tarkista minefield map -osio ja erillinen <a href=\"/guides/surviving-the-Minefield\">Minefield guide</a> ennen sisäänmenoa arvokkaalla gearilla.</p>\n  <h3>Miten Road To Vostokissa matkustetaan alueiden välillä?</h3>\n  <p>Suunnittele liike shelterien, transitionien ja fallback-polkujen mukaan. Älä reititä pelkän loot-arvon mukaan. Jos seuraavalla alueella ei ole realistista palautumispistettä, poistu aikaisin ja resetoi run.</p>"
   }
+  ,
+  {
+    id: 13,
+    title: "Road To Vostok avainopas: kellari, kaapit ja harvinaiset lukot",
+    description: "Selvita avaimet, kellaripaasy, lukitut kaapit, ohitusrajat ja nykyisen buildin tarkistukset.",
+    tags: ["road to vostok avaimet","cellar key","lukittu kaappi","bunker key"],
+    publishDate: "2026-07-06",
+    imageUrl: "/images/guides/guides13.webp",
+    imageAlt: "road to vostok avaimet ja lukitut kaapit",
+    seo: {
+      title: "Road To Vostok avaimet ja lukitut kaapit",
+      description: "Selvita avaimet, kellaripaasy, lukitut kaapit, ohitusrajat ja mitka avaimet vaativat build-tarkistuksen.",
+      keywords: "road to vostok avaimet, cellar key, lukittu kaappi, bunker key, doctor key"
+    },
+    addressBar: "road-to-vostok-keys-locked-cabinets",
+    detailsHtml: `
+  <p><strong>Nopea vastaus: avaimet sind optionale Zugangswerkzeuge, nicht dein Hauptfortschritt. Der cellar key ist als seltener General-Loot bestaetigt; suche Cabinets, Bodies, Trash Bags und normale Container.</strong></p>
+  <p>Plane keine Route um ungepruefte Key-Namen. tunnel, ceiling, bunker, Doctor/Doktor, gym und school avaimet brauchen den aktuellen Door- oder Container-Prompt.</p>
+  <figure><img src="/images/guides/guides13.webp" alt="road to vostok cellar key route near the village and generalist trader" title="Road To Vostok cellar key route near The Generalist" width="50%"><figcaption>Die cellar key Route startet beim Village-Ansatz. Prompt tarkista, dann erst farmen.</figcaption></figure>
+  <h2>Wo avaimet in die Progression passen</h2>
+  <h3>Key-System kurz erklaert</h3>
+  <p>avaimet oeffnen Side Rooms, locked containers und Shortcuts. Kayta erst <a href="/guides/road-to-vostok-shelter-locations">Shelter Routen</a>, Food, nesteytys, Ammo und Medizin als Basis.</p>
+  <table><thead><tr><th>Key oder Lock-Intent</th><th>Bester aktueller Kaytan</th><th>Verifikation</th></tr></thead><tbody><tr><td>cellar key</td><td>Village cellar fuer Loot und Crates oeffnen</td><td>Bestaetigter seltener General-Loot</td></tr><tr><td>Tunnel / ceiling key</td><td>Prompt vor Key-Namen tarkista</td><td>INFERRED; Build tarkista</td></tr><tr><td>bunker key</td><td>Nur nutzen, wenn der Door-Prompt ihn nennt</td><td>Build-abhaengig</td></tr><tr><td>Doctor / Doktor key</td><td>Medizin- oder Named-Room-Zugang</td><td>Prompt tarkista</td></tr><tr><td>Gym / school key</td><td>School- und gimnazium-Checks</td><td>Aktuellen Build tarkista</td></tr></tbody></table>
+  <h3>Kann man locked areas umgehen?</h3>
+  <p>Plane nicht mit Glitches. No-key Routen koennen alte Geometry oder alte Builds sein.</p>
+  <p>Wenn du nur Loot brauchst, nutze den <a href="/guides/apartments-complete-survival-loot-guid">Apartments Loot Guide</a>.</p>
+  <h2>Key Location Sections</h2>
+  <h3>Cellar, tunnel und ceiling keys</h3>
+  <p>Der cellar key kann im General-Loot Pool liegen. Gute Stops sind cabinets, bodies, trash bags und normale Container.</p>
+  <figure><img src="/images/guides/guides13-01.webp" alt="road to vostok cellar key locked basement room and loot crates" title="Road To Vostok locked cellar room and crates" width="50%"><figcaption>Der locked cellar ist ein kleiner Loot Room, kein garantierter High-Tier-Stash.</figcaption></figure>
+  <p>Tunnel und ceiling keys konservativ behandeln: ohne aktuellen Prompt ist der Mechanic nicht bestaetigt.</p>
+  <h3>Bunker und Doctor key</h3>
+  <p>Bunker- und Doctor-key Suchen ueberschneiden Shelter-, Medizin- und Named-Room-Intent. Glaube dem Prompt, nicht altem Build-Wissen.</p>
+  <p>Fuer Medizinplanung den <a href="/getting-started#medical">Medical Basics</a> Abschnitt nutzen.</p>
+  <h3>Gym und school-related keys</h3>
+  <p>Gym, school und gimnazium wie Building Access behandeln. Aussenroute sichern und die <a href="/map">Interactive Map</a> nutzen.</p>
+  <h2>Cabinets und locked containers</h2>
+  <h3>Open cabinet intent</h3>
+  <p>Normale cabinets lohnen sich. Bei locked cabinets Prompt lesen: named key, generic lock oder quest condition.</p>
+  <table><thead><tr><th>Cabinet type</th><th>Was tun</th><th>Common mistake</th></tr></thead><tbody><tr><td>Normal searchable cabinet</td><td>Auf normaler Route looten</td><td>Beim Key-Farm ueberspringen</td></tr><tr><td>Locked office cabinet</td><td>Exakten Prompt und Key tarkista</td><td>Alle Cabinets fuer gleich halten</td></tr><tr><td>Named oder trader-area cabinet</td><td>Container von NPC/vendor trennen</td><td>Scenery als Storage behandeln</td></tr></tbody></table>
+  <h3>Generalist cabinet</h3>
+  <p>The Generalist ist ein Landmark, keine Garantie. Kayta die <a href="/wiki/npcs/generalist">Generalist NPC page</a>, dann teste den cabinet selbst.</p>
+  <figure><img src="/images/guides/guides13-02.webp" alt="road to vostok key farming inventory check after searching cabinets and bodies" title="Road To Vostok key farming inventory check" width="50%"><figcaption>Key farming ist Inventory Disziplin: Container suchen, Prompt bestaetigen, vor Status-Drain gehen.</figcaption></figure>
+  <h2>FAQ</h2>
+  <h3>Wo ist der cellar key?</h3><p>Als seltener General-Loot in cabinets, bodies, trash bags und normalen Containern.</p><h3>Geht cellar ohne key?</h3><p>Nicht darauf bauen. Stabil ist der cellar key.</p><h3>Sind bunker, Doctor und gym keys bestaetigt?</h3><p>Als Suchintent ja, aber Kaytan haengt vom aktuellen Prompt und Build ab.</p>`,
+  }
+
+  ,
+  {
+    id: 14,
+    title: "Road To Vostok terveysopas: nesteytys, ruoka ja statukset",
+    description: "Selvita terveyden lasku, nesteytys, vesi, ruoka, cooking tools, hot plate, kilju ja palautuminen.",
+    tags: ["road to vostok terveys","nesteytys","water bottle","ruoanlaitto"],
+    publishDate: "2026-07-06",
+    imageUrl: "/images/guides/guides14.webp",
+    imageAlt: "road to vostok terveys ja nesteytys",
+    seo: {
+      title: "Road To Vostok terveys ja nesteytys",
+      description: "Selvita terveyden lasku, nesteytys, vesi, ruoka, cooking tools, hot plate, kilju ja status-palautuminen.",
+      keywords: "road to vostok terveys, nesteytys, water bottle, cooking, hot plate, kilju"
+    },
+    addressBar: "road-to-vostok-health-hydration-guide",
+    detailsHtml: `
+  <p><strong>Nopea vastaus: Wenn terveys faellt, pruefe nicht nur HP. Check nesteytys, Food/Energy, bleeding, fracture, cold/sickness und aktive Status Icons.</strong></p>
+  <p>nesteytys ist der haeufigste stille Fehler. Trage einen Drink fuer die Route und einen Reserve-Drink.</p>
+  <figure><img src="/images/guides/guides14.webp" alt="road to vostok health hydration inventory with food and drink items" title="Road To Vostok health hydration inventory check" width="50%"><figcaption>Vor dem Shelter-Exit Character Panel und Inventory zusammen lesen.</figcaption></figure>
+  <h2>Miksi terveys weiter faellt</h2>
+  <h3>terveys drain causes</h3>
+  <p>Road To Vostok bestraft Status-Ignoranz. Nach Kampf zuerst wound/status tarkista; auf Reisen nesteytys, Energy, Cold und Sickness.</p>
+  <table><thead><tr><th>Symptom</th><th>Wahrscheinliche Ursache</th><th>Erste Korrektur</th></tr></thead><tbody><tr><td>HP faellt nach Kampf</td><td>Bleeding, fracture oder trauma</td><td>Passendes Medical Item nutzen</td></tr><tr><td>HP faellt auf Route</td><td>nesteytys, Food, Cold oder Sickness</td><td>Bei niedriger nesteytys zuerst trinken</td></tr><tr><td>HP steigt und faellt wieder</td><td>Ursache nicht entfernt</td><td>Status behandeln</td></tr><tr><td>Medizin hilft nicht</td><td>Falsches Item fuer Condition</td><td>Tooltip lesen</td></tr></tbody></table>
+  <h3>terveys regen</h3>
+  <p>Passive regen nicht als Rettung planen. Food und Medical Items koennen terveys geben, aber aktiver Status macht den Gain temporaer.</p>
+  <p>Kayta <a href="/getting-started#medical">Medical Basics</a> und <a href="/wiki/core-tasks">core task list</a> fuer klare Trennung.</p>
+  <h2>nesteytys und water</h2>
+  <h3>nesteytys basics</h3>
+  <p>nesteytys gehoert auf jede Route-Checklist. Suche kitchens, cabinets, trader stock und food containers.</p>
+  <figure><img src="/images/guides/guides14-01.webp" alt="road to vostok hydration products drink reserve and survival inventory" title="Road To Vostok hydration products and drink reserve" width="50%"><figcaption>Einen hydration product reservieren. Lange Detours machen ihn wertvoll.</figcaption></figure>
+  <table><thead><tr><th>Item type</th><th>Use case</th><th>Route note</th></tr></thead><tbody><tr><td>Water oder bottle drink</td><td>Direkte nesteytys</td><td>Bester Reserve-Slot</td></tr><tr><td>Juice oder soda</td><td>Schnell trinken unterwegs</td><td>Vor dem Fight nutzen</td></tr><tr><td>Canned food oder fruit</td><td>Food, manchmal nesteytys</td><td>Tooltip lesen</td></tr><tr><td>Trader hydration product</td><td>Emergency resupply</td><td>Vor langen Routen kaufen</td></tr></tbody></table>
+  <h3>Water lock confusion</h3>
+  <p>Water lock kann locked source, fehlende bottle interaction oder falsches Item bedeuten.</p>
+  <p>Bei Unsicherheit bekannte Drinks nutzen, dann testen.</p>
+  <h2>Cooking und survival items</h2>
+  <h3>Cooking basics</h3>
+  <p>Cooking ist Shelter-Sustain, kein Emergency Heal ohne Tooltip.</p>
+  <figure><img src="/images/guides/guides14-02.webp" alt="road to vostok cooking survival inventory with food medicine and hydration status" title="Road To Vostok cooking and survival inventory" width="50%"><figcaption>Food, medicine und hydration konkurrieren um Space. Route Supplies von Crafting Materials trennen.</figcaption></figure>
+  <h3>Hot plate und stove use</h3>
+  <p>Hot plate, happy stove und cooking unit zuerst auf usable, placeable oder recipe-bound tarkista.</p>
+  <p>Cooking braucht Shelter-Logistik. Kayta den <a href="/guides/road-to-vostok-shelter-locations">Shelter Guide</a>.</p>
+  <h3>Making kilju</h3>
+  <p>Kilju ist build-dependent. Wenn kein Recipe sichtbar ist, als <strong>INFERRED</strong> behandeln.</p>
+  <h2>FAQ</h2>
+  <h3>Miksi faellt meine terveys?</h3><p>Status icons, hydration, food/energy, bleeding, fracture, cold und sickness tarkista.</p><h3>Wie fixe ich hydration?</h3><p>Water, juice, soda oder Item mit hydration value trinken.</p><h3>Wie funktionieren cooking und kilju?</h3><p>Nur aktuelle Tooltips nutzen; Requirements koennen wechseln.</p>`,
+  }
+
 ]
