@@ -1543,6 +1543,240 @@
   <p>Drink water, juice, soda, or another item with hydration value. Carry one planned drink and one reserve drink before leaving shelter or a trader route.</p>
   <h3>How do cooking and kilju work?</h3>
   <p>Use only current-build tooltips for exact recipes. Cooking tools and kilju requirements can shift, so verify the recipe in-game before carrying ingredients across a dangerous route.</p>`,
+  },
+  {
+    id: 15,
+    title: "Road To Vostok Shelter Guide: Storage, Saving, Customization, and Safe Logout",
+    description: "A practical shelter guide for saving, safe item storage, customization, logout risk, tent shelters, school shelter checks, and food freezer use.",
+    tags: ["Shelter", "Storage", "Saving", "Survival"],
+    publishDate: "2026-07-13",
+    imageUrl: "/images/guides/guides15.jpg",
+    imageAlt: "Road To Vostok shelter storage save guide with safe logout and food freezer tips",
+    seo: {
+      title: "Road To Vostok Shelter and Save Guide",
+      description: "Store items, save safely, customize shelters, handle logout risk, and plan food or freezer storage in Road To Vostok.",
+      keywords: "road to vostok shelters, save, storage, shelter customization",
+    },
+    addressBar: "road-to-vostok-shelter-storage-save-guide",
+    detailsHtml: `<p><strong>Fast answer:</strong> shelters are your safest reset points. Use them to save, unload task items, separate route supplies from stash supplies, and avoid logging out in an exposed combat zone. Do not treat every cabin, freezer, or floor item as permanent storage until the current build shows a clear storage or pickup prompt.</p>
+  <figure>
+    <img src="/images/guides/guides15.jpg" alt="road to vostok shelter storage save safe logout guide" title="Road To Vostok shelter storage and save guide" width="50%">
+    <figcaption>Use shelters as route anchors: save first, unload high-value items second, then leave only with the supplies needed for the next run.</figcaption>
+  </figure>
+
+  <h2>How shelters work</h2>
+  <h3>Shelter purpose and safe storage</h3>
+  <p>A shelter is not just a rest stop. It is the place where your run stops being improvisation and becomes inventory control. The basic loop is simple: reach shelter, clear immediate danger, store what you do not need, save, then build the next route from a lighter kit.</p>
+  <p>For location routing, keep the older <a href="/guides/road-to-vostok-shelter-locations">shelter locations guide</a> open next to the <a href="/map/village-map">Village map</a>. This page focuses on what to do once you reach the shelter.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Item group</th>
+        <th>Store or carry?</th>
+        <th>Field rule</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Task items and keys</td>
+        <td>Store unless the next objective needs them</td>
+        <td>Losing a route key hurts more than losing spare food</td>
+      </tr>
+      <tr>
+        <td>Ammo and magazines</td>
+        <td>Carry one fight load, store the rest</td>
+        <td>Extra weight slows looting and escape decisions</td>
+      </tr>
+      <tr>
+        <td>Food and drinks</td>
+        <td>Split into route supply and stash reserve</td>
+        <td>Never leave shelter already low on hydration</td>
+      </tr>
+      <tr>
+        <td>Medical items</td>
+        <td>Carry bleed control; store duplicates</td>
+        <td>Use the <a href="/guides/road-to-vostok-health-hydration-guide">health and hydration guide</a> to match the item to the condition</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Saving your game</h3>
+  <p>Save from a shelter state, not from panic. Before you leave the menu or close the session, put rare items into storage, check that the shelter interaction has completed, and confirm that no hostile contact is active at the doorway. If your current build uses autosave or a shelter prompt instead of a manual save button, treat the completed shelter interaction as the confirmed save point.</p>
+  <p>My rule: if I would be angry about losing the item, it goes into shelter storage before I test anything else. That includes keys, rare medicine, quest objects, and weapons you are not carrying on the next route.</p>
+
+  <h3>Logging out outside shelter</h3>
+  <p>Logging out outside a shelter is a risk state. Do it only when you are prepared to lose tempo, position control, or the ability to resume from a clean stash setup. The safest assumption is that exposed logout is not equivalent to a shelter save unless the game clearly confirms otherwise in the current patch.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Logout place</th>
+        <th>Risk level</th>
+        <th>Use it when</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Inside confirmed shelter</td>
+        <td>Low</td>
+        <td>You stored valuables and finished the save flow</td>
+      </tr>
+      <tr>
+        <td>Near shelter but outside</td>
+        <td>Medium</td>
+        <td>Only if you must stop immediately</td>
+      </tr>
+      <tr>
+        <td>Village street, forest route, or combat area</td>
+        <td>High</td>
+        <td>Avoid unless the session is already compromised</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Shelter locations and customization</h2>
+  <h3>Tent shelter and shelter map</h3>
+  <p>Use map markers, not memory. Known shelter-related routes include the Village cabin and attic shelter cluster, plus other shelter types tracked on the site map and shelter-location guide. If you are checking whether School has a shelter, confirm it through the current map page first; shelter access and route transitions are easier to verify visually than by old comments.</p>
+  <p>For route planning, connect shelter choice to the next objective. A shelter near traders is good for resupply. A shelter near hostile loot is good for short, repeatable raids. A tent shelter is only valuable if it shortens a route you can survive twice, once going in and once coming back out.</p>
+
+  <h3>Customizing shelter</h3>
+  <p>Customization should support retrieval speed. Keep medical items together, keep ammunition separate from loose junk, and keep task items in a dedicated stash section. If the build exposes placement or customization prompts, test them with a low-value item first. Do not use a rare weapon as your first placement test.</p>
+  <p>A clean shelter layout cuts decision time. When you return injured or dehydrated, you should not be searching every container for one bandage or bottle.</p>
+
+  <h3>Picking up items inside shelter</h3>
+  <p>If you are trying to pick up a weapon or item from the shelter floor, look for the actual interact prompt. No prompt usually means one of three things: the item is decorative, your angle is wrong, or your inventory state blocks the pickup. Clear hand space, move the crosshair over the item, then use the normal interact or grab input shown by the game.</p>
+  <p>If the prompt still never appears, tag that item as non-recoverable in the current build and move on. Wasting five minutes on a dead prop is how a clean route turns into a bad route.</p>
+
+  <h2>Food and freezer storage</h2>
+  <h3>Is food safe in the cabin freezer?</h3>
+  <p>Use a strict rule: if the freezer opens as a real storage container and accepts the item, treat it as stored in that shelter. Do not assume freezer storage disables spoilage, decay, or future balance changes unless the current build shows that behavior clearly. For now, split food into three groups: route food, emergency shelter reserve, and test items you can afford to lose.</p>
+  <p>When storage behavior is uncertain, test with common food first. Put one low-value item in the cabin freezer, leave, return after a route, and verify whether the item persists. Data over rumors.</p>
+
+  <h2>FAQ</h2>
+  <h3>How do you save in Road To Vostok?</h3>
+  <p>Reach a shelter, finish the shelter interaction or save prompt used by your current build, and store valuables before leaving the session. Do not treat exposed logout as a shelter save.</p>
+  <h3>Where can you save items?</h3>
+  <p>Use confirmed shelter storage, cabin storage, or containers that the current build clearly presents as usable storage. Floor placement should be tested with low-value items before trusting it.</p>
+  <h3>What happens if you log out outside a shelter?</h3>
+  <p>Consider it unsafe unless the game explicitly confirms a clean save state. You may lose route control, position safety, or the chance to secure loot before the next session.</p>`,
+  },
+  {
+    id: 16,
+    title: "Road To Vostok Village Guide: Tasks, Bandits, Boss Spawn, Radio, and Loot",
+    description: "A route-first Village guide covering map flow, tasks, bandits, boss-spawn checks, night behavior, radio points, cat tasks, doctor links, and loot.",
+    tags: ["Village", "Bandits", "Tasks", "Loot"],
+    publishDate: "2026-07-13",
+    imageUrl: "/images/guides/guides16.jpg",
+    imageAlt: "Road To Vostok Village tasks bandits boss spawn radio and loot guide",
+    seo: {
+      title: "Road To Vostok Village Tasks and Loot Guide",
+      description: "Plan Village routes, tasks, bandits, boss-spawn checks, radio points, best loot, cat task, and Doctor links in Road To Vostok.",
+      keywords: "road to vostok village, tasks, bandits, boss spawn, loot",
+    },
+    addressBar: "road-to-vostok-village-tasks-bandits-loot-guide",
+    detailsHtml: `<p><strong>Fast answer:</strong> Village is a task and loot hub, not a place to wander. Start from shelter, route through trader and radio points, check locked containers, then leave before bandit contact burns your medicine. Bandit count and boss-spawn behavior can change by build, so verify the current run instead of trusting old counts.</p>
+  <figure>
+    <img src="/images/guides/guides16.jpg" alt="road to vostok village tasks bandits boss spawn radio loot guide" title="Road To Vostok Village tasks and loot guide" width="50%">
+    <figcaption>Village rewards controlled routing. Mark shelter, radio, trader, locked-door, and loot checks before you start fighting.</figcaption>
+  </figure>
+
+  <h2>Village route and map</h2>
+  <h3>Village map basics</h3>
+  <p>Open the <a href="/map/village-map">Village interactive map</a> before committing to a route. The important cluster is the shelter, trader, radio, container, and transition network. The clean route is shelter first, objective second, loot third, exit last. Reverse that order and you will usually overstay.</p>
+  <p>If you searched for "vilage" tasks or loot, this is the same Village area. Use the map labels for exact pin checks, then keep your field route short enough that you can retreat to shelter with damaged health or low hydration.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Village check</th>
+        <th>Why it matters</th>
+        <th>Route note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Shelter and attic shelter</td>
+        <td>Reset, storage, save flow</td>
+        <td>Use it before heavy looting</td>
+      </tr>
+      <tr>
+        <td><a href="/wiki/npcs/generalist">Generalist trader</a></td>
+        <td>Resupply and route recovery</td>
+        <td>Check before longer combat routes</td>
+      </tr>
+      <tr>
+        <td>Locked cellar or key door</td>
+        <td>High-value search path</td>
+        <td>Bring the right key and read the <a href="/guides/road-to-vostok-keys-locked-cabinets">keys guide</a></td>
+      </tr>
+      <tr>
+        <td>Radio points</td>
+        <td>Objective and signal checks</td>
+        <td>Confirm the prompt before moving deeper</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Village task list</h3>
+  <p>Village tasks usually connect to three systems: NPC routing, item recovery, and survival logistics. For the cat task, use the dedicated <a href="/guides/cat-guide-find-care-shelter-companion">cat guide</a>. For Doctor-related progress, link Village routes to the <a href="/wiki/npcs/doctor">Doctor NPC page</a> and the <a href="/wiki/core-tasks">core task list</a> instead of guessing the next handoff.</p>
+  <p>Task routing rule: finish the objective condition before you loot side rooms. Once your backpack is full, every extra fight is a tax on the item you already came to recover.</p>
+
+  <h2>Bandits and boss spawn</h2>
+  <h3>How many bandits are in Village?</h3>
+  <p>There is no safe universal number to publish as permanent. Village bandit density depends on the current build, spawn state, and route noise. Treat every known body, guard angle, and window line as a possible contact. Count confirmed enemies during your run, not from a month-old comment.</p>
+  <p>The <a href="/wiki/npcs/bandits">Bandits page</a> is the correct baseline: bandits can carry firearms, backpacks, head gear, and useful loot, but they can also shoot from protected positions. A quiet bandit is still a bandit.</p>
+
+  <h3>Boss spawn location</h3>
+  <p><strong>INFERRED:</strong> boss-spawn reports should be treated as build-sensitive until confirmed in your current version. If you are checking a Village boss spawn, start by clearing the normal bandit route, then inspect high-control buildings and loot clusters from cover. Do not stand in the road trying to force a spawn check.</p>
+  <p>If the boss does not appear, do not keep burning food and hydration. Reset from shelter, confirm task state, then re-enter with a clean magazine and enough medical reserve to leave.</p>
+
+  <h3>Bandit behavior at night</h3>
+  <p>Do not assume night makes Village safe. Current site data supports a more practical rule: bandits can react slowly to footsteps in some situations, bushes can reduce visibility, and protected firing angles are dangerous. None of that means they reliably go indoors or stop guarding useful loot at night.</p>
+  <p>Use darkness to break line of sight, not to sprint through the middle of Village. If you need medical planning before a night route, check the <a href="/guides/road-to-vostok-health-hydration-guide">health and hydration guide</a>.</p>
+
+  <h2>Loot and radio in Village</h2>
+  <h3>Best Village loot</h3>
+  <p>The best Village loot is the loot you can extract. Prioritize locked containers, trader-adjacent containers, medical cabinets, fridges, fuse boxes, office cabinets, and bandit corpses only after the area is controlled. If you are low on ammo, skip corpse greed and leave with the task item.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Loot source</th>
+        <th>Value</th>
+        <th>Risk</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Locked cellar or locked door route</td>
+        <td>High</td>
+        <td>Requires the correct key and exit plan</td>
+      </tr>
+      <tr>
+        <td>Medical cabinet</td>
+        <td>High if injured</td>
+        <td>Worth checking before a second fight</td>
+      </tr>
+      <tr>
+        <td>Fridge and kitchen containers</td>
+        <td>Food and hydration support</td>
+        <td>Good when planning longer routes</td>
+      </tr>
+      <tr>
+        <td>Bandit corpses</td>
+        <td>Weapons, gear, ammo, bags</td>
+        <td>Loot only after sound and angles are stable</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Radio in Village</h3>
+  <p>Village has radio-related map pins, including one near the central shelter and trader route and another farther off the main cluster. Use the map pin first, then verify the in-game prompt. A radio objective is not complete because you saw the model; it is complete when the interaction or task state confirms it.</p>
+
+  <h2>FAQ</h2>
+  <h3>How many bandits are in Village?</h3>
+  <p>Use current-run confirmation. Bandit counts can change by build and route state, so publishable fixed numbers age badly.</p>
+  <h3>Where does the boss spawn in Village?</h3>
+  <p>Boss-spawn claims are marked INFERRED unless confirmed in the current build. Check controlled buildings and loot clusters from cover, then reset if nothing appears.</p>
+  <h3>Where is the radio in Village?</h3>
+  <p>Use the Village map radio pins and confirm the actual interaction prompt in-game. Do not mark the route complete from visual contact alone.</p>`,
   }
 
 ]

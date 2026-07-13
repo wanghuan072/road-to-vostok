@@ -1129,6 +1129,76 @@ export default [
   <p>Kilju 是高风险搜索词，因为配方随版本变化。没有显示配方就标成 <strong>INFERRED</strong>。</p>
   <h2>FAQ</h2>
   <h3>为什么一直掉血？</h3><p>检查状态图标、水分、食物/能量、流血、骨折、寒冷和疾病。</p><h3>水分怎么解决？</h3><p>喝水、果汁、苏打或其他带水分值的物品。</p><h3>烹饪和 kilju 怎么做？</h3><p>只相信当前版本 tooltip。</p>`,
+  },
+  {
+    id: 15,
+    title: "Road To Vostok Shelter Guide: Storage, Save 与 Safe Logout",
+    description: "Shelter 指南：保存、物品存储、自定义、野外退出风险、帐篷 shelter、学校 shelter 与 freezer 食物测试。",
+    tags: ["Shelter", "Storage", "Save", "Survival"],
+    publishDate: "2026-07-13",
+    imageUrl: "/images/guides/guides15.jpg",
+    imageAlt: "Road To Vostok shelter storage save safe logout freezer guide",
+    seo: {
+      title: "Road To Vostok Shelter and Save Guide",
+      description: "Road To Vostok shelter 保存、存储、自定义、野外退出风险和 freezer 食物存储测试的实用流程。",
+      keywords: "road to vostok shelters, save, storage, customization",
+    },
+    addressBar: "road-to-vostok-shelter-storage-save-guide",
+    detailsHtml: `<p><strong>结论：</strong>shelter 是最稳定的 reset 点。先保存，再把 task items、稀有药品、钥匙和备用 ammo 放进 storage；不要把野外 logout 当成 shelter save。</p>
+  <figure><img src="/images/guides/guides15.jpg" alt="road to vostok shelter storage save safe logout guide" title="Road To Vostok shelter storage and save guide" width="50%"><figcaption>正确顺序：先 save，后 storage，再带下一条路线需要的装备出门。</figcaption></figure>
+  <h2>How shelters work</h2>
+  <h3>Shelter purpose and safe storage</h3>
+  <p>Shelter 的核心价值是 save、storage 和路线整理。下一条路线不需要的 keys、task items、rare medicine 和 spare ammo 都应该先存起来。</p>
+  <p>位置查询看 <a href="/guides/road-to-vostok-shelter-locations">shelter locations guide</a> 和 <a href="/map/village-map">Village map</a>。</p>
+  <h3>Saving your game</h3>
+  <p>只在稳定 shelter 状态保存：门口安全、物品已存、shelter/save prompt 完成。如果当前版本是 autosave，也要等 shelter 交互完成。</p>
+  <h3>Logging out outside shelter</h3>
+  <p>野外 logout 是风险状态。除非当前版本明确确认，否则不要把它当成完整 shelter save。</p>
+  <h2>Shelter locations and customization</h2>
+  <h3>Tent shelter and shelter map</h3>
+  <p>用地图标记，不靠记忆。Tent shelter、cabin、attic shelter 和 School shelter 都要按当前地图确认。</p>
+  <h3>Customizing shelter</h3>
+  <p>Customization 目标是快速取物：medicine 放一起，ammo 分开，task items 单独区域。先用低价值 item 测试 placement。</p>
+  <h3>Picking up items inside shelter</h3>
+  <p>想捡 shelter 地上的武器，只认真实 interact prompt。没有 prompt 通常是装饰物、角度错误或 inventory 被卡。</p>
+  <h2>Food and freezer storage</h2>
+  <h3>Is food safe in the cabin freezer?</h3>
+  <p>如果 freezer 能作为 container 打开并接受 item，就可以当 storage。是否防 spoilage 仍是 <strong>INFERRED</strong>，除非当前版本明确显示。</p>`,
+  },
+  {
+    id: 16,
+    title: "Road To Vostok Village Guide: Tasks, Bandits, Boss Spawn, Radio and Loot",
+    description: "Village 路线、地图、tasks、bandits、boss spawn、夜间行为、radio、cat task、doctor links 与 loot 指南。",
+    tags: ["Village", "Bandits", "Tasks", "Loot"],
+    publishDate: "2026-07-13",
+    imageUrl: "/images/guides/guides16.jpg",
+    imageAlt: "Road To Vostok Village tasks bandits boss spawn radio and loot guide",
+    seo: {
+      title: "Road To Vostok Village Tasks and Loot Guide",
+      description: "规划 Road To Vostok Village tasks、bandits、boss checks、radio、best loot、cat task 和 Doctor links。",
+      keywords: "road to vostok village, tasks, bandits, boss spawn, loot",
+    },
+    addressBar: "road-to-vostok-village-tasks-bandits-loot-guide",
+    detailsHtml: `<p><strong>结论：</strong>Village 是 task 与 loot hub，不是闲逛区。路线从 shelter 开始，查 trader 和 radio，拿关键 loot，然后在 bandits 消耗药品前撤离。</p>
+  <figure><img src="/images/guides/guides16.jpg" alt="road to vostok village tasks bandits boss spawn radio loot guide" title="Road To Vostok Village tasks and loot guide" width="50%"><figcaption>干净路线：Shelter, Trader, Radio, Locked Door, Loot, Exit。</figcaption></figure>
+  <h2>Village route and map</h2>
+  <h3>Village map basics</h3>
+  <p>先打开 <a href="/map/village-map">Village map</a>。正确顺序是 shelter, objective, loot, exit。搜索 vilage 的玩家实际找的是同一片 Village 区域。</p>
+  <h3>Village task list</h3>
+  <p>Village tasks 主要连接 NPC routing、item recovery 和 survival。Cat task 看 <a href="/guides/cat-guide-find-care-shelter-companion">cat guide</a>；Doctor 进度看 <a href="/wiki/npcs/doctor">Doctor page</a>。</p>
+  <h2>Bandits and boss spawn</h2>
+  <h3>How many bandits are in Village?</h3>
+  <p>没有可靠永久数量。Count 取决于 build、spawn state 和 route noise。只统计当前 run 已确认接触。</p>
+  <h3>Boss spawn location</h3>
+  <p><strong>INFERRED:</strong> boss spawn reports 会随 build 变化。检查 high-value buildings 和 loot clusters 时必须从 cover 观察。</p>
+  <h3>Bandit behavior at night</h3>
+  <p>夜晚不等于安全。Bandits 可能反应慢，但 window 和 cover angles 仍然危险。</p>
+  <h2>Loot and radio in Village</h2>
+  <h3>Best Village loot</h3>
+  <p>优先 locked routes、medical cabinets、fridges、fuse boxes；bandit corpses 只在区域稳定后拿。钥匙路线看 <a href="/guides/road-to-vostok-keys-locked-cabinets">keys guide</a>。</p>
+  <h3>Radio in Village</h3>
+  <p>用地图 radio pins 找位置，再用游戏内 prompt 确认。只看到 radio 模型不算 objective 完成。</p>`,
   }
+
 
 ]

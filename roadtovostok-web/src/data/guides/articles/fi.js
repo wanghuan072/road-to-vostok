@@ -341,6 +341,76 @@ export default [
   <p>Kilju ist build-dependent. Wenn kein Recipe sichtbar ist, als <strong>INFERRED</strong> behandeln.</p>
   <h2>FAQ</h2>
   <h3>Miksi faellt meine terveys?</h3><p>Status icons, hydration, food/energy, bleeding, fracture, cold und sickness tarkista.</p><h3>Wie fixe ich hydration?</h3><p>Water, juice, soda oder Item mit hydration value trinken.</p><h3>Wie funktionieren cooking und kilju?</h3><p>Nur aktuelle Tooltips nutzen; Requirements koennen wechseln.</p>`,
+  },
+  {
+    id: 15,
+    title: "Road To Vostok Shelter Guide: storage, save ja turvallinen logout",
+    description: "Shelter-opas tallennukseen, item storageen, customizationiin, logout-riskiin, tent shelteriin ja freezer-ruokaan.",
+    tags: ["Shelter", "Storage", "Save", "Survival"],
+    publishDate: "2026-07-13",
+    imageUrl: "/images/guides/guides15.jpg",
+    imageAlt: "Road To Vostok shelter storage save guide safe logout freezer",
+    seo: {
+      title: "Road To Vostok Shelter and Save Guide",
+      description: "Tallenna, varastoi itemit, suunnittele shelter customization, logout-riski ja freezer food storage Road To Vostokissa.",
+      keywords: "road to vostok shelters, save, storage, customization",
+    },
+    addressBar: "road-to-vostok-shelter-storage-save-guide",
+    detailsHtml: `<p><strong>Nopea vastaus:</strong> shelter on turvallinen reset-piste. Tallenna, laita task itemit talteen, erota route supplies stashista ja valta logout avoimessa combat zonessa.</p>
+  <figure><img src="/images/guides/guides15.jpg" alt="road to vostok shelter storage save safe logout guide" title="Road To Vostok shelter storage and save guide" width="50%"><figcaption>Save ensin, arvokkaat itemit storageen, sitten seuraavan routen kit mukaan.</figcaption></figure>
+  <h2>How shelters work</h2>
+  <h3>Shelter purpose and safe storage</h3>
+  <p>Shelter on save, storage ja route planning -piste. Keys, task items, rare medicine ja spare ammo menevat storageen, jos seuraava route ei tarvitse niita.</p>
+  <p>Paikat: <a href="/guides/road-to-vostok-shelter-locations">shelter locations guide</a> ja <a href="/map/village-map">Village map</a>.</p>
+  <h3>Saving your game</h3>
+  <p>Tallenna vakaasta shelter-tilasta: vaara pois, itemit storageen, shelter/save prompt valmis. Autosave-buildissa odota selkea shelter confirmation.</p>
+  <h3>Logging out outside shelter</h3>
+  <p>Logout shelterin ulkopuolella on riskitila. Ala kohtele sita shelter savena ilman nykyisen buildin vahvistusta.</p>
+  <h2>Shelter locations and customization</h2>
+  <h3>Tent shelter and shelter map</h3>
+  <p>Kayta map markereita. Tent shelter, cabin, attic shelter ja School shelter taytyy tarkistaa nykyisesta mapista.</p>
+  <h3>Customizing shelter</h3>
+  <p>Customizationin tarkoitus on nopea retrieval: medicine yhteen, ammo erilleen, task items omaan paikkaan. Testaa placement halvalla itemilla.</p>
+  <h3>Picking up items inside shelter</h3>
+  <p>Jos ase on shelterin lattialla, oikea interact prompt ratkaisee. Ei promptia tarkoittaa yleensa decor, huono kulma tai inventory block.</p>
+  <h2>Food and freezer storage</h2>
+  <h3>Is food safe in the cabin freezer?</h3>
+  <p>Jos freezer avautuu containerina ja ottaa itemin, se toimii storageena. Spoilage protection on <strong>INFERRED</strong>, kunnes build nayttaa sen.</p>`,
+  },
+  {
+    id: 16,
+    title: "Road To Vostok Village Guide: tasks, bandits, boss spawn, radio ja loot",
+    description: "Village route, map, tasks, bandits, boss-spawn checks, night behavior, radio, cat task, doctor links ja loot.",
+    tags: ["Village", "Bandits", "Tasks", "Loot"],
+    publishDate: "2026-07-13",
+    imageUrl: "/images/guides/guides16.jpg",
+    imageAlt: "Road To Vostok Village tasks bandits boss spawn radio and loot guide",
+    seo: {
+      title: "Road To Vostok Village Tasks and Loot Guide",
+      description: "Suunnittele Village tasks, bandits, boss checks, radio, best loot, cat task ja Doctor links Road To Vostokissa.",
+      keywords: "road to vostok village, tasks, bandits, boss spawn, loot",
+    },
+    addressBar: "road-to-vostok-village-tasks-bandits-loot-guide",
+    detailsHtml: `<p><strong>Nopea vastaus:</strong> Village on task ja loot hub. Aloita shelterilta, tarkista trader ja radio, lootaa vain hallitusti ja poistu ennen kuin bandits syovat medicine-varastot.</p>
+  <figure><img src="/images/guides/guides16.jpg" alt="road to vostok village tasks bandits boss spawn radio loot guide" title="Road To Vostok Village tasks and loot guide" width="50%"><figcaption>Puhdas route: Shelter, Trader, Radio, Locked Door, Loot, Exit.</figcaption></figure>
+  <h2>Village route and map</h2>
+  <h3>Village map basics</h3>
+  <p>Avaa <a href="/map/village-map">Village map</a>. Jarjestys on shelter, objective, loot, exit. Typo vilage tarkoittaa samaa aluetta.</p>
+  <h3>Village task list</h3>
+  <p>Village tasks yhdistaa NPC routing, item recovery ja survival. Cat task: <a href="/guides/cat-guide-find-care-shelter-companion">cat guide</a>. Doctor: <a href="/wiki/npcs/doctor">Doctor page</a>.</p>
+  <h2>Bandits and boss spawn</h2>
+  <h3>How many bandits are in Village?</h3>
+  <p>Luotettavaa pysyvaa lukua ei ole. Count riippuu buildista, spawn statesta ja route noise -tasosta. Laske vahvistetut kontaktit omassa runissa.</p>
+  <h3>Boss spawn location</h3>
+  <p><strong>INFERRED:</strong> boss spawn reports ovat build-sensitive. Tarkista high-value buildings ja loot clusters coverista.</p>
+  <h3>Bandit behavior at night</h3>
+  <p>Yo ei tee Villagesta turvallista. Bandits voivat reagoida hitaasti, mutta window ja cover angles ovat silti vaarallisia.</p>
+  <h2>Loot and radio in Village</h2>
+  <h3>Best Village loot</h3>
+  <p>Priorisoi locked routes, medical cabinets, fridges, fuse boxes ja corpses vasta kontrollin jalkeen. Lue <a href="/guides/road-to-vostok-keys-locked-cabinets">keys guide</a>.</p>
+  <h3>Radio in Village</h3>
+  <p>Kayta mapin radio pins ja vahvista in-game prompt. Mallin nakeminen ei viela paata objectivea.</p>`,
   }
+
 
 ]

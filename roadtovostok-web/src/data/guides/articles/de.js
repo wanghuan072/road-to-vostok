@@ -1176,6 +1176,79 @@ export default [
   <p>Kilju ist build-dependent. Wenn kein Recipe sichtbar ist, als <strong>INFERRED</strong> behandeln.</p>
   <h2>FAQ</h2>
   <h3>Warum faellt meine Health?</h3><p>Status icons, hydration, food/energy, bleeding, fracture, cold und sickness pruefen.</p><h3>Wie fixe ich hydration?</h3><p>Water, juice, soda oder Item mit hydration value trinken.</p><h3>Wie funktionieren cooking und kilju?</h3><p>Nur aktuelle Tooltips nutzen; Requirements koennen wechseln.</p>`,
+  },
+  {
+    id: 15,
+    title: "Road To Vostok Shelter Guide: Storage, Saving, Customization und Safe Logout",
+    description: "Shelter-Guide fuer Save Flow, sichere Lagerung, Customization, Logout-Risiko, Tent Shelter, School Shelter Checks und Food Freezer.",
+    tags: ["Shelter", "Storage", "Saving", "Survival"],
+    publishDate: "2026-07-13",
+    imageUrl: "/images/guides/guides15.jpg",
+    imageAlt: "Road To Vostok shelter storage save guide mit safe logout und freezer storage",
+    seo: {
+      title: "Road To Vostok Shelter und Save Guide",
+      description: "Speichere sicher, lagere Items, plane Shelter-Customization, Logout-Risiko und Food-Freezer-Storage in Road To Vostok.",
+      keywords: "road to vostok shelters, save, storage, customization",
+    },
+    addressBar: "road-to-vostok-shelter-storage-save-guide",
+    detailsHtml: `<p><strong>Kurze Antwort:</strong> Shelter sind deine sicheren Reset-Punkte. Speichere dort, lege Task Items ab, trenne Route-Supplies von Stash-Supplies und logge nicht in offenen Kampfzonen aus.</p>
+  <figure><img src="/images/guides/guides15.jpg" alt="road to vostok shelter storage save safe logout guide" title="Road To Vostok shelter storage and save guide" width="50%"><figcaption>Save zuerst, wertvolle Items danach einlagern, dann nur mit dem Kit fuer die naechste Route rausgehen.</figcaption></figure>
+  <h2>How shelters work</h2>
+  <h3>Shelter purpose and safe storage</h3>
+  <p>Ein Shelter ist mehr als ein Ruhepunkt. Nutze ihn fuer Save, Storage und Routenplanung. Keys, Task Items, seltene Medicine und Ersatzammo gehoeren in Storage, wenn sie fuer die naechste Route nicht gebraucht werden.</p>
+  <p>Fuer Orte nutze den <a href="/guides/road-to-vostok-shelter-locations">Shelter Locations Guide</a> und die <a href="/map/village-map">Village Map</a>.</p>
+  <h3>Saving your game</h3>
+  <p>Speichere aus einem stabilen Shelter-Zustand: Gefahr pruefen, Items lagern, Shelter- oder Save-Prompt abschliessen. Wenn die aktuelle Version Autosave nutzt, zaehlt erst die abgeschlossene Shelter-Interaktion als sauberer Save.</p>
+  <h3>Logging out outside shelter</h3>
+  <p>Logout ausserhalb eines Shelters ist Risiko. Behandle ihn nicht wie einen Shelter Save, solange das Spiel es nicht klar bestaetigt.</p>
+  <h2>Shelter locations and customization</h2>
+  <h3>Tent shelter and shelter map</h3>
+  <p>Plane mit Map-Markern, nicht mit Erinnerung. Tent Shelter, Village Cabin, Attic Shelter und School-Fragen muessen in der aktuellen Map geprueft werden.</p>
+  <h3>Customizing shelter</h3>
+  <p>Customization soll Retrieval-Speed verbessern: Medicine zusammen, Ammo getrennt, Task Items in einen eigenen Bereich. Teste Placement zuerst mit Low-Value Items.</p>
+  <h3>Picking up items inside shelter</h3>
+  <p>Wenn ein Item auf dem Boden liegt, zaehlt nur der echte Interact-Prompt. Kein Prompt bedeutet meist Deko, falscher Winkel oder blockierter Inventory-State.</p>
+  <h2>Food and freezer storage</h2>
+  <h3>Is food safe in the cabin freezer?</h3>
+  <p>Wenn der Freezer als echter Container oeffnet und Items annimmt, ist er Shelter-Storage. Spoilage-Schutz ist <strong>INFERRED</strong>, bis die aktuelle Version ihn klar zeigt.</p>
+  <h2>FAQ</h2>
+  <h3>How do you save in Road To Vostok?</h3><p>Zum Shelter gehen, Save- oder Shelter-Interaktion abschliessen und Wertitems vorher lagern.</p>
+  <h3>Where can you save items?</h3><p>In bestaetigter Shelter-Storage oder klar nutzbaren Containern. Floor Placement nur mit billigen Items testen.</p>`,
+  },
+  {
+    id: 16,
+    title: "Road To Vostok Village Guide: Tasks, Bandits, Boss Spawn, Radio und Loot",
+    description: "Village-Guide fuer Route, Map, Tasks, Bandits, Boss-Spawn Checks, Night Behavior, Radio Pins, Cat Task, Doctor Links und Loot.",
+    tags: ["Village", "Bandits", "Tasks", "Loot"],
+    publishDate: "2026-07-13",
+    imageUrl: "/images/guides/guides16.jpg",
+    imageAlt: "Road To Vostok Village tasks bandits boss spawn radio and loot guide",
+    seo: {
+      title: "Road To Vostok Village Tasks und Loot Guide",
+      description: "Plane Village-Routen, Tasks, Bandits, Boss-Checks, Radio-Punkte, besten Loot, Cat Task und Doctor Links in Road To Vostok.",
+      keywords: "road to vostok village, tasks, bandits, boss spawn, loot",
+    },
+    addressBar: "road-to-vostok-village-tasks-bandits-loot-guide",
+    detailsHtml: `<p><strong>Kurze Antwort:</strong> Village ist ein Task- und Loot-Hub. Starte am Shelter, pruefe Trader und Radio, loote kontrolliert und geh raus, bevor Bandits deine Medicine verbrennen.</p>
+  <figure><img src="/images/guides/guides16.jpg" alt="road to vostok village tasks bandits boss spawn radio loot guide" title="Road To Vostok Village tasks and loot guide" width="50%"><figcaption>Village belohnt kurze Routen: Shelter, Trader, Radio, Locked Door, Loot, Exit.</figcaption></figure>
+  <h2>Village route and map</h2>
+  <h3>Village map basics</h3>
+  <p>Nutze die <a href="/map/village-map">Village Map</a>. Die sichere Reihenfolge ist Shelter, Objective, Loot, Exit. Wenn du nach vilage gesucht hast: es ist derselbe Village-Bereich.</p>
+  <h3>Village task list</h3>
+  <p>Village Tasks verbinden NPC-Routing, Item Recovery und Survival. Fuer Cat Task nutze den <a href="/guides/cat-guide-find-care-shelter-companion">Cat Guide</a>; fuer Doctor Progress die <a href="/wiki/npcs/doctor">Doctor Page</a>.</p>
+  <h2>Bandits and boss spawn</h2>
+  <h3>How many bandits are in Village?</h3>
+  <p>Es gibt keine sichere feste Zahl. Bandit Count haengt von Build, Spawn State und Route Noise ab. Zaehle bestaetigte Kontakte in deinem Run.</p>
+  <h3>Boss spawn location</h3>
+  <p><strong>INFERRED:</strong> Boss-Spawn Reports sind build-sensitive. Kontrolliere High-Value Buildings und Loot Cluster aus Cover, nicht von der offenen Strasse.</p>
+  <h3>Bandit behavior at night</h3>
+  <p>Nacht macht Village nicht sicher. Bandits koennen langsam reagieren, aber sie bleiben gefaehrlich, besonders mit Fenster- und Cover-Angles.</p>
+  <h2>Loot and radio in Village</h2>
+  <h3>Best Village loot</h3>
+  <p>Priorisiere Locked Routes, Medical Cabinets, Fridges, Fuse Boxes und Bandit Corpses erst nach Kontrolle. Nutze den <a href="/guides/road-to-vostok-keys-locked-cabinets">Keys Guide</a>.</p>
+  <h3>Radio in Village</h3>
+  <p>Nutze Radio Pins auf der Map und bestaetige den Prompt im Spiel. Sichtkontakt allein schliesst die Objective nicht ab.</p>`,
   }
+
 
 ]
