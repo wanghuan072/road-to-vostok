@@ -410,6 +410,75 @@ export default [
   <p>Priorisoi locked routes, medical cabinets, fridges, fuse boxes ja corpses vasta kontrollin jalkeen. Lue <a href="/guides/road-to-vostok-keys-locked-cabinets">keys guide</a>.</p>
   <h3>Radio in Village</h3>
   <p>Kayta mapin radio pins ja vahvista in-game prompt. Mallin nakeminen ei viela paata objectivea.</p>`,
+  },
+  {
+    id: 17,
+    title: "Road To Vostok Crafting, tools ja jerry can guide",
+    description: "Kayta crafting bench, toolbox, lumber, item rotation ja jerry can ilman hukattua reittiaikaa tai stash-tilaa.",
+    tags: ["Crafting", "Tools", "Jerry Can", "Inventory"],
+    publishDate: "2026-07-21",
+    imageUrl: "/images/guides/road-vostok-crafting-tools-jerry-can-guide.jpg",
+    imageAlt: "Road To Vostok crafting bench toolbox lumber ja jerry can route guide",
+    seo: {
+      title: "Road To Vostok Crafting ja Jerry Can Guide",
+      description: "Kayta crafting bench, toolbox, lumber, item rotation ja jerry can ilman hukattua reittiaikaa tai stash-tilaa.",
+      keywords: "road to vostok crafting, bench, toolbox, lumber, jerry can",
+    },
+    addressBar: "road-to-vostok-crafting-tools-jerry-can-guide",
+    detailsHtml: `<p><strong>Nopea vastaus:</strong> crafting on shelter-logistiikkaa. Ala kanna lumberia, toolboxia tai jerry cania combat-routelle ennen kuin bench, prompt tai stash-vaihe on varmistettu. Rotate isot items ennen storagea ja testaa nykyisen buildin promptit halvoilla materialsilla.</p>
+  <figure><img src="/images/guides/road-vostok-crafting-tools-jerry-can-guide.jpg" alt="road to vostok crafting bench toolbox lumber and jerry can route guide" title="Road To Vostok crafting tools and jerry can route" width="50%"><figcaption>Crafting alkaa ennen benchia. Jos route ei ole tarpeeksi turvallinen materialsin kotiin tuomiseen, recipe ei ole valmis.</figcaption></figure>
+  <h2>Crafting bench and toolbox setup</h2>
+  <h3>What the crafting bench is for</h3>
+  <p>Crafting bench on conversion point: raw loot sisaan, kayttokelpoinen field item ulos. Kayta sita vain kun build nayttaa oikean promptin tai recipe listin.</p>
+  <p>Puhdas jarjestys: secure shelter, store loot, test crafting. Save-looppiin katso <a href="/guides/road-to-vostok-shelter-storage-save-guide">shelter and storage guide</a>.</p>
+  <table><thead><tr><th>Check</th><th>Varmista</th><th>Virhe</th></tr></thead><tbody><tr><td>Bench prompt</td><td>Interaction toimii</td><td>Materials sokkona mukaan</td></tr><tr><td>Recipe list</td><td>Material ja tool requirement</td><td>Vanhojen commentsien uskominen</td></tr><tr><td>Storage</td><td>Materials turvassa</td><td>Crafting taydesta combat backpackista</td></tr></tbody></table>
+  <h3>Toolbox requirements and mistakes</h3>
+  <p>Toolbox on arvokas vain jos recipe, repair tai bench state vaatii sita. Muuten se on painoa. Sailyta yksi shelterissa, mutta ala vaihda siihen ammoa, hydrationia tai bleed controlia.</p>
+  <h2>Item handling, lumber, and utility items</h2>
+  <h3>Rotate items and manage inventory space</h3>
+  <p>Inventory space on fyysinen. Rotate pitkat items ennen kuin luovut lootista.</p>
+  <figure><img src="/images/guides/road-vostok-crafting-tools-jerry-can-inventory.jpg" alt="road to vostok rotate items inventory space crafting materials guide" title="Road To Vostok rotate items and inventory space" width="50%"><figcaption>Huono packing menettaa lootin ennen fightia.</figcaption></figure>
+  <table><thead><tr><th>Item</th><th>Route decision</th><th>Rule</th></tr></thead><tbody><tr><td>Lumber</td><td>Stage near shelter</td><td>Ei fightiin ilman recipea</td></tr><tr><td>Toolbox</td><td>Utility gear</td><td>Pida, mutta ala kuole sen takia</td></tr><tr><td>Jerry can</td><td>Vain fuel promptilla</td><td>Testaa prompt ensin</td></tr><tr><td>Loose materials</td><td>Stack ja rotate</td><td>Ala tuki medicine tai ammo slotteja</td></tr></tbody></table>
+  <h3>Where lumber and jerry cans fit into progression</h3>
+  <p>Lumber ja jerry can ovat progression items vain jos nykyinen build nayttaa requirementin. Ennen heavy haulingia vakiinnuta Village ja shelter routes: <a href="/guides/road-to-vostok-village-tasks-bandits-loot-guide">Village task guide</a>.</p>
+  <h2>FAQ</h2>
+  <h3>Where do I find lumber in Road To Vostok?</h3><p>Tarkista construction, shelter, Village ja utility routes. Kaikki plank models eivat ole pickups.</p>
+  <h3>How do I use the jerry can?</h3><p>Kayta vain kun fuel tai utility prompt nakyy. Ilman promptia store it.</p>
+  <h3>How do I rotate items?</h3><p>Kayta buildin inventory rotation inputia ja tee suorakulmainen tila ensin.</p>`,
+  },
+  {
+    id: 18,
+    title: "Onko Road To Vostok multiplayer tai co-op?",
+    description: "Nykyinen multiplayer, co-op, single player ja mod boundary status Road To Vostokissa.",
+    tags: ["Multiplayer", "Co-op", "Single Player", "Mods"],
+    publishDate: "2026-07-21",
+    imageUrl: "/images/guides/road-vostok-multiplayer-coop-single-player-guide.jpg",
+    imageAlt: "Road To Vostok multiplayer co-op ja single player status guide",
+    seo: {
+      title: "Road To Vostok Multiplayer ja Co-op Status",
+      description: "Nykyinen multiplayer, co-op, single player ja mod boundary status Road To Vostokissa.",
+      keywords: "road to vostok multiplayer, co-op, single player, mods",
+    },
+    addressBar: "road-to-vostok-multiplayer-coop-single-player-guide",
+    detailsHtml: `<p><strong>Nopea vastaus:</strong> Road To Vostok on virallisesti single-player survival game. Ala suunnittele squad runia natiivilla multiplayerilla tai co-opilla. Community mods eivat ole official online support.</p>
+  <figure><img src="/images/guides/road-vostok-multiplayer-coop-single-player-guide.jpg" alt="road to vostok multiplayer co-op single player official status guide" title="Road To Vostok multiplayer and co-op status" width="50%"><figcaption>Paine on solo: yksi inventory, yksi route, yksi virhe shelterin ja Vostokin valissa.</figcaption></figure>
+  <h2>Official multiplayer and single-player status</h2>
+  <h3>Is Road To Vostok multiplayer?</h3>
+  <p>Ei. 2026-07-21 mennessa official multiplayer modea ei ole vahvistettu. Public store category on single-player.</p>
+  <table><thead><tr><th>Kysymys</th><th>Status</th><th>Paatos</th></tr></thead><tbody><tr><td>Native multiplayer</td><td>Ei vahvistettu</td><td>Ei squad progressionia</td></tr><tr><td>Co-op campaign</td><td>Ei vahvistettu</td><td>Ei official revive loopia</td></tr><tr><td>Single player</td><td>Official baseline</td><td>Suunnittele solo margin</td></tr></tbody></table>
+  <h3>Is Road To Vostok single player?</h3>
+  <p>Kyllä. Jos tulet squad extraction gamesista, aloita <a href="/guides/road-to-vostok-shelter-storage-save-guide">shelter guidesta</a> ja <a href="/guides/road-to-vostok-health-hydration-guide">health guidesta</a>.</p>
+  <h2>Co-op wording and community mod boundary</h2>
+  <h3>Co-op, coop, and multiplayer wording</h3>
+  <p>Erota official co-op, community co-op mod ja multiplayer-style gameplay. Ne eivat tarkoita samaa asiaa.</p>
+  <ul><li><strong>Official co-op:</strong> developerin rakentama ja supportoima.</li><li><strong>Community co-op mod:</strong> voi rikkoutua patchissa.</li><li><strong>Multiplayer-style gameplay:</strong> solo game extraction-paineella.</li></ul>
+  <figure><img src="/images/guides/road-vostok-single-player-route-boundaries.jpg" alt="road to vostok single player route boundaries and mod support warning" title="Road To Vostok single player route boundaries" width="50%"><figcaption>Lue mode claims kuin patch notes: official support, mod support ja genre comparison ovat eri asioita.</figcaption></figure>
+  <h3>What to know before using community co-op mods</h3>
+  <p>Backup saves ensin. Network/co-op mods voivat rikkoa save statea, progressionia ja patch compatibilitya. Lue <a href="/guides/road-to-vostok-mods-guide">mods guide</a> ja <a href="/guides/road-to-vostok-console-commands-and-modding">console guide</a>.</p>
+  <h2>FAQ</h2>
+  <h3>Does Road To Vostok have co-op?</h3><p>Official co-op modea ei ole vahvistettu.</p>
+  <h3>Can I play Road To Vostok with friends?</h3><p>Ei official native multiplayer moden kautta.</p>
+  <h3>Is Road To Vostok single player only?</h3><p>Nykyinen official baseline on single-player. Jos se muuttuu, tarkista store ja official site uudelleen.</p>`,
   }
 
 

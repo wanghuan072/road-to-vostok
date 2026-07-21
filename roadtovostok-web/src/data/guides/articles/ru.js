@@ -410,6 +410,75 @@ export default [
   <p>Приоритет: locked routes, medical cabinets, fridges, fuse boxes и corpses после контроля зоны. См. <a href="/guides/road-to-vostok-keys-locked-cabinets">keys guide</a>.</p>
   <h3>Radio in Village</h3>
   <p>Используй radio pins на карте и подтверждай prompt в игре. Видеть модель radio недостаточно.</p>`,
+  },
+  {
+    id: 17,
+    title: "Road To Vostok: крафт, инструменты и jerry can",
+    description: "Как использовать crafting bench, toolbox, lumber, item rotation и jerry can без потери маршрута и места в stash.",
+    tags: ["Crafting", "Tools", "Jerry Can", "Inventory"],
+    publishDate: "2026-07-21",
+    imageUrl: "/images/guides/road-vostok-crafting-tools-jerry-can-guide.jpg",
+    imageAlt: "Road To Vostok crafting bench toolbox lumber and jerry can route guide",
+    seo: {
+      title: "Road To Vostok Crafting and Jerry Can Guide",
+      description: "Как использовать crafting bench, toolbox, lumber, item rotation и jerry can без потери маршрута и места в stash.",
+      keywords: "road to vostok crafting, bench, toolbox, lumber, jerry can",
+    },
+    addressBar: "road-to-vostok-crafting-tools-jerry-can-guide",
+    detailsHtml: `<p><strong>Коротко:</strong> crafting - это логистика shelter. Не тащи lumber, toolbox или jerry can через боевой маршрут, пока bench, prompt или stash-шаг не подтверждены. Rotate крупные items перед storage и проверяй prompt текущего build на дешевых materials.</p>
+  <figure><img src="/images/guides/road-vostok-crafting-tools-jerry-can-guide.jpg" alt="road to vostok crafting bench toolbox lumber and jerry can route guide" title="Road To Vostok crafting tools and jerry can route" width="50%"><figcaption>Crafting начинается до bench. Если route недостаточно безопасен для возврата materials, recipe еще не готов.</figcaption></figure>
+  <h2>Crafting bench and toolbox setup</h2>
+  <h3>What the crafting bench is for</h3>
+  <p>Crafting bench - точка конверсии: raw loot превращается в полезные field items. Используй ее только если build показывает настоящий prompt или recipe list.</p>
+  <p>Чистый порядок: secure shelter, store loot, затем test crafting. Для save-loop смотри <a href="/guides/road-to-vostok-shelter-storage-save-guide">shelter and storage guide</a>.</p>
+  <table><thead><tr><th>Check</th><th>Что подтвердить</th><th>Ошибка</th></tr></thead><tbody><tr><td>Bench prompt</td><td>Interaction есть</td><td>Нести materials вслепую</td></tr><tr><td>Recipe list</td><td>Material и tool requirement</td><td>Верить старым comments</td></tr><tr><td>Storage</td><td>Materials в безопасности</td><td>Crafting из полного combat backpack</td></tr></tbody></table>
+  <h3>Toolbox requirements and mistakes</h3>
+  <p>Toolbox ценен только если recipe, repair или bench state его требует. Иначе это вес. Держи один в shelter, но не меняй на него ammo, hydration или bleed control.</p>
+  <h2>Item handling, lumber, and utility items</h2>
+  <h3>Rotate items and manage inventory space</h3>
+  <p>Inventory space физический. Rotate длинные items до того, как выбрасывать loot.</p>
+  <figure><img src="/images/guides/road-vostok-crafting-tools-jerry-can-inventory.jpg" alt="road to vostok rotate items inventory space crafting materials guide" title="Road To Vostok rotate items and inventory space" width="50%"><figcaption>Плохой packing теряет loot еще до fight.</figcaption></figure>
+  <table><thead><tr><th>Item</th><th>Route decision</th><th>Rule</th></tr></thead><tbody><tr><td>Lumber</td><td>Stage near shelter</td><td>Не нести в fight без recipe</td></tr><tr><td>Toolbox</td><td>Utility gear</td><td>Хранить, но не умирать за него</td></tr><tr><td>Jerry can</td><td>Только с fuel prompt</td><td>Сначала проверить prompt</td></tr><tr><td>Loose materials</td><td>Stack и rotate</td><td>Не блокировать medicine или ammo</td></tr></tbody></table>
+  <h3>Where lumber and jerry cans fit into progression</h3>
+  <p>Lumber и jerry can - progression items только когда current build показывает requirement. До heavy hauling стабилизируй Village и shelter routes: <a href="/guides/road-to-vostok-village-tasks-bandits-loot-guide">Village task guide</a>.</p>
+  <h2>FAQ</h2>
+  <h3>Where do I find lumber in Road To Vostok?</h3><p>Проверь construction, shelter, Village и utility routes. Не каждая plank model является pickup.</p>
+  <h3>How do I use the jerry can?</h3><p>Только при видимом fuel или utility prompt. Без prompt - store it.</p>
+  <h3>How do I rotate items?</h3><p>Используй inventory rotation input текущего build и сначала освободи прямоугольное место.</p>`,
+  },
+  {
+    id: 18,
+    title: "Есть ли в Road To Vostok multiplayer или co-op?",
+    description: "Текущий статус multiplayer, co-op, single player и границы community mods в Road To Vostok.",
+    tags: ["Multiplayer", "Co-op", "Single Player", "Mods"],
+    publishDate: "2026-07-21",
+    imageUrl: "/images/guides/road-vostok-multiplayer-coop-single-player-guide.jpg",
+    imageAlt: "Road To Vostok multiplayer co-op and single player status guide",
+    seo: {
+      title: "Road To Vostok Multiplayer and Co-op Status",
+      description: "Текущий статус multiplayer, co-op, single player и границы community mods в Road To Vostok.",
+      keywords: "road to vostok multiplayer, co-op, single player, mods",
+    },
+    addressBar: "road-to-vostok-multiplayer-coop-single-player-guide",
+    detailsHtml: `<p><strong>Коротко:</strong> Road To Vostok официально является single-player survival game. Не планируй squad run с native multiplayer или co-op. Community mods - это не official online support.</p>
+  <figure><img src="/images/guides/road-vostok-multiplayer-coop-single-player-guide.jpg" alt="road to vostok multiplayer co-op single player official status guide" title="Road To Vostok multiplayer and co-op status" width="50%"><figcaption>Давление рассчитано на solo: один inventory, один route, одна ошибка между shelter и Vostok.</figcaption></figure>
+  <h2>Official multiplayer and single-player status</h2>
+  <h3>Is Road To Vostok multiplayer?</h3>
+  <p>Нет. На 2026-07-21 official multiplayer mode не подтвержден. Public store category - single-player.</p>
+  <table><thead><tr><th>Вопрос</th><th>Status</th><th>Решение</th></tr></thead><tbody><tr><td>Native multiplayer</td><td>Не подтвержден</td><td>Не планировать squad progression</td></tr><tr><td>Co-op campaign</td><td>Не подтвержден</td><td>Не ждать official revive loop</td></tr><tr><td>Single player</td><td>Official baseline</td><td>Планировать solo margin</td></tr></tbody></table>
+  <h3>Is Road To Vostok single player?</h3>
+  <p>Да. Если ты пришел из squad extraction games, начни с <a href="/guides/road-to-vostok-shelter-storage-save-guide">shelter guide</a> и <a href="/guides/road-to-vostok-health-hydration-guide">health guide</a>.</p>
+  <h2>Co-op wording and community mod boundary</h2>
+  <h3>Co-op, coop, and multiplayer wording</h3>
+  <p>Разделяй official co-op, community co-op mod и multiplayer-style gameplay. Это разные вещи.</p>
+  <ul><li><strong>Official co-op:</strong> создан и поддерживается developer.</li><li><strong>Community co-op mod:</strong> может сломаться после patch.</li><li><strong>Multiplayer-style gameplay:</strong> solo game с extraction pressure.</li></ul>
+  <figure><img src="/images/guides/road-vostok-single-player-route-boundaries.jpg" alt="road to vostok single player route boundaries and mod support warning" title="Road To Vostok single player route boundaries" width="50%"><figcaption>Читай mode claims как patch notes: official support, mod support и genre comparison не одно и то же.</figcaption></figure>
+  <h3>What to know before using community co-op mods</h3>
+  <p>Сначала backup saves. Network/co-op mods могут ломать save state, progression и patch compatibility. Начни с <a href="/guides/road-to-vostok-mods-guide">mods guide</a> и <a href="/guides/road-to-vostok-console-commands-and-modding">console guide</a>.</p>
+  <h2>FAQ</h2>
+  <h3>Does Road To Vostok have co-op?</h3><p>Official co-op mode не подтвержден.</p>
+  <h3>Can I play Road To Vostok with friends?</h3><p>Не через official native multiplayer mode.</p>
+  <h3>Is Road To Vostok single player only?</h3><p>Текущий official baseline - single-player. Если это изменится, заново проверь store и official site.</p>`,
   }
 
 
