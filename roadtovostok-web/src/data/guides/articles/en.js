@@ -1778,6 +1778,193 @@
   <h3>Where is the radio in Village?</h3>
   <p>Use the Village map radio pins and confirm the actual interaction prompt in-game. Do not mark the route complete from visual contact alone.</p>`,
   }
+  ,
+  {
+    id: 17,
+    title: "Road To Vostok Crafting, Tools, and Jerry Can Guide",
+    description: "Use the crafting bench, toolbox, lumber, item rotation, and jerry can checks without wasting route time or stash space.",
+    tags: ["Crafting", "Tools", "Jerry Can", "Inventory"],
+    publishDate: "2026-07-21",
+    imageUrl: "/images/guides/road-vostok-crafting-tools-jerry-can-guide.jpg",
+    imageAlt: "Road To Vostok crafting bench toolbox lumber and jerry can route guide",
+    seo: {
+      title: "Road To Vostok Crafting and Jerry Can Guide",
+      description: "Use the crafting bench, toolbox, lumber, item rotation, and jerry can checks without wasting route time or stash space.",
+      keywords: "road to vostok crafting, crafting bench, toolbox, lumber, jerry can, rotate items",
+    },
+    addressBar: "road-to-vostok-crafting-tools-jerry-can-guide",
+    detailsHtml: `<p><strong>Fast answer:</strong> treat crafting as shelter-side logistics. Do not drag lumber, a toolbox, or a jerry can through a combat route until you know which bench, prompt, or stash step needs it. Rotate bulky items before dropping them into storage, keep tools near your shelter route, and test current-build prompts with low-value materials first.</p>
+  <figure>
+    <img src="/images/guides/road-vostok-crafting-tools-jerry-can-guide.jpg" alt="road to vostok crafting bench toolbox lumber and jerry can route guide" title="Road To Vostok crafting tools and jerry can route" width="50%">
+    <figcaption>Crafting starts before the bench. If the route is not safe enough to bring materials home, the recipe is not ready.</figcaption>
+  </figure>
+
+  <h2>Crafting bench and toolbox setup</h2>
+  <h3>What the crafting bench is for</h3>
+  <p>The crafting bench should be handled like a conversion point: raw loot in, useful field items out. Bring material only when the current build shows a usable bench prompt or a recipe list that clearly names the requirement. If the bench UI is not available in your version, mark the item use as <strong>INFERRED</strong> and do not build a route around it.</p>
+  <p>My field rule is strict: secure shelter first, store loot second, test crafting third. The <a href="/guides/road-to-vostok-shelter-storage-save-guide">shelter and storage guide</a> covers the save-side part of that loop. Crafting materials belong in that loop, not loose in your active backpack while you clear bandits.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Crafting check</th>
+        <th>What to confirm</th>
+        <th>Bad habit to avoid</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bench prompt</td>
+        <td>Interaction exists in the current build</td>
+        <td>Carrying heavy parts before confirming the bench</td>
+      </tr>
+      <tr>
+        <td>Recipe list</td>
+        <td>Exact material and tool requirement</td>
+        <td>Guessing from old comments or screenshots</td>
+      </tr>
+      <tr>
+        <td>Nearby storage</td>
+        <td>Materials can be staged safely</td>
+        <td>Crafting from a full combat backpack</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Toolbox requirements and mistakes</h3>
+  <p>A toolbox is useful only if the recipe, repair action, or bench state asks for it. Until that prompt is confirmed, it is weight. Keep one toolbox in a shelter stash if you have the space, but do not sacrifice ammunition, bleed control, or hydration for an unconfirmed tool check.</p>
+  <p>If a toolbox interaction fails, check three things before blaming the item: your build version, the exact bench angle, and whether the toolbox must be in inventory or storage. Some utility prompts are position-sensitive. Move, re-aim, and test with a clean inventory slot.</p>
+
+  <h2>Item handling, lumber, and utility items</h2>
+  <h3>Rotate items and manage inventory space</h3>
+  <p>Road To Vostok uses physical inventory pressure. Long objects punish sloppy packing. Rotate items before you decide something will not fit; a rifle, lumber piece, or tool may fit only after you change orientation and clear a rectangular lane in the bag.</p>
+  <figure>
+    <img src="/images/guides/road-vostok-crafting-tools-jerry-can-inventory.jpg" alt="road to vostok rotate items inventory space crafting materials guide" title="Road To Vostok rotate items and inventory space" width="50%">
+    <figcaption>Item rotation is part of route planning. A badly packed bag loses loot before the fight even starts.</figcaption>
+  </figure>
+  <table>
+    <thead>
+      <tr>
+        <th>Item type</th>
+        <th>Route decision</th>
+        <th>Practical rule</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lumber</td>
+        <td>Stage near shelter or crafting route</td>
+        <td>Do not carry it through a fight unless the recipe is confirmed</td>
+      </tr>
+      <tr>
+        <td>Toolbox</td>
+        <td>Store as utility gear</td>
+        <td>Worth keeping; not worth dying for</td>
+      </tr>
+      <tr>
+        <td>Jerry can</td>
+        <td>Use only when a fuel prompt or route need is clear</td>
+        <td>Test prompt before building a fuel run around it</td>
+      </tr>
+      <tr>
+        <td>Loose materials</td>
+        <td>Stack and rotate before dropping valuables</td>
+        <td>Materials lose value if they block medicine or ammo</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Where lumber and jerry cans fit into progression</h3>
+  <p>Lumber belongs to base-building, shelter, or crafting progression only when the game exposes the matching requirement. If you are still establishing Village and shelter routes, prioritize survival basics first: water, food, medical items, keys, and ammunition. The <a href="/guides/road-to-vostok-village-tasks-bandits-loot-guide">Village task and loot guide</a> is the better route anchor before heavy hauling.</p>
+  <p>Jerry can use is also build-sensitive. If your current version shows a fuel, generator, vehicle, or refill prompt, follow that prompt. If it does not, treat the jerry can as a utility item to store, not a mandatory carry. Fuel logic is exactly where old forum advice ages badly.</p>
+
+  <h2>FAQ</h2>
+  <h3>Where do I find lumber in Road To Vostok?</h3>
+  <p>Check construction, shelter, village, and utility-route areas first, then verify the pickup prompt in your current build. Do not assume every plank model is a real lumber item.</p>
+  <h3>How do I use the jerry can?</h3>
+  <p>Use it only when the current build shows a fuel or utility prompt. If no prompt appears, store it and avoid carrying dead weight through combat.</p>
+  <h3>How do I rotate items?</h3>
+  <p>Use the inventory rotation input shown by your build, then clear rectangular space before moving large items. If rotation still fails, move smaller items out first instead of dropping the high-value object.</p>`,
+  },
+  {
+    id: 18,
+    title: "Is Road To Vostok Multiplayer or Co-op?",
+    description: "Current multiplayer, co-op, single-player, and mod-boundary status for Road To Vostok without confusing community mods with official support.",
+    tags: ["Multiplayer", "Co-op", "Single Player", "Mods"],
+    publishDate: "2026-07-21",
+    imageUrl: "/images/guides/road-vostok-multiplayer-coop-single-player-guide.jpg",
+    imageAlt: "Road To Vostok multiplayer co-op and single player status guide",
+    seo: {
+      title: "Road To Vostok Multiplayer and Co-op Status",
+      description: "Current multiplayer, co-op, single-player, and mod-boundary status for Road To Vostok without confusing community mods with official support.",
+      keywords: "road to vostok multiplayer, co-op, coop, single player, mods",
+    },
+    addressBar: "road-to-vostok-multiplayer-coop-single-player-guide",
+    detailsHtml: `<p><strong>Fast answer:</strong> Road To Vostok is officially a single-player survival game. Do not buy, route, or plan a squad run expecting native multiplayer or co-op. Community mod talk exists, but that is not the same as official online support, save compatibility, or stable progression.</p>
+  <figure>
+    <img src="/images/guides/road-vostok-multiplayer-coop-single-player-guide.jpg" alt="road to vostok multiplayer co-op single player official status guide" title="Road To Vostok multiplayer and co-op status" width="50%">
+    <figcaption>The design pressure is solo: one inventory, one route decision, one bad mistake between shelter and Vostok.</figcaption>
+  </figure>
+
+  <h2>Official multiplayer and single-player status</h2>
+  <h3>Is Road To Vostok multiplayer?</h3>
+  <p>No official multiplayer mode is listed for the game as of 2026-07-21. The public store category is single-player, and the core loop is built around solo survival, looting, shelter management, map-to-map travel, and permadeath-zone risk.</p>
+  <p>That matters mechanically. A game can look like an extraction shooter and still be designed around single-player pressure. There is no teammate revive safety net, no squad loot split, and no official server queue to plan around. If you searched "road to vostok multiplayer gamepaly," the useful answer is status first: play it as solo unless the developer ships official multiplayer later.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Mode question</th>
+        <th>Current answer</th>
+        <th>Player decision</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Native multiplayer</td>
+        <td>No official mode confirmed</td>
+        <td>Do not plan squad progression</td>
+      </tr>
+      <tr>
+        <td>Co-op campaign</td>
+        <td>No official co-op loop confirmed</td>
+        <td>Do not expect shared shelter or revive mechanics</td>
+      </tr>
+      <tr>
+        <td>Single player</td>
+        <td>Yes, official baseline</td>
+        <td>Build routes around solo survival margin</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Is Road To Vostok single player?</h3>
+  <p>Yes. Treat single player as the baseline, not a missing feature. The game is tuned around you handling every system yourself: noise, inventory shape, ammunition, wounds, hydration, shelter storage, and exit timing. Start with the <a href="/guides/road-to-vostok-shelter-storage-save-guide">shelter and save guide</a> if you are coming from squad extraction games; the risk rhythm is different.</p>
+  <p>Solo design also changes loot discipline. In a co-op game, a partner can carry spare meds or watch a doorway. Here, every item you bring has to justify its slot in your own bag. For status planning, pair this with the <a href="/guides/road-to-vostok-health-hydration-guide">health and hydration guide</a>.</p>
+
+  <h2>Co-op wording and community mod boundary</h2>
+  <h3>Co-op, coop, and multiplayer wording</h3>
+  <p>"Co-op," "coop," and "multiplayer" are often used loosely in search results. Separate them before you trust a claim:</p>
+  <ul>
+    <li><strong>Official co-op:</strong> built and supported by the developer.</li>
+    <li><strong>Community co-op mod:</strong> player-made experiment that can break by patch.</li>
+    <li><strong>Multiplayer-style gameplay:</strong> solo extraction/survival pressure that feels adjacent to online shooters but is not online squad play.</li>
+  </ul>
+  <figure>
+    <img src="/images/guides/road-vostok-single-player-route-boundaries.jpg" alt="road to vostok single player route boundaries and mod support warning" title="Road To Vostok single player route boundaries" width="50%">
+    <figcaption>Read mode claims like a patch note. Official support, mod support, and genre comparison are three different things.</figcaption>
+  </figure>
+
+  <h3>What to know before using community co-op mods</h3>
+  <p>Community mods can be useful, but they sit outside official support unless the developer says otherwise. Before using a co-op or multiplayer mod, assume three risks: save corruption, progression mismatch, and patch breakage. Back up your save first and read the <a href="/guides/road-to-vostok-mods-guide">mods guide</a> before installing anything that touches networking or save state.</p>
+  <p>If a mod requires console commands, launch flags, or file replacement, check the <a href="/guides/road-to-vostok-console-commands-and-modding">console and modding guide</a>. Do not test unstable multiplayer mods on your main shelter save. Data over rumors: verify in a throwaway profile, then decide whether the risk is worth it.</p>
+
+  <h2>FAQ</h2>
+  <h3>Does Road To Vostok have co-op?</h3>
+  <p>No official co-op mode is confirmed as of 2026-07-21. Treat community co-op claims as mod-specific, not base-game support.</p>
+  <h3>Can I play Road To Vostok with friends?</h3>
+  <p>Not through an official native multiplayer mode. Any friend-play workaround should be treated as unsupported until the developer ships or documents it.</p>
+  <h3>Is Road To Vostok single player only?</h3>
+  <p>The current official baseline is single-player. If this changes in a future patch or roadmap update, re-check the store page and official site before relying on old guide text.</p>`,
+  }
 
 ]
 
