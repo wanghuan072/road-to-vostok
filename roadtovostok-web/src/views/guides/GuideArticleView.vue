@@ -14,7 +14,7 @@
             <span aria-hidden="true">/</span>
             <span class="page-hero-breadcrumb-current">{{ article.title }}</span>
           </nav>
-          <h1 class="article-detail-hero__title">{{ article.title }}</h1>
+          <h1 class="article-detail-hero__title">{{ article.h1 || article.title }}</h1>
         </div>
         <GptAdWrap :placement-index="0" />
       </div>

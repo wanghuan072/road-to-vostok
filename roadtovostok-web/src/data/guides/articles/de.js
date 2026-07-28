@@ -1318,6 +1318,51 @@ export default [
   <h3>Can I play Road To Vostok with friends?</h3><p>Nicht ueber einen offiziellen nativen Multiplayer-Modus.</p>
   <h3>Is Road To Vostok single player only?</h3><p>Die aktuelle offizielle Basis ist Single-player. Bei spaeteren Updates Store und offizielle Seite neu pruefen.</p>`,
   }
-
+  ,
+  {
+    id: 19,
+    title: "Road To Vostok: Speicherdatei, Escape-Menü und Koop-Save-Hinweise",
+    h1: "Road To Vostok: Speicherdatei und Escape-Menü",
+    description: "Speichern, Save-Dateien, Escape-Menü-Probleme und Koop-Save-Behauptungen sauber prüfen.",
+    tags: [
+        "Speicherdateien",
+        "Escape-Menü",
+        "Shelter",
+        "Koop"
+    ],
+    publishDate: "2026-07-27",
+    imageUrl: "/images/guides/road-vostok-save-menu-inventory-guide.jpg",
+    imageAlt: "Road To Vostok Speicherdatei und Escape-Menü Guide",
+    seo: {
+        title: "Road To Vostok Speicherdatei und Menü",
+        description: "So speicherst du in Road To Vostok, prüfst Save-Dateien, behebst Escape-Menü-Ausfälle und behandelst Koop-Save-Claims vorsichtig.",
+        keywords: "Road To Vostok speichern, Speicherdatei, Save location, Escape Menü"
+    },
+    addressBar: "road-to-vostok-how-to-save",
+    detailsHtml: "<p><strong>Kurzantwort:</strong> Nutze Shelter als sauberen Speicheranker. Erst sicher hinein, wertvolle Beute einlagern, Save- oder Menüstatus bestätigen, dann beenden. Feld-Logout, unbestätigter Autosave oder Koop-Mods sind keine verlässliche Sicherung.</p><figure><img src=\"/images/guides/road-vostok-save-menu-inventory-guide.jpg\" alt=\"road to vostok how to save shelter and Escape menu inventory check\" title=\"Road To Vostok speichern und Escape-Menü prüfen\" width=\"50%\"><figcaption>Vor dem Quit: Shelter, Stash, Menübestätigung.</figcaption></figure><h2>How saving works</h2><h3>Manual save and save-state intent</h3><p>Die robuste Routine ist shelterseitig. Road To Vostok bindet sichere Zonen, Lagerung und Fortschritt eng zusammen; behandle einen Shelter daher wie einen Checkpoint mit Inventarkontrolle.</p><table><thead><tr><th>Check</th><th>Aktion</th><th>Risiko</th></tr></thead><tbody><tr><td>Shelter erreicht</td><td>Im sicheren Bereich stehen</td><td>Unsicherer Resume-Zustand</td></tr><tr><td>Beute verstaut</td><td>Keys, Task-Items, Meds, Munition sichern</td><td>Wertverlust durch schlechten Restart</td></tr><tr><td>Prompt fertig</td><td>Save/Menu-Bestätigung abwarten</td><td>Dirty State beim Schließen</td></tr></tbody></table><p>Mehr Stash-Logik: <a href=\"/guides/road-to-vostok-shelter-storage-save-guide\">Shelter-Storage-Guide</a>; Verbrauchswerte: <a href=\"/guides/road-to-vostok-health-hydration-guide\">Health/Hydration</a>.</p><h3>Escape/menu failure state</h3><p>Wenn Escape nicht reagiert, zuerst Fokus und Overlays prüfen: Alt-Tab zurück, ins Fenster klicken, Controller/Overlay/Keyboard-Tools testweise entfernen, aktive Loot-, Reload- oder Placement-Aktion abbrechen.</p><h2>Save files and co-op saves</h2><h3>Save file location typo variant</h3><p>Für Backups unter Windows bei <code>%USERPROFILE%\\AppData\\LocalLow</code> starten. Nach einem frischen Shelter-Save nach Änderungsdatum sortieren und den Road-To-Vostok-Ordner bestätigen. Erst kopieren, nie direkt am Live-Save editieren.</p><h3>Co-op save wording</h3><p>Offizieller Baseline-Status ist Singleplayer. Koop-Saves gehören zu Mods oder Workarounds, solange kein Patch das Gegenteil dokumentiert. Vor Tests: <a href=\"/guides/road-to-vostok-multiplayer-coop-single-player-guide\">Multiplayer/Koop-Status</a> und <a href=\"/guides/road-to-vostok-mods-guide\">Mod-Guide</a>.</p><h2>FAQ</h2><h3>Does Road To Vostok autosave?</h3><p>Verlasse dich auf Shelter-Save-Bestätigung, nicht auf riskanten Feld-Logout.</p><h3>Where are Road To Vostok save files?</h3><p>Starte bei <code>%USERPROFILE%\\AppData\\LocalLow</code> und bestätige per Änderungszeit nach frischem Save.</p>"
+}
+  ,
+  {
+    id: 20,
+    title: "Road To Vostok Türen und Schränke: blockierte Türen, Objekte, Wandmontage",
+    h1: "Türen, Schränke und Objekte in Road To Vostok öffnen",
+    description: "Jammed doors, Cabinet-Interaktionen, Objektöffnen, Clip-through-Suchen und Wandmontage sauber trennen.",
+    tags: [
+        "Türen",
+        "Schränke",
+        "Objekte",
+        "Shelter"
+    ],
+    publishDate: "2026-07-27",
+    imageUrl: "/images/guides/road-vostok-door-route-interaction-guide.jpg",
+    imageAlt: "Road To Vostok blockierte Tür und Objektinteraktion",
+    seo: {
+        title: "Road To Vostok Türen und Schränke",
+        description: "Fix für blockierte Türen, Schränke, Objektinteraktionen, Clip-through-Verwirrung und Wandmontage in Road To Vostok.",
+        keywords: "Road To Vostok Tür klemmt, Tür öffnen, Schrank öffnen, Objekte"
+    },
+    addressBar: "road-to-vostok-open-door-cabinet-guide",
+    detailsHtml: "<p><strong>Kurzantwort:</strong> Nicht spammen. Prompt lesen, Zustand prüfen: locked, jammed, Kollision, Key-Bedarf oder Shelter-Placement. Clip-through ist Exploit-Intent, keine stabile Route.</p><figure><img src=\"/images/guides/road-vostok-door-route-interaction-guide.jpg\" alt=\"road to vostok jammed door open door route interaction guide\" title=\"Road To Vostok jammed door und Türroute\" width=\"50%\"><figcaption>Türen sind Routengates: Prompt, Key, Kollision, Build-Zustand prüfen.</figcaption></figure><h2>Door interaction problems</h2><h3>Jammed door variants</h3><table><thead><tr><th>Status</th><th>Bedeutung</th><th>Aktion</th></tr></thead><tbody><tr><td>Locked</td><td>Key, Aufgabe oder Zugang nötig</td><td><a href=\"/guides/road-to-vostok-keys-locked-cabinets\">Keys-Guide</a> nutzen</td></tr><tr><td>Jammed</td><td>Blockiert, einseitig, statisch oder build-limitiert</td><td>Andere Seite, Kollision, Umroute prüfen</td></tr><tr><td>Kein Prompt</td><td>Statisches Objekt oder falscher Winkel</td><td>Griff/Panel anvisieren; sonst weiter</td></tr></tbody></table><h3>Open door and clip-through terms</h3><p>Normales Öffnen heißt: gültiger Prompt, freier Winkel, keine aktive Animation. Clip-through ist Geometriefehler und kann nach jedem Patch brechen. Nicht mit Task-Items testen.</p><h2>Cabinets and object interactions</h2><h3>Open things and cabinet</h3><figure><img src=\"/images/guides/road-vostok-cabinet-object-mounting-guide.jpg\" alt=\"road to vostok open cabinet and mount cabinet on wall interaction guide\" title=\"Road To Vostok Schrank öffnen und Wandmontage\" width=\"50%\"><figcaption>Der Prompt entscheidet: Loot-Schrank, locked cabinet, Medical Cabinet oder Möbel.</figcaption></figure><p>Normale Schränke mit Loot-Prompt öffnen; Locked Cabinets auf Key-Text prüfen; Medical Cabinets vor langen Routen priorisieren. Ohne Prompt nicht unter Feinddruck testen.</p><h3>Mount cabinet on wall</h3><p>Wandmontage gehört zur Shelter-Decoration: gültigen Bereich, flache Wand, Freiraum und grünen/validen Placement-Zustand prüfen. Ohne gültige Vorschau ist die Funktion build-sensitiv.</p><h2>FAQ</h2><h3>Why is a door jammed in Road To Vostok?</h3><p>Locked, blockiert, einseitig, statisch oder Input durch Aktion blockiert.</p><h3>How do you open cabinets?</h3><p>Panel/Griff anvisieren; bei Locked-Prompt zur Key-Route wechseln.</p>"
+}
 
 ]

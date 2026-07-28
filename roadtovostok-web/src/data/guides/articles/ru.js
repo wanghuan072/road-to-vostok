@@ -480,6 +480,51 @@ export default [
   <h3>Can I play Road To Vostok with friends?</h3><p>Не через official native multiplayer mode.</p>
   <h3>Is Road To Vostok single player only?</h3><p>Текущий official baseline - single-player. Если это изменится, заново проверь store и official site.</p>`,
   }
-
+  ,
+  {
+    id: 19,
+    title: "Road To Vostok: файл сохранения, меню Escape и заметки о co-op save",
+    h1: "Road To Vostok: файл сохранения и меню Escape",
+    description: "Как сохраняться, где проверять save-файлы, что делать при сбое Escape и почему co-op saves требуют осторожности.",
+    tags: [
+        "Сохранения",
+        "Escape",
+        "Укрытие",
+        "Co-op"
+    ],
+    publishDate: "2026-07-27",
+    imageUrl: "/images/guides/road-vostok-save-menu-inventory-guide.jpg",
+    imageAlt: "Road To Vostok файл сохранения и меню Escape",
+    seo: {
+        title: "Road To Vostok файл сохранения и меню",
+        description: "Как сохраняться в Road To Vostok, проверить save location, исправить проблему Escape и не спутать co-op saves с официальной функцией.",
+        keywords: "Road To Vostok save, файл сохранения, save location, Escape menu"
+    },
+    addressBar: "road-to-vostok-how-to-save",
+    detailsHtml: "<p><strong>Коротко:</strong> считай укрытие чистой точкой сохранения. Зайди в safe zone, сложи ценное, дождись подтверждения меню/сохранения и только потом выходи. Полевой logout, неподтвержденный autosave и co-op моды не равны безопасному save.</p><figure><img src=\"/images/guides/road-vostok-save-menu-inventory-guide.jpg\" alt=\"road to vostok how to save shelter and Escape menu inventory check\" title=\"Road To Vostok сохранение и меню Escape\" width=\"50%\"><figcaption>Перед выходом: shelter, stash, подтверждение меню.</figcaption></figure><h2>How saving works</h2><h3>Manual save and save-state intent</h3><p>Надежная привычка — сохраняться со стороны укрытия. Road To Vostok связывает безопасные зоны, хранение и прогресс, поэтому выход из боя или маршрута без подтверждения — риск.</p><table><thead><tr><th>Проверка</th><th>Действие</th><th>Риск</th></tr></thead><tbody><tr><td>Укрытие</td><td>Стой внутри safe area</td><td>Неясное состояние при загрузке</td></tr><tr><td>Лут</td><td>Ключи, task items, meds, ammo в stash</td><td>Потеря ценностей при плохом рестарте</td></tr><tr><td>Prompt</td><td>Дождись save/menu подтверждения</td><td>Dirty state при закрытии</td></tr></tbody></table><p>Для хранилища см. <a href=\"/guides/road-to-vostok-shelter-storage-save-guide\">гайд по shelter storage</a>; для запасов — <a href=\"/guides/road-to-vostok-health-hydration-guide\">health/hydration guide</a>.</p><h3>Escape/menu failure state</h3><p>Если Escape не работает, сначала проверь фокус окна и оверлеи: Alt-Tab обратно, клик по окну, отключи контроллер/Steam overlay/keyboard tool, закончи loot/reload/placement действие.</p><h2>Save files and co-op saves</h2><h3>Save file location typo variant</h3><p>Для бэкапа на Windows начни с <code>%USERPROFILE%\\AppData\\LocalLow</code>. После свежего shelter save отсортируй папки по дате изменения и найди Road To Vostok / RoadToVostok. Сначала копируй папку, не редактируй live save.</p><h3>Co-op save wording</h3><p>Официальная база — single-player. Co-op save обычно относится к моду или workaround. Не жди общего shelter/inventory/host state без документации. Перед тестом см. <a href=\"/guides/road-to-vostok-multiplayer-coop-single-player-guide\">multiplayer/co-op status</a> и <a href=\"/guides/road-to-vostok-mods-guide\">mods guide</a>.</p><h2>FAQ</h2><h3>Does Road To Vostok autosave?</h3><p>Полагайся на shelter-side confirmation, а не на выход в поле.</p><h3>Where are Road To Vostok save files?</h3><p>Проверь <code>%USERPROFILE%\\AppData\\LocalLow</code> и подтверди папку по дате изменения после нового save.</p>"
+}
+  ,
+  {
+    id: 20,
+    title: "Road To Vostok: двери и шкафы — jammed doors, объекты и монтаж",
+    h1: "Как открывать двери, шкафы и объекты в Road To Vostok",
+    description: "Разбор jammed doors, шкафов, object interaction, clip-through поиска и настенного монтажа.",
+    tags: [
+        "Двери",
+        "Шкафы",
+        "Объекты",
+        "Укрытие"
+    ],
+    publishDate: "2026-07-27",
+    imageUrl: "/images/guides/road-vostok-door-route-interaction-guide.jpg",
+    imageAlt: "Road To Vostok jammed door и object interaction",
+    seo: {
+        title: "Road To Vostok двери и шкафы",
+        description: "Что делать с jammed doors, как открывать шкафы и объекты, почему clip-through нестабилен и как проверять wall cabinet mounting.",
+        keywords: "Road To Vostok jammed door, open door, open cabinet, objects"
+    },
+    addressBar: "road-to-vostok-open-door-cabinet-guide",
+    detailsHtml: "<p><strong>Коротко:</strong> не спамь use. Читай prompt: дверь locked, jammed, заблокирована коллизией, требует ключ или относится к shelter placement. Clip-through — эксплойт, не маршрут.</p><figure><img src=\"/images/guides/road-vostok-door-route-interaction-guide.jpg\" alt=\"road to vostok jammed door open door route interaction guide\" title=\"Road To Vostok jammed door и route check\" width=\"50%\"><figcaption>Дверь — route gate: prompt, key state, collision, текущий build.</figcaption></figure><h2>Door interaction problems</h2><h3>Jammed door variants</h3><table><thead><tr><th>Состояние</th><th>Значение</th><th>Действие</th></tr></thead><tbody><tr><td>Locked</td><td>Нужен key/task/access</td><td>См. <a href=\"/guides/road-to-vostok-keys-locked-cabinets\">keys guide</a></td></tr><tr><td>Jammed</td><td>Блок, one-way, static или build limit</td><td>Другая сторона, collision, обход</td></tr><tr><td>No prompt</td><td>Static prop или угол</td><td>Прицелься в handle/panel; если пусто — уходи</td></tr></tbody></table><h3>Open door and clip-through terms</h3><p>Нормальное открытие — prompt, угол, свободное действие. Clip-through ломается патчами и может застрять в геометрии. Не используй его с task items.</p><h2>Cabinets and object interactions</h2><h3>Open things and cabinet</h3><figure><img src=\"/images/guides/road-vostok-cabinet-object-mounting-guide.jpg\" alt=\"road to vostok open cabinet and mount cabinet on wall interaction guide\" title=\"Road To Vostok cabinet interaction и mounting\" width=\"50%\"><figcaption>Prompt решает тип: loot cabinet, locked cabinet, medical cabinet или furniture.</figcaption></figure><p>Обычный cabinet открывай по prompt; locked cabinet требует ключ/условие; medical cabinet проверяй перед длинным маршрутом; static furniture без prompt не стоит времени под угрозой.</p><h3>Mount cabinet on wall</h3><p>Wall mounting — shelter decoration. Нужна допустимая зона, плоская стена, clearance и valid preview. Без valid preview считай механику build-sensitive.</p><h2>FAQ</h2><h3>Why is a door jammed in Road To Vostok?</h3><p>Locked, blocked, one-way, static или input занят текущим действием.</p><h3>How do you open cabinets?</h3><p>Наведи на panel/handle; при locked prompt переходи к key route.</p>"
+}
 
 ]

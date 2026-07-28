@@ -1268,6 +1268,51 @@ export default [
   <h3>Can I play Road To Vostok with friends?</h3><p>不能通过官方原生 multiplayer mode。</p>
   <h3>Is Road To Vostok single player only?</h3><p>当前 official baseline 是 single-player。如果未来改变，重新检查 store 和 official site。</p>`,
   }
-
+  ,
+  {
+    id: 19,
+    title: "Road To Vostok 存档文件、Escape 菜单与合作存档说明",
+    h1: "Road To Vostok 存档文件与 Escape 菜单指南",
+    description: "确认存档逻辑、存档文件位置、Escape 菜单失效处理，以及合作存档说法的风险边界。",
+    tags: [
+        "存档文件",
+        "Escape 菜单",
+        "避难所",
+        "合作"
+    ],
+    publishDate: "2026-07-27",
+    imageUrl: "/images/guides/road-vostok-save-menu-inventory-guide.jpg",
+    imageAlt: "Road To Vostok 存档文件位置与 Escape 菜单指南",
+    seo: {
+        title: "Road To Vostok 存档文件与菜单指南",
+        description: "了解 Road To Vostok 如何存档、如何验证存档文件位置、Escape 菜单失效时怎么办，以及合作存档说法为何要谨慎。",
+        keywords: "Road To Vostok 存档, 存档文件位置, 如何存档, Escape 菜单, 合作存档"
+    },
+    addressBar: "road-to-vostok-how-to-save",
+    detailsHtml: "<p><strong>快速结论：</strong>把避难所当作干净的存档锚点。先到避难所，卸下高价值物品，确认当前版本的存档或菜单状态，再退出。不要把野外强退、未确认的自动存档，或社区合作玩法当成安全存档。</p>\n  <figure><img src=\"/images/guides/road-vostok-save-menu-inventory-guide.jpg\" alt=\"road to vostok how to save shelter and Escape menu inventory check\" title=\"Road To Vostok 如何存档与检查 Escape 菜单\" width=\"50%\"><figcaption>退出前先完成路线收尾：避难所、储物、菜单确认，然后离开。</figcaption></figure>\n  <h2>How saving works</h2>\n  <h3>Manual save and save-state intent</h3>\n  <p>当前最稳的做法是从避难所状态存档，而不是在危险路线中硬退出。官方循环把避难所、储物和存档放在生存节奏里，所以玩家操作应该很机械：进入安全区，整理背包，完成提示，再结束会话。</p>\n  <table><thead><tr><th>检查项</th><th>操作</th><th>跳过风险</th></tr></thead><tbody><tr><td>进入避难所</td><td>站在安全区内再退出</td><td>下次读档节奏不可控</td></tr><tr><td>存好贵重物</td><td>钥匙、任务物、药品、备弹先入库</td><td>一次坏路线丢掉核心物资</td></tr><tr><td>提示完成</td><td>等待当前版本显示存档/菜单状态</td><td>交互中关闭属于脏状态</td></tr></tbody></table>\n  <p>储物路线看 <a href=\"/guides/road-to-vostok-shelter-storage-save-guide\">避难所储物与存档指南</a>；退出前的食物、水和医疗余量看 <a href=\"/guides/road-to-vostok-health-hydration-guide\">生命与水分指南</a>。</p>\n  <h3>Escape/menu failure state</h3>\n  <p>如果 Escape 没反应，先按输入焦点问题处理。找安全位置停下，Alt-Tab 回游戏，点击窗口，关闭可能抢输入的叠加层、手柄或键盘软件；如果正在拾取、装弹、放置家具，先取消或完成动作再试。</p>\n  <h2>Save files and co-op saves</h2>\n  <h3>Save file location typo variant</h3>\n  <p>搜索 <strong>save file locati0n</strong> 的真实意图通常是备份存档。Windows 上先检查 <code>%USERPROFILE%\\AppData\\LocalLow</code>，做一次新的避难所存档后按修改时间排序，寻找 Road To Vostok / RoadToVostok 相关文件夹。文件夹名必须以你的当前版本实际修改时间确认，不要直接编辑原文件。</p>\n  <h3>Co-op save wording</h3>\n  <p>Road To Vostok 的官方基线是单人。合作存档通常属于 Mod、变通方案或未来功能讨论。不要默认共享避难所、共享背包、复活状态或主客机同步存在。测试合作 Mod 前先读 <a href=\"/guides/road-to-vostok-multiplayer-coop-single-player-guide\">多人/合作状态指南</a> 和 <a href=\"/guides/road-to-vostok-mods-guide\">Mod 指南</a>，并用备份档。</p>\n  <h2>FAQ</h2><h3>Does Road To Vostok autosave?</h3><p>把避难所侧存档当成可靠习惯。当前版本若显示自动或避难所存档确认，等它完成再退出。</p><h3>Where are Road To Vostok save files?</h3><p>先从 <code>%USERPROFILE%\\AppData\\LocalLow</code> 查起，并用新存档后的修改时间确认真实目录。</p>"
+}
+  ,
+  {
+    id: 20,
+    title: "Road To Vostok 门与柜子指南：卡门、开物体与壁挂",
+    h1: "如何在 Road To Vostok 打开门、柜子和物体",
+    description: "处理卡住的门、柜子开启、物体交互、穿门搜索意图，以及壁挂柜子的放置问题。",
+    tags: [
+        "门",
+        "柜子",
+        "物体交互",
+        "避难所"
+    ],
+    publishDate: "2026-07-27",
+    imageUrl: "/images/guides/road-vostok-door-route-interaction-guide.jpg",
+    imageAlt: "Road To Vostok 卡门与物体交互指南",
+    seo: {
+        title: "Road To Vostok 门与柜子指南",
+        description: "处理 Road To Vostok 卡门、开门、开柜子、物体交互、穿门搜索意图，以及壁挂柜子放置问题。",
+        keywords: "Road To Vostok 卡门, 开门, 开柜子, 物体交互"
+    },
+    addressBar: "road-to-vostok-open-door-cabinet-guide",
+    detailsHtml: "<p><strong>快速结论：</strong>门和柜子问题不要靠狂按交互键解决。先读提示，判断是锁住、卡住、碰撞阻挡、需要钥匙，还是避难所放置系统的一部分。穿门属于漏洞意图，不适合主路线。</p>\n  <figure><img src=\"/images/guides/road-vostok-door-route-interaction-guide.jpg\" alt=\"road to vostok jammed door open door route interaction guide\" title=\"Road To Vostok 卡门与开门路线\" width=\"50%\"><figcaption>门是路线闸口。先看提示文字、钥匙状态、碰撞和当前版本是否允许打开。</figcaption></figure>\n  <h2>Door interaction problems</h2>\n  <h3>Jammed door variants</h3>\n  <table><thead><tr><th>状态</th><th>含义</th><th>处理</th></tr></thead><tbody><tr><td>Locked</td><td>需要钥匙、任务或权限</td><td>查 <a href=\"/guides/road-to-vostok-keys-locked-cabinets\">钥匙与锁柜指南</a></td></tr><tr><td>Jammed</td><td>被挡、单向、不可交互或版本限制</td><td>换另一侧、清碰撞、绕路</td></tr><tr><td>无提示</td><td>静态模型或角度不对</td><td>对准把手/面板；仍无提示就离开</td></tr></tbody></table>\n  <h3>Open door and clip-through terms</h3>\n  <p>正常开门是支持提示、角度正确、没有动作占用。clip-through 是几何漏洞或物理异常，不是稳定路线。不要用穿门带任务物、稀有钥匙或主存档测试。</p>\n  <h2>Cabinets and object interactions</h2>\n  <h3>Open things and cabinet</h3>\n  <figure><img src=\"/images/guides/road-vostok-cabinet-object-mounting-guide.jpg\" alt=\"road to vostok open cabinet and mount cabinet on wall interaction guide\" title=\"Road To Vostok 开柜子与壁挂检查\" width=\"50%\"><figcaption>柜子可能是普通容器、锁柜、医疗柜或家具。提示决定类别。</figcaption></figure>\n  <p>普通柜子看拾取/打开提示；锁柜读是否需要具体钥匙；医疗柜优先服务受伤或长路线；完全无提示的家具不要在敌人巡逻时浪费时间。</p>\n  <h3>Mount cabinet on wall</h3>\n  <p>壁挂柜属于避难所自定义/放置系统。确认处在可装饰区域，面对平整墙面，调整角度直到预览有效。若放置失败，可能是墙面无效、物品不是可挂版本，或当前 build 不支持。</p>\n  <h2>FAQ</h2><h3>Why is a door jammed in Road To Vostok?</h3><p>可能是锁、碰撞、单向门、静态模型，或动作状态占用输入。先读提示。</p><h3>How do you open cabinets?</h3><p>对准柜门/面板，有提示就交互；提示 locked 就切换到钥匙路线。</p>"
+}
 
 ]

@@ -480,6 +480,51 @@ export default [
   <h3>Can I play Road To Vostok with friends?</h3><p>Ei official native multiplayer moden kautta.</p>
   <h3>Is Road To Vostok single player only?</h3><p>Nykyinen official baseline on single-player. Jos se muuttuu, tarkista store ja official site uudelleen.</p>`,
   }
-
+  ,
+  {
+    id: 19,
+    title: "Road To Vostok: tallennustiedosto, Escape-valikko ja co-op save -huomiot",
+    h1: "Road To Vostok: tallennustiedosto ja Escape-valikko",
+    description: "Tallennus, save-tiedostot, Escape-valikon ongelmat ja co-op save -väitteet selkeästi.",
+    tags: [
+        "Tallennus",
+        "Escape-valikko",
+        "Suoja",
+        "Co-op"
+    ],
+    publishDate: "2026-07-27",
+    imageUrl: "/images/guides/road-vostok-save-menu-inventory-guide.jpg",
+    imageAlt: "Road To Vostok tallennustiedosto ja Escape-valikko",
+    seo: {
+        title: "Road To Vostok tallennus ja valikko",
+        description: "Näin tallennat Road To Vostokissa, tarkistat save-kansion, korjaat Escape-valikon ongelmia ja erotat co-op save -väitteet.",
+        keywords: "Road To Vostok save, tallennus, save location, Escape menu"
+    },
+    addressBar: "road-to-vostok-how-to-save",
+    detailsHtml: "<p><strong>Lyhyt vastaus:</strong> Käytä suojaa puhtaana tallennusankkurina. Erst sicher hinein, wertvolle Beute einlagern, Save- oder Menüstatus bestätigen, dann beenden. Feld-Logout, unbestätigter Autosave oder Koop-Mods sind keine verlässliche Sicherung.</p><figure><img src=\"/images/guides/road-vostok-save-menu-inventory-guide.jpg\" alt=\"road to vostok how to save shelter and Escape menu inventory check\" title=\"Road To Vostok speichern und Escape-Menü prüfen\" width=\"50%\"><figcaption>Vor dem Quit: Suoja, Stash, Menübestätigung.</figcaption></figure><h2>How saving works</h2><h3>Manual save and save-state intent</h3><p>Die robuste Routine ist shelterseitig. Road To Vostok bindet sichere Zonen, Lagerung und Fortschritt eng zusammen; behandle einen Suoja daher wie einen Checkpoint mit Inventarkontrolle.</p><table><thead><tr><th>Check</th><th>Aktion</th><th>Risiko</th></tr></thead><tbody><tr><td>Suoja erreicht</td><td>Im sicheren Bereich stehen</td><td>Unsicherer Resume-Zustand</td></tr><tr><td>Beute verstaut</td><td>Keys, Task-Items, Meds, Munition sichern</td><td>Wertverlust durch schlechten Restart</td></tr><tr><td>Prompt fertig</td><td>Save/Menu-Bestätigung abwarten</td><td>Dirty State beim Schließen</td></tr></tbody></table><p>Mehr Stash-Logik: <a href=\"/guides/road-to-vostok-shelter-storage-save-guide\">Suoja-Storage-Guide</a>; Verbrauchswerte: <a href=\"/guides/road-to-vostok-health-hydration-guide\">Health/Hydration</a>.</p><h3>Escape/menu failure state</h3><p>Wenn Escape nicht reagiert, zuerst Fokus und Overlays prüfen: Alt-Tab zurück, ins Fenster klicken, Controller/Overlay/Keyboard-Tools testweise entfernen, aktive Loot-, Reload- oder Placement-Aktion abbrechen.</p><h2>Save files and co-op saves</h2><h3>Save file location typo variant</h3><p>Für Backups unter Windows bei <code>%USERPROFILE%\\AppData\\LocalLow</code> starten. Nach einem frischen Suoja-Save nach Änderungsdatum sortieren und den Road-To-Vostok-Ordner bestätigen. Erst kopieren, nie direkt am Live-Save editieren.</p><h3>Co-op save wording</h3><p>Offizieller Baseline-Status ist Singleplayer. Koop-Saves gehören zu Mods oder Workarounds, solange kein Patch das Gegenteil dokumentiert. Vor Tests: <a href=\"/guides/road-to-vostok-multiplayer-coop-single-player-guide\">Multiplayer/Koop-Status</a> und <a href=\"/guides/road-to-vostok-mods-guide\">Mod-Guide</a>.</p><h2>FAQ</h2><h3>Does Road To Vostok autosave?</h3><p>Verlasse dich auf Suoja-Save-Bestätigung, nicht auf riskanten Feld-Logout.</p><h3>Where are Road To Vostok save files?</h3><p>Starte bei <code>%USERPROFILE%\\AppData\\LocalLow</code> und bestätige per Änderungszeit nach frischem Save.</p>"
+}
+  ,
+  {
+    id: 20,
+    title: "Road To Vostok ovet ja kaapit: jumittuneet ovet, objektit ja seinäkiinnitys",
+    h1: "Ovien, kaappien ja objektien avaaminen Road To Vostokissa",
+    description: "Jammed door, kaapit, objektien avaus, clip-through-hakujen raja ja seinäkiinnitys.",
+    tags: [
+        "Ovet",
+        "Kaapit",
+        "Objektit",
+        "Suoja"
+    ],
+    publishDate: "2026-07-27",
+    imageUrl: "/images/guides/road-vostok-door-route-interaction-guide.jpg",
+    imageAlt: "Road To Vostok jumittunut ovi ja objektien interaktio",
+    seo: {
+        title: "Road To Vostok ovet ja kaapit",
+        description: "Korjaa jammed doors, kaappien avaus, objektien interaktiot, clip-through-sekaannus ja seinäkaapin kiinnitys.",
+        keywords: "Road To Vostok jammed door, open door, open cabinet, objects"
+    },
+    addressBar: "road-to-vostok-open-door-cabinet-guide",
+    detailsHtml: "<p><strong>Lyhyt vastaus:</strong> Nicht spammen. Prompt lesen, Zustand prüfen: locked, jammed, Kollision, Key-Bedarf oder Shelter-Placement. Clip-through ist Exploit-Intent, keine stabile Route.</p><figure><img src=\"/images/guides/road-vostok-door-route-interaction-guide.jpg\" alt=\"road to vostok jammed door open door route interaction guide\" title=\"Road To Vostok jammed door und Türroute\" width=\"50%\"><figcaption>Ovet sind Routengates: Prompt, Key, Kollision, Build-Zustand prüfen.</figcaption></figure><h2>Door interaction problems</h2><h3>Jammed door variants</h3><table><thead><tr><th>Status</th><th>Bedeutung</th><th>Aktion</th></tr></thead><tbody><tr><td>Locked</td><td>Key, Aufgabe oder Zugang nötig</td><td><a href=\"/guides/road-to-vostok-keys-locked-cabinets\">Keys-Guide</a> nutzen</td></tr><tr><td>Jammed</td><td>Blockiert, einseitig, statisch oder build-limitiert</td><td>Andere Seite, Kollision, Umroute prüfen</td></tr><tr><td>Kein Prompt</td><td>Statisches Objekt oder falscher Winkel</td><td>Griff/Panel anvisieren; sonst weiter</td></tr></tbody></table><h3>Open door and clip-through terms</h3><p>Normales Öffnen heißt: gültiger Prompt, freier Winkel, keine aktive Animation. Clip-through ist Geometriefehler und kann nach jedem Patch brechen. Nicht mit Task-Items testen.</p><h2>Cabinets and object interactions</h2><h3>Open things and cabinet</h3><figure><img src=\"/images/guides/road-vostok-cabinet-object-mounting-guide.jpg\" alt=\"road to vostok open cabinet and mount cabinet on wall interaction guide\" title=\"Road To Vostok Schrank öffnen und Wandmontage\" width=\"50%\"><figcaption>Der Prompt entscheidet: Loot-Schrank, locked cabinet, Medical Cabinet oder Möbel.</figcaption></figure><p>Normale Kaapit mit Loot-Prompt öffnen; Locked Cabinets auf Key-Text prüfen; Medical Cabinets vor langen Routen priorisieren. Ohne Prompt nicht unter Feinddruck testen.</p><h3>Mount cabinet on wall</h3><p>Wandmontage gehört zur Shelter-Decoration: gültigen Bereich, flache Wand, Freiraum und grünen/validen Placement-Zustand prüfen. Ohne gültige Vorschau ist die Funktion build-sensitiv.</p><h2>FAQ</h2><h3>Why is a door jammed in Road To Vostok?</h3><p>Locked, blockiert, einseitig, statisch oder Input durch Aktion blockiert.</p><h3>How do you open cabinets?</h3><p>Panel/Griff anvisieren; bei Locked-Prompt zur Key-Route wechseln.</p>"
+}
 
 ]

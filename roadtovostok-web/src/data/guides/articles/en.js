@@ -1965,6 +1965,251 @@
   <h3>Is Road To Vostok single player only?</h3>
   <p>The current official baseline is single-player. If this changes in a future patch or roadmap update, re-check the store page and official site before relying on old guide text.</p>`,
   }
+  ,
+  {
+    id: 19,
+    title: "Road To Vostok Save File, Escape Menu, and Co-op Save Notes Guide",
+    h1: "Road To Vostok Save File and Escape Menu Guide",
+    description: "How saving works, where to verify save files, what to do when Escape fails, and why co-op save claims need caution.",
+    tags: ["Save Files", "Escape Menu", "Shelter", "Co-op"],
+    publishDate: "2026-07-27",
+    imageUrl: "/images/guides/road-vostok-save-menu-inventory-guide.jpg",
+    imageAlt: "Road To Vostok save file location and Escape menu guide",
+    seo: {
+      title: "Road To Vostok Save File and Menu Guide",
+      description: "Learn how Road To Vostok saving works, where to verify save files, what to do when Escape fails, and how co-op save claims differ.",
+      keywords: "Road To Vostok save, save file location, how to save, Escape menu, co-op save",
+    },
+    addressBar: "road-to-vostok-how-to-save",
+    detailsHtml: `<p><strong>Fast answer:</strong> use shelters as your clean save anchor. Road To Vostok is built around solo survival, storage, and shelter resets, so do not treat a random field logout, unconfirmed autosave, or community co-op workaround as a guaranteed safe save. If the Escape menu stops responding, secure input focus first; if you cannot open the menu, assume the session is not safe to close until the current build confirms progress.</p>
+  <figure>
+    <img src="/images/guides/road-vostok-save-menu-inventory-guide.jpg" alt="road to vostok how to save shelter and Escape menu inventory check" title="Road To Vostok how to save and check the Escape menu" width="50%">
+    <figcaption>Save discipline starts before you quit: shelter, stash, confirm the menu or save state, then leave the run.</figcaption>
+  </figure>
+
+  <h2>How saving works</h2>
+  <h3>Manual save and save-state intent</h3>
+  <p>Current practical rule: save from a shelter state, not from panic. The official loop describes shelters as safe zones with storage and saving tied into progression, which means the stable player habit is simple: reach shelter, unload high-value gear, check that the shelter or save interaction completed, then exit.</p>
+  <p>That does not mean every route state is equally safe. If you close the game while exposed, in combat, overloaded, or halfway through an interaction, you are betting against the save system. Run it like an extraction checklist:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Save check</th>
+        <th>What to do</th>
+        <th>Risk if skipped</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Shelter reached</td>
+        <td>Stop inside the safe area before quitting</td>
+        <td>Resume state may not match your intended stash route</td>
+      </tr>
+      <tr>
+        <td>Valuables stored</td>
+        <td>Move keys, task items, meds, and spare ammo out of the active bag</td>
+        <td>One bad reload can cost the loot you meant to preserve</td>
+      </tr>
+      <tr>
+        <td>Prompt completed</td>
+        <td>Wait for the current build's shelter, save, or menu confirmation</td>
+        <td>Closing during an interaction is the dirty state</td>
+      </tr>
+      <tr>
+        <td>Next route planned</td>
+        <td>Leave food, water, and medical reserve ready for the next run</td>
+        <td>You load back in safe but tactically broke</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>For stash routing, pair this page with the <a href="/guides/road-to-vostok-shelter-storage-save-guide">shelter storage and save guide</a>. For survival items you should keep before a logout, use the <a href="/guides/road-to-vostok-health-hydration-guide">health and hydration guide</a>.</p>
+
+  <h3>Escape/menu failure state</h3>
+  <p>If you searched "Road To Vostok cannot press Escape," treat it as an input-focus problem first, not a save-system mystery. Do not mash keys while moving through a hostile route. Stop somewhere safe, then work through the checklist below.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Symptom</th>
+        <th>Likely check</th>
+        <th>Field fix</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Escape does nothing</td>
+        <td>Window focus or overlay capture</td>
+        <td>Alt-Tab back into the game, click once, then test Escape again</td>
+      </tr>
+      <tr>
+        <td>Menu opens inconsistently</td>
+        <td>Controller, Steam overlay, or keyboard software stealing input</td>
+        <td>Disconnect extra input devices and test with a plain keyboard state</td>
+      </tr>
+      <tr>
+        <td>Menu blocked during interaction</td>
+        <td>Loot, inventory, reload, or placement action is still active</td>
+        <td>Finish or cancel the action, step away from the prompt, then retry</td>
+      </tr>
+      <tr>
+        <td>Game appears frozen</td>
+        <td>Render or process stall</td>
+        <td>Wait before force-closing; force-close is the last resort for save safety</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>If Escape still fails after focus and overlay checks, write down the exact build, whether you were in shelter, inventory, map, or combat, and what prompt was active. That is the difference between a useful bug report and another rumor.</p>
+
+  <h2>Save files and co-op saves</h2>
+  <h3>Save file location typo variant</h3>
+  <p>Searches for "Road To Vostok save file locati0n" usually mean one thing: the player wants to back up a local save before testing mods, settings, or a risky route. Good instinct. Bad execution corrupts saves.</p>
+  <p><strong>Current-build verification:</strong> community PC reports point players toward the Windows user profile save-data area, commonly under <code>%USERPROFILE%\\AppData\\LocalLow\\</code> for Unity-style games. Treat the exact Road To Vostok folder name as build-sensitive until you confirm it on your machine.</p>
+  <ol>
+    <li>Open Windows Run with <code>Win + R</code>.</li>
+    <li>Enter <code>%USERPROFILE%\\AppData\\LocalLow</code>.</li>
+    <li>Sort folders by <strong>Date modified</strong> after making a fresh shelter save.</li>
+    <li>Look for a Road To Vostok / RoadToVostok developer or game folder.</li>
+    <li>Copy the whole candidate folder before installing mods or testing unstable settings.</li>
+  </ol>
+  <p>Do not move, rename, or edit save files in place. Copy first, test second. If the folder does not change after a fresh save, you are looking in the wrong place or the build is storing state differently.</p>
+
+  <h3>Co-op save wording</h3>
+  <p>Road To Vostok's official baseline is single-player. That matters for "road to vostok coop save" searches: a co-op save claim usually belongs to a mod, workaround, or future-feature discussion, not the base game. Do not assume shared shelter state, shared inventory, revive state, or host-client persistence unless the exact mod or official patch documents it.</p>
+  <p>My rule for co-op save testing is blunt: never test on your main shelter profile. If you are evaluating a community co-op or multiplayer mod, read the <a href="/guides/road-to-vostok-multiplayer-coop-single-player-guide">multiplayer and co-op status guide</a> first, then back up the save folder before launching. For loader risk, use the <a href="/guides/road-to-vostok-mods-guide">mods guide</a>.</p>
+
+  <h2>FAQ</h2>
+  <h3>Does Road To Vostok autosave?</h3>
+  <p>Treat shelter-side saving as the reliable player habit. If your current build shows an autosave or shelter-save confirmation, wait for that state before quitting. Do not rely on exposed logout as a clean save.</p>
+  <h3>Where are Road To Vostok save files?</h3>
+  <p>On Windows, start by checking <code>%USERPROFILE%\\AppData\\LocalLow</code>, then confirm by sorting folders after a fresh shelter save. Exact folder names can change, so verify the modified timestamp before editing or backing up.</p>
+  <h3>Can co-op saves work?</h3>
+  <p>Not as an official base-game expectation. Any co-op save behavior should be treated as mod-specific and unsafe for your main profile until documented and tested on the current build.</p>`,
+  }
+  ,
+  {
+    id: 20,
+    title: "Road To Vostok Doors and Cabinets Guide: Jammed Doors, Object Opening, and Mounting",
+    h1: "How to Open Doors, Cabinets, and Objects in Road To Vostok",
+    description: "Fix jammed doors, cabinet opening, object interaction, clip-through confusion, and wall-mounted cabinet placement.",
+    tags: ["Doors", "Cabinets", "Object Interaction", "Shelter"],
+    publishDate: "2026-07-27",
+    imageUrl: "/images/guides/road-vostok-door-route-interaction-guide.jpg",
+    imageAlt: "Road To Vostok jammed door and object interaction guide",
+    seo: {
+      title: "Road To Vostok Doors and Cabinets Guide",
+      description: "Fix jammed doors, cabinet opening, object interaction, clip-through confusion, and wall-mounted cabinet placement in Road To Vostok.",
+      keywords: "Road To Vostok jammed door, open door, open cabinet, object interaction",
+    },
+    addressBar: "road-to-vostok-open-door-cabinet-guide",
+    detailsHtml: `<p><strong>Fast answer:</strong> most Road To Vostok door and cabinet problems are not solved by spamming the use key. Read the prompt, check whether the object is locked, jammed, blocked by collision, tied to a key, or part of shelter placement. Clip-through searches are usually glitch intent; do not build a route around them unless you are testing with disposable gear.</p>
+  <figure>
+    <img src="/images/guides/road-vostok-door-route-interaction-guide.jpg" alt="road to vostok jammed door open door route interaction guide" title="Road To Vostok jammed door and open door route" width="50%">
+    <figcaption>Doors are route gates. Before blaming the input, check prompt text, key state, collision, and whether the path is meant to open in this build.</figcaption>
+  </figure>
+
+  <h2>Door interaction problems</h2>
+  <h3>Jammed door variants</h3>
+  <p>"Road To Vostok jammed door" and "Road To Vostok door jammed" can describe several different states. Treat the wording as a diagnostic prompt, not a single bug.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Door state</th>
+        <th>What it usually means</th>
+        <th>What to do</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Locked</td>
+        <td>Needs a key, task state, or access route</td>
+        <td>Check the <a href="/guides/road-to-vostok-keys-locked-cabinets">keys and locked cabinets guide</a></td>
+      </tr>
+      <tr>
+        <td>Jammed</td>
+        <td>Blocked, one-way, not interactable, or build-limited</td>
+        <td>Try the other side, clear collision, then route around it</td>
+      </tr>
+      <tr>
+        <td>No prompt</td>
+        <td>Static prop or wrong interaction angle</td>
+        <td>Re-aim at the handle/panel; if still blank, move on</td>
+      </tr>
+      <tr>
+        <td>Prompt appears but fails</td>
+        <td>Inventory, reload, placement, or animation state is interrupting input</td>
+        <td>Cancel active actions and step back before retrying</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Do not burn food, hydration, and ammo trying to force one door. If the route does not open after prompt and collision checks, mark it on the <a href="/map">interactive map</a>, leave, and solve it from a safer approach.</p>
+
+  <h3>Open door and clip-through terms</h3>
+  <p>Normal door opening should be boring: line up, read prompt, use the interaction key, and confirm the animation. The problem starts when "how to open door Road To Vostok" turns into "Road To Vostok clip through door." Those are different intents.</p>
+  <ul>
+    <li><strong>Normal open:</strong> supported prompt, valid angle, clear collision, no active animation blocking input.</li>
+    <li><strong>Bypass route:</strong> alternate access through another door, window, ladder, key route, or map side.</li>
+    <li><strong>Clip-through:</strong> geometry exploit or physics failure. Build-sensitive and not route-safe.</li>
+  </ul>
+  <p>Do not use a clip route for task loot, rare keys, or your main stash run. A geometry exploit that works today can fail after the next patch, trap you inside collision, or invalidate the route you meant to test. If the door is part of a locked route, the stable answer is still the key or the intended access path.</p>
+
+  <h2>Cabinets and object interactions</h2>
+  <h3>Open things and cabinet</h3>
+  <p>"How to open things Road To Vostok" is too broad, so split the check into object classes. Loot containers, locked cabinets, medical wall cabinets, shelter furniture, and static props do not all obey the same rules.</p>
+  <figure>
+    <img src="/images/guides/road-vostok-cabinet-object-mounting-guide.jpg" alt="road to vostok open cabinet and mount cabinet on wall interaction guide" title="Road To Vostok open cabinet and mounting checks" width="50%">
+    <figcaption>Cabinets can be loot containers, locked containers, medical targets, or shelter furniture. The prompt decides the category.</figcaption>
+  </figure>
+  <table>
+    <thead>
+      <tr>
+        <th>Object type</th>
+        <th>Useful check</th>
+        <th>Bad assumption</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Normal cabinet</td>
+        <td>Look for a loot prompt and open from a clean angle</td>
+        <td>Assuming every cabinet is locked</td>
+      </tr>
+      <tr>
+        <td>Locked cabinet</td>
+        <td>Read whether the prompt names a key or access condition</td>
+        <td>Spamming use without checking key state</td>
+      </tr>
+      <tr>
+        <td>Medical cabinet</td>
+        <td>Prioritize after injury or before longer routes</td>
+        <td>Skipping it because it looks like scenery</td>
+      </tr>
+      <tr>
+        <td>Static furniture</td>
+        <td>No real prompt means no current interaction</td>
+        <td>Trying every model while enemies rotate</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Cabinet searches connect naturally to keys and survival supplies. If you are farming locked storage, use the <a href="/guides/road-to-vostok-keys-locked-cabinets">keys guide</a>. If you are checking medical storage, route it through the <a href="/guides/road-to-vostok-health-hydration-guide">health guide</a>.</p>
+
+  <h3>Mount cabinet on wall</h3>
+  <p>Wall-mounted cabinet searches belong to shelter customization and placement, not normal loot opening. Handle it like a build-mode task:</p>
+  <ol>
+    <li>Confirm you are in a shelter or area where decoration/placement is available.</li>
+    <li>Hold the cabinet or select it through the current build's furniture interaction.</li>
+    <li>Face a flat wall with enough clearance.</li>
+    <li>Rotate or move until the placement preview turns valid.</li>
+    <li>Place only after confirming it does not block a doorway, stash route, or movement lane.</li>
+  </ol>
+  <p>If mounting fails, the wall may be invalid, the object may need a different placement mode, or the build may not support that cabinet as a mountable item. Mark the result as <strong>INFERRED</strong> until you see a valid placement preview in your current version.</p>
+
+  <h2>FAQ</h2>
+  <h3>Why is a door jammed in Road To Vostok?</h3>
+  <p>It may be locked, blocked, one-way, static, or temporarily interrupted by your current action state. Check prompt text, key requirement, collision, and the opposite side before assuming a bug.</p>
+  <h3>How do you open cabinets?</h3>
+  <p>Aim at the cabinet handle or panel and use the interaction key when the prompt appears. If it says locked, switch to key routing. If no prompt appears, it may be a static prop in the current build.</p>
+  <h3>Should you clip through doors?</h3>
+  <p>No for normal progression. Clip-through routes are build-sensitive exploits and should only be tested with disposable gear, never with task items or your main run state.</p>`,
+  }
 
 ]
 
