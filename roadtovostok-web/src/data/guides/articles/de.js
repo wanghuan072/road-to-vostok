@@ -1,27 +1,27 @@
-/**
- * DE — same row shape as guides/articles/en.js.
+﻿/**
+ * DE 鈥?same row shape as guides/articles/en.js.
  */
 export default [
   {
     id: 1,
     title: "Road to Vostok: Tiefenanalyse der realen Geografie",
     iframeUrl: "https://www.youtube.com/embed/RsDE26kkAtU",
-    description: "Rigide Analyse der realen geographischen Vorbilder hinter dem Hardcore-Survival-Shooter Road to Vostok — von Finnlands historischer Salpa-Linie bis zur urbanen Verwahrlosung an der Grenze.",
+    description: "Rigide Analyse der realen geographischen Vorbilder hinter dem Hardcore-Survival-Shooter Road to Vostok 鈥?von Finnlands historischer Salpa-Linie bis zur urbanen Verwahrlosung an der Grenze.",
     tags: ["Road to Vostok"],
     publishDate: "2026-03-27",
     imageUrl: "/images/guides/guides01.webp",
-    imageAlt: "Road to Vostok — Realwelt-Geografie",
+    imageAlt: "Road to Vostok 鈥?Realwelt-Geografie",
     seo: {
       title: "Road to Vostok: Tiefenanalyse der realen Geografie",
-      description: "Von der Salpa-Linie bis zu Grenzorten und Wyborg: wie Road to Vostok echte Topografie und Architektur in Leveldesign und Atmosphäre übersetzt.",
+      description: "Von der Salpa-Linie bis zu Grenzorten und Wyborg: wie Road to Vostok echte Topografie und Architektur in Leveldesign und Atmosph盲re 眉bersetzt.",
       keywords: "Road to Vostok, Survival Shooter, Salpa Linie, Finnland Russland Grenze, Wyborg, Hardcore FPS, Geografie, Tenebris Infinite",
     },
     addressBar: "an-analytical-deep-dive-into-its-real-world-geography",
     detailsHtml: `
-      <p>Im Hardcore-Survival-Shooter ist die Umgebung selten nur Kulisse — oft ist sie der Hauptgegner. <strong>Road to Vostok</strong> schafft seine bedrückende Atmosphäre nicht durch Science-Fiction, sondern durch geografischen Realismus. Wie die Analyse von <em>Tenebris Infinite</em> zeigt, beziehen Topografie und Architektur des Spiels ihr Leben direkt aus der Grenzregion zwischen Finnland und Russland.</p>
+      <p>Im Hardcore-Survival-Shooter ist die Umgebung selten nur Kulisse 鈥?oft ist sie der Hauptgegner. <strong>Road to Vostok</strong> schafft seine bedr眉ckende Atmosph盲re nicht durch Science-Fiction, sondern durch geografischen Realismus. Wie die Analyse von <em>Tenebris Infinite</em> zeigt, beziehen Topografie und Architektur des Spiels ihr Leben direkt aus der Grenzregion zwischen Finnland und Russland.</p>
   <p>Echte Geschichte und geopolitische Spannung auf die virtuelle Landschaft zu mappen verleiht diesem Solo-Projekt seltene Tiefe. Dieser Artikel zerlegt, wie diese geografischen Vorbilder Mechanik und Stimmung tragen.</p>
   <h2><strong>Spielinfos &amp; Hintergrund</strong></h2>
-  <p>Kurzüberblick</p>
+  <p>Kurz眉berblick</p>
   <p> <strong>Titel</strong></p>
   <p>Road to Vostok</p>
   <p><strong>Entwickler / Studio</strong></p>
@@ -35,94 +35,94 @@ export default [
   <p><strong>Referenzvideo</strong></p>
   <p>Tenebris Infinite: &quot;The Real World Location Of Road To Vostok&quot;</p>
   <h2><strong>Finnische Front: Area 5 und das Erbe der Salpa-Linie</strong></h2>
-  <p>Die frühe Hauptbühne <strong>Area 5</strong> ist der relative sichere Hafen vor der gefährlichen Grenze — verwurzelt in der Heimat des Entwicklers und stark in der historischen <strong>Salpa-Linie</strong> verankert.</p>
+  <p>Die fr眉he Hauptb眉hne <strong>Area 5</strong> ist der relative sichere Hafen vor der gef盲hrlichen Grenze 鈥?verwurzelt in der Heimat des Entwicklers und stark in der historischen <strong>Salpa-Linie</strong> verankert.</p>
   <p><img src="/images/guides/guides01-01.webp" alt="Finnland: Grenzlandschaft und Salpa-Kontext (Guide-Bild 1)" width="50%" style="width: 50%;" /></p>
-  <p>Die Salpa-Linie entstand in den 1940ern im Fortsetzungskrieg; ein massives Bunkernetz, das kaum kämpfte, aber nahezu fertiggestellt wurde. In <em>Road to Vostok</em> wird das zu Hunderten Betonbunkern, Gräben und dichtem Wald — organische, historisch fundierte Kulissen für Lager, Händler und taktische Gefechte.</p>
-  <h3><strong>Reale Grenzübergänge</strong></h3>
-  <p>Um ins titelgebende Vostok zu gelangen, muss die Grenze gequert werden. Die realen Übergänge <strong>Vaalimaa</strong> und <strong>Nuijamaa</strong> liefern ein starkes Kontrastpaar fürs Leveldesign:</p>
-  <p><img src="/images/guides/guides01-02.webp" alt="Grenzübergang Vaalimaa — Landschaft und Atmosphäre" width="50%" style="width: 50%;" /></p>
+  <p>Die Salpa-Linie entstand in den 1940ern im Fortsetzungskrieg; ein massives Bunkernetz, das kaum k盲mpfte, aber nahezu fertiggestellt wurde. In <em>Road to Vostok</em> wird das zu Hunderten Betonbunkern, Gr盲ben und dichtem Wald 鈥?organische, historisch fundierte Kulissen f眉r Lager, H盲ndler und taktische Gefechte.</p>
+  <h3><strong>Reale Grenz眉berg盲nge</strong></h3>
+  <p>Um ins titelgebende Vostok zu gelangen, muss die Grenze gequert werden. Die realen 脺berg盲nge <strong>Vaalimaa</strong> und <strong>Nuijamaa</strong> liefern ein starkes Kontrastpaar f眉rs Leveldesign:</p>
+  <p><img src="/images/guides/guides01-02.webp" alt="Grenz眉bergang Vaalimaa 鈥?Landschaft und Atmosph盲re" width="50%" style="width: 50%;" /></p>
   <ol>
-   <li><strong>Vaalimaa:</strong> bekannt für Outlet- und Gewerbegebiete — im Spiel eine dichte, urban geprägte Plünderzone für riskante Runs.</li>
-   <li><strong>Nuijamaa:</strong> ländlicher Grenzort, Zivilisation und Natur verschmelzen — einsame, fast märchenhafte Isolation, Wald als natürliche Deckung.</li>
+   <li><strong>Vaalimaa:</strong> bekannt f眉r Outlet- und Gewerbegebiete 鈥?im Spiel eine dichte, urban gepr盲gte Pl眉nderzone f眉r riskante Runs.</li>
+   <li><strong>Nuijamaa:</strong> l盲ndlicher Grenzort, Zivilisation und Natur verschmelzen 鈥?einsame, fast m盲rchenhafte Isolation, Wald als nat眉rliche Deckung.</li>
   </ol>
-  <p><img src="/images/guides/guides01-03.webp" alt="Grenzübergang Vaalimaa — Landschaft und Atmosphäre" width="50%" style="width: 50%;" /></p>
+  <p><img src="/images/guides/guides01-03.webp" alt="Grenz眉bergang Vaalimaa 鈥?Landschaft und Atmosph盲re" width="50%" style="width: 50%;" /></p>
   <h2><strong>Russland: urbaner Zerfall in Vostok</strong></h2>
   <p>Hinter der Grenze kippt das Survival-Paradigma: statt Waldeckung wartet claustrophobischer Stadtschrott. Tenebris Infinite ordnet mehrere reale Orte zu, die zum harten Mechanikwechsel von Vostok passen:</p>
   <ol>
-   <li><strong>Seleznyovo (Celestavo):</strong> brutalistische Hochhäuser, extreme Vertikalität, High-Risk-Loot und CQC in Treppenhäusern — vergleichbare Loops im <a href="/guides/apartments-complete-survival-loot-guid">Apartment-Survival-Guide</a>.</li>
-   <li><strong>Wyborg (Vyborg):</strong> Küstenstadt mit historischer Festung — Mittelalter und postapokalyptische Stadt als starker Anker für Erkundung; Wasserflächen verbinden Land- und Uferkämpfe.</li>
+   <li><strong>Seleznyovo (Celestavo):</strong> brutalistische Hochh盲user, extreme Vertikalit盲t, High-Risk-Loot und CQC in Treppenh盲usern 鈥?vergleichbare Loops im <a href="/guides/apartments-complete-survival-loot-guid">Apartment-Survival-Guide</a>.</li>
+   <li><strong>Wyborg (Vyborg):</strong> K眉stenstadt mit historischer Festung 鈥?Mittelalter und postapokalyptische Stadt als starker Anker f眉r Erkundung; Wasserfl盲chen verbinden Land- und Uferk盲mpfe.</li>
   </ol>
-  <p>&quot;Der Wechsel von relativem Wald-Guerillakampf in Area 5 zum urbanen CQC in Vostok ist ein brillantes mechanisches und atmosphärisches Gegensatzpaar.&quot;</p>
+  <p>&quot;Der Wechsel von relativem Wald-Guerillakampf in Area 5 zum urbanen CQC in Vostok ist ein brillantes mechanisches und atmosph盲risches Gegensatzpaar.&quot;</p>
   <h2><strong>Kritik: Geografie als Taktgeber</strong></h2>
-  <p>Faszinierend an <em>Road to Vostok</em> ist, wie direkt die Geografie das Tempo vorgibt. Das Map-Design zwingt dich, die Survival-Strategie ständig anzupassen.</p>
-  <p>In Area 5 fordern finnische Landschaft und Bunker Geduld, Deckung und Sammeln; Vostoks urbaner Fleischwolf nimmt die Baumlinie — chokepoints und Permadeath-Druck machen jeden Fehler fatal.</p>
+  <p>Faszinierend an <em>Road to Vostok</em> ist, wie direkt die Geografie das Tempo vorgibt. Das Map-Design zwingt dich, die Survival-Strategie st盲ndig anzupassen.</p>
+  <p>In Area 5 fordern finnische Landschaft und Bunker Geduld, Deckung und Sammeln; Vostoks urbaner Fleischwolf nimmt die Baumlinie 鈥?chokepoints und Permadeath-Druck machen jeden Fehler fatal.</p>
   <h2><strong>Fazit</strong></h2>
-  <p><em>Road to Vostok</em> nutzt Real-Geografie für eine greifbar bedrohliche Welt: Salpa-Historie plus architektonischer Kontrast an der Grenze. Für Hardcore-Survival-Fans ist genau diese Erdung das Alleinstellungsmerkmal — bildend und nervenaufreibend zugleich.</p>
+  <p><em>Road to Vostok</em> nutzt Real-Geografie f眉r eine greifbar bedrohliche Welt: Salpa-Historie plus architektonischer Kontrast an der Grenze. F眉r Hardcore-Survival-Fans ist genau diese Erdung das Alleinstellungsmerkmal 鈥?bildend und nervenaufreibend zugleich.</p>
     `,
   },
 
   {
     id: 2,
-    title: "Das Minenfeld überleben: Taktik-Guide für Road to Vostok",
+    title: "Das Minenfeld 眉berleben: Taktik-Guide f眉r Road to Vostok",
     iframeUrl: "https://www.youtube.com/embed/zmF0pO8h2vk",
-    description: "Tiefer taktischer Guide zur Minenfeld-Karte: Näherungsminen erkennen, ballistisch freischießen und den Übergang in die Permadeath-Zone meistern.",
+    description: "Tiefer taktischer Guide zur Minenfeld-Karte: N盲herungsminen erkennen, ballistisch freischie脽en und den 脺bergang in die Permadeath-Zone meistern.",
     tags: ["Road to Vostok Minenfeld"],
     publishDate: "2026-03-27",
     imageUrl: "/images/guides/guides02.webp",
     imageAlt: "Road to Vostok Minenfeld",
     seo: {
-      title: "Das Minenfeld überleben: Taktik-Guide für Road to Vostok",
-      description: "Minenfeld-Survival: Minen optisch identifizieren, aus sicherer Distanz detonieren, asymmetrische KI und Audio-Maskierung — mit Fokus auf aktive Räumung.",
-      keywords: "Road to Vostok Minenfeld, Minenräumung, Schuss freilegen, Permadeath Zone, Hardcore FPS Taktik, StarVox, Näherungsminen",
+      title: "Das Minenfeld 眉berleben: Taktik-Guide f眉r Road to Vostok",
+      description: "Minenfeld-Survival: Minen optisch identifizieren, aus sicherer Distanz detonieren, asymmetrische KI und Audio-Maskierung 鈥?mit Fokus auf aktive R盲umung.",
+      keywords: "Road to Vostok Minenfeld, Minenr盲umung, Schuss freilegen, Permadeath Zone, Hardcore FPS Taktik, StarVox, N盲herungsminen",
     },
     addressBar: "surviving-the-Minefield",
     detailsHtml: `
-    <p> <strong>Schwerpunkt:</strong> Taktische Tiefenanalyse der Grenzkarte „Minenfeld“ und der Sprengmittelräum-Mechanik.</p>
-  <p>Im Ökosystem der Hardcore-Survival-Shooter braucht es eine physische Schwelle zwischen hartem Spiel und endgültiger Strafe. In <em>Road to Vostok</em> ist das das <strong>Minenfeld</strong>. Wie StarVox dokumentiert, ist diese Karte das letzte Tor nach Vostok — Permadeath-Zone: ein Tod löscht den Spielstand und alles im Dachboden-Tresor. Grenzverläufe und Markierungen liest du gut mit der <a href="/map">interaktiven Karte</a> (Border Zone).</p>
-  <p>Hier zählen psychische Belastbarkeit und Raumgefühl. Das Minenfeld entfernt Run-and-Gun und ersetzt es durch ballistisches Rätsel und sensorische Einschränkung. Dieser Guide analysiert Überleben mit Schwerpunkt auf aktiver Sprengstoffräumung.</p>
-  <h2><strong>1. Minen erkennen und aktiv räumen</strong></h2>
-  <p>Die Hauptgefahr sind die Minen — das Design belohnt aber genaues Hinsehen und bewusstes Handeln statt blinden Zufall.</p>
+    <p> <strong>Schwerpunkt:</strong> Taktische Tiefenanalyse der Grenzkarte 鈥濵inenfeld鈥?und der Sprengmittelr盲um-Mechanik.</p>
+  <p>Im 脰kosystem der Hardcore-Survival-Shooter braucht es eine physische Schwelle zwischen hartem Spiel und endg眉ltiger Strafe. In <em>Road to Vostok</em> ist das das <strong>Minenfeld</strong>. Wie StarVox dokumentiert, ist diese Karte das letzte Tor nach Vostok 鈥?Permadeath-Zone: ein Tod l枚scht den Spielstand und alles im Dachboden-Tresor. Grenzverl盲ufe und Markierungen liest du gut mit der <a href="/map">interaktiven Karte</a> (Border Zone).</p>
+  <p>Hier z盲hlen psychische Belastbarkeit und Raumgef眉hl. Das Minenfeld entfernt Run-and-Gun und ersetzt es durch ballistisches R盲tsel und sensorische Einschr盲nkung. Dieser Guide analysiert 脺berleben mit Schwerpunkt auf aktiver Sprengstoffr盲umung.</p>
+  <h2><strong>1. Minen erkennen und aktiv r盲umen</strong></h2>
+  <p>Die Hauptgefahr sind die Minen 鈥?das Design belohnt aber genaues Hinsehen und bewusstes Handeln statt blinden Zufall.</p>
   <h3><strong>Erkennungsmerkmale</strong></h3>
-  <p>Die Minen sind nicht vollständig vergraben. Im Schnee und Geröll suchst du nach kleinen, dunklen Zylindern mit flachen Flanschen am Boden — Näherungszünder; zu nah kommen löst verheerende Splitterwunden aus, für die einfache Bandagen nicht reichen und starke Medizin nötig ist.</p>
-  <h3><strong>Taktik: ballistische Detonation (freischießen)</strong></h3>
+  <p>Die Minen sind nicht vollst盲ndig vergraben. Im Schnee und Ger枚ll suchst du nach kleinen, dunklen Zylindern mit flachen Flanschen am Boden 鈥?N盲herungsz眉nder; zu nah kommen l枚st verheerende Splitterwunden aus, f眉r die einfache Bandagen nicht reichen und starke Medizin n枚tig ist.</p>
+  <h3><strong>Taktik: ballistische Detonation (freischie脽en)</strong></h3>
   <p><img src="/images/guides/guides02-01.webp" alt="Minenfeld: Mine aus sicherer Distanz per Schuss freilegen" width="50%" style="width: 50%;" /></p>
-  <p>Ohne Entschärfungsausrüstung bleibt <strong>aktive ballistische Räumung</strong>. StarVox zeigt: zuverlässig neutralisierst du die Drohung, indem du sie direkt beschießt.</p>
-  <p>Mit Visier zielst du auf den sichtbaren Flansch und löst aus sicherer Distanz eine kontrollierte Detonation aus. Das erfüllt zwei Jobs:</p>
+  <p>Ohne Entsch盲rfungsausr眉stung bleibt <strong>aktive ballistische R盲umung</strong>. StarVox zeigt: zuverl盲ssig neutralisierst du die Drohung, indem du sie direkt beschie脽t.</p>
+  <p>Mit Visier zielst du auf den sichtbaren Flansch und l枚st aus sicherer Distanz eine kontrollierte Detonation aus. Das erf眉llt zwei Jobs:</p>
   <ol>
-   <li><strong>Sicherer Weg:</strong> Die akute Sprenggefahr verschwindet — ein schmaler, passierbarer Korridor durch die Todeszone.</li>
-   <li><strong>Hindernis öffnen:</strong> Die Explosion reißt Maschendrahtzäune auf, die Übergänge blockieren. Eine Mine am Zaun sprengt ein Loch und öffnet den Weg ins Walddickicht.</li>
+   <li><strong>Sicherer Weg:</strong> Die akute Sprenggefahr verschwindet 鈥?ein schmaler, passierbarer Korridor durch die Todeszone.</li>
+   <li><strong>Hindernis 枚ffnen:</strong> Die Explosion rei脽t Maschendrahtz盲une auf, die 脺berg盲nge blockieren. Eine Mine am Zaun sprengt ein Loch und 枚ffnet den Weg ins Walddickicht.</li>
   </ol>
-  <p>&quot;Ich schieße die Minen weg, um durchzukommen … und den Zaun da aufzureißen&quot;, fasst StarVox — die Umgebung gegen sich selbst zu wenden ist Pflicht.</p>
+  <p>&quot;Ich schie脽e die Minen weg, um durchzukommen 鈥?und den Zaun da aufzurei脽en&quot;, fasst StarVox 鈥?die Umgebung gegen sich selbst zu wenden ist Pflicht.</p>
   <h2><strong>2. Asymmetrische KI-Gefahr</strong></h2>
-  <p>Die Stärke des Minenfelds liegt in der Kombination aus statischen Sprengkörpern und dynamischer KI. Bots spielen nicht nach denselben Regeln wie du.</p>
+  <p>Die St盲rke des Minenfelds liegt in der Kombination aus statischen Sprengk枚rpern und dynamischer KI. Bots spielen nicht nach denselben Regeln wie du.</p>
   <ol>
-   <li><strong>Immunität:</strong> Gegnerische KI löst die Näherungsminen nicht aus — sie marschieren durchs Unterholz, während dich dieselben Minen lähmen.</li>
-   <li><strong>Geometrische Falle:</strong> Die KI nutzt die Immunität für Kreuzfeuer: Fernsicht, Baumlinie als Deckung. Du stehst im Dilemma: still stehen, Mine sauber detonieren — und zur Zielscheibe für Heckenschützen werden; oder sprinten und blind auf einen versteckten Zünder treten.</li>
-   <li><strong>Wachtürme:</strong> Erhöhte Türme mit gutem Loot — aber hinaufgehen fängt dich: die KI drückt in engen Treppenhäusern, aus dem Plünderlauf wird ein CQB-Überlebenskampf.</li>
+   <li><strong>Immunit盲t:</strong> Gegnerische KI l枚st die N盲herungsminen nicht aus 鈥?sie marschieren durchs Unterholz, w盲hrend dich dieselben Minen l盲hmen.</li>
+   <li><strong>Geometrische Falle:</strong> Die KI nutzt die Immunit盲t f眉r Kreuzfeuer: Fernsicht, Baumlinie als Deckung. Du stehst im Dilemma: still stehen, Mine sauber detonieren 鈥?und zur Zielscheibe f眉r Heckensch眉tzen werden; oder sprinten und blind auf einen versteckten Z眉nder treten.</li>
+   <li><strong>Wacht眉rme:</strong> Erh枚hte T眉rme mit gutem Loot 鈥?aber hinaufgehen f盲ngt dich: die KI dr眉ckt in engen Treppenh盲usern, aus dem Pl眉nderlauf wird ein CQB-脺berlebenskampf.</li>
   </ol>
-  <h2><strong>3. Sensorische Einschränkung und Audio-Maskierung</strong></h2>
-  <p>In Hardcore-Shootern sind Schritte, Nachladen, Gestrüpp so wichtig wie das Bild. Das Minenfeld wendet Klang gegen dich.</p>
-  <p>Ein kreisender Helikopter dröhnt permanent über dem Schlachtfeld. Kinetisch harmlos, akustisch brutal: er verschluckt Annäherung und Schussrichtungen. Zusammen mit Nadelwald und Zäunen entsteht starke sensorische Überlastung — du bleibt auf Paranoia und 360°-Scan angewiesen.</p>
-  <h2><strong>4. Medizinische Abnutzung und Ausrüstung</strong></h2>
-  <p>Überleben hier frisst Ressourcen; der Schaden ist selten kosmetisch.</p>
-  <p>Treffer aus der Baumlinie killen den Helm schnell — danach drohen sofortige Kopftreffer. Eigene Minendetonationen plus Gewehrfeuer erzeugen schwere Traumata. Seltene Medkits und Tourniquets musst du einplanen, sonst verblutest du vor dem Radar-Übergang.</p>
-  <p><strong>Taktik:</strong> Munition budgetieren — für KI-Kämpfe <em>und</em> zum Freischießen blockierender Minen. Niemals ohne Reserve-Munition, schwere Medizin, Schienen und Ersatzhelm rein. Kaliber-Planung erleichtert die <a href="/wiki/ammunition">Munitions-Wiki-Tabelle</a>.</p>
+  <h2><strong>3. Sensorische Einschr盲nkung und Audio-Maskierung</strong></h2>
+  <p>In Hardcore-Shootern sind Schritte, Nachladen, Gestr眉pp so wichtig wie das Bild. Das Minenfeld wendet Klang gegen dich.</p>
+  <p>Ein kreisender Helikopter dr枚hnt permanent 眉ber dem Schlachtfeld. Kinetisch harmlos, akustisch brutal: er verschluckt Ann盲herung und Schussrichtungen. Zusammen mit Nadelwald und Z盲unen entsteht starke sensorische 脺berlastung 鈥?du bleibt auf Paranoia und 360掳-Scan angewiesen.</p>
+  <h2><strong>4. Medizinische Abnutzung und Ausr眉stung</strong></h2>
+  <p>脺berleben hier frisst Ressourcen; der Schaden ist selten kosmetisch.</p>
+  <p>Treffer aus der Baumlinie killen den Helm schnell 鈥?danach drohen sofortige Kopftreffer. Eigene Minendetonationen plus Gewehrfeuer erzeugen schwere Traumata. Seltene Medkits und Tourniquets musst du einplanen, sonst verblutest du vor dem Radar-脺bergang.</p>
+  <p><strong>Taktik:</strong> Munition budgetieren 鈥?f眉r KI-K盲mpfe <em>und</em> zum Freischie脽en blockierender Minen. Niemals ohne Reserve-Munition, schwere Medizin, Schienen und Ersatzhelm rein. Kaliber-Planung erleichtert die <a href="/wiki/ammunition">Munitions-Wiki-Tabelle</a>.</p>
   <h2><strong>Fazit: die letzte Schwelle</strong></h2>
-  <p>Das Minenfeld in <em>Road to Vostok</em> ist gnadenlos gutes Leveldesign: chaotische Feuergefechte plus quälend langsames, ballistisches Pathfinding. Asymmetrische KI, Audio-Maskierung und Näherungssprengstoff formen eine Vorbereitung auf die Permadeath-Einsätze in Vostok — ein Test aus Aufmerksamkeit, Geduld und Treffsicherheit.</p>
+  <p>Das Minenfeld in <em>Road to Vostok</em> ist gnadenlos gutes Leveldesign: chaotische Feuergefechte plus qu盲lend langsames, ballistisches Pathfinding. Asymmetrische KI, Audio-Maskierung und N盲herungssprengstoff formen eine Vorbereitung auf die Permadeath-Eins盲tze in Vostok 鈥?ein Test aus Aufmerksamkeit, Geduld und Treffsicherheit.</p>
     `,
   },
 
   {
     id: 3,
     title: "Road to Vostok Apartments: Survival- und Loot-Guide (komplett)",
-    description: "Vostok-Apartments meistern: Layout, Unterkünfte, Kälte mit Feuern, High-Tier-Loot und Handel beim Generalisten.",
-    tags: ["Road to Vostok Apartments", "Loot", "CQB", "Händler"],
+    description: "Vostok-Apartments meistern: Layout, Unterk眉nfte, K盲lte mit Feuern, High-Tier-Loot und Handel beim Generalisten.",
+    tags: ["Road to Vostok Apartments", "Loot", "CQB", "H盲ndler"],
     publishDate: "2026-03-30",
     imageUrl: "/images/guides/guides03.webp",
     imageAlt: "Road to Vostok Apartments",
     seo: {
       title: "Road to Vostok Apartments: Survival- und Loot-Guide",
-      description: "Kompletter Guide zu Vostok-Apartments: Routen, Feuertonnen gegen Kälte, militärische Kisten, Waffen-Drops und der Händler „The Generalist“.",
+      description: "Kompletter Guide zu Vostok-Apartments: Routen, Feuertonnen gegen K盲lte, milit盲rische Kisten, Waffen-Drops und der H盲ndler 鈥濼he Generalist鈥?",
       keywords: "Road to Vostok Apartments, Loot, CQB, Generalist, Survival Guide",
     },
     addressBar: "apartments-complete-survival-loot-guid",
@@ -130,38 +130,38 @@ export default [
     <iframe name="rtvApartmentsGuideYt" src="https://www.youtube.com/embed/ttvN5s0cdBI" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <h3><strong>Kein Bock aufs ganze Video? Zu den wichtigsten Momenten springen:</strong></h3>
   <ol>
-   <li><a href="https://www.youtube.com/embed/ttvN5s0cdBI?start=336&amp;autoplay=1&amp;playsinline=1" target="rtvApartmentsGuideYt">[05:36]</a> — <strong>Block betreten:</strong> Aufklärung und Erststurm aufs erste Apartment mit Nachtsicht (NVG).</li>
-   <li><a href="https://www.youtube.com/embed/ttvN5s0cdBI?start=766&amp;autoplay=1&amp;playsinline=1" target="rtvApartmentsGuideYt">[12:46]</a> — <strong>Kälte managen:</strong> Feuertonne anzünden, um Erfrieren zu verhindern.</li>
-   <li><a href="https://www.youtube.com/embed/ttvN5s0cdBI?start=782&amp;autoplay=1&amp;playsinline=1" target="rtvApartmentsGuideYt">[13:02]</a> — <strong>Händler:</strong> Treffen mit „The Generalist“ — Waffen gegen Medizin tauschen.</li>
+   <li><a href="https://www.youtube.com/embed/ttvN5s0cdBI?start=336&amp;autoplay=1&amp;playsinline=1" target="rtvApartmentsGuideYt">[05:36]</a> 鈥?<strong>Block betreten:</strong> Aufkl盲rung und Erststurm aufs erste Apartment mit Nachtsicht (NVG).</li>
+   <li><a href="https://www.youtube.com/embed/ttvN5s0cdBI?start=766&amp;autoplay=1&amp;playsinline=1" target="rtvApartmentsGuideYt">[12:46]</a> 鈥?<strong>K盲lte managen:</strong> Feuertonne anz眉nden, um Erfrieren zu verhindern.</li>
+   <li><a href="https://www.youtube.com/embed/ttvN5s0cdBI?start=782&amp;autoplay=1&amp;playsinline=1" target="rtvApartmentsGuideYt">[13:02]</a> 鈥?<strong>H盲ndler:</strong> Treffen mit 鈥濼he Generalist鈥?鈥?Waffen gegen Medizin tauschen.</li>
   </ol>
-    <p><strong>Die Apartments in Road to Vostok zu überleben braucht methodisches CQB, striktes Kälte-Management mit Feuertonnen und den lokalen Händler „The Generalist“. High-Tier-Waffen wie VSS und AK-12 bekommst du vor allem durch das Ausschalten schwer bewaffneter Gegner und versteckte Militärkisten im Komplex.</strong></p>
+    <p><strong>Die Apartments in Road to Vostok zu 眉berleben braucht methodisches CQB, striktes K盲lte-Management mit Feuertonnen und den lokalen H盲ndler 鈥濼he Generalist鈥? High-Tier-Waffen wie VSS und AK-12 bekommst du vor allem durch das Ausschalten schwer bewaffneter Gegner und versteckte Milit盲rkisten im Komplex.</strong></p>
   <h2><strong>Layout &amp; taktisches Vorgehen</strong></h2>
-  <p>Dorthin kommst du, indem du die Grenzroute über <a href="/guides/surviving-the-Minefield">Minenfeld und Schützengräben</a> forcierst. Drinnen ist die Geometrie hoch und dicht. Nachtbewegung gibt massiven Vorteil gegen Patrouillen, braucht aber NVG. Die Map erzwingt Nahkampf (CQB). Wenn die Batterie leer ist oder du stockfinstere Treppenhäuser räumst, musst du auf Waffenlicht wechseln — du siehst Ziele, verrätst aber deine Position nach außen. Zimmer für Zimmer ist Pflicht; Dach-Scharfschützen halten Innenhöfe unter Feuer — Annäherungen mit der <a href="/map">interaktiven Karte</a> (Vostok-Pins) abgleichen.</p>
-  <p><img src="/images/guides/guides03-01.webp" alt="Apartment-Komplex: Übersichtskarte und Gebäude" width="50%" style="width: 50%;" /></p>
-  <h2><strong>Sichere Rastplätze</strong></h2>
-  <p>Kälte und Gefechte leeren deinen Charakter. Kleine Hütten und Zelte liegen am Rand. In der Haupt-Hütte liegt ein Schlafsack. Schlaf stellt Ausdauer und Status wieder her und gibt Kraft für weitere Razzien in die Hochhäuser. Dort gibt es auch eine Waffenwand zum Sortieren der Ausrüstung ohne vollen Rucksack.</p>
+  <p>Dorthin kommst du, indem du die Grenzroute 眉ber <a href="/guides/surviving-the-Minefield">Minenfeld und Sch眉tzengr盲ben</a> forcierst. Drinnen ist die Geometrie hoch und dicht. Nachtbewegung gibt massiven Vorteil gegen Patrouillen, braucht aber NVG. Die Map erzwingt Nahkampf (CQB). Wenn die Batterie leer ist oder du stockfinstere Treppenh盲user r盲umst, musst du auf Waffenlicht wechseln 鈥?du siehst Ziele, verr盲tst aber deine Position nach au脽en. Zimmer f眉r Zimmer ist Pflicht; Dach-Scharfsch眉tzen halten Innenh枚fe unter Feuer 鈥?Ann盲herungen mit der <a href="/map">interaktiven Karte</a> (Vostok-Pins) abgleichen.</p>
+  <p><img src="/images/guides/guides03-01.webp" alt="Apartment-Komplex: 脺bersichtskarte und Geb盲ude" width="50%" style="width: 50%;" /></p>
+  <h2><strong>Sichere Rastpl盲tze</strong></h2>
+  <p>K盲lte und Gefechte leeren deinen Charakter. Kleine H眉tten und Zelte liegen am Rand. In der Haupt-H眉tte liegt ein Schlafsack. Schlaf stellt Ausdauer und Status wieder her und gibt Kraft f眉r weitere Razzien in die Hochh盲user. Dort gibt es auch eine Waffenwand zum Sortieren der Ausr眉stung ohne vollen Rucksack.</p>
   <h2><strong>Loot, Kisten, Gegner-Drops</strong></h2>
-  <p>Ökonomie hier = Plündern + Kampf. Normale Räume: Zivil-Loot (Kühlschrank, Schränke). Die großen Preise: Militärkisten in oberen Stockwerken und Bädern. Schwer bewaffnete Banditen/Soldaten fallen lassen Endgame-Waffen wie AK-12, MP7, VSS, RK-95 — Werte in der <a href="/wiki/weapons">Wiki-Waffentabelle</a>. IFAKs und Schmerzmittel sind rar; oft in medizinischen Wandschränken oder auf Leichen.</p>
+  <p>脰konomie hier = Pl眉ndern + Kampf. Normale R盲ume: Zivil-Loot (K眉hlschrank, Schr盲nke). Die gro脽en Preise: Milit盲rkisten in oberen Stockwerken und B盲dern. Schwer bewaffnete Banditen/Soldaten fallen lassen Endgame-Waffen wie AK-12, MP7, VSS, RK-95 鈥?Werte in der <a href="/wiki/weapons">Wiki-Waffentabelle</a>. IFAKs und Schmerzmittel sind rar; oft in medizinischen Wandschr盲nken oder auf Leichen.</p>
   <p><img src="/images/guides/guides03-02.webp" alt="Apartments: Feuergefecht und Gegner-Loot" width="50%" style="width: 50%;" /></p>
-  <h3><strong>Loot-Überblick</strong></h3>
+  <h3><strong>Loot-脺berblick</strong></h3>
   <p><strong><a href="/wiki/weapons">Waffen</a></strong></p>
-  <p>AK-12, MP7, VSS, RK-95, Glock — Leichen, Waffenständer, Dach-Sniper-Drops</p>
+  <p>AK-12, MP7, VSS, RK-95, Glock 鈥?Leichen, Waffenst盲nder, Dach-Sniper-Drops</p>
   <p><strong><a href="/getting-started#medical">Medizin</a></strong></p>
-  <p>IFAK, Schmerzmittel, Verbände, Medkits — Wandschränke, Leichen, <a href="/wiki/npcs">Händler</a></p>
-  <p><strong><a href="/wiki/gathering">Survival-Ausrüstung</a></strong></p>
-  <p>Rationen, Schlafsäcke, Winterjacken — Möbel, Hütten</p>
-  <h2><strong>Kälte: Feuertonnen</strong></h2>
-  <p>Die Kälte frisst Kampffähigkeit. Brenntonnen an sicheren Stellen und in Höfen anzünden ist kein Luxus, sondern Überlebensmechanik, bevor du wieder in unbeheizte Betonblöcke gehst.</p>
-  <p><img src="/images/guides/guides03-03.webp" alt="Apartments: Feuertonne gegen Kälte im Außenbereich" width="50%" style="width: 50%;" /></p>
-  <h2><strong>„The Generalist“</strong></h2>
-  <p>In einem gesicherten Raum sitzt <a href="/wiki/npcs/generalist">The Generalist</a> (blaue Mütze, Brille). Du tauschst überzählige oder stark beschädigte Feind-Waffen gegen Medizin und Munition — Inventarplanung beim Schleppen ist Pflege deiner Gesundheit.</p>
+  <p>IFAK, Schmerzmittel, Verb盲nde, Medkits 鈥?Wandschr盲nke, Leichen, <a href="/wiki/npcs">H盲ndler</a></p>
+  <p><strong><a href="/wiki/gathering">Survival-Ausr眉stung</a></strong></p>
+  <p>Rationen, Schlafs盲cke, Winterjacken 鈥?M枚bel, H眉tten</p>
+  <h2><strong>K盲lte: Feuertonnen</strong></h2>
+  <p>Die K盲lte frisst Kampff盲higkeit. Brenntonnen an sicheren Stellen und in H枚fen anz眉nden ist kein Luxus, sondern 脺berlebensmechanik, bevor du wieder in unbeheizte Betonbl枚cke gehst.</p>
+  <p><img src="/images/guides/guides03-03.webp" alt="Apartments: Feuertonne gegen K盲lte im Au脽enbereich" width="50%" style="width: 50%;" /></p>
+  <h2><strong>鈥濼he Generalist鈥?/strong></h2>
+  <p>In einem gesicherten Raum sitzt <a href="/wiki/npcs/generalist">The Generalist</a> (blaue M眉tze, Brille). Du tauschst 眉berz盲hlige oder stark besch盲digte Feind-Waffen gegen Medizin und Munition 鈥?Inventarplanung beim Schleppen ist Pflege deiner Gesundheit.</p>
   <h2><strong>FAQ</strong></h2>
-  <h3><strong>Kann man überall in den Apartments schlafen?</strong></h3>
-  <p>Nein — nur an markierten Stellen wie dem Schlafsack in der sicheren Hütte.</p>
+  <h3><strong>Kann man 眉berall in den Apartments schlafen?</strong></h3>
+  <p>Nein 鈥?nur an markierten Stellen wie dem Schlafsack in der sicheren H眉tte.</p>
   <h3><strong>Wie bekomme ich VSS oder AK-12?</strong></h3>
-  <p>Vor allem von schwer bewaffneten NPCs und Dach-Scharfschützen, die den Komplex halten.</p>
+  <p>Vor allem von schwer bewaffneten NPCs und Dach-Scharfsch眉tzen, die den Komplex halten.</p>
   <h3><strong>Was tauscht der Generalist?</strong></h3>
-  <p>Überzählige oder kaputte Feind-Waffen gegen Überlebensmaterial, besonders Medizin und <a href="/wiki/ammunition">Munition</a> (Kaliber in der Wiki).</p>
+  <p>脺berz盲hlige oder kaputte Feind-Waffen gegen 脺berlebensmaterial, besonders Medizin und <a href="/wiki/ammunition">Munition</a> (Kaliber in der Wiki).</p>
     `,
   },
 
@@ -172,7 +172,7 @@ export default [
         "@context": "https://schema.org",
         "@type": "VideoObject",
         "name": "Road to Vostok Angeln: beste Spots &amp; Hecht",
-        "description": "Angel-Guide zu Road to Vostok: Unterwasser-Fischblöcke, empfohlene Spots, Rutenbedienung und Fang des Quest-Hechts mit Marktwerten.",
+        "description": "Angel-Guide zu Road to Vostok: Unterwasser-Fischbl枚cke, empfohlene Spots, Rutenbedienung und Fang des Quest-Hechts mit Marktwerten.",
         "uploadDate": "2024-01-01T00:00:00Z",
         "duration": "PT17M3S",
         "contentUrl": "https://www.youtube.com/watch?v=QVdZjWBqMH4",
@@ -181,21 +181,21 @@ export default [
         "hasPart": [
           {
             "@type": "Clip",
-            "name": "Erklärung der Unterwasser-Fischblöcke",
+            "name": "Erkl盲rung der Unterwasser-Fischbl枚cke",
             "startOffset": 235,
             "endOffset": 483,
             "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=235s"
           },
           {
             "@type": "Clip",
-            "name": "Angel-Spot am Entwässerungsrohr",
+            "name": "Angel-Spot am Entw盲sserungsrohr",
             "startOffset": 483,
             "endOffset": 750,
             "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=483s"
           },
           {
             "@type": "Clip",
-            "name": "Steg mit dem größten Fischblock",
+            "name": "Steg mit dem gr枚脽ten Fischblock",
             "startOffset": 750,
             "endOffset": 989,
             "url": "https://www.youtube.com/watch?v=QVdZjWBqMH4&t=750s"
@@ -211,44 +211,44 @@ export default [
       }
       </script>`,
     title: "Road to Vostok Angel-Guide: Spots, Ruten-Mechanik &amp; Hecht",
-    description: "Versteckte Unterwasser-Fischblöcke, beste Spots (Rohr, Steg), Rutenbedienung und Hecht für Quests — sicherster Cashflow im Permadeath-Run.",
+    description: "Versteckte Unterwasser-Fischbl枚cke, beste Spots (Rohr, Steg), Rutenbedienung und Hecht f眉r Quests 鈥?sicherster Cashflow im Permadeath-Run.",
     tags: ["Road to Vostok Angeln", "Hecht", "Spots", "Rute"],
     publishDate: "2026-03-30",
     imageUrl: "/images/guides/guides04.webp",
     imageAlt: "Road to Vostok Angeln",
     seo: {
       title: "Road to Vostok Angeln: Spots, Rute, Hecht &amp; Marktpreise",
-      description: "Angel-Ökonomie in RtV: Fischblöcke finden, Drainage-Rohr und Steg nutzen, Hecht farmen. Werte mit Wiki · Fishing abgleichen.",
-      keywords: "Road to Vostok Angeln, Hecht, Fischblöcke, Permadeath, Survival",
+      description: "Angel-脰konomie in RtV: Fischbl枚cke finden, Drainage-Rohr und Steg nutzen, Hecht farmen. Werte mit Wiki 路 Fishing abgleichen.",
+      keywords: "Road to Vostok Angeln, Hecht, Fischbl枚cke, Permadeath, Survival",
     },
     addressBar: "how-to-fish",
     detailsHtml: `
 <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/QVdZjWBqMH4" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<p>Keine Lust aufs ganze Video? Spring direkt zu den Markern (öffnet im Player oben zur richtigen Zeit):</p>
+<p>Keine Lust aufs ganze Video? Spring direkt zu den Markern (枚ffnet im Player oben zur richtigen Zeit):</p>
 <ol>
-<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=235&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[03:55]</a> — Mechanik der unsichtbaren Unterwasser-Fischblöcke</li>
-<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=483&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[08:03]</a> — Angel-Spot am Entwässerungsrohr</li>
-<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=750&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[12:30]</a> — Steg mit dem größten Fischblock</li>
-<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=989&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[16:29]</a> — Marktwerte (Hecht, Barsch usw.)</li>
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=235&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[03:55]</a> 鈥?Mechanik der unsichtbaren Unterwasser-Fischbl枚cke</li>
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=483&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[08:03]</a> 鈥?Angel-Spot am Entw盲sserungsrohr</li>
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=750&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[12:30]</a> 鈥?Steg mit dem gr枚脽ten Fischblock</li>
+<li><a href="https://www.youtube.com/embed/QVdZjWBqMH4?start=989&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">[16:29]</a> 鈥?Marktwerte (Hecht, Barsch usw.)</li>
 </ol>
 
-    <p>In Road to Vostok ist Angeln kein blindes Auswerfen: Du musst versteckte Unterwasser-<strong>Fischblöcke</strong> treffen. An Landmarken wie Entwässerungsrohr und Holzsteg vermeidest du Leerfänge und farmst zuverlässig Hecht für Quests — oft der sicherste Geldweg im Permadeath-Run. Ruten- und Fischzeilen für deinen Build: <a href="/wiki/fishing">Wiki · Angeln</a>.</p>
-  <p><img src="/images/guides/guides04-01.webp" alt="Angeln: Gameplay und Bedienoberfläche" width="50%"></p>
+    <p>In Road to Vostok ist Angeln kein blindes Auswerfen: Du musst versteckte Unterwasser-<strong>Fischbl枚cke</strong> treffen. An Landmarken wie Entw盲sserungsrohr und Holzsteg vermeidest du Leerf盲nge und farmst zuverl盲ssig Hecht f眉r Quests 鈥?oft der sicherste Geldweg im Permadeath-Run. Ruten- und Fischzeilen f眉r deinen Build: <a href="/wiki/fishing">Wiki 路 Angeln</a>.</p>
+  <p><img src="/images/guides/guides04-01.webp" alt="Angeln: Gameplay und Bedienoberfl盲che" width="50%"></p>
   <h2>Mechanik im Detail</h2>
-  <p>Unter der Wasseroberfläche liegen unsichtbare Blöcke — statische Spawn-Punkte. Nicht überall beißt etwas. Rote Trefferzonen; pro Block fixe Fischanzahl (mal nur 1–2, mal große Schwärme). Lange kein Biss = Block verfehlt. Profi-Trick: nach dem Wurf sofort umdrehen, Animation abbrechen, schnell einholen, neu aus einem anderen Winkel werfen statt in leerem Wasser zu warten.</p>
+  <p>Unter der Wasseroberfl盲che liegen unsichtbare Bl枚cke 鈥?statische Spawn-Punkte. Nicht 眉berall bei脽t etwas. Rote Trefferzonen; pro Block fixe Fischanzahl (mal nur 1鈥?, mal gro脽e Schw盲rme). Lange kein Biss = Block verfehlt. Profi-Trick: nach dem Wurf sofort umdrehen, Animation abbrechen, schnell einholen, neu aus einem anderen Winkel werfen statt in leerem Wasser zu warten.</p>
   <h2>Beste Spots</h2>
-  <p>Nach Tests in Permadeath-Runs — Ufer mit <a href="/map">Karte</a> abgleichen:</p>
+  <p>Nach Tests in Permadeath-Runs 鈥?Ufer mit <a href="/map">Karte</a> abgleichen:</p>
   <ol>
-  <li><strong>Baumkante:</strong> Über die Baumkrone zielen und werfen — hohe Trefferchance auf einen Block.</li>
-  <li><strong>Entwässerungsrohr:</strong> Auf dem Betonrohr stehen, Faden zwischen den Bojen ausrichten, Vollwurf.</li>
-  <li><strong>Steg:</strong> Am Ende des Holzstegs mit Klappstuhl, gerade zwischen zwei Bojen — größter Block der Karte, stabile Bissrate.</li>
+  <li><strong>Baumkante:</strong> 脺ber die Baumkrone zielen und werfen 鈥?hohe Trefferchance auf einen Block.</li>
+  <li><strong>Entw盲sserungsrohr:</strong> Auf dem Betonrohr stehen, Faden zwischen den Bojen ausrichten, Vollwurf.</li>
+  <li><strong>Steg:</strong> Am Ende des Holzstegs mit Klappstuhl, gerade zwischen zwei Bojen 鈥?gr枚脽ter Block der Karte, stabile Bissrate.</li>
   </ol>
   <p><img src="/images/guides/guides04-02.webp" alt="Angel-Spots am Ufer und Markierungen" width="50%"></p>
-  <h2>Rute ausrüsten &amp; werfen</h2>
-  <p>Primärwaffe ab, Angel in den ersten Waffenslot. Wurfweite und -winkel mit Maus; je höher das Fadenkreuz, desto weiter. Die Schnur driftet langsam zurück. Passiert sie einen Block mit Fisch, beißt automatisch — kein kompliziertes QTE, nur richtigen Block treffen und warten. Langwaffen-Stats: <a href="/wiki/weapons">Wiki-Waffen</a>.</p>
+  <h2>Rute ausr眉sten &amp; werfen</h2>
+  <p>Prim盲rwaffe ab, Angel in den ersten Waffenslot. Wurfweite und -winkel mit Maus; je h枚her das Fadenkreuz, desto weiter. Die Schnur driftet langsam zur眉ck. Passiert sie einen Block mit Fisch, bei脽t automatisch 鈥?kein kompliziertes QTE, nur richtigen Block treffen und warten. Langwaffen-Stats: <a href="/wiki/weapons">Wiki-Waffen</a>.</p>
   <h2>Hecht farmen</h2>
-  <p>Hecht = teuer und oft Pflicht für Tasks. Triffst du einen Block mit Hecht, beißt er garantiert, bis der Block leer ist. Tiefe Blöcke am Steg und an der Baumlinie sind besonders zuverlässig.</p>
+  <p>Hecht = teuer und oft Pflicht f眉r Tasks. Triffst du einen Block mit Hecht, bei脽t er garantiert, bis der Block leer ist. Tiefe Bl枚cke am Steg und an der Baumlinie sind besonders zuverl盲ssig.</p>
   <p><img src="/images/guides/guides04-03.webp" alt="Hecht als Fang und wertvoller Fisch" width="50%"></p>
   <h3>Marktwerte (Beispiel)</h3>
   <p><br>
@@ -287,11 +287,11 @@ export default [
   <h3>FAQ</h3>
   <ol>
   <li><strong>F: Respawnen Fische endlos?</strong></li>
-  <li><strong>A:</strong> Nein — pro Block fixe Anzahl; manchmal nur ein Fisch, dann ist der Block leer.</li>
+  <li><strong>A:</strong> Nein 鈥?pro Block fixe Anzahl; manchmal nur ein Fisch, dann ist der Block leer.</li>
   <li><strong>F: Wie merke ich, ob ich im Block war?</strong></li>
-  <li><strong>A:</strong> Schnur zieht ohne Biss komplett zurück = kein Block in der Bahn. Umdrehen, einholen, neu winkeln.</li>
+  <li><strong>A:</strong> Schnur zieht ohne Biss komplett zur眉ck = kein Block in der Bahn. Umdrehen, einholen, neu winkeln.</li>
   <li><strong>F: Wozu Hecht?</strong></li>
-  <li><strong>A:</strong> 250 $ beim Händler plus oft Pflicht-Lieferitem für wichtige Quests — im Lager behalten.</li>
+  <li><strong>A:</strong> 250 $ beim H盲ndler plus oft Pflicht-Lieferitem f眉r wichtige Quests 鈥?im Lager behalten.</li>
   </ol>`,
   },
 
@@ -301,7 +301,7 @@ export default [
       {
         "@context": "https://schema.org/",
         "@type": "VideoObject",
-        "name": "Road to Vostok Waffen: Schießstand-Showcase &amp; Werte",
+        "name": "Road to Vostok Waffen: Schie脽stand-Showcase &amp; Werte",
         "description": "Gameplay-Showcase aller Waffen in Road to Vostok: komplette Liste, Schaden und Penetration, beste Waffenwahl sowie Zustand und Reparatur im Hardcore-Survival.",
         "uploadDate": "2024-01-01T12:00:00Z",
         "duration": "PT5M52S",
@@ -318,14 +318,14 @@ export default [
           },
           {
             "@type": "Clip",
-            "name": "Repetierbüchsen mit hoher Penetration",
+            "name": "Repetierb眉chsen mit hoher Penetration",
             "startOffset": 128,
             "endOffset": 306,
             "url": "https://www.youtube.com/watch?v=R5721mXs4lY&t=128s"
           },
           {
             "@type": "Clip",
-            "name": "Top-Schaden &amp; legendäre Waffen",
+            "name": "Top-Schaden &amp; legend盲re Waffen",
             "startOffset": 306,
             "endOffset": 352,
             "url": "https://www.youtube.com/watch?v=R5721mXs4lY&t=306s"
@@ -335,38 +335,38 @@ export default [
       </script>`,
     title: "Road to Vostok Waffenliste: Alle Gewehre &amp; Meta-Guide",
     iframeUrl: "https://www.youtube.com/embed/R5721mXs4lY",
-    description: "Komplette Waffenübersicht: bestes Gear, Zustand &amp; Reparatur, Legendaries und Durchschlags-Levels — alles am Schießstand erklärt.",
+    description: "Komplette Waffen眉bersicht: bestes Gear, Zustand &amp; Reparatur, Legendaries und Durchschlags-Levels 鈥?alles am Schie脽stand erkl盲rt.",
     tags: ["Road to Vostok Waffen", "Liste", "Reparatur", "Meta"],
     publishDate: "2026-03-30",
     imageUrl: "/images/guides/guides05.webp",
     imageAlt: "Road to Vostok Waffen",
     seo: {
       title: "Road to Vostok Waffen: Liste, Stats &amp; beste Loadouts",
-      description: "Arsenal in RtV: Kaliber, Schaden, Penetration, Seltenheit, KP-31 &amp; M78. Tabellenzeilen im Wiki · Weapons.",
+      description: "Arsenal in RtV: Kaliber, Schaden, Penetration, Seltenheit, KP-31 &amp; M78. Tabellenzeilen im Wiki 路 Weapons.",
       keywords: "Road to Vostok Waffen, Liste, Legendary, Penetration, Reparatur",
     },
     addressBar: "weapons-list",
-    detailsHtml: `<p>Im Hardcore-Survival <strong>Road to Vostok</strong> baut das Waffensystem auf realistischen Stat-Blättern. Die Schießstand-Demo zeigt bis zu 20 Feuerwaffen für verschiedene Rollen — Kaliber, Basisschaden, Durchschlagslevel und Zustand pro Waffe. Wer Penetration nicht zur gegnerischen Rüstung matcht, stirbt schnell. Aktuelle Tabellenzeilen (Wert, Händlerpreis, Seltenheit): <a href="/wiki/weapons">Wiki · Waffen</a>.</p>
+    detailsHtml: `<p>Im Hardcore-Survival <strong>Road to Vostok</strong> baut das Waffensystem auf realistischen Stat-Bl盲ttern. Die Schie脽stand-Demo zeigt bis zu 20 Feuerwaffen f眉r verschiedene Rollen 鈥?Kaliber, Basisschaden, Durchschlagslevel und Zustand pro Waffe. Wer Penetration nicht zur gegnerischen R眉stung matcht, stirbt schnell. Aktuelle Tabellenzeilen (Wert, H盲ndlerpreis, Seltenheit): <a href="/wiki/weapons">Wiki 路 Waffen</a>.</p>
   <iframe name="rtvWeaponsGuideYt" src="https://www.youtube.com/embed/R5721mXs4lY" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <p>Kein Bock aufs volle Video? Zu den Markern:</p>
   <ol>
-  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=0&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[00:00]</a> — Makarov-Basiswerte &amp; Zustand (Condition)</li>
-  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=196&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[03:16]</a> — Legendäre KP-31 (SMG)</li>
-  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=337&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[05:37]</a> — M78 Vollauto, hoher Durchschlag</li>
+  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=0&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[00:00]</a> 鈥?Makarov-Basiswerte &amp; Zustand (Condition)</li>
+  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=196&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[03:16]</a> 鈥?Legend盲re KP-31 (SMG)</li>
+  <li><a href="https://www.youtube.com/embed/R5721mXs4lY?start=337&amp;autoplay=1&amp;playsinline=1" target="rtvWeaponsGuideYt">[05:37]</a> 鈥?M78 Vollauto, hoher Durchschlag</li>
   </ol>
   <h2>Waffenliste &amp; Seltenheitsstufen</h2>
-  <p>Die Demo zeigt strikte Zahlen (Gewicht, Kaliber, Wert, Schaden) und eine <strong>Seltenheit</strong> vom gängigen Common (Makarov) über Uncommon (AKM), Rare (MP7, SVD) bis <strong>Legendary</strong>.</p>
-  <p><img src="/images/guides/guides05-01.webp" alt="Waffen-Zustand (Condition) in der Benutzeroberfläche" width="50%"></p>
+  <p>Die Demo zeigt strikte Zahlen (Gewicht, Kaliber, Wert, Schaden) und eine <strong>Seltenheit</strong> vom g盲ngigen Common (Makarov) 眉ber Uncommon (AKM), Rare (MP7, SVD) bis <strong>Legendary</strong>.</p>
+  <p><img src="/images/guides/guides05-01.webp" alt="Waffen-Zustand (Condition) in der Benutzeroberfl盲che" width="50%"></p>
   <h2>Wartung: Condition &amp; Reparatur</h2>
-  <p>Im UI steht pro Waffe ein grüner Kernwert — <strong>Condition: 100 %</strong>. Die Demo zeigt keinen Werkbank-Screen, aber der Parameter belegt Verschleiß: sinkt er, drohen Ladehemmungen und Streuung — typisch Hardcore.</p>
+  <p>Im UI steht pro Waffe ein gr眉ner Kernwert 鈥?<strong>Condition: 100 %</strong>. Die Demo zeigt keinen Werkbank-Screen, aber der Parameter belegt Verschlei脽: sinkt er, drohen Ladehemmungen und Streuung 鈥?typisch Hardcore.</p>
   <h2>Meta: beste Waffen?</h2>
-  <p>Objektiv zählen hoher Einzelschaden oder extremes Rüstungsdurchdringen. Zwei Highlights aus dem Video:</p>
+  <p>Objektiv z盲hlen hoher Einzelschaden oder extremes R眉stungsdurchdringen. Zwei Highlights aus dem Video:</p>
   <ol>
-  <li><strong>KP-31</strong> (Legendary): nur Penetration Stufe 1, aber hohe Feuerrate und Trommelmag — Nahkampf-Suppression.</li>
-  <li><strong>M78</strong> (Legendary): Basisschaden 50, <strong>Penetration Stufe 4</strong> — Top gegen schwere Rüstung, neben SVD und Mosin.</li>
+  <li><strong>KP-31</strong> (Legendary): nur Penetration Stufe 1, aber hohe Feuerrate und Trommelmag 鈥?Nahkampf-Suppression.</li>
+  <li><strong>M78</strong> (Legendary): Basisschaden 50, <strong>Penetration Stufe 4</strong> 鈥?Top gegen schwere R眉stung, neben SVD und Mosin.</li>
   </ol>
-  <p><img src="/images/guides/guides05-02.webp" alt="Mosin-Nagant Repetierbüchse am Schießstand" width="50%"></p>
-  <h2>Übersicht nach Penetration (Demo)</h2>
+  <p><img src="/images/guides/guides05-02.webp" alt="Mosin-Nagant Repetierb眉chse am Schie脽stand" width="50%"></p>
+  <h2>脺bersicht nach Penetration (Demo)</h2>
   <table>
   <tbody>
   <tr>
@@ -419,41 +419,41 @@ export default [
   </tr>
   </tbody>
   </table>
-  <p><img src="/images/guides/guides05-03.webp" alt="MK18 und weitere Gewehre — Schießstand-Szene" width="50%"></p>
+  <p><img src="/images/guides/guides05-03.webp" alt="MK18 und weitere Gewehre 鈥?Schie脽stand-Szene" width="50%"></p>
   <h3>FAQ</h3>
   <p><strong>F1: Offizielle Tier-Liste?</strong></p>
-  <p><strong>A:</strong> Das Spiel nutzt die Seltenheitslabels der Demo als objektive Stufen — M78 und KP-31 sind dort klar Legendary.</p>
+  <p><strong>A:</strong> Das Spiel nutzt die Seltenheitslabels der Demo als objektive Stufen 鈥?M78 und KP-31 sind dort klar Legendary.</p>
   <p><strong>F2: Beeinflusst Zustand das Gameplay?</strong></p>
-  <p><strong>A:</strong> Condition 100 % in jedem Panel — klassisch Hardcore: Verschleiß, Reparatur oder Ersatzwaffen nötig.</p>
-  <p><strong>F3: Was gegen schwere Rüstung?</strong></p>
-  <p><strong>A:</strong> SVD, Mosin und M78 mit Penetration Stufe 4; M78 und SVD mit 50 Basisschaden — Top gegen Panzerung.</p>`,
+  <p><strong>A:</strong> Condition 100 % in jedem Panel 鈥?klassisch Hardcore: Verschlei脽, Reparatur oder Ersatzwaffen n枚tig.</p>
+  <p><strong>F3: Was gegen schwere R眉stung?</strong></p>
+  <p><strong>A:</strong> SVD, Mosin und M78 mit Penetration Stufe 4; M78 und SVD mit 50 Basisschaden 鈥?Top gegen Panzerung.</p>`,
   },
 
   {
     id: 6,
     title: "Nachladen in Road to Vostok: Flinten, Repetierer &amp; Magazin-Check",
-    description: "Exakte Abläufe für RM-870, Mosin und Magazin prüfen (V) — Community-getestet, ohne Arcade-Logik.",
+    description: "Exakte Abl盲ufe f眉r RM-870, Mosin und Magazin pr眉fen (V) 鈥?Community-getestet, ohne Arcade-Logik.",
     tags: ["Road to Vostok", "Nachladen", "RM-870", "Mosin"],
     publishDate: "2026-04-09",
     imageUrl: "/images/guides/guides06.webp",
-    imageAlt: "Road to Vostok: Nachladen von Schrotflinte und Repetierbüchse",
+    imageAlt: "Road to Vostok: Nachladen von Schrotflinte und Repetierb眉chse",
     seo: {
       title: "Road to Vostok Nachladen: Flinten, Waffen &amp; Magazine",
-      description: "Taktisches Nachladen: CTRL öffnet Verschluss, LMB lädt einzeln, R nach Schuss. Im Tutorial üben.",
+      description: "Taktisches Nachladen: CTRL 枚ffnet Verschluss, LMB l盲dt einzeln, R nach Schuss. Im Tutorial 眉ben.",
       keywords: "Road to Vostok reload, RM-870, Mosin, Magazin, V Taste, Hardcore",
     },
     addressBar: "reload-shotguns-bolt-actions-magazine-checks",
     detailsHtml: `
-  <p><strong>Vertrauenswürdigkeit:</strong> Dieser Guide basiert auf Community-Mechaniken und Feldtests (u. a. MasterDeBunker). Arcade-Logik gilt nicht — wie die Veteranen sagen: Wer in Panik das Nachladen vergisst, stirbt.</p>
+  <p><strong>Vertrauensw眉rdigkeit:</strong> Dieser Guide basiert auf Community-Mechaniken und Feldtests (u. a. MasterDeBunker). Arcade-Logik gilt nicht 鈥?wie die Veteranen sagen: Wer in Panik das Nachladen vergisst, stirbt.</p>
   <h2>Kernzyklus: der Nachlade-Loop
   </h2>
-  <p>Für <strong>alle vier Repetierer</strong> (und ähnliche manuelle Abläufe) gilt eine realistische Drei-Schritt-Schleife für echtes „Bolt-Action-Feeling“:</p>
+  <p>F眉r <strong>alle vier Repetierer</strong> (und 盲hnliche manuelle Abl盲ufe) gilt eine realistische Drei-Schritt-Schleife f眉r echtes 鈥濨olt-Action-Feeling鈥?</p>
   <ol>
-  <li>Verschluss öffnen: <strong>CTRL</strong> einmal — Bolzen zurück oder Verschluss offen.</li>
-  <li>Patronen einlegen: <strong>linke Maustaste (LMB)</strong> — ein Klick, eine Patrone.</li>
-  <li>Verschluss schließen: nochmals <strong>CTRL</strong> — Waffe schließen, Nachladen abgeschlossen.</li>
+  <li>Verschluss 枚ffnen: <strong>CTRL</strong> einmal 鈥?Bolzen zur眉ck oder Verschluss offen.</li>
+  <li>Patronen einlegen: <strong>linke Maustaste (LMB)</strong> 鈥?ein Klick, eine Patrone.</li>
+  <li>Verschluss schlie脽en: nochmals <strong>CTRL</strong> 鈥?Waffe schlie脽en, Nachladen abgeschlossen.</li>
   </ol>
-  <p><strong>Profihinweis:</strong> Zweimal checken — <strong>V</strong> zeigt, wie viel Munition im <strong>Magazin</strong> steckt.</p>
+  <p><strong>Profihinweis:</strong> Zweimal checken 鈥?<strong>V</strong> zeigt, wie viel Munition im <strong>Magazin</strong> steckt.</p>
   <h2>Waffen-spezifisch
   </h2>
   <p>Der Grundzyklus wirkt im Gefecht je nach Waffe unterschiedlich. Zwei Klassiker:</p>
@@ -463,173 +463,172 @@ export default [
   </p>
   <p>Ablauf Remington RM-870:</p>
   <ol>
-  <li>RM-870 ausrüsten.</li>
-  <li>CTRL einmal — Verschluss öffnen.</li>
-  <li>LMB — Patronen einzeln, bis zu 8 Schrot.</li>
-  <li>CTRL — Verschluss schließen.</li>
-  <li><strong>Nach jedem Schuss:</strong> <strong>R</strong> drücken, nächste Patrone einführen.</li>
+  <li>RM-870 ausr眉sten.</li>
+  <li>CTRL einmal 鈥?Verschluss 枚ffnen.</li>
+  <li>LMB 鈥?Patronen einzeln, bis zu 8 Schrot.</li>
+  <li>CTRL 鈥?Verschluss schlie脽en.</li>
+  <li><strong>Nach jedem Schuss:</strong> <strong>R</strong> dr眉cken, n盲chste Patrone einf眉hren.</li>
   </ol>
   <h3>Mosin-Nagant
   </h3>
-  <p>„Ich hab gerade geschossen und kann nichts mehr tun“
-  </p>
+  <p>鈥濱ch hab gerade geschossen und kann nichts mehr tun鈥?  </p>
   <p><img src="/images/guides/guides06-02.webp" alt="Mosin-Nagant: Nachladevorgang" width="50%">
   </p>
   <p>Ruhig bleiben:</p>
   <ol>
-  <li>Mosin ausrüsten.</li>
-  <li>CTRL — Bolzen zurück.</li>
-  <li>LMB — bis zu 5 Patronen ins Innenmagazin.</li>
-  <li>CTRL — Bolzen vor.</li>
-  <li><strong>Nach dem Schuss:</strong> <strong>R</strong> — nächste Patrone einführen.</li>
+  <li>Mosin ausr眉sten.</li>
+  <li>CTRL 鈥?Bolzen zur眉ck.</li>
+  <li>LMB 鈥?bis zu 5 Patronen ins Innenmagazin.</li>
+  <li>CTRL 鈥?Bolzen vor.</li>
+  <li><strong>Nach dem Schuss:</strong> <strong>R</strong> 鈥?n盲chste Patrone einf眉hren.</li>
   </ol>
-  <h2>Magazin prüfen &amp; Pistolen
+  <h2>Magazin pr眉fen &amp; Pistolen
   </h2>
   <h3>Magazin-Check
   </h3>
-  <p>Bei Innenmagazinen (z. B. Mosin 5 Schuss) lädst du wie oben mit LMB einzeln. Immer <strong>V</strong> nutzen, um den Füllstand zu kennen — ohne das riskierst du leere Klicks im Feuergefecht.</p>
+  <p>Bei Innenmagazinen (z. B. Mosin 5 Schuss) l盲dst du wie oben mit LMB einzeln. Immer <strong>V</strong> nutzen, um den F眉llstand zu kennen 鈥?ohne das riskierst du leere Klicks im Feuergefecht.</p>
   <h3>Pistolen
   </h3>
-  <p>Pistolen sind oft einfacher; gilt aber dasselbe Prinzip — Zweifel an der Waffe? Im <strong>Tutorial</strong> ausprobieren, bis der Muskel sitzt.</p>
-  <p>Controls dort sicher beherrschen — dann raus plündern und schießen (ohne Garantie auf Überleben).</p>`,
+  <p>Pistolen sind oft einfacher; gilt aber dasselbe Prinzip 鈥?Zweifel an der Waffe? Im <strong>Tutorial</strong> ausprobieren, bis der Muskel sitzt.</p>
+  <p>Controls dort sicher beherrschen 鈥?dann raus pl眉ndern und schie脽en (ohne Garantie auf 脺berleben).</p>`,
   },
 
   {
     id: 7,
     title: "Road to Vostok Katzen-Guide: Shelter-Begleiter finden &amp; versorgen",
-    description: "Quest „Katze finden“ auslösen, Bunker-Katzen lokalisieren, Kiste (3×5) transportieren — Routen, Vorräte und Community-Hinweise.",
+    description: "Quest 鈥濳atze finden鈥?ausl枚sen, Bunker-Katzen lokalisieren, Kiste (3脳5) transportieren 鈥?Routen, Vorr盲te und Community-Hinweise.",
     tags: ["Road to Vostok", "Katze", "Shelter", "Quest"],
     publishDate: "2026-04-09",
     imageUrl: "/images/guides/guides07.webp",
-    imageAlt: "Schwarze Katze im Karton — Shelter-Begleiter in Road to Vostok",
+    imageAlt: "Schwarze Katze im Karton 鈥?Shelter-Begleiter in Road to Vostok",
     seo: {
       title: "Road to Vostok Katze: Finden &amp; im Shelter halten",
-      description: "Fehlende Katze ab Tag 4, Route Dorf–Schule–Außenposten, Mental-Stats, Inventarplanung — alles in einem Durchlauf.",
+      description: "Fehlende Katze ab Tag 4, Route Dorf鈥揝chule鈥揂u脽enposten, Mental-Stats, Inventarplanung 鈥?alles in einem Durchlauf.",
       keywords: "road to vostok katze, shelter begleiter, quest, bunker, survival tipps",
     },
     addressBar: "cat-guide-find-care-shelter-companion",
     detailsHtml: `
-  <p><strong>Vertrauenswürdigkeit:</strong> Basierend auf Community-Feldtests — exakte Routen, Vorräte und Korrekturen, damit du die Reise überlebst.</p>
-  <h2>Vorbereitung &amp; „vermisste Katze“-Event</h2>
-  <p>Eine <strong>Katze</strong> zu bekommen ist anspruchsvoller als es klingt: In einem Durchgang fünfmal die Karte wechseln (Dorf → Schule → Außenposten → Schule → Dorf). Jeder Transfer kostet Flüssigkeit und Energie.</p>
+  <p><strong>Vertrauensw眉rdigkeit:</strong> Basierend auf Community-Feldtests 鈥?exakte Routen, Vorr盲te und Korrekturen, damit du die Reise 眉berlebst.</p>
+  <h2>Vorbereitung &amp; 鈥瀡ermisste Katze鈥?Event</h2>
+  <p>Eine <strong>Katze</strong> zu bekommen ist anspruchsvoller als es klingt: In einem Durchgang f眉nfmal die Karte wechseln (Dorf 鈫?Schule 鈫?Au脽enposten 鈫?Schule 鈫?Dorf). Jeder Transfer kostet Fl眉ssigkeit und Energie.</p>
   <p><strong>Voraussetzungen</strong></p>
   <ol>
-  <li><strong>Trigger:</strong> Das Event ist ab <strong>Tag 4</strong> verfügbar. Schlaf im Bett, um Zeit zu überspringen.</li>
+  <li><strong>Trigger:</strong> Das Event ist ab <strong>Tag 4</strong> verf眉gbar. Schlaf im Bett, um Zeit zu 眉berspringen.</li>
   </ol>
-  <p><img src="/images/guides/guides07-01.webp" alt="Ereignis „vermisste Katze“ — Hinweis im Spiel" width="50%"></p>
+  <p><img src="/images/guides/guides07-01.webp" alt="Ereignis 鈥瀡ermisste Katze鈥?鈥?Hinweis im Spiel" width="50%"></p>
   <ol start="2">
-  <li><strong>Vorräte:</strong> Essen und Heilung mitnehmen. Beim Generalist Konsumgüter kaufen, die den <strong>Mental</strong>-Wert füllen — der ist am schwersten wiederherzustellen.</li>
-  <li><strong>Inventar:</strong> Die Transportbox braucht <strong>3×5</strong> Slots — vorher freimachen.</li>
-  <li><strong>Ein Rutsch:</strong> Gesamte Route ohne Spielende (außer im Safehouse), sonst zählt es wie Tod und du startest neu.</li>
+  <li><strong>Vorr盲te:</strong> Essen und Heilung mitnehmen. Beim Generalist Konsumg眉ter kaufen, die den <strong>Mental</strong>-Wert f眉llen 鈥?der ist am schwersten wiederherzustellen.</li>
+  <li><strong>Inventar:</strong> Die Transportbox braucht <strong>3脳5</strong> Slots 鈥?vorher freimachen.</li>
+  <li><strong>Ein Rutsch:</strong> Gesamte Route ohne Spielende (au脽er im Safehouse), sonst z盲hlt es wie Tod und du startest neu.</li>
   </ol>
   <h2>Route zum Bunker</h2>
-  <p><img src="/images/guides/guides07-02.webp" alt="Routenkarte für die Katzen-Quest" width="50%"></p>
-  <h3>Schritt 1: Dorf → Schule</h3>
-  <p>Nach Einkauf beim Generalist rechts am See entlang bis zur Straße, rechts weiter bis zum Transfer zur Schule.</p>
-  <p>In der Schule geradeaus über die Brücke. Links ein großes gelbes Gebäude — oben der <strong>Arzt</strong>-NPC. Achtung: Startsteuer oft 200 %. Splints und Schmerzmittel kaufen, wenn möglich.</p>
-  <h3>Schritt 2: Schule → Außenposten</h3>
-  <p>Gebäude verlassen, Hauptstraße an Bushaltestelle und Auto vorbei (Fahrersitz auf seltenen Loot prüfen) bis zum Transfer Außenposten.</p>
-  <p><strong>Warnung:</strong> Außenposten ist sehr offen; KI hat präzises Zielen — extrem vorsichtig.</p>
+  <p><img src="/images/guides/guides07-02.webp" alt="Routenkarte f眉r die Katzen-Quest" width="50%"></p>
+  <h3>Schritt 1: Dorf 鈫?Schule</h3>
+  <p>Nach Einkauf beim Generalist rechts am See entlang bis zur Stra脽e, rechts weiter bis zum Transfer zur Schule.</p>
+  <p>In der Schule geradeaus 眉ber die Br眉cke. Links ein gro脽es gelbes Geb盲ude 鈥?oben der <strong>Arzt</strong>-NPC. Achtung: Startsteuer oft 200 %. Splints und Schmerzmittel kaufen, wenn m枚glich.</p>
+  <h3>Schritt 2: Schule 鈫?Au脽enposten</h3>
+  <p>Geb盲ude verlassen, Hauptstra脽e an Bushaltestelle und Auto vorbei (Fahrersitz auf seltenen Loot pr眉fen) bis zum Transfer Au脽enposten.</p>
+  <p><strong>Warnung:</strong> Au脽enposten ist sehr offen; KI hat pr盲zises Zielen 鈥?extrem vorsichtig.</p>
   <h3>Schritt 3: Katze im Bunker</h3>
   <p>Der Bunker ist der kritischste Teil:</p>
-  <p><img src="/images/guides/guides07-03.webp" alt="Außenposten-Karte und Bunkerumgebung" width="50%"></p>
+  <p><img src="/images/guides/guides07-03.webp" alt="Au脽enposten-Karte und Bunkerumgebung" width="50%"></p>
   <ol>
-  <li><strong>Bunker finden:</strong> Nach Spawn am Außenposten rechts an der Karte entlang, kleiner Hügel mit Eingang.</li>
-  <li><strong>Hören:</strong> Drinnen solltest du Miauen hören.</li>
-  <li><strong>Brunnen:</strong> Links ein Raum mit kleinem Brunnen, Bretter darüber — unten schwarze Katze in Karton.</li>
-  <li><strong>Rettung:</strong> Brunnen interagieren, <strong>3×5 Cat Box</strong> ins Inventar.</li>
+  <li><strong>Bunker finden:</strong> Nach Spawn am Au脽enposten rechts an der Karte entlang, kleiner H眉gel mit Eingang.</li>
+  <li><strong>H枚ren:</strong> Drinnen solltest du Miauen h枚ren.</li>
+  <li><strong>Brunnen:</strong> Links ein Raum mit kleinem Brunnen, Bretter dar眉ber 鈥?unten schwarze Katze in Karton.</li>
+  <li><strong>Rettung:</strong> Brunnen interagieren, <strong>3脳5 Cat Box</strong> ins Inventar.</li>
   </ol>
-  <p><img src="/images/guides/guides07-04.webp" alt="Transportbox für die Katze (Cat Box)" width="50%"></p>
-  <p><strong>Community-Hinweis:</strong> Laut Spielern wie GoyimSlayer2599 ist der Spawn <strong>nicht fix</strong> — eine von <strong>drei</strong> Bunkern-Varianten am Außenposten. Bunker 1 liegt am nächsten zum Spawn. Nicht gefunden? Die anderen beiden gründlich prüfen.</p>
-  <h2>Zurück &amp; Shelter-Katze</h2>
-  <p>Die Hälfte ist geschafft — jetzt sicher heim:</p>
-  <h3>Rückweg</h3>
+  <p><img src="/images/guides/guides07-04.webp" alt="Transportbox f眉r die Katze (Cat Box)" width="50%"></p>
+  <p><strong>Community-Hinweis:</strong> Laut Spielern wie GoyimSlayer2599 ist der Spawn <strong>nicht fix</strong> 鈥?eine von <strong>drei</strong> Bunkern-Varianten am Au脽enposten. Bunker 1 liegt am n盲chsten zum Spawn. Nicht gefunden? Die anderen beiden gr眉ndlich pr眉fen.</p>
+  <h2>Zur眉ck &amp; Shelter-Katze</h2>
+  <p>Die H盲lfte ist geschafft 鈥?jetzt sicher heim:</p>
+  <h3>R眉ckweg</h3>
   <ol>
-  <li>Kein Teleport: denselben Weg zurück (Außenposten → Schule → Dorf). Links an der Kante zur Schule-Transfer.</li>
-  <li><strong>Stirbst du, ist die Katze weg — alles von vorn.</strong></li>
-  <li><strong>Platzieren:</strong> In der Hütte die Box aus dem Inventar <strong>platzieren</strong> (nicht fallen lassen!). Kurz warten — Box öffnet sich, Katze gehört dir.</li>
+  <li>Kein Teleport: denselben Weg zur眉ck (Au脽enposten 鈫?Schule 鈫?Dorf). Links an der Kante zur Schule-Transfer.</li>
+  <li><strong>Stirbst du, ist die Katze weg 鈥?alles von vorn.</strong></li>
+  <li><strong>Platzieren:</strong> In der H眉tte die Box aus dem Inventar <strong>platzieren</strong> (nicht fallen lassen!). Kurz warten 鈥?Box 枚ffnet sich, Katze geh枚rt dir.</li>
   </ol>
-  <h3>Füttern &amp; Interaktion</h3>
+  <h3>F眉ttern &amp; Interaktion</h3>
   <ol>
-  <li><strong>Rhythmus:</strong> Mindestens alle <strong>36 Stunden</strong> füttern.</li>
-  <li><strong>Futter:</strong> Nur Katzenfutter, Thunfisch, Fleisch, Barsch — muss nicht im Rucksack liegen, reicht irgendwo in der Hütte.</li>
-  <li><strong>Streicheln:</strong> Im aktuellen Stand oft nicht möglich.</li>
+  <li><strong>Rhythmus:</strong> Mindestens alle <strong>36 Stunden</strong> f眉ttern.</li>
+  <li><strong>Futter:</strong> Nur Katzenfutter, Thunfisch, Fleisch, Barsch 鈥?muss nicht im Rucksack liegen, reicht irgendwo in der H眉tte.</li>
+  <li><strong>Streicheln:</strong> Im aktuellen Stand oft nicht m枚glich.</li>
   </ol>
   <h2>Survival-Tipps</h2>
   <ol>
-  <li><strong>Splints:</strong> Brüche sind häufig — normale Splints mitnehmen. <strong>Keine improvisierten Splints</strong> — bugged, tun derzeit nichts.</li>
-  <li><strong>Loot-Reset:</strong> Beim erneuten Betreten einer Karte respawnt alles. Boden-Loot bleibt nicht liegen — nur im Safehouse dauerhaft.</li>
-  <li><strong>Zelt-Safehouse Außenposten:</strong> Falls du dich ausloggen musst: Zelt links an der Kartenkante (laut Spieler „Half Burnt Toast“).</li>
-  <li><strong>Spawns:</strong> Paranoia — Gegner spawnen hinter dir, auch in gerade geräumten Zonen.</li>
+  <li><strong>Splints:</strong> Br眉che sind h盲ufig 鈥?normale Splints mitnehmen. <strong>Keine improvisierten Splints</strong> 鈥?bugged, tun derzeit nichts.</li>
+  <li><strong>Loot-Reset:</strong> Beim erneuten Betreten einer Karte respawnt alles. Boden-Loot bleibt nicht liegen 鈥?nur im Safehouse dauerhaft.</li>
+  <li><strong>Zelt-Safehouse Au脽enposten:</strong> Falls du dich ausloggen musst: Zelt links an der Kartenkante (laut Spieler 鈥濰alf Burnt Toast鈥?.</li>
+  <li><strong>Spawns:</strong> Paranoia 鈥?Gegner spawnen hinter dir, auch in gerade ger盲umten Zonen.</li>
   </ol>`,
   },
 
   {
     id: 8,
-    title: "Road to Vostok Shelter-Standorte: Vollständige Karte &amp; Freischalt-Guide",
-    description: "Alle Shelter in Road to Vostok — Zelt, Bunker, Schule u. a. So bekommst du den Klassenzimmer-Schlüssel und nutzt unsere interaktive Karte fürs Überleben.",
-    tags: ["Road to Vostok", "Shelter", "Karte", "Schlüssel"],
+    title: "Road to Vostok Shelter-Standorte: Vollst盲ndige Karte &amp; Freischalt-Guide",
+    description: "Alle Shelter in Road to Vostok 鈥?Zelt, Bunker, Schule u. a. So bekommst du den Klassenzimmer-Schl眉ssel und nutzt unsere interaktive Karte f眉rs 脺berleben.",
+    tags: ["Road to Vostok", "Shelter", "Karte", "Schl眉ssel"],
     publishDate: "2026-04-14",
     imageUrl: "/images/guides/guides08.webp",
     imageAlt: "Road to Vostok Shelter",
     seo: {
-      title: "Road to Vostok Shelter-Standorte: Vollständige Karte &amp; Freischalt-Guide",
-      description: "Alle Shelter-Standorte, Zelt- und Bunker-Infos, Schule, Klassenzimmer-Schlüssel und interaktive Karte für effizientes Looten.",
-      keywords: "road to vostok shelter, shelter standorte, zelt shelter, karte, bunker, schule shelter, katze, klassenzimmer schlüssel",
+      title: "Road to Vostok Shelter-Standorte: Vollst盲ndige Karte &amp; Freischalt-Guide",
+      description: "Alle Shelter-Standorte, Zelt- und Bunker-Infos, Schule, Klassenzimmer-Schl眉ssel und interaktive Karte f眉r effizientes Looten.",
+      keywords: "road to vostok shelter, shelter standorte, zelt shelter, karte, bunker, schule shelter, katze, klassenzimmer schl眉ssel",
     },
     addressBar: "road-to-vostok-shelter-locations",
     detailsHtml: `
-  <p>In der Hardcore-Welt von <strong>Road to Vostok</strong> ist ein Shelter deine einzige wirklich sichere Zone zum Lagern, Regenerieren und Überleben. Ob Early-Game-Stash oder Endgame-Waffenkammer — exakte Orte und Mechaniken zu kennen ist Pflicht.</p>
-  <p>Dieser Guide fasst alle bekannten Shelter, Schlüssel-Wege und wichtige Management-Mechaniken auf Basis verifizierter Community-Infos zusammen.</p>
+  <p>In der Hardcore-Welt von <strong>Road to Vostok</strong> ist ein Shelter deine einzige wirklich sichere Zone zum Lagern, Regenerieren und 脺berleben. Ob Early-Game-Stash oder Endgame-Waffenkammer 鈥?exakte Orte und Mechaniken zu kennen ist Pflicht.</p>
+  <p>Dieser Guide fasst alle bekannten Shelter, Schl眉ssel-Wege und wichtige Management-Mechaniken auf Basis verifizierter Community-Infos zusammen.</p>
   <h2>Kern-Intel: Shelter-Kategorien</h2>
-  <p>Shelter sind <strong>von Anfang an frei</strong> oder <strong>über Quests/Schlüssel</strong> — das Beherrschen der Standorte steigert deine Effizenz über alle Karten.</p>
+  <p>Shelter sind <strong>von Anfang an frei</strong> oder <strong>眉ber Quests/Schl眉ssel</strong> 鈥?das Beherrschen der Standorte steigert deine Effizenz 眉ber alle Karten.</p>
   <h3>Start-Shelter</h3>
-  <p>Neue Spieler können sofort nutzen:</p>
+  <p>Neue Spieler k枚nnen sofort nutzen:</p>
   <ol>
-  <li><strong>Hütten-Shelter:</strong> auf der <strong>Dorf</strong>-Karte — dein erstes Shelter; kompakt, aber essenziell fürs Anfangslager.</li>
-  <li><strong>Zelt-Shelter:</strong> ebenfalls sofort nutzbar auf der <strong>Außenposten</strong>-Karte — links vom Einstieg aus der Schule (Tal gegenüber der großen roten Scheune).</li>
+  <li><strong>H眉tten-Shelter:</strong> auf der <strong>Dorf</strong>-Karte 鈥?dein erstes Shelter; kompakt, aber essenziell f眉rs Anfangslager.</li>
+  <li><strong>Zelt-Shelter:</strong> ebenfalls sofort nutzbar auf der <strong>Au脽enposten</strong>-Karte 鈥?links vom Einstieg aus der Schule (Tal gegen眉ber der gro脽en roten Scheune).</li>
   </ol>
-  <p><img src="/images/guides/guides08-01.webp" alt="Dorf-Hütte und Dachboden-Shelter" width="50%"></p>
+  <p><img src="/images/guides/guides08-01.webp" alt="Dorf-H眉tte und Dachboden-Shelter" width="50%"></p>
   <h3>Freischaltbare Shelter &amp; Stash-Punkte</h3>
   <p>Weitere hochwertige Zonen brauchen Voraussetzungen:</p>
   <ol>
-  <li><strong>Bunker-Shelter:</strong> großes Top-Tier-Shelter auf dem Außenposten. Freischaltung anspruchsvoll: gut ausrüsten, den <strong>„Punisher“</strong> besiegen, Hut nehmen, am Außenposten die Aufgabe des Waffenhändlers erledigen.</li>
+  <li><strong>Bunker-Shelter:</strong> gro脽es Top-Tier-Shelter auf dem Au脽enposten. Freischaltung anspruchsvoll: gut ausr眉sten, den <strong>鈥濸unisher鈥?/strong> besiegen, Hut nehmen, am Au脽enposten die Aufgabe des Waffenh盲ndlers erledigen.</li>
   </ol>
-  <p><img src="/images/guides/guides08-02.webp" alt="Außenposten Zelt und Bunker" width="50%"></p>
+  <p><img src="/images/guides/guides08-02.webp" alt="Au脽enposten Zelt und Bunker" width="50%"></p>
   <ol>
-  <li><strong>Schul-Shelter (Klassenzimmer):</strong> auf der <strong>Schul</strong>-Karte — verschlossenes Klassenzimmer, Zugang nur mit <strong>physischem Schlüssel</strong>.</li>
+  <li><strong>Schul-Shelter (Klassenzimmer):</strong> auf der <strong>Schul</strong>-Karte 鈥?verschlossenes Klassenzimmer, Zugang nur mit <strong>physischem Schl眉ssel</strong>.</li>
   </ol>
   <p><img src="/images/guides/guides08-03.webp" alt="Schul-Klassenzimmer-Shelter" width="50%"></p>
   <ol>
-  <li><strong>Dachboden-Shelter:</strong> mehr Platz als die Starthütte. Schlüssel über die <strong>letzte Händler-Quest</strong>.</li>
+  <li><strong>Dachboden-Shelter:</strong> mehr Platz als die Starth眉tte. Schl眉ssel 眉ber die <strong>letzte H盲ndler-Quest</strong>.</li>
   </ol>
   <p><br></p>
-  <p>!!! <strong>Highway-Tunnel-Stash:</strong> versteckt in einem Tunnel auf der <strong>Highway</strong>-Karte — eher ein verschlossener <strong>Stash</strong> als ein volles Shelter, braucht aber ebenfalls einen speziellen Schlüssel.</p>
-  <h2>Klassenzimmer-Schlüssel &amp; andere Schlüssel</h2>
-  <p>Klassenzimmer, Dachboden und Highway-Tunnel sind gesperrt. Zuverlässige Wege:</p>
+  <p>!!! <strong>Highway-Tunnel-Stash:</strong> versteckt in einem Tunnel auf der <strong>Highway</strong>-Karte 鈥?eher ein verschlossener <strong>Stash</strong> als ein volles Shelter, braucht aber ebenfalls einen speziellen Schl眉ssel.</p>
+  <h2>Klassenzimmer-Schl眉ssel &amp; andere Schl眉ssel</h2>
+  <p>Klassenzimmer, Dachboden und Highway-Tunnel sind gesperrt. Zuverl盲ssige Wege:</p>
   <ol>
-  <li><strong>Händler-Quests:</strong> Questlines voranbringen — z. B. Dachboden-Schlüssel nach der finalen Händler-Quest.</li>
-  <li><strong>Loot in Hotspots:</strong> Schlüssel in Hochwert-Zonen; bestätigt u. a. <strong>Sporthalle</strong> auf der Schulkarte, teils tief in <strong>Vostok</strong> im Endgame.</li>
+  <li><strong>H盲ndler-Quests:</strong> Questlines voranbringen 鈥?z. B. Dachboden-Schl眉ssel nach der finalen H盲ndler-Quest.</li>
+  <li><strong>Loot in Hotspots:</strong> Schl眉ssel in Hochwert-Zonen; best盲tigt u. a. <strong>Sporthalle</strong> auf der Schulkarte, teils tief in <strong>Vostok</strong> im Endgame.</li>
   </ol>
-  <p><img src="/images/guides/guides08-04.webp" alt="Road to Vostok Schlüssel" width="50%"></p>
+  <p><img src="/images/guides/guides08-04.webp" alt="Road to Vostok Schl眉ssel" width="50%"></p>
   <h2>Shelter-Management &amp; Survival</h2>
-  <p>Den Ort finden reicht nicht — baue eine effiziente Logistikbasis.</p>
+  <p>Den Ort finden reicht nicht 鈥?baue eine effiziente Logistikbasis.</p>
   <h3>1. F1 Platzierungs-System</h3>
-  <p>Container und Möbel bei Händlern kaufen (<strong>Arzt</strong> für Regale empfehlenswert). Im Shelter:</p>
+  <p>Container und M枚bel bei H盲ndlern kaufen (<strong>Arzt</strong> f眉r Regale empfehlenswert). Im Shelter:</p>
   <ol>
-  <li><strong>F1</strong> für Platzierungsmodus.</li>
+  <li><strong>F1</strong> f眉r Platzierungsmodus.</li>
   <li>Maus zum Setzen, Mausrad + Rechtsklick zum Drehen.</li>
   </ol>
   <h3>2. Mental-Regeneration</h3>
   <p>Versteckter Mental-Wert: Nach Gefechten schnell regenerieren, indem du am <strong>Feuer im Shelter</strong> stehst.</p>
   <h3>3. Item-Verlust minimieren</h3>
-  <p>Hardcore-Tipp: droht Tod durch Blutung/Krankheit <strong>im Shelter</strong>, lege Wertvolles <strong>auf den Boden</strong>, bevor du stirbst — reduziert Verlust von Ausrüstung (je nach Patch).</p>
+  <p>Hardcore-Tipp: droht Tod durch Blutung/Krankheit <strong>im Shelter</strong>, lege Wertvolles <strong>auf den Boden</strong>, bevor du stirbst 鈥?reduziert Verlust von Ausr眉stung (je nach Patch).</p>
   <h2>Mit der interaktiven Karte navigieren</h2>
-  <p>Kartenverbindungen sind entscheidend — z. B. gerade durch die Schule zum Außenposten.</p>
-  <p>Für Routenplanung empfehlen wir unsere interaktive <a href="https://roadtovostok.org/map">Road-to-Vostok-Karte</a> — Schlüssel, Loot-Hotspots und sichere Wege zum Bunker.</p>
+  <p>Kartenverbindungen sind entscheidend 鈥?z. B. gerade durch die Schule zum Au脽enposten.</p>
+  <p>F眉r Routenplanung empfehlen wir unsere interaktive <a href="https://roadtovostok.org/map">Road-to-Vostok-Karte</a> 鈥?Schl眉ssel, Loot-Hotspots und sichere Wege zum Bunker.</p>
   <h2>Community-Mods: Katze &amp; QoL</h2>
   <ol>
-  <li><strong>Immortal Cat / Shelter-Katze:</strong> Mods, damit die Katze nicht stirbt — weniger Mikromanagement.</li>
+  <li><strong>Immortal Cat / Shelter-Katze:</strong> Mods, damit die Katze nicht stirbt 鈥?weniger Mikromanagement.</li>
   <li><strong>Kein Hunger/Durst im Shelter:</strong> ideal zum Sortieren und Regale bauen ohne Rationen zu verbrennen.</li>
   </ol>
   <p>(Mehr Guides und Updates: <a href="http://roadtovostok.org/">https://roadtovostok.org/</a>)</p>`,
@@ -642,7 +641,7 @@ export default [
         "@context": "https://schema.org",
         "@type": "VideoObject",
         "name": "Road to Vostok The Punisher-Guide: Spawns, Karten &amp; Kampf",
-        "description": "Hardcore-Leitfaden: The Punisher finden, spawnen und besiegen — inkl. Modding für ~100 % Spawnrate, beste Karte (Außenposten) und Taktik für die Flame Beanie.",
+        "description": "Hardcore-Leitfaden: The Punisher finden, spawnen und besiegen 鈥?inkl. Modding f眉r ~100 % Spawnrate, beste Karte (Au脽enposten) und Taktik f眉r die Flame Beanie.",
         "uploadDate": "2024-05-20T08:00:00+08:00",
         "duration": "PT13M0S",
         "thumbnailUrl": "https://img.youtube.com/vi/o3Hwsuv4fk4/maxresdefault.jpg",
@@ -650,13 +649,13 @@ export default [
         "hasPart": [
           {
             "@type": "Clip",
-            "name": "Modding für ~100 % Spawnrate",
+            "name": "Modding f眉r ~100 % Spawnrate",
             "startOffset": 161,
             "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=161s"
           },
           {
             "@type": "Clip",
-            "name": "Beste Karte: Außenposten",
+            "name": "Beste Karte: Au脽enposten",
             "startOffset": 347,
             "url": "https://www.youtube.com/watch?v=o3Hwsuv4fk4&t=347s"
           },
@@ -671,44 +670,44 @@ export default [
       </script>`,
     title: "Road to Vostok The Punisher-Guide: Spawns, Karten &amp; Kampf",
     iframeUrl: "https://www.youtube.com/embed/o3Hwsuv4fk4",
-    description: "Hardcore-Leitfaden: The Punisher finden, spawnen und besiegen — inkl. Modding für ~100 % Spawnrate, beste Karte (Außenposten) und Taktik für die Flame Beanie.",
+    description: "Hardcore-Leitfaden: The Punisher finden, spawnen und besiegen 鈥?inkl. Modding f眉r ~100 % Spawnrate, beste Karte (Au脽enposten) und Taktik f眉r die Flame Beanie.",
     tags: ["Road to Vostok", "The Punisher"],
     publishDate: "2026-04-20",
     imageUrl: "/images/guides/guides09.webp",
     imageAlt: "Road to Vostok The Punisher Guide",
     seo: {
       title: "Road to Vostok The Punisher-Guide: Spawns, Karten &amp; Kampf",
-      description: "The Punisher farmen: Mods für hohe Spawnrate, Außenposten als Arena, Kampf und Flame Beanie.",
+      description: "The Punisher farmen: Mods f眉r hohe Spawnrate, Au脽enposten als Arena, Kampf und Flame Beanie.",
       keywords: "Road to Vostok, The Punisher, Flame Beanie, Metro Mod Loader, Event Hints",
     },
     addressBar: "road-to-vostok-the-punisher-guide",
-    detailsHtml: `<p>Im Vanilla-Build von Road to Vostok ist die natürliche Spawnrate von The Punisher extrem niedrig (ca. 2,5 % bis 3,33 %). Für die exklusive Flame Beanie solltest du als Einsteiger Metro Mod Loader und Event Hints installieren, um auf ~100 % zu kommen. Vermeide Dorf und Schule wegen erzwungenem Nahkampf und störender Banditen-KI — nimm stattdessen die Außenposten-Karte mit freien Schussfeldern und Felsdeckung. Sturmgewehr mit über 70 % Zustand und viele Medkits mitbringen. Sobald die Sirenen losgehen: sofort Felsdeckung, seine Unterdrückungssalve unterbrechen, Kill sichern.
+    detailsHtml: `<p>Im Vanilla-Build von Road to Vostok ist die nat眉rliche Spawnrate von The Punisher extrem niedrig (ca. 2,5 % bis 3,33 %). F眉r die exklusive Flame Beanie solltest du als Einsteiger Metro Mod Loader und Event Hints installieren, um auf ~100 % zu kommen. Vermeide Dorf und Schule wegen erzwungenem Nahkampf und st枚render Banditen-KI 鈥?nimm stattdessen die Au脽enposten-Karte mit freien Schussfeldern und Felsdeckung. Sturmgewehr mit 眉ber 70 % Zustand und viele Medkits mitbringen. Sobald die Sirenen losgehen: sofort Felsdeckung, seine Unterdr眉ckungssalve unterbrechen, Kill sichern.
 
   <iframe name="rtvFishGuideYt" src="https://www.youtube.com/embed/o3Hwsuv4fk4" title="YouTube-Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p>Keine Lust aufs ganze Video? Springe zu den Markern:</p>
   <ol>
-  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=161&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">02:41</a> — Modding: Metro Mod Loader &amp; Event Hints
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=161&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">02:41</a> 鈥?Modding: Metro Mod Loader &amp; Event Hints
   </li>
-  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=347&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">05:47</a> — Warum der Außenposten die beste Karte ist
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=347&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">05:47</a> 鈥?Warum der Au脽enposten die beste Karte ist
   </li>
-  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=610&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">10:10</a> — Kampf: Felsdeckung &amp; Flame Beanie looten
+  <li><a href="https://www.youtube.com/embed/o3Hwsuv4fk4?start=610&amp;autoplay=1&amp;playsinline=1" target="rtvFishGuideYt">10:10</a> 鈥?Kampf: Felsdeckung &amp; Flame Beanie looten
   </li>
   </ol>
   <h2>Spawn-Mechanik &amp; Modding (~100 %)
   </h2>
-  <p>Im Basisspiel würfelt die Engine zuerst ein Kartenereignis (ca. 10 %), dann einen Pool (Luftabwürfe, Abstürze, Helis, The Punisher usw.). Die echte Chance ist daher winzig. Selbst wenn er spawnt, kann er mit dem Polizeiwagen nur durchfahren, ohne zu kämpfen. Er spawnt niemals in der Border Zone oder auf der Vostok-Permadeath-Karte.
+  <p>Im Basisspiel w眉rfelt die Engine zuerst ein Kartenereignis (ca. 10 %), dann einen Pool (Luftabw眉rfe, Abst眉rze, Helis, The Punisher usw.). Die echte Chance ist daher winzig. Selbst wenn er spawnt, kann er mit dem Polizeiwagen nur durchfahren, ohne zu k盲mpfen. Er spawnt niemals in der Border Zone oder auf der Vostok-Permadeath-Karte.
   </p>
-  <p>Statt zu warten: Hintergrundwahrscheinlichkeit anpassen. Du brauchst Metro Mod Loader, Mod Configuration Menu (MCM) und Event Hints. Loader ins Spielverzeichnis entpacken und override.cfg überschreiben; unter AppData/Roaming/Road to Vostok einen mods-Ordner anlegen und modloader.gd hineinlegen. Die .vmz-Dateien von MCM und Event Hints in denselben mods-Ordner. Beim Start MCM-Priority im Overlay auf -100 setzen. Im MCM-Menü % Chance Punisher auf 100 und Max-Wartezeit auf ~60 s — dann erscheint er zuverlässig.
+  <p>Statt zu warten: Hintergrundwahrscheinlichkeit anpassen. Du brauchst Metro Mod Loader, Mod Configuration Menu (MCM) und Event Hints. Loader ins Spielverzeichnis entpacken und override.cfg 眉berschreiben; unter AppData/Roaming/Road to Vostok einen mods-Ordner anlegen und modloader.gd hineinlegen. Die .vmz-Dateien von MCM und Event Hints in denselben mods-Ordner. Beim Start MCM-Priority im Overlay auf -100 setzen. Im MCM-Men眉 % Chance Punisher auf 100 und Max-Wartezeit auf ~60 s 鈥?dann erscheint er zuverl盲ssig.
   </p>
   <p><img src="/images/guides/guides09-01.webp" alt="road-to-vostok-punisher-mods" width="50%">
   </p>
-  <h2>Beste Karten für den Fight
+  <h2>Beste Karten f眉r den Fight
   </h2>
-  <p>Wer die Mechanik kennt, wählt das Schlachtfeld. Die KI in Road to Vostok ist tödlich; Flankiertwerden oft = sofortiger Run-Ende.
+  <p>Wer die Mechanik kennt, w盲hlt das Schlachtfeld. Die KI in Road to Vostok ist t枚dlich; Flankiertwerden oft = sofortiger Run-Ende.
   </p>
-  <p>Nimm den Außenposten: Erstens kreuzen sich alle Wege zentral — der Van muss durch. Zweitens Felsen, Brückenkanten und Wracks als Hardcover. Drittens extrem offene Schussfelder, du siehst den Van früh.
+  <p>Nimm den Au脽enposten: Erstens kreuzen sich alle Wege zentral 鈥?der Van muss durch. Zweitens Felsen, Br眉ckenkanten und Wracks als Hardcover. Drittens extrem offene Schussfelder, du siehst den Van fr眉h.
   </p>
-  <p>Vermeide Dorf und Schule: Erzwungener CQB plus native Banditen-KI — du wirst zwischen The Punisher und Scavs eingequetscht.
+  <p>Vermeide Dorf und Schule: Erzwungener CQB plus native Banditen-KI 鈥?du wirst zwischen The Punisher und Scavs eingequetscht.
   </p>
   <table>
   <tbody>
@@ -721,11 +720,11 @@ export default [
   </td>
   </tr>
   <tr>
-  <td data-row="row-ce7861">Außenposten
+  <td data-row="row-ce7861">Au脽enposten
   </td>
-  <td data-row="row-ce7861">Sehr empfohlen. Viele Felsen/Brücken-Cover; zentraler Knoten = vorhersagbare Route.
+  <td data-row="row-ce7861">Sehr empfohlen. Viele Felsen/Br眉cken-Cover; zentraler Knoten = vorhersagbare Route.
   </td>
-  <td data-row="row-ce7861">Querschläger aus der Ferne; Körpermitte nicht freihalten.
+  <td data-row="row-ce7861">Querschl盲ger aus der Ferne; K枚rpermitte nicht freihalten.
   </td>
   </tr>
   <tr>
@@ -739,7 +738,7 @@ export default [
   <tr>
   <td data-row="row-2cmgse">Schule
   </td>
-  <td data-row="row-2cmgse">Stark abzuraten. Enge Innenräume.
+  <td data-row="row-2cmgse">Stark abzuraten. Enge Innenr盲ume.
   </td>
   <td data-row="row-2cmgse">Map-AI; kaum Fehlerbudget an Ecken.
   </td>
@@ -750,13 +749,13 @@ export default [
   </p>
   <h2>Kampf: finden &amp; besiegen
   </h2>
-  <p>Am Außenposten lauschen. Mit Event Hints: Hinweis oben links. Ohne Mod: ferne Polizeisirenen = er kommt.
+  <p>Am Au脽enposten lauschen. Mit Event Hints: Hinweis oben links. Ohne Mod: ferne Polizeisirenen = er kommt.
   </p>
-  <p>Sofort hinter Fels. Goldene Regel: Körpermitte nie zeigen. Er bremst den POLIISI-Bus; beim Aussteigen kommt starke Unterdrückung. Minimal peeken, Primärwaffe &gt;70 % (z. B. M4A1), Feuer in kurzen Salven. Bei Treffer nicht über offenes Feld rennen — Deckung, Medkit, Blutung stoppen.
+  <p>Sofort hinter Fels. Goldene Regel: K枚rpermitte nie zeigen. Er bremst den POLIISI-Bus; beim Aussteigen kommt starke Unterdr眉ckung. Minimal peeken, Prim盲rwaffe &gt;70 % (z. B. M4A1), Feuer in kurzen Salven. Bei Treffer nicht 眉ber offenes Feld rennen 鈥?Deckung, Medkit, Blutung stoppen.
   </p>
-  <p>Nach dem Kill: Flame Beanie looten. Nimmst du sie nicht, bleibt sie sichtbar auf dem Körper.
+  <p>Nach dem Kill: Flame Beanie looten. Nimmst du sie nicht, bleibt sie sichtbar auf dem K枚rper.
   </p>
-  <p>(Easter Egg: Sirenen aus = gute Laune. Schieß nicht, spring aufs Dach — er fährt dich quer über die Karte.)
+  <p>(Easter Egg: Sirenen aus = gute Laune. Schie脽 nicht, spring aufs Dach 鈥?er f盲hrt dich quer 眉ber die Karte.)
   </p>
   <p><img src="/images/guides/guides09-03.webp" alt="road-to-vostok-punisher" width="50%">
   </p>
@@ -764,7 +763,7 @@ export default [
   </h2>
   <p>F: Spawnt The Punisher auf jeder Karte?
   </p>
-  <p>A: Nein — nie Border Zone oder Vostok-Permadeath.
+  <p>A: Nein 鈥?nie Border Zone oder Vostok-Permadeath.
   </p>
   <p>F: Warum steigt er trotz 100 %-Mod nicht aus?
   </p>
@@ -772,78 +771,78 @@ export default [
   </p>
   <p>F: Pflichtwaffe?
   </p>
-  <p>A: Nein, aber Primär &gt;70 % Zustand — sonst Ladehemmung im Fight.
+  <p>A: Nein, aber Prim盲r &gt;70 % Zustand 鈥?sonst Ladehemmung im Fight.
   </p>`,
   },
 
   {
     id: 10,
-    title: "Road to Vostok: Konsolenbefehle &amp; Modding — Werte anpassen",
-    description: "Du suchst Road-to-Vostok-Konsolenbefehle? So ist es, dass es keine gibt — und wie du mit Mods oder Engine-Entpacken Bewegung oder Hunger anpasst.",
+    title: "Road to Vostok: Konsolenbefehle &amp; Modding 鈥?Werte anpassen",
+    description: "Du suchst Road-to-Vostok-Konsolenbefehle? So ist es, dass es keine gibt 鈥?und wie du mit Mods oder Engine-Entpacken Bewegung oder Hunger anpasst.",
     tags: ["Road to Vostok console commands", "Road to Vostok mods"],
     publishDate: "2026-04-30",
     imageUrl: "/images/guides/guides10.webp",
     imageAlt: "Road to Vostok Mod Laufgeschwindigkeit",
     seo: {
-      title: "Road to Vostok: Konsolenbefehle &amp; Modding — Werte anpassen",
-      description: "Keine eingebaute Konsole in RTV — Mods (Metro Mod Loader, MCM) oder RTV.pck entpacken für Speed, Durst/Hunger u. a.",
+      title: "Road to Vostok: Konsolenbefehle &amp; Modding 鈥?Werte anpassen",
+      description: "Keine eingebaute Konsole in RTV 鈥?Mods (Metro Mod Loader, MCM) oder RTV.pck entpacken f眉r Speed, Durst/Hunger u. a.",
       keywords: "road to vostok console commands, road to vostok engine, road to vostok mods, werte tweak, pck unpack, godot modding",
     },
     addressBar: "road-to-vostok-console-commands-and-modding",
     detailsHtml: `
   <p>Wenn dich Standard-Hunger oder Lauftempo nerven und du verzweifelt nach Road-to-Vostok-Konsolenbefehlen suchst, gilt die harte Wahrheit: Im Basisspiel gibt es keine eingebaute Konsole und keine einfachen Text-Konfigurationen (.xml oder .ini).
   </p>
-  <p>Anders als bei älteren Titeln (z. B. klassisches S.T.A.L.K.E.R.), wo man im Editor eine 1 in 1,2 ändern konnte, braucht dieses Hardcore-Survival einen anderen Ansatz. Dieser Guide zeigt, wie du mit Community-Tools und Engine-Workarounds anpassen kannst — nach verifizierten Spielermethoden.
+  <p>Anders als bei 盲lteren Titeln (z. B. klassisches S.T.A.L.K.E.R.), wo man im Editor eine 1 in 1,2 盲ndern konnte, braucht dieses Hardcore-Survival einen anderen Ansatz. Dieser Guide zeigt, wie du mit Community-Tools und Engine-Workarounds anpassen kannst 鈥?nach verifizierten Spielermethoden.
   </p>
   <h2>Warum die Road-to-Vostok-Engine das verhindert
   </h2>
-  <p>Damit klar ist, warum kein schneller Text-Edit reicht: Das Spiel nutzt Godot. Ressourcen und Code (GDScript, Python-ähnlich) liegen in einer einzigen .pck- (bzw. .pkg-)Datei.
+  <p>Damit klar ist, warum kein schneller Text-Edit reicht: Das Spiel nutzt Godot. Ressourcen und Code (GDScript, Python-盲hnlich) liegen in einer einzigen .pck- (bzw. .pkg-)Datei.
   </p>
-  <p>Alles steckt in RTV.pck — du kannst den Ordner nicht einfach öffnen und mit Notepad++ Werte ändern. Zwei Hauptwege: Mod-Loader oder manuelles Entpacken/Decompilieren.
+  <p>Alles steckt in RTV.pck 鈥?du kannst den Ordner nicht einfach 枚ffnen und mit Notepad++ Werte 盲ndern. Zwei Hauptwege: Mod-Loader oder manuelles Entpacken/Decompilieren.
   </p>
   <h2>Empfohlen: Road-to-Vostok-Mods
   </h2>
-  <p>Am sichersten und populärsten passt du über <a href="https://roadtovostok.org/mods">Road-to-Vostok-Mods</a> an. Manche mögen Mod-Manager-Bloat nicht — der Prozess ist trotzdem schlank; Setup dauert etwa 5–10 Minuten.
+  <p>Am sichersten und popul盲rsten passt du 眉ber <a href="https://roadtovostok.org/mods">Road-to-Vostok-Mods</a> an. Manche m枚gen Mod-Manager-Bloat nicht 鈥?der Prozess ist trotzdem schlank; Setup dauert etwa 5鈥?0 Minuten.
   </p>
   <p><img src="/images/guides/guides10-01.webp" alt="Road to Vostok Mod unbegrenzte Gesundheit" width="50%">
   </p>
   <h3>Mods einrichten (Metro Mod Loader &amp; MCM)
   </h3>
-  <p>Schwergewichte wie Mod Organizer 2 (MO2) brauchst du nicht überall. Die Community nutzt leichte Injectoren:
+  <p>Schwergewichte wie Mod Organizer 2 (MO2) brauchst du nicht 眉berall. Die Community nutzt leichte Injectoren:
   </p>
   <ol>
-  <li>Metro Mod Loader: aktueller Standard — eine Datei in Appdata, eine ins Hauptspielverzeichnis.
+  <li>Metro Mod Loader: aktueller Standard 鈥?eine Datei in Appdata, eine ins Hauptspielverzeichnis.
   </li>
-  <li>Mod Configuration Menu (MCM): Mit MCM stellst du konkrete Änderungen ein (z. B. +20 % Speed oder langsamerer Durst/Hunger) direkt im Spiel, schnell und ohne Schmerz.
+  <li>Mod Configuration Menu (MCM): Mit MCM stellst du konkrete 脛nderungen ein (z. B. +20 % Speed oder langsamerer Durst/Hunger) direkt im Spiel, schnell und ohne Schmerz.
   </li>
   </ol>
-  <p>Hinweis: Für einfachen Speed-Boost gibt es auf Modworkshop u. a. fertige Mods.
+  <p>Hinweis: F眉r einfachen Speed-Boost gibt es auf Modworkshop u. a. fertige Mods.
   </p>
   <h2>Hardcore: Engine manuell entpacken
   </h2>
-  <p>Wenn du Mod-Loader strikt vermeidest und mit Editor arbeiten willst, musst du die gepackten Dateien umgehen — technischer Community-Workaround:
+  <p>Wenn du Mod-Loader strikt vermeidest und mit Editor arbeiten willst, musst du die gepackten Dateien umgehen 鈥?technischer Community-Workaround:
   </p>
   <ol>
   <li>RTV.pck im selben Ordner finden wie RTV.exe.
   </li>
   <li>RTV.pck in denselben Spielordner entpacken.
   </li>
-  <li>Original RTV.pck in RTV.pck.bak umbenennen. Ohne die primäre .pck lädt die EXE Ressourcen aus dem entpackten Ordner.
+  <li>Original RTV.pck in RTV.pck.bak umbenennen. Ohne die prim盲re .pck l盲dt die EXE Ressourcen aus dem entpackten Ordner.
   </li>
-  <li>Skripte mit einem Godot-Decompiler bearbeiten und kompilierte .gdc löschen.
+  <li>Skripte mit einem Godot-Decompiler bearbeiten und kompilierte .gdc l枚schen.
   </li>
-  <li>Jetzt kannst du rohe GDScript-Dateien in Notepad++ öffnen, Werte suchen und ohne Loader tweaken.
+  <li>Jetzt kannst du rohe GDScript-Dateien in Notepad++ 枚ffnen, Werte suchen und ohne Loader tweaken.
   </li>
   </ol>
-  <p><img src="/images/guides/guides10-02.webp" alt="Road to Vostok Mod Munition auffüllen" width="50%">
+  <p><img src="/images/guides/guides10-02.webp" alt="Road to Vostok Mod Munition auff眉llen" width="50%">
   </p>
   <h2>Drittanbieter-Tools
   </h2>
-  <p>Ohne Loader und ohne Godot-Decompile nennen manche WeMod (früher Wand). Das sind meist simple Schalter (unendlich Munition, Sprunghöhe, Händler) — kein Feintuning wie +20 % Speed; kann Hardcore-Immersion stark zerstören.
+  <p>Ohne Loader und ohne Godot-Decompile nennen manche WeMod (fr眉her Wand). Das sind meist simple Schalter (unendlich Munition, Sprungh枚he, H盲ndler) 鈥?kein Feintuning wie +20 % Speed; kann Hardcore-Immersion stark zerst枚ren.
   </p>
-  <h2>Modding-News für Vostok
+  <h2>Modding-News f眉r Vostok
   </h2>
-  <p>Tools und Spielversionen ändern sich schnell. Für aktuelle Mod-Tools, Tutorials und interaktive Loot-Karten: unser Hub <a href="http://roadtovostok.org/">http://roadtovostok.org/</a> — umfassende Ressourcen für die Road-to-Vostok-Community.
+  <p>Tools und Spielversionen 盲ndern sich schnell. F眉r aktuelle Mod-Tools, Tutorials und interaktive Loot-Karten: unser Hub <a href="http://roadtovostok.org/">http://roadtovostok.org/</a> 鈥?umfassende Ressourcen f眉r die Road-to-Vostok-Community.
   </p>`,
   },
 
@@ -1321,48 +1320,85 @@ export default [
   ,
   {
     id: 19,
-    title: "Road To Vostok: Speicherdatei, Escape-Menü und Koop-Save-Hinweise",
-    h1: "Road To Vostok: Speicherdatei und Escape-Menü",
-    description: "Speichern, Save-Dateien, Escape-Menü-Probleme und Koop-Save-Behauptungen sauber prüfen.",
+    title: "Road To Vostok: Speicherdatei, Escape-Men眉 und Koop-Save-Hinweise",
+    h1: "Road To Vostok: Speicherdatei und Escape-Men眉",
+    description: "Speichern, Save-Dateien, Escape-Men眉-Probleme und Koop-Save-Behauptungen sauber pr眉fen.",
     tags: [
         "Speicherdateien",
-        "Escape-Menü",
+        "Escape-Men眉",
         "Shelter",
         "Koop"
     ],
     publishDate: "2026-07-27",
     imageUrl: "/images/guides/road-vostok-save-menu-inventory-guide.jpg",
-    imageAlt: "Road To Vostok Speicherdatei und Escape-Menü Guide",
+    imageAlt: "Road To Vostok Speicherdatei und Escape-Men眉 Guide",
     seo: {
-        title: "Road To Vostok Speicherdatei und Menü",
-        description: "So speicherst du in Road To Vostok, prüfst Save-Dateien, behebst Escape-Menü-Ausfälle und behandelst Koop-Save-Claims vorsichtig.",
-        keywords: "Road To Vostok speichern, Speicherdatei, Save location, Escape Menü"
+        title: "Road To Vostok Speicherdatei und Men眉",
+        description: "So speicherst du in Road To Vostok, pr眉fst Save-Dateien, behebst Escape-Men眉-Ausf盲lle und behandelst Koop-Save-Claims vorsichtig.",
+        keywords: "Road To Vostok speichern, Speicherdatei, Save location, Escape Men眉"
     },
     addressBar: "road-to-vostok-how-to-save",
-    detailsHtml: "<p><strong>Kurzantwort:</strong> Nutze Shelter als sauberen Speicheranker. Erst sicher hinein, wertvolle Beute einlagern, Save- oder Menüstatus bestätigen, dann beenden. Feld-Logout, unbestätigter Autosave oder Koop-Mods sind keine verlässliche Sicherung.</p><figure><img src=\"/images/guides/road-vostok-save-menu-inventory-guide.jpg\" alt=\"road to vostok how to save shelter and Escape menu inventory check\" title=\"Road To Vostok speichern und Escape-Menü prüfen\" width=\"50%\"><figcaption>Vor dem Quit: Shelter, Stash, Menübestätigung.</figcaption></figure><h2>How saving works</h2><h3>Manual save and save-state intent</h3><p>Die robuste Routine ist shelterseitig. Road To Vostok bindet sichere Zonen, Lagerung und Fortschritt eng zusammen; behandle einen Shelter daher wie einen Checkpoint mit Inventarkontrolle.</p><table><thead><tr><th>Check</th><th>Aktion</th><th>Risiko</th></tr></thead><tbody><tr><td>Shelter erreicht</td><td>Im sicheren Bereich stehen</td><td>Unsicherer Resume-Zustand</td></tr><tr><td>Beute verstaut</td><td>Keys, Task-Items, Meds, Munition sichern</td><td>Wertverlust durch schlechten Restart</td></tr><tr><td>Prompt fertig</td><td>Save/Menu-Bestätigung abwarten</td><td>Dirty State beim Schließen</td></tr></tbody></table><p>Mehr Stash-Logik: <a href=\"/guides/road-to-vostok-shelter-storage-save-guide\">Shelter-Storage-Guide</a>; Verbrauchswerte: <a href=\"/guides/road-to-vostok-health-hydration-guide\">Health/Hydration</a>.</p><h3>Escape/menu failure state</h3><p>Wenn Escape nicht reagiert, zuerst Fokus und Overlays prüfen: Alt-Tab zurück, ins Fenster klicken, Controller/Overlay/Keyboard-Tools testweise entfernen, aktive Loot-, Reload- oder Placement-Aktion abbrechen.</p><h2>Save files and co-op saves</h2><h3>Save file location typo variant</h3><p>Für Backups unter Windows bei <code>%USERPROFILE%\\AppData\\LocalLow</code> starten. Nach einem frischen Shelter-Save nach Änderungsdatum sortieren und den Road-To-Vostok-Ordner bestätigen. Erst kopieren, nie direkt am Live-Save editieren.</p><h3>Co-op save wording</h3><p>Offizieller Baseline-Status ist Singleplayer. Koop-Saves gehören zu Mods oder Workarounds, solange kein Patch das Gegenteil dokumentiert. Vor Tests: <a href=\"/guides/road-to-vostok-multiplayer-coop-single-player-guide\">Multiplayer/Koop-Status</a> und <a href=\"/guides/road-to-vostok-mods-guide\">Mod-Guide</a>.</p><h2>FAQ</h2><h3>Does Road To Vostok autosave?</h3><p>Verlasse dich auf Shelter-Save-Bestätigung, nicht auf riskanten Feld-Logout.</p><h3>Where are Road To Vostok save files?</h3><p>Starte bei <code>%USERPROFILE%\\AppData\\LocalLow</code> und bestätige per Änderungszeit nach frischem Save.</p>"
+    detailsHtml: "<p><strong>Kurzantwort:</strong> Nutze Shelter als sauberen Speicheranker. Erst sicher hinein, wertvolle Beute einlagern, Save- oder Men眉status best盲tigen, dann beenden. Feld-Logout, unbest盲tigter Autosave oder Koop-Mods sind keine verl盲ssliche Sicherung.</p><figure><img src=\"/images/guides/road-vostok-save-menu-inventory-guide.jpg\" alt=\"road to vostok how to save shelter and Escape menu inventory check\" title=\"Road To Vostok speichern und Escape-Men眉 pr眉fen\" width=\"50%\"><figcaption>Vor dem Quit: Shelter, Stash, Men眉best盲tigung.</figcaption></figure><h2>How saving works</h2><h3>Manual save and save-state intent</h3><p>Die robuste Routine ist shelterseitig. Road To Vostok bindet sichere Zonen, Lagerung und Fortschritt eng zusammen; behandle einen Shelter daher wie einen Checkpoint mit Inventarkontrolle.</p><table><thead><tr><th>Check</th><th>Aktion</th><th>Risiko</th></tr></thead><tbody><tr><td>Shelter erreicht</td><td>Im sicheren Bereich stehen</td><td>Unsicherer Resume-Zustand</td></tr><tr><td>Beute verstaut</td><td>Keys, Task-Items, Meds, Munition sichern</td><td>Wertverlust durch schlechten Restart</td></tr><tr><td>Prompt fertig</td><td>Save/Menu-Best盲tigung abwarten</td><td>Dirty State beim Schlie脽en</td></tr></tbody></table><p>Mehr Stash-Logik: <a href=\"/guides/road-to-vostok-shelter-storage-save-guide\">Shelter-Storage-Guide</a>; Verbrauchswerte: <a href=\"/guides/road-to-vostok-health-hydration-guide\">Health/Hydration</a>.</p><h3>Escape/menu failure state</h3><p>Wenn Escape nicht reagiert, zuerst Fokus und Overlays pr眉fen: Alt-Tab zur眉ck, ins Fenster klicken, Controller/Overlay/Keyboard-Tools testweise entfernen, aktive Loot-, Reload- oder Placement-Aktion abbrechen.</p><h2>Save files and co-op saves</h2><h3>Save file location typo variant</h3><p>F眉r Backups unter Windows bei <code>%USERPROFILE%\\AppData\\LocalLow</code> starten. Nach einem frischen Shelter-Save nach 脛nderungsdatum sortieren und den Road-To-Vostok-Ordner best盲tigen. Erst kopieren, nie direkt am Live-Save editieren.</p><h3>Co-op save wording</h3><p>Offizieller Baseline-Status ist Singleplayer. Koop-Saves geh枚ren zu Mods oder Workarounds, solange kein Patch das Gegenteil dokumentiert. Vor Tests: <a href=\"/guides/road-to-vostok-multiplayer-coop-single-player-guide\">Multiplayer/Koop-Status</a> und <a href=\"/guides/road-to-vostok-mods-guide\">Mod-Guide</a>.</p><h2>FAQ</h2><h3>Does Road To Vostok autosave?</h3><p>Verlasse dich auf Shelter-Save-Best盲tigung, nicht auf riskanten Feld-Logout.</p><h3>Where are Road To Vostok save files?</h3><p>Starte bei <code>%USERPROFILE%\\AppData\\LocalLow</code> und best盲tige per 脛nderungszeit nach frischem Save.</p>"
 }
   ,
   {
     id: 20,
-    title: "Road To Vostok Türen und Schränke: blockierte Türen, Objekte, Wandmontage",
-    h1: "Türen, Schränke und Objekte in Road To Vostok öffnen",
-    description: "Jammed doors, Cabinet-Interaktionen, Objektöffnen, Clip-through-Suchen und Wandmontage sauber trennen.",
+    title: "Road To Vostok T眉ren und Schr盲nke: blockierte T眉ren, Objekte, Wandmontage",
+    h1: "T眉ren, Schr盲nke und Objekte in Road To Vostok 枚ffnen",
+    description: "Jammed doors, Cabinet-Interaktionen, Objekt枚ffnen, Clip-through-Suchen und Wandmontage sauber trennen.",
     tags: [
-        "Türen",
-        "Schränke",
+        "T眉ren",
+        "Schr盲nke",
         "Objekte",
         "Shelter"
     ],
     publishDate: "2026-07-27",
     imageUrl: "/images/guides/road-vostok-door-route-interaction-guide.jpg",
-    imageAlt: "Road To Vostok blockierte Tür und Objektinteraktion",
+    imageAlt: "Road To Vostok blockierte T眉r und Objektinteraktion",
     seo: {
-        title: "Road To Vostok Türen und Schränke",
-        description: "Fix für blockierte Türen, Schränke, Objektinteraktionen, Clip-through-Verwirrung und Wandmontage in Road To Vostok.",
-        keywords: "Road To Vostok Tür klemmt, Tür öffnen, Schrank öffnen, Objekte"
+        title: "Road To Vostok T眉ren und Schr盲nke",
+        description: "Fix f眉r blockierte T眉ren, Schr盲nke, Objektinteraktionen, Clip-through-Verwirrung und Wandmontage in Road To Vostok.",
+        keywords: "Road To Vostok T眉r klemmt, T眉r 枚ffnen, Schrank 枚ffnen, Objekte"
     },
     addressBar: "road-to-vostok-open-door-cabinet-guide",
-    detailsHtml: "<p><strong>Kurzantwort:</strong> Nicht spammen. Prompt lesen, Zustand prüfen: locked, jammed, Kollision, Key-Bedarf oder Shelter-Placement. Clip-through ist Exploit-Intent, keine stabile Route.</p><figure><img src=\"/images/guides/road-vostok-door-route-interaction-guide.jpg\" alt=\"road to vostok jammed door open door route interaction guide\" title=\"Road To Vostok jammed door und Türroute\" width=\"50%\"><figcaption>Türen sind Routengates: Prompt, Key, Kollision, Build-Zustand prüfen.</figcaption></figure><h2>Door interaction problems</h2><h3>Jammed door variants</h3><table><thead><tr><th>Status</th><th>Bedeutung</th><th>Aktion</th></tr></thead><tbody><tr><td>Locked</td><td>Key, Aufgabe oder Zugang nötig</td><td><a href=\"/guides/road-to-vostok-keys-locked-cabinets\">Keys-Guide</a> nutzen</td></tr><tr><td>Jammed</td><td>Blockiert, einseitig, statisch oder build-limitiert</td><td>Andere Seite, Kollision, Umroute prüfen</td></tr><tr><td>Kein Prompt</td><td>Statisches Objekt oder falscher Winkel</td><td>Griff/Panel anvisieren; sonst weiter</td></tr></tbody></table><h3>Open door and clip-through terms</h3><p>Normales Öffnen heißt: gültiger Prompt, freier Winkel, keine aktive Animation. Clip-through ist Geometriefehler und kann nach jedem Patch brechen. Nicht mit Task-Items testen.</p><h2>Cabinets and object interactions</h2><h3>Open things and cabinet</h3><figure><img src=\"/images/guides/road-vostok-cabinet-object-mounting-guide.jpg\" alt=\"road to vostok open cabinet and mount cabinet on wall interaction guide\" title=\"Road To Vostok Schrank öffnen und Wandmontage\" width=\"50%\"><figcaption>Der Prompt entscheidet: Loot-Schrank, locked cabinet, Medical Cabinet oder Möbel.</figcaption></figure><p>Normale Schränke mit Loot-Prompt öffnen; Locked Cabinets auf Key-Text prüfen; Medical Cabinets vor langen Routen priorisieren. Ohne Prompt nicht unter Feinddruck testen.</p><h3>Mount cabinet on wall</h3><p>Wandmontage gehört zur Shelter-Decoration: gültigen Bereich, flache Wand, Freiraum und grünen/validen Placement-Zustand prüfen. Ohne gültige Vorschau ist die Funktion build-sensitiv.</p><h2>FAQ</h2><h3>Why is a door jammed in Road To Vostok?</h3><p>Locked, blockiert, einseitig, statisch oder Input durch Aktion blockiert.</p><h3>How do you open cabinets?</h3><p>Panel/Griff anvisieren; bei Locked-Prompt zur Key-Route wechseln.</p>"
+    detailsHtml: "<p><strong>Kurzantwort:</strong> Nicht spammen. Prompt lesen, Zustand pr眉fen: locked, jammed, Kollision, Key-Bedarf oder Shelter-Placement. Clip-through ist Exploit-Intent, keine stabile Route.</p><figure><img src=\"/images/guides/road-vostok-door-route-interaction-guide.jpg\" alt=\"road to vostok jammed door open door route interaction guide\" title=\"Road To Vostok jammed door und T眉rroute\" width=\"50%\"><figcaption>T眉ren sind Routengates: Prompt, Key, Kollision, Build-Zustand pr眉fen.</figcaption></figure><h2>Door interaction problems</h2><h3>Jammed door variants</h3><table><thead><tr><th>Status</th><th>Bedeutung</th><th>Aktion</th></tr></thead><tbody><tr><td>Locked</td><td>Key, Aufgabe oder Zugang n枚tig</td><td><a href=\"/guides/road-to-vostok-keys-locked-cabinets\">Keys-Guide</a> nutzen</td></tr><tr><td>Jammed</td><td>Blockiert, einseitig, statisch oder build-limitiert</td><td>Andere Seite, Kollision, Umroute pr眉fen</td></tr><tr><td>Kein Prompt</td><td>Statisches Objekt oder falscher Winkel</td><td>Griff/Panel anvisieren; sonst weiter</td></tr></tbody></table><h3>Open door and clip-through terms</h3><p>Normales 脰ffnen hei脽t: g眉ltiger Prompt, freier Winkel, keine aktive Animation. Clip-through ist Geometriefehler und kann nach jedem Patch brechen. Nicht mit Task-Items testen.</p><h2>Cabinets and object interactions</h2><h3>Open things and cabinet</h3><figure><img src=\"/images/guides/road-vostok-cabinet-object-mounting-guide.jpg\" alt=\"road to vostok open cabinet and mount cabinet on wall interaction guide\" title=\"Road To Vostok Schrank 枚ffnen und Wandmontage\" width=\"50%\"><figcaption>Der Prompt entscheidet: Loot-Schrank, locked cabinet, Medical Cabinet oder M枚bel.</figcaption></figure><p>Normale Schr盲nke mit Loot-Prompt 枚ffnen; Locked Cabinets auf Key-Text pr眉fen; Medical Cabinets vor langen Routen priorisieren. Ohne Prompt nicht unter Feinddruck testen.</p><h3>Mount cabinet on wall</h3><p>Wandmontage geh枚rt zur Shelter-Decoration: g眉ltigen Bereich, flache Wand, Freiraum und gr眉nen/validen Placement-Zustand pr眉fen. Ohne g眉ltige Vorschau ist die Funktion build-sensitiv.</p><h2>FAQ</h2><h3>Why is a door jammed in Road To Vostok?</h3><p>Locked, blockiert, einseitig, statisch oder Input durch Aktion blockiert.</p><h3>How do you open cabinets?</h3><p>Panel/Griff anvisieren; bei Locked-Prompt zur Key-Route wechseln.</p>"
 }
-
+  ,
+  {
+    id: 21,
+    title: "Road To Vostok Jahreszeiten Guide",
+    h1: "Road To Vostok Dynamic Seasons Guide",
+    description: "Pruefe, ob Sommer, Winter oder eine Schneekarte in deinem Road To Vostok Build waehlbar sind.",
+    tags: ["Jahreszeiten", "Winter", "Sommer", "Kartenstatus"],
+    publishDate: "2026-08-05",
+    imageUrl: "/images/guides/road-vostok-dynamic-seasons-guide.jpg",
+    imageAlt: "Road To Vostok Dynamic Seasons Guide fuer Sommer Winter und Schneekarte",
+    seo: { title: "Road To Vostok Jahreszeiten Guide", description: "Pruefe Road To Vostok Dynamic Seasons, Sommer oder Winter Auswahl, Schneekarte und Build-abhaengige Fehlerquellen.", keywords: "Road To Vostok Dynamic Seasons, Sommer, Winter, Schneekarte" },
+    addressBar: "road-to-vostok-dynamic-seasons-guide",
+    detailsHtml: `<p><strong>Schnelle Antwort:</strong> behandle Dynamic Seasons nicht als Loot-Freischaltung, versteckten Schluessel oder Questbelohnung, solange dein aktueller Build keinen klaren Saison-Waehler zeigt. Sommer und Winter sind build-abhaengig. Pruefe Version, Modus, Kartenauswahl und offizielle Updates zuerst.</p>
+<figure><img src="/images/guides/road-vostok-dynamic-seasons-guide.jpg" alt="road to vostok dynamic seasons sommer winter schneekarte guide" title="Road To Vostok Dynamic Seasons Sommer Winter Guide" width="50%"><figcaption>Der Saison-Check beginnt im Build und im Modus, nicht in einer Loot-Kiste.</figcaption></figure>
+<h2>Direkte Antwort zu Dynamic Seasons</h2><h3>Schnelle Antwort und Umfang</h3><p>Wenn du wissen willst, wie man Dynamic Seasons freischaltet, pruefe zuerst die Spielversion. Nach verifizierbaren oeffentlichen Informationen ist das keine Cabinet-Key-, Task-Item- oder Stash-Upgrade-Mechanik. Behandle sie als Umgebungszustand, der je nach Build, Demo-Zweig oder Update verfuegbar sein kann.</p><p>Nutze zuerst die <a href="/dev-updates">Dev Updates</a> und die <a href="/map">interaktive Karte</a>, bevor du einer Route oder einem Geruecht folgst.</p>
+<h3>Suchvarianten zusammenfassen</h3><table><thead><tr><th>Suchfrage</th><th>Antwort</th><th>Check</th></tr></thead><tbody><tr><td>Dynamic Seasons freischalten</td><td>Build und Auswahl pruefen</td><td>Menue, Modus, Branch, Patchnotes</td></tr><tr><td>Sommer oder Winter</td><td>Nutze den Zustand, den der Build anbietet</td><td>Sicht, Ueberlebensdruck, Route</td></tr><tr><td>Schneekarte</td><td>Build-abhaengig</td><td>Offizielle Medien und aktuelle Version</td></tr></tbody></table>
+<h2>So pruefst du die Saison</h2><h3>Voraussetzungen</h3><ol><li>Starte ohne experimentelle Mods.</li><li>Pruefe Buildnummer oder Branch.</li><li>Suche im Modus- oder Kartenmenue nach Weather, Season, Winter, Summer oder Snow.</li><li>Wenn ein Waehler existiert, lade eine kurze Test-Route vor teurem Gear.</li><li>Wenn kein Waehler existiert, suche nicht nach einem In-World-Item.</li></ol><p>Sichere deinen Stand vorher mit dem <a href="/guides/road-to-vostok-shelter-storage-save-guide">Shelter- und Save-Guide</a>. Fuer Kaltwetter-Planung nutze den <a href="/guides/road-to-vostok-health-hydration-guide">Health- und Hydration-Guide</a>.</p>
+<h2>Fehler und Randfaelle</h2><p>Der haeufigste Fehler ist, Entwicklungs footage als live spielbare Mechanik zu lesen. Schnee in einem Clip beweist keinen Spieler-Schalter in deinem Build. Falscher Branch, Mod-Rauschen und Screenshot-Beweise sind keine saubere Datenbasis.</p>
+<h2>FAQ</h2><h3>Wie schaltet man Dynamic Seasons frei?</h3><p>Pruefe zuerst Build und Menue. Ohne sichtbaren Saison-Waehler wuerde ich keine Item- oder Quest-Freischaltung annehmen.</p><h3>Soll ich Sommer oder Winter spielen?</h3><p>Sommer oder Default-Sicht ist besser zum Routenlernen. Winter lohnt sich nur, wenn dein Build ihn anbietet.</p><h3>Gibt es eine Schneekarte?</h3><p>Offizielle Medien zeigen kalte Umgebungen, aber spielbare Verfuegbarkeit ist build-abhaengig.</p>`,
+  },
+  {
+    id: 22,
+    title: "Road To Vostok Statussymbole Guide",
+    h1: "Road To Vostok Status Symbols Guide",
+    description: "Bedeutung von Statussymbolen, Bullseye-Kopf-Icon und Place-Aktion beim Rechtsklick auf Items.",
+    tags: ["Statussymbole", "UI", "Inventar", "Place"],
+    publishDate: "2026-08-05",
+    imageUrl: "/images/guides/road-vostok-status-symbols-guide.jpg",
+    imageAlt: "Road To Vostok Statussymbole Bullseye Kopf Icon und Place Item Aktion",
+    seo: { title: "Road To Vostok Statussymbole Guide", description: "Deute Road To Vostok Statussymbole, Bullseye-Kopf-Icon und Place Item Aktion mit build-sicheren UI Checks.", keywords: "Road To Vostok Statussymbole, Bullseye Kopf Icon, Place Item" },
+    addressBar: "road-to-vostok-status-symbols-guide",
+    detailsHtml: `<p><strong>Schnelle Antwort:</strong> Statussymbole in Road To Vostok sind kontextuelle UI-Signale. Ein Bullseye-auf-Kopf-Icon solltest du als Kampf-, Sicht-, Aim- oder Koerperstatus-Hinweis behandeln, bis dein aktueller Build die genaue Bedeutung bestaetigt. <strong>Place</strong> beim Rechtsklick bedeutet meist, dass ein Item in Welt oder Shelter positioniert werden kann.</p>
+<figure><img src="/images/guides/road-vostok-status-symbols-guide.jpg" alt="road to vostok statussymbole bullseye kopf icon place item bedeutung" title="Road To Vostok Statussymbole und Place Aktion" width="50%"><figcaption>UI-Symbole sind build-sensitiv. Lies Prompt und Kontext, bevor du daraus eine Route ableitest.</figcaption></figure>
+<h2>Direkte Antwort zu Statussymbolen</h2><h3>Bullseye-Kopf-Icon</h3><p><strong>INFERRED:</strong> ohne Tooltip oder offizielle Notiz nicht als feste Mechanik dokumentieren. Geh in Deckung, pruefe Blutung, Schmerz, Hydration und Haltung, dann beobachte, ob das Symbol beim Zielen, Schaden, Sichtkontakt oder Verlassen der Kampfzone verschwindet.</p><p>Bei Wunden nutze den <a href="/guides/road-to-vostok-health-hydration-guide">Health-Guide</a>; bei Waffenstatus die <a href="/wiki/weapons">Waffen-Wiki</a>.</p>
+<h3>Place beim Rechtsklick</h3><table><thead><tr><th>UI-Begriff</th><th>Beste Lesart</th><th>Reaktion</th></tr></thead><tbody><tr><td>Bullseye Kopf</td><td><strong>INFERRED:</strong> Ziel-, Sicht- oder Koerperstatus</td><td>Deckung, Wunden pruefen, Trigger isolieren</td></tr><tr><td>Statussymbole</td><td>Kurzsignale fuer Zustand oder Interaktion</td><td>Mit Kampf, Verletzung, Inventar oder Umgebung abgleichen</td></tr><tr><td>Place</td><td>Platzierbare Welt- oder Shelter-Aktion</td><td>Gueltige Flaeche und Kollisionsfreiheit pruefen</td></tr></tbody></table>
+<h2>Praktischer Testablauf</h2><ol><li>Teste in einem ruhigen Bereich, nicht mitten im Feuerkampf.</li><li>Aendere nur eine Variable: zielen, ducken, stehen, Schaden, Sichtkontakt oder Inventar.</li><li>Wenn Place erscheint, pruefe flache Flaeche, Wand, Rotation und Platzierungsvorschau.</li><li>Blockiere keine Tueren, Stash-Wege oder Save-Punkte.</li></ol><p>Fuer Moebel und Cabinets passt der <a href="/guides/road-to-vostok-open-door-cabinet-guide">Doors and Cabinets Guide</a>. Fuer Tools nutze den <a href="/guides/road-to-vostok-crafting-tools-jerry-can-guide">Crafting Guide</a>.</p>
+<h2>FAQ</h2><h3>Was bedeutet das Bullseye auf einem Kopf?</h3><p><strong>INFERRED:</strong> behandle es als Ziel-, Sicht-, Aim- oder Koerperstatus-Hinweis, bis dein Build es bestaetigt.</p><h3>Was bedeutet Place?</h3><p>Place bedeutet normalerweise, dass ein Item positioniert werden kann. Es ist nicht dasselbe wie Drop, Use oder Equip.</p><h3>Warum laesst sich ein Item nicht platzieren?</h3><p>Falsche Flaeche, Kollision, falscher Ort oder fehlende Build-Unterstuetzung.</p>`,
+  }
 ]
