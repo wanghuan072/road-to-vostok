@@ -1,23 +1,16 @@
-import { useRouter, useRoute } from 'vue-router'
+import { useRoute } from 'vue-router'
 import {
   stripLocaleFromFullPath,
   applyLocalePrefix,
   extractLocaleFromPath,
 } from './useLocalizedPath.js'
-
-/** Vite base without trailing slash, e.g. '' or '/myapp' */
-function viteBasePath() {
-  const b = import.meta.env.BASE_URL || '/'
-  if (b === '/') return ''
-  return String(b).replace(/\/$/, '')
-}
+import { navigateToDocument } from '../utils/documentNavigation.js'
 
 /**
- * For nodes with v-html: treat same-origin in-site paths as client-side navigation
- * so internal links (e.g. /mods/:addressBar) work without a full reload.
+ * Preserve the current locale for same-origin links, including links rendered by
+ * v-html, then perform a full document navigation so page-level scripts reload.
  */
 export function useHtmlContentLinkNavigation() {
-  const router = useRouter()
   const route = useRoute()
 
   function onContentLinkClick(e) {
@@ -36,7 +29,7 @@ export function useHtmlContentLinkNavigation() {
     if (/^(https?:|mailto:|tel:)/i.test(raw)) return
 
     let pathname
-    let suffix = ''
+    let suffix
     try {
       const u = new URL(raw, window.location.href)
       if (u.origin !== window.location.origin) return
@@ -46,7 +39,8 @@ export function useHtmlContentLinkNavigation() {
       return
     }
 
-    const base = viteBasePath()
+    const baseUrl = import.meta.env.BASE_URL || '/'
+    const base = baseUrl === '/' ? '' : String(baseUrl).replace(/\/$/, '')
     let path = pathname
     if (base && (path === base || path.startsWith(`${base}/`))) {
       path = path.slice(base.length) || '/'
@@ -57,7 +51,7 @@ export function useHtmlContentLinkNavigation() {
     e.preventDefault()
     const logical = stripLocaleFromFullPath(path + suffix)
     const loc = extractLocaleFromPath(route.path)
-    router.push(applyLocalePrefix(logical, loc))
+    navigateToDocument(applyLocalePrefix(logical, loc))
   }
 
   return { onContentLinkClick }

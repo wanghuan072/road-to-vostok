@@ -137,15 +137,15 @@
 
 <script setup>
 import { computed, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getModArticles } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { applyDynamicSeo } from '../../seo/composables.js'
+import { navigateToDocument } from '../../utils/documentNavigation.js'
 
 const route = useRoute()
-const router = useRouter()
 const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const modArticles = computed(() => getModArticles(locale.value))
@@ -179,7 +179,7 @@ watch(
   (segment) => {
     const s = String(segment || '')
     if (s && !getByAddressBar(modArticles.value, s)) {
-      router.replace(getLocalizedPath('/mods'))
+      navigateToDocument(getLocalizedPath('/mods'), { replace: true })
     }
   },
   { immediate: true }

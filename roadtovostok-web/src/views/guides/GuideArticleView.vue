@@ -79,20 +79,20 @@
 
 <script setup>
 import { computed, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getGuideArticles } from '../../data/localeData.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { useInjectedHeadFragment } from '../../composables/useInjectedHeadFragment.js'
 import { applyDynamicSeo } from '../../seo/composables.js'
+import { navigateToDocument } from '../../utils/documentNavigation.js'
 
 const { locale } = useI18n()
 const { getLocalizedPath } = useLocalizedPath()
 const guideArticles = computed(() => getGuideArticles(locale.value))
 
 const route = useRoute()
-const router = useRouter()
 
 const article = computed(() => getByAddressBar(guideArticles.value, route.params.addressBar))
 
@@ -114,7 +114,7 @@ watch(
   (segment) => {
     const s = String(segment || '')
     if (s && !getByAddressBar(guideArticles.value, s)) {
-      router.replace(getLocalizedPath('/guides'))
+      navigateToDocument(getLocalizedPath('/guides'), { replace: true })
     }
   },
   { immediate: true },

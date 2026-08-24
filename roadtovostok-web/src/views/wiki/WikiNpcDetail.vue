@@ -119,17 +119,17 @@
 
 <script setup>
 import { computed, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { getNpcList } from '../../data/localeData.js'
 import { getByAddressBar } from '../../utils/contentLookup.js'
 import { useLocalizedPath } from '../../composables/useLocalizedPath.js'
 import { applyDynamicSeo } from '../../seo/composables.js'
+import { navigateToDocument } from '../../utils/documentNavigation.js'
 
 const { getLocalizedPath } = useLocalizedPath()
 
 const route = useRoute()
-const router = useRouter()
 const { locale } = useI18n()
 const npcList = computed(() => getNpcList(locale.value))
 
@@ -158,7 +158,7 @@ watch(
   (segment) => {
     const s = String(segment || '')
     if (s && !getByAddressBar(npcList.value, s)) {
-      router.replace(getLocalizedPath('/wiki/npcs'))
+      navigateToDocument(getLocalizedPath('/wiki/npcs'), { replace: true })
     }
   },
   { immediate: true }

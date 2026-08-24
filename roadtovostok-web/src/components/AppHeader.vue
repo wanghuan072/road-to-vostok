@@ -141,14 +141,14 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useLocalizedPath, stripLocaleFromFullPath, applyLocalePrefix } from '../composables/useLocalizedPath.js'
 import { localeNames, supportedLocales } from '../i18n/index.js'
 import { MAP_GAME_MAPS_NAV } from '../router/index.js'
+import { navigateToDocument } from '../utils/documentNavigation.js'
 
 const route = useRoute()
-const router = useRouter()
 const menuOpen = ref(false)
 const mapMenuOpen = ref(false)
 const localeMenuOpen = ref(false)
@@ -168,7 +168,7 @@ function selectLanguage(newLocale) {
   localeMenuOpen.value = false
   menuOpen.value = false
   mapMenuOpen.value = false
-  void router.push(target)
+  navigateToDocument(target)
 }
 
 function normalizedLogicalPath() {
