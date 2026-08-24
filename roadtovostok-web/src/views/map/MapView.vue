@@ -14,7 +14,6 @@
           </div>
           <MapRasterHeroMosaic />
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -46,7 +45,6 @@
           </ul>
         </header>
 
-        <GptAdWrap :placement-index="1" />
 
         <div class="map-command">
           <div class="map-command-inner">
@@ -281,7 +279,6 @@
       </div>
     </section>
 
-    <GptAdWrap :placement-index="2" />
 
     <section class="page-body-section">
       <div class="container">
@@ -292,7 +289,6 @@
       </div>
     </section>
 
-    <GptAdWrap :placement-index="3" />
 
     <section data-nav-anchor="area-05-detail" class="guide-section page-body-section">
       <div class="container">
@@ -318,7 +314,6 @@
         </div>
       </div>
     </section>
-    <GptAdWrap :placement-index="4" />
 
     <section class="page-body-section">
       <div class="container">

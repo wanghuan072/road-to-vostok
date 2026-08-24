@@ -12,13 +12,11 @@
           <h1 v-html="$t('devUpdatesPage.title')"></h1>
           <p class="hero-lead" v-html="$t('devUpdatesPage.heroLeadHtml')"></p>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
     <div class="wrapper">
       <div ref="railScrollRoot" class="container dev-updates-body">
-        <GptAdWrap :placement-index="1" />
         <PageRail
           :aside-label="$t('devUpdatesPage.railAside')"
           :title="$t('devUpdatesPage.railTitle')"
@@ -101,7 +99,6 @@
             </ul>
             <p class="cross-links" v-html="$t('devUpdatesPage.liveChangesCrossLinksHtml')"></p>
           </section>
-          <GptAdWrap :placement-index="2" />
 
           <section data-nav-anchor="guide-site" class="page-body-section">
             <header class="section-head">
@@ -111,7 +108,6 @@
             </header>
           </section>
 
-          <GptAdWrap :placement-index="3" />
 
           <section data-nav-anchor="public-roadmap" class="roadmap-section page-body-section">
             <header class="section-head">
@@ -150,7 +146,6 @@
             </ol>
           </section>
 
-          <GptAdWrap :placement-index="4" />
 
           <section
             class="footnote-section page-body-section"

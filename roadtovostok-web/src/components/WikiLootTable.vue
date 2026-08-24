@@ -39,8 +39,6 @@
       </button>
     </div>
 
-    <GptAdWrap :placement-index="adPlacementIndex" />
-
     <div class="wiki-loot__filter-groups" role="group" :aria-label="$t('wikiHubPage.lootTable.filtersAria')">
       <div class="wiki-loot__filter-row">
         <span class="wiki-loot__filter-label">{{ $t('wikiHubPage.lootTable.filterRarity') }}</span>
@@ -181,11 +179,6 @@
 <script setup>
 import { computed, reactive, ref } from 'vue'
 import lootItems from '@/data/loot/items.json'
-
-defineProps({
-  /** 与宿主页其它 GptAdWrap 错开，避免同页重复 DOM id（如 Wiki 首页传 1） */
-  adPlacementIndex: { type: Number, default: 0 },
-})
 
 const ICON_BASE = 'https://rtv.ccmdi.com/loot-table/'
 const RARITY_ORDER = { Legendary: 3, Rare: 2, Common: 1, Null: 0 }

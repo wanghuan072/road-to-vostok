@@ -30,24 +30,20 @@
           <h1 class="article-detail-hero__title mod-detail__hero-title">{{ article.title }}</h1>
         </div>
 
-        <GptAdWrap :placement-index="0" />
       </div>
     </header>
 
     <div class="mod-detail__body-wrap">
       <div class="container mod-detail__layout">
         <main class="mod-detail__main">
-          <GptAdWrap :placement-index="1" />
           <div
             class="mod-detail__prose article-body article-body--mods content-prose"
             v-html="article.detailsHtml"
           />
-          <GptAdWrap :placement-index="2" />
         </main>
 
         <aside class="mod-detail__aside" :aria-label="$t('modArticlePage.asideAria')">
           <div class="mod-detail__aside-stack">
-            <GptAdWrap :placement-index="3" />
             <figure class="mod-detail__cover">
               <img
                 :src="article.imageUrl"
@@ -58,7 +54,6 @@
                 decoding="async"
               />
             </figure>
-            <GptAdWrap :placement-index="4" />
             <div v-if="article.externalUrl" class="mod-detail__aside-cta-wrap">
               <a
                 class="mod-detail__aside-cta"
@@ -79,7 +74,6 @@
               <p class="mod-detail__aside-label">{{ $t('modArticlePage.asideSummaryLabel') }}</p>
               <p class="mod-detail__aside-summary">{{ article.seo.description }}</p>
             </div>
-            <GptAdWrap :placement-index="5" />
             <dl v-if="hasStats" class="mod-detail__stats">
               <div v-if="statDownloads" class="mod-detail__stat">
                 <dt>{{ $t('modArticlePage.metaDownloads') }}</dt>
@@ -104,7 +98,6 @@
                 <li v-for="t in article.tags" :key="t">{{ t }}</li>
               </ul>
             </div>
-            <GptAdWrap :placement-index="6" />
             <div
               v-if="article.comments?.length"
               class="mod-detail__aside-comments"

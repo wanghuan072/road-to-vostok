@@ -19,7 +19,6 @@
       </div>
     </section>
 
-    <GptAdWrap :placement-index="0" />
 
     <section class="map-section">
       <div class="container">
@@ -143,7 +142,6 @@
             </div>
           </div>
         </div>
-        <GptAdWrap :placement-index="1" />
         <div class="map-village-below" v-html="$t('mapVillagePage.belowMapHtml')"></div>
         <p v-if="mapError" class="map-error" role="alert">
           {{ mapError }}
@@ -151,7 +149,6 @@
       </div>
     </section>
 
-    <GptAdWrap :placement-index="2" />
 
     <section class="page-body-section">
       <div class="container">

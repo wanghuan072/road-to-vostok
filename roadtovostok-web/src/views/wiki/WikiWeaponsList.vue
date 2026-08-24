@@ -67,7 +67,6 @@
             </div>
           </dl>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </header>
 
@@ -103,7 +102,6 @@
           </ul>
         </nav>
 
-        <GptAdWrap :placement-index="1" />
         <div class="armory-main">
           <div
             v-for="c in weaponCategories"
@@ -178,7 +176,6 @@
             </section>
           </div>
         </div>
-        <GptAdWrap :placement-index="2" />
       </div>
     </div>
   </article>

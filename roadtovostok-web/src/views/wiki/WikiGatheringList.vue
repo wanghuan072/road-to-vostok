@@ -13,7 +13,6 @@
           <h1 v-html="$t('wikiGatheringPage.title')"></h1>
           <p class="lead" v-html="$t('wikiGatheringPage.leadHtml')"></p>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -38,7 +37,6 @@
           </table>
         </div>
         <div class="cross-links" v-html="$t('wikiGatheringPage.crossLinksHtml')"></div>
-        <GptAdWrap :placement-index="1" />
       </div>
     </section>
   </article>

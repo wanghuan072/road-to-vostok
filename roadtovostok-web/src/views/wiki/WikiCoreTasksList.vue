@@ -13,7 +13,6 @@
           <h1 v-html="$t('wikiCoreTasksPage.title')"></h1>
           <p class="lead" v-html="$t('wikiCoreTasksPage.leadHtml')"></p>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -40,7 +39,6 @@
           </table>
         </div>
         <div class="cross-links" v-html="$t('wikiCoreTasksPage.crossLinksHtml')"></div>
-        <GptAdWrap :placement-index="1" />
       </div>
     </section>
   </article>

@@ -13,7 +13,6 @@
           <h1>{{ $t('npcListPage.title') }}</h1>
           <p class="lead" v-html="$t('npcListPage.leadHtml')"></p>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -29,7 +28,6 @@
             </a>
           </li>
         </ul>
-        <GptAdWrap :placement-index="1" />
       </div>
     </section>
   </article>

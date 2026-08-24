@@ -26,11 +26,9 @@
             <p v-html="$t('modsListPage.introP2Html')"></p>
           </div>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
-    <GptAdWrap :placement-index="1" />
 
     <section
       class="mods-board"
@@ -179,7 +177,6 @@
           {{ $t('modsListPage.emptyState') }}
         </p>
 
-        <GptAdWrap :placement-index="2" />
       </div>
     </section>
   </article>

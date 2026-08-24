@@ -11,7 +11,6 @@
           <h1 v-html="$t('gettingStartedPage.title')"></h1>
           <p v-html="$t('gettingStartedPage.introHtml')"></p>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -22,7 +21,6 @@
         :scroll-root="railScrollRoot"
         :links="asideLinks"
       >
-        <GptAdWrap :placement-index="1" />
         <section data-nav-anchor="core-loop" class="page-body-section">
           <div class="page-body-content" v-html="$t('gettingStartedPage.sectionCoreHtml')" />
         </section>
@@ -43,7 +41,6 @@
           <div class="page-body-content" v-html="$t('gettingStartedPage.sectionCraftingHtml')" />
         </section>
       </PageRail>
-      <GptAdWrap :placement-index="2" />
     </div>
   </article>
 </template>

@@ -15,7 +15,6 @@
             {{ $t('wikiFishingPage.lead') }}
           </p>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -38,7 +37,6 @@
           </table>
         </div>
         <div class="cross-links" v-html="$t('wikiFishingPage.crossLinksHtml')"></div>
-        <GptAdWrap :placement-index="1" />
       </div>
     </section>
   </article>

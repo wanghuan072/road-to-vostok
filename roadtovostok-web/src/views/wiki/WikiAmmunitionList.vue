@@ -42,7 +42,6 @@
             </div>
           </dl>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -180,7 +179,6 @@
           </div>
         </div>
 
-        <GptAdWrap :placement-index="1" />
 
         <footer class="ammo-foot">
           <p v-html="$t('wikiAmmunitionPage.footCrossCheckHtml')"></p>

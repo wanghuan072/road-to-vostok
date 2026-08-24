@@ -90,7 +90,6 @@
             </p>
           </div>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
@@ -167,7 +166,6 @@
             </ul>
           </div>
         </div>
-        <GptAdWrap :placement-index="1" />
       </div>
     </section>
 
@@ -278,7 +276,6 @@
             </ul>
           </div>
         </div>
-        <GptAdWrap :placement-index="2" />
       </div>
     </section>
 
@@ -383,7 +380,6 @@
             </ul>
           </nav>
         </div>
-        <GptAdWrap :placement-index="3" />
       </div>
     </section>
 
@@ -461,7 +457,6 @@
             </div>
           </div>
         </div>
-        <GptAdWrap :placement-index="4" />
       </div>
     </section>
 
@@ -484,7 +479,6 @@
             <a :href="getLocalizedPath('/about')" class="about-hub-link">{{ $t('homePage.about.linkAboutUs') }}</a>
           </nav>
         </div>
-        <GptAdWrap :placement-index="5" />
       </div>
     </section>
 
@@ -541,7 +535,6 @@
             </ul>
           </nav>
         </div>
-        <GptAdWrap :placement-index="6" />
       </div>
     </section>
   </div>

@@ -12,11 +12,9 @@
           <p class="guides-list__sub" v-html="$t('guidesListPage.subHtml')"></p>
         </div>
 
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
     
-    <GptAdWrap :placement-index="1" />
 
     <section class="guides-list__body" :aria-label="$t('guidesListPage.articlesAria')">
       <div class="container">
@@ -46,7 +44,6 @@
             </a>
           </li>
         </ul>
-        <GptAdWrap :placement-index="2" />
       </div>
     </section>
   </article>

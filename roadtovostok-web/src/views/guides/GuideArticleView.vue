@@ -16,25 +16,21 @@
           </nav>
           <h1 class="article-detail-hero__title">{{ article.h1 || article.title }}</h1>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </header>
 
     <div class="article-split-wrap">
       <div class="container article-split">
         <main class="article-split__main">
-          <GptAdWrap :placement-index="1" />
           <div
             class="article-body content-prose"
             v-html="article.detailsHtml"
           />
-          <GptAdWrap :placement-index="2" />
         </main>
         
 
         <aside class="article-split__aside" :aria-label="$t('guideArticlePage.asideAria')">
           <div class="aside-stack">
-            <GptAdWrap :placement-index="3" />
             <figure class="aside-cover">
               <img
                 :src="article.imageUrl"
@@ -51,7 +47,6 @@
               <p class="aside-block__summary">{{ summaryText }}</p>
             </div>
 
-            <GptAdWrap :placement-index="4" />
 
             <div class="aside-meta">
               <div>
@@ -66,7 +61,6 @@
               </div>
             </div>
 
-            <GptAdWrap :placement-index="5" />
             <div class="aside-more">
               <p class="aside-more__label">{{ $t('guideArticlePage.asideMoreGuides') }}</p>
               <ul class="aside-more__list">

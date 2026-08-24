@@ -11,14 +11,12 @@
           <h1>{{ $t('wikiHubPage.title') }}</h1>
           <p class="lead" v-html="$t('wikiHubPage.leadHtml')"></p>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </section>
 
     <section class="page-body-section" :aria-label="$t('wikiHubPage.categoriesAria')">
       <div class="container">
-        <WikiLootTable :ad-placement-index="1" />
-        <GptAdWrap :placement-index="2" />
+        <WikiLootTable />
 
         <ul class="item-db-hub-grid" role="list">
           <li>

@@ -14,7 +14,6 @@
       </div>
     </section>
 
-    <GptAdWrap :placement-index="0" />
 
     <div ref="railScrollRoot" class="container tasks-rail-body">
       <PageRail
@@ -23,7 +22,6 @@
         :scroll-root="railScrollRoot"
         :links="asideLinks"
       >
-        <GptAdWrap :placement-index="1" />
         <section data-nav-anchor="all-tasks-guide" class="guide-section page-body-section">
           <div class="container">
             <div class="guide-prose" v-html="$t('tasksPage.bodyAllTasksHtml')" />
@@ -36,7 +34,6 @@
           </div>
         </section>
       </PageRail>
-      <GptAdWrap :placement-index="2" /> 
     </div>
   </article>
 </template>

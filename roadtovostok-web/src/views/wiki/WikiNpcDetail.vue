@@ -61,7 +61,6 @@
             </div>
           </div>
         </div>
-        <GptAdWrap :placement-index="0" />
       </div>
     </header>
 
@@ -69,14 +68,11 @@
       <div class="container npc-main__grid">
         <main class="npc-main__article">
           <div class="npc-sheet">
-            <GptAdWrap :placement-index="1" />
             <div class="npc-sheet__body npc-detail-rich" v-html="npc.detailsHtml" />
-            <GptAdWrap :placement-index="2" />
           </div>
         </main>
 
         <aside class="npc-main__rail" :aria-label="$t('npcDetailPage.articleAsideAria')">
-          <GptAdWrap :placement-index="3" />
           <div v-if="hasLocationRail" class="npc-rail-card npc-rail-card--location">
             <p class="npc-rail-card__label">Location</p>
             <p v-if="npc.location?.title" class="npc-rail-card__place">
@@ -104,7 +100,6 @@
               {{ $t('npcDetailPage.showOnMap') }}
             </a>
           </div>
-<GptAdWrap :placement-index="4" />
           <div class="npc-rail-card">
             <p class="npc-rail-card__label">
               {{ $t('npcDetailPage.moreNpcs') }}
