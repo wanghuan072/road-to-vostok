@@ -13,9 +13,7 @@
         :title="frameTitle"
         :width="frameWidth"
         :height="frameHeight"
-        loading="lazy"
         scrolling="no"
-        sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox"
         referrerpolicy="strict-origin-when-cross-origin"
       />
 

@@ -22,11 +22,9 @@
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import { useHtmlContentLinkNavigation } from './composables/htmlContentLinks.js'
-import { useAffiliatePopunder } from './composables/useAffiliatePopunder.js'
 import { useRouteSeo } from './seo/composables.js'
 
 useRouteSeo()
-useAffiliatePopunder()
 const { onContentLinkClick } = useHtmlContentLinkNavigation()
 </script>
 
