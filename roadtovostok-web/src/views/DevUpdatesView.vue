@@ -15,6 +15,9 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：路线图介绍结束后展示，与正文时间线保持间隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <div class="wrapper">
       <div ref="railScrollRoot" class="container dev-updates-body">
         <PageRail

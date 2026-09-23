@@ -13,6 +13,9 @@
         </p>
       </div>
     </section>
+    <!-- 内页广告 1：页面摘要结束后投放，与说明正文保持间隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <section class="site-page-body" :aria-label="$t('aboutPage.bodyAriaLabel')">
       <div class="container">
         <div class="site-page-prose">

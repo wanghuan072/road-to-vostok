@@ -33,6 +33,9 @@
       </div>
     </header>
 
+    <!-- 内页广告 1：模组标题区结束后投放，与正文详情保持间隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <div class="mod-detail__body-wrap">
       <div class="container mod-detail__layout">
         <main class="mod-detail__main">

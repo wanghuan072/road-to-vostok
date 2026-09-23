@@ -16,6 +16,9 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：NPC 说明与人物列表之间的独立广告位。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <section class="page-body-section" :aria-label="$t('npcListPage.listAria')">
       <div class="container">
         <ul class="item-db-hub-grid" role="list">

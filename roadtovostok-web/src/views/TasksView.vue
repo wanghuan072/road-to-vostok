@@ -14,6 +14,8 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：首屏介绍结束后再展示，避免紧贴主标题。 -->
+    <AffiliateAdSlot placement="after-intro" />
 
     <div ref="railScrollRoot" class="container tasks-rail-body">
       <PageRail

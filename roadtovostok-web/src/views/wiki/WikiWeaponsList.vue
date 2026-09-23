@@ -70,6 +70,9 @@
       </div>
     </header>
 
+    <!-- 内页广告 1：武器库摘要结束后投放，与分类目录保持间隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <div class="weapons-body">
       <div class="container weapons-layout">
         <nav

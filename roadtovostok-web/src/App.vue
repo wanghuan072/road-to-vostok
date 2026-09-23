@@ -11,6 +11,8 @@
     <AppHeader />
     <main id="main-content" class="main-content">
       <RouterView />
+      <!-- 每个页面末尾保留一个统一广告位；页面内广告与这里之间始终有正文内容。 -->
+      <AffiliateAdSlot placement="page-end" />
     </main>
     <AppFooter />
   </div>
@@ -20,9 +22,11 @@
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import { useHtmlContentLinkNavigation } from './composables/htmlContentLinks.js'
+import { useAffiliatePopunder } from './composables/useAffiliatePopunder.js'
 import { useRouteSeo } from './seo/composables.js'
 
 useRouteSeo()
+useAffiliatePopunder()
 const { onContentLinkClick } = useHtmlContentLinkNavigation()
 </script>
 

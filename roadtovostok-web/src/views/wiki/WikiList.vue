@@ -14,6 +14,9 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：维基介绍结束后投放，与分类内容保持间隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <section class="page-body-section" :aria-label="$t('wikiHubPage.categoriesAria')">
       <div class="container">
         <WikiLootTable />

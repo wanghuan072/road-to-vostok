@@ -93,6 +93,9 @@
       </div>
     </section>
 
+    <!-- 首页广告 1：Hero 完整内容结束后投放，不紧贴主标题。 -->
+    <AffiliateAdSlot placement="home-hero" />
+
     <!-- Site compass: main nav + deep links (matches live routes) -->
     <section class="home-compass-section">
       <div class="container">
@@ -279,6 +282,9 @@
       </div>
     </section>
 
+    <!-- 首页广告 2：原生广告仅保留一个实例，避免固定容器 ID 冲突。 -->
+    <AffiliateAdSlot kind="native" placement="home-featured" />
+
     <!-- Questline -->
     <section class="questline-section">
       <div class="container">
@@ -383,6 +389,9 @@
       </div>
     </section>
 
+    <!-- 首页广告 3：任务路线与开发日志之间有独立内容区隔。 -->
+    <AffiliateAdSlot placement="home-questline" />
+
     <!-- Devlog -->
     <section class="devlog-section">
       <div class="container">
@@ -459,6 +468,9 @@
         </div>
       </div>
     </section>
+
+    <!-- 首页广告 4：开发日志之后投放；第 5 个广告位由 App.vue 在页面末尾统一提供。 -->
+    <AffiliateAdSlot placement="home-devlog" />
 
     <!-- About (SEO) -->
     <section class="about-section">

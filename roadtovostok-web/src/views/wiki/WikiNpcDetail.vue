@@ -64,6 +64,9 @@
       </div>
     </header>
 
+    <!-- 内页广告 1：人物摘要结束后投放，与详情正文保持间隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <div class="npc-main">
       <div class="container npc-main__grid">
         <main class="npc-main__article">

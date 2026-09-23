@@ -19,6 +19,9 @@
       </div>
     </header>
 
+    <!-- 内页广告 1：文章标题区结束后投放，与正文卡片保持间隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <div class="article-split-wrap">
       <div class="container article-split">
         <main class="article-split__main">

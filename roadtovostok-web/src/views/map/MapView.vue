@@ -17,6 +17,9 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：地图介绍结束后投放，与交互地图保持间隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <section class="map-section">
       <div class="container">
         <header class="map-section-head">

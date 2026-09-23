@@ -14,7 +14,9 @@
 
       </div>
     </section>
-    
+
+    <!-- 内页广告 1：列表简介结束后投放，与文章卡片保持内容区隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
 
     <section class="guides-list__body" :aria-label="$t('guidesListPage.articlesAria')">
       <div class="container">

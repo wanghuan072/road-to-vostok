@@ -21,6 +21,9 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：页面介绍与海报画廊之间的独立广告位。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <section class="poster-feature" :aria-label="$t('posterPage.featureSectionAria')">
       <div class="container">
         <figure class="poster-feature-frame">

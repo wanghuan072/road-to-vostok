@@ -45,6 +45,9 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：弹药说明结束后投放，与筛选列表保持间隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <section
       class="page-body-section ammo-body"
       :aria-label="$t('wikiAmmunitionPage.bodyAria')"

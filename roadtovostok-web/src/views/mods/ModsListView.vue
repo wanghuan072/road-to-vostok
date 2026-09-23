@@ -29,6 +29,8 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：模组说明结束后投放，与列表标题保持内容区隔。 -->
+    <AffiliateAdSlot placement="after-intro" />
 
     <section
       class="mods-board"

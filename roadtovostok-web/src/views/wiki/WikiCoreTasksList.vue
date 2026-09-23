@@ -16,6 +16,9 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：页面说明与任务表格之间的独立广告位。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <section class="page-body-section" :aria-label="$t('wikiCoreTasksPage.tableAria')">
       <div class="container">
         <div class="table-wrap">

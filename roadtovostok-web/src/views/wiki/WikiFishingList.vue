@@ -18,6 +18,9 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：钓鱼说明与核对表之间的独立广告位。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <section class="page-body-section" :aria-label="$t('wikiFishingPage.checklistAria')">
       <div class="container">
         <div class="table-wrap">

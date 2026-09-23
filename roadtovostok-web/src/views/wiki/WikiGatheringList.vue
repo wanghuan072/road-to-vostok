@@ -16,6 +16,9 @@
       </div>
     </section>
 
+    <!-- 内页广告 1：采集说明与数据表之间的独立广告位。 -->
+    <AffiliateAdSlot placement="after-intro" />
+
     <section class="page-body-section" :aria-label="$t('wikiGatheringPage.tableAria')">
       <div class="container">
         <div class="table-wrap">
