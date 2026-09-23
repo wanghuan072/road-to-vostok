@@ -81,13 +81,12 @@ const previewSize = computed(() => {
 <style scoped>
 .affiliate-ad-slot {
   width: 100%;
-  margin-block: clamp(3.5rem, 7vw, 6rem);
+  margin-block: 10px;
   clear: both;
 }
 
 .affiliate-ad-slot--page-end {
-  margin-top: clamp(4.5rem, 8vw, 7rem);
-  margin-bottom: clamp(3.5rem, 6vw, 5rem);
+  margin-block: 10px;
 }
 
 .affiliate-ad-slot__inner {
@@ -125,12 +124,11 @@ const previewSize = computed(() => {
 
 @media (max-width: 767px) {
   .affiliate-ad-slot {
-    margin-block: 3.5rem;
+    margin-block: 10px;
   }
 
   .affiliate-ad-slot--page-end {
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-block: 10px;
   }
 
   .affiliate-ad-slot__inner {
